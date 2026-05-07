@@ -11,7 +11,18 @@
         "Practical work-related experience",
         "Remote work experience"
       ],
-      "correct": "Practical work-related experience"
+      "correct": "Practical work-related experience",
+      "traduccion": {
+        "pregunta": "¿Qué significa 'hands-on experience' en un contexto profesional?",
+        "opciones": [
+          "Conocimiento teórico en el lugar de trabajo",
+          "Formación académica en la industria",
+          "Experiencia práctica relacionada con el trabajo",
+          "Experiencia de trabajo remoto"
+        ],
+        "correcta": "Experiencia práctica relacionada con el trabajo"
+      },
+      "explicacion": "'Hands-on experience' literalmente significa 'experiencia con las manos' y se usa para describir la experiencia práctica adquirida haciendo el trabajo directamente, no solo estudiándolo en libros o de forma teórica."
     },
     {
       "id": 2,
@@ -23,7 +34,18 @@
         "What's up?",
         "Hi mate!"
       ],
-      "correct": "Dear Mr. Johnson,"
+      "correct": "Dear Mr. Johnson,",
+      "traduccion": {
+        "pregunta": "¿Cuál de estas es una apertura formal de correo electrónico?",
+        "opciones": [
+          "¡Hola!",
+          "Estimado Sr. Johnson,",
+          "¿Qué pasa?",
+          "¡Hola, colega!"
+        ],
+        "correcta": "Estimado Sr. Johnson,"
+      },
+      "explicacion": "'Dear Mr. Johnson,' es la única fórmula formal. 'Hey there!', 'What's up?' y 'Hi mate!' son expresiones coloquiales inapropiadas para comunicaciones profesionales."
     },
     {
       "id": 3,
@@ -35,7 +57,18 @@
         "Hey, Ana here.",
         "My name is Ana. I work in logistics."
       ],
-      "correct": "My name is Ana. I work in logistics."
+      "correct": "My name is Ana. I work in logistics.",
+      "traduccion": {
+        "pregunta": "¿Cómo te presentas en una conversación profesional?",
+        "opciones": [
+          "Llámame Ana.",
+          "¡Ey, soy Ana!",
+          "Hola, soy Ana.",
+          "Me llamo Ana. Trabajo en logística."
+        ],
+        "correcta": "Me llamo Ana. Trabajo en logística."
+      },
+      "explicacion": "En un contexto profesional, la presentación debe ser clara y formal. 'My name is Ana. I work in logistics.' es la única opción que proporciona información profesional relevante con un registro adecuado."
     },
     {
       "id": 4,
@@ -47,7 +80,18 @@
         "I checks the inventory now.",
         "I'm checking the inventory now."
       ],
-      "correct": "I'm checking the inventory now."
+      "correct": "I'm checking the inventory now.",
+      "traduccion": {
+        "pregunta": "¿Qué oración es correcta?",
+        "opciones": [
+          "Yo comprobando el inventario ahora. (incorrecto)",
+          "Yo estoy comprobar el inventario ahora. (incorrecto)",
+          "Yo compruebas el inventario ahora. (incorrecto)",
+          "Estoy comprobando el inventario ahora."
+        ],
+        "correcta": "Estoy comprobando el inventario ahora."
+      },
+      "explicacion": "El Presente Continuo se forma con 'am/is/are + verbo-ing'. 'I'm checking' es la forma correcta. Las demás tienen errores: falta el auxiliar, se usa el infinitivo en lugar del gerundio, o la conjugación es incorrecta."
     },
     {
       "id": 5,
@@ -59,7 +103,18 @@
         "Me need help.",
         "I does need information."
       ],
-      "correct": "Yes, I need some information."
+      "correct": "Yes, I need some information.",
+      "traduccion": {
+        "pregunta": "Elige la respuesta correcta a: '¿Puedo ayudarte?'",
+        "opciones": [
+          "Sí, lo que sea.",
+          "Sí, necesito información.",
+          "Yo necesitar ayuda. (incorrecto)",
+          "Yo sí necesitar información. (incorrecto)"
+        ],
+        "correcta": "Sí, necesito información."
+      },
+      "explicacion": "'Yes, I need some information.' es la única opción gramaticalmente correcta y apropiada. 'Yeah, whatever.' es grosero, y 'Me need help.' y 'I does need information.' tienen errores gramaticales graves."
     },
     {
       "id": 6,
@@ -71,7 +126,18 @@
         "on",
         "by"
       ],
-      "correct": "on"
+      "correct": "on",
+      "traduccion": {
+        "pregunta": "¿Cuál es la preposición correcta? 'La reunión es ___ el lunes.'",
+        "opciones": [
+          "en (para meses/años)",
+          "a/en (para horas)",
+          "el (para días de la semana)",
+          "para/antes de"
+        ],
+        "correcta": "el (on)"
+      },
+      "explicacion": "En inglés se usa 'on' con días de la semana (on Monday). Se usa 'in' con meses y años (in January), y 'at' con horas (at 3 o'clock)."
     },
     {
       "id": 7,
@@ -83,7 +149,18 @@
         "Beautiful",
         "Bright"
       ],
-      "correct": "Deliver"
+      "correct": "Deliver",
+      "traduccion": {
+        "pregunta": "¿Qué palabra es un verbo relacionado con el trabajo?",
+        "opciones": [
+          "Rápidamente (adverbio)",
+          "Entregar (verbo)",
+          "Hermoso (adjetivo)",
+          "Brillante (adjetivo)"
+        ],
+        "correcta": "Entregar (Deliver)"
+      },
+      "explicacion": "'Deliver' (entregar) es el único verbo de la lista. 'Quickly' es un adverbio, 'Beautiful' y 'Bright' son adjetivos. En logística, 'deliver' es un término clave."
     },
     {
       "id": 8,
@@ -95,7 +172,18 @@
         "You might wear safety shoes.",
         "You should wearing safety shoes."
       ],
-      "correct": "You must wear safety shoes."
+      "correct": "You must wear safety shoes.",
+      "traduccion": {
+        "pregunta": "Elige la oración correcta usando un verbo modal de obligación.",
+        "opciones": [
+          "Puedes llevar zapatos de seguridad. (permiso/capacidad)",
+          "Debes llevar zapatos de seguridad. (obligación)",
+          "Podrías llevar zapatos de seguridad. (posibilidad)",
+          "Deberías llevando zapatos de seguridad. (incorrecto gramaticalmente)"
+        ],
+        "correcta": "Debes llevar zapatos de seguridad. (You must wear safety shoes.)"
+      },
+      "explicacion": "'Must' expresa obligación fuerte. 'Can' expresa capacidad o permiso, 'might' expresa posibilidad. 'Should wearing' es incorrecto: después de verbos modales se usa el infinitivo sin 'to', nunca el gerundio."
     },
     {
       "id": 9,
@@ -107,7 +195,18 @@
         "This is I folder.",
         "This is my folder."
       ],
-      "correct": "This is my folder."
+      "correct": "This is my folder.",
+      "traduccion": {
+        "pregunta": "¿Qué oración usa un adjetivo posesivo correctamente?",
+        "opciones": [
+          "Esta es yo carpeta. (incorrecto)",
+          "Esta es mía carpeta. (incorrecto)",
+          "Esta es yo carpeta. (incorrecto)",
+          "Esta es mi carpeta."
+        ],
+        "correcta": "Esta es mi carpeta."
+      },
+      "explicacion": "'My' es el adjetivo posesivo de primera persona y va antes del sustantivo. 'Mine' es el pronombre posesivo (sin sustantivo: 'this folder is mine'). 'Me' e 'I' no son posesivos."
     },
     {
       "id": 10,
@@ -119,7 +218,18 @@
         "a lot",
         "less"
       ],
-      "correct": "many"
+      "correct": "many",
+      "traduccion": {
+        "pregunta": "¿Cuál es el cuantificador correcto? 'Hay ___ informes sobre la mesa.'",
+        "opciones": [
+          "mucho (para incontables: water, time)",
+          "muchos (para contables en plural)",
+          "mucho/muchos (necesita 'of': a lot of)",
+          "menos"
+        ],
+        "correcta": "muchos (many)"
+      },
+      "explicacion": "'Many' se usa con sustantivos contables en plural (reports, books, people). 'Much' se usa con incontables (water, time). 'A lot' necesita ir seguido de 'of'. 'Less' significa menos."
     },
     {
       "id": 11,
@@ -131,7 +241,18 @@
         "The guy mended the machine.",
         "The worker done the repair job."
       ],
-      "correct": "The technician repaired the engine yesterday."
+      "correct": "The technician repaired the engine yesterday.",
+      "traduccion": {
+        "pregunta": "¿En qué oración se usa el vocabulario de forma profesional?",
+        "opciones": [
+          "El tío arregló el cacharro del coche. (muy coloquial)",
+          "El técnico reparó el motor ayer.",
+          "El tipo arregló la máquina. (informal)",
+          "El trabajador hecho el trabajo de reparación. (incorrecto gramaticalmente)"
+        ],
+        "correcta": "El técnico reparó el motor ayer."
+      },
+      "explicacion": "'The technician repaired the engine yesterday.' usa vocabulario técnico y formal. Las otras usan palabras coloquiales ('dude', 'thingy', 'guy') o tienen errores gramaticales ('done' en lugar de 'did')."
     },
     {
       "id": 12,
@@ -143,7 +264,18 @@
         "A document is included",
         "The sender is available"
       ],
-      "correct": "A document is included"
+      "correct": "A document is included",
+      "traduccion": {
+        "pregunta": "¿Qué significa 'attached' en un correo electrónico?",
+        "opciones": [
+          "El mensaje es urgente",
+          "El correo fue enviado",
+          "Se incluye un documento adjunto",
+          "El remitente está disponible"
+        ],
+        "correcta": "Se incluye un documento adjunto"
+      },
+      "explicacion": "'Attached' (adjunto) en un correo indica que hay un archivo incluido con el mensaje. Es habitual ver 'Please find attached...' (Encontrará adjunto...) en correos formales."
     },
     {
       "id": 13,
@@ -155,7 +287,18 @@
         "Best regards,",
         "Later,"
       ],
-      "correct": "Best regards,"
+      "correct": "Best regards,",
+      "traduccion": {
+        "pregunta": "¿Cuál es la frase correcta para terminar un correo formal?",
+        "opciones": [
+          "¡Adiós! (informal)",
+          "¡Hasta luego! (informal)",
+          "Atentamente / Un cordial saludo,",
+          "Luego, (informal)"
+        ],
+        "correcta": "Atentamente / Un cordial saludo, (Best regards,)"
+      },
+      "explicacion": "'Best regards,' es la despedida formal estándar. 'Bye!', 'See ya!' y 'Later,' son expresiones informales inapropiadas para un correo profesional."
     },
     {
       "id": 14,
@@ -167,7 +310,18 @@
         "These",
         "Them"
       ],
-      "correct": "These"
+      "correct": "These",
+      "traduccion": {
+        "pregunta": "Elige el demostrativo correcto: '___ archivos están listos para imprimir.'",
+        "opciones": [
+          "Este/Esta (singular cercano)",
+          "Ese/Esa (singular lejano)",
+          "Estos/Estas (plural cercano)",
+          "Ellos/Ellas (pronombre personal, no demostrativo)"
+        ],
+        "correcta": "Estos/Estas (These)"
+      },
+      "explicacion": "'Files' está en plural y son archivos cercanos. 'These' (estos/estas) es el demostrativo plural cercano. 'This' es singular cercano, 'That' singular lejano, y 'Them' es pronombre objeto, no demostrativo."
     },
     {
       "id": 15,
@@ -179,7 +333,18 @@
         "Let me help, ok?",
         "Shall I help you with the order?"
       ],
-      "correct": "Shall I help you with the order?"
+      "correct": "Shall I help you with the order?",
+      "traduccion": {
+        "pregunta": "¿Cuál es la forma formal de ofrecer ayuda?",
+        "opciones": [
+          "¿Quieres que te ayude? (coloquial, 'Wanna' = contracción informal)",
+          "¿Puedo hacer algo? (informal)",
+          "Déjame ayudar, ¿vale? (informal)",
+          "¿Le ayudo con el pedido?"
+        ],
+        "correcta": "¿Le ayudo con el pedido? (Shall I help you with the order?)"
+      },
+      "explicacion": "'Shall I...?' es la estructura formal inglesa para ofrecer ayuda de manera educada. Las demás son informales: 'Wanna' es contracción muy coloquial de 'Do you want to'."
     },
     {
       "id": 16,
@@ -191,7 +356,18 @@
         "To record financial data",
         "To manage staff schedules"
       ],
-      "correct": "To explain how to complete a task"
+      "correct": "To explain how to complete a task",
+      "traduccion": {
+        "pregunta": "¿Cuál es el objetivo principal de un manual de instrucciones?",
+        "opciones": [
+          "Para publicitar productos",
+          "Para explicar cómo completar una tarea",
+          "Para registrar datos financieros",
+          "Para gestionar horarios del personal"
+        ],
+        "correcta": "Para explicar cómo completar una tarea"
+      },
+      "explicacion": "Un manual de instrucciones guía al usuario para completar una tarea o usar un producto correctamente, paso a paso. No es publicidad ni documentación financiera."
     },
     {
       "id": 17,
@@ -203,7 +379,18 @@
         "A type of salary payment",
         "A meeting with clients"
       ],
-      "correct": "The arrival of goods or materials"
+      "correct": "The arrival of goods or materials",
+      "traduccion": {
+        "pregunta": "¿A qué suele referirse 'delivery' en un contexto laboral?",
+        "opciones": [
+          "El fin de la jornada laboral",
+          "La llegada de mercancías o materiales",
+          "Un tipo de pago de salario",
+          "Una reunión con clientes"
+        ],
+        "correcta": "La llegada de mercancías o materiales"
+      },
+      "explicacion": "'Delivery' (entrega) en logística se refiere a la llegada o entrega de mercancías y materiales. Es uno de los términos más usados en almacén y logística."
     },
     {
       "id": 18,
@@ -215,7 +402,18 @@
         "I checked the report yesterday.",
         "I have checked the report yesterday."
       ],
-      "correct": "I checked the report yesterday."
+      "correct": "I checked the report yesterday.",
+      "traduccion": {
+        "pregunta": "¿Qué oración es correcta en pasado simple?",
+        "opciones": [
+          "Yo compruebo el informe ayer. (presente simple, incorrecto)",
+          "Yo fui comprobado el informe ayer. (voz pasiva incorrecta)",
+          "Yo comprobé el informe ayer.",
+          "Yo he comprobado el informe ayer. (presente perfecto, incorrecto con 'yesterday')"
+        ],
+        "correcta": "Yo comprobé el informe ayer."
+      },
+      "explicacion": "'Yesterday' indica un tiempo pasado específico, lo que requiere Pasado Simple. 'Checked' es la forma correcta. El Presente Perfecto ('have checked') no se combina con 'yesterday'."
     },
     {
       "id": 19,
@@ -227,7 +425,18 @@
         "Hi buddy,",
         "What's up man,"
       ],
-      "correct": "Dear Mr. López,"
+      "correct": "Dear Mr. López,",
+      "traduccion": {
+        "pregunta": "¿Cuál es una forma profesional de comenzar un correo?",
+        "opciones": [
+          "¡Hola! (español e informal)",
+          "Estimado Sr. López,",
+          "Hola, amigo, (informal)",
+          "¿Qué pasa tío, (muy informal)"
+        ],
+        "correcta": "Estimado Sr. López,"
+      },
+      "explicacion": "'Dear Mr. López,' es la única opción formal. 'Hola!' está en español y es informal; 'Hi buddy' y 'What's up man' son expresiones informales inapropiadas."
     },
     {
       "id": 20,
@@ -239,7 +448,18 @@
         "Introduction – Methods – Results",
         "Subject – Attachment – Signature"
       ],
-      "correct": "Greeting – Message – Closing"
+      "correct": "Greeting – Message – Closing",
+      "traduccion": {
+        "pregunta": "¿Cuál es la estructura correcta de un correo corto de trabajo?",
+        "opciones": [
+          "Título – Contenido – Bibliografía (estructura de ensayo)",
+          "Saludo – Mensaje – Despedida",
+          "Introducción – Métodos – Resultados (estructura científica)",
+          "Asunto – Adjunto – Firma"
+        ],
+        "correcta": "Saludo – Mensaje – Despedida"
+      },
+      "explicacion": "Un correo corto sigue: Saludo (Dear...), Mensaje (contenido) y Despedida (Best regards...). Las otras opciones corresponden a ensayos o informes científicos."
     },
     {
       "id": 21,
@@ -251,7 +471,18 @@
         "A workplace conflict",
         "A training session"
       ],
-      "correct": "The time you start and finish work"
+      "correct": "The time you start and finish work",
+      "traduccion": {
+        "pregunta": "¿Qué significa 'shift' en un horario profesional?",
+        "opciones": [
+          "Un tipo de tarea",
+          "La hora en que empiezas y terminas de trabajar (turno)",
+          "Un conflicto laboral",
+          "Una sesión de formación"
+        ],
+        "correcta": "La hora en que empiezas y terminas de trabajar (turno)"
+      },
+      "explicacion": "'Shift' (turno) es el período de trabajo asignado a un empleado: 'morning shift' (turno de mañana), 'night shift' (turno de noche). Es un término clave en entornos laborales."
     },
     {
       "id": 22,
@@ -263,7 +494,18 @@
         "Could you please repeat that?",
         "Speak louder please!"
       ],
-      "correct": "Could you please repeat that?"
+      "correct": "Could you please repeat that?",
+      "traduccion": {
+        "pregunta": "¿Cuál es la forma correcta de pedir una aclaración?",
+        "opciones": [
+          "¿Qué? (brusco)",
+          "¿Eh? ¿Qué? (muy informal)",
+          "¿Podría repetir eso, por favor?",
+          "¡Habla más alto por favor! (brusco)"
+        ],
+        "correcta": "¿Podría repetir eso, por favor?"
+      },
+      "explicacion": "'Could you please repeat that?' es la forma educada y formal de pedir que se repita algo. Las otras opciones son bruscas o informales, inapropiadas en un entorno profesional."
     },
     {
       "id": 23,
@@ -275,7 +517,18 @@
         "Past Continuous",
         "Future Simple"
       ],
-      "correct": "Past Simple"
+      "correct": "Past Simple",
+      "traduccion": {
+        "pregunta": "En la oración 'Ellos repararon la máquina', ¿cuál es el tiempo verbal?",
+        "opciones": [
+          "Presente Perfecto (have/has repaired)",
+          "Pasado Simple",
+          "Pasado Continuo (were repairing)",
+          "Futuro Simple (will repair)"
+        ],
+        "correcta": "Pasado Simple"
+      },
+      "explicacion": "'Repaired' es el pasado simple del verbo 'repair' (verbos regulares: verbo + -ed). Presente Perfecto sería 'have repaired', Pasado Continuo 'were repairing', y Futuro 'will repair'."
     },
     {
       "id": 24,
@@ -287,7 +540,18 @@
         "The person looked at cable stuff.",
         "Someone did the cable check."
       ],
-      "correct": "The technician inspected the cables."
+      "correct": "The technician inspected the cables.",
+      "traduccion": {
+        "pregunta": "Elige la oración correcta usando vocabulario de la unidad:",
+        "opciones": [
+          "El técnico (abreviación informal) revisó los cables.",
+          "El técnico inspeccionó los cables.",
+          "La persona miró cosas de cables. (muy informal)",
+          "Alguien hizo la revisión de cables. (vago e informal)"
+        ],
+        "correcta": "El técnico inspeccionó los cables."
+      },
+      "explicacion": "'The technician inspected the cables.' usa vocabulario técnico y formal apropiado. Las otras usan vocabulario informal o impreciso ('tech', 'wires', 'cable stuff')."
     },
     {
       "id": 25,
@@ -299,7 +563,18 @@
         "Report",
         "Catalogue"
       ],
-      "correct": "Report"
+      "correct": "Report",
+      "traduccion": {
+        "pregunta": "¿Qué tipo de documento se usa para registrar un incidente laboral?",
+        "opciones": [
+          "Factura",
+          "Recibo",
+          "Informe",
+          "Catálogo"
+        ],
+        "correcta": "Informe (Report)"
+      },
+      "explicacion": "Un 'Report' (informe) documenta y registra incidentes laborales. 'Invoice' es factura, 'Receipt' es recibo y 'Catalogue' es catálogo de productos."
     },
     {
       "id": 26,
@@ -311,7 +586,18 @@
         "Ciao!",
         "Later buddy"
       ],
-      "correct": "Kind regards"
+      "correct": "Kind regards",
+      "traduccion": {
+        "pregunta": "Elige una frase adecuada para terminar un mensaje profesional:",
+        "opciones": [
+          "Te hablo luego (abreviatura informal de 'Talk To You Later')",
+          "Un cordial saludo",
+          "¡Chao! (italiano informal)",
+          "Luego, amigo (muy informal)"
+        ],
+        "correcta": "Un cordial saludo (Kind regards)"
+      },
+      "explicacion": "'Kind regards' es una despedida formal estándar. 'TTYL' es abreviatura de chat, 'Ciao' es italiano informal, y 'Later buddy' es muy coloquial."
     },
     {
       "id": 27,
@@ -323,7 +609,18 @@
         "Translating the text",
         "Writing a summary"
       ],
-      "correct": "Searching for specific information"
+      "correct": "Searching for specific information",
+      "traduccion": {
+        "pregunta": "¿Qué es el 'scanning' en la lectura?",
+        "opciones": [
+          "Leer cada palabra con cuidado",
+          "Buscar información específica",
+          "Traducir el texto",
+          "Escribir un resumen"
+        ],
+        "correcta": "Buscar información específica"
+      },
+      "explicacion": "'Scanning' es una técnica de lectura para buscar información concreta sin leer todo el texto (como buscar un número de teléfono). Diferente del 'skimming', que es leer por encima para captar la idea general."
     },
     {
       "id": 28,
@@ -335,7 +632,18 @@
         "Sequencing connector",
         "Preposition"
       ],
-      "correct": "Sequencing connector"
+      "correct": "Sequencing connector",
+      "traduccion": {
+        "pregunta": "¿Qué tipo de palabra es 'finally' en: 'Por último, completa el formulario'?",
+        "opciones": [
+          "Verbo modal",
+          "Adjetivo",
+          "Conector de secuencia",
+          "Preposición"
+        ],
+        "correcta": "Conector de secuencia"
+      },
+      "explicacion": "'Finally' (por último/finalmente) es un conector de secuencia que indica el último paso en una serie. Junto con 'first', 'then', 'next', se usa para ordenar acciones en el tiempo."
     },
     {
       "id": 29,
@@ -347,7 +655,18 @@
         "Rude opening",
         "Casual message"
       ],
-      "correct": "Formal greeting"
+      "correct": "Formal greeting",
+      "traduccion": {
+        "pregunta": "¿Qué indica 'Dear Sir or Madam'?",
+        "opciones": [
+          "Saludo informal",
+          "Saludo formal",
+          "Apertura grosera",
+          "Mensaje casual"
+        ],
+        "correcta": "Saludo formal"
+      },
+      "explicacion": "'Dear Sir or Madam' (Estimado señor/señora) es el saludo formal que se usa cuando no se conoce el nombre del destinatario. Es la fórmula más formal para correspondencia oficial en inglés."
     },
     {
       "id": 30,
@@ -359,7 +678,18 @@
         "A grammar checker",
         "Cambridge Dictionary"
       ],
-      "correct": "Cambridge Dictionary"
+      "correct": "Cambridge Dictionary",
+      "traduccion": {
+        "pregunta": "¿Qué herramienta es mejor para comprobar el significado de vocabulario en contexto?",
+        "opciones": [
+          "Google Translate (puede dar traducciones inexactas)",
+          "Solo un tesauro (solo ofrece sinónimos)",
+          "Un corrector gramatical (no define palabras)",
+          "Diccionario Cambridge"
+        ],
+        "correcta": "Diccionario Cambridge"
+      },
+      "explicacion": "El Diccionario Cambridge es la herramienta más fiable: proporciona definiciones, ejemplos de uso en contexto y pronunciación. Google Translate puede ser inexacto, un tesauro solo da sinónimos, y un corrector gramatical no define vocabulario."
     },
     {
       "id": 31,
@@ -371,7 +701,18 @@
         "I am submitting the report now.",
         "The team will submit the report."
       ],
-      "correct": "The report is submitted every Friday."
+      "correct": "The report is submitted every Friday.",
+      "traduccion": {
+        "pregunta": "¿Qué oración contiene una construcción pasiva?",
+        "opciones": [
+          "Ella entrega el informe cada viernes. (activa)",
+          "El informe es entregado cada viernes. (pasiva)",
+          "Estoy entregando el informe ahora. (activa, presente continuo)",
+          "El equipo entregará el informe. (activa, futuro)"
+        ],
+        "correcta": "El informe es entregado cada viernes."
+      },
+      "explicacion": "La voz pasiva se forma con 'to be + participio pasado'. 'The report is submitted' (el informe es entregado) es voz pasiva. Las otras son voz activa, donde el sujeto realiza la acción."
     },
     {
       "id": 32,
@@ -383,7 +724,18 @@
         "Should I leave earlier today?",
         "Will I leave earlier today?"
       ],
-      "correct": "Could I leave a bit earlier today?"
+      "correct": "Could I leave a bit earlier today?",
+      "traduccion": {
+        "pregunta": "Elige el modal correcto para pedir permiso de forma educada.",
+        "opciones": [
+          "¿Debo irme antes hoy? (obligación)",
+          "¿Podría irme un poco antes hoy? (permiso educado)",
+          "¿Debería irme antes hoy? (consejo/opinión)",
+          "¿Me iré antes hoy? (predicción, no permiso)"
+        ],
+        "correcta": "¿Podría irme un poco antes hoy?"
+      },
+      "explicacion": "'Could I...?' es la forma más educada de pedir permiso. 'Must I?' sugiere obligación, 'Should I?' pide consejo, y 'Will I?' hace predicciones, no pide permiso."
     },
     {
       "id": 33,
@@ -395,7 +747,18 @@
         "Alright guys, sit down!",
         "Well, we're here now."
       ],
-      "correct": "Good morning, thank you all for coming."
+      "correct": "Good morning, thank you all for coming.",
+      "traduccion": {
+        "pregunta": "¿Qué expresión es apropiada para abrir una reunión formal?",
+        "opciones": [
+          "¡Hola a todos, empecemos! (informal)",
+          "Buenos días, gracias a todos por venir.",
+          "¡Bien chicos, sentaos! (brusco e informal)",
+          "Bueno, ya estamos aquí. (informal y poco profesional)"
+        ],
+        "correcta": "Buenos días, gracias a todos por venir."
+      },
+      "explicacion": "'Good morning, thank you all for coming.' es la única opción formal y profesional. Incluye saludo formal y agradece la asistencia, estableciendo el tono adecuado para una reunión."
     },
     {
       "id": 34,
@@ -407,7 +770,18 @@
         "No way!",
         "You don't know what you're talking about."
       ],
-      "correct": "I get your point, but I have a different opinion."
+      "correct": "I get your point, but I have a different opinion.",
+      "traduccion": {
+        "pregunta": "¿Qué expresión muestra desacuerdo de forma educada?",
+        "opciones": [
+          "¡Eso está completamente equivocado! (agresivo)",
+          "Entiendo tu punto, pero tengo una opinión diferente.",
+          "¡De ninguna manera! (brusco)",
+          "No sabes de lo que estás hablando. (ofensivo)"
+        ],
+        "correcta": "Entiendo tu punto, pero tengo una opinión diferente."
+      },
+      "explicacion": "'I get your point, but I have a different opinion.' muestra desacuerdo respetuoso: primero reconoce la perspectiva del otro y luego expresa la propia. Las demás son agresivas o groseras."
     },
     {
       "id": 35,
@@ -419,7 +793,18 @@
         "First, log in. Then, upload the file.",
         "Next, log in. Previously, upload the file."
       ],
-      "correct": "First, log in. Then, upload the file."
+      "correct": "First, log in. Then, upload the file.",
+      "traduccion": {
+        "pregunta": "Selecciona el uso correcto de los conectores de secuencia.",
+        "opciones": [
+          "Después, inicia sesión. Antes, sube el archivo. (orden ilógico)",
+          "Después, inicia sesión. Primero, sube el archivo. (orden ilógico)",
+          "Primero, inicia sesión. Luego, sube el archivo.",
+          "Después, inicia sesión. Anteriormente, sube el archivo. (ilógico)"
+        ],
+        "correcta": "Primero, inicia sesión. Luego, sube el archivo."
+      },
+      "explicacion": "Los conectores de secuencia siguen un orden lógico: 'First' → 'Then/Next' → 'Finally'. La opción correcta muestra el orden lógico: primero inicias sesión y luego subes el archivo."
     },
     {
       "id": 36,
@@ -431,7 +816,18 @@
         "Thank you for your time. Have a nice day.",
         "Ok, later."
       ],
-      "correct": "Thank you for your time. Have a nice day."
+      "correct": "Thank you for your time. Have a nice day.",
+      "traduccion": {
+        "pregunta": "¿Qué dirías para cerrar una llamada telefónica profesional?",
+        "opciones": [
+          "¡Adiós! (informal)",
+          "¡Hasta luego! (informal)",
+          "Gracias por su tiempo. Que tenga un buen día.",
+          "Ok, luego. (informal)"
+        ],
+        "correcta": "Gracias por su tiempo. Que tenga un buen día."
+      },
+      "explicacion": "'Thank you for your time. Have a nice day.' es la despedida formal para llamadas profesionales: agradece el tiempo y se despide cordialmente. Las otras son demasiado informales."
     },
     {
       "id": 37,
@@ -443,7 +839,18 @@
         "I updated the inventory now.",
         "I will update the inventory now."
       ],
-      "correct": "I'm updating the inventory now."
+      "correct": "I'm updating the inventory now.",
+      "traduccion": {
+        "pregunta": "¿Qué frase usa el Presente Continuo correctamente en contexto?",
+        "opciones": [
+          "Actualizo el inventario ahora. (presente simple, hábito)",
+          "Estoy actualizando el inventario ahora.",
+          "Actualicé el inventario ahora. (pasado simple, incorrecto con 'now')",
+          "Actualizaré el inventario ahora. (futuro)"
+        ],
+        "correcta": "Estoy actualizando el inventario ahora."
+      },
+      "explicacion": "El Presente Continuo (am/is/are + verbo-ing) se usa para acciones que ocurren en este momento. 'Now' confirma que la acción está ocurriendo justo ahora."
     },
     {
       "id": 38,
@@ -455,7 +862,18 @@
         "I've worked in a logistics company for two years.",
         "I am working in a logistics company for two years."
       ],
-      "correct": "I've worked in a logistics company for two years."
+      "correct": "I've worked in a logistics company for two years.",
+      "traduccion": {
+        "pregunta": "Elige la respuesta correcta para una entrevista usando Presente Perfecto.",
+        "opciones": [
+          "Trabajo en una empresa de logística por dos años. (presente simple, incorrecto)",
+          "Trabajé en una empresa de logística durante dos años. (pasado simple)",
+          "He trabajado en una empresa de logística durante dos años.",
+          "Estoy trabajando en una empresa de logística durante dos años. (incorrecto con 'for')"
+        ],
+        "correcta": "He trabajado en una empresa de logística durante dos años."
+      },
+      "explicacion": "El Presente Perfecto ('have + participio') se usa para experiencias pasadas relevantes en el presente. 'For two years' con experiencia acumulada hasta ahora requiere Presente Perfecto."
     },
     {
       "id": 39,
@@ -467,7 +885,18 @@
         "Therefore",
         "Meanwhile"
       ],
-      "correct": "However"
+      "correct": "However",
+      "traduccion": {
+        "pregunta": "¿Qué conector introduce mejor una idea contrastante?",
+        "opciones": [
+          "Además (añade información similar)",
+          "Sin embargo (introduce contraste)",
+          "Por lo tanto (introduce consecuencia)",
+          "Mientras tanto (indica simultaneidad)"
+        ],
+        "correcta": "Sin embargo (However)"
+      },
+      "explicacion": "'However' (sin embargo) introduce una idea que contrasta con la anterior. 'Furthermore' añade información, 'Therefore' introduce consecuencia, y 'Meanwhile' indica simultaneidad."
     },
     {
       "id": 40,
@@ -479,7 +908,18 @@
         "Would you like a cup of coffee?",
         "Coffee you want?"
       ],
-      "correct": "Would you like a cup of coffee?"
+      "correct": "Would you like a cup of coffee?",
+      "traduccion": {
+        "pregunta": "¿Cuál es una oferta educada correcta?",
+        "opciones": [
+          "¿Quieres café? (directo, informal)",
+          "¿Te doy café? (orden de palabras incorrecto)",
+          "¿Le gustaría una taza de café?",
+          "¿Café quieres? (orden incorrecto, incorrecto gramaticalmente)"
+        ],
+        "correcta": "¿Le gustaría una taza de café?"
+      },
+      "explicacion": "'Would you like...?' es la forma estándar y educada de ofrecer algo. 'Do you want...?' es más directo e informal. Las otras dos tienen orden incorrecto de palabras."
     },
     {
       "id": 41,
@@ -491,7 +931,18 @@
         "The product is delivering.",
         "They have delivered the product."
       ],
-      "correct": "The product has been delivered."
+      "correct": "The product has been delivered.",
+      "traduccion": {
+        "pregunta": "¿Cuál es una oración pasiva correcta usando Presente Perfecto?",
+        "opciones": [
+          "El producto fue entregado. (pasiva en Pasado Simple)",
+          "El producto ha sido entregado. (pasiva en Presente Perfecto)",
+          "El producto está entregando. (activa incorrecta, Presente Continuo)",
+          "Ellos han entregado el producto. (activa en Presente Perfecto)"
+        ],
+        "correcta": "El producto ha sido entregado."
+      },
+      "explicacion": "La voz pasiva en Presente Perfecto se forma con 'has/have been + participio pasado'. 'Has been delivered' es la forma correcta. 'Was delivered' es Pasado Simple pasivo."
     },
     {
       "id": 42,
@@ -503,7 +954,18 @@
         "I don't like my current boss.",
         "I only care about the salary."
       ],
-      "correct": "I'm very motivated and enjoy learning."
+      "correct": "I'm very motivated and enjoy learning.",
+      "traduccion": {
+        "pregunta": "¿Qué frase se usa comúnmente en una entrevista de trabajo?",
+        "opciones": [
+          "Necesito mucho este trabajo. (poco profesional)",
+          "Estoy muy motivado/a y disfruto aprendiendo.",
+          "No me gusta mi jefe actual. (inapropiado)",
+          "Solo me importa el salario. (inapropiado)"
+        ],
+        "correcta": "Estoy muy motivado/a y disfruto aprendiendo."
+      },
+      "explicacion": "En una entrevista debes mostrar motivación y actitud positiva. Las otras opciones son negativas o inapropiadas: nunca hables mal de jefes anteriores ni des la impresión de que solo te importa el dinero."
     },
     {
       "id": 43,
@@ -515,7 +977,18 @@
         "I'm too busy.",
         "Ask someone else."
       ],
-      "correct": "I'd be happy to assist you."
+      "correct": "I'd be happy to assist you.",
+      "traduccion": {
+        "pregunta": "¿Qué expresión muestra disposición para ayudar en el trabajo?",
+        "opciones": [
+          "Eso no es mi trabajo. (negativo)",
+          "Estaré encantado/a de ayudarte.",
+          "Estoy demasiado ocupado/a. (negativo)",
+          "Pregúntale a otra persona. (negativo)"
+        ],
+        "correcta": "Estaré encantado/a de ayudarte."
+      },
+      "explicacion": "'I'd be happy to assist you.' muestra actitud positiva y colaborativa. 'Assist' (asistir) es el término formal de 'help'. Las demás son negativas y demuestran falta de colaboración."
     },
     {
       "id": 44,
@@ -527,7 +1000,18 @@
         "Would you mind explaining it again?",
         "Would you mind explains it again?"
       ],
-      "correct": "Would you mind explaining it again?"
+      "correct": "Would you mind explaining it again?",
+      "traduccion": {
+        "pregunta": "Elige la solicitud educada correcta usando 'Would you mind…?'",
+        "opciones": [
+          "¿Te importaría explicarlo de nuevo? (incorrecto: 'to explain' no va con 'mind')",
+          "¿Te importaría explicado de nuevo? (incorrecto: participio)",
+          "¿Te importaría explicarlo de nuevo?",
+          "¿Te importaría explica de nuevo? (incorrecto: 3ª persona del singular)"
+        ],
+        "correcta": "¿Te importaría explicarlo de nuevo?"
+      },
+      "explicacion": "Después de 'Would you mind', siempre se usa el gerundio (verbo + -ing). 'Would you mind explaining...?' es la única estructura correcta."
     },
     {
       "id": 45,
@@ -539,7 +1023,18 @@
         "That's enough for now.",
         "That's all from me. Thank you for listening."
       ],
-      "correct": "That's all from me. Thank you for listening."
+      "correct": "That's all from me. Thank you for listening.",
+      "traduccion": {
+        "pregunta": "¿Cuál es el mejor cierre para una mini-presentación?",
+        "opciones": [
+          "El final. (abrupto)",
+          "Ok, he terminado. (informal)",
+          "Eso es suficiente por ahora. (poco cortés)",
+          "Eso es todo de mi parte. Gracias por escuchar."
+        ],
+        "correcta": "Eso es todo de mi parte. Gracias por escuchar."
+      },
+      "explicacion": "'That's all from me. Thank you for listening.' es el cierre profesional estándar: indica que has terminado y agradece la atención del público. Las otras suenan abruptas o informales."
     },
     {
       "id": 46,
@@ -551,7 +1046,18 @@
         "Greeting – Purpose – Details – Closing – Signature",
         "Header – Content – Footer – Attachment"
       ],
-      "correct": "Greeting – Purpose – Details – Closing – Signature"
+      "correct": "Greeting – Purpose – Details – Closing – Signature",
+      "traduccion": {
+        "pregunta": "¿Cuál es la estructura correcta de un correo profesional?",
+        "opciones": [
+          "Título – Subtítulo – Cuerpo – Conclusión",
+          "Tema – Argumentos – Evidencia – Resumen",
+          "Saludo – Propósito – Detalles – Despedida – Firma",
+          "Cabecera – Contenido – Pie – Adjunto"
+        ],
+        "correcta": "Saludo – Propósito – Detalles – Despedida – Firma"
+      },
+      "explicacion": "Un correo profesional completo tiene: Saludo (Dear...), Propósito (te escribo para...), Detalles, Despedida (Best regards...) y Firma. Asegura claridad y profesionalidad."
     },
     {
       "id": 47,
@@ -563,7 +1069,18 @@
         "We have completed the safety inspection.",
         "We had completed the safety inspection."
       ],
-      "correct": "We have completed the safety inspection."
+      "correct": "We have completed the safety inspection.",
+      "traduccion": {
+        "pregunta": "¿Qué oración usa correctamente el Presente Perfecto en un informe?",
+        "opciones": [
+          "Completamos la inspección de seguridad. (Pasado Simple)",
+          "Estamos completando la inspección de seguridad. (Presente Continuo)",
+          "Hemos completado la inspección de seguridad.",
+          "Habíamos completado la inspección de seguridad. (Pasado Perfecto)"
+        ],
+        "correcta": "Hemos completado la inspección de seguridad."
+      },
+      "explicacion": "El Presente Perfecto ('have/has + participio') en informes indica una acción reciente con relevancia en el presente. 'We have completed' indica que la inspección está lista y sus resultados son actuales."
     },
     {
       "id": 48,
@@ -575,7 +1092,18 @@
         "Send the report.",
         "Can you send the report?"
       ],
-      "correct": "I would appreciate it if you could send the report."
+      "correct": "I would appreciate it if you could send the report.",
+      "traduccion": {
+        "pregunta": "Elige la mejor solicitud formal para un correo profesional.",
+        "opciones": [
+          "Por favor, envíame el informe lo antes posible. ('ASAP' es informal)",
+          "Le agradecería que pudiera enviar el informe.",
+          "Envía el informe. (imperativo directo, brusco)",
+          "¿Puedes enviar el informe? (informal)"
+        ],
+        "correcta": "Le agradecería que pudiera enviar el informe."
+      },
+      "explicacion": "'I would appreciate it if you could...' es la estructura más formal para hacer una petición. Usa el condicional ('would', 'could') que suaviza la petición y muestra cortesía."
     },
     {
       "id": 49,
@@ -587,7 +1115,18 @@
         "The technician is repairing the equipment yesterday.",
         "The technician repaired the equipment yesterday."
       ],
-      "correct": "The technician repaired the equipment yesterday."
+      "correct": "The technician repaired the equipment yesterday.",
+      "traduccion": {
+        "pregunta": "¿Cuál es la oración correcta en pasado simple en un informe?",
+        "opciones": [
+          "El técnico repara el equipo ayer. (presente simple, incorrecto)",
+          "El técnico ha reparado el equipo ayer. (Presente Perfecto no va con 'yesterday')",
+          "El técnico está reparando el equipo ayer. (Presente Continuo, incorrecto)",
+          "El técnico reparó el equipo ayer."
+        ],
+        "correcta": "El técnico reparó el equipo ayer."
+      },
+      "explicacion": "'Yesterday' indica un tiempo pasado específico, lo que requiere Pasado Simple. El Presente Perfecto no se combina con 'yesterday'."
     },
     {
       "id": 50,
@@ -599,7 +1138,18 @@
         "Numerous",
         "Tons of"
       ],
-      "correct": "Numerous"
+      "correct": "Numerous",
+      "traduccion": {
+        "pregunta": "¿Qué palabra reemplaza mejor 'a lot of' en escritura formal?",
+        "opciones": [
+          "Montones de (coloquial)",
+          "Cargas de (coloquial)",
+          "Numerosos/as (formal)",
+          "Toneladas de (coloquial)"
+        ],
+        "correcta": "Numerosos/as (Numerous)"
+      },
+      "explicacion": "'Numerous' (numerosos) es la única opción formal. 'Heaps of', 'Loads of' y 'Tons of' son expresiones muy coloquiales que no deben usarse en textos profesionales."
     },
     {
       "id": 51,
@@ -611,7 +1161,18 @@
         "Recived",
         "Received"
       ],
-      "correct": "Received"
+      "correct": "Received",
+      "traduccion": {
+        "pregunta": "Elige la ortografía correcta en un contexto profesional.",
+        "opciones": [
+          "Recibido (incorrecto)",
+          "Recibido (incorrecto)",
+          "Recibido (incorrecto)",
+          "Recibido (correcto)"
+        ],
+        "correcta": "Received (Recibido)"
+      },
+      "explicacion": "La ortografía correcta es 'Received'. La regla inglesa 'i before e, except after c' aplica: después de 'c' se escribe 'ei' (rec-ei-ved). Las otras son errores ortográficos comunes."
     },
     {
       "id": 52,
@@ -623,7 +1184,18 @@
         "First, check the container label.",
         "In the end, check the container label."
       ],
-      "correct": "First, check the container label."
+      "correct": "First, check the container label.",
+      "traduccion": {
+        "pregunta": "¿Qué oración usa un conector de secuencia correcto?",
+        "opciones": [
+          "Después, comprueba la etiqueta. ('After' necesita complemento: 'After that...')",
+          "Antes de todo, comprueba la etiqueta. ('Before all' no es expresión correcta en inglés)",
+          "Primero, comprueba la etiqueta del contenedor.",
+          "Al final, comprueba la etiqueta. ('In the end' = al final de todo el proceso)"
+        ],
+        "correcta": "Primero, comprueba la etiqueta del contenedor."
+      },
+      "explicacion": "'First' (primero) es el conector correcto para el primer paso. 'After' necesita complemento ('After that'), 'Before all' no es inglés correcto (sería 'First of all'), y 'In the end' cierra una narración completa."
     },
     {
       "id": 53,
@@ -635,7 +1207,18 @@
         "TTYL",
         "Later"
       ],
-      "correct": "Kind regards"
+      "correct": "Kind regards",
+      "traduccion": {
+        "pregunta": "¿Qué despedida de correo es más apropiada en escritura formal?",
+        "opciones": [
+          "Saludos (informal, uso coloquial británico)",
+          "Un cordial saludo",
+          "Hablamos luego (abreviatura de chat informal)",
+          "Luego (muy informal)"
+        ],
+        "correcta": "Un cordial saludo (Kind regards)"
+      },
+      "explicacion": "'Kind regards' es una despedida formal estándar. 'Cheers' es informal, 'TTYL' ('Talk To You Later') es una abreviatura de chat, y 'Later' es muy coloquial."
     },
     {
       "id": 54,
@@ -647,7 +1230,18 @@
         "These folders are their.",
         "These folders are theirs."
       ],
-      "correct": "These folders are theirs."
+      "correct": "These folders are theirs.",
+      "traduccion": {
+        "pregunta": "¿Qué pronombre es posesivo?",
+        "opciones": [
+          "Estas carpetas son ellos. ('they' = pronombre sujeto)",
+          "Estas carpetas son a ellos. ('them' = pronombre objeto)",
+          "Estas carpetas son su. ('their' = adjetivo posesivo, necesita sustantivo)",
+          "Estas carpetas son suyas."
+        ],
+        "correcta": "Estas carpetas son suyas."
+      },
+      "explicacion": "'Theirs' es el pronombre posesivo de tercera persona plural (de ellos). Los pronombres posesivos reemplazan al sustantivo: 'these are theirs'. 'Their' es adjetivo posesivo y necesita un sustantivo después: 'their folders'."
     },
     {
       "id": 55,
@@ -659,7 +1253,18 @@
         "Present Simple",
         "Future Simple"
       ],
-      "correct": "Present Simple"
+      "correct": "Present Simple",
+      "traduccion": {
+        "pregunta": "¿Qué tipo de oración es 'Entregamos productos todos los días'?",
+        "opciones": [
+          "Presente Continuo (are delivering)",
+          "Pasado Simple (delivered)",
+          "Presente Simple",
+          "Futuro Simple (will deliver)"
+        ],
+        "correcta": "Presente Simple"
+      },
+      "explicacion": "El Presente Simple se usa para acciones habituales o rutinas. 'Every day' indica rutina, y 'deliver' está en su forma base. Es la acción que se realiza regularmente."
     },
     {
       "id": 56,
@@ -671,7 +1276,18 @@
         "Signature – Date – Client – Products – Comments",
         "Products – Client – Comments – Date – Signature"
       ],
-      "correct": "Date – Client – Products – Comments – Signature"
+      "correct": "Date – Client – Products – Comments – Signature",
+      "traduccion": {
+        "pregunta": "Elige el orden correcto para un albarán de entrega.",
+        "opciones": [
+          "Cliente – Productos – Fecha – Firma – Comentarios",
+          "Fecha – Cliente – Productos – Comentarios – Firma",
+          "Firma – Fecha – Cliente – Productos – Comentarios",
+          "Productos – Cliente – Comentarios – Fecha – Firma"
+        ],
+        "correcta": "Fecha – Cliente – Productos – Comentarios – Firma"
+      },
+      "explicacion": "Un albarán sigue el orden lógico: Fecha del documento, datos del Cliente, lista de Productos entregados, Comentarios adicionales, y Firma de conformidad al final."
     },
     {
       "id": 57,
@@ -683,7 +1299,18 @@
         "Assist",
         "Manage"
       ],
-      "correct": "Assist"
+      "correct": "Assist",
+      "traduccion": {
+        "pregunta": "¿Cuál es un sinónimo profesional de 'help' (ayuda)?",
+        "opciones": [
+          "Hacer",
+          "Arreglar",
+          "Asistir/Ayudar",
+          "Gestionar"
+        ],
+        "correcta": "Asistir (Assist)"
+      },
+      "explicacion": "'Assist' (asistir) es el sinónimo formal de 'help'. 'I'll assist you' suena más profesional que 'I'll help you'. 'Do', 'Fix' y 'Manage' tienen significados distintos."
     },
     {
       "id": 58,
@@ -695,7 +1322,18 @@
         "Ask for",
         "Request"
       ],
-      "correct": "Request"
+      "correct": "Request",
+      "traduccion": {
+        "pregunta": "¿Qué palabra encaja con un tono profesional?",
+        "opciones": [
+          "Querer (contracción coloquial muy informal de 'want to')",
+          "Necesitar (neutro, algo informal)",
+          "Pedir (informal)",
+          "Solicitar (formal)"
+        ],
+        "correcta": "Solicitar (Request)"
+      },
+      "explicacion": "'Request' (solicitar) es el término más formal. 'Wanna' es coloquial ('want to'), 'Need' es neutro pero informal, y 'Ask for' también es informal. En escritura profesional, 'request' es el más apropiado."
     },
     {
       "id": 59,
@@ -707,7 +1345,18 @@
         "Therefore",
         "Meanwhile"
       ],
-      "correct": "Therefore"
+      "correct": "Therefore",
+      "traduccion": {
+        "pregunta": "¿Qué conector expresa mejor una consecuencia?",
+        "opciones": [
+          "Sin embargo (contraste)",
+          "Aunque (concesión)",
+          "Por lo tanto (consecuencia)",
+          "Mientras tanto (simultaneidad)"
+        ],
+        "correcta": "Por lo tanto (Therefore)"
+      },
+      "explicacion": "'Therefore' (por lo tanto) introduce una consecuencia lógica de lo anterior. Ejemplo: 'The report was incomplete; therefore, we delayed the meeting.' (El informe estaba incompleto; por lo tanto, aplazamos la reunión.)"
     },
     {
       "id": 60,
@@ -719,7 +1368,18 @@
         "I apologise for the delay.",
         "I was delayed."
       ],
-      "correct": "I apologise for the delay."
+      "correct": "I apologise for the delay.",
+      "traduccion": {
+        "pregunta": "¿Cuál es un ejemplo de disculpa formal por escrito?",
+        "opciones": [
+          "Lo siento por llegar tarde. (informal)",
+          "¡Error mío! (muy coloquial)",
+          "Me disculpo por el retraso.",
+          "Me retrasé. (describe un hecho, no se disculpa)"
+        ],
+        "correcta": "Me disculpo por el retraso."
+      },
+      "explicacion": "'I apologise for the delay.' usa el verbo formal 'apologise' (disculparse). 'Sorry' es informal, 'My bad!' es muy coloquial, y 'I was delayed.' solo describe un hecho sin pedir disculpas."
     },
     {
       "id": 61,
@@ -731,7 +1391,18 @@
         "seldom",
         "yesterday"
       ],
-      "correct": "usually"
+      "correct": "usually",
+      "traduccion": {
+        "pregunta": "Yo __ repaso mis apuntes después de cenar todos los días.",
+        "opciones": [
+          "nunca",
+          "normalmente",
+          "raramente",
+          "ayer (adverbio de tiempo, no de frecuencia)"
+        ],
+        "correcta": "normalmente (usually)"
+      },
+      "explicacion": "'Every day' indica una acción frecuente. 'Usually' (normalmente) es el adverbio de frecuencia correcto. 'Never' contradice 'every day', 'seldom' significa raramente, y 'yesterday' es un momento concreto del pasado."
     },
     {
       "id": 62,
@@ -743,7 +1414,18 @@
         "watch",
         "watched"
       ],
-      "correct": "watching"
+      "correct": "watching",
+      "traduccion": {
+        "pregunta": "Ella sugirió __ el vídeo antes del examen.",
+        "opciones": [
+          "ver (gerundio: watching) ✓",
+          "ver (infinitivo con 'to')",
+          "ver (forma base)",
+          "vio/visto (pasado/participio)"
+        ],
+        "correcta": "ver (watching)"
+      },
+      "explicacion": "El verbo 'suggest' (sugerir) siempre va seguido de gerundio (verbo + -ing). Otros verbos que funcionan igual: avoid, enjoy, recommend, finish, consider."
     },
     {
       "id": 63,
@@ -755,7 +1437,18 @@
         "can",
         "are"
       ],
-      "correct": "will"
+      "correct": "will",
+      "traduccion": {
+        "pregunta": "Ellos __ terminar la tarea de vocabulario a tiempo si se concentran.",
+        "opciones": [
+          "deberán (formal, usado principalmente con I/we)",
+          "podrán/terminarán (futuro, predicción)",
+          "pueden (capacidad en el presente)",
+          "están (no forma futuro aquí)"
+        ],
+        "correcta": "terminarán (will)"
+      },
+      "explicacion": "'Will' se usa para predicciones. La estructura 'If + presente simple, will + infinitivo' es la condicional de primer tipo (consecuencias probables). 'Shall' es muy formal, 'can' expresa capacidad presente."
     },
     {
       "id": 64,
@@ -767,7 +1460,18 @@
         "created",
         "create"
       ],
-      "correct": "create"
+      "correct": "create",
+      "traduccion": {
+        "pregunta": "Deberías __ un glosario con términos profesionales.",
+        "opciones": [
+          "crea (3ª persona del singular, incorrecto)",
+          "creando (gerundio, incorrecto)",
+          "creado (participio, incorrecto)",
+          "crear (infinitivo, correcto)"
+        ],
+        "correcta": "crear (create)"
+      },
+      "explicacion": "Después de verbos modales (should, can, must, will, may...) siempre se usa el infinitivo sin 'to' (bare infinitive). 'You should create' es la forma correcta."
     },
     {
       "id": 65,
@@ -779,7 +1483,18 @@
         "planning",
         "trying"
       ],
-      "correct": "going"
+      "correct": "going",
+      "traduccion": {
+        "pregunta": "Voy __ a empezar un curso online la próxima semana.",
+        "opciones": [
+          "queriendo (no forma la estructura 'be going to')",
+          "going (estructura: be going to + infinitivo)",
+          "planeando (no forma la estructura correcta aquí)",
+          "intentando (no forma la estructura correcta aquí)"
+        ],
+        "correcta": "going (I'm going to start...)"
+      },
+      "explicacion": "La estructura 'be going to + infinitivo' se usa para planes futuros ya decididos. 'I'm going to start' es la forma correcta. 'Next week' confirma que es un plan futuro."
     },
     {
       "id": 66,
@@ -791,7 +1506,18 @@
         "read",
         "reads"
       ],
-      "correct": "reading"
+      "correct": "reading",
+      "traduccion": {
+        "pregunta": "Evitamos __ textos largos al principio.",
+        "opciones": [
+          "leer (infinitivo, incorrecto después de 'avoid')",
+          "leer (gerundio, correcto)",
+          "leer (forma base, incorrecto)",
+          "lee (3ª persona, incorrecto)"
+        ],
+        "correcta": "leer (reading)"
+      },
+      "explicacion": "El verbo 'avoid' (evitar) siempre va seguido de gerundio (verbo + -ing). Lo mismo con: suggest, recommend, enjoy, consider, finish."
     },
     {
       "id": 67,
@@ -803,7 +1529,18 @@
         "manage",
         "managed"
       ],
-      "correct": "manage"
+      "correct": "manage",
+      "traduccion": {
+        "pregunta": "Él necesita __ mejor su tiempo durante la semana.",
+        "opciones": [
+          "gestiona (3ª persona del singular, incorrecto)",
+          "gestionando (gerundio, incorrecto)",
+          "gestionar (infinitivo, correcto)",
+          "gestionó (pasado, incorrecto)"
+        ],
+        "correcta": "gestionar (manage)"
+      },
+      "explicacion": "Después de 'need to', se usa el infinitivo sin 'to' (la estructura ya incluye 'to'). 'He needs to manage' es la forma correcta. El verbo después de 'to' siempre está en forma base."
     },
     {
       "id": 68,
@@ -815,7 +1552,18 @@
         "going",
         "planning"
       ],
-      "correct": "going"
+      "correct": "going",
+      "traduccion": {
+        "pregunta": "¡Mira esas nubes! Va __ a llover pronto.",
+        "opciones": [
+          "will (no forma 'be going to')",
+          "about (formaría 'be about to', que también es correcto pero aquí falta 'to rain')",
+          "going (forma 'be going to' + infinitivo)",
+          "planning (no es la estructura correcta aquí)"
+        ],
+        "correcta": "going (It's going to rain...)"
+      },
+      "explicacion": "'Be going to' se usa para predicciones basadas en evidencia visible. Las nubes oscuras son la evidencia de que va a llover. 'It's going to rain' es la estructura correcta."
     },
     {
       "id": 69,
@@ -827,7 +1575,18 @@
         "will practise",
         "practise"
       ],
-      "correct": "practise"
+      "correct": "practise",
+      "traduccion": {
+        "pregunta": "Si __ todos los días, tu gramática mejorará.",
+        "opciones": [
+          "practica (3ª persona del singular, incorrecto para 'you')",
+          "practicó (pasado simple, incorrecto en condicional)",
+          "practicará (futuro, no se usa 'will' en la cláusula 'if')",
+          "practicas/practicas (2ª persona del presente simple)"
+        ],
+        "correcta": "practicas (practise)"
+      },
+      "explicacion": "En condicionales de primer tipo (If + presente simple, will + infinitivo), la cláusula con 'if' usa el presente simple. 'You practise' es la segunda persona correcta. Nunca se usa 'will' en la cláusula con 'if'."
     },
     {
       "id": 70,
@@ -839,7 +1598,18 @@
         "can",
         "shall"
       ],
-      "correct": "won't"
+      "correct": "won't",
+      "traduccion": {
+        "pregunta": "No __ terminar la tarea antes de las 6 si no nos concentramos.",
+        "opciones": [
+          "terminaremos (positivo, no encaja con el sentido)",
+          "no terminaremos (negativo, correcto)",
+          "podemos (capacidad, no encaja)",
+          "deberemos (muy formal, no encaja)"
+        ],
+        "correcta": "no terminaremos (won't)"
+      },
+      "explicacion": "'Won't' es la contracción de 'will not'. La oración expresa una consecuencia negativa: si no se concentran, no terminarán. 'If we don't focus' confirma la condición negativa."
     },
     {
       "id": 71,
@@ -851,7 +1621,18 @@
         "short",
         "detailed"
       ],
-      "correct": "clear"
+      "correct": "clear",
+      "traduccion": {
+        "pregunta": "Las instrucciones no eran muy __. No podía seguirlas.",
+        "opciones": [
+          "largas",
+          "claras",
+          "cortas",
+          "detalladas"
+        ],
+        "correcta": "claras (clear)"
+      },
+      "explicacion": "Si no podías seguir las instrucciones, significa que no eran claras (clear = claras, comprensibles). Las instrucciones podrían ser largas, cortas o detalladas y aun así ser comprensibles."
     },
     {
       "id": 72,
@@ -863,7 +1644,18 @@
         "organises",
         "organize"
       ],
-      "correct": "organises"
+      "correct": "organises",
+      "traduccion": {
+        "pregunta": "Él siempre __ su vocabulario en un diario personal.",
+        "opciones": [
+          "organizó (pasado simple)",
+          "organizando (gerundio, incorrecto)",
+          "organiza (3ª persona del presente simple, correcto)",
+          "organizar (infinitivo americano, incorrecto aquí)"
+        ],
+        "correcta": "organiza (organises)"
+      },
+      "explicacion": "'Always' indica hábito, lo que requiere Presente Simple. En 3ª persona del singular (he/she/it), el verbo lleva '-s/-es': 'organises'. La ortografía británica usa 's' (organises), la americana 'z' (organizes)."
     },
     {
       "id": 73,
@@ -875,7 +1667,18 @@
         "used",
         "use"
       ],
-      "correct": "using"
+      "correct": "using",
+      "traduccion": {
+        "pregunta": "Recomiendo __ un diccionario digital como Cambridge.",
+        "opciones": [
+          "usar (infinitivo con 'to', incorrecto después de 'recommend')",
+          "usar (gerundio, correcto)",
+          "usó/usado (pasado/participio, incorrecto)",
+          "usar (forma base, incorrecto)"
+        ],
+        "correcta": "usar (using)"
+      },
+      "explicacion": "El verbo 'recommend' (recomendar) va seguido de gerundio (verbo + -ing), igual que 'suggest', 'avoid', 'enjoy', 'consider'. 'I recommend using' es la forma correcta."
     },
     {
       "id": 74,
@@ -887,7 +1690,18 @@
         "played",
         "playing"
       ],
-      "correct": "don't play"
+      "correct": "don't play",
+      "traduccion": {
+        "pregunta": "Tendremos problemas para entender si no __ el audio de nuevo.",
+        "opciones": [
+          "ponemos (positivo, no encaja con el sentido)",
+          "no ponemos (negativo, correcto)",
+          "pusimos (pasado simple, incorrecto en condicional)",
+          "poniendo (gerundio, incorrecto)"
+        ],
+        "correcta": "no ponemos (don't play)"
+      },
+      "explicacion": "Lógica de la oración: 'Tendremos problemas si NO ponemos el audio'. La condición negativa ('don't play') es la que causa problemas. La estructura condicional requiere presente simple en la cláusula 'if'."
     },
     {
       "id": 75,
@@ -899,7 +1713,18 @@
         "new",
         "online"
       ],
-      "correct": "reliable"
+      "correct": "reliable",
+      "traduccion": {
+        "pregunta": "La herramienta que uses debe ser __ y precisa.",
+        "opciones": [
+          "cara",
+          "fiable/de confianza",
+          "nueva",
+          "online/en línea"
+        ],
+        "correcta": "fiable (reliable)"
+      },
+      "explicacion": "'Reliable' (fiable) y 'accurate' (precisa) forman un par lógico de cualidades esenciales para una buena herramienta de aprendizaje. Una herramienta puede ser cara, nueva u online, pero lo fundamental es que sea fiable y precisa."
     },
     {
       "id": 76,
@@ -911,7 +1736,18 @@
         "should",
         "will not"
       ],
-      "correct": "should"
+      "correct": "should",
+      "traduccion": {
+        "pregunta": "__ practicar si quieres alcanzar tus objetivos.",
+        "opciones": [
+          "no debes (prohibición, sentido contrario)",
+          "no puedes (niega capacidad, sentido contrario)",
+          "deberías (consejo/recomendación)",
+          "no lo harás (negación futura, sentido contrario)"
+        ],
+        "correcta": "deberías (should)"
+      },
+      "explicacion": "'Should' expresa consejo o recomendación. 'You should practise' = 'Deberías practicar' es un consejo para alcanzar objetivos. 'Must not' y 'cannot' son negativos y contradicen el mensaje positivo."
     },
     {
       "id": 77,
@@ -923,7 +1759,18 @@
         "decided",
         "has decided"
       ],
-      "correct": "decided"
+      "correct": "decided",
+      "traduccion": {
+        "pregunta": "Ella __ unirse al curso antes de comprobar las reseñas.",
+        "opciones": [
+          "decide (presente simple, no encaja con la narración pasada)",
+          "decidiendo (gerundio, incorrecto)",
+          "decidió (pasado simple, correcto)",
+          "ha decidido (presente perfecto, sin momento concreto especificado)"
+        ],
+        "correcta": "decidió (decided)"
+      },
+      "explicacion": "La oración describe un evento pasado concreto: tomó la decisión antes de ver las reseñas. 'Decided' es el Pasado Simple adecuado para narrar eventos pasados en una secuencia."
     },
     {
       "id": 78,
@@ -935,7 +1782,18 @@
         "-ful",
         "-ly"
       ],
-      "correct": "-ment"
+      "correct": "-ment",
+      "traduccion": {
+        "pregunta": "Elige la opción correcta: Creé una lista de términos con el sufijo __.",
+        "opciones": [
+          "-ness (forma sustantivos: happiness, sadness)",
+          "-ment (forma sustantivos profesionales: management, assessment)",
+          "-ful (forma adjetivos: helpful, careful)",
+          "-ly (forma adverbios: quickly, carefully)"
+        ],
+        "correcta": "-ment"
+      },
+      "explicacion": "El sufijo '-ment' se añade a verbos para crear sustantivos muy comunes en inglés profesional: manage→management, assess→assessment, develop→development, require→requirement. Es el sufijo más productivo en vocabulario laboral."
     },
     {
       "id": 79,
@@ -947,7 +1805,18 @@
         "open",
         "opened"
       ],
-      "correct": "open"
+      "correct": "open",
+      "traduccion": {
+        "pregunta": "Por favor __ la aplicación y sigue las instrucciones.",
+        "opciones": [
+          "abre (3ª persona del singular, incorrecto en imperativo)",
+          "abriendo (gerundio, incorrecto)",
+          "abre (imperativo, correcto)",
+          "abrió (pasado simple, incorrecto)"
+        ],
+        "correcta": "abre (imperativo: open)"
+      },
+      "explicacion": "En oraciones imperativas (instrucciones o peticiones), se usa la forma base del verbo. 'Please open the app' es un imperativo educado. 'Please' suaviza la orden."
     },
     {
       "id": 80,
@@ -959,7 +1828,18 @@
         "won't",
         "wouldn't"
       ],
-      "correct": "can"
+      "correct": "can",
+      "traduccion": {
+        "pregunta": "__ usar este planificador para organizar tu rutina de aprendizaje.",
+        "opciones": [
+          "no debes (prohibición, sentido contrario)",
+          "puedes (capacidad/posibilidad)",
+          "no lo harás (negativo, sentido contrario)",
+          "no lo harías (condicional negativo, sentido contrario)"
+        ],
+        "correcta": "puedes (can)"
+      },
+      "explicacion": "'Can' expresa capacidad o posibilidad. 'You can use this planner' = 'Puedes usar este planificador' sugiere que está disponible como opción. 'Must not' prohibiría su uso, lo contrario del mensaje."
     },
     {
       "id": 81,
@@ -971,7 +1851,18 @@
         "A replacement was promised, but not received.",
         "They promised a replacement, not received."
       ],
-      "correct": "A replacement was promised, but not received."
+      "correct": "A replacement was promised, but not received.",
+      "traduccion": {
+        "pregunta": "¿Qué oración pasiva es correcta para una queja?",
+        "opciones": [
+          "Alguien prometió un reemplazo pero no lo recibimos. (activa)",
+          "Se me prometió un reemplazo pero no lo recibí. (pasiva parcial)",
+          "Se prometió un reemplazo, pero no fue recibido. (completamente pasiva)",
+          "Prometieron un reemplazo, no recibido. (mezcla incorrecta)"
+        ],
+        "correcta": "Se prometió un reemplazo, pero no fue recibido."
+      },
+      "explicacion": "En cartas de queja formales, la voz pasiva centra la atención en los hechos, no en las personas. 'A replacement was promised, but not received.' usa voz pasiva correctamente en ambas partes y es la opción más formal."
     },
     {
       "id": 82,
@@ -983,7 +1874,18 @@
         "To make the text more informal",
         "To focus on the actions instead of the person"
       ],
-      "correct": "To focus on the actions instead of the person"
+      "correct": "To focus on the actions instead of the person",
+      "traduccion": {
+        "pregunta": "¿Por qué se usa a menudo la voz pasiva en informes o quejas?",
+        "opciones": [
+          "Porque es más fácil de escribir",
+          "Para evitar usar vocabulario técnico",
+          "Para hacer el texto más informal",
+          "Para centrarse en las acciones en lugar de en la persona"
+        ],
+        "correcta": "Para centrarse en las acciones en lugar de en la persona"
+      },
+      "explicacion": "La voz pasiva hace el texto más objetivo e impersonal: se enfoca en lo que ocurrió sin señalar directamente a un responsable. Es ideal para informes y quejas formales donde importan los hechos, no las personas."
     },
     {
       "id": 83,
@@ -995,7 +1897,18 @@
         "Hello,",
         "Hey there,"
       ],
-      "correct": "Dear Sir or Madam,"
+      "correct": "Dear Sir or Madam,",
+      "traduccion": {
+        "pregunta": "¿Cómo debes comenzar una carta formal cuando no sabes el nombre del destinatario?",
+        "opciones": [
+          "Estimado señor/señora, (fórmula estándar en inglés británico)",
+          "A quien corresponda, (aceptable pero menos habitual en Europa)",
+          "Hola, (informal)",
+          "Hola, (muy informal)"
+        ],
+        "correcta": "Estimado señor/señora, (Dear Sir or Madam,)"
+      },
+      "explicacion": "'Dear Sir or Madam,' es el saludo formal estándar cuando no conoces el nombre del destinatario. Importante: si usas este saludo, la despedida correcta es 'Yours faithfully'."
     },
     {
       "id": 84,
@@ -1007,7 +1920,18 @@
         "Kind regards,",
         "Yours faithfully,"
       ],
-      "correct": "Yours faithfully,"
+      "correct": "Yours faithfully,",
+      "traduccion": {
+        "pregunta": "¿Qué despedida es correcta después de 'Dear Sir or Madam'?",
+        "opciones": [
+          "Atentamente (cuando conoces el nombre: Dear Mr. Smith → Yours sincerely)",
+          "Un cordial saludo (informal-formal, no sigue la regla estricta)",
+          "Un cordial saludo (informal-formal, no sigue la regla estricta)",
+          "Atentamente (cuando NO conoces el nombre: Dear Sir or Madam → Yours faithfully)"
+        ],
+        "correcta": "Yours faithfully,"
+      },
+      "explicacion": "Regla del inglés formal británico: si empiezas con 'Dear Sir or Madam' (sin nombre), terminas con 'Yours faithfully'. Si empiezas con el nombre ('Dear Mr. Smith'), terminas con 'Yours sincerely'."
     },
     {
       "id": 85,
@@ -1019,7 +1943,18 @@
         "Hi, I'm applying for the job.",
         "Please give me the Hospital Assistant position."
       ],
-      "correct": "I am writing to apply for the position of Hospital Assistant."
+      "correct": "I am writing to apply for the position of Hospital Assistant.",
+      "traduccion": {
+        "pregunta": "¿Cuál es la mejor oración de apertura para una carta de solicitud de empleo?",
+        "opciones": [
+          "Quiero el trabajo de Auxiliar de Hospital. (directo e informal)",
+          "Me dirijo a usted para solicitar el puesto de Auxiliar de Hospital.",
+          "Hola, estoy solicitando el trabajo. (informal)",
+          "Por favor, dame el puesto de Auxiliar de Hospital. (exigente e inapropiado)"
+        ],
+        "correcta": "Me dirijo a usted para solicitar el puesto de Auxiliar de Hospital."
+      },
+      "explicacion": "'I am writing to apply for the position of...' es la fórmula estándar para comenzar una carta de solicitud formal en inglés. Es la estructura más usada en cartas de presentación profesionales."
     },
     {
       "id": 86,
@@ -1031,7 +1966,18 @@
         "I need a job and hospitals hire people.",
         "I'm interested in hospitals since my childhood."
       ],
-      "correct": "I want to work in a hospital because I like helping people."
+      "correct": "I want to work in a hospital because I like helping people.",
+      "traduccion": {
+        "pregunta": "¿Qué oración explica de forma formal por qué quieres un trabajo en un hospital?",
+        "opciones": [
+          "Los hospitales molan y quiero trabajar allí. (coloquial: 'cool')",
+          "Quiero trabajar en un hospital porque me gusta ayudar a la gente.",
+          "Necesito trabajo y los hospitales contratan gente. (falta de motivación)",
+          "Me interesan los hospitales desde mi infancia. (error gramatical: 'since' necesita tiempo perfecto)"
+        ],
+        "correcta": "Quiero trabajar en un hospital porque me gusta ayudar a la gente."
+      },
+      "explicacion": "Esta es la única opción con motivación genuina, correcta gramaticalmente y apropiada para una carta formal. Muestra vocación de servicio. La última opción tiene error gramatical: con 'since' se usa el Presente Perfecto ('I have been interested')."
     },
     {
       "id": 87,
@@ -1043,7 +1989,18 @@
         "I would be grateful if you could consider me for an interview.",
         "Please interview me."
       ],
-      "correct": "I would be grateful if you could consider me for an interview."
+      "correct": "I would be grateful if you could consider me for an interview.",
+      "traduccion": {
+        "pregunta": "¿Qué oración es la forma más educada de solicitar una entrevista?",
+        "opciones": [
+          "¿Cuándo puedo venir a una entrevista? (directo, informal)",
+          "Quiero una entrevista. (demasiado directo)",
+          "Le estaría agradecido/a si pudiera considerarme para una entrevista.",
+          "Por favor, entrevístame. (imperativo brusco)"
+        ],
+        "correcta": "Le estaría agradecido/a si pudiera considerarme para una entrevista."
+      },
+      "explicacion": "'I would be grateful if you could...' es la estructura más formal y educada: usa el condicional ('would', 'could') que suaviza la petición y muestra humildad. Ideal para cartas de solicitud."
     },
     {
       "id": 88,
@@ -1055,7 +2012,18 @@
         "I need a replacement!",
         "Please fix this problem!"
       ],
-      "correct": "A refund or replacement is expected as soon as possible."
+      "correct": "A refund or replacement is expected as soon as possible.",
+      "traduccion": {
+        "pregunta": "En una carta de queja, ¿cuál es la solicitud de acción más formal?",
+        "opciones": [
+          "¡Devuélveme mi dinero! (agresivo e informal)",
+          "Se espera un reembolso o reemplazo lo antes posible.",
+          "¡Necesito un reemplazo! (directo e informal)",
+          "¡Por favor, soluciona este problema! (imperativo informal)"
+        ],
+        "correcta": "Se espera un reembolso o reemplazo lo antes posible."
+      },
+      "explicacion": "'A refund or replacement is expected...' usa voz pasiva para hacer la petición de forma impersonal y formal. No apunta directamente a la empresa, lo que resulta más diplomático y profesional."
     },
     {
       "id": 89,
@@ -1067,7 +2035,18 @@
         "I like chatting and helping out.",
         "I have good communication skills and I enjoy working with people."
       ],
-      "correct": "I have good communication skills and I enjoy working with people."
+      "correct": "I have good communication skills and I enjoy working with people.",
+      "traduccion": {
+        "pregunta": "¿Qué oración está escrita en estilo formal para una carta de solicitud?",
+        "opciones": [
+          "Soy genial con la gente y hablo rápido. (coloquial: 'fast talker')",
+          "La gente dice que soy muy agradable para hablar. (informal: 'really nice')",
+          "Me gusta charlar y echar una mano. (coloquial: 'chatting', 'helping out')",
+          "Tengo buenas habilidades comunicativas y disfruto trabajando con personas."
+        ],
+        "correcta": "Tengo buenas habilidades comunicativas y disfruto trabajando con personas."
+      },
+      "explicacion": "Esta opción usa vocabulario formal: 'communication skills' (habilidades comunicativas) y 'enjoy working with people'. Las otras usan expresiones coloquiales ('chatting', 'helping out', 'fast talker') inapropiadas para una carta formal."
     },
     {
       "id": 90,
@@ -1079,7 +2058,18 @@
         "have lived",
         "live"
       ],
-      "correct": "have lived"
+      "correct": "have lived",
+      "traduccion": {
+        "pregunta": "He _______ en este pueblo desde que era niño/a.",
+        "opciones": [
+          "viví (Pasado Simple, acción terminada)",
+          "estoy viviendo (Presente Continuo, sin duración desde el pasado)",
+          "he vivido (Presente Perfecto, desde el pasado hasta ahora)",
+          "vivo (Presente Simple, sin indicar duración)"
+        ],
+        "correcta": "he vivido (have lived)"
+      },
+      "explicacion": "El Presente Perfecto ('have/has + participio') con 'since' expresa una acción que comenzó en el pasado y continúa en el presente. 'Since I was a child' indica el punto de inicio, y la persona sigue viviendo allí ahora."
     },
     {
       "id": 91,
@@ -1091,7 +2081,18 @@
         "might",
         "could"
       ],
-      "correct": "is going to"
+      "correct": "is going to",
+      "traduccion": {
+        "pregunta": "¡Mira esas nubes oscuras! Va _______ a llover pronto.",
+        "opciones": [
+          "va a (predicción basada en evidencia visible)",
+          "lloverá (predicción sin evidencia inmediata)",
+          "podría (posibilidad incierta)",
+          "podría (posibilidad incierta)"
+        ],
+        "correcta": "va a (is going to)"
+      },
+      "explicacion": "'Be going to' se usa para predicciones basadas en evidencia visible. Las nubes oscuras son la evidencia de que va a llover. 'Will' se usa para predicciones sin evidencia visual inmediata."
     },
     {
       "id": 92,
@@ -1103,7 +2104,18 @@
         "will",
         "shall"
       ],
-      "correct": "will"
+      "correct": "will",
+      "traduccion": {
+        "pregunta": "Te prometo que _______ ayudarte con tu carta más tarde.",
+        "opciones": [
+          "voy a (plan previo, no promesa espontánea)",
+          "ayudaría (condicional, no promesa directa)",
+          "ayudaré (promesa espontánea)",
+          "deberé (muy formal y arcaico)"
+        ],
+        "correcta": "ayudaré (will)"
+      },
+      "explicacion": "'Will' se usa para promesas espontáneas. Cuando alguien hace una promesa en el momento ('I promise I will...'), usa 'will'. 'Am going to' sería para un plan ya decidido, no una promesa."
     },
     {
       "id": 93,
@@ -1115,7 +2127,18 @@
         "has gone",
         "went"
       ],
-      "correct": "goes"
+      "correct": "goes",
+      "traduccion": {
+        "pregunta": "Todos los lunes, ella _______ al hospital como voluntaria.",
+        "opciones": [
+          "está yendo (Presente Continuo, acción en este momento, no rutina)",
+          "va (Presente Simple, rutina habitual)",
+          "ha ido (Presente Perfecto, no para rutinas regulares)",
+          "fue (Pasado Simple, acción terminada en el pasado)"
+        ],
+        "correcta": "va (goes)"
+      },
+      "explicacion": "'Every Monday' indica una rutina, lo que requiere Presente Simple. En 3ª persona del singular (she), el verbo lleva '-s/-es': 'goes'. El Presente Continuo describiría una acción en este momento, no un hábito."
     },
     {
       "id": 94,
@@ -1127,7 +2150,18 @@
         "shall",
         "will"
       ],
-      "correct": "will"
+      "correct": "will",
+      "traduccion": {
+        "pregunta": "¡Ten cuidado! Esa caja parece pesada. Yo _______ cargarla por ti.",
+        "opciones": [
+          "voy a (plan previo, no decisión espontánea)",
+          "cargaría (condicional, no ofrecimiento directo)",
+          "deberé (muy formal, no habitual en inglés moderno para ofrecimientos)",
+          "cargaré (decisión/ofrecimiento espontáneo)"
+        ],
+        "correcta": "cargaré (will)"
+      },
+      "explicacion": "'Will' se usa para decisiones y ofrecimientos espontáneos tomados en el momento de hablar. Al ver la caja pesada, la persona decide en ese instante ofrecer su ayuda: 'I'll carry it for you'."
     },
     {
       "id": 95,
@@ -1139,7 +2173,18 @@
         "would",
         "must"
       ],
-      "correct": "are going to"
+      "correct": "are going to",
+      "traduccion": {
+        "pregunta": "Vamos _______ a visitar a mis abuelos este fin de semana. Ya está planeado.",
+        "opciones": [
+          "visitaremos (decisión espontánea o predicción, no plan previo)",
+          "vamos a (plan futuro ya decidido)",
+          "visitaríamos (condicional, no encaja)",
+          "debemos (obligación, no encaja)"
+        ],
+        "correcta": "vamos a (are going to)"
+      },
+      "explicacion": "'Be going to' se usa para planes futuros ya decididos. 'It's already planned' confirma que es un plan previo. 'Will' se usaría para decisiones espontáneas o predicciones sin evidencia previa."
     }
   ]
 }

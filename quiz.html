@@ -164,8 +164,27 @@
     .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .4s ease; }
 
     .question-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 24px; }
-    .q-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .q-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; }
+    .q-meta-left { display: flex; align-items: center; gap: 8px; }
     .q-difficulty { font-size: .72rem; color: var(--muted); }
+    .btn-translate {
+      background: var(--surface2); border: 1px solid var(--border);
+      color: var(--muted); font-size: .75rem; font-weight: 600;
+      padding: 4px 12px; border-radius: 8px; cursor: pointer;
+      transition: all .15s; white-space: nowrap;
+    }
+    .btn-translate:hover { border-color: var(--accent); color: var(--text); }
+    .btn-translate.active { background: #2d2f6b; border-color: var(--accent); color: var(--accent-h); }
+    .explanation-box {
+      display: none; margin-top: 12px; padding: 12px 14px;
+      background: #0f2233; border: 1px solid #1e4060;
+      border-radius: 8px; font-size: .85rem; line-height: 1.65; color: #93c5fd;
+    }
+    .result-explanation {
+      margin-top: 8px; padding: 8px 12px;
+      background: #0f2233; border-left: 2px solid #3b82f6;
+      border-radius: 0 6px 6px 0; font-size: .8rem; line-height: 1.6; color: #93c5fd;
+    }
     .question-text { font-size: 1.1rem; line-height: 1.65; font-weight: 500; margin-bottom: 20px; }
 
     .options-list { display: flex; flex-direction: column; gap: 9px; }
@@ -318,12 +337,16 @@
 
   <div class="question-card">
     <div class="q-meta">
-      <span class="tag" id="unit-tag"></span>
-      <span class="q-difficulty" id="q-diff"></span>
+      <div class="q-meta-left">
+        <span class="tag" id="unit-tag"></span>
+        <span class="q-difficulty" id="q-diff"></span>
+      </div>
+      <button class="btn-translate" id="btn-translate" onclick="toggleTranslation()" style="display:none">🌐 Traducir</button>
     </div>
     <div class="question-text" id="q-text"></div>
     <div class="options-list" id="opts"></div>
     <div class="feedback-msg" id="feedback"></div>
+    <div class="explanation-box" id="explanation-box"></div>
     <div class="next-wrap" id="next-wrap">
       <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Siguiente →</button>
       <div class="kbd-hint">Pulsa <kbd>Enter</kbd> o <kbd>Espacio</kbd> para continuar</div>
@@ -359,7 +382,7 @@
   let allQ = [], subjectName = '', selQ = [];
   let curIdx = 0, score = 0, answers = [];
   let mode = 'random', progress = {}, selUnits = new Set();
-  let answered = false;
+  let answered = false, isTranslated = false;
 
   // ══ DATA PATH (ruta relativa desde quiz.html a la carpeta data/) ══
   const DATA_PATH = 'data/';
@@ -552,7 +575,7 @@
     const n = parseInt(document.getElementById('num-slider').value);
     const fq = filteredQ();
     const base = mode === 'smart' ? smartSelect(fq, n) : shuffle([...fq]).slice(0, n);
-    selQ = base.map(q => ({ ...q, options: shuffle([...q.options]) }));
+    selQ = base.map(q => ({ ...q, originalOptions: [...q.options], options: shuffle([...q.options]) }));
     curIdx = 0; score = 0; answers = []; answered = false;
 
     document.getElementById('quiz-subj').textContent = subjectName;
@@ -567,6 +590,7 @@
   // ══ RENDER QUESTION ══
   function renderQ() {
     answered = false;
+    isTranslated = false;
     const q = selQ[curIdx];
     document.getElementById('q-cur').textContent = curIdx + 1;
     document.getElementById('prog-fill').style.width = (curIdx / selQ.length * 100) + '%';
@@ -585,19 +609,49 @@
 
     document.getElementById('q-text').textContent = q.question;
 
+    const btnTr = document.getElementById('btn-translate');
+    if (q.traduccion) {
+      btnTr.style.display = '';
+      btnTr.textContent = '🌐 Traducir';
+      btnTr.classList.remove('active');
+    } else {
+      btnTr.style.display = 'none';
+    }
+
     const opts = document.getElementById('opts');
     opts.innerHTML = '';
     q.options.forEach((opt, i) => {
       const btn = document.createElement('button');
       btn.className = 'opt-btn';
       btn.dataset.opt = opt;
-      btn.innerHTML = `<span class="opt-key">${i + 1}</span>${opt}`;
+      btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${opt}</span>`;
       btn.onclick = () => { if (!answered) answerQ(opt, q.correct, btn, q.id); };
       opts.appendChild(btn);
     });
 
     document.getElementById('feedback').className = 'feedback-msg';
+    document.getElementById('explanation-box').style.display = 'none';
     document.getElementById('next-wrap').classList.remove('show');
+  }
+
+  // ══ TRANSLATION TOGGLE ══
+  function getTranslatedOption(q, opt) {
+    if (!q.traduccion) return opt;
+    const idx = q.originalOptions.indexOf(opt);
+    return idx >= 0 ? q.traduccion.opciones[idx] : opt;
+  }
+
+  function toggleTranslation() {
+    isTranslated = !isTranslated;
+    const q = selQ[curIdx];
+    const btnTr = document.getElementById('btn-translate');
+    document.getElementById('q-text').textContent = isTranslated ? q.traduccion.pregunta : q.question;
+    document.querySelectorAll('.opt-btn .opt-text').forEach((span, i) => {
+      const opt = q.options[i];
+      span.textContent = isTranslated ? getTranslatedOption(q, opt) : opt;
+    });
+    btnTr.textContent = isTranslated ? '🌐 Original' : '🌐 Traducir';
+    btnTr.classList.toggle('active', isTranslated);
   }
 
   // ══ ANSWER ══
@@ -611,11 +665,24 @@
     if (!ok) clicked.classList.add('wrong');
     if (ok) score++;
     recordAnswer(qid, ok);
-    answers.push({ question: selQ[curIdx].question, unit: selQ[curIdx].unit, sel, correct, ok });
+    const q = selQ[curIdx];
+    answers.push({ question: q.question, unit: q.unit, sel, correct, ok, explicacion: q.explicacion || null });
 
     const fb = document.getElementById('feedback');
-    if (ok) { fb.textContent = '✓ ¡Correcto!'; fb.className = 'feedback-msg show ok'; }
-    else { fb.textContent = `✗ La respuesta correcta es: "${correct}"`; fb.className = 'feedback-msg show fail'; }
+    if (ok) {
+      fb.textContent = '✓ ¡Correcto!';
+      fb.className = 'feedback-msg show ok';
+    } else {
+      const correctDisplay = isTranslated && q.traduccion ? q.traduccion.correcta : correct;
+      fb.textContent = `✗ La respuesta correcta es: "${correctDisplay}"`;
+      fb.className = 'feedback-msg show fail';
+    }
+
+    const expl = document.getElementById('explanation-box');
+    if (q.explicacion) {
+      expl.textContent = q.explicacion;
+      expl.style.display = 'block';
+    }
 
     const isLast = curIdx === selQ.length - 1;
     document.getElementById('next-btn').textContent = isLast ? 'Ver resultados →' : 'Siguiente →';
@@ -695,6 +762,7 @@
             <span class="a-icon">✓</span>
             <span class="a-correct"><span class="a-lbl">Correcta:</span>${a.correct}</span>
           </div>
+          ${a.explicacion ? `<div class="result-explanation">${a.explicacion}</div>` : ''}
         </div>`;
       list.appendChild(d);
     });
