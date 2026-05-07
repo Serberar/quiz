@@ -2185,6 +2185,1708 @@
         "correcta": "vamos a (are going to)"
       },
       "explicacion": "'Be going to' se usa para planes futuros ya decididos. 'It's already planned' confirma que es un plan previo. 'Will' se usaría para decisiones espontáneas o predicciones sin evidencia previa."
+    },
+    {
+      "id": 96,
+      "unit": "General",
+      "question": "Which greeting is most appropriate in a formal workplace email?",
+      "options": [
+        "Hi buddy",
+        "What's up?",
+        "Hey there",
+        "Dear Mr. Smith"
+      ],
+      "correct": "Dear Mr. Smith",
+      "traduccion": {
+        "pregunta": "¿Qué saludo es más apropiado en un correo de trabajo formal?",
+        "opciones": [
+          "Hola amigo (informal)",
+          "¿Qué pasa? (informal)",
+          "Hola (informal)",
+          "Estimado Sr. Smith"
+        ],
+        "correcta": "Estimado Sr. Smith"
+      },
+      "explicacion": "'Dear Mr. Smith' es el saludo formal estándar en correos profesionales. Las otras opciones son expresiones coloquiales completamente inapropiadas en comunicaciones de trabajo."
+    },
+    {
+      "id": 97,
+      "unit": "General",
+      "question": "Which sentence is a polite request?",
+      "options": [
+        "Give me that document",
+        "Could you help me, please?",
+        "You must help me",
+        "Send me the file now"
+      ],
+      "correct": "Could you help me, please?",
+      "traduccion": {
+        "pregunta": "¿Qué oración es una petición educada?",
+        "opciones": [
+          "Dame ese documento (imperativo directo, brusco)",
+          "¿Podría ayudarme, por favor?",
+          "Debes ayudarme (obligación, no petición)",
+          "Envíame el archivo ahora (imperativo brusco)"
+        ],
+        "correcta": "¿Podría ayudarme, por favor?"
+      },
+      "explicacion": "'Could you help me, please?' usa el modal 'could' y 'please' para suavizar la petición. Las otras son imperativas o expresan obligación, lo que resulta brusco e inapropiado."
+    },
+    {
+      "id": 98,
+      "unit": "General",
+      "question": "Which modal verb expresses obligation?",
+      "options": [
+        "Might",
+        "Must",
+        "Could",
+        "Can"
+      ],
+      "correct": "Must",
+      "traduccion": {
+        "pregunta": "¿Qué verbo modal expresa obligación?",
+        "opciones": [
+          "Might (posibilidad: podría)",
+          "Must (obligación: debe/hay que)",
+          "Could (posibilidad educada: podría)",
+          "Can (capacidad/permiso: puede)"
+        ],
+        "correcta": "Must (obligación)"
+      },
+      "explicacion": "'Must' expresa obligación fuerte (es necesario, hay que). 'Might' y 'could' expresan posibilidad, y 'can' expresa capacidad o permiso. Ejemplo: 'You must wear a helmet' (Debes llevar casco)."
+    },
+    {
+      "id": 99,
+      "unit": "General",
+      "question": "Which sentence uses Present Simple correctly?",
+      "options": [
+        "I am work every Monday",
+        "I worked every Monday",
+        "I am working every Monday",
+        "I work every Monday"
+      ],
+      "correct": "I work every Monday",
+      "traduccion": {
+        "pregunta": "¿Qué oración usa el Presente Simple correctamente?",
+        "opciones": [
+          "Yo estoy trabajo cada lunes (incorrecto gramaticalmente)",
+          "Trabajé cada lunes (Pasado Simple, incorrecto para hablar de hábitos)",
+          "Estoy trabajando cada lunes (Presente Continuo, para hábitos no es el correcto)",
+          "Trabajo cada lunes"
+        ],
+        "correcta": "Trabajo cada lunes"
+      },
+      "explicacion": "El Presente Simple se usa para acciones habituales. 'Every Monday' indica un hábito, por lo que 'I work' es correcto. 'Am work' es incorrecto gramaticalmente y 'am working' es Presente Continuo (para acciones en curso)."
+    },
+    {
+      "id": 100,
+      "unit": "General",
+      "question": "What does 'invoice' mean?",
+      "options": [
+        "Order",
+        "Meeting",
+        "Payment document",
+        "Schedule"
+      ],
+      "correct": "Payment document",
+      "traduccion": {
+        "pregunta": "¿Qué significa 'invoice'?",
+        "opciones": [
+          "Pedido",
+          "Reunión",
+          "Documento de pago (factura)",
+          "Horario/agenda"
+        ],
+        "correcta": "Documento de pago (factura)"
+      },
+      "explicacion": "'Invoice' (factura) es el documento que detalla los productos o servicios prestados y el importe a pagar. Es un término clave en entornos laborales de logística y comercio."
+    },
+    {
+      "id": 101,
+      "unit": "General",
+      "question": "Which expression is formal?",
+      "options": [
+        "See ya",
+        "Kind regards",
+        "Cheers!",
+        "Thanks a lot, mate"
+      ],
+      "correct": "Kind regards",
+      "traduccion": {
+        "pregunta": "¿Qué expresión es formal?",
+        "opciones": [
+          "Hasta luego (muy informal)",
+          "Un cordial saludo",
+          "¡Gracias! (informal, uso británico coloquial)",
+          "Muchas gracias, amigo (informal)"
+        ],
+        "correcta": "Un cordial saludo (Kind regards)"
+      },
+      "explicacion": "'Kind regards' es una fórmula de despedida formal usada en correos y cartas profesionales. Las otras son expresiones coloquiales o informales."
+    },
+    {
+      "id": 102,
+      "unit": "General",
+      "question": "Which phrase is used to introduce yourself professionally?",
+      "options": [
+        "Whatever you need",
+        "This is my stuff",
+        "My name is Laura and I'm the assistant",
+        "I'm just here"
+      ],
+      "correct": "My name is Laura and I'm the assistant",
+      "traduccion": {
+        "pregunta": "¿Qué frase se usa para presentarse profesionalmente?",
+        "opciones": [
+          "Lo que necesites (no es una presentación)",
+          "Esto es lo mío (no tiene sentido como presentación)",
+          "Me llamo Laura y soy la asistente",
+          "Solo estoy aquí (vago e informal)"
+        ],
+        "correcta": "Me llamo Laura y soy la asistente"
+      },
+      "explicacion": "'My name is Laura and I'm the assistant' proporciona nombre y cargo de forma clara y profesional. Una buena presentación siempre incluye el nombre y la función o puesto."
+    },
+    {
+      "id": 103,
+      "unit": "General",
+      "question": "What is the main function of workplace instructions?",
+      "options": [
+        "To sell a product",
+        "To tell a story",
+        "To describe feelings",
+        "To explain how to do a task"
+      ],
+      "correct": "To explain how to do a task",
+      "traduccion": {
+        "pregunta": "¿Cuál es la función principal de las instrucciones en el trabajo?",
+        "opciones": [
+          "Para vender un producto",
+          "Para contar una historia",
+          "Para describir sentimientos",
+          "Para explicar cómo hacer una tarea"
+        ],
+        "correcta": "Para explicar cómo hacer una tarea"
+      },
+      "explicacion": "Las instrucciones de trabajo tienen como objetivo guiar al usuario paso a paso para completar una tarea correctamente. No son publicidad, narración ni expresión de emociones."
+    },
+    {
+      "id": 104,
+      "unit": "General",
+      "question": "Which sentence is an imperative?",
+      "options": [
+        "You closed the door",
+        "You will close the door",
+        "You are closing the door",
+        "Close the door"
+      ],
+      "correct": "Close the door",
+      "traduccion": {
+        "pregunta": "¿Qué oración es un imperativo?",
+        "opciones": [
+          "Cerraste la puerta (Pasado Simple, afirmación)",
+          "Cerrarás la puerta (futuro, predicción)",
+          "Estás cerrando la puerta (Presente Continuo, descripción)",
+          "Cierra la puerta (imperativo, orden/instrucción)"
+        ],
+        "correcta": "Cierra la puerta (Close the door)"
+      },
+      "explicacion": "El imperativo se forma con la base del verbo sin sujeto. Se usa para dar órdenes, instrucciones o peticiones directas. 'Close the door' = Cierra la puerta."
+    },
+    {
+      "id": 105,
+      "unit": "General",
+      "question": "Which option is an informal greeting?",
+      "options": [
+        "Good morning",
+        "To whom it may concern",
+        "Hi!",
+        "Dear Sir"
+      ],
+      "correct": "Hi!",
+      "traduccion": {
+        "pregunta": "¿Cuál es un saludo informal?",
+        "opciones": [
+          "Buenos días (formal)",
+          "A quien corresponda (muy formal, para cartas)",
+          "¡Hola! (informal)",
+          "Estimado señor (formal)"
+        ],
+        "correcta": "¡Hola! (Hi!)"
+      },
+      "explicacion": "'Hi!' es un saludo informal apropiado entre amigos o en contextos casuales, pero no en comunicaciones profesionales escritas. Las otras opciones son formales."
+    },
+    {
+      "id": 106,
+      "unit": "General",
+      "question": "Skimming is used to:",
+      "options": [
+        "Write a summary",
+        "Translate every word",
+        "Find grammar mistakes",
+        "Get the general idea of a text"
+      ],
+      "correct": "Get the general idea of a text",
+      "traduccion": {
+        "pregunta": "El 'skimming' se usa para:",
+        "opciones": [
+          "Escribir un resumen",
+          "Traducir cada palabra",
+          "Encontrar errores gramaticales",
+          "Obtener la idea general de un texto"
+        ],
+        "correcta": "Obtener la idea general de un texto"
+      },
+      "explicacion": "'Skimming' es leer rápidamente por encima para captar la idea general sin leer cada palabra. Se diferencia del 'scanning', que busca información específica."
+    },
+    {
+      "id": 107,
+      "unit": "General",
+      "question": "Scanning is used to:",
+      "options": [
+        "Read slowly",
+        "Find specific information",
+        "Improve pronunciation",
+        "Write emails"
+      ],
+      "correct": "Find specific information",
+      "traduccion": {
+        "pregunta": "El 'scanning' se usa para:",
+        "opciones": [
+          "Leer despacio",
+          "Encontrar información específica",
+          "Mejorar la pronunciación",
+          "Escribir correos"
+        ],
+        "correcta": "Encontrar información específica"
+      },
+      "explicacion": "'Scanning' consiste en recorrer el texto visualmente para localizar datos concretos (un nombre, un número, una fecha) sin leer todo el contenido."
+    },
+    {
+      "id": 108,
+      "unit": "General",
+      "question": "Which tense is common in incident reports?",
+      "options": [
+        "Future Simple",
+        "Past Simple",
+        "Present Perfect Continuous",
+        "Present Continuous"
+      ],
+      "correct": "Past Simple",
+      "traduccion": {
+        "pregunta": "¿Qué tiempo verbal es habitual en los informes de incidentes?",
+        "opciones": [
+          "Futuro Simple (will + infinitivo)",
+          "Pasado Simple",
+          "Presente Perfecto Continuo (have been + -ing)",
+          "Presente Continuo (am/is/are + -ing)"
+        ],
+        "correcta": "Pasado Simple"
+      },
+      "explicacion": "Los informes de incidentes describen hechos que ya ocurrieron, por lo que se usa el Pasado Simple. Ejemplo: 'The machine stopped at 10:00. The technician arrived at 10:15.'"
+    },
+    {
+      "id": 109,
+      "unit": "General",
+      "question": "Which text type gives step-by-step actions?",
+      "options": [
+        "Advertisement",
+        "Report",
+        "Instructions",
+        "Email"
+      ],
+      "correct": "Instructions",
+      "traduccion": {
+        "pregunta": "¿Qué tipo de texto da acciones paso a paso?",
+        "opciones": [
+          "Anuncio publicitario",
+          "Informe",
+          "Instrucciones",
+          "Correo electrónico"
+        ],
+        "correcta": "Instrucciones"
+      },
+      "explicacion": "Las instrucciones están diseñadas para guiar al lector mediante pasos secuenciales (first, then, finally). Usan imperativos y conectores de secuencia para indicar el orden de las acciones."
+    },
+    {
+      "id": 110,
+      "unit": "General",
+      "question": "What is the purpose of professional emails?",
+      "options": [
+        "Workplace communication",
+        "Entertainment",
+        "Creative writing",
+        "Personal opinions"
+      ],
+      "correct": "Workplace communication",
+      "traduccion": {
+        "pregunta": "¿Cuál es el propósito de los correos profesionales?",
+        "opciones": [
+          "Comunicación laboral",
+          "Entretenimiento",
+          "Escritura creativa",
+          "Opiniones personales"
+        ],
+        "correcta": "Comunicación laboral"
+      },
+      "explicacion": "Los correos profesionales sirven para comunicarse en el entorno de trabajo: informar, solicitar, confirmar o coordinar tareas. No son para entretenimiento ni expresión personal."
+    },
+    {
+      "id": 111,
+      "unit": "General",
+      "question": "Which expression is a polite request?",
+      "options": [
+        "Could you help me?",
+        "You will do this",
+        "Do it now",
+        "I want this"
+      ],
+      "correct": "Could you help me?",
+      "traduccion": {
+        "pregunta": "¿Qué expresión es una petición educada?",
+        "opciones": [
+          "¿Podría ayudarme?",
+          "Harás esto (afirmación/orden implícita)",
+          "Hazlo ahora (imperativo brusco)",
+          "Quiero esto (demanda directa)"
+        ],
+        "correcta": "¿Podría ayudarme?"
+      },
+      "explicacion": "'Could you help me?' es una petición educada que usa 'could' para suavizar la pregunta. Las otras opciones son órdenes o demandas directas, inapropiadas para pedir ayuda."
+    },
+    {
+      "id": 112,
+      "unit": "General",
+      "question": "Connectors like 'first' and 'then' are used to:",
+      "options": [
+        "Express opinions",
+        "Sequence actions",
+        "Apologise",
+        "Show disagreement"
+      ],
+      "correct": "Sequence actions",
+      "traduccion": {
+        "pregunta": "Los conectores como 'first' y 'then' se usan para:",
+        "opciones": [
+          "Expresar opiniones",
+          "Secuenciar acciones (ordenarlas en el tiempo)",
+          "Disculparse",
+          "Mostrar desacuerdo"
+        ],
+        "correcta": "Secuenciar acciones"
+      },
+      "explicacion": "'First' (primero) y 'then' (luego/después) son conectores de secuencia que ordenan las acciones en el tiempo. Son esenciales en instrucciones y procedimientos de trabajo."
+    },
+    {
+      "id": 113,
+      "unit": "General",
+      "question": "Which modal verb is used for advice?",
+      "options": [
+        "Will",
+        "Have to",
+        "Must",
+        "Should"
+      ],
+      "correct": "Should",
+      "traduccion": {
+        "pregunta": "¿Qué verbo modal se usa para dar consejo?",
+        "opciones": [
+          "Will (futuro/promesas)",
+          "Have to (obligación externa)",
+          "Must (obligación fuerte/interna)",
+          "Should (consejo/recomendación)"
+        ],
+        "correcta": "Should (consejo)"
+      },
+      "explicacion": "'Should' expresa consejo o recomendación: 'You should practise every day' (Deberías practicar todos los días). 'Must' y 'have to' expresan obligación, y 'will' expresa futuro o promesas."
+    },
+    {
+      "id": 114,
+      "unit": "General",
+      "question": "What is a role-play used for?",
+      "options": [
+        "Memorising vocabulary",
+        "Writing essays",
+        "Grammar tests",
+        "Simulating real workplace situations"
+      ],
+      "correct": "Simulating real workplace situations",
+      "traduccion": {
+        "pregunta": "¿Para qué se usa el role-play (juego de rol)?",
+        "opciones": [
+          "Memorizar vocabulario",
+          "Escribir ensayos",
+          "Pruebas de gramática",
+          "Simular situaciones reales de trabajo"
+        ],
+        "correcta": "Simular situaciones reales de trabajo"
+      },
+      "explicacion": "El role-play consiste en representar situaciones del mundo real (llamadas, reuniones, atención al cliente) para practicar la comunicación oral en contextos profesionales de forma segura."
+    },
+    {
+      "id": 115,
+      "unit": "General",
+      "question": "Which phrase asks for clarification?",
+      "options": [
+        "I don't care",
+        "Stop talking",
+        "Could you repeat that, please?",
+        "That's wrong"
+      ],
+      "correct": "Could you repeat that, please?",
+      "traduccion": {
+        "pregunta": "¿Qué frase pide una aclaración?",
+        "opciones": [
+          "No me importa (descortés)",
+          "Para de hablar (grosero)",
+          "¿Podría repetir eso, por favor?",
+          "Eso está mal (no pide aclaración)"
+        ],
+        "correcta": "¿Podría repetir eso, por favor?"
+      },
+      "explicacion": "'Could you repeat that, please?' es la forma educada y profesional de pedir que se repita algo. Las otras opciones son groseras o no sirven para pedir aclaración."
+    },
+    {
+      "id": 116,
+      "unit": "General",
+      "question": "Which tense is common when talking about routines?",
+      "options": [
+        "Future Simple",
+        "Present Simple",
+        "Past Simple",
+        "Present Perfect"
+      ],
+      "correct": "Present Simple",
+      "traduccion": {
+        "pregunta": "¿Qué tiempo verbal es habitual para hablar de rutinas?",
+        "opciones": [
+          "Futuro Simple (will + infinitivo)",
+          "Presente Simple",
+          "Pasado Simple",
+          "Presente Perfecto (have/has + participio)"
+        ],
+        "correcta": "Presente Simple"
+      },
+      "explicacion": "El Presente Simple se usa para acciones habituales, rutinas y hechos generales. Ejemplo: 'I start work at 8:00 every day.' (Empiezo a trabajar a las 8 todos los días.)"
+    },
+    {
+      "id": 117,
+      "unit": "General",
+      "question": "What is a hesitation device?",
+      "options": [
+        "Expression like 'Well…'",
+        "Grammar rule",
+        "Tool",
+        "Email format"
+      ],
+      "correct": "Expression like 'Well…'",
+      "traduccion": {
+        "pregunta": "¿Qué es un recurso de vacilación (hesitation device)?",
+        "opciones": [
+          "Una expresión como 'Bueno…' o 'Este…'",
+          "Una regla gramatical",
+          "Una herramienta",
+          "Un formato de correo"
+        ],
+        "correcta": "Una expresión como 'Bueno…' (Well…)"
+      },
+      "explicacion": "Los hesitation devices son expresiones que usamos mientras pensamos para no dejar silencios incómodos: 'Well...', 'Let me think...', 'You know...', 'I mean...'. Hacen el habla más natural."
+    },
+    {
+      "id": 118,
+      "unit": "General",
+      "question": "Which is a professional opening in a call?",
+      "options": [
+        "Hello, how can I help you?",
+        "What do you want?",
+        "Yo!",
+        "Yeah?"
+      ],
+      "correct": "Hello, how can I help you?",
+      "traduccion": {
+        "pregunta": "¿Cuál es una apertura profesional en una llamada?",
+        "opciones": [
+          "Hola, ¿en qué puedo ayudarle?",
+          "¿Qué quieres? (brusco)",
+          "¡Ey! (muy informal)",
+          "¿Sí? (informal e impreciso)"
+        ],
+        "correcta": "Hola, ¿en qué puedo ayudarle?"
+      },
+      "explicacion": "'Hello, how can I help you?' es la fórmula estándar para responder llamadas en atención al cliente o en un entorno profesional. Saluda, se ofrece a ayudar y establece un tono servicial."
+    },
+    {
+      "id": 119,
+      "unit": "General",
+      "question": "Which is an example of polite disagreement?",
+      "options": [
+        "No way",
+        "That makes no sense",
+        "You are wrong",
+        "I see your point, but…"
+      ],
+      "correct": "I see your point, but…",
+      "traduccion": {
+        "pregunta": "¿Cuál es un ejemplo de desacuerdo educado?",
+        "opciones": [
+          "De ninguna manera (brusco)",
+          "Eso no tiene sentido (agresivo)",
+          "Estás equivocado (directo y ofensivo)",
+          "Entiendo tu punto, pero…"
+        ],
+        "correcta": "Entiendo tu punto, pero… (I see your point, but…)"
+      },
+      "explicacion": "'I see your point, but...' reconoce la perspectiva del otro antes de expresar desacuerdo, lo que es educado y profesional. Las otras opciones son agresivas o despectivas."
+    },
+    {
+      "id": 120,
+      "unit": "General",
+      "question": "Which form is used to give instructions?",
+      "options": [
+        "Infinitive with to",
+        "Imperative",
+        "Gerund",
+        "Past Continuous"
+      ],
+      "correct": "Imperative",
+      "traduccion": {
+        "pregunta": "¿Qué forma se usa para dar instrucciones?",
+        "opciones": [
+          "Infinitivo con 'to'",
+          "Imperativo",
+          "Gerundio (verbo + -ing)",
+          "Pasado Continuo (was/were + -ing)"
+        ],
+        "correcta": "Imperativo"
+      },
+      "explicacion": "El imperativo (base del verbo sin sujeto) se usa para dar instrucciones: 'Press the button', 'Close the door', 'Log in'. Es directo, claro y apropiado para manuales y procedimientos."
+    },
+    {
+      "id": 121,
+      "unit": "General",
+      "question": "What is the purpose of connectors in speech?",
+      "options": [
+        "Organise ideas clearly",
+        "Show emotions",
+        "Translate words",
+        "Make sentences longer"
+      ],
+      "correct": "Organise ideas clearly",
+      "traduccion": {
+        "pregunta": "¿Cuál es el propósito de los conectores en el habla?",
+        "opciones": [
+          "Organizar las ideas con claridad",
+          "Mostrar emociones",
+          "Traducir palabras",
+          "Hacer las oraciones más largas"
+        ],
+        "correcta": "Organizar las ideas con claridad"
+      },
+      "explicacion": "Los conectores (however, therefore, first, then...) sirven para estructurar y organizar el discurso de forma clara y lógica, facilitando la comprensión. No tienen como objetivo alargar las frases."
+    },
+    {
+      "id": 122,
+      "unit": "General",
+      "question": "Which sentence uses professional language?",
+      "options": [
+        "That sucks",
+        "It's acting weird",
+        "This thing is broken",
+        "The device is not working properly"
+      ],
+      "correct": "The device is not working properly",
+      "traduccion": {
+        "pregunta": "¿Qué oración usa lenguaje profesional?",
+        "opciones": [
+          "Eso es una porquería (muy coloquial)",
+          "Está funcionando raro (informal)",
+          "Esta cosa está rota (informal: 'thing')",
+          "El dispositivo no funciona correctamente"
+        ],
+        "correcta": "El dispositivo no funciona correctamente"
+      },
+      "explicacion": "'The device is not working properly' usa vocabulario técnico y formal: 'device' (dispositivo) y 'not working properly' (no funciona correctamente). Las otras usan argot o términos vagos."
+    },
+    {
+      "id": 123,
+      "unit": "General",
+      "question": "Which expression is used in customer service?",
+      "options": [
+        "Chill out",
+        "Let me check that for you",
+        "Calm down",
+        "Whatever"
+      ],
+      "correct": "Let me check that for you",
+      "traduccion": {
+        "pregunta": "¿Qué expresión se usa en atención al cliente?",
+        "opciones": [
+          "Tranquilízate (informal y condescendiente)",
+          "Permítame comprobarlo",
+          "Cálmate (brusco e inapropiado)",
+          "Lo que sea (muy grosero)"
+        ],
+        "correcta": "Permítame comprobarlo (Let me check that for you)"
+      },
+      "explicacion": "'Let me check that for you' es la respuesta profesional cuando un cliente tiene una consulta. Demuestra disposición a ayudar. 'Chill out' y 'calm down' son inapropiados con clientes."
+    },
+    {
+      "id": 124,
+      "unit": "General",
+      "question": "What does 'Would you mind…?' express?",
+      "options": [
+        "Obligation",
+        "Polite request",
+        "Order",
+        "Prohibition"
+      ],
+      "correct": "Polite request",
+      "traduccion": {
+        "pregunta": "¿Qué expresa 'Would you mind…?'",
+        "opciones": [
+          "Obligación",
+          "Petición educada",
+          "Orden",
+          "Prohibición"
+        ],
+        "correcta": "Petición educada"
+      },
+      "explicacion": "'Would you mind...?' (¿Le importaría...?) es una de las formas más educadas de hacer una petición en inglés. Va seguido de gerundio: 'Would you mind closing the window?'"
+    },
+    {
+      "id": 125,
+      "unit": "General",
+      "question": "Which is appropriate in a job interview?",
+      "options": [
+        "Jokes",
+        "Slang",
+        "Clear and polite language",
+        "Interruptions"
+      ],
+      "correct": "Clear and polite language",
+      "traduccion": {
+        "pregunta": "¿Qué es apropiado en una entrevista de trabajo?",
+        "opciones": [
+          "Chistes",
+          "Argot (lenguaje informal/coloquial)",
+          "Lenguaje claro y educado",
+          "Interrupciones"
+        ],
+        "correcta": "Lenguaje claro y educado"
+      },
+      "explicacion": "En una entrevista de trabajo debes comunicarte con claridad y educación. El argot, los chistes y las interrupciones dan una imagen poco profesional y pueden arruinar tus posibilidades."
+    },
+    {
+      "id": 126,
+      "unit": "General",
+      "question": "What should you use to justify an opinion?",
+      "options": [
+        "Reasons and examples",
+        "Silence",
+        "Emojis",
+        "Commands"
+      ],
+      "correct": "Reasons and examples",
+      "traduccion": {
+        "pregunta": "¿Qué debes usar para justificar una opinión?",
+        "opciones": [
+          "Razones y ejemplos",
+          "Silencio",
+          "Emoticonos",
+          "Órdenes"
+        ],
+        "correcta": "Razones y ejemplos"
+      },
+      "explicacion": "Para justificar una opinión en un contexto profesional se usan razones ('because', 'since') y ejemplos ('for example', 'such as'). Esto hace el argumento más convincente y creíble."
+    },
+    {
+      "id": 127,
+      "unit": "General",
+      "question": "Which structure is correct?",
+      "options": [
+        "I like very this job",
+        "I very like this job",
+        "I like this job very",
+        "I really like this job"
+      ],
+      "correct": "I really like this job",
+      "traduccion": {
+        "pregunta": "¿Cuál es la estructura correcta?",
+        "opciones": [
+          "Me gusta mucho este trabajo (incorrecto: 'very' no puede ir entre 'like' y el objeto)",
+          "Me gusta mucho este trabajo (incorrecto: el adverbio no va entre sujeto y verbo así)",
+          "Me gusta este trabajo mucho (incorrecto: 'very' no va al final)",
+          "Me gusta mucho este trabajo"
+        ],
+        "correcta": "Me gusta mucho este trabajo"
+      },
+      "explicacion": "'Really' intensifica el verbo y va justo antes de él: 'I really like'. 'Very' no puede intensificar verbos, solo adjetivos y adverbios. Además, los adverbios de intensidad van antes del verbo en inglés."
+    },
+    {
+      "id": 128,
+      "unit": "General",
+      "question": "What is the function of fillers like 'Let me think'?",
+      "options": [
+        "End conversations",
+        "Sound natural while speaking",
+        "Waste time",
+        "Replace grammar"
+      ],
+      "correct": "Sound natural while speaking",
+      "traduccion": {
+        "pregunta": "¿Cuál es la función de los fillers como 'Let me think' (déjame pensar)?",
+        "opciones": [
+          "Terminar conversaciones",
+          "Sonar natural al hablar",
+          "Perder tiempo",
+          "Reemplazar la gramática"
+        ],
+        "correcta": "Sonar natural al hablar"
+      },
+      "explicacion": "Los fillers ('Let me think', 'Well...', 'You know...') llenan pausas mientras formulamos nuestro pensamiento, haciendo el habla más fluida y natural. No son errores, sino herramientas de comunicación oral."
+    },
+    {
+      "id": 129,
+      "unit": "General",
+      "question": "Which is a formal equivalent of 'Hey'?",
+      "options": [
+        "Good morning",
+        "Hi mate",
+        "What's new",
+        "Yo"
+      ],
+      "correct": "Good morning",
+      "traduccion": {
+        "pregunta": "¿Cuál es el equivalente formal de 'Hey' (¡Ey!)?",
+        "opciones": [
+          "Buenos días (formal)",
+          "Hola, colega (informal)",
+          "¿Qué hay de nuevo? (informal)",
+          "¡Ey! (muy informal)"
+        ],
+        "correcta": "Buenos días (Good morning)"
+      },
+      "explicacion": "'Good morning' es el saludo formal que sustituye a expresiones informales como 'Hey', 'Hi mate' o 'Yo'. Se usa en entornos profesionales como reuniones, llamadas o correos."
+    },
+    {
+      "id": 130,
+      "unit": "General",
+      "question": "Oral presentations should have:",
+      "options": [
+        "No structure",
+        "Introduction, development and conclusion",
+        "Only opinions",
+        "Only images"
+      ],
+      "correct": "Introduction, development and conclusion",
+      "traduccion": {
+        "pregunta": "Las presentaciones orales deben tener:",
+        "opciones": [
+          "Sin estructura",
+          "Introducción, desarrollo y conclusión",
+          "Solo opiniones",
+          "Solo imágenes"
+        ],
+        "correcta": "Introducción, desarrollo y conclusión"
+      },
+      "explicacion": "Una presentación oral profesional tiene tres partes: Introducción (presentas el tema), Desarrollo (expones el contenido) y Conclusión (resumes y cierras). Esta estructura organiza las ideas y facilita la comprensión."
+    },
+    {
+      "id": 131,
+      "unit": "General",
+      "question": "Which is a professional document?",
+      "options": [
+        "Meme",
+        "Chat message",
+        "Incident report",
+        "Blog comment"
+      ],
+      "correct": "Incident report",
+      "traduccion": {
+        "pregunta": "¿Cuál es un documento profesional?",
+        "opciones": [
+          "Meme",
+          "Mensaje de chat",
+          "Informe de incidentes",
+          "Comentario de blog"
+        ],
+        "correcta": "Informe de incidentes"
+      },
+      "explicacion": "Un informe de incidentes (incident report) es un documento formal y profesional que registra lo que ocurrió, cuándo, dónde y cómo. Los memes, chats y comentarios de blog son contenido informal."
+    },
+    {
+      "id": 132,
+      "unit": "General",
+      "question": "What tense is used for completed events in reports?",
+      "options": [
+        "Present Simple",
+        "Present Continuous",
+        "Future Continuous",
+        "Past Simple"
+      ],
+      "correct": "Past Simple",
+      "traduccion": {
+        "pregunta": "¿Qué tiempo se usa para eventos completados en informes?",
+        "opciones": [
+          "Presente Simple (acciones habituales)",
+          "Presente Continuo (acciones en curso ahora)",
+          "Futuro Continuo (acciones en curso en el futuro)",
+          "Pasado Simple (eventos completados en el pasado)"
+        ],
+        "correcta": "Pasado Simple"
+      },
+      "explicacion": "Los informes describen eventos que ya ocurrieron y terminaron, por lo que se usa el Pasado Simple. Ejemplo: 'The alarm activated at 14:00. The team evacuated the building.'"
+    },
+    {
+      "id": 133,
+      "unit": "General",
+      "question": "Which email element comes first?",
+      "options": [
+        "Signature",
+        "Body",
+        "Closing",
+        "Greeting"
+      ],
+      "correct": "Greeting",
+      "traduccion": {
+        "pregunta": "¿Qué elemento del correo va primero?",
+        "opciones": [
+          "Firma",
+          "Cuerpo (contenido principal)",
+          "Despedida",
+          "Saludo"
+        ],
+        "correcta": "Saludo (Greeting)"
+      },
+      "explicacion": "La estructura de un correo profesional comienza siempre con el Saludo (Dear Mr./Ms...), seguido del Cuerpo, la Despedida (Best regards...) y finalmente la Firma."
+    },
+    {
+      "id": 134,
+      "unit": "General",
+      "question": "Which phrase is formal?",
+      "options": [
+        "Please find attached",
+        "Send me this",
+        "Need this now",
+        "ASAP now"
+      ],
+      "correct": "Please find attached",
+      "traduccion": {
+        "pregunta": "¿Qué frase es formal?",
+        "opciones": [
+          "Por favor, encuentre adjunto… (fórmula formal para adjuntar archivos)",
+          "Envíame esto (informal)",
+          "Necesito esto ya (informal y brusco)",
+          "ASAP ahora (abreviatura informal: 'as soon as possible')"
+        ],
+        "correcta": "Por favor, encuentre adjunto… (Please find attached)"
+      },
+      "explicacion": "'Please find attached' es la fórmula estándar en correos formales para indicar que se adjunta un documento. Ejemplo: 'Please find attached the report you requested.'"
+    },
+    {
+      "id": 135,
+      "unit": "General",
+      "question": "Why is structure important in writing?",
+      "options": [
+        "To look longer",
+        "To confuse the reader",
+        "To organise information clearly",
+        "To add vocabulary"
+      ],
+      "correct": "To organise information clearly",
+      "traduccion": {
+        "pregunta": "¿Por qué es importante la estructura en la escritura?",
+        "opciones": [
+          "Para que parezca más larga",
+          "Para confundir al lector",
+          "Para organizar la información con claridad",
+          "Para añadir vocabulario"
+        ],
+        "correcta": "Para organizar la información con claridad"
+      },
+      "explicacion": "La estructura en un texto profesional organiza las ideas de forma lógica y clara, facilitando la comprensión del lector. Un texto bien estructurado transmite el mensaje de forma eficaz."
+    },
+    {
+      "id": 136,
+      "unit": "General",
+      "question": "Which connector shows sequence?",
+      "options": [
+        "Although",
+        "First",
+        "Because",
+        "However"
+      ],
+      "correct": "First",
+      "traduccion": {
+        "pregunta": "¿Qué conector muestra secuencia?",
+        "opciones": [
+          "Although (aunque → contraste/concesión)",
+          "First (primero → secuencia)",
+          "Because (porque → causa)",
+          "However (sin embargo → contraste)"
+        ],
+        "correcta": "First (primero)"
+      },
+      "explicacion": "'First' (primero) es un conector de secuencia que indica el orden de las acciones. Va acompañado de 'then' (luego), 'next' (a continuación) y 'finally' (por último)."
+    },
+    {
+      "id": 137,
+      "unit": "General",
+      "question": "Which sentence is in Present Perfect?",
+      "options": [
+        "I am sending the email",
+        "I sent the email yesterday",
+        "I have sent the email",
+        "I send the email"
+      ],
+      "correct": "I have sent the email",
+      "traduccion": {
+        "pregunta": "¿Qué oración está en Presente Perfecto?",
+        "opciones": [
+          "Estoy enviando el correo (Presente Continuo: am + -ing)",
+          "Envié el correo ayer (Pasado Simple)",
+          "He enviado el correo (Presente Perfecto: have + participio)",
+          "Envío el correo (Presente Simple)"
+        ],
+        "correcta": "He enviado el correo (I have sent the email)"
+      },
+      "explicacion": "El Presente Perfecto se forma con 'have/has + participio pasado'. 'I have sent' es la única opción correcta. 'I am sending' es Presente Continuo y 'I sent' es Pasado Simple."
+    },
+    {
+      "id": 138,
+      "unit": "General",
+      "question": "Which is a formal closing?",
+      "options": [
+        "See ya",
+        "Talk soon",
+        "Yours sincerely",
+        "Bye"
+      ],
+      "correct": "Yours sincerely",
+      "traduccion": {
+        "pregunta": "¿Cuál es una despedida formal?",
+        "opciones": [
+          "Hasta luego (informal)",
+          "Hablamos pronto (informal)",
+          "Atentamente",
+          "Adiós (informal)"
+        ],
+        "correcta": "Atentamente (Yours sincerely)"
+      },
+      "explicacion": "'Yours sincerely' es la despedida formal que se usa cuando conoces el nombre del destinatario (Dear Mr. Smith → Yours sincerely). Si no conoces el nombre, se usa 'Yours faithfully'."
+    },
+    {
+      "id": 139,
+      "unit": "General",
+      "question": "Which word is more formal?",
+      "options": [
+        "Assist",
+        "Give",
+        "Help",
+        "Get"
+      ],
+      "correct": "Assist",
+      "traduccion": {
+        "pregunta": "¿Qué palabra es más formal?",
+        "opciones": [
+          "Asistir/Ayudar (formal)",
+          "Dar (neutro/informal)",
+          "Ayudar (informal/neutro)",
+          "Conseguir/Obtener (informal)"
+        ],
+        "correcta": "Asistir (Assist)"
+      },
+      "explicacion": "'Assist' es el equivalente formal de 'help'. En contextos profesionales, 'I will assist you' suena más adecuado que 'I will help you'. Los textos formales prefieren vocabulario de origen latino o más técnico."
+    },
+    {
+      "id": 140,
+      "unit": "General",
+      "question": "Why should professional texts be revised?",
+      "options": [
+        "To change the topic",
+        "To remove structure",
+        "To correct errors",
+        "To make them informal"
+      ],
+      "correct": "To correct errors",
+      "traduccion": {
+        "pregunta": "¿Por qué deben revisarse los textos profesionales?",
+        "opciones": [
+          "Para cambiar el tema",
+          "Para eliminar la estructura",
+          "Para corregir errores",
+          "Para hacerlos informales"
+        ],
+        "correcta": "Para corregir errores"
+      },
+      "explicacion": "Revisar un texto profesional antes de enviarlo sirve para detectar y corregir errores ortográficos, gramaticales o de contenido. Un texto sin errores transmite profesionalidad y cuidado."
+    },
+    {
+      "id": 141,
+      "unit": "General",
+      "question": "Passive voice focuses on:",
+      "options": [
+        "The action",
+        "The feeling",
+        "The person",
+        "The opinion"
+      ],
+      "correct": "The action",
+      "traduccion": {
+        "pregunta": "La voz pasiva se centra en:",
+        "opciones": [
+          "La acción",
+          "El sentimiento",
+          "La persona",
+          "La opinión"
+        ],
+        "correcta": "La acción"
+      },
+      "explicacion": "La voz pasiva desplaza el foco del sujeto (quien hace la acción) a la acción misma o al objeto. Ejemplo: 'The report was sent' centra la atención en el informe y la acción, no en quién lo envió."
+    },
+    {
+      "id": 142,
+      "unit": "General",
+      "question": "'The report was sent.' This sentence is:",
+      "options": [
+        "Imperative",
+        "Conditional",
+        "Active",
+        "Passive"
+      ],
+      "correct": "Passive",
+      "traduccion": {
+        "pregunta": "'El informe fue enviado.' Esta oración es:",
+        "opciones": [
+          "Imperativa (orden)",
+          "Condicional (if/would)",
+          "Activa (el sujeto realiza la acción)",
+          "Pasiva (el sujeto recibe la acción)"
+        ],
+        "correcta": "Pasiva (Passive)"
+      },
+      "explicacion": "'Was sent' (fue enviado) es la forma pasiva en Pasado Simple (was/were + participio). El sujeto 'the report' no realiza la acción sino que la recibe. La voz activa sería: 'Someone sent the report.'"
+    },
+    {
+      "id": 143,
+      "unit": "General",
+      "question": "Which document records delivery details?",
+      "options": [
+        "Notice",
+        "Advertisement",
+        "Delivery note",
+        "CV"
+      ],
+      "correct": "Delivery note",
+      "traduccion": {
+        "pregunta": "¿Qué documento registra los detalles de una entrega?",
+        "opciones": [
+          "Aviso/Nota informativa",
+          "Anuncio publicitario",
+          "Albarán de entrega",
+          "Currículum vitae"
+        ],
+        "correcta": "Albarán de entrega (Delivery note)"
+      },
+      "explicacion": "El 'delivery note' (albarán de entrega) es el documento que acompaña una entrega de mercancía y registra los detalles: fecha, cliente, productos, cantidades y firma de recepción."
+    },
+    {
+      "id": 144,
+      "unit": "General",
+      "question": "Which is correct in formal writing?",
+      "options": [
+        "We'll",
+        "I'm",
+        "I am",
+        "Don't"
+      ],
+      "correct": "I am",
+      "traduccion": {
+        "pregunta": "¿Cuál es correcto en escritura formal?",
+        "opciones": [
+          "We'll (contracción de 'we will', informal)",
+          "I'm (contracción de 'I am', informal)",
+          "I am (forma completa, formal)",
+          "Don't (contracción de 'do not', informal)"
+        ],
+        "correcta": "I am (forma completa)"
+      },
+      "explicacion": "En escritura formal se evitan las contracciones. 'I am' es la forma completa y formal de 'I'm'. En cartas y correos profesionales se escriben siempre las formas completas: 'do not', 'we will', 'I am'."
+    },
+    {
+      "id": 145,
+      "unit": "General",
+      "question": "Which tense is used for routines in documents?",
+      "options": [
+        "Past Simple",
+        "Future Perfect",
+        "Present Simple",
+        "Present Perfect"
+      ],
+      "correct": "Present Simple",
+      "traduccion": {
+        "pregunta": "¿Qué tiempo se usa para rutinas en documentos?",
+        "opciones": [
+          "Pasado Simple",
+          "Futuro Perfecto (will have + participio)",
+          "Presente Simple",
+          "Presente Perfecto (have/has + participio)"
+        ],
+        "correcta": "Presente Simple"
+      },
+      "explicacion": "El Presente Simple se usa en documentos (procedimientos, manuales, políticas) para describir rutinas o acciones habituales. Ejemplo: 'The technician checks the equipment every morning.'"
+    },
+    {
+      "id": 146,
+      "unit": "General",
+      "question": "Which term means 'check'?",
+      "options": [
+        "Get",
+        "Look at",
+        "Verify",
+        "See"
+      ],
+      "correct": "Verify",
+      "traduccion": {
+        "pregunta": "¿Qué término significa 'comprobar/verificar'?",
+        "opciones": [
+          "Obtener/Conseguir",
+          "Mirar",
+          "Verificar/Comprobar",
+          "Ver"
+        ],
+        "correcta": "Verificar (Verify)"
+      },
+      "explicacion": "'Verify' (verificar/comprobar) es el término formal y técnico para 'check'. En documentos profesionales: 'Please verify the data before submitting.' 'Get', 'look at' y 'see' son más informales e imprecisos."
+    },
+    {
+      "id": 147,
+      "unit": "General",
+      "question": "What is coherence?",
+      "options": [
+        "Translation",
+        "Font size",
+        "Logical connection of ideas",
+        "Correct spelling"
+      ],
+      "correct": "Logical connection of ideas",
+      "traduccion": {
+        "pregunta": "¿Qué es la coherencia?",
+        "opciones": [
+          "Traducción",
+          "Tamaño de fuente",
+          "Conexión lógica de ideas",
+          "Ortografía correcta"
+        ],
+        "correcta": "Conexión lógica de ideas"
+      },
+      "explicacion": "La coherencia es la propiedad de un texto por la que las ideas están conectadas de forma lógica y se entienden bien en conjunto. Un texto coherente tiene sentido de principio a fin."
+    },
+    {
+      "id": 148,
+      "unit": "General",
+      "question": "Which document reports a problem at work?",
+      "options": [
+        "Email signature",
+        "Advertisement",
+        "Incident report",
+        "Poster"
+      ],
+      "correct": "Incident report",
+      "traduccion": {
+        "pregunta": "¿Qué documento reporta un problema en el trabajo?",
+        "opciones": [
+          "Firma de correo electrónico",
+          "Anuncio publicitario",
+          "Informe de incidentes",
+          "Cartel"
+        ],
+        "correcta": "Informe de incidentes (Incident report)"
+      },
+      "explicacion": "El 'incident report' (informe de incidentes) documenta formalmente los problemas, accidentes o situaciones anómalas ocurridas en el lugar de trabajo para que quede constancia oficial."
+    },
+    {
+      "id": 149,
+      "unit": "General",
+      "question": "Which phrase is polite and professional?",
+      "options": [
+        "Do it fast",
+        "Answer me now",
+        "I would appreciate it if…",
+        "You must answer"
+      ],
+      "correct": "I would appreciate it if…",
+      "traduccion": {
+        "pregunta": "¿Qué frase es educada y profesional?",
+        "opciones": [
+          "Hazlo rápido (imperativo brusco)",
+          "Contéstame ahora (exigente e informal)",
+          "Le agradecería que…",
+          "Debes contestar (obligación impuesta)"
+        ],
+        "correcta": "Le agradecería que… (I would appreciate it if…)"
+      },
+      "explicacion": "'I would appreciate it if...' es la estructura más cortés para hacer una petición formal. El condicional ('would') suaviza la petición. Es ideal para correos y comunicaciones profesionales."
+    },
+    {
+      "id": 150,
+      "unit": "General",
+      "question": "Which element should be avoided in formal writing?",
+      "options": [
+        "Connectors",
+        "Clear structure",
+        "Slang",
+        "Polite language"
+      ],
+      "correct": "Slang",
+      "traduccion": {
+        "pregunta": "¿Qué elemento debe evitarse en la escritura formal?",
+        "opciones": [
+          "Conectores",
+          "Estructura clara",
+          "Argot/jerga (slang)",
+          "Lenguaje educado"
+        ],
+        "correcta": "Argot/jerga (Slang)"
+      },
+      "explicacion": "El slang (argot) son expresiones coloquiales o informales ('gonna', 'wanna', 'ASAP', 'cool') que no deben usarse en escritura formal. Los conectores, la estructura clara y el lenguaje educado sí son esenciales."
+    },
+    {
+      "id": 151,
+      "unit": "General",
+      "question": "Autonomous learning means:",
+      "options": [
+        "Memorising only",
+        "Studying only with a teacher",
+        "Learning independently",
+        "Not studying"
+      ],
+      "correct": "Learning independently",
+      "traduccion": {
+        "pregunta": "El aprendizaje autónomo significa:",
+        "opciones": [
+          "Solo memorizar",
+          "Estudiar solo con un profesor",
+          "Aprender de forma independiente",
+          "No estudiar"
+        ],
+        "correcta": "Aprender de forma independiente"
+      },
+      "explicacion": "El aprendizaje autónomo consiste en gestionar tu propio proceso de aprendizaje: elegir recursos, fijar objetivos, organizarte y evaluarte sin depender exclusivamente de un profesor."
+    },
+    {
+      "id": 152,
+      "unit": "General",
+      "question": "What is a vocabulary journal for?",
+      "options": [
+        "Exams",
+        "Writing stories",
+        "Organising and reviewing words",
+        "Translating texts"
+      ],
+      "correct": "Organising and reviewing words",
+      "traduccion": {
+        "pregunta": "¿Para qué sirve un diario de vocabulario?",
+        "opciones": [
+          "Para exámenes",
+          "Para escribir historias",
+          "Para organizar y repasar palabras",
+          "Para traducir textos"
+        ],
+        "correcta": "Para organizar y repasar palabras"
+      },
+      "explicacion": "Un diario de vocabulario (vocabulary journal) es una herramienta donde anotas palabras nuevas con su significado, ejemplos y contexto. Facilita la revisión y la memorización a largo plazo."
+    },
+    {
+      "id": 153,
+      "unit": "General",
+      "question": "Which tool is reliable for definitions and examples?",
+      "options": [
+        "Online dictionary",
+        "Game",
+        "Chat app",
+        "Social media"
+      ],
+      "correct": "Online dictionary",
+      "traduccion": {
+        "pregunta": "¿Qué herramienta es fiable para definiciones y ejemplos?",
+        "opciones": [
+          "Diccionario online (como Cambridge)",
+          "Un juego",
+          "Una aplicación de chat",
+          "Redes sociales"
+        ],
+        "correcta": "Diccionario online"
+      },
+      "explicacion": "Un diccionario online de calidad (Cambridge, Oxford, Merriam-Webster) es la herramienta más fiable para obtener definiciones precisas, ejemplos de uso en contexto y pronunciación."
+    },
+    {
+      "id": 154,
+      "unit": "General",
+      "question": "Collocations are:",
+      "options": [
+        "Word pairs commonly used together",
+        "Email types",
+        "Verb tenses",
+        "Grammar mistakes"
+      ],
+      "correct": "Word pairs commonly used together",
+      "traduccion": {
+        "pregunta": "Las colocaciones (collocations) son:",
+        "opciones": [
+          "Pares de palabras que se usan juntas habitualmente",
+          "Tipos de correo",
+          "Tiempos verbales",
+          "Errores gramaticales"
+        ],
+        "correcta": "Pares de palabras que se usan juntas habitualmente"
+      },
+      "explicacion": "Las colocaciones son combinaciones de palabras que los hablantes nativos usan de forma natural juntas: 'make a decision' (no 'do a decision'), 'heavy rain', 'take notes'. Aprenderlas mejora la fluidez."
+    },
+    {
+      "id": 155,
+      "unit": "General",
+      "question": "Which is a smart learning habit?",
+      "options": [
+        "Regular short practice",
+        "Only translating",
+        "No review",
+        "Studying once a month"
+      ],
+      "correct": "Regular short practice",
+      "traduccion": {
+        "pregunta": "¿Cuál es un hábito de aprendizaje inteligente?",
+        "opciones": [
+          "Práctica corta y regular",
+          "Solo traducir",
+          "Sin repaso",
+          "Estudiar una vez al mes"
+        ],
+        "correcta": "Práctica corta y regular"
+      },
+      "explicacion": "La práctica frecuente en sesiones cortas (15-30 minutos diarios) es más eficaz que estudiar muchas horas de forma esporádica. La regularidad consolida el aprendizaje en la memoria a largo plazo."
+    },
+    {
+      "id": 156,
+      "unit": "General",
+      "question": "'If I study every day, I will improve.' This is:",
+      "options": [
+        "Past Simple",
+        "First conditional",
+        "Imperative",
+        "Passive voice"
+      ],
+      "correct": "First conditional",
+      "traduccion": {
+        "pregunta": "'Si estudio todos los días, mejoraré.' Esto es:",
+        "opciones": [
+          "Pasado Simple",
+          "Primera condicional",
+          "Imperativo",
+          "Voz pasiva"
+        ],
+        "correcta": "Primera condicional"
+      },
+      "explicacion": "La primera condicional (First conditional) expresa consecuencias reales y probables: 'If + presente simple, will + infinitivo'. Se usa para hablar de resultados posibles si se cumple una condición."
+    },
+    {
+      "id": 157,
+      "unit": "General",
+      "question": "Which verb + -ing is correct?",
+      "options": [
+        "Need studying",
+        "Enjoy studying",
+        "Plan studying",
+        "Want studying"
+      ],
+      "correct": "Enjoy studying",
+      "traduccion": {
+        "pregunta": "¿Qué combinación de verbo + -ing es correcta?",
+        "opciones": [
+          "Need studying (incorrecto: 'need' + infinitivo con 'to')",
+          "Enjoy studying (correcto: 'enjoy' siempre + gerundio)",
+          "Plan studying (incorrecto: 'plan' + infinitivo con 'to')",
+          "Want studying (incorrecto: 'want' + infinitivo con 'to')"
+        ],
+        "correcta": "Enjoy studying"
+      },
+      "explicacion": "'Enjoy' (disfrutar) es uno de los verbos que siempre va seguido de gerundio (-ing): 'I enjoy studying'. 'Need', 'plan' y 'want' van seguidos de infinitivo con 'to': 'I need to study', 'I want to study'."
+    },
+    {
+      "id": 158,
+      "unit": "General",
+      "question": "What is the purpose of digital tools in UT5?",
+      "options": [
+        "Confuse students",
+        "Correct exams",
+        "Support learning",
+        "Replace learning"
+      ],
+      "correct": "Support learning",
+      "traduccion": {
+        "pregunta": "¿Cuál es el propósito de las herramientas digitales en UT5?",
+        "opciones": [
+          "Confundir a los estudiantes",
+          "Corregir exámenes",
+          "Apoyar el aprendizaje",
+          "Reemplazar el aprendizaje"
+        ],
+        "correcta": "Apoyar el aprendizaje"
+      },
+      "explicacion": "Las herramientas digitales (diccionarios online, apps de idiomas, plataformas de práctica) complementan y apoyan el proceso de aprendizaje. Son un recurso, no un sustituto del esfuerzo del estudiante."
+    },
+    {
+      "id": 159,
+      "unit": "General",
+      "question": "What is the main focus of autonomous learning in professional English?",
+      "options": [
+        "Grammar only",
+        "Writing only",
+        "Learning strategies and learner autonomy",
+        "Translation"
+      ],
+      "correct": "Learning strategies and learner autonomy",
+      "traduccion": {
+        "pregunta": "¿Cuál es el enfoque principal del aprendizaje autónomo en inglés profesional?",
+        "opciones": [
+          "Solo gramática",
+          "Solo escritura",
+          "Estrategias de aprendizaje y autonomía del estudiante",
+          "Traducción"
+        ],
+        "correcta": "Estrategias de aprendizaje y autonomía del estudiante"
+      },
+      "explicacion": "El aprendizaje autónomo en inglés profesional se centra en desarrollar estrategias propias (cómo estudiar, qué recursos usar, cómo evaluar el progreso) para que el estudiante pueda aprender de forma independiente."
+    },
+    {
+      "id": 160,
+      "unit": "General",
+      "question": "What is self-assessment?",
+      "options": [
+        "Reflection on progress",
+        "Exam",
+        "Dictation",
+        "Translation"
+      ],
+      "correct": "Reflection on progress",
+      "traduccion": {
+        "pregunta": "¿Qué es la autoevaluación (self-assessment)?",
+        "opciones": [
+          "Reflexión sobre el progreso",
+          "Examen",
+          "Dictado",
+          "Traducción"
+        ],
+        "correcta": "Reflexión sobre el progreso"
+      },
+      "explicacion": "La autoevaluación (self-assessment) consiste en reflexionar sobre tu propio progreso: qué has aprendido, qué te cuesta más, qué debes mejorar. Es una herramienta clave del aprendizaje autónomo."
+    },
+    {
+      "id": 161,
+      "unit": "General",
+      "question": "Which task integrates all language skills?",
+      "options": [
+        "Vocabulary list",
+        "Translation",
+        "Grammar exercise",
+        "Final integrative task"
+      ],
+      "correct": "Final integrative task",
+      "traduccion": {
+        "pregunta": "¿Qué tarea integra todas las destrezas lingüísticas?",
+        "opciones": [
+          "Lista de vocabulario",
+          "Traducción",
+          "Ejercicio de gramática",
+          "Tarea integradora final"
+        ],
+        "correcta": "Tarea integradora final (Final integrative task)"
+      },
+      "explicacion": "Una tarea integradora final combina todas las destrezas (reading, writing, listening, speaking) en una actividad compleja y realista. Refleja el uso real del idioma en contextos profesionales."
+    },
+    {
+      "id": 162,
+      "unit": "General",
+      "question": "Integrated tasks include:",
+      "options": [
+        "Reading, writing, listening and speaking",
+        "Only reading",
+        "Only writing",
+        "Only listening"
+      ],
+      "correct": "Reading, writing, listening and speaking",
+      "traduccion": {
+        "pregunta": "Las tareas integradoras incluyen:",
+        "opciones": [
+          "Leer, escribir, escuchar y hablar",
+          "Solo leer",
+          "Solo escribir",
+          "Solo escuchar"
+        ],
+        "correcta": "Leer, escribir, escuchar y hablar"
+      },
+      "explicacion": "Las tareas integradoras combinan las cuatro destrezas del idioma: comprensión lectora (reading), expresión escrita (writing), comprensión auditiva (listening) y expresión oral (speaking)."
+    },
+    {
+      "id": 163,
+      "unit": "General",
+      "question": "Which is a professional courtesy formula?",
+      "options": [
+        "Chill",
+        "No problem dude",
+        "Whatever",
+        "Thank you for your patience"
+      ],
+      "correct": "Thank you for your patience",
+      "traduccion": {
+        "pregunta": "¿Cuál es una fórmula de cortesía profesional?",
+        "opciones": [
+          "Tranquilo (coloquial)",
+          "No hay problema, tío (muy informal)",
+          "Lo que sea (grosero)",
+          "Gracias por su paciencia"
+        ],
+        "correcta": "Gracias por su paciencia (Thank you for your patience)"
+      },
+      "explicacion": "'Thank you for your patience' es una fórmula de cortesía profesional usada en atención al cliente o en correos cuando hay retrasos. Muestra respeto y consideración hacia el interlocutor."
+    },
+    {
+      "id": 164,
+      "unit": "General",
+      "question": "Passive voice is useful to:",
+      "options": [
+        "Give opinions",
+        "Informally talk",
+        "Show emotions",
+        "Focus on actions"
+      ],
+      "correct": "Focus on actions",
+      "traduccion": {
+        "pregunta": "La voz pasiva es útil para:",
+        "opciones": [
+          "Dar opiniones",
+          "Hablar de forma informal",
+          "Mostrar emociones",
+          "Centrarse en las acciones"
+        ],
+        "correcta": "Centrarse en las acciones"
+      },
+      "explicacion": "La voz pasiva es útil para centrar la atención en la acción o en el objeto que la recibe, sin mencionar a la persona que la realiza. Es ideal en informes, quejas y textos objetivos y formales."
+    },
+    {
+      "id": 165,
+      "unit": "General",
+      "question": "Which text is more objective?",
+      "options": [
+        "Story",
+        "Opinion essay",
+        "Incident report",
+        "Advertisement"
+      ],
+      "correct": "Incident report",
+      "traduccion": {
+        "pregunta": "¿Qué texto es más objetivo?",
+        "opciones": [
+          "Historia/cuento",
+          "Ensayo de opinión",
+          "Informe de incidentes",
+          "Anuncio publicitario"
+        ],
+        "correcta": "Informe de incidentes"
+      },
+      "explicacion": "Un informe de incidentes es el texto más objetivo porque describe hechos concretos (qué pasó, cuándo, dónde) sin opiniones ni valoraciones personales. Las historias y ensayos son subjetivos; los anuncios son persuasivos."
+    },
+    {
+      "id": 166,
+      "unit": "General",
+      "question": "Which verb expresses obligation politely?",
+      "options": [
+        "Might",
+        "Have to",
+        "Should",
+        "Must"
+      ],
+      "correct": "Should",
+      "traduccion": {
+        "pregunta": "¿Qué verbo expresa obligación de forma educada?",
+        "opciones": [
+          "Might (posibilidad débil)",
+          "Have to (obligación externa fuerte)",
+          "Should (consejo/obligación suave)",
+          "Must (obligación fuerte/interna)"
+        ],
+        "correcta": "Should (obligación educada/consejo)"
+      },
+      "explicacion": "'Should' expresa obligación de forma suave y educada, casi como un consejo: 'You should wear your badge' (Deberías llevar tu tarjeta). 'Must' y 'have to' son más fuertes e impositivos."
+    },
+    {
+      "id": 167,
+      "unit": "General",
+      "question": "What is the purpose of summaries?",
+      "options": [
+        "Focus on main ideas",
+        "Add examples",
+        "Add opinions",
+        "Lengthen texts"
+      ],
+      "correct": "Focus on main ideas",
+      "traduccion": {
+        "pregunta": "¿Cuál es el propósito de los resúmenes?",
+        "opciones": [
+          "Centrarse en las ideas principales",
+          "Añadir ejemplos",
+          "Añadir opiniones",
+          "Alargar los textos"
+        ],
+        "correcta": "Centrarse en las ideas principales"
+      },
+      "explicacion": "Un resumen recoge las ideas principales de un texto de forma breve y clara, omitiendo detalles secundarios. Su objetivo es condensar la información esencial, no alargar el texto ni añadir opiniones propias."
+    },
+    {
+      "id": 168,
+      "unit": "General",
+      "question": "Which connector shows result?",
+      "options": [
+        "First",
+        "As a result",
+        "Because",
+        "Before"
+      ],
+      "correct": "As a result",
+      "traduccion": {
+        "pregunta": "¿Qué conector muestra resultado/consecuencia?",
+        "opciones": [
+          "First (primero → secuencia)",
+          "As a result (como resultado → consecuencia)",
+          "Because (porque → causa)",
+          "Before (antes → tiempo)"
+        ],
+        "correcta": "Como resultado (As a result)"
+      },
+      "explicacion": "'As a result' (como resultado) introduce una consecuencia. Similar a 'therefore' y 'consequently'. Ejemplo: 'The machine broke down. As a result, production stopped.'"
+    },
+    {
+      "id": 169,
+      "unit": "General",
+      "question": "What does 'register' refer to?",
+      "options": [
+        "Grammar",
+        "Accent",
+        "Tone and level of formality",
+        "Vocabulary size"
+      ],
+      "correct": "Tone and level of formality",
+      "traduccion": {
+        "pregunta": "¿A qué se refiere el 'registro' (register)?",
+        "opciones": [
+          "Gramática",
+          "Acento",
+          "Tono y nivel de formalidad",
+          "Tamaño del vocabulario"
+        ],
+        "correcta": "Tono y nivel de formalidad"
+      },
+      "explicacion": "El 'register' (registro) es el nivel de formalidad del lenguaje que usamos según el contexto: formal (cartas, informes), semiformal (correos de trabajo) o informal (conversaciones entre amigos). Adaptar el registro es clave en comunicación profesional."
     }
   ]
 }
