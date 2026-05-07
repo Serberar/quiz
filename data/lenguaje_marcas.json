@@ -1,0 +1,1145 @@
+{
+  "subject": "Lenguaje de Marcas",
+  "questions": [
+    {
+      "id": 1,
+      "unit": "General",
+      "question": "¿Qué característica define a un lenguaje de marcas?",
+      "options": [
+        "Ejecuta operaciones matemáticas",
+        "Gestiona bases de datos relacionales",
+        "Estructura información mediante etiquetas",
+        "Controla el hardware del sistema"
+      ],
+      "correct": "Estructura información mediante etiquetas"
+    },
+    {
+      "id": 2,
+      "unit": "General",
+      "question": "¿Qué requisito debe cumplir todo documento XML?",
+      "options": [
+        "Tener un único elemento raíz",
+        "Tener al menos dos elementos raíz",
+        "No necesitar declaración",
+        "Usar solo etiquetas en inglés"
+      ],
+      "correct": "Tener un único elemento raíz"
+    },
+    {
+      "id": 3,
+      "unit": "General",
+      "question": "¿Qué indica un documento XML bien formado?",
+      "options": [
+        "Está validado contra un esquema",
+        "Contiene datos actualizados",
+        "Cumple reglas sintácticas",
+        "Tiene menos de 100 elementos"
+      ],
+      "correct": "Cumple reglas sintácticas"
+    },
+    {
+      "id": 4,
+      "unit": "General",
+      "question": "¿Para qué sirve un esquema XSD?",
+      "options": [
+        "Transformar documentos XML",
+        "Consultar nodos XML",
+        "Validar estructura y tipos",
+        "Almacenar documentos en la nube"
+      ],
+      "correct": "Validar estructura y tipos"
+    },
+    {
+      "id": 5,
+      "unit": "General",
+      "question": "¿Qué lenguaje se usa para transformar XML?",
+      "options": [
+        "XPath",
+        "XSLT",
+        "XQuery",
+        "XSD"
+      ],
+      "correct": "XSLT"
+    },
+    {
+      "id": 6,
+      "unit": "General",
+      "question": "¿Qué tecnología permite consultar nodos XML?",
+      "options": [
+        "XSLT",
+        "DTD",
+        "XPath",
+        "CSS"
+      ],
+      "correct": "XPath"
+    },
+    {
+      "id": 7,
+      "unit": "General",
+      "question": "¿Qué función cumple XPath?",
+      "options": [
+        "Transformar documentos",
+        "Seleccionar nodos",
+        "Validar esquemas",
+        "Definir estilos"
+      ],
+      "correct": "Seleccionar nodos"
+    },
+    {
+      "id": 8,
+      "unit": "General",
+      "question": "¿Qué etiqueta define el inicio de HTML5?",
+      "options": [
+        "<html>",
+        "<head>",
+        "<meta charset=\"UTF-8\">",
+        "<!DOCTYPE html>"
+      ],
+      "correct": "<!DOCTYPE html>"
+    },
+    {
+      "id": 9,
+      "unit": "General",
+      "question": "¿Qué etiqueta HTML es semántica?",
+      "options": [
+        "<div>",
+        "<span>",
+        "<article>",
+        "<br>"
+      ],
+      "correct": "<article>"
+    },
+    {
+      "id": 10,
+      "unit": "General",
+      "question": "¿Qué controla CSS?",
+      "options": [
+        "Estructura del documento",
+        "Presentación",
+        "Lógica de negocio",
+        "Almacenamiento de datos"
+      ],
+      "correct": "Presentación"
+    },
+    {
+      "id": 11,
+      "unit": "General",
+      "question": "¿Qué selector CSS identifica un id?",
+      "options": [
+        ".",
+        "#",
+        "*",
+        "@"
+      ],
+      "correct": "#"
+    },
+    {
+      "id": 12,
+      "unit": "General",
+      "question": "¿Qué modelo usa Flexbox?",
+      "options": [
+        "Bidimensional",
+        "Unidimensional",
+        "Tridimensional",
+        "Circular"
+      ],
+      "correct": "Unidimensional"
+    },
+    {
+      "id": 13,
+      "unit": "General",
+      "question": "¿Qué diferencia XML de HTML?",
+      "options": [
+        "XML usa estilos CSS",
+        "XML solo funciona en navegadores",
+        "XML no usa etiquetas",
+        "XML define datos"
+      ],
+      "correct": "XML define datos"
+    },
+    {
+      "id": 14,
+      "unit": "General",
+      "question": "¿Qué base de datos conserva estructura XML?",
+      "options": [
+        "Relacional",
+        "Nativa XML",
+        "Documental NoSQL",
+        "De grafos"
+      ],
+      "correct": "Nativa XML"
+    },
+    {
+      "id": 15,
+      "unit": "General",
+      "question": "¿Qué lenguaje amplía XPath para consultas complejas?",
+      "options": [
+        "XSLT",
+        "Schematron",
+        "XQuery",
+        "DTD"
+      ],
+      "correct": "XQuery"
+    },
+    {
+      "id": 16,
+      "unit": "General",
+      "question": "¿Qué formato es más ligero para APIs?",
+      "options": [
+        "XML",
+        "JSON",
+        "SOAP",
+        "HTML"
+      ],
+      "correct": "JSON"
+    },
+    {
+      "id": 17,
+      "unit": "General",
+      "question": "¿Qué protocolo usa XML con cabecera y cuerpo?",
+      "options": [
+        "REST",
+        "HTTP",
+        "SOAP",
+        "FTP"
+      ],
+      "correct": "SOAP"
+    },
+    {
+      "id": 18,
+      "unit": "General",
+      "question": "¿Qué estándar protege mensajes SOAP?",
+      "options": [
+        "SSL/TLS",
+        "OAuth",
+        "WS-Security",
+        "JWT"
+      ],
+      "correct": "WS-Security"
+    },
+    {
+      "id": 19,
+      "unit": "General",
+      "question": "¿Qué etiqueta XML define un atributo?",
+      "options": [
+        "<attr>",
+        "<attrib>",
+        "<attribute>",
+        "No existe etiqueta"
+      ],
+      "correct": "No existe etiqueta"
+    },
+    {
+      "id": 20,
+      "unit": "General",
+      "question": "¿Qué operador XPath selecciona descendientes?",
+      "options": [
+        "/",
+        "//",
+        ".",
+        "@"
+      ],
+      "correct": "//"
+    },
+    {
+      "id": 21,
+      "unit": "UT1",
+      "question": "¿Qué caracteriza a un lenguaje de marcas?",
+      "options": [
+        "Ejecuta instrucciones del sistema operativo",
+        "Realiza cálculos matemáticos complejos",
+        "Gestiona la comunicación entre hardware y software",
+        "Define estructura y significado del contenido mediante etiquetas"
+      ],
+      "correct": "Define estructura y significado del contenido mediante etiquetas"
+    },
+    {
+      "id": 22,
+      "unit": "UT1",
+      "question": "¿Cuál fue el antecesor histórico del XML y HTML?",
+      "options": [
+        "HTML4",
+        "SGML",
+        "JSON",
+        "LaTeX"
+      ],
+      "correct": "SGML"
+    },
+    {
+      "id": 23,
+      "unit": "UT1",
+      "question": "¿Qué significa que un documento XML esté 'bien formado'?",
+      "options": [
+        "Ha sido validado por un esquema XSD",
+        "Tiene etiquetas correctamente anidadas y cerradas",
+        "No contiene caracteres especiales",
+        "Tiene un único estilo CSS asociado"
+      ],
+      "correct": "Tiene etiquetas correctamente anidadas y cerradas"
+    },
+    {
+      "id": 24,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes NO es un lenguaje de marcas?",
+      "options": [
+        "HTML",
+        "XML",
+        "Python",
+        "Markdown"
+      ],
+      "correct": "Python"
+    },
+    {
+      "id": 25,
+      "unit": "UT1",
+      "question": "¿Qué papel cumplen los espacios de nombres (namespaces) en XML?",
+      "options": [
+        "Definen el estilo visual del documento",
+        "Permiten ejecutar scripts en XML",
+        "Evitan colisiones entre vocabularios distintos",
+        "Establecen la codificación del documento"
+      ],
+      "correct": "Evitan colisiones entre vocabularios distintos"
+    },
+    {
+      "id": 26,
+      "unit": "UT1",
+      "question": "¿Qué elemento XML sirve como raíz del documento?",
+      "options": [
+        "Un único elemento contenedor de todos los demás",
+        "La declaración <?xml version=\"1.0\"?>",
+        "El atributo xmlns del primer elemento",
+        "La etiqueta <!DOCTYPE>"
+      ],
+      "correct": "Un único elemento contenedor de todos los demás"
+    },
+    {
+      "id": 27,
+      "unit": "UT1",
+      "question": "¿Qué extensión tienen normalmente los esquemas XML?",
+      "options": [
+        ".xml",
+        ".dtd",
+        ".xsl",
+        ".xsd"
+      ],
+      "correct": ".xsd"
+    },
+    {
+      "id": 28,
+      "unit": "UT1",
+      "question": "¿Cuál es la diferencia principal entre HTML y XML?",
+      "options": [
+        "HTML es más moderno que XML",
+        "HTML permite errores; XML exige corrección total",
+        "XML solo sirve para datos financieros",
+        "HTML no usa etiquetas"
+      ],
+      "correct": "HTML permite errores; XML exige corrección total"
+    },
+    {
+      "id": 29,
+      "unit": "UT1",
+      "question": "¿Qué lenguaje define reglas de validación por condiciones lógicas en XML?",
+      "options": [
+        "XSD",
+        "Schematron",
+        "DTD",
+        "RelaxNG"
+      ],
+      "correct": "Schematron"
+    },
+    {
+      "id": 30,
+      "unit": "UT1",
+      "question": "¿Qué característica distingue a un documento XML válido?",
+      "options": [
+        "Está correctamente formado sintácticamente",
+        "Contiene solo texto sin atributos",
+        "Cumple las reglas definidas en su esquema",
+        "No usa espacios de nombres"
+      ],
+      "correct": "Cumple las reglas definidas en su esquema"
+    },
+    {
+      "id": 31,
+      "unit": "UT1",
+      "question": "¿Qué lenguaje permite seleccionar nodos dentro de un documento XML?",
+      "options": [
+        "XSLT",
+        "XPath",
+        "XSD",
+        "DTD"
+      ],
+      "correct": "XPath"
+    },
+    {
+      "id": 32,
+      "unit": "UT1",
+      "question": "¿Qué representa la etiqueta <!DOCTYPE html>?",
+      "options": [
+        "Un comentario HTML",
+        "El inicio del head del documento",
+        "La versión de CSS usada",
+        "La definición del tipo de documento HTML"
+      ],
+      "correct": "La definición del tipo de documento HTML"
+    },
+    {
+      "id": 33,
+      "unit": "UT1",
+      "question": "¿Qué función cumple la validación en XML?",
+      "options": [
+        "Convertir XML en HTML",
+        "Añadir estilos al documento",
+        "Verificar estructura y tipos de datos",
+        "Comprimir el archivo XML"
+      ],
+      "correct": "Verificar estructura y tipos de datos"
+    },
+    {
+      "id": 34,
+      "unit": "UT1",
+      "question": "¿Qué es un atributo en XML?",
+      "options": [
+        "Una etiqueta anidada dentro de otra",
+        "Un nodo hijo del elemento padre",
+        "Una metainformación del elemento en forma clave-valor",
+        "Un comentario del desarrollador"
+      ],
+      "correct": "Una metainformación del elemento en forma clave-valor"
+    },
+    {
+      "id": 35,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes pares de lenguajes se usan juntos para publicar y dar estilo a contenidos web?",
+      "options": [
+        "XML y XSLT",
+        "JSON y SQL",
+        "HTML y CSS",
+        "DTD y XSD"
+      ],
+      "correct": "HTML y CSS"
+    },
+    {
+      "id": 36,
+      "unit": "UT2",
+      "question": "¿Qué indica la declaración <!DOCTYPE html> en un documento HTML5?",
+      "options": [
+        "Que el documento incluye JavaScript",
+        "Que el documento está cifrado",
+        "Que el documento está escrito en HTML5",
+        "Que el documento utiliza CSS3"
+      ],
+      "correct": "Que el documento está escrito en HTML5"
+    },
+    {
+      "id": 37,
+      "unit": "UT2",
+      "question": "¿Qué atributo define el idioma del documento HTML?",
+      "options": [
+        "charset",
+        "lang",
+        "type",
+        "dir"
+      ],
+      "correct": "lang"
+    },
+    {
+      "id": 38,
+      "unit": "UT2",
+      "question": "¿Qué etiqueta se usa para definir un enlace en HTML?",
+      "options": [
+        "<link>",
+        "<url>",
+        "<a>",
+        "<href>"
+      ],
+      "correct": "<a>"
+    },
+    {
+      "id": 39,
+      "unit": "UT2",
+      "question": "¿Qué etiqueta sirve para insertar una imagen?",
+      "options": [
+        "<image>",
+        "<img>",
+        "<picture>",
+        "<photo>"
+      ],
+      "correct": "<img>"
+    },
+    {
+      "id": 40,
+      "unit": "UT2",
+      "question": "¿Qué elemento HTML agrupa contenido temático?",
+      "options": [
+        "<div>",
+        "<span>",
+        "<section>",
+        "<p>"
+      ],
+      "correct": "<section>"
+    },
+    {
+      "id": 41,
+      "unit": "UT2",
+      "question": "¿Qué lenguaje se usa para definir la presentación visual de un documento HTML?",
+      "options": [
+        "JavaScript",
+        "XML",
+        "CSS",
+        "PHP"
+      ],
+      "correct": "CSS"
+    },
+    {
+      "id": 42,
+      "unit": "UT2",
+      "question": "¿Cuál es la sintaxis correcta de un comentario en CSS?",
+      "options": [
+        "// comentario",
+        "<!-- comentario -->",
+        "/* comentario */",
+        "# comentario"
+      ],
+      "correct": "/* comentario */"
+    },
+    {
+      "id": 43,
+      "unit": "UT2",
+      "question": "¿Qué propiedad CSS controla el color del texto?",
+      "options": [
+        "background-color",
+        "color",
+        "font-color",
+        "text-color"
+      ],
+      "correct": "color"
+    },
+    {
+      "id": 44,
+      "unit": "UT2",
+      "question": "¿Qué framework CSS utiliza un sistema de 12 columnas y componentes predefinidos?",
+      "options": [
+        "jQuery",
+        "Bootstrap",
+        "Angular",
+        "Vue.js"
+      ],
+      "correct": "Bootstrap"
+    },
+    {
+      "id": 45,
+      "unit": "UT2",
+      "question": "¿Qué formato de sindicación utiliza una estructura XML con etiquetas <channel> y <item>?",
+      "options": [
+        "RSS",
+        "Atom",
+        "JSON Feed",
+        "Podcast XML"
+      ],
+      "correct": "RSS"
+    },
+    {
+      "id": 46,
+      "unit": "UT2",
+      "question": "¿Qué formato de fecha utiliza Atom para las actualizaciones?",
+      "options": [
+        "DD/MM/YYYY",
+        "ISO 8601",
+        "Unix timestamp",
+        "RFC 2822"
+      ],
+      "correct": "ISO 8601"
+    },
+    {
+      "id": 47,
+      "unit": "UT2",
+      "question": "¿Qué etiqueta identifica de forma única una entrada en un feed RSS?",
+      "options": [
+        "<id>",
+        "<uid>",
+        "<guid>",
+        "<unique>"
+      ],
+      "correct": "<guid>"
+    },
+    {
+      "id": 48,
+      "unit": "UT2",
+      "question": "¿Qué propiedad CSS define el espacio interno entre el contenido y el borde?",
+      "options": [
+        "margin",
+        "padding",
+        "border",
+        "spacing"
+      ],
+      "correct": "padding"
+    },
+    {
+      "id": 49,
+      "unit": "UT2",
+      "question": "¿Qué atributo de la etiqueta <img> mejora la accesibilidad describiendo la imagen?",
+      "options": [
+        "title",
+        "src",
+        "width",
+        "alt"
+      ],
+      "correct": "alt"
+    },
+    {
+      "id": 50,
+      "unit": "UT2",
+      "question": "¿Qué formato de sindicación permite mayor flexibilidad y extensibilidad que RSS?",
+      "options": [
+        "RSS 2.0",
+        "Atom",
+        "JSON",
+        "XML básico"
+      ],
+      "correct": "Atom"
+    },
+    {
+      "id": 51,
+      "unit": "UT3",
+      "question": "¿Qué es una transformación XML?",
+      "options": [
+        "El proceso de validar un documento XML contra un esquema",
+        "La consulta de nodos en un documento XML",
+        "El proceso de convertir un documento XML en otro formato",
+        "La compresión de un documento XML para almacenamiento"
+      ],
+      "correct": "El proceso de convertir un documento XML en otro formato"
+    },
+    {
+      "id": 52,
+      "unit": "UT3",
+      "question": "¿Qué lenguaje se utiliza para realizar transformaciones XML?",
+      "options": [
+        "XPath",
+        "XSLT",
+        "XSD",
+        "DTD"
+      ],
+      "correct": "XSLT"
+    },
+    {
+      "id": 53,
+      "unit": "UT3",
+      "question": "¿Qué significa XSLT?",
+      "options": [
+        "Extended Syntax Language Technology",
+        "Extensible Stylesheet Language Transformations",
+        "XML Schema Level Transformation",
+        "Extensible Structured Language Tags"
+      ],
+      "correct": "Extensible Stylesheet Language Transformations"
+    },
+    {
+      "id": 54,
+      "unit": "UT3",
+      "question": "¿Qué etiqueta XSLT se usa para iterar sobre nodos repetidos?",
+      "options": [
+        "<xsl:loop>",
+        "<xsl:iterate>",
+        "<xsl:for-each>",
+        "<xsl:repeat>"
+      ],
+      "correct": "<xsl:for-each>"
+    },
+    {
+      "id": 55,
+      "unit": "UT3",
+      "question": "¿Qué elemento XSLT permite realizar condiciones?",
+      "options": [
+        "<xsl:if>",
+        "<xsl:when>",
+        "<xsl:check>",
+        "<xsl:condition>"
+      ],
+      "correct": "<xsl:if>"
+    },
+    {
+      "id": 56,
+      "unit": "UT3",
+      "question": "¿Cuál es la función principal de DTD?",
+      "options": [
+        "Transformar documentos XML a HTML",
+        "Definir la estructura y los elementos permitidos de un documento XML",
+        "Consultar nodos en documentos XML",
+        "Cifrar mensajes XML en servicios web"
+      ],
+      "correct": "Definir la estructura y los elementos permitidos de un documento XML"
+    },
+    {
+      "id": 57,
+      "unit": "UT3",
+      "question": "¿Qué significa XSD?",
+      "options": [
+        "Extensible Style Document",
+        "XML Structured Data",
+        "XML Schema Definition",
+        "Extended Schema Declaration"
+      ],
+      "correct": "XML Schema Definition"
+    },
+    {
+      "id": 58,
+      "unit": "UT3",
+      "question": "¿Qué lenguaje permite definir reglas lógicas de validación?",
+      "options": [
+        "XSD",
+        "Schematron",
+        "DTD",
+        "XSLT"
+      ],
+      "correct": "Schematron"
+    },
+    {
+      "id": 59,
+      "unit": "UT3",
+      "question": "¿Qué etiqueta se utiliza en un esquema XSD para definir un elemento?",
+      "options": [
+        "<xs:define>",
+        "<xs:node>",
+        "<xs:element>",
+        "<xs:tag>"
+      ],
+      "correct": "<xs:element>"
+    },
+    {
+      "id": 60,
+      "unit": "UT3",
+      "question": "¿Qué atributo en XSD permite indicar el número mínimo de ocurrencias?",
+      "options": [
+        "minCount",
+        "minimum",
+        "minElements",
+        "minOccurs"
+      ],
+      "correct": "minOccurs"
+    },
+    {
+      "id": 61,
+      "unit": "UT3",
+      "question": "¿Qué herramienta se usa para seleccionar nodos en XML?",
+      "options": [
+        "XSLT",
+        "DTD",
+        "XPath",
+        "JSON Path"
+      ],
+      "correct": "XPath"
+    },
+    {
+      "id": 62,
+      "unit": "UT3",
+      "question": "¿Qué permite hacer Schematron además de la validación estructural?",
+      "options": [
+        "Transformar documentos XML en HTML",
+        "Validar reglas de negocio mediante expresiones XPath",
+        "Generar código Java desde esquemas",
+        "Comprimir archivos XML"
+      ],
+      "correct": "Validar reglas de negocio mediante expresiones XPath"
+    },
+    {
+      "id": 63,
+      "unit": "UT3",
+      "question": "¿Qué tipo de salida puede generar una transformación XSLT?",
+      "options": [
+        "Solo HTML",
+        "Solo PDF",
+        "HTML, texto plano o XML",
+        "Solo JSON o XML"
+      ],
+      "correct": "HTML, texto plano o XML"
+    },
+    {
+      "id": 64,
+      "unit": "UT3",
+      "question": "¿Qué herramienta del W3C valida documentos XML contra XSD?",
+      "options": [
+        "W3C CSS Validator",
+        "W3C XML Schema Validator",
+        "XMLSpy",
+        "Altova MapForce"
+      ],
+      "correct": "W3C XML Schema Validator"
+    },
+    {
+      "id": 65,
+      "unit": "UT3",
+      "question": "¿Qué combinación de tecnologías permite validar tanto estructura como reglas lógicas?",
+      "options": [
+        "XSLT y DTD",
+        "XPath y XQuery",
+        "XSD y Schematron",
+        "HTML y CSS"
+      ],
+      "correct": "XSD y Schematron"
+    },
+    {
+      "id": 66,
+      "unit": "UT4",
+      "question": "¿Cuál es la principal función de XPath?",
+      "options": [
+        "Transformar documentos XML",
+        "Validar la estructura de XML",
+        "Seleccionar nodos dentro de un documento XML",
+        "Almacenar datos en formato XML"
+      ],
+      "correct": "Seleccionar nodos dentro de un documento XML"
+    },
+    {
+      "id": 67,
+      "unit": "UT4",
+      "question": "¿Qué significa XQuery?",
+      "options": [
+        "Extensible Query Standard",
+        "XML Quick Reference",
+        "XML Query Language",
+        "Extra Query Notation"
+      ],
+      "correct": "XML Query Language"
+    },
+    {
+      "id": 68,
+      "unit": "UT4",
+      "question": "¿Qué estructura define el lenguaje XQuery?",
+      "options": [
+        "SELECT-FROM-WHERE como SQL",
+        "IF-THEN-ELSE para condiciones",
+        "FLWOR (For, Let, Where, Order, Return)",
+        "LOOP-FILTER-OUTPUT para iteraciones"
+      ],
+      "correct": "FLWOR (For, Let, Where, Order, Return)"
+    },
+    {
+      "id": 69,
+      "unit": "UT4",
+      "question": "¿Qué hace la cláusula WHERE en una consulta FLWOR?",
+      "options": [
+        "Ordena los resultados",
+        "Filtra los resultados según una condición",
+        "Devuelve el resultado final",
+        "Define el origen de datos"
+      ],
+      "correct": "Filtra los resultados según una condición"
+    },
+    {
+      "id": 70,
+      "unit": "UT4",
+      "question": "¿Qué representa el término FLWOR en XQuery?",
+      "options": [
+        "Filter, Loop, Where, Output, Result",
+        "For, Let, Where, Order, Return",
+        "Find, Load, Write, Organize, Return",
+        "For, List, Where, Output, Retrieve"
+      ],
+      "correct": "For, Let, Where, Order, Return"
+    },
+    {
+      "id": 71,
+      "unit": "UT4",
+      "question": "¿Qué función tiene la cláusula RETURN en una consulta XQuery?",
+      "options": [
+        "Define las variables de la consulta",
+        "Filtra los documentos a consultar",
+        "Ordena los resultados por un criterio",
+        "Devuelve el resultado final de la consulta"
+      ],
+      "correct": "Devuelve el resultado final de la consulta"
+    },
+    {
+      "id": 72,
+      "unit": "UT4",
+      "question": "¿Qué herramienta permite indexar documentos XML para acelerar consultas?",
+      "options": [
+        "XSLT",
+        "El motor de base de datos nativa XML",
+        "Schematron",
+        "XPath estándar"
+      ],
+      "correct": "El motor de base de datos nativa XML"
+    },
+    {
+      "id": 73,
+      "unit": "UT4",
+      "question": "¿Qué es la conversión XML-relacional?",
+      "options": [
+        "La transformación de XML a JSON",
+        "El proceso de mapear estructuras XML en tablas de una base de datos relacional",
+        "La exportación de datos de una BD relacional a XML",
+        "La compresión de XML para transmisión"
+      ],
+      "correct": "El proceso de mapear estructuras XML en tablas de una base de datos relacional"
+    },
+    {
+      "id": 74,
+      "unit": "UT4",
+      "question": "¿Qué lenguaje se utiliza para seleccionar nodos dentro de un documento XML?",
+      "options": [
+        "XQuery",
+        "XSLT",
+        "XPath",
+        "XSD"
+      ],
+      "correct": "XPath"
+    },
+    {
+      "id": 75,
+      "unit": "UT4",
+      "question": "¿Qué caracteriza a la serialización binaria de XML?",
+      "options": [
+        "Convierte XML a JSON automáticamente",
+        "Permite ejecutar XML en navegadores",
+        "Transforma XML en documentos HTML",
+        "Representa datos XML en formato compacto y eficiente"
+      ],
+      "correct": "Representa datos XML en formato compacto y eficiente"
+    },
+    {
+      "id": 76,
+      "unit": "UT4",
+      "question": "¿Qué función cumple la indexación en bases de datos XML?",
+      "options": [
+        "Validar la estructura del documento",
+        "Mejorar la velocidad de búsqueda y recuperación de datos",
+        "Transformar XML en HTML",
+        "Comprimir el documento para almacenamiento"
+      ],
+      "correct": "Mejorar la velocidad de búsqueda y recuperación de datos"
+    },
+    {
+      "id": 77,
+      "unit": "UT4",
+      "question": "¿Qué operador de XPath selecciona todos los descendientes de un nodo?",
+      "options": [
+        "/",
+        "//",
+        ".",
+        ".."
+      ],
+      "correct": "//"
+    },
+    {
+      "id": 78,
+      "unit": "UT4",
+      "question": "¿Qué función tiene la cláusula ORDER BY en XQuery?",
+      "options": [
+        "Filtrar los resultados",
+        "Definir el origen de datos",
+        "Ordenar los resultados de una consulta",
+        "Devolver el resultado final"
+      ],
+      "correct": "Ordenar los resultados de una consulta"
+    },
+    {
+      "id": 79,
+      "unit": "UT4",
+      "question": "¿Qué formato de almacenamiento permite mayor interoperabilidad entre sistemas?",
+      "options": [
+        "CSV",
+        "XML",
+        "XLSX",
+        "DOC"
+      ],
+      "correct": "XML"
+    },
+    {
+      "id": 80,
+      "unit": "UT4",
+      "question": "¿Qué permite realizar SQL/XML?",
+      "options": [
+        "Transformar XML a SQL directamente",
+        "Validar XML contra esquemas relacionales",
+        "Consultas híbridas que combinan SQL y XPath/XQuery",
+        "Comprimir XML para bases de datos SQL"
+      ],
+      "correct": "Consultas híbridas que combinan SQL y XPath/XQuery"
+    },
+    {
+      "id": 81,
+      "unit": "UT5",
+      "question": "¿Qué diferencia principal existe entre una base de datos nativa XML y una relacional con soporte XML?",
+      "options": [
+        "La nativa usa SQL y la relacional usa XQuery",
+        "La nativa es más lenta que la relacional",
+        "La nativa almacena documentos XML completos, mientras que la relacional los fragmenta en tablas",
+        "La relacional no soporta consultas XPath"
+      ],
+      "correct": "La nativa almacena documentos XML completos, mientras que la relacional los fragmenta en tablas"
+    },
+    {
+      "id": 82,
+      "unit": "UT5",
+      "question": "¿Qué lenguajes se utilizan principalmente para realizar consultas en bases de datos XML?",
+      "options": [
+        "SQL y NoSQL",
+        "XSLT y DTD",
+        "XPath y XQuery",
+        "JSON y SOAP"
+      ],
+      "correct": "XPath y XQuery"
+    },
+    {
+      "id": 83,
+      "unit": "UT5",
+      "question": "¿Cuál es el propósito de la serialización XML?",
+      "options": [
+        "Convertir un documento XML en una secuencia de bytes para almacenamiento o transmisión",
+        "Transformar XML en HTML para navegadores",
+        "Validar XML contra un esquema XSD",
+        "Comprimir XML para reducir el tamaño del archivo"
+      ],
+      "correct": "Convertir un documento XML en una secuencia de bytes para almacenamiento o transmisión"
+    },
+    {
+      "id": 84,
+      "unit": "UT5",
+      "question": "¿Qué técnica mejora el rendimiento de las consultas en bases de datos XML?",
+      "options": [
+        "Uso de XSLT para transformaciones",
+        "Indexación de caminos y valores",
+        "Validación previa con Schematron",
+        "Serialización binaria de los documentos"
+      ],
+      "correct": "Indexación de caminos y valores"
+    },
+    {
+      "id": 85,
+      "unit": "UT5",
+      "question": "¿Qué rol cumple XML en sistemas ERP?",
+      "options": [
+        "Gestionar la interfaz gráfica del sistema",
+        "Almacenar contraseñas de usuarios",
+        "Facilitar la interoperabilidad entre módulos y sistemas externos mediante un formato estándar",
+        "Ejecutar procedimientos almacenados"
+      ],
+      "correct": "Facilitar la interoperabilidad entre módulos y sistemas externos mediante un formato estándar"
+    },
+    {
+      "id": 86,
+      "unit": "UT5",
+      "question": "¿Qué protocolo usa mensajes estructurados en formato XML con encabezado y cuerpo definidos?",
+      "options": [
+        "REST",
+        "SOAP",
+        "FTP",
+        "SMTP"
+      ],
+      "correct": "SOAP"
+    },
+    {
+      "id": 87,
+      "unit": "UT5",
+      "question": "¿Qué estándar define mecanismos de seguridad como cifrado y firma digital en servicios SOAP?",
+      "options": [
+        "SSL/TLS",
+        "OAuth 2.0",
+        "WS-Security",
+        "JWT"
+      ],
+      "correct": "WS-Security"
+    },
+    {
+      "id": 88,
+      "unit": "UT5",
+      "question": "¿Qué formato es más compacto y rápido para la serialización de datos?",
+      "options": [
+        "XML estándar",
+        "SOAP",
+        "JSON",
+        "Protocol Buffers"
+      ],
+      "correct": "Protocol Buffers"
+    },
+    {
+      "id": 89,
+      "unit": "UT5",
+      "question": "¿Qué ventaja ofrece JSON frente a XML en integraciones web?",
+      "options": [
+        "Mayor ligereza y velocidad de procesamiento",
+        "Mejor soporte de esquemas y validación",
+        "Mayor seguridad en transmisión",
+        "Compatibilidad nativa con bases de datos relacionales"
+      ],
+      "correct": "Mayor ligereza y velocidad de procesamiento"
+    },
+    {
+      "id": 90,
+      "unit": "UT5",
+      "question": "¿Qué formato utiliza esquemas estrictos definidos en archivos .proto?",
+      "options": [
+        "JSON Schema",
+        "XML con XSD",
+        "Protocol Buffers",
+        "YAML"
+      ],
+      "correct": "Protocol Buffers"
+    },
+    {
+      "id": 91,
+      "unit": "UT5",
+      "question": "¿Qué herramienta permite convertir XML a JSON utilizando plantillas?",
+      "options": [
+        "XPath 2.0",
+        "XSLT 3.0",
+        "XSD complejo",
+        "DTD avanzado"
+      ],
+      "correct": "XSLT 3.0"
+    },
+    {
+      "id": 92,
+      "unit": "UT5",
+      "question": "¿Qué componente centraliza las peticiones a microservicios en una arquitectura distribuida?",
+      "options": [
+        "Message Broker",
+        "Load Balancer",
+        "API Gateway",
+        "DNS Server"
+      ],
+      "correct": "API Gateway"
+    },
+    {
+      "id": 93,
+      "unit": "UT5",
+      "question": "¿Qué característica distingue a las plataformas EAI (Enterprise Application Integration)?",
+      "options": [
+        "Gestionan exclusivamente bases de datos relacionales",
+        "Proporcionan interfaces gráficas para usuarios finales",
+        "Almacenan documentos XML en la nube",
+        "Facilitan la comunicación entre sistemas heterogéneos mediante transformación y orquestación de datos"
+      ],
+      "correct": "Facilitan la comunicación entre sistemas heterogéneos mediante transformación y orquestación de datos"
+    },
+    {
+      "id": 94,
+      "unit": "UT5",
+      "question": "¿Qué lenguaje se usa en la orquestación de servicios web?",
+      "options": [
+        "WSDL",
+        "SOAP",
+        "BPEL",
+        "XQuery"
+      ],
+      "correct": "BPEL"
+    },
+    {
+      "id": 95,
+      "unit": "UT5",
+      "question": "¿Qué herramienta se usa para probar servicios web y validar esquemas XML?",
+      "options": [
+        "Postman",
+        "Eclipse",
+        "SoapUI",
+        "IntelliJ IDEA"
+      ],
+      "correct": "SoapUI"
+    }
+  ]
+}
