@@ -1,8 +1,20 @@
 {
   "subjects": [
-    { "name": "Entornos de Desarrollo", "file": "entornos.json" },
-    { "name": "FOL",                   "file": "fol.json" },
-    { "name": "Inglés",                "file": "ingles.json" },
-    { "name": "Lenguaje de Marcas",    "file": "lenguaje_marcas.json" }
+    {
+      "name": "Entornos de Desarrollo",
+      "file": "entornos.json"
+    },
+    {
+      "name": "FOL",
+      "file": "fol.json"
+    },
+    {
+      "name": "Inglés",
+      "file": "ingles.json"
+    },
+    {
+      "name": "Lenguaje de Marcas",
+      "file": "lenguaje_marcas.json"
+    }
   ]
 }
