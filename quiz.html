@@ -76,17 +76,20 @@
     .setup-title h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -.02em; }
     .setup-title p { color: var(--muted); margin-top: 6px; font-size: .95rem; }
 
-    .drop-zone {
-      border: 2px dashed var(--border); border-radius: var(--r);
-      padding: 36px; text-align: center; cursor: pointer;
-      transition: border-color .2s, background .2s; position: relative;
+    /* Subject selector */
+    .subject-loading { text-align: center; color: var(--muted); font-size: .9rem; padding: 4px 0; }
+    .subject-error { color: var(--wrong); font-size: .88rem; text-align: center; }
+    .subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
+    .subject-btn {
+      background: var(--surface2); border: 1.5px solid var(--border);
+      border-radius: var(--r); color: var(--text); font-size: .88rem; font-weight: 600;
+      padding: 14px 16px; cursor: pointer; transition: all .15s;
+      text-align: left; display: flex; align-items: center; gap: 10px;
     }
-    .drop-zone:hover, .drop-zone.drag-over { border-color: var(--accent); background: #1a2540; }
-    .drop-zone input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
-    .drop-zone .dz-icon { font-size: 2.2rem; margin-bottom: 8px; }
-    .drop-zone .dz-label { color: var(--muted); font-size: .9rem; }
-    .drop-zone .dz-label strong { color: var(--accent); }
-    .file-ok { color: var(--correct); font-size: .88rem; font-weight: 600; margin-top: 8px; }
+    .subject-btn:hover { border-color: var(--accent); background: #1a2540; }
+    .subject-btn.active { border-color: var(--accent); background: #2d2f6b; color: var(--accent-h); }
+    .sb-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .num-max { font-size: .78rem; color: var(--muted); white-space: nowrap; }
 
     /* Stats bar */
     .stats-bar {
@@ -237,14 +240,13 @@
 <div id="setup-screen" class="screen active">
   <div class="setup-title">
     <h1>Test Practicador</h1>
-    <p>Carga un JSON, filtra por unidad y elige el modo de repaso</p>
+    <p>Elige una asignatura, filtra por unidad y elige el modo de repaso</p>
   </div>
 
-  <div class="drop-zone" id="drop-zone">
-    <input type="file" id="file-input" accept=".json">
-    <div class="dz-icon">📂</div>
-    <div class="dz-label"><strong>Haz clic</strong> o arrastra un archivo JSON aquí</div>
-    <div id="file-ok" class="file-ok" style="display:none"></div>
+  <div class="card" id="subject-selector">
+    <div id="subject-loading" class="subject-loading">Cargando asignaturas…</div>
+    <div class="subject-grid" id="subject-grid" style="display:none"></div>
+    <div id="subject-error" class="subject-error" style="display:none"></div>
   </div>
 
   <!-- Stats bar -->
@@ -287,6 +289,7 @@
         <input type="range" id="num-slider" min="1" max="10" value="10" disabled
                oninput="document.getElementById('num-badge').textContent=this.value">
         <span class="num-badge" id="num-badge">10</span>
+        <span class="num-max" id="num-max"></span>
       </div>
     </div>
     <div class="divider"></div>
@@ -358,40 +361,72 @@
   let mode = 'random', progress = {}, selUnits = new Set();
   let answered = false;
 
-  // ══ FILE ══
-  const dz = document.getElementById('drop-zone');
-  const fi = document.getElementById('file-input');
+  // ══ DATA PATH (ruta relativa desde quiz.html a la carpeta data/) ══
+  const DATA_PATH = 'data/';
+  const subjectCache = {};   // file → data, cacheada tras la primera carga
 
-  fi.addEventListener('change', e => readFile(e.target.files[0]));
-  dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('drag-over'); });
-  dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
-  dz.addEventListener('drop', e => {
-    e.preventDefault(); dz.classList.remove('drag-over');
-    const f = e.dataTransfer.files[0];
-    if (f?.name.endsWith('.json')) readFile(f);
-  });
-
-  function readFile(file) {
-    if (!file) return;
-    const r = new FileReader();
-    r.onload = e => {
-      try {
-        const data = JSON.parse(e.target.result);
-        allQ = data.questions || [];
-        subjectName = data.subject || file.name.replace('.json', '');
-        loadProgress();
-        document.getElementById('file-ok').textContent = `✓ ${file.name} · ${allQ.length} preguntas`;
-        document.getElementById('file-ok').style.display = 'block';
-        buildUnitFilter();
-        document.getElementById('stats-bar').classList.add('visible');
-        document.getElementById('filter-section').classList.add('visible');
-        document.getElementById('num-slider').disabled = false;
-        document.getElementById('start-btn').disabled = false;
-        updateStats();
-      } catch { alert('Error al leer el archivo JSON.'); }
-    };
-    r.readAsText(file);
+  // ══ SUBJECTS ══
+  async function loadSubjects() {
+    try {
+      const resp = await fetch(DATA_PATH + 'manifest.json');
+      if (!resp.ok) throw new Error();
+      const { subjects = [] } = await resp.json();
+      if (subjects.length === 0) throw new Error('empty');
+      renderSubjects(subjects);
+    } catch {
+      document.getElementById('subject-loading').style.display = 'none';
+      const err = document.getElementById('subject-error');
+      err.textContent = 'No se pudieron cargar las asignaturas.';
+      err.style.display = 'block';
+    }
   }
+
+  function renderSubjects(subjects) {
+    document.getElementById('subject-loading').style.display = 'none';
+    const grid = document.getElementById('subject-grid');
+    grid.style.display = '';
+    grid.innerHTML = '';
+    subjects.forEach(s => {
+      const btn = document.createElement('button');
+      btn.className = 'subject-btn';
+      btn.innerHTML = `<span class="sb-icon">📚</span><span>${s.name}</span>`;
+      btn.onclick = () => selectSubject(s, btn);
+      grid.appendChild(btn);
+    });
+  }
+
+  async function selectSubject(subject, btn) {
+    document.querySelectorAll('.subject-btn').forEach(b => {
+      b.classList.remove('active');
+      b.querySelector('.sb-icon').textContent = '📚';
+    });
+    btn.classList.add('active');
+    btn.querySelector('.sb-icon').textContent = '⏳';
+    try {
+      if (!subjectCache[subject.file]) {
+        const r = await fetch(DATA_PATH + subject.file);
+        if (!r.ok) throw new Error();
+        subjectCache[subject.file] = await r.json();
+      }
+      const data = subjectCache[subject.file];
+      allQ = data.questions || [];
+      subjectName = data.subject || subject.name;
+      loadProgress();
+      buildUnitFilter();
+      document.getElementById('stats-bar').classList.add('visible');
+      document.getElementById('filter-section').classList.add('visible');
+      document.getElementById('num-slider').disabled = false;
+      document.getElementById('start-btn').disabled = false;
+      updateStats();
+      btn.querySelector('.sb-icon').textContent = '✓';
+    } catch {
+      btn.classList.remove('active');
+      btn.querySelector('.sb-icon').textContent = '📚';
+      alert('Error al cargar "' + subject.name + '".');
+    }
+  }
+
+  loadSubjects();
 
   // ══ PROGRESS ══
   function loadProgress() {
@@ -476,6 +511,7 @@
     slider.max = total;
     slider.value = Math.min(parseInt(slider.value) || 10, total || 1);
     document.getElementById('num-badge').textContent = slider.value;
+    document.getElementById('num-max').textContent = total > 0 ? 'de ' + total : '';
     document.getElementById('filter-count').textContent =
       `${total} pregunta${total !== 1 ? 's' : ''} seleccionada${total !== 1 ? 's' : ''}`;
     document.getElementById('start-btn').disabled = total === 0;

@@ -1,0 +1,1745 @@
+{
+  "subject": "FOL",
+  "questions": [
+    {
+      "id": 1,
+      "unit": "General",
+      "question": "El Comité de Seguridad y Salud está formado por:",
+      "options": [
+        "Técnicos externos",
+        "Empresa y delegados de prevención",
+        "Solo la empresa",
+        "Solo trabajadores"
+      ],
+      "correct": "Empresa y delegados de prevención"
+    },
+    {
+      "id": 2,
+      "unit": "General",
+      "question": "El empleo público se caracteriza por:",
+      "options": [
+        "Procesos selectivos regulados",
+        "Jornada flexible",
+        "Contratación directa",
+        "Entrevista personal"
+      ],
+      "correct": "Procesos selectivos regulados"
+    },
+    {
+      "id": 3,
+      "unit": "General",
+      "question": "Las soft skills son:",
+      "options": [
+        "Títulos oficiales",
+        "Competencias personales",
+        "Habilidades técnicas",
+        "Certificaciones"
+      ],
+      "correct": "Competencias personales"
+    },
+    {
+      "id": 4,
+      "unit": "General",
+      "question": "Un PLE es:",
+      "options": [
+        "Un examen",
+        "Un título",
+        "Una plataforma cerrada",
+        "Un entorno personal de aprendizaje"
+      ],
+      "correct": "Un entorno personal de aprendizaje"
+    },
+    {
+      "id": 5,
+      "unit": "General",
+      "question": "Un accidente in itinere ocurre:",
+      "options": [
+        "En el puesto de trabajo",
+        "Al ir o volver del trabajo",
+        "Durante una baja médica",
+        "En horario laboral"
+      ],
+      "correct": "Al ir o volver del trabajo"
+    },
+    {
+      "id": 6,
+      "unit": "General",
+      "question": "El botiquín debe:",
+      "options": [
+        "Tener medicamentos",
+        "Revisarse periódicamente",
+        "Estar cerrado sin señalizar",
+        "Usarse solo por sanitarios"
+      ],
+      "correct": "Revisarse periódicamente"
+    },
+    {
+      "id": 7,
+      "unit": "General",
+      "question": "La Ley básica de Prevención de Riesgos Laborales es:",
+      "options": [
+        "Ley 39/2015",
+        "Ley 31/1995",
+        "Real Decreto 486/1997",
+        "Ley Orgánica 3/2018"
+      ],
+      "correct": "Ley 31/1995"
+    },
+    {
+      "id": 8,
+      "unit": "General",
+      "question": "El autoconocimiento permite:",
+      "options": [
+        "Evitar entrevistas",
+        "Reducir formación",
+        "Garantizar empleo",
+        "Identificar fortalezas"
+      ],
+      "correct": "Identificar fortalezas"
+    },
+    {
+      "id": 9,
+      "unit": "General",
+      "question": "Un plan de emergencia tiene como finalidad:",
+      "options": [
+        "Sustituir ambulancias",
+        "Proteger vidas",
+        "Cumplir trámites",
+        "Registrar incidentes"
+      ],
+      "correct": "Proteger vidas"
+    },
+    {
+      "id": 10,
+      "unit": "General",
+      "question": "El aprendizaje a lo largo de la vida es:",
+      "options": [
+        "Educación obligatoria",
+        "Aprendizaje puntual",
+        "Lifelong learning",
+        "Formación reglada"
+      ],
+      "correct": "Lifelong learning"
+    },
+    {
+      "id": 11,
+      "unit": "General",
+      "question": "Una competencia transversal demandada por las empresas es:",
+      "options": [
+        "Uso de maquinaria específica",
+        "Titulación universitaria",
+        "Certificación obligatoria",
+        "Trabajo en equipo"
+      ],
+      "correct": "Trabajo en equipo"
+    },
+    {
+      "id": 12,
+      "unit": "General",
+      "question": "Ante una hemorragia grave se debe:",
+      "options": [
+        "Aplicar presión",
+        "Retirar objetos clavados",
+        "Esperar ayuda",
+        "Dar líquidos"
+      ],
+      "correct": "Aplicar presión"
+    },
+    {
+      "id": 13,
+      "unit": "General",
+      "question": "¿Qué sector económico incluye las actividades de servicios?",
+      "options": [
+        "Cuaternario",
+        "Secundario",
+        "Primario",
+        "Terciario"
+      ],
+      "correct": "Terciario"
+    },
+    {
+      "id": 14,
+      "unit": "General",
+      "question": "Las medidas colectivas se priorizan porque:",
+      "options": [
+        "Son más baratas",
+        "Protegen a más personas",
+        "Dependen del trabajador",
+        "Sustituyen a los EPIs"
+      ],
+      "correct": "Protegen a más personas"
+    },
+    {
+      "id": 15,
+      "unit": "General",
+      "question": "Un simulacro sirve para:",
+      "options": [
+        "Sancionar errores",
+        "Evaluar protocolos",
+        "Eliminar riesgos",
+        "Evitar evacuaciones"
+      ],
+      "correct": "Evaluar protocolos"
+    },
+    {
+      "id": 16,
+      "unit": "General",
+      "question": "El contrato indefinido se caracteriza por:",
+      "options": [
+        "No tener duración límite",
+        "Exclusividad parcial",
+        "Fecha de fin",
+        "Temporalidad"
+      ],
+      "correct": "No tener duración límite"
+    },
+    {
+      "id": 17,
+      "unit": "General",
+      "question": "El Plan de Prevención debe:",
+      "options": [
+        "Integrarse en la empresa",
+        "Ser opcional",
+        "Elaborarse tras un accidente",
+        "Renovarse cada 10 años"
+      ],
+      "correct": "Integrarse en la empresa"
+    },
+    {
+      "id": 18,
+      "unit": "General",
+      "question": "El DAFO analiza:",
+      "options": [
+        "Estrategias personales",
+        "Convenios",
+        "Salarios",
+        "Accidentes"
+      ],
+      "correct": "Estrategias personales"
+    },
+    {
+      "id": 19,
+      "unit": "General",
+      "question": "Las plataformas digitales de empleo sirven para:",
+      "options": [
+        "Garantizar contratación",
+        "Sustituir al SEPE",
+        "Facilitar la búsqueda de trabajo",
+        "Eliminar intermediarios"
+      ],
+      "correct": "Facilitar la búsqueda de trabajo"
+    },
+    {
+      "id": 20,
+      "unit": "General",
+      "question": "La jornada ordinaria máxima es:",
+      "options": [
+        "37,5 h semanales",
+        "40 h semanales",
+        "45 h semanales",
+        "35 h semanales"
+      ],
+      "correct": "40 h semanales"
+    },
+    {
+      "id": 21,
+      "unit": "General",
+      "question": "El trabajo por cuenta propia implica:",
+      "options": [
+        "Salario fijo",
+        "Dependencia jerárquica",
+        "Jornada por convenio",
+        "Asunción del riesgo económico"
+      ],
+      "correct": "Asunción del riesgo económico"
+    },
+    {
+      "id": 22,
+      "unit": "General",
+      "question": "La cultura preventiva tiene como objetivo:",
+      "options": [
+        "Controlar al personal",
+        "Reducir costes",
+        "Evitar accidentes",
+        "Aumentar beneficios"
+      ],
+      "correct": "Evitar accidentes"
+    },
+    {
+      "id": 23,
+      "unit": "General",
+      "question": "El salario base forma parte de:",
+      "options": [
+        "Percepciones extrasalariales",
+        "Retribuciones salariales",
+        "Dietas",
+        "Indemnizaciones"
+      ],
+      "correct": "Retribuciones salariales"
+    },
+    {
+      "id": 24,
+      "unit": "General",
+      "question": "El aprendizaje informal se adquiere mediante:",
+      "options": [
+        "Evaluaciones oficiales",
+        "Exámenes",
+        "Certificados",
+        "Experiencias cotidianas"
+      ],
+      "correct": "Experiencias cotidianas"
+    },
+    {
+      "id": 25,
+      "unit": "General",
+      "question": "El sector cuaternario está vinculado principalmente a:",
+      "options": [
+        "Economía del conocimiento",
+        "Agricultura",
+        "Industria pesada",
+        "Servicios tradicionales"
+      ],
+      "correct": "Economía del conocimiento"
+    },
+    {
+      "id": 26,
+      "unit": "General",
+      "question": "Los riesgos psicosociales afectan principalmente a:",
+      "options": [
+        "El salario",
+        "La salud mental",
+        "La maquinaria",
+        "Los edificios"
+      ],
+      "correct": "La salud mental"
+    },
+    {
+      "id": 27,
+      "unit": "General",
+      "question": "La autoestima profesional influye en:",
+      "options": [
+        "La titulación académica",
+        "La empleabilidad",
+        "El salario bruto",
+        "Los contratos temporales"
+      ],
+      "correct": "La empleabilidad"
+    },
+    {
+      "id": 28,
+      "unit": "General",
+      "question": "Un objetivo SMART debe ser:",
+      "options": [
+        "General y subjetivo",
+        "Flexible e informal",
+        "Medible y temporal",
+        "Amplio y adaptable"
+      ],
+      "correct": "Medible y temporal"
+    },
+    {
+      "id": 29,
+      "unit": "General",
+      "question": "El objetivo de la gestión preventiva es:",
+      "options": [
+        "Aumentar la productividad",
+        "Reducir costes empresariales",
+        "Gestionar recursos humanos",
+        "Garantizar seguridad y salud"
+      ],
+      "correct": "Garantizar seguridad y salud"
+    },
+    {
+      "id": 30,
+      "unit": "General",
+      "question": "La evaluación de riesgos sirve para:",
+      "options": [
+        "Identificar y valorar riesgos",
+        "Sancionar trabajadores",
+        "Elaborar contratos",
+        "Planificar vacaciones"
+      ],
+      "correct": "Identificar y valorar riesgos"
+    },
+    {
+      "id": 31,
+      "unit": "General",
+      "question": "La mejora continua implica:",
+      "options": [
+        "Mantener el plan sin cambios",
+        "Revisar y ajustar el plan",
+        "Delegar responsabilidades",
+        "Ampliar la plantilla"
+      ],
+      "correct": "Revisar y ajustar el plan"
+    },
+    {
+      "id": 32,
+      "unit": "General",
+      "question": "El convenio colectivo:",
+      "options": [
+        "Sustituye al contrato individual",
+        "Define el organigrama",
+        "Mejora condiciones laborales",
+        "Establece el horario fijo"
+      ],
+      "correct": "Mejora condiciones laborales"
+    },
+    {
+      "id": 33,
+      "unit": "General",
+      "question": "La vigilancia de la salud es:",
+      "options": [
+        "Obligatoria y pública",
+        "Voluntaria y confidencial",
+        "Opcional y pública",
+        "Obligatoria y anónima"
+      ],
+      "correct": "Voluntaria y confidencial"
+    },
+    {
+      "id": 34,
+      "unit": "General",
+      "question": "La Seguridad Social protege frente a:",
+      "options": [
+        "Deudas personales",
+        "Multas tributarias",
+        "Contingencias laborales",
+        "Sanciones disciplinarias"
+      ],
+      "correct": "Contingencias laborales"
+    },
+    {
+      "id": 35,
+      "unit": "General",
+      "question": "Un EPI es:",
+      "options": [
+        "Un equipo individual de protección",
+        "Un protocolo de emergencia",
+        "Un tipo de contrato laboral",
+        "Un plan de prevención"
+      ],
+      "correct": "Un equipo individual de protección"
+    },
+    {
+      "id": 36,
+      "unit": "General",
+      "question": "La enfermedad profesional está asociada a:",
+      "options": [
+        "Un accidente puntual",
+        "Una lesión deportiva",
+        "Una enfermedad genética",
+        "Exposición prolongada"
+      ],
+      "correct": "Exposición prolongada"
+    },
+    {
+      "id": 37,
+      "unit": "General",
+      "question": "La identidad digital profesional afecta a:",
+      "options": [
+        "El salario neto",
+        "Empleabilidad",
+        "Los derechos sindicales",
+        "La jornada laboral"
+      ],
+      "correct": "Empleabilidad"
+    },
+    {
+      "id": 38,
+      "unit": "General",
+      "question": "El principio PAS significa:",
+      "options": [
+        "Prevenir, Analizar, Solucionar",
+        "Planificar, Actuar, Supervisar",
+        "Proteger, Avisar, Socorrer",
+        "Protocolizar, Aplicar, Supervisar"
+      ],
+      "correct": "Proteger, Avisar, Socorrer"
+    },
+    {
+      "id": 39,
+      "unit": "General",
+      "question": "Un riesgo ergonómico está relacionado con:",
+      "options": [
+        "Ruido excesivo",
+        "Sustancias químicas",
+        "Posturas forzadas",
+        "Incendios"
+      ],
+      "correct": "Posturas forzadas"
+    },
+    {
+      "id": 40,
+      "unit": "General",
+      "question": "Un hito vital profesionalizador es:",
+      "options": [
+        "Una nota académica",
+        "Un contrato indefinido",
+        "Una titulación oficial",
+        "Una experiencia transferible"
+      ],
+      "correct": "Una experiencia transferible"
+    },
+    {
+      "id": 41,
+      "unit": "UT1",
+      "question": "Una actitud de 'tolerancia activa' implica:",
+      "options": [
+        "Ignorar las diferencias",
+        "Aceptar solo las diferencias mínimas",
+        "Valorar las diferencias como una riqueza",
+        "Evitar el conflicto en el trabajo"
+      ],
+      "correct": "Valorar las diferencias como una riqueza"
+    },
+    {
+      "id": 42,
+      "unit": "UT1",
+      "question": "La resiliencia en el entorno laboral implica:",
+      "options": [
+        "Superar situaciones difíciles y adaptarse",
+        "Evitar situaciones de estrés",
+        "Rechazar los cambios laborales",
+        "Mantener siempre la misma actitud"
+      ],
+      "correct": "Superar situaciones difíciles y adaptarse"
+    },
+    {
+      "id": 43,
+      "unit": "UT1",
+      "question": "¿Qué significa ZDP en el contexto del desarrollo profesional?",
+      "options": [
+        "Zona de Desempeño Profesional",
+        "Zona de Desarrollo Personal",
+        "Zona de Desarrollo Próximo",
+        "Zona de Desafío Profesional"
+      ],
+      "correct": "Zona de Desarrollo Próximo"
+    },
+    {
+      "id": 44,
+      "unit": "UT1",
+      "question": "¿Cuál de las siguientes es una fuente oficial de búsqueda de empleo público?",
+      "options": [
+        "LinkedIn",
+        "SEPE",
+        "InfoJobs",
+        "Indeed"
+      ],
+      "correct": "SEPE"
+    },
+    {
+      "id": 45,
+      "unit": "UT1",
+      "question": "Un contrato temporal implica:",
+      "options": [
+        "Salario superior al indefinido",
+        "Beneficios adicionales por temporalidad",
+        "Posibilidad de rescisión unilateral",
+        "Limitación en el tiempo de vigencia"
+      ],
+      "correct": "Limitación en el tiempo de vigencia"
+    },
+    {
+      "id": 46,
+      "unit": "UT1",
+      "question": "¿Qué característica distingue al empleo público frente al privado?",
+      "options": [
+        "Mayor salario siempre",
+        "Sin necesidad de titulación",
+        "El acceso se realiza por oposición o concurso",
+        "Contratación directa por la empresa"
+      ],
+      "correct": "El acceso se realiza por oposición o concurso"
+    },
+    {
+      "id": 47,
+      "unit": "UT1",
+      "question": "¿Cuál de las siguientes NO es una competencia transversal?",
+      "options": [
+        "Trabajo en equipo",
+        "Soldadura TIG",
+        "Comunicación efectiva",
+        "Adaptabilidad"
+      ],
+      "correct": "Soldadura TIG"
+    },
+    {
+      "id": 48,
+      "unit": "UT1",
+      "question": "¿Cuál de las siguientes acciones es coherente con una actitud de aprendizaje permanente?",
+      "options": [
+        "Terminar los estudios y no seguir formándose",
+        "Limitarse a la formación obligatoria",
+        "Esperar a que la empresa ofrezca formación",
+        "Buscar formación continua para mejorar el perfil"
+      ],
+      "correct": "Buscar formación continua para mejorar el perfil"
+    },
+    {
+      "id": 49,
+      "unit": "UT1",
+      "question": "Un ejemplo de servicio del tercer sector es:",
+      "options": [
+        "Centro de día para mayores gestionado por una ONG",
+        "Una empresa multinacional de servicios",
+        "Un departamento gubernamental",
+        "Una franquicia comercial"
+      ],
+      "correct": "Centro de día para mayores gestionado por una ONG"
+    },
+    {
+      "id": 50,
+      "unit": "UT1",
+      "question": "La 'propuesta de valor' profesional es:",
+      "options": [
+        "El salario que exiges",
+        "El número de certificaciones",
+        "Los años de experiencia",
+        "Aquello que te distingue y aporta valor como profesional"
+      ],
+      "correct": "Aquello que te distingue y aporta valor como profesional"
+    },
+    {
+      "id": 51,
+      "unit": "UT1",
+      "question": "Las competencias técnicas también se denominan:",
+      "options": [
+        "Soft skills",
+        "Hard skills",
+        "Life skills",
+        "Core skills"
+      ],
+      "correct": "Hard skills"
+    },
+    {
+      "id": 52,
+      "unit": "UT1",
+      "question": "El emprendimiento es:",
+      "options": [
+        "Una forma de empleo público",
+        "Un tipo de contrato temporal",
+        "Una forma de trabajo autónomo",
+        "Una modalidad de teletrabajo"
+      ],
+      "correct": "Una forma de trabajo autónomo"
+    },
+    {
+      "id": 53,
+      "unit": "UT1",
+      "question": "La comunicación eficaz en el entorno profesional se caracteriza por:",
+      "options": [
+        "La claridad, la estructura y la adecuación al receptor",
+        "La rapidez y la brevedad exclusivamente",
+        "El uso de tecnicismos avanzados",
+        "La informalidad y cercanía"
+      ],
+      "correct": "La claridad, la estructura y la adecuación al receptor"
+    },
+    {
+      "id": 54,
+      "unit": "UT1",
+      "question": "¿Qué documento regula las condiciones laborales en el empleo privado?",
+      "options": [
+        "El Estatuto de los Trabajadores",
+        "La Constitución Española",
+        "Convenio colectivo",
+        "El Reglamento de Seguridad Social"
+      ],
+      "correct": "Convenio colectivo"
+    },
+    {
+      "id": 55,
+      "unit": "UT1",
+      "question": "Una función habitual de un técnico en integración social es:",
+      "options": [
+        "Auditar cuentas empresariales",
+        "Diseñar intervenciones socioeducativas",
+        "Gestionar contratos laborales",
+        "Supervisar instalaciones eléctricas"
+      ],
+      "correct": "Diseñar intervenciones socioeducativas"
+    },
+    {
+      "id": 56,
+      "unit": "UT2",
+      "question": "¿Qué es un riesgo laboral?",
+      "options": [
+        "Un incidente sin consecuencias",
+        "Una condición segura en el trabajo",
+        "Una medida preventiva",
+        "La posibilidad de que un trabajador sufra un daño derivado del trabajo"
+      ],
+      "correct": "La posibilidad de que un trabajador sufra un daño derivado del trabajo"
+    },
+    {
+      "id": 57,
+      "unit": "UT2",
+      "question": "¿Cuál de los siguientes riesgos es de tipo físico?",
+      "options": [
+        "Ruido constante en el lugar de trabajo",
+        "Estrés por carga de trabajo",
+        "Manipulación de sustancias tóxicas",
+        "Relaciones laborales conflictivas"
+      ],
+      "correct": "Ruido constante en el lugar de trabajo"
+    },
+    {
+      "id": 58,
+      "unit": "UT2",
+      "question": "¿Qué es un accidente de trabajo?",
+      "options": [
+        "Una enfermedad crónica no laboral",
+        "Una lesión sufrida por un trabajador durante su actividad laboral",
+        "Un conflicto entre compañeros",
+        "Un error de gestión empresarial"
+      ],
+      "correct": "Una lesión sufrida por un trabajador durante su actividad laboral"
+    },
+    {
+      "id": 59,
+      "unit": "UT2",
+      "question": "¿Qué documento establece la normativa básica en prevención en España?",
+      "options": [
+        "Real Decreto 485/1997",
+        "Ley Orgánica 3/2018",
+        "Ley 31/1995 de Prevención de Riesgos Laborales",
+        "Ley 39/2015"
+      ],
+      "correct": "Ley 31/1995 de Prevención de Riesgos Laborales"
+    },
+    {
+      "id": 60,
+      "unit": "UT2",
+      "question": "¿Qué prioridad tiene la protección colectiva respecto a la individual?",
+      "options": [
+        "Tiene la misma prioridad",
+        "Es prioritaria frente a la individual",
+        "Es secundaria a la individual",
+        "Depende del tipo de riesgo"
+      ],
+      "correct": "Es prioritaria frente a la individual"
+    },
+    {
+      "id": 61,
+      "unit": "UT2",
+      "question": "¿Qué es una enfermedad profesional?",
+      "options": [
+        "Una dolencia causada por la exposición prolongada a riesgos laborales",
+        "Una lesión por un accidente puntual",
+        "Una enfermedad genética del trabajador",
+        "Un trastorno psicológico personal"
+      ],
+      "correct": "Una dolencia causada por la exposición prolongada a riesgos laborales"
+    },
+    {
+      "id": 62,
+      "unit": "UT2",
+      "question": "¿Cuál es el primer paso en la evaluación de riesgos?",
+      "options": [
+        "Aplicar medidas correctoras",
+        "Informar a los trabajadores",
+        "Documentar los resultados",
+        "Identificar los peligros"
+      ],
+      "correct": "Identificar los peligros"
+    },
+    {
+      "id": 63,
+      "unit": "UT2",
+      "question": "¿Qué principio preventivo dice 'combatir los riesgos en su origen'?",
+      "options": [
+        "Una recomendación de la OIT",
+        "Uno de los principios básicos de la Ley 31/1995",
+        "El principio de precaución genérico",
+        "Un principio del Estatuto de los Trabajadores"
+      ],
+      "correct": "Uno de los principios básicos de la Ley 31/1995"
+    },
+    {
+      "id": 64,
+      "unit": "UT2",
+      "question": "¿Qué función tiene un equipo de protección individual?",
+      "options": [
+        "Eliminar completamente el riesgo",
+        "Sustituir a las medidas colectivas",
+        "Minimizar el daño si el riesgo no puede eliminarse",
+        "Reemplazar la evaluación de riesgos"
+      ],
+      "correct": "Minimizar el daño si el riesgo no puede eliminarse"
+    },
+    {
+      "id": 65,
+      "unit": "UT2",
+      "question": "¿Qué tipo de riesgo es el estrés laboral?",
+      "options": [
+        "Físico",
+        "Químico",
+        "Psicosocial",
+        "Ergonómico"
+      ],
+      "correct": "Psicosocial"
+    },
+    {
+      "id": 66,
+      "unit": "UT2",
+      "question": "¿Qué debe hacer el trabajador si detecta una situación de riesgo?",
+      "options": [
+        "Solucionarlo por su cuenta",
+        "Ignorarlo si no es grave",
+        "Informar inmediatamente a la empresa",
+        "Documentarlo en su diario personal"
+      ],
+      "correct": "Informar inmediatamente a la empresa"
+    },
+    {
+      "id": 67,
+      "unit": "UT2",
+      "question": "¿Qué es una medida preventiva?",
+      "options": [
+        "Una sanción por incumplimiento",
+        "Un seguro de accidentes",
+        "Un informe de incidencias",
+        "Una acción que busca evitar o reducir riesgos"
+      ],
+      "correct": "Una acción que busca evitar o reducir riesgos"
+    },
+    {
+      "id": 68,
+      "unit": "UT2",
+      "question": "¿Qué medida es más eficaz?",
+      "options": [
+        "Eliminar el riesgo en su origen",
+        "Proporcionar EPIs al trabajador",
+        "Señalizar los peligros",
+        "Aumentar la vigilancia sanitaria"
+      ],
+      "correct": "Eliminar el riesgo en su origen"
+    },
+    {
+      "id": 69,
+      "unit": "UT2",
+      "question": "¿Qué es la observación activa?",
+      "options": [
+        "Un método de entrenamiento deportivo",
+        "Técnica para identificar riesgos en el entorno real de trabajo",
+        "Una evaluación psicológica",
+        "Un tipo de auditoría financiera"
+      ],
+      "correct": "Técnica para identificar riesgos en el entorno real de trabajo"
+    },
+    {
+      "id": 70,
+      "unit": "UT2",
+      "question": "¿Qué debe hacer toda empresa respecto a la PRL?",
+      "options": [
+        "Delegarla a un servicio externo exclusivamente",
+        "Aplicarla solo en producción",
+        "Actualizarla cada 5 años",
+        "Integrarla en todos los niveles de la organización"
+      ],
+      "correct": "Integrarla en todos los niveles de la organización"
+    },
+    {
+      "id": 71,
+      "unit": "UT3",
+      "question": "¿Qué modalidad preventiva permite al empresario asumir directamente la actividad preventiva?",
+      "options": [
+        "Asunción personal por el empresario",
+        "Servicio de prevención ajeno",
+        "Mutua de accidentes de trabajo",
+        "Delegado de prevención"
+      ],
+      "correct": "Asunción personal por el empresario"
+    },
+    {
+      "id": 72,
+      "unit": "UT3",
+      "question": "¿Quién forma parte del Comité de Seguridad y Salud?",
+      "options": [
+        "Solo los técnicos de prevención",
+        "Solo los trabajadores",
+        "Representantes de la empresa y delegados de prevención",
+        "La Inspección de Trabajo y los directivos"
+      ],
+      "correct": "Representantes de la empresa y delegados de prevención"
+    },
+    {
+      "id": 73,
+      "unit": "UT3",
+      "question": "¿Cuál de las siguientes situaciones justifica legalmente una vigilancia de la salud obligatoria?",
+      "options": [
+        "Cuando el trabajador lo solicite",
+        "Cuando es necesaria para proteger a terceros",
+        "Cuando la empresa lo decida",
+        "Cuando se supere la jornada ordinaria"
+      ],
+      "correct": "Cuando es necesaria para proteger a terceros"
+    },
+    {
+      "id": 74,
+      "unit": "UT3",
+      "question": "¿Qué contenido es obligatorio incluir en un plan de emergencia?",
+      "options": [
+        "El presupuesto anual de prevención",
+        "Los contratos con proveedores",
+        "Organización de la respuesta ante emergencias",
+        "El convenio colectivo aplicable"
+      ],
+      "correct": "Organización de la respuesta ante emergencias"
+    },
+    {
+      "id": 75,
+      "unit": "UT3",
+      "question": "¿Qué tipo de evaluación médica se realiza antes de iniciar una actividad laboral?",
+      "options": [
+        "Evaluación periódica",
+        "Evaluación por reincorporación",
+        "Evaluación de aptitud específica",
+        "Evaluación inicial o de ingreso"
+      ],
+      "correct": "Evaluación inicial o de ingreso"
+    },
+    {
+      "id": 76,
+      "unit": "UT3",
+      "question": "¿Qué herramienta se utiliza para facilitar la evacuación en caso de emergencia?",
+      "options": [
+        "Manual de calidad",
+        "Croquis o plano de evacuación",
+        "Plan de igualdad",
+        "Registro de jornada"
+      ],
+      "correct": "Croquis o plano de evacuación"
+    },
+    {
+      "id": 77,
+      "unit": "UT3",
+      "question": "¿Qué tipo de riesgo es una superficie mojada en una entrada?",
+      "options": [
+        "Riesgo químico",
+        "Riesgo psicosocial",
+        "Riesgo físico",
+        "Riesgo ergonómico"
+      ],
+      "correct": "Riesgo físico"
+    },
+    {
+      "id": 78,
+      "unit": "UT3",
+      "question": "¿Quién debe activar la alarma en un protocolo de emergencia?",
+      "options": [
+        "Solo el responsable de seguridad",
+        "Cualquier persona asignada en el plan de emergencia",
+        "Solo el director de la empresa",
+        "Solo los bomberos"
+      ],
+      "correct": "Cualquier persona asignada en el plan de emergencia"
+    },
+    {
+      "id": 79,
+      "unit": "UT3",
+      "question": "¿Cuál es un error común en la aplicación de primeros auxilios?",
+      "options": [
+        "Aplicar presión sobre una hemorragia",
+        "Llamar al 112",
+        "Retirar objetos clavados de una herida",
+        "Mantener al herido en posición segura"
+      ],
+      "correct": "Retirar objetos clavados de una herida"
+    },
+    {
+      "id": 80,
+      "unit": "UT3",
+      "question": "¿Qué principio garantiza la privacidad en la vigilancia de la salud?",
+      "options": [
+        "Transparencia",
+        "Publicidad",
+        "Accesibilidad",
+        "Confidencialidad"
+      ],
+      "correct": "Confidencialidad"
+    },
+    {
+      "id": 81,
+      "unit": "UT3",
+      "question": "¿Qué personas deben recibir formación en primeros auxilios en la empresa?",
+      "options": [
+        "Solo los técnicos de prevención",
+        "Solo el personal sanitario",
+        "Todos los trabajadores, según su función",
+        "Solo los responsables de área"
+      ],
+      "correct": "Todos los trabajadores, según su función"
+    },
+    {
+      "id": 82,
+      "unit": "UT3",
+      "question": "¿Qué formato es adecuado para informar visualmente sobre salud laboral?",
+      "options": [
+        "Infografía",
+        "Contrato laboral",
+        "Informe técnico extenso",
+        "Acta de reunión"
+      ],
+      "correct": "Infografía"
+    },
+    {
+      "id": 83,
+      "unit": "UT3",
+      "question": "¿Qué personas forman parte del equipo de primeros auxilios?",
+      "options": [
+        "Solo médicos y enfermeros",
+        "Los delegados de prevención",
+        "Trabajadores designados con formación básica en socorrismo",
+        "Los representantes sindicales"
+      ],
+      "correct": "Trabajadores designados con formación básica en socorrismo"
+    },
+    {
+      "id": 84,
+      "unit": "UT3",
+      "question": "¿Qué herramienta digital puedes usar para hacer una infografía?",
+      "options": [
+        "Excel",
+        "Git",
+        "Canva",
+        "SonarQube"
+      ],
+      "correct": "Canva"
+    },
+    {
+      "id": 85,
+      "unit": "UT3",
+      "question": "¿Qué derecho tiene toda persona trabajadora respecto a su salud?",
+      "options": [
+        "A rechazar cualquier medida preventiva",
+        "A exigir reconocimientos médicos ilimitados",
+        "A ser informada y a dar consentimiento sobre cualquier reconocimiento médico",
+        "A acceder al historial médico de sus compañeros"
+      ],
+      "correct": "A ser informada y a dar consentimiento sobre cualquier reconocimiento médico"
+    },
+    {
+      "id": 86,
+      "unit": "UT4",
+      "question": "¿Qué es el convenio colectivo?",
+      "options": [
+        "Un contrato individual de trabajo",
+        "Un reglamento interno de empresa",
+        "Una norma pactada entre trabajadores y empresarios",
+        "Una resolución judicial"
+      ],
+      "correct": "Una norma pactada entre trabajadores y empresarios"
+    },
+    {
+      "id": 87,
+      "unit": "UT4",
+      "question": "¿Qué apartado de la nómina recoge los salarios brutos?",
+      "options": [
+        "Deducciones",
+        "Devengos",
+        "Bases de cotización",
+        "Percepciones extrasalariales"
+      ],
+      "correct": "Devengos"
+    },
+    {
+      "id": 88,
+      "unit": "UT4",
+      "question": "¿Qué parte de la Seguridad Social gestiona las prestaciones por jubilación?",
+      "options": [
+        "SEPE",
+        "SMAC",
+        "INSS",
+        "Mutua laboral"
+      ],
+      "correct": "INSS"
+    },
+    {
+      "id": 89,
+      "unit": "UT4",
+      "question": "¿Qué derecho garantiza el equilibrio entre la vida personal y laboral en el teletrabajo?",
+      "options": [
+        "Reducción de jornada",
+        "Teletrabajo obligatorio",
+        "Permiso retribuido",
+        "Desconexión digital"
+      ],
+      "correct": "Desconexión digital"
+    },
+    {
+      "id": 90,
+      "unit": "UT4",
+      "question": "¿Qué elemento forma parte de los devengos salariales?",
+      "options": [
+        "Salario base",
+        "Cuotas de la Seguridad Social",
+        "Retención de IRPF",
+        "Anticipos descontados"
+      ],
+      "correct": "Salario base"
+    },
+    {
+      "id": 91,
+      "unit": "UT4",
+      "question": "¿Qué documento refleja el fin de una relación laboral y el saldo final?",
+      "options": [
+        "Nómina",
+        "Contrato de trabajo",
+        "Finiquito",
+        "Carta de despido"
+      ],
+      "correct": "Finiquito"
+    },
+    {
+      "id": 92,
+      "unit": "UT4",
+      "question": "¿Qué tipo de contrato está pensado para jóvenes en formación?",
+      "options": [
+        "Contrato indefinido ordinario",
+        "Contrato de formación en alternancia",
+        "Contrato de obra y servicio",
+        "Contrato por sustitución"
+      ],
+      "correct": "Contrato de formación en alternancia"
+    },
+    {
+      "id": 93,
+      "unit": "UT4",
+      "question": "¿Qué entidad pública puede resolver un conflicto laboral antes del juicio?",
+      "options": [
+        "INSS",
+        "SEPE",
+        "Inspección de Trabajo",
+        "SMAC"
+      ],
+      "correct": "SMAC"
+    },
+    {
+      "id": 94,
+      "unit": "UT4",
+      "question": "¿Qué incluye la base de cotización?",
+      "options": [
+        "Solo el salario neto",
+        "Solo las horas extraordinarias",
+        "Solo las dietas",
+        "Salario base y complementos"
+      ],
+      "correct": "Salario base y complementos"
+    },
+    {
+      "id": 95,
+      "unit": "UT4",
+      "question": "¿Qué protección ofrece la Seguridad Social al trabajador enfermo?",
+      "options": [
+        "Prestación por desempleo",
+        "Prestación por incapacidad temporal",
+        "Subsidio de maternidad",
+        "Pensión de jubilación"
+      ],
+      "correct": "Prestación por incapacidad temporal"
+    },
+    {
+      "id": 96,
+      "unit": "UT4",
+      "question": "¿Qué modalidad contractual tiene carácter prioritario según la legislación actual?",
+      "options": [
+        "Contrato temporal",
+        "Contrato a tiempo parcial",
+        "Contrato de obra y servicio",
+        "Contrato indefinido"
+      ],
+      "correct": "Contrato indefinido"
+    },
+    {
+      "id": 97,
+      "unit": "UT4",
+      "question": "¿Qué ayuda pública cubre al trabajador en caso de pérdida involuntaria del empleo?",
+      "options": [
+        "Prestación por incapacidad",
+        "Subsidio de formación",
+        "Prestación por desempleo",
+        "Pensión de vejez"
+      ],
+      "correct": "Prestación por desempleo"
+    },
+    {
+      "id": 98,
+      "unit": "UT4",
+      "question": "¿Qué apartado de la nómina incluye las cotizaciones y el IRPF?",
+      "options": [
+        "Devengos",
+        "Deducciones",
+        "Bases de cotización",
+        "Percepciones extrasalariales"
+      ],
+      "correct": "Deducciones"
+    },
+    {
+      "id": 99,
+      "unit": "UT4",
+      "question": "¿Qué principio rige la protección de las personas en el sistema de Seguridad Social?",
+      "options": [
+        "Libre competencia",
+        "Responsabilidad individual",
+        "Solidaridad colectiva",
+        "Principio de subsidiariedad"
+      ],
+      "correct": "Solidaridad colectiva"
+    },
+    {
+      "id": 100,
+      "unit": "UT4",
+      "question": "¿Qué mecanismo permite denunciar irregularidades laborales de forma anónima?",
+      "options": [
+        "SEPE",
+        "Comité de empresa",
+        "Sindicato",
+        "Inspección de Trabajo"
+      ],
+      "correct": "Inspección de Trabajo"
+    },
+    {
+      "id": 101,
+      "unit": "UT5",
+      "question": "El autoconocimiento es importante para la empleabilidad porque:",
+      "options": [
+        "Garantiza la obtención de un puesto de trabajo",
+        "Aumenta el salario directamente",
+        "Elimina la necesidad de formación específica",
+        "Permite comprender mejor las propias capacidades y orientar decisiones profesionales"
+      ],
+      "correct": "Permite comprender mejor las propias capacidades y orientar decisiones profesionales"
+    },
+    {
+      "id": 102,
+      "unit": "UT5",
+      "question": "El autoconocimiento se compone principalmente de:",
+      "options": [
+        "Titulaciones, certificados y experiencia laboral",
+        "Intereses, valores, motivaciones y capacidades",
+        "Relaciones personales y contactos profesionales",
+        "Habilidades técnicas y conocimientos específicos"
+      ],
+      "correct": "Intereses, valores, motivaciones y capacidades"
+    },
+    {
+      "id": 103,
+      "unit": "UT5",
+      "question": "Los intereses profesionales se refieren a:",
+      "options": [
+        "Los requisitos formales del puesto de trabajo",
+        "Los objetivos de la empresa",
+        "Las tareas o actividades que generan curiosidad y satisfacción personal",
+        "Las habilidades técnicas necesarias"
+      ],
+      "correct": "Las tareas o actividades que generan curiosidad y satisfacción personal"
+    },
+    {
+      "id": 104,
+      "unit": "UT5",
+      "question": "Los valores personales en el trabajo representan:",
+      "options": [
+        "Los principios que guían nuestras decisiones y actitudes",
+        "Las competencias técnicas adquiridas",
+        "Los salarios y beneficios esperados",
+        "Las tareas asignadas por la empresa"
+      ],
+      "correct": "Los principios que guían nuestras decisiones y actitudes"
+    },
+    {
+      "id": 105,
+      "unit": "UT5",
+      "question": "La motivación intrínseca se caracteriza por:",
+      "options": [
+        "Estar impulsada por recompensas externas",
+        "Depender del reconocimiento de otros",
+        "Nacer del interés o placer por la propia tarea",
+        "Basarse en el salario recibido"
+      ],
+      "correct": "Nacer del interés o placer por la propia tarea"
+    },
+    {
+      "id": 106,
+      "unit": "UT5",
+      "question": "El modelo RIASEC de John Holland clasifica los perfiles en:",
+      "options": [
+        "Cuatro tipos: Analítico, Creativo, Social y Ejecutivo",
+        "Seis tipos vocacionales: Realista, Investigador, Artístico, Social, Emprendedor y Convencional",
+        "Tres categorías: Técnico, Humanístico y Científico",
+        "Cinco perfiles: Líder, Colaborador, Innovador, Ejecutor y Especialista"
+      ],
+      "correct": "Seis tipos vocacionales: Realista, Investigador, Artístico, Social, Emprendedor y Convencional"
+    },
+    {
+      "id": 107,
+      "unit": "UT5",
+      "question": "Las competencias personales se relacionan con:",
+      "options": [
+        "El manejo de software específico",
+        "El conocimiento de idiomas",
+        "Las cualificaciones técnicas",
+        "La gestión de uno mismo y la autonomía profesional"
+      ],
+      "correct": "La gestión de uno mismo y la autonomía profesional"
+    },
+    {
+      "id": 108,
+      "unit": "UT5",
+      "question": "La iniciativa profesional implica:",
+      "options": [
+        "Proponer ideas y anticiparse a los problemas",
+        "Esperar instrucciones antes de actuar",
+        "Cumplir estrictamente con las tareas asignadas",
+        "Evitar conflictos en el trabajo"
+      ],
+      "correct": "Proponer ideas y anticiparse a los problemas"
+    },
+    {
+      "id": 109,
+      "unit": "UT5",
+      "question": "Las competencias sociales se centran en:",
+      "options": [
+        "El dominio de herramientas digitales",
+        "La gestión de proyectos",
+        "La interacción y comunicación eficaz con otras personas",
+        "El análisis de datos"
+      ],
+      "correct": "La interacción y comunicación eficaz con otras personas"
+    },
+    {
+      "id": 110,
+      "unit": "UT5",
+      "question": "Un ejemplo de competencia social es:",
+      "options": [
+        "Programación en Python",
+        "Gestión de bases de datos",
+        "Empatía",
+        "Certificación en idiomas"
+      ],
+      "correct": "Empatía"
+    },
+    {
+      "id": 111,
+      "unit": "UT5",
+      "question": "La autoestima profesional se construye sobre:",
+      "options": [
+        "Títulos y certificaciones obtenidas",
+        "Salario y beneficios laborales",
+        "Reconocimiento externo y premios",
+        "Autoconocimiento, autoaceptación y autoconfianza"
+      ],
+      "correct": "Autoconocimiento, autoaceptación y autoconfianza"
+    },
+    {
+      "id": 112,
+      "unit": "UT5",
+      "question": "La motivación extrínseca se basa en:",
+      "options": [
+        "Recompensas externas como el salario o el reconocimiento",
+        "El interés genuino por la tarea",
+        "La satisfacción personal intrínseca",
+        "La curiosidad intelectual"
+      ],
+      "correct": "Recompensas externas como el salario o el reconocimiento"
+    },
+    {
+      "id": 113,
+      "unit": "UT5",
+      "question": "La actitud positiva en el empleo se demuestra cuando:",
+      "options": [
+        "Se evitan los conflictos a toda costa",
+        "Se afrontan las dificultades buscando soluciones y aprendizaje",
+        "Se cumplen las tareas sin cuestionarlas",
+        "Se mantiene una actitud de conformidad"
+      ],
+      "correct": "Se afrontan las dificultades buscando soluciones y aprendizaje"
+    },
+    {
+      "id": 114,
+      "unit": "UT5",
+      "question": "La resiliencia profesional significa:",
+      "options": [
+        "Evitar situaciones de riesgo laboral",
+        "Mantener siempre un estado emocional positivo",
+        "Recuperarse ante los fracasos y aprender de la experiencia",
+        "Adaptarse solo a los cambios positivos"
+      ],
+      "correct": "Recuperarse ante los fracasos y aprender de la experiencia"
+    },
+    {
+      "id": 115,
+      "unit": "UT5",
+      "question": "El aprendizaje continuo consiste en:",
+      "options": [
+        "Obtener una única titulación definitiva",
+        "Estudiar durante los primeros años laborales",
+        "Aprender solo en contextos formales",
+        "Mantener una actitud de actualización y formación permanente"
+      ],
+      "correct": "Mantener una actitud de actualización y formación permanente"
+    },
+    {
+      "id": 116,
+      "unit": "UT6",
+      "question": "¿Qué es un proyecto profesional?",
+      "options": [
+        "Un currículum vitae detallado",
+        "Un plan personal con metas y acciones para lograr un objetivo laboral",
+        "Un contrato de trabajo firmado",
+        "Un informe de evaluación del desempeño"
+      ],
+      "correct": "Un plan personal con metas y acciones para lograr un objetivo laboral"
+    },
+    {
+      "id": 117,
+      "unit": "UT6",
+      "question": "Una meta a corto plazo se caracteriza por:",
+      "options": [
+        "Poder alcanzarse en menos de un año",
+        "Requerer más de tres años para alcanzarse",
+        "Ser imposible de medir",
+        "Depender exclusivamente de factores externos"
+      ],
+      "correct": "Poder alcanzarse en menos de un año"
+    },
+    {
+      "id": 118,
+      "unit": "UT6",
+      "question": "La empleabilidad es:",
+      "options": [
+        "La cantidad de títulos académicos obtenidos",
+        "El número de años trabajados",
+        "El nivel salarial alcanzado",
+        "La capacidad de conseguir, mantener y mejorar un empleo"
+      ],
+      "correct": "La capacidad de conseguir, mantener y mejorar un empleo"
+    },
+    {
+      "id": 119,
+      "unit": "UT6",
+      "question": "El análisis DAFO permite:",
+      "options": [
+        "Calcular el salario esperado",
+        "Diseñar un plan de estudios",
+        "Identificar fortalezas, debilidades, oportunidades y amenazas personales",
+        "Elaborar un contrato de trabajo"
+      ],
+      "correct": "Identificar fortalezas, debilidades, oportunidades y amenazas personales"
+    },
+    {
+      "id": 120,
+      "unit": "UT6",
+      "question": "¿Qué es la acreditación de competencias?",
+      "options": [
+        "Un título universitario estándar",
+        "Una evaluación interna de empresa",
+        "Un certificado de asistencia a cursos",
+        "Reconocimiento oficial de la experiencia y formación no reglada"
+      ],
+      "correct": "Reconocimiento oficial de la experiencia y formación no reglada"
+    },
+    {
+      "id": 121,
+      "unit": "UT6",
+      "question": "Un ejemplo de fuente de formación no reglada sería:",
+      "options": [
+        "Un grado universitario",
+        "Un curso del SEPE",
+        "Un ciclo formativo de FP",
+        "Una oposición pública"
+      ],
+      "correct": "Un curso del SEPE"
+    },
+    {
+      "id": 122,
+      "unit": "UT6",
+      "question": "El aprendizaje permanente implica:",
+      "options": [
+        "Formarse solo durante la educación obligatoria",
+        "Completar un máster y detenerse",
+        "Aprender únicamente en contextos formales",
+        "Aprender de forma continua a lo largo de toda la vida"
+      ],
+      "correct": "Aprender de forma continua a lo largo de toda la vida"
+    },
+    {
+      "id": 123,
+      "unit": "UT6",
+      "question": "Un itinerario formativo bien elegido debe:",
+      "options": [
+        "Incluir el mayor número de cursos posible",
+        "Centrarse solo en formación presencial",
+        "Estar alineado con el perfil profesional y metas personales",
+        "Seguir las tendencias del mercado sin criterio propio"
+      ],
+      "correct": "Estar alineado con el perfil profesional y metas personales"
+    },
+    {
+      "id": 124,
+      "unit": "UT6",
+      "question": "El plan de acción profesional debe incluir:",
+      "options": [
+        "Solo objetivos a largo plazo",
+        "Únicamente competencias técnicas",
+        "Metas, acciones, plazos y recursos",
+        "Solo el historial educativo"
+      ],
+      "correct": "Metas, acciones, plazos y recursos"
+    },
+    {
+      "id": 125,
+      "unit": "UT6",
+      "question": "¿Cuál es una herramienta útil para diseñar un PLE visual?",
+      "options": [
+        "SonarQube",
+        "Git",
+        "Eclipse",
+        "Canva"
+      ],
+      "correct": "Canva"
+    },
+    {
+      "id": 126,
+      "unit": "UT6",
+      "question": "Las metas a largo plazo suelen abarcar:",
+      "options": [
+        "Menos de seis meses",
+        "Entre uno y dos años",
+        "Exactamente un año",
+        "Más de tres años"
+      ],
+      "correct": "Más de tres años"
+    },
+    {
+      "id": 127,
+      "unit": "UT6",
+      "question": "¿Qué permite el uso de objetivos SMART en un proyecto?",
+      "options": [
+        "Clarificar qué se quiere lograr y cómo",
+        "Eliminar la incertidumbre completamente",
+        "Garantizar el éxito del proyecto",
+        "Automatizar el seguimiento de tareas"
+      ],
+      "correct": "Clarificar qué se quiere lograr y cómo"
+    },
+    {
+      "id": 128,
+      "unit": "UT6",
+      "question": "Una buena reflexión profesional incluye:",
+      "options": [
+        "Solo el historial de logros pasados",
+        "Únicamente las competencias técnicas",
+        "Análisis personal, metas claras y valores propios",
+        "Solo las opiniones de terceros"
+      ],
+      "correct": "Análisis personal, metas claras y valores propios"
+    },
+    {
+      "id": 129,
+      "unit": "UT6",
+      "question": "¿Qué es una acción de mejora en el plan de acción?",
+      "options": [
+        "Un objetivo general sin plazo",
+        "Una evaluación del desempeño pasado",
+        "Un análisis de debilidades",
+        "Una tarea concreta para avanzar hacia una meta"
+      ],
+      "correct": "Una tarea concreta para avanzar hacia una meta"
+    },
+    {
+      "id": 130,
+      "unit": "UT6",
+      "question": "¿Qué actitud demuestra empleabilidad sostenible?",
+      "options": [
+        "Especialización en una única área sin cambios",
+        "Esperar a que la empresa ofrezca formación",
+        "Adaptación, formación constante y proactividad",
+        "Priorizar la estabilidad sobre el crecimiento"
+      ],
+      "correct": "Adaptación, formación constante y proactividad"
+    },
+    {
+      "id": 131,
+      "unit": "UT7",
+      "question": "¿Qué se entiende por aprendizaje autónomo?",
+      "options": [
+        "El aprendizaje supervisado por un tutor",
+        "La formación reglada en centros educativos",
+        "La capacidad de aprender por cuenta propia, gestionando recursos y tiempos",
+        "El aprendizaje en grupos de trabajo"
+      ],
+      "correct": "La capacidad de aprender por cuenta propia, gestionando recursos y tiempos"
+    },
+    {
+      "id": 132,
+      "unit": "UT7",
+      "question": "¿Qué componente NO puede faltar en un entorno personal de aprendizaje (PLE)?",
+      "options": [
+        "Herramientas, fuentes y redes conectadas a los objetivos de la persona",
+        "Un aula física con materiales didácticos",
+        "Un horario fijo de estudio semanal",
+        "Un profesor que guíe el proceso"
+      ],
+      "correct": "Herramientas, fuentes y redes conectadas a los objetivos de la persona"
+    },
+    {
+      "id": 133,
+      "unit": "UT7",
+      "question": "¿Qué caracteriza al aprendizaje permanente?",
+      "options": [
+        "Se limita a la etapa educativa formal",
+        "Ocurre solo en entornos laborales",
+        "Se extiende a lo largo de toda la vida en distintos contextos",
+        "Requiere siempre un certificado al finalizar"
+      ],
+      "correct": "Se extiende a lo largo de toda la vida en distintos contextos"
+    },
+    {
+      "id": 134,
+      "unit": "UT7",
+      "question": "¿Qué elemento representa una fuente de información en un PLE?",
+      "options": [
+        "Un contrato de trabajo",
+        "Un plan de prevención de riesgos",
+        "Un convenio colectivo",
+        "Un canal de YouTube con contenidos educativos del sector profesional"
+      ],
+      "correct": "Un canal de YouTube con contenidos educativos del sector profesional"
+    },
+    {
+      "id": 135,
+      "unit": "UT7",
+      "question": "¿Qué representa una actitud proactiva en el desarrollo profesional?",
+      "options": [
+        "Esperar instrucciones del superior jerárquico",
+        "Adaptarse a los cambios sin planificación previa",
+        "Diseñar un plan personal de mejora basado en metas claras",
+        "Centrarse en las tareas del día a día sin proyección"
+      ],
+      "correct": "Diseñar un plan personal de mejora basado en metas claras"
+    },
+    {
+      "id": 136,
+      "unit": "UT7",
+      "question": "¿Qué función cumple la identidad digital?",
+      "options": [
+        "Reflejar cómo nos mostramos y somos percibidos en internet",
+        "Proteger la privacidad total en internet",
+        "Gestionar contraseñas y cuentas",
+        "Almacenar datos personales en la nube"
+      ],
+      "correct": "Reflejar cómo nos mostramos y somos percibidos en internet"
+    },
+    {
+      "id": 137,
+      "unit": "UT7",
+      "question": "¿Qué plataforma es especialmente útil para el posicionamiento profesional?",
+      "options": [
+        "TikTok",
+        "Instagram",
+        "LinkedIn",
+        "Twitter/X"
+      ],
+      "correct": "LinkedIn"
+    },
+    {
+      "id": 138,
+      "unit": "UT7",
+      "question": "¿Qué tipo de recurso permite reflexionar y valorar la evolución del aprendizaje?",
+      "options": [
+        "Un examen oficial",
+        "Un contrato de formación",
+        "Un informe de empresa",
+        "Diario de aprendizaje o bitácora reflexiva"
+      ],
+      "correct": "Diario de aprendizaje o bitácora reflexiva"
+    },
+    {
+      "id": 139,
+      "unit": "UT7",
+      "question": "¿Qué herramienta permite la organización visual del contenido?",
+      "options": [
+        "Git",
+        "Canva",
+        "JUnit",
+        "Eclipse"
+      ],
+      "correct": "Canva"
+    },
+    {
+      "id": 140,
+      "unit": "UT7",
+      "question": "¿Qué elemento debe analizarse al evaluar la identidad digital?",
+      "options": [
+        "El número de seguidores en redes sociales",
+        "El tiempo dedicado a las redes sociales",
+        "La coherencia entre los perfiles públicos y el perfil profesional deseado",
+        "El número de cuentas activas"
+      ],
+      "correct": "La coherencia entre los perfiles públicos y el perfil profesional deseado"
+    },
+    {
+      "id": 141,
+      "unit": "UT7",
+      "question": "¿Qué criterio hace útil un recurso formativo digital?",
+      "options": [
+        "Que sea gratuito y accesible desde el móvil",
+        "Que lo recomiende un conocido",
+        "Que tenga muchas visualizaciones",
+        "Que esté actualizado y sea relevante para los objetivos profesionales"
+      ],
+      "correct": "Que esté actualizado y sea relevante para los objetivos profesionales"
+    },
+    {
+      "id": 142,
+      "unit": "UT7",
+      "question": "¿Qué opción se considera parte del PLE?",
+      "options": [
+        "Un espacio físico de coworking",
+        "Un contrato de prácticas",
+        "Una comunidad online de profesionales del sector",
+        "Un plan de estudios oficial"
+      ],
+      "correct": "Una comunidad online de profesionales del sector"
+    },
+    {
+      "id": 143,
+      "unit": "UT7",
+      "question": "¿Qué actitud favorece el aprendizaje autónomo?",
+      "options": [
+        "Responsabilizarse de los propios objetivos y buscar recursos para alcanzarlos",
+        "Depender de la motivación externa para aprender",
+        "Seguir siempre un programa predefinido",
+        "Esperar a tener tiempo libre para formarse"
+      ],
+      "correct": "Responsabilizarse de los propios objetivos y buscar recursos para alcanzarlos"
+    },
+    {
+      "id": 144,
+      "unit": "UT7",
+      "question": "¿Por qué es importante el diseño visual del PLE?",
+      "options": [
+        "Porque lo hace más atractivo para los empleadores",
+        "Porque es obligatorio para obtener una certificación",
+        "Porque ayuda a comprender la estructura y los vínculos del entorno de aprendizaje",
+        "Porque reduce el tiempo de aprendizaje"
+      ],
+      "correct": "Porque ayuda a comprender la estructura y los vínculos del entorno de aprendizaje"
+    },
+    {
+      "id": 145,
+      "unit": "UT7",
+      "question": "¿Qué representa una red profesional en el entorno digital?",
+      "options": [
+        "Un software de gestión empresarial",
+        "Un sistema de videoconferencias",
+        "Una base de datos de ofertas de empleo",
+        "Un conjunto de personas o plataformas con las que se comparte conocimiento"
+      ],
+      "correct": "Un conjunto de personas o plataformas con las que se comparte conocimiento"
+    }
+  ]
+}

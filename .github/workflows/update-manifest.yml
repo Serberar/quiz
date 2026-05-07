@@ -1,0 +1,53 @@
+name: Regenerar manifest.json
+
+on:
+  push:
+    branches: [main, master]
+    paths: ['data/*.json']
+  workflow_dispatch:   # permite lanzarlo manualmente desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generar manifest.json
+        run: |
+          python3 << 'EOF'
+          import json, glob, os
+
+          subjects = []
+          for path in sorted(glob.glob('data/*.json')):
+              fname = os.path.basename(path)
+              if fname == 'manifest.json':
+                  continue
+              try:
+                  with open(path, encoding='utf-8') as f:
+                      data = json.load(f)
+                  if isinstance(data.get('questions'), list):
+                      subjects.append({
+                          'name': data.get('subject', fname.replace('.json', '')),
+                          'file': fname
+                      })
+              except Exception as e:
+                  print(f'Ignorando {fname}: {e}')
+
+          with open('data/manifest.json', 'w', encoding='utf-8') as f:
+              json.dump({'subjects': subjects}, f, ensure_ascii=False, indent=2)
+
+          print(f'manifest.json generado con {len(subjects)} asignatura(s):')
+          for s in subjects:
+              print(f'  - {s["name"]} ({s["file"]})')
+          EOF
+
+      - name: Commit manifest.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/manifest.json
+          git diff --staged --quiet || git commit -m "chore: regenerar manifest.json [skip ci]"
+          git push
