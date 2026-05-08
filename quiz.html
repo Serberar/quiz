@@ -624,7 +624,8 @@
       const btn = document.createElement('button');
       btn.className = 'opt-btn';
       btn.dataset.opt = opt;
-      btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${opt}</span>`;
+      btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text"></span>`;
+      btn.querySelector('.opt-text').textContent = opt;
       btn.onclick = () => { if (!answered) answerQ(opt, q.correct, btn, q.id); };
       opts.appendChild(btn);
     });
