@@ -251,6 +251,33 @@
     .a-correct { color: #86efac; }
     .a-wrong   { color: #fca5a5; text-decoration: line-through; opacity: .75; }
     .a-lbl { color: var(--muted); margin-right: 3px; }
+    .a-skipped { color: var(--muted); }
+    .result-item.r-skipped { border-left: 3px solid var(--muted); }
+    .mode-chip.exam { background: #1a2e1a; color: #4ade80; }
+    .exam-hint {
+      display: none; margin-top: 10px; padding: 8px 12px;
+      background: #0f1f12; border: 1px solid #1a4a22;
+      border-radius: 8px; font-size: .8rem; color: #86efac; line-height: 1.5;
+    }
+    .exam-hint.show { display: block; }
+    .exam-grade-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 20px; margin-top: 14px; text-align: center;
+      display: none;
+    }
+    .exam-grade-box.show { display: block; }
+    .exam-breakdown { display: flex; justify-content: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+    .exam-stat { text-align: center; padding: 8px 16px; background: var(--surface2); border-radius: 8px; }
+    .exam-stat-val { font-size: 1.4rem; font-weight: 700; display: block; }
+    .exam-stat-lbl { font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .exam-formula { font-size: .83rem; color: var(--muted); }
+    .exam-formula strong { color: var(--text); }
+    .btn-skip {
+      background: var(--surface2); color: var(--muted);
+      border: 1.5px dashed var(--border); margin-top: 10px;
+      font-size: .88rem; padding: 9px;
+    }
+    .btn-skip:hover { border-color: var(--warn); color: var(--warn); background: #1f1a10; }
   </style>
 </head>
 <body>
@@ -317,8 +344,10 @@
       <div class="mode-toggle">
         <button class="mode-btn active" id="mode-random" onclick="setMode('random')">🔀 Aleatorio</button>
         <button class="mode-btn" id="mode-smart" onclick="setMode('smart')">🧠 Refuerzo</button>
+        <button class="mode-btn" id="mode-exam" onclick="setMode('exam')">🎓 Examen</button>
       </div>
     </div>
+    <div class="exam-hint" id="exam-hint">🎓 <strong>Modo examen:</strong> 30 preguntas aleatorias · cada 3 erróneas resta 1 acierto · las preguntas sin responder no penalizan</div>
   </div>
 
   <button class="btn btn-primary" id="start-btn" disabled onclick="startQuiz()">Comenzar test →</button>
@@ -345,6 +374,7 @@
     </div>
     <div class="question-text" id="q-text"></div>
     <div class="options-list" id="opts"></div>
+    <button class="btn btn-skip" id="skip-btn" onclick="skipQuestion()" style="display:none">Saltar pregunta —</button>
     <div class="feedback-msg" id="feedback"></div>
     <div class="explanation-box" id="explanation-box"></div>
     <div class="next-wrap" id="next-wrap">
@@ -374,6 +404,7 @@
     <div id="unit-rows"></div>
   </div>
 
+  <div class="exam-grade-box" id="exam-grade-box"></div>
   <div class="results-list" id="results-list"></div>
 </div>
 
@@ -438,7 +469,7 @@
       buildUnitFilter();
       document.getElementById('stats-bar').classList.add('visible');
       document.getElementById('filter-section').classList.add('visible');
-      document.getElementById('num-slider').disabled = false;
+      document.getElementById('num-slider').disabled = mode === 'exam';
       document.getElementById('start-btn').disabled = false;
       updateStats();
       btn.querySelector('.sb-icon').textContent = '✓';
@@ -545,6 +576,18 @@
     mode = m;
     document.getElementById('mode-random').classList.toggle('active', m === 'random');
     document.getElementById('mode-smart').classList.toggle('active',  m === 'smart');
+    document.getElementById('mode-exam').classList.toggle('active',   m === 'exam');
+    document.getElementById('exam-hint').classList.toggle('show',     m === 'exam');
+    const slider = document.getElementById('num-slider');
+    if (m === 'exam') {
+      if (!slider.disabled) {
+        slider.value = Math.min(30, parseInt(slider.max) || 30);
+        document.getElementById('num-badge').textContent = slider.value;
+      }
+      slider.disabled = true;
+    } else if (allQ.length > 0) {
+      slider.disabled = false;
+    }
   }
 
   // ══ SMART SELECTION ══
@@ -572,16 +615,21 @@
 
   // ══ START ══
   function startQuiz() {
-    const n = parseInt(document.getElementById('num-slider').value);
     const fq = filteredQ();
+    const n = mode === 'exam' ? Math.min(30, fq.length) : parseInt(document.getElementById('num-slider').value);
     const base = mode === 'smart' ? smartSelect(fq, n) : shuffle([...fq]).slice(0, n);
     selQ = base.map(q => ({ ...q, originalOptions: [...q.options], options: shuffle([...q.options]) }));
     curIdx = 0; score = 0; answers = []; answered = false;
 
     document.getElementById('quiz-subj').textContent = subjectName;
     const chip = document.getElementById('mode-chip');
-    chip.textContent = mode === 'smart' ? '🧠 Refuerzo' : '🔀 Aleatorio';
-    chip.className = 'mode-chip' + (mode === 'smart' ? ' smart' : '');
+    if (mode === 'exam') {
+      chip.textContent = '🎓 Examen';
+      chip.className = 'mode-chip exam';
+    } else {
+      chip.textContent = mode === 'smart' ? '🧠 Refuerzo' : '🔀 Aleatorio';
+      chip.className = 'mode-chip' + (mode === 'smart' ? ' smart' : '');
+    }
     document.getElementById('q-tot').textContent = n;
     show('quiz-screen');
     renderQ();
@@ -633,6 +681,7 @@
     document.getElementById('feedback').className = 'feedback-msg';
     document.getElementById('explanation-box').style.display = 'none';
     document.getElementById('next-wrap').classList.remove('show');
+    document.getElementById('skip-btn').style.display = mode === 'exam' ? '' : 'none';
   }
 
   // ══ TRANSLATION TOGGLE ══
@@ -658,6 +707,7 @@
   // ══ ANSWER ══
   function answerQ(sel, correct, clicked, qid) {
     answered = true;
+    document.getElementById('skip-btn').style.display = 'none';
     document.querySelectorAll('.opt-btn').forEach(b => {
       b.disabled = true;
       if (b.dataset.opt === correct) b.classList.add('correct');
@@ -667,7 +717,7 @@
     if (ok) score++;
     recordAnswer(qid, ok);
     const q = selQ[curIdx];
-    answers.push({ question: q.question, unit: q.unit, sel, correct, ok, explicacion: q.explicacion || null });
+    answers.push({ question: q.question, unit: q.unit, sel, correct, ok, skipped: false, explicacion: q.explicacion || null });
 
     const fb = document.getElementById('feedback');
     if (ok) {
@@ -688,6 +738,15 @@
     const isLast = curIdx === selQ.length - 1;
     document.getElementById('next-btn').textContent = isLast ? 'Ver resultados →' : 'Siguiente →';
     document.getElementById('next-wrap').classList.add('show');
+  }
+
+  // ══ SKIP (exam mode) ══
+  function skipQuestion() {
+    const q = selQ[curIdx];
+    answers.push({ question: q.question, unit: q.unit, sel: null, correct: q.correct, ok: false, skipped: true, explicacion: null });
+    curIdx++;
+    if (curIdx >= selQ.length) showResults();
+    else renderQ();
   }
 
   // ══ NEXT ══
@@ -717,14 +776,48 @@
   // ══ RESULTS ══
   function showResults() {
     const total = selQ.length;
-    const pct = Math.round(score / total * 100);
-    document.getElementById('score-big').textContent = `${score}/${total}`;
-    document.getElementById('score-pct').textContent = `${pct}%`;
     const ring = document.getElementById('score-ring');
-    ring.style.borderColor = pct >= 80 ? 'var(--correct)' : pct >= 60 ? 'var(--warn)' : 'var(--wrong)';
-    const msgs = ['¡Sigue practicando, tú puedes!', 'Bien, pero hay margen de mejora', '¡Muy bien!', '¡Excelente! 🎉'];
-    document.getElementById('score-msg').textContent =
-      pct >= 90 ? msgs[3] : pct >= 70 ? msgs[2] : pct >= 50 ? msgs[1] : msgs[0];
+    document.querySelector('#results-screen .results-top h2').textContent =
+      mode === 'exam' ? 'Resultados del Examen' : 'Resultados';
+
+    if (mode === 'exam') {
+      const correctas   = answers.filter(a => a.ok).length;
+      const erroneas    = answers.filter(a => !a.ok && !a.skipped).length;
+      const sinResp     = answers.filter(a => a.skipped).length;
+      const puntuacion  = Math.max(0, correctas - erroneas / 3);
+      const nota        = puntuacion / total * 10;
+      const notaFmt     = parseFloat(nota.toFixed(2)).toString();
+      const notaColor   = nota >= 5 ? 'var(--correct)' : nota >= 3 ? 'var(--warn)' : 'var(--wrong)';
+      const puntFmt     = parseFloat(puntuacion.toFixed(2)).toString();
+
+      document.getElementById('score-big').textContent = notaFmt;
+      document.getElementById('score-pct').textContent = '/ 10';
+      ring.style.borderColor = notaColor;
+      document.getElementById('score-msg').textContent =
+        nota >= 9 ? '¡Excelente! 🎉' : nota >= 7 ? '¡Muy bien!' : nota >= 5 ? 'Aprobado ✓' : 'Suspenso — ¡sigue practicando!';
+
+      const examBox = document.getElementById('exam-grade-box');
+      examBox.innerHTML = `
+        <div class="exam-breakdown">
+          <div class="exam-stat"><span class="exam-stat-val" style="color:var(--correct)">${correctas}</span><span class="exam-stat-lbl">Correctas</span></div>
+          <div class="exam-stat"><span class="exam-stat-val" style="color:var(--wrong)">${erroneas}</span><span class="exam-stat-lbl">Erróneas</span></div>
+          <div class="exam-stat"><span class="exam-stat-val" style="color:var(--muted)">${sinResp}</span><span class="exam-stat-lbl">Sin responder</span></div>
+        </div>
+        <div class="exam-formula">
+          Puntuación = <strong>${correctas}</strong> − <strong>${erroneas}</strong>/3 = <strong>${puntFmt}</strong> / ${total}
+          &nbsp;→&nbsp; Nota: <strong style="color:${notaColor}">${notaFmt} / 10</strong>
+        </div>`;
+      examBox.classList.add('show');
+    } else {
+      const pct = Math.round(score / total * 100);
+      document.getElementById('score-big').textContent = `${score}/${total}`;
+      document.getElementById('score-pct').textContent = `${pct}%`;
+      ring.style.borderColor = pct >= 80 ? 'var(--correct)' : pct >= 60 ? 'var(--warn)' : 'var(--wrong)';
+      const msgs = ['¡Sigue practicando, tú puedes!', 'Bien, pero hay margen de mejora', '¡Muy bien!', '¡Excelente! 🎉'];
+      document.getElementById('score-msg').textContent =
+        pct >= 90 ? msgs[3] : pct >= 70 ? msgs[2] : pct >= 50 ? msgs[1] : msgs[0];
+      document.getElementById('exam-grade-box').classList.remove('show');
+    }
 
     // Unit breakdown
     const unitMap = {};
@@ -752,10 +845,13 @@
     list.innerHTML = '';
     answers.forEach(a => {
       const d = document.createElement('div');
-      d.className = `result-item ${a.ok ? 'r-correct' : 'r-wrong'}`;
+      d.className = `result-item ${a.ok ? 'r-correct' : a.skipped ? 'r-skipped' : 'r-wrong'}`;
       d.innerHTML = `<div class="result-q">${a.question}</div>
         <div>
-          ${!a.ok ? `<div class="answer-row">
+          ${a.skipped ? `<div class="answer-row">
+            <span class="a-icon">—</span>
+            <span class="a-skipped"><span class="a-lbl">Sin responder</span></span>
+          </div>` : !a.ok ? `<div class="answer-row">
             <span class="a-icon">✗</span>
             <span class="a-wrong"><span class="a-lbl">Tu respuesta:</span>${a.sel}</span>
           </div>` : ''}
