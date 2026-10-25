@@ -79,6 +79,8 @@
     /* Subject selector */
     .subject-loading { text-align: center; color: var(--muted); font-size: .9rem; padding: 4px 0; }
     .subject-error { color: var(--wrong); font-size: .88rem; text-align: center; }
+    .semester-toggle { margin-bottom: 14px; }
+    .semester-toggle .mode-btn { flex: 1; }
     .subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
     .subject-btn {
       background: var(--surface2); border: 1.5px solid var(--border);
@@ -290,6 +292,10 @@
   </div>
 
   <div class="card" id="subject-selector">
+    <div class="mode-toggle semester-toggle" id="semester-toggle" style="display:none">
+      <button class="mode-btn" id="semester-1" onclick="setSemester(1)">1º semestre</button>
+      <button class="mode-btn" id="semester-2" onclick="setSemester(2)">2º semestre</button>
+    </div>
     <div id="subject-loading" class="subject-loading">Cargando asignaturas…</div>
     <div class="subject-grid" id="subject-grid" style="display:none"></div>
     <div id="subject-error" class="subject-error" style="display:none"></div>
@@ -426,13 +432,25 @@
       if (!resp.ok) throw new Error();
       const { subjects = [] } = await resp.json();
       if (subjects.length === 0) throw new Error('empty');
-      renderSubjects(subjects);
+      allSubjects = subjects;
+      let saved = null;
+      try { saved = Number(localStorage.getItem('quiz_semester')); } catch {}
+      setSemester(saved === 1 || saved === 2 ? saved : 2);
     } catch {
       document.getElementById('subject-loading').style.display = 'none';
       const err = document.getElementById('subject-error');
       err.textContent = 'No se pudieron cargar las asignaturas.';
       err.style.display = 'block';
     }
+  }
+
+  // Subjects without a semester field belong to the first semester
+  let allSubjects = [];
+  function setSemester(n) {
+    try { localStorage.setItem('quiz_semester', n); } catch {}
+    document.getElementById('semester-toggle').style.display = '';
+    [1, 2].forEach(i => document.getElementById('semester-' + i).classList.toggle('active', i === n));
+    renderSubjects(allSubjects.filter(s => (s.semester || 1) === n));
   }
 
   function renderSubjects(subjects) {

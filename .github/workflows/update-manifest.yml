@@ -31,7 +31,8 @@ jobs:
                   if isinstance(data.get('questions'), list):
                       subjects.append({
                           'name': data.get('subject', fname.replace('.json', '')),
-                          'file': fname
+                          'file': fname,
+                          'semester': data.get('semester', 1)
                       })
               except Exception as e:
                   print(f'Ignorando {fname}: {e}')

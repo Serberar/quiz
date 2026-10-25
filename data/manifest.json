@@ -2,39 +2,48 @@
   "subjects": [
     {
       "name": "Bases de Datos",
-      "file": "bases_datos.json"
+      "file": "bases_datos.json",
+      "semester": 2
     },
     {
       "name": "Entornos de Desarrollo",
-      "file": "entornos.json"
+      "file": "entornos.json",
+      "semester": 1
     },
     {
       "name": "FOL",
-      "file": "fol.json"
+      "file": "fol.json",
+      "semester": 1
     },
     {
       "name": "Inglés",
-      "file": "ingles.json"
+      "file": "ingles.json",
+      "semester": 1
     },
     {
       "name": "Itinerario Personal para la Empleabilidad II",
-      "file": "ipe2.json"
+      "file": "ipe2.json",
+      "semester": 2
     },
     {
       "name": "Lenguaje de Marcas",
-      "file": "lenguaje_marcas.json"
+      "file": "lenguaje_marcas.json",
+      "semester": 1
     },
     {
       "name": "Posicionamiento y optimización web",
-      "file": "posicionamiento.json"
+      "file": "posicionamiento.json",
+      "semester": 2
     },
     {
       "name": "Programación",
-      "file": "programacion.json"
+      "file": "programacion.json",
+      "semester": 2
     },
     {
       "name": "Sistemas Informáticos",
-      "file": "sistemas.json"
+      "file": "sistemas.json",
+      "semester": 1
     }
   ]
 }
