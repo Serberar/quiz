@@ -13,19 +13,19 @@
       "file": "fol.json"
     },
     {
-      "name": "IPE II",
-      "file": "ipe2.json"
-    },
-    {
       "name": "Inglés",
       "file": "ingles.json"
+    },
+    {
+      "name": "Itinerario Personal para la Empleabilidad II",
+      "file": "ipe2.json"
     },
     {
       "name": "Lenguaje de Marcas",
       "file": "lenguaje_marcas.json"
     },
     {
-      "name": "Posicionamiento Web",
+      "name": "Posicionamiento y optimización web",
       "file": "posicionamiento.json"
     },
     {
