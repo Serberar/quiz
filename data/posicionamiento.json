@@ -1,0 +1,2592 @@
+{
+  "subject": "Posicionamiento y optimización web",
+  "questions": [
+    {
+      "id": 1,
+      "unit": "UT1",
+      "question": "¿Qué es el sitemap.xml?",
+      "options": [
+        "Un índice de las páginas de un sitio para facilitar la indexación",
+        "Una herramienta para bloquear bots",
+        "Un archivo de configuración del servidor",
+        "Una red de enlaces rotos"
+      ],
+      "correct": "Un índice de las páginas de un sitio para facilitar la indexación",
+      "explicacion": "El sitemap.xml es un archivo que lista las URL importantes del sitio, a veces con fecha de actualización y prioridad, para que los buscadores las descubran e indexen más fácilmente."
+    },
+    {
+      "id": 2,
+      "unit": "UT1",
+      "question": "¿Cuál es el nombre del bot más conocido de Google?",
+      "options": [
+        "Googlebot",
+        "RankScanner",
+        "Yahoo Spider",
+        "Bingbot"
+      ],
+      "correct": "Googlebot",
+      "explicacion": "Googlebot es el rastreador (crawler) de Google, que recorre la web para descubrir y analizar páginas. Bingbot es el de Bing."
+    },
+    {
+      "id": 3,
+      "unit": "UT1",
+      "question": "¿Qué diferencia principal existe entre SEO y SEM?",
+      "options": [
+        "El SEO se paga, el SEM no",
+        "El SEM solo funciona en móviles",
+        "El SEO se basa en resultados orgánicos, el SEM en anuncios de pago",
+        "El SEM requiere más tiempo que el SEO"
+      ],
+      "correct": "El SEO se basa en resultados orgánicos, el SEM en anuncios de pago",
+      "explicacion": "El SEO busca posicionar en los resultados orgánicos (gratuitos) optimizando la web. El SEM se basa en anuncios de pago, como Google Ads."
+    },
+    {
+      "id": 4,
+      "unit": "UT1",
+      "question": "¿Cuál de estas afirmaciones es verdadera sobre el SEO ético?",
+      "options": [
+        "Utiliza herramientas para ocultar contenido",
+        "Aplica técnicas que engañan al usuario",
+        "Respeta las directrices de los buscadores",
+        "Se basa en el tráfico pagado"
+      ],
+      "correct": "Respeta las directrices de los buscadores",
+      "explicacion": "El SEO ético (White Hat) respeta las directrices de los buscadores y busca aportar valor real al usuario, sin trucos ni engaños."
+    },
+    {
+      "id": 5,
+      "unit": "UT1",
+      "question": "¿Qué tipo de resultado aparece en búsquedas como “cafetería cerca de mí”?",
+      "options": [
+        "Resultado pagado",
+        "Resultado local",
+        "Resultado duplicado",
+        "Resultado social"
+      ],
+      "correct": "Resultado local",
+      "explicacion": "Las búsquedas con intención geográfica, como \"cerca de mí\", muestran resultados locales: el mapa con negocios de Google Business Profile."
+    },
+    {
+      "id": 6,
+      "unit": "UT1",
+      "question": "¿Qué significa “palabra clave” en el contexto SEO?",
+      "options": [
+        "Una expresión relevante que los usuarios buscan",
+        "El nombre del dominio del sitio",
+        "Un enlace de afiliado",
+        "Una contraseña para acceder a la web"
+      ],
+      "correct": "Una expresión relevante que los usuarios buscan",
+      "explicacion": "Una palabra clave (keyword) es el término o expresión que los usuarios escriben en el buscador y para el que se quiere posicionar una página."
+    },
+    {
+      "id": 7,
+      "unit": "UT1",
+      "question": "¿Qué tipo de contenido representa un rich snippet?",
+      "options": [
+        "Un resultado con anuncios integrados",
+        "Un resultado enriquecido con valoraciones, imágenes o eventos",
+        "Un resultado que incluye solo el título",
+        "Un enlace a redes sociales desde la SERP"
+      ],
+      "correct": "Un resultado enriquecido con valoraciones, imágenes o eventos",
+      "explicacion": "Un rich snippet es un resultado enriquecido que muestra información extra (estrellas de valoración, precio, imágenes, fechas de eventos) gracias a los datos estructurados."
+    },
+    {
+      "id": 8,
+      "unit": "UT1",
+      "question": "¿Cuál es uno de los factores técnicos que influyen en el posicionamiento?",
+      "options": [
+        "El número de seguidores en redes sociales",
+        "La velocidad de carga de la página",
+        "La edad del programador web",
+        "El uso de imágenes con marca de agua"
+      ],
+      "correct": "La velocidad de carga de la página",
+      "explicacion": "La velocidad de carga es un factor técnico de posicionamiento: Google la tiene en cuenta (Core Web Vitals) porque influye en la experiencia del usuario."
+    },
+    {
+      "id": 9,
+      "unit": "UT1",
+      "question": "¿Qué mide el algoritmo de un buscador?",
+      "options": [
+        "La velocidad de lectura del usuario",
+        "La relevancia y calidad de una página para una consulta",
+        "El diseño gráfico del sitio",
+        "El tamaño del servidor"
+      ],
+      "correct": "La relevancia y calidad de una página para una consulta",
+      "explicacion": "El algoritmo evalúa cientos de factores para decidir qué páginas son más relevantes y de mayor calidad para cada consulta, y en qué orden mostrarlas."
+    },
+    {
+      "id": 10,
+      "unit": "UT1",
+      "question": "¿Qué son los resultados orgánicos?",
+      "options": [
+        "Enlaces internos del sitio web",
+        "Publicaciones en redes sociales",
+        "Resultados no pagados en buscadores",
+        "Anuncios ubicados en la parte superior de la página"
+      ],
+      "correct": "Resultados no pagados en buscadores",
+      "explicacion": "Los resultados orgánicos son los que el buscador posiciona por relevancia, sin pago. Los anuncios aparecen marcados como patrocinados."
+    },
+    {
+      "id": 11,
+      "unit": "UT1",
+      "question": "¿Qué ocurre si una página no está indexada?",
+      "options": [
+        "Se redirige automáticamente",
+        "No aparece en los resultados de búsqueda",
+        "Se posiciona mejor",
+        "Es penalizada por el buscador"
+      ],
+      "correct": "No aparece en los resultados de búsqueda",
+      "explicacion": "Si una página no está en el índice del buscador, no puede aparecer en los resultados de búsqueda."
+    },
+    {
+      "id": 12,
+      "unit": "UT1",
+      "question": "¿Qué representa la sigla SERP?",
+      "options": [
+        "Sistema de Enlaces Relevantes Públicos",
+        "Módulo de búsqueda personalizado",
+        "Protocolo de Enlace Seguro",
+        "Página de resultados del motor de búsqueda"
+      ],
+      "correct": "Página de resultados del motor de búsqueda",
+      "explicacion": "SERP significa Search Engine Results Page: la página de resultados que muestra el buscador tras una consulta."
+    },
+    {
+      "id": 13,
+      "unit": "UT1",
+      "question": "¿Qué significan las siglas SEO en español?",
+      "options": [
+        "Segmentación Estratégica Online",
+        "Optimización para Motores de Búsqueda",
+        "Seguridad en Entornos Operativos",
+        "Servicio Eficiente Online"
+      ],
+      "correct": "Optimización para Motores de Búsqueda",
+      "explicacion": "SEO son las siglas de Search Engine Optimization, en español Optimización para Motores de Búsqueda."
+    },
+    {
+      "id": 14,
+      "unit": "UT1",
+      "question": "¿Por qué es importante aplicar buenas prácticas SEO?",
+      "options": [
+        "Para rediseñar la página cada mes",
+        "Para aumentar el tráfico desde redes sociales",
+        "Para evitar sanciones y lograr una visibilidad sostenible",
+        "Para engañar al algoritmo y subir posiciones rápidamente"
+      ],
+      "correct": "Para evitar sanciones y lograr una visibilidad sostenible",
+      "explicacion": "Las buenas prácticas evitan penalizaciones de Google y consiguen una visibilidad estable a largo plazo. Los trucos dan subidas rápidas que acaban en sanciones."
+    },
+    {
+      "id": 15,
+      "unit": "UT1",
+      "question": "¿Qué es la indexación?",
+      "options": [
+        "Crear contenido nuevo en la web",
+        "Calcular el tráfico de una página",
+        "Añadir una página al índice del buscador",
+        "Eliminar contenido duplicado"
+      ],
+      "correct": "Añadir una página al índice del buscador",
+      "explicacion": "Indexar es añadir una página rastreada al índice (la base de datos) del buscador, para que pueda mostrarse en los resultados."
+    },
+    {
+      "id": 16,
+      "unit": "UT1",
+      "question": "¿Qué tipo de SEO utiliza prácticas permitidas por Google?",
+      "options": [
+        "Black Hat",
+        "Grey Hat",
+        "Red Hat",
+        "White Hat"
+      ],
+      "correct": "White Hat",
+      "explicacion": "El White Hat SEO usa solo técnicas permitidas por las directrices de Google. Black Hat usa técnicas prohibidas y Grey Hat técnicas dudosas."
+    },
+    {
+      "id": 17,
+      "unit": "UT1",
+      "question": "¿Qué archivo indica a los bots qué partes de la web pueden rastrear?",
+      "options": [
+        "robots.txt",
+        "sitemap.xml",
+        "index.html",
+        "cookies.txt"
+      ],
+      "correct": "robots.txt",
+      "explicacion": "robots.txt, en la raíz del dominio, indica a los bots qué rutas pueden rastrear y cuáles no (Disallow)."
+    },
+    {
+      "id": 18,
+      "unit": "UT1",
+      "question": "¿Cuál es el objetivo principal del SEO?",
+      "options": [
+        "Posicionar una web en los resultados pagados",
+        "Aumentar la visibilidad orgánica en buscadores",
+        "Compartir enlaces en redes sociales",
+        "Diseñar páginas con efectos visuales atractivos"
+      ],
+      "correct": "Aumentar la visibilidad orgánica en buscadores",
+      "explicacion": "El objetivo del SEO es aumentar la visibilidad orgánica, es decir, aparecer más arriba en los resultados no pagados, para atraer tráfico cualificado."
+    },
+    {
+      "id": 19,
+      "unit": "UT1",
+      "question": "¿Qué práctica se considera Black Hat?",
+      "options": [
+        "Repetir excesivamente palabras clave sin coherencia",
+        "Optimizar los títulos con palabras clave",
+        "Crear contenido útil y original",
+        "Usar metadatos descriptivos"
+      ],
+      "correct": "Repetir excesivamente palabras clave sin coherencia",
+      "explicacion": "El keyword stuffing, repetir palabras clave de forma excesiva y forzada, es una técnica Black Hat que Google penaliza."
+    },
+    {
+      "id": 20,
+      "unit": "UT1",
+      "question": "¿Qué es el rastreo en SEO?",
+      "options": [
+        "El seguimiento del tráfico de usuarios",
+        "Evaluar la seguridad de un sitio",
+        "El proceso de carga de una página",
+        "El recorrido que hacen los bots por la web para recopilar información"
+      ],
+      "correct": "El recorrido que hacen los bots por la web para recopilar información",
+      "explicacion": "El rastreo (crawling) es el recorrido que hacen los bots siguiendo enlaces para descubrir páginas y recopilar su contenido."
+    },
+    {
+      "id": 21,
+      "unit": "UT1",
+      "question": "¿En qué dos frentes actúa el SEO?",
+      "options": [
+        "Redes sociales y email marketing",
+        "Optimización técnica (on-page) y optimización de contenidos",
+        "Diseño gráfico y publicidad",
+        "Hosting y dominio"
+      ],
+      "correct": "Optimización técnica (on-page) y optimización de contenidos",
+      "explicacion": "Según el temario, el SEO actúa en la optimización técnica (estructura, etiquetas HTML, velocidad, experiencia móvil, HTTPS) y en la de contenidos (palabras clave, calidad, valor informativo, adecuación al usuario)."
+    },
+    {
+      "id": 22,
+      "unit": "UT1",
+      "question": "¿Cuál de estos elementos forma parte de la optimización técnica (on-page)?",
+      "options": [
+        "Jerarquía de títulos y velocidad de carga",
+        "Calidad expresiva del texto",
+        "Presupuesto de anuncios",
+        "Número de seguidores en redes"
+      ],
+      "correct": "Jerarquía de títulos y velocidad de carga",
+      "explicacion": "La optimización técnica on-page incluye la estructura de la página, etiquetas HTML, jerarquía de títulos, velocidad de carga, experiencia móvil y seguridad HTTPS."
+    },
+    {
+      "id": 23,
+      "unit": "UT1",
+      "question": "Según el temario, ¿qué porcentaje de clics concentran aproximadamente los tres primeros resultados orgánicos?",
+      "options": [
+        "Más del 50 %",
+        "Menos del 10 %",
+        "Alrededor del 20 %",
+        "El 100 %"
+      ],
+      "correct": "Más del 50 %",
+      "explicacion": "Las estadísticas que cita el temario indican que los tres primeros resultados orgánicos concentran más del 50 % de los clics, de ahí la importancia de la visibilidad."
+    },
+    {
+      "id": 24,
+      "unit": "UT1",
+      "question": "¿Qué significa atraer «tráfico cualificado»?",
+      "options": [
+        "Atraer bots de buscadores",
+        "Recibir visitas solo desde móviles",
+        "Captar usuarios realmente interesados en lo que ofrece la web",
+        "Conseguir el máximo número de visitas posibles"
+      ],
+      "correct": "Captar usuarios realmente interesados en lo que ofrece la web",
+      "explicacion": "El tráfico cualificado son visitantes interesados en el contenido, productos o servicios de la web, por ejemplo lectores de fotografía en un blog de fotografía y no personas que buscan recetas."
+    },
+    {
+      "id": 25,
+      "unit": "UT1",
+      "question": "¿Qué objetivo del SEO consiste en transformar visitas en acciones concretas como ventas o registros?",
+      "options": [
+        "Aumentar la tasa de conversión",
+        "Construir autoridad",
+        "Incrementar la visibilidad",
+        "Reducir la dependencia de publicidad"
+      ],
+      "correct": "Aumentar la tasa de conversión",
+      "explicacion": "Aumentar la tasa de conversión es convertir las visitas en acciones: ventas, registros, formularios o clics en enlaces."
+    },
+    {
+      "id": 26,
+      "unit": "UT1",
+      "question": "¿Por qué el SEO reduce la dependencia de la publicidad pagada?",
+      "options": [
+        "Porque los anuncios dejan de mostrarse",
+        "Porque Google lo exige",
+        "Porque genera beneficios a medio y largo plazo sin coste por clic",
+        "Porque es ilegal combinarlo con SEM"
+      ],
+      "correct": "Porque genera beneficios a medio y largo plazo sin coste por clic",
+      "explicacion": "El SEM da resultados rápidos pero exige inversión continua; el SEO genera tráfico sostenido a medio y largo plazo sin pagar por cada clic."
+    },
+    {
+      "id": 27,
+      "unit": "UT1",
+      "question": "En la comparación SEO vs SEM, ¿cuándo se obtienen resultados con SEM?",
+      "options": [
+        "De forma inmediata, desde que se activa la campaña",
+        "A medio y largo plazo",
+        "Nunca",
+        "Solo tras un año"
+      ],
+      "correct": "De forma inmediata, desde que se activa la campaña",
+      "explicacion": "El SEM (publicidad PPC) da visibilidad inmediata en cuanto se activa la campaña, pero su efecto es temporal y ligado a la inversión. El SEO tarda más pero es sostenible."
+    },
+    {
+      "id": 28,
+      "unit": "UT1",
+      "question": "¿Qué credibilidad percibe el usuario en los resultados SEM según el temario?",
+      "options": [
+        "Media, porque se identifican como anuncios",
+        "Mayor que los orgánicos",
+        "Alta, porque son de pago",
+        "Nula"
+      ],
+      "correct": "Media, porque se identifican como anuncios",
+      "explicacion": "Los resultados SEM aparecen marcados como anuncio, por lo que su credibilidad es media. Los orgánicos se perciben como más relevantes y de calidad."
+    },
+    {
+      "id": 29,
+      "unit": "UT1",
+      "question": "¿Cómo se relacionan SEO y SEM en muchas estrategias digitales?",
+      "options": [
+        "Solo se usa uno según el país",
+        "Son incompatibles",
+        "Son complementarios: SEM para visibilidad inicial y SEO a largo plazo",
+        "El SEM sustituye al SEO"
+      ],
+      "correct": "Son complementarios: SEM para visibilidad inicial y SEO a largo plazo",
+      "explicacion": "Aunque a veces se presentan como opuestos, pueden combinarse: el SEM aporta visibilidad inicial mientras el SEO consolida el posicionamiento a largo plazo."
+    },
+    {
+      "id": 30,
+      "unit": "UT1",
+      "question": "¿Qué siglas corresponden al modelo de pago de la publicidad SEM?",
+      "options": [
+        "PPC (pago por clic)",
+        "SERP",
+        "CTR",
+        "CMS"
+      ],
+      "correct": "PPC (pago por clic)",
+      "explicacion": "El SEM funciona normalmente con PPC (pago por clic): el anunciante paga cada vez que un usuario hace clic en su anuncio, que se compra mediante puja y segmentación."
+    },
+    {
+      "id": 31,
+      "unit": "UT1",
+      "question": "¿Cómo se lograba el posicionamiento en la primera etapa del SEO (1995-2000)?",
+      "options": [
+        "Repitiendo palabras clave en buscadores como Yahoo o AltaVista",
+        "Con datos estructurados",
+        "Con Core Web Vitals",
+        "Con búsqueda por voz"
+      ],
+      "correct": "Repitiendo palabras clave en buscadores como Yahoo o AltaVista",
+      "explicacion": "En los inicios del SEO, con buscadores primitivos como Yahoo o AltaVista, bastaba con repetir palabras clave para posicionar."
+    },
+    {
+      "id": 32,
+      "unit": "UT1",
+      "question": "¿Qué algoritmo con el que Google revolucionó el sector priorizaba la calidad de los enlaces (2001-2009)?",
+      "options": [
+        "PageRank",
+        "Medic",
+        "Panda",
+        "BERT"
+      ],
+      "correct": "PageRank",
+      "explicacion": "PageRank valoraba las páginas según la cantidad y calidad de los enlaces que recibían, lo que cambió el SEO hacia la relevancia y los enlaces de calidad."
+    },
+    {
+      "id": 33,
+      "unit": "UT1",
+      "question": "¿Qué caracteriza la etapa del SEO de 2016 a 2020 según el temario?",
+      "options": [
+        "Repetición de palabras clave",
+        "Más peso del SEO móvil, la búsqueda por voz y los datos estructurados",
+        "Aparición de AltaVista",
+        "Eliminación de los enlaces"
+      ],
+      "correct": "Más peso del SEO móvil, la búsqueda por voz y los datos estructurados",
+      "explicacion": "Entre 2016 y 2020 ganan peso el SEO móvil, la búsqueda por voz, los datos estructurados y la experiencia de usuario."
+    },
+    {
+      "id": 34,
+      "unit": "UT1",
+      "question": "¿Qué cuota de mercado aproximada tiene Google en Europa según el temario?",
+      "options": [
+        "Alrededor del 30 %",
+        "Superior al 90 %",
+        "Menos del 10 %",
+        "Cerca del 50 %"
+      ],
+      "correct": "Superior al 90 %",
+      "explicacion": "Google es el buscador más usado en Europa, con cuotas superiores al 90 %; otros buscadores son Bing, DuckDuckGo o Baidu."
+    },
+    {
+      "id": 35,
+      "unit": "UT1",
+      "question": "¿Cuál es el orden correcto de las tres etapas de funcionamiento de un buscador?",
+      "options": [
+        "Rastreo, posicionamiento, indexación",
+        "Posicionamiento, rastreo, indexación",
+        "Indexación, rastreo, posicionamiento",
+        "Rastreo, indexación, posicionamiento"
+      ],
+      "correct": "Rastreo, indexación, posicionamiento",
+      "explicacion": "Primero el bot rastrea (crawling) la web, después analiza y almacena la página en el índice (indexing) y, ante una consulta, ordena los resultados (ranking)."
+    },
+    {
+      "id": 36,
+      "unit": "UT1",
+      "question": "¿Cuántos factores aproximadamente utiliza el algoritmo de Google para ordenar los resultados?",
+      "options": [
+        "Solo uno: los enlaces",
+        "Exactamente 20",
+        "Unos 5",
+        "Más de 200"
+      ],
+      "correct": "Más de 200",
+      "explicacion": "El algoritmo de Google evalúa más de 200 factores, entre ellos calidad del contenido, palabras clave, autoridad del dominio, velocidad, adaptación móvil y experiencia de usuario."
+    },
+    {
+      "id": 37,
+      "unit": "UT1",
+      "question": "¿Cómo se mide la autoridad del dominio según el temario?",
+      "options": [
+        "Por la antigüedad del diseño",
+        "Por el número de páginas",
+        "Por los enlaces entrantes de calidad",
+        "Por el precio del hosting"
+      ],
+      "correct": "Por los enlaces entrantes de calidad",
+      "explicacion": "La autoridad del dominio se mide principalmente por los enlaces entrantes (backlinks) de calidad que recibe el sitio."
+    },
+    {
+      "id": 38,
+      "unit": "UT1",
+      "question": "¿Para qué sirve la etiqueta canonical?",
+      "options": [
+        "Para mostrar estrellas en la SERP",
+        "Para bloquear el rastreo de toda la web",
+        "Para indicar la versión principal de una página cuando hay contenido duplicado o similar",
+        "Para cifrar la página"
+      ],
+      "correct": "Para indicar la versión principal de una página cuando hay contenido duplicado o similar",
+      "explicacion": "La etiqueta canonical indica al buscador cuál es la URL preferida cuando existen páginas con contenido duplicado o muy similar."
+    },
+    {
+      "id": 39,
+      "unit": "UT1",
+      "question": "¿Qué consigue la etiqueta noindex?",
+      "options": [
+        "Que se rastree más a menudo",
+        "Que la página aparezca primera",
+        "Que la página cargue más rápido",
+        "Que la página no sea indexada"
+      ],
+      "correct": "Que la página no sea indexada",
+      "explicacion": "noindex evita que una página concreta se incluya en el índice del buscador; se usa por ejemplo en paneles privados o páginas duplicadas."
+    },
+    {
+      "id": 40,
+      "unit": "UT1",
+      "question": "¿Qué se necesita en el código HTML para generar resultados enriquecidos (rich snippets)?",
+      "options": [
+        "Datos estructurados de Schema.org",
+        "Un archivo robots.txt vacío",
+        "Etiquetas <marquee>",
+        "Imágenes en BMP"
+      ],
+      "correct": "Datos estructurados de Schema.org",
+      "explicacion": "Los rich snippets se generan gracias a los datos estructurados (vocabulario Schema.org) añadidos al HTML, que permiten mostrar estrellas, precios, imágenes o fechas."
+    },
+    {
+      "id": 41,
+      "unit": "UT1",
+      "question": "¿De dónde obtiene Google la información de los resultados locales (mapa, horarios, reseñas)?",
+      "options": [
+        "De la meta description",
+        "Del archivo sitemap.xml",
+        "De Google Business Profile",
+        "De Google Ads"
+      ],
+      "correct": "De Google Business Profile",
+      "explicacion": "Los resultados locales muestran la ficha de negocios registrados en Google Business Profile, con mapa, horarios, reseñas y ubicación."
+    },
+    {
+      "id": 42,
+      "unit": "UT1",
+      "question": "¿Qué protocolo valora Google como factor de posicionamiento dentro de la normativa técnica?",
+      "options": [
+        "FTP",
+        "HTTPS",
+        "SMTP",
+        "HTTP"
+      ],
+      "correct": "HTTPS",
+      "explicacion": "HTTPS cifra la comunicación y Google lo valora como factor de posicionamiento."
+    },
+    {
+      "id": 43,
+      "unit": "UT1",
+      "question": "¿Qué normativa legal regula el uso de cookies, formularios y recogida de datos personales en una web?",
+      "options": [
+        "WCAG",
+        "PageRank",
+        "RGPD",
+        "Schema.org"
+      ],
+      "correct": "RGPD",
+      "explicacion": "El Reglamento General de Protección de Datos (RGPD) regula el tratamiento de datos personales, incluidas cookies y formularios."
+    },
+    {
+      "id": 44,
+      "unit": "UT1",
+      "question": "¿Qué directrices obligan a que un sitio web sea accesible para personas con discapacidad?",
+      "options": [
+        "WCAG",
+        "PPC",
+        "RGPD",
+        "SERP"
+      ],
+      "correct": "WCAG",
+      "explicacion": "Las WCAG (Web Content Accessibility Guidelines) del W3C establecen los criterios de accesibilidad web."
+    },
+    {
+      "id": 45,
+      "unit": "UT1",
+      "question": "¿Qué es el cloaking?",
+      "options": [
+        "Una forma de optimizar imágenes",
+        "Una métrica de velocidad",
+        "Una técnica Black Hat que muestra contenido distinto al buscador y al usuario",
+        "Un tipo de rich snippet"
+      ],
+      "correct": "Una técnica Black Hat que muestra contenido distinto al buscador y al usuario",
+      "explicacion": "El cloaking es una práctica Black Hat que consiste en mostrar a los bots un contenido diferente del que ve el usuario para engañar al algoritmo."
+    },
+    {
+      "id": 46,
+      "unit": "UT1",
+      "question": "¿Qué principio ético del SEO prohíbe inducir a error al usuario con títulos o descripciones engañosas?",
+      "options": [
+        "Velocidad",
+        "Relevancia",
+        "Transparencia",
+        "Honestidad"
+      ],
+      "correct": "Transparencia",
+      "explicacion": "Los principios éticos del temario son transparencia (no engañar con títulos o descripciones), relevancia (no forzar temas no relacionados) y honestidad (no copiar ni manipular enlaces)."
+    },
+    {
+      "id": 47,
+      "unit": "UT2",
+      "question": "¿Qué tipo de intención de búsqueda tiene un usuario que quiere aprender algo?",
+      "options": [
+        "Navegacional",
+        "Informativa",
+        "Transaccional",
+        "Comercial"
+      ],
+      "correct": "Informativa",
+      "explicacion": "La intención informativa corresponde a quien quiere aprender o resolver una duda (\"cómo...\", \"qué es...\"). La transaccional busca comprar y la navegacional ir a una web concreta."
+    },
+    {
+      "id": 48,
+      "unit": "UT2",
+      "question": "¿Qué criterio debe cumplirse para que una keyword se considere prioritaria?",
+      "options": [
+        "Que incluya un nombre propio",
+        "Que sea la más corta posible",
+        "Que no aparezca en la competencia",
+        "Alta relevancia para el negocio y buena intención de búsqueda"
+      ],
+      "correct": "Alta relevancia para el negocio y buena intención de búsqueda",
+      "explicacion": "Una keyword es prioritaria cuando es muy relevante para el negocio y tiene una intención de búsqueda que encaja con lo que ofrece la web."
+    },
+    {
+      "id": 49,
+      "unit": "UT2",
+      "question": "¿Qué tipo de keywords se caracterizan por tener alto volumen pero también alta competencia?",
+      "options": [
+        "De nicho",
+        "Mid-tail",
+        "Long-tail",
+        "Short-tail"
+      ],
+      "correct": "Short-tail",
+      "explicacion": "Las short-tail son términos cortos y genéricos (\"zapatillas\"), con mucho volumen de búsqueda y mucha competencia."
+    },
+    {
+      "id": 50,
+      "unit": "UT2",
+      "question": "¿Qué se busca evitar mediante un mapa de contenidos?",
+      "options": [
+        "El exceso de enlaces externos",
+        "El uso de imágenes pesadas",
+        "La saturación de anuncios",
+        "La canibalización de palabras clave"
+      ],
+      "correct": "La canibalización de palabras clave",
+      "explicacion": "El mapa de contenidos asigna una keyword a cada URL para evitar la canibalización, es decir, que varias páginas propias compitan por la misma palabra clave."
+    },
+    {
+      "id": 51,
+      "unit": "UT2",
+      "question": "¿Qué documento relaciona cada URL con una keyword principal y secundarias?",
+      "options": [
+        "Robots.txt",
+        "Hoja de estilo CSS",
+        "Mapa de contenido",
+        "Sitemap XML"
+      ],
+      "correct": "Mapa de contenido",
+      "explicacion": "El mapa de contenido es el documento que relaciona cada URL con su keyword principal y sus keywords secundarias."
+    },
+    {
+      "id": 52,
+      "unit": "UT2",
+      "question": "¿Qué elemento se debe priorizar junto a la relevancia para elegir palabras clave?",
+      "options": [
+        "La velocidad de carga del vídeo",
+        "El equilibrio entre volumen y competencia",
+        "El número de imágenes por página",
+        "El tipo de servidor"
+      ],
+      "correct": "El equilibrio entre volumen y competencia",
+      "explicacion": "Además de la relevancia, hay que buscar equilibrio entre volumen de búsqueda (potencial de tráfico) y competencia (dificultad de posicionar)."
+    },
+    {
+      "id": 53,
+      "unit": "UT2",
+      "question": "¿Cuál es la primera fase del proceso de investigación de palabras clave?",
+      "options": [
+        "Publicar en redes sociales",
+        "Recopilar términos de búsqueda utilizando herramientas de análisis",
+        "Escribir el contenido de la web",
+        "Contratar un servicio de pago por clic"
+      ],
+      "correct": "Recopilar términos de búsqueda utilizando herramientas de análisis",
+      "explicacion": "La investigación de palabras clave empieza recopilando términos de búsqueda con herramientas (Keyword Planner, Ubersuggest...). Después se analizan, se filtran y se priorizan."
+    },
+    {
+      "id": 54,
+      "unit": "UT2",
+      "question": "¿Qué son las palabras clave en SEO?",
+      "options": [
+        "Imágenes optimizadas para la web",
+        "El nombre del dominio web",
+        "La dirección física de la empresa",
+        "Términos o frases que conectan las búsquedas de los usuarios con el contenido de un sitio web"
+      ],
+      "correct": "Términos o frases que conectan las búsquedas de los usuarios con el contenido de un sitio web",
+      "explicacion": "Las palabras clave son los términos o frases que conectan lo que buscan los usuarios con el contenido de un sitio web."
+    },
+    {
+      "id": 55,
+      "unit": "UT2",
+      "question": "¿Qué significa “canibalización de palabras clave”?",
+      "options": [
+        "Cuando se eliminan keywords de un texto",
+        "Cuando varias páginas del mismo sitio compiten por la misma keyword",
+        "Cuando Google penaliza un sitio",
+        "Cuando una keyword deja de ser buscada"
+      ],
+      "correct": "Cuando varias páginas del mismo sitio compiten por la misma keyword",
+      "explicacion": "Hay canibalización cuando varias páginas del mismo sitio compiten por la misma keyword. El buscador no sabe cuál mostrar y ambas pierden fuerza."
+    },
+    {
+      "id": 56,
+      "unit": "UT2",
+      "question": "¿Qué tipo de intención de búsqueda indica que el usuario quiere realizar una compra?",
+      "options": [
+        "Navegacional",
+        "Informativa",
+        "Comercial",
+        "Transaccional"
+      ],
+      "correct": "Transaccional",
+      "explicacion": "La intención transaccional indica que el usuario quiere realizar una acción, normalmente comprar (\"comprar\", \"precio\", \"oferta\")."
+    },
+    {
+      "id": 57,
+      "unit": "UT2",
+      "question": "¿Qué es una keyword de nicho?",
+      "options": [
+        "Una palabra inventada para una marca",
+        "Una palabra clave usada en todos los sectores",
+        "Una palabra clave específica de un sector o mercado concreto",
+        "Un término genérico con muchas búsquedas"
+      ],
+      "correct": "Una palabra clave específica de un sector o mercado concreto",
+      "explicacion": "Una keyword de nicho es específica de un sector o mercado concreto: tiene menos volumen, pero un público muy definido."
+    },
+    {
+      "id": 58,
+      "unit": "UT2",
+      "question": "¿Qué incluye la planificación editorial SEO?",
+      "options": [
+        "La compra de enlaces",
+        "El diseño del logotipo",
+        "El presupuesto anual de la empresa",
+        "La calendarización de contenidos optimizados según las keywords seleccionadas"
+      ],
+      "correct": "La calendarización de contenidos optimizados según las keywords seleccionadas",
+      "explicacion": "La planificación editorial SEO organiza en un calendario qué contenidos optimizados se publicarán y cuándo, según las keywords seleccionadas."
+    },
+    {
+      "id": 59,
+      "unit": "UT2",
+      "question": "¿Qué herramienta gratuita de Google requiere una cuenta de Google Ads para su uso?",
+      "options": [
+        "Ahrefs",
+        "Ubersuggest",
+        "SEMrush",
+        "Google Keyword Planner"
+      ],
+      "correct": "Google Keyword Planner",
+      "explicacion": "Google Keyword Planner es gratuito, pero se accede desde una cuenta de Google Ads. Ahrefs y SEMrush son de pago y Ubersuggest es freemium."
+    },
+    {
+      "id": 60,
+      "unit": "UT2",
+      "question": "¿Qué factor debe considerarse junto con el volumen de búsqueda para priorizar una palabra clave?",
+      "options": [
+        "El diseño gráfico de la página",
+        "El color del logotipo de la empresa",
+        "El número de empleados",
+        "La competencia o dificultad SEO"
+      ],
+      "correct": "La competencia o dificultad SEO",
+      "explicacion": "Junto al volumen hay que valorar la competencia o dificultad SEO: una keyword con mucho volumen puede ser casi imposible de posicionar."
+    },
+    {
+      "id": 61,
+      "unit": "UT2",
+      "question": "¿Qué muestra Google Trends?",
+      "options": [
+        "El listado de backlinks de un sitio",
+        "El ranking de páginas indexadas",
+        "El número total de páginas web en Google",
+        "La evolución y tendencia en las búsquedas de determinados términos"
+      ],
+      "correct": "La evolución y tendencia en las búsquedas de determinados términos",
+      "explicacion": "Google Trends muestra cómo evoluciona el interés de búsqueda de un término a lo largo del tiempo y por regiones, lo que permite detectar tendencias y estacionalidad."
+    },
+    {
+      "id": 62,
+      "unit": "UT2",
+      "question": "¿Qué es la arquitectura de la información en un sitio web?",
+      "options": [
+        "La organización jerárquica y estructural de los contenidos",
+        "La elección del color y tipografía",
+        "El tamaño de las imágenes",
+        "El diseño de logotipos"
+      ],
+      "correct": "La organización jerárquica y estructural de los contenidos",
+      "explicacion": "La arquitectura de la información es la organización jerárquica y estructural de los contenidos del sitio (categorías, subcategorías, enlaces), pensada para usuarios y buscadores."
+    },
+    {
+      "id": 63,
+      "unit": "UT2",
+      "question": "¿Qué tipo de keyword es “comprar zapatillas deportivas online”?",
+      "options": [
+        "Transaccional",
+        "Navegacional",
+        "Genérica",
+        "Informativa"
+      ],
+      "correct": "Transaccional",
+      "explicacion": "\"Comprar zapatillas deportivas online\" incluye el verbo comprar, así que expresa intención transaccional."
+    },
+    {
+      "id": 64,
+      "unit": "UT2",
+      "question": "¿Qué ventaja principal ofrecen las keywords long-tail?",
+      "options": [
+        "Alto volumen de búsqueda y máxima visibilidad",
+        "Son fáciles de recordar",
+        "Permiten incluir más imágenes",
+        "Alta segmentación del público y mayor probabilidad de conversión"
+      ],
+      "correct": "Alta segmentación del público y mayor probabilidad de conversión",
+      "explicacion": "Las long-tail son búsquedas largas y específicas: menos volumen, pero público muy segmentado y mayor probabilidad de conversión."
+    },
+    {
+      "id": 65,
+      "unit": "UT2",
+      "question": "¿Cómo se denominan las palabras clave de una o dos palabras, con alto volumen y alta competencia?",
+      "options": [
+        "Long-tail",
+        "Mid-tail",
+        "Cola extendida",
+        "Short-tail"
+      ],
+      "correct": "Short-tail",
+      "explicacion": "Las short-tail son keywords de una o dos palabras, con alto volumen y alta competencia."
+    },
+    {
+      "id": 66,
+      "unit": "UT2",
+      "question": "¿Qué tipo de palabras clave suelen tener menos competencia y mayor tasa de conversión?",
+      "options": [
+        "Mid-tail",
+        "Genéricas",
+        "Long-tail",
+        "Short-tail"
+      ],
+      "correct": "Long-tail",
+      "explicacion": "Las long-tail tienen menos competencia y convierten más, porque responden a una necesidad muy concreta."
+    },
+    {
+      "id": 67,
+      "unit": "UT2",
+      "question": "¿Cómo se clasifica una keyword de dos a tres palabras con volumen y competencia intermedios, como «zapatos de cuero mujer»?",
+      "options": [
+        "Long-tail",
+        "Mid-tail",
+        "De marca",
+        "Short-tail"
+      ],
+      "correct": "Mid-tail",
+      "explicacion": "Las mid-tail tienen dos o tres palabras y un volumen y competencia intermedios, entre las short-tail (genéricas) y las long-tail (muy específicas)."
+    },
+    {
+      "id": 68,
+      "unit": "UT2",
+      "question": "¿Qué intención de búsqueda tiene la consulta «Zalando zapatos»?",
+      "options": [
+        "Transaccional",
+        "Comercial",
+        "Informativa",
+        "Navegacional"
+      ],
+      "correct": "Navegacional",
+      "explicacion": "Es navegacional: el usuario quiere acceder a una web concreta (Zalando)."
+    },
+    {
+      "id": 69,
+      "unit": "UT2",
+      "question": "¿Qué intención de búsqueda tiene un usuario que compara opciones antes de decidir una compra?",
+      "options": [
+        "Local",
+        "Comercial",
+        "Informativa",
+        "Navegacional"
+      ],
+      "correct": "Comercial",
+      "explicacion": "La intención comercial corresponde a quien investiga y compara opciones antes de comprar; la transaccional es cuando ya quiere comprar."
+    },
+    {
+      "id": 70,
+      "unit": "UT2",
+      "question": "¿Qué algoritmos de Google cita el temario para interpretar el contexto semántico y la intención de búsqueda?",
+      "options": [
+        "PageRank y Hummingbird",
+        "RankBrain y BERT",
+        "Mobilegeddon y Medic",
+        "Panda y Penguin"
+      ],
+      "correct": "RankBrain y BERT",
+      "explicacion": "RankBrain y BERT interpretan el contexto semántico de las consultas para mostrar resultados que respondan con precisión a la intención del usuario."
+    },
+    {
+      "id": 71,
+      "unit": "UT2",
+      "question": "¿Qué porcentaje de las búsquedas totales suponen las keywords long-tail según el temario?",
+      "options": [
+        "El 100 %",
+        "Alrededor del 25 %",
+        "Entre el 5 % y el 10 %",
+        "Entre el 70 % y el 80 %"
+      ],
+      "correct": "Entre el 70 % y el 80 %",
+      "explicacion": "Aunque cada long-tail tiene poco volumen individual, en conjunto suponen entre el 70 % y el 80 % de todas las búsquedas."
+    },
+    {
+      "id": 72,
+      "unit": "UT2",
+      "question": "¿Qué herramienta de pago destaca especialmente en el análisis de la competencia?",
+      "options": [
+        "Ahrefs",
+        "Google Keyword Planner",
+        "Google Trends",
+        "Ubersuggest"
+      ],
+      "correct": "Ahrefs",
+      "explicacion": "Ahrefs es una herramienta de pago potente en análisis de competencia y enlaces. SEMrush también es de pago y muy completa."
+    },
+    {
+      "id": 73,
+      "unit": "UT2",
+      "question": "¿Qué modelo de precio tiene Ubersuggest según el temario?",
+      "options": [
+        "Gratuita con funciones premium",
+        "Requiere cuenta de Google Ads",
+        "Solo de pago",
+        "Solo para empresas"
+      ],
+      "correct": "Gratuita con funciones premium",
+      "explicacion": "Ubersuggest es gratuita con funciones premium. Keyword Planner es gratuita pero requiere cuenta de Google Ads; SEMrush y Ahrefs son de pago."
+    },
+    {
+      "id": 74,
+      "unit": "UT2",
+      "question": "¿Para qué se utiliza Google Trends en la investigación de palabras clave?",
+      "options": [
+        "Para comprar anuncios",
+        "Para medir la velocidad de la web",
+        "Para generar el sitemap",
+        "Para detectar tendencias y estacionalidad"
+      ],
+      "correct": "Para detectar tendencias y estacionalidad",
+      "explicacion": "Google Trends muestra la evolución del interés de búsqueda y permite detectar tendencias y estacionalidad."
+    },
+    {
+      "id": 75,
+      "unit": "UT2",
+      "question": "¿Qué es el volumen de búsqueda?",
+      "options": [
+        "El número de enlaces entrantes",
+        "La cantidad estimada de veces que se busca una keyword, normalmente al mes",
+        "El tamaño en MB de una página",
+        "El número de páginas de un sitio"
+      ],
+      "correct": "La cantidad estimada de veces que se busca una keyword, normalmente al mes",
+      "explicacion": "El volumen de búsqueda es la cantidad estimada de consultas de una palabra clave en un periodo, normalmente mensual."
+    },
+    {
+      "id": 76,
+      "unit": "UT2",
+      "question": "¿Qué tipo de keyword es ideal pero poco frecuente según el temario?",
+      "options": [
+        "Sin volumen",
+        "Alto volumen y alta competencia",
+        "Alto volumen y baja competencia",
+        "Bajo volumen y alta competencia"
+      ],
+      "correct": "Alto volumen y baja competencia",
+      "explicacion": "Las keywords con alto volumen y baja competencia son ideales pero raras. Las de baja competencia y volumen moderado pueden ser estratégicas si aportan tráfico cualificado."
+    },
+    {
+      "id": 77,
+      "unit": "UT2",
+      "question": "¿Cuál de estos criterios NO se usa para priorizar keywords según el temario?",
+      "options": [
+        "Color corporativo de la marca",
+        "Potencial de conversión",
+        "Volumen de búsqueda",
+        "Dificultad SEO"
+      ],
+      "correct": "Color corporativo de la marca",
+      "explicacion": "Se priorizan por volumen, dificultad SEO, relevancia para el negocio, intención de búsqueda y potencial de conversión."
+    },
+    {
+      "id": 78,
+      "unit": "UT2",
+      "question": "¿Qué estructura jerárquica refleja la arquitectura de la información basada en keywords?",
+      "options": [
+        "Página única sin enlaces",
+        "Subcategorías → inicio → categorías",
+        "Categorías → subcategorías → páginas de producto o artículo",
+        "Solo páginas de producto"
+      ],
+      "correct": "Categorías → subcategorías → páginas de producto o artículo",
+      "explicacion": "La arquitectura organiza el sitio en categorías, subcategorías y páginas de producto/artículo, reflejando la jerarquía de las keywords y usando URLs amigables."
+    },
+    {
+      "id": 79,
+      "unit": "UT2",
+      "question": "¿Qué aspecto debe considerar la planificación editorial SEO?",
+      "options": [
+        "El número de empleados",
+        "La estacionalidad, las actualizaciones periódicas y la coordinación con campañas",
+        "El tipo de servidor",
+        "El diseño del logotipo"
+      ],
+      "correct": "La estacionalidad, las actualizaciones periódicas y la coordinación con campañas",
+      "explicacion": "La planificación editorial tiene en cuenta la estacionalidad, las actualizaciones periódicas de contenidos y la coordinación con las campañas de marketing."
+    },
+    {
+      "id": 80,
+      "unit": "UT2",
+      "question": "¿Qué son las keywords genéricas según la clasificación por sector?",
+      "options": [
+        "Las aplicables a múltiples sectores",
+        "Las de un único sector",
+        "Las de marca",
+        "Las long-tail"
+      ],
+      "correct": "Las aplicables a múltiples sectores",
+      "explicacion": "Por sector, las genéricas sirven para múltiples sectores y las de nicho son específicas de un mercado concreto."
+    },
+    {
+      "id": 81,
+      "unit": "UT2",
+      "question": "En SEO, ¿qué es una conversión?",
+      "options": [
+        "Pasar de HTTP a HTTPS",
+        "Cambiar el formato de una imagen",
+        "Una acción del usuario que es objetivo del negocio, como una compra o registro",
+        "Traducir la web"
+      ],
+      "correct": "Una acción del usuario que es objetivo del negocio, como una compra o registro",
+      "explicacion": "La conversión es una acción que el usuario realiza y que representa un objetivo para el negocio: compra, registro, descarga, formulario, etc."
+    },
+    {
+      "id": 82,
+      "unit": "UT2",
+      "question": "¿Qué es la relevancia de una palabra clave?",
+      "options": [
+        "Su precio por clic",
+        "El grado de relación entre la keyword y el contenido de la página",
+        "Su antigüedad",
+        "Su número de letras"
+      ],
+      "correct": "El grado de relación entre la keyword y el contenido de la página",
+      "explicacion": "La relevancia es el grado de relación entre una palabra clave y el contenido, valorado tanto por los usuarios como por los buscadores."
+    },
+    {
+      "id": 83,
+      "unit": "UT3",
+      "question": "¿Qué técnica permite cargar imágenes solo cuando se visualizan en pantalla?",
+      "options": [
+        "Lazy loading",
+        "Full preload",
+        "Render blocking",
+        "Static loading"
+      ],
+      "correct": "Lazy loading",
+      "explicacion": "Lazy loading retrasa la carga de imágenes (y otros recursos) hasta que van a aparecer en pantalla, y así acelera la carga inicial. En HTML basta con loading=\"lazy\"."
+    },
+    {
+      "id": 84,
+      "unit": "UT3",
+      "question": "¿Qué métrica de Core Web Vitals mide el tiempo de carga del contenido principal visible?",
+      "options": [
+        "LCP",
+        "FID",
+        "TTFB",
+        "CLS"
+      ],
+      "correct": "LCP",
+      "explicacion": "LCP (Largest Contentful Paint) mide cuánto tarda en mostrarse el elemento de contenido más grande visible. Se recomienda que sea menor de 2,5 s."
+    },
+    {
+      "id": 85,
+      "unit": "UT3",
+      "question": "¿Qué formato de imagen es más eficiente para la web según la UT3?",
+      "options": [
+        "RAW",
+        "TIFF",
+        "BMP",
+        "WebP"
+      ],
+      "correct": "WebP",
+      "explicacion": "WebP comprime mucho mejor que JPEG o PNG con calidad similar. RAW, TIFF y BMP son formatos pesados, no pensados para la web."
+    },
+    {
+      "id": 86,
+      "unit": "UT3",
+      "question": "¿Qué elemento de HTML se utiliza para organizar jerárquicamente el contenido en secciones?",
+      "options": [
+        "Tablas <table>",
+        "Divisiones <div>",
+        "Listas <ul>",
+        "Encabezados H1-H6"
+      ],
+      "correct": "Encabezados H1-H6",
+      "explicacion": "Los encabezados H1-H6 estructuran el contenido de forma jerárquica, lo que ayuda a usuarios y buscadores a entender las secciones."
+    },
+    {
+      "id": 87,
+      "unit": "UT3",
+      "question": "¿Qué elemento es fundamental para que una imagen tenga relevancia en Google Imágenes?",
+      "options": [
+        "Nombre del archivo en mayúsculas",
+        "Insertar la imagen en un PDF",
+        "Usar imágenes sin formato",
+        "Texto alternativo descriptivo"
+      ],
+      "correct": "Texto alternativo descriptivo",
+      "explicacion": "El texto alternativo (alt) describe la imagen. Google lo usa para entenderla y posicionarla en Google Imágenes, y además mejora la accesibilidad."
+    },
+    {
+      "id": 88,
+      "unit": "UT3",
+      "question": "¿Qué métrica de Core Web Vitals mide la estabilidad visual de una página?",
+      "options": [
+        "LCP",
+        "FID",
+        "TTI",
+        "CLS"
+      ],
+      "correct": "CLS",
+      "explicacion": "CLS (Cumulative Layout Shift) mide la estabilidad visual: cuánto se desplazan los elementos mientras carga la página. Se recomienda que sea menor de 0,1."
+    },
+    {
+      "id": 89,
+      "unit": "UT3",
+      "question": "¿Cuál es el formato de marcado estructurado recomendado por Google?",
+      "options": [
+        "XML",
+        "TXT",
+        "CSV",
+        "JSON-LD"
+      ],
+      "correct": "JSON-LD",
+      "explicacion": "Google recomienda JSON-LD para los datos estructurados de Schema.org: un bloque <script> separado del HTML visible."
+    },
+    {
+      "id": 90,
+      "unit": "UT3",
+      "question": "¿Qué propiedad de un sitio web asegura que se adapte a cualquier dispositivo?",
+      "options": [
+        "Diseño responsive",
+        "Código minificado",
+        "Meta keywords",
+        "Marcado canónico"
+      ],
+      "correct": "Diseño responsive",
+      "explicacion": "El diseño responsive adapta la página a cualquier tamaño de pantalla. Google indexa primero la versión móvil (mobile-first)."
+    },
+    {
+      "id": 91,
+      "unit": "UT3",
+      "question": "¿Qué herramienta de Google permite detectar errores de rastreo?",
+      "options": [
+        "AdSense",
+        "Analytics",
+        "Tag Manager",
+        "Search Console"
+      ],
+      "correct": "Search Console",
+      "explicacion": "Google Search Console informa de errores de rastreo e indexación, del rendimiento en búsquedas y de las penalizaciones manuales."
+    },
+    {
+      "id": 92,
+      "unit": "UT3",
+      "question": "¿Qué atributo HTML describe el contenido de una imagen para SEO y accesibilidad?",
+      "options": [
+        "alt",
+        "title",
+        "src",
+        "href"
+      ],
+      "correct": "alt",
+      "explicacion": "El atributo alt describe el contenido de la imagen para buscadores y lectores de pantalla, y se muestra si la imagen no carga."
+    },
+    {
+      "id": 93,
+      "unit": "UT3",
+      "question": "¿Qué archivo XML facilita la indexación de las páginas por los buscadores?",
+      "options": [
+        "Index.html",
+        "Style.css",
+        "Sitemap.xml",
+        "Robots.txt"
+      ],
+      "correct": "Sitemap.xml",
+      "explicacion": "El sitemap.xml lista las URL del sitio para facilitar que los buscadores las encuentren e indexen. Robots.txt controla el rastreo, no la indexación."
+    },
+    {
+      "id": 94,
+      "unit": "UT3",
+      "question": "¿Cuál es la longitud recomendada para una meta description?",
+      "options": [
+        "Menos de 50 caracteres",
+        "Exactamente 100 caracteres",
+        "Más de 200 caracteres",
+        "Entre 155 y 160 caracteres"
+      ],
+      "correct": "Entre 155 y 160 caracteres",
+      "explicacion": "La meta description debe tener unos 155-160 caracteres. Si es más larga, Google la corta en los resultados."
+    },
+    {
+      "id": 95,
+      "unit": "UT3",
+      "question": "¿Qué tipo de redirección transfiere autoridad permanentemente a otra URL?",
+      "options": [
+        "301",
+        "302",
+        "404",
+        "500"
+      ],
+      "correct": "301",
+      "explicacion": "Una redirección 301 es permanente y transfiere la autoridad SEO a la nueva URL. La 302 es temporal, 404 es página no encontrada y 500 error del servidor."
+    },
+    {
+      "id": 96,
+      "unit": "UT3",
+      "question": "¿Qué tipo de auditoría revisa aspectos técnicos que afectan al SEO?",
+      "options": [
+        "Auditoría técnica SEO",
+        "Auditoría de marca",
+        "Auditoría legal",
+        "Auditoría financiera"
+      ],
+      "correct": "Auditoría técnica SEO",
+      "explicacion": "La auditoría técnica SEO revisa rastreo, indexación, velocidad, enlaces rotos, redirecciones, datos estructurados y otros aspectos técnicos."
+    },
+    {
+      "id": 97,
+      "unit": "UT3",
+      "question": "¿Cuál es el encabezado que debe aparecer una sola vez en cada página web?",
+      "options": [
+        "<h6>",
+        "<h3>",
+        "<h2>",
+        "<h1>"
+      ],
+      "correct": "<h1>",
+      "explicacion": "Se recomienda un único <h1> por página, con el tema principal. Los <h2>-<h6> organizan las subsecciones."
+    },
+    {
+      "id": 98,
+      "unit": "UT3",
+      "question": "¿Qué factor de UX influye indirectamente en el SEO?",
+      "options": [
+        "Tamaño del hosting",
+        "Navegación intuitiva",
+        "Color del servidor",
+        "Peso del favicon"
+      ],
+      "correct": "Navegación intuitiva",
+      "explicacion": "Una navegación intuitiva mejora la experiencia de usuario (más tiempo en la página, menos rebote), lo que influye indirectamente en el SEO."
+    },
+    {
+      "id": 99,
+      "unit": "UT3",
+      "question": "¿Qué etiqueta HTML define el título que aparece en la pestaña del navegador y en los resultados de búsqueda?",
+      "options": [
+        "<header>",
+        "<meta>",
+        "<title>",
+        "<h1>"
+      ],
+      "correct": "<title>",
+      "explicacion": "La etiqueta <title> define el título de la pestaña del navegador y el titular azul en los resultados de búsqueda."
+    },
+    {
+      "id": 100,
+      "unit": "UT3",
+      "question": "¿Qué elemento de navegación muestra la ruta jerárquica de la página dentro del sitio?",
+      "options": [
+        "Breadcrumbs",
+        "Navbar",
+        "Footer",
+        "Sidebar"
+      ],
+      "correct": "Breadcrumbs",
+      "explicacion": "Las breadcrumbs (migas de pan) muestran la ruta jerárquica, por ejemplo Inicio > Categoría > Producto, y ayudan a usuarios y buscadores."
+    },
+    {
+      "id": 101,
+      "unit": "UT3",
+      "question": "¿Qué tipo de URL es más recomendable para SEO?",
+      "options": [
+        "URL con muchos parámetros y números",
+        "URL con mayúsculas y caracteres especiales",
+        "URL sin relación con el contenido",
+        "URL corta, descriptiva y con palabras clave"
+      ],
+      "correct": "URL corta, descriptiva y con palabras clave",
+      "explicacion": "Las URL cortas, descriptivas, en minúsculas, con guiones y con la palabra clave son más claras para el usuario y para Google."
+    },
+    {
+      "id": 102,
+      "unit": "UT3",
+      "question": "¿Qué archivo controla qué partes del sitio pueden ser rastreadas por los bots?",
+      "options": [
+        "Canonical.txt",
+        "Sitemap.xml",
+        "Robots.txt",
+        "Htaccess"
+      ],
+      "correct": "Robots.txt",
+      "explicacion": "robots.txt indica qué partes del sitio pueden rastrear los bots."
+    },
+    {
+      "id": 103,
+      "unit": "UT3",
+      "question": "¿Qué requisitos debe cumplir la etiqueta <title> según el temario?",
+      "options": [
+        "Repetirse igual en todas las páginas",
+        "Tener más de 120 caracteres",
+        "Ser única por página, incluir la keyword principal y no superar unos 60 caracteres",
+        "Escribirse solo en mayúsculas"
+      ],
+      "correct": "Ser única por página, incluir la keyword principal y no superar unos 60 caracteres",
+      "explicacion": "El <title> debe ser único en cada página, contener la palabra clave principal y no superar los 60 caracteres para que no se corte en los resultados."
+    },
+    {
+      "id": 104,
+      "unit": "UT3",
+      "question": "¿Es la meta description un factor de ranking directo?",
+      "options": [
+        "Sí, si contiene muchas keywords",
+        "No, y Google nunca la muestra",
+        "No, pero influye en la tasa de clics (CTR)",
+        "Sí, es el factor más importante"
+      ],
+      "correct": "No, pero influye en la tasa de clics (CTR)",
+      "explicacion": "La meta description no posiciona directamente, pero un buen resumen atractivo en el snippet aumenta el CTR."
+    },
+    {
+      "id": 105,
+      "unit": "UT3",
+      "question": "¿Qué buena práctica se recomienda al redactar title, description y contenido?",
+      "options": [
+        "Usar textos distintos sin relación",
+        "Dejar la description vacía",
+        "Repetir la keyword el máximo de veces",
+        "Mantener coherencia entre ellos e incluir variaciones semánticas"
+      ],
+      "correct": "Mantener coherencia entre ellos e incluir variaciones semánticas",
+      "explicacion": "Se recomienda evitar el keyword stuffing, incluir variaciones semánticas y mantener coherencia entre título, descripción y contenido."
+    },
+    {
+      "id": 106,
+      "unit": "UT3",
+      "question": "¿Qué función tienen las etiquetas <h2> y <h3>?",
+      "options": [
+        "Definir el título de la pestaña",
+        "Subtítulos que agrupan y organizan el contenido en secciones y subsecciones",
+        "Insertar imágenes",
+        "Indicar la URL canónica"
+      ],
+      "correct": "Subtítulos que agrupan y organizan el contenido en secciones y subsecciones",
+      "explicacion": "El <h1> es el título principal; <h2> marca las secciones principales y <h3> las subsecciones. <h4>-<h6> son subniveles poco usados."
+    },
+    {
+      "id": 107,
+      "unit": "UT3",
+      "question": "¿Cuál es un error frecuente al usar encabezados?",
+      "options": [
+        "Seguir la jerarquía h1, h2, h3",
+        "Incluir la keyword en el <h1>",
+        "Usar encabezados solo por estilo visual sin respetar la jerarquía semántica",
+        "Usar un único <h1>"
+      ],
+      "correct": "Usar encabezados solo por estilo visual sin respetar la jerarquía semántica",
+      "explicacion": "Los errores típicos son usar encabezados solo por su aspecto visual, sin jerarquía semántica, y repetir el <h1> varias veces en una página."
+    },
+    {
+      "id": 108,
+      "unit": "UT3",
+      "question": "¿Qué carácter se recomienda para separar palabras en una URL amigable?",
+      "options": [
+        "Guion medio -",
+        "Signo &",
+        "Guion bajo _",
+        "Espacio"
+      ],
+      "correct": "Guion medio -",
+      "explicacion": "Las URLs amigables usan guiones medios entre palabras, palabras clave relevantes y evitan caracteres especiales y parámetros innecesarios."
+    },
+    {
+      "id": 109,
+      "unit": "UT3",
+      "question": "Además de mejorar la experiencia de usuario, ¿qué aportan las breadcrumbs a los buscadores?",
+      "options": [
+        "Cifrado de la página",
+        "Eliminan el contenido duplicado",
+        "Enlaces internos adicionales",
+        "Más velocidad de carga"
+      ],
+      "correct": "Enlaces internos adicionales",
+      "explicacion": "Las migas de pan muestran la ruta jerárquica al usuario y proporcionan enlaces internos adicionales que ayudan a los buscadores a entender la estructura."
+    },
+    {
+      "id": 110,
+      "unit": "UT3",
+      "question": "¿Cuál de estos es un tipo común de marcado estructurado?",
+      "options": [
+        "Hojas de estilo",
+        "Productos (precio, disponibilidad, valoraciones)",
+        "Redirecciones",
+        "Cookies"
+      ],
+      "correct": "Productos (precio, disponibilidad, valoraciones)",
+      "explicacion": "Los tipos más comunes de datos estructurados son productos, artículos y noticias, eventos y recetas."
+    },
+    {
+      "id": 111,
+      "unit": "UT3",
+      "question": "¿Qué herramienta de Google permite comprobar si una página puede mostrar resultados enriquecidos?",
+      "options": [
+        "TinyPNG",
+        "Google Trends",
+        "Screaming Frog",
+        "Rich Results Test"
+      ],
+      "correct": "Rich Results Test",
+      "explicacion": "Rich Results Test valida los datos estructurados y muestra qué resultados enriquecidos puede generar la página. Structured Data Markup Helper ayuda a crear el marcado."
+    },
+    {
+      "id": 112,
+      "unit": "UT3",
+      "question": "¿Qué mide la métrica FID de Core Web Vitals?",
+      "options": [
+        "El número de enlaces",
+        "La estabilidad visual",
+        "El tiempo de carga del contenido principal",
+        "El tiempo de respuesta a la primera interacción del usuario"
+      ],
+      "correct": "El tiempo de respuesta a la primera interacción del usuario",
+      "explicacion": "FID (First Input Delay) mide cuánto tarda la página en responder a la primera interacción. LCP mide la carga del contenido principal y CLS la estabilidad visual."
+    },
+    {
+      "id": 113,
+      "unit": "UT3",
+      "question": "¿Cuál de estas recomendaciones mejora la velocidad de carga?",
+      "options": [
+        "Usar imágenes BMP",
+        "Usar una CDN y minificar y comprimir CSS, JS y HTML",
+        "Añadir más scripts",
+        "Desactivar la caché"
+      ],
+      "correct": "Usar una CDN y minificar y comprimir CSS, JS y HTML",
+      "explicacion": "El temario recomienda usar redes de distribución de contenido (CDN), minificar y comprimir CSS/JS/HTML y aplicar lazy loading a imágenes y vídeos."
+    },
+    {
+      "id": 114,
+      "unit": "UT3",
+      "question": "¿Cuál suele ser el recurso más pesado de una web?",
+      "options": [
+        "El archivo robots.txt",
+        "El HTML",
+        "Las imágenes",
+        "Las fuentes"
+      ],
+      "correct": "Las imágenes",
+      "explicacion": "Las imágenes suelen ser el recurso más pesado y afectan directamente a la velocidad de carga, por eso hay que optimizarlas."
+    },
+    {
+      "id": 115,
+      "unit": "UT3",
+      "question": "Además de WebP, ¿qué otro formato moderno de imagen recomienda el temario?",
+      "options": [
+        "AVIF",
+        "TIFF",
+        "BMP",
+        "RAW"
+      ],
+      "correct": "AVIF",
+      "explicacion": "WebP y AVIF son formatos modernos con mejor compresión. También se recomienda ajustar las dimensiones y comprimir sin pérdida perceptible."
+    },
+    {
+      "id": 116,
+      "unit": "UT3",
+      "question": "¿Qué herramienta se usa para comprimir imágenes?",
+      "options": [
+        "Search Console",
+        "Screaming Frog",
+        "TinyPNG",
+        "Google Trends"
+      ],
+      "correct": "TinyPNG",
+      "explicacion": "TinyPNG, Squoosh e ImageOptim comprimen imágenes reduciendo su peso sin pérdida de calidad perceptible."
+    },
+    {
+      "id": 117,
+      "unit": "UT3",
+      "question": "¿Qué recomienda el temario para lograr un diseño responsive?",
+      "options": [
+        "Fijar el ancho a 1920 px",
+        "Crear una web solo para escritorio",
+        "Usar tablas para maquetar",
+        "Usar frameworks CSS como Bootstrap o Tailwind y evitar el desplazamiento horizontal"
+      ],
+      "correct": "Usar frameworks CSS como Bootstrap o Tailwind y evitar el desplazamiento horizontal",
+      "explicacion": "Se recomienda usar frameworks CSS como Bootstrap o Tailwind, comprobar la visualización en varios dispositivos y evitar elementos que obliguen a desplazarse horizontalmente."
+    },
+    {
+      "id": 118,
+      "unit": "UT3",
+      "question": "¿A través de qué métricas influye la UX indirectamente en el SEO?",
+      "options": [
+        "Número de empleados",
+        "Tiempo en página y tasa de rebote",
+        "Tamaño del servidor",
+        "Precio del dominio"
+      ],
+      "correct": "Tiempo en página y tasa de rebote",
+      "explicacion": "La experiencia de usuario influye indirectamente en el SEO mediante métricas como el tiempo en página o la tasa de rebote."
+    },
+    {
+      "id": 119,
+      "unit": "UT3",
+      "question": "¿Qué herramienta, además de Search Console, se usa para analizar errores de rastreo?",
+      "options": [
+        "Trello",
+        "Photoshop",
+        "Canva",
+        "Screaming Frog SEO Spider"
+      ],
+      "correct": "Screaming Frog SEO Spider",
+      "explicacion": "Screaming Frog SEO Spider rastrea el sitio como un bot y detecta errores, redirecciones, enlaces rotos y problemas de metadatos."
+    },
+    {
+      "id": 120,
+      "unit": "UT3",
+      "question": "¿Qué tipo de errores son los códigos 5xx?",
+      "options": [
+        "Errores de servidor",
+        "Errores de cliente",
+        "Redirecciones",
+        "Páginas correctas"
+      ],
+      "correct": "Errores de servidor",
+      "explicacion": "Los errores 5xx son errores del servidor; el 404 es un error de cliente (página no encontrada)."
+    },
+    {
+      "id": 121,
+      "unit": "UT3",
+      "question": "¿Qué se recomienda hacer con la página de error 404?",
+      "options": [
+        "Eliminarla",
+        "Dejarla en blanco",
+        "Redirigir todo a la portada siempre",
+        "Personalizarla para ofrecer enlaces útiles"
+      ],
+      "correct": "Personalizarla para ofrecer enlaces útiles",
+      "explicacion": "Conviene personalizar la página 404 con enlaces útiles para que el usuario no abandone el sitio."
+    },
+    {
+      "id": 122,
+      "unit": "UT3",
+      "question": "¿Dónde debe ubicarse el archivo robots.txt?",
+      "options": [
+        "En la raíz del dominio",
+        "Dentro del <head>",
+        "En el sitemap",
+        "En la carpeta de imágenes"
+      ],
+      "correct": "En la raíz del dominio",
+      "explicacion": "robots.txt es un archivo de texto que se coloca en la raíz del dominio (ejemplo.com/robots.txt) e indica qué secciones pueden rastrear los bots."
+    },
+    {
+      "id": 123,
+      "unit": "UT3",
+      "question": "¿Qué elemento se analiza en una auditoría técnica SEO?",
+      "options": [
+        "El salario del equipo",
+        "Solo el diseño gráfico",
+        "Indexabilidad, metadatos, rendimiento, enlaces y seguridad HTTPS",
+        "El color del logotipo"
+      ],
+      "correct": "Indexabilidad, metadatos, rendimiento, enlaces y seguridad HTTPS",
+      "explicacion": "La auditoría técnica evalúa indexabilidad, etiquetas y metadatos, rendimiento, enlaces internos y externos y seguridad (HTTPS)."
+    },
+    {
+      "id": 124,
+      "unit": "UT4",
+      "question": "¿Qué actualización de Google se centró en castigar enlaces artificiales y manipulativos?",
+      "options": [
+        "Mobilegeddon",
+        "Penguin",
+        "Core Web Vitals",
+        "Panda"
+      ],
+      "correct": "Penguin",
+      "explicacion": "Penguin (2012) penalizó los enlaces artificiales: compra de enlaces, granjas de enlaces y anchor text sobreoptimizado."
+    },
+    {
+      "id": 125,
+      "unit": "UT4",
+      "question": "¿Qué tipo de palabras clave son relevantes para optimizar la búsqueda por voz?",
+      "options": [
+        "Keywords irrelevantes",
+        "Palabras clave de una sola palabra",
+        "Palabras en idioma técnico",
+        "Long tail keywords"
+      ],
+      "correct": "Long tail keywords",
+      "explicacion": "En la búsqueda por voz las consultas son frases largas y naturales, así que se optimiza con keywords long-tail y preguntas."
+    },
+    {
+      "id": 126,
+      "unit": "UT4",
+      "question": "¿Qué práctica puede llevar a una penalización por parte de Google?",
+      "options": [
+        "Arquitectura de información clara",
+        "Optimización de imágenes",
+        "Contenido duplicado",
+        "Uso de títulos claros"
+      ],
+      "correct": "Contenido duplicado",
+      "explicacion": "El contenido duplicado (copiado de otras webs o repetido en varias URL) puede provocar penalizaciones o pérdida de posiciones."
+    },
+    {
+      "id": 127,
+      "unit": "UT4",
+      "question": "¿Qué actualización de Google afectó especialmente a sitios de salud y finanzas (YMYL)?",
+      "options": [
+        "Mobilegeddon",
+        "Panda",
+        "Medic Update",
+        "Penguin"
+      ],
+      "correct": "Medic Update",
+      "explicacion": "Medic Update (2018) afectó sobre todo a sitios YMYL (Your Money Your Life) de salud y finanzas, y reforzó la importancia de E-A-T: experiencia, autoridad y fiabilidad."
+    },
+    {
+      "id": 128,
+      "unit": "UT4",
+      "question": "¿Qué herramienta muestra la “turbulencia” diaria en los rankings de Google como un pronóstico del tiempo?",
+      "options": [
+        "Sistrix",
+        "MozCast",
+        "Ahrefs",
+        "Google Trends"
+      ],
+      "correct": "MozCast",
+      "explicacion": "MozCast muestra la volatilidad diaria del algoritmo de Google como un parte meteorológico: más \"temperatura\" significa más cambios en los rankings."
+    },
+    {
+      "id": 129,
+      "unit": "UT4",
+      "question": "¿Qué valor profesional garantiza la confianza en proyectos SEO?",
+      "options": [
+        "Minimizar informes al cliente",
+        "Prometer primeros puestos",
+        "Uso de técnicas ocultas",
+        "Transparencia y honestidad"
+      ],
+      "correct": "Transparencia y honestidad",
+      "explicacion": "La transparencia y la honestidad (informes claros, sin prometer primeros puestos) generan confianza en los proyectos SEO."
+    },
+    {
+      "id": 130,
+      "unit": "UT4",
+      "question": "¿Qué algoritmo introdujo la inteligencia artificial en Google para interpretar consultas complejas?",
+      "options": [
+        "Penguin",
+        "RankBrain",
+        "Panda",
+        "Medic Update"
+      ],
+      "correct": "RankBrain",
+      "explicacion": "RankBrain (2015) introdujo el aprendizaje automático en Google para interpretar consultas complejas o nunca vistas."
+    },
+    {
+      "id": 131,
+      "unit": "UT4",
+      "question": "¿Qué tipo de penalización aplica Google de forma automática mediante su algoritmo?",
+      "options": [
+        "Penalización algorítmica",
+        "Penalización manual",
+        "Penalización editorial",
+        "Penalización contractual"
+      ],
+      "correct": "Penalización algorítmica",
+      "explicacion": "La penalización algorítmica la aplica automáticamente el algoritmo, como Panda o Penguin. La manual la impone un revisor humano de Google."
+    },
+    {
+      "id": 132,
+      "unit": "UT4",
+      "question": "¿Qué herramienta muestra tendencias de búsqueda en tiempo real?",
+      "options": [
+        "MozCast",
+        "Ahrefs",
+        "SEMrush Sensor",
+        "Google Trends"
+      ],
+      "correct": "Google Trends",
+      "explicacion": "Google Trends muestra el interés de búsqueda, incluidas las tendencias del momento en tiempo real."
+    },
+    {
+      "id": 133,
+      "unit": "UT4",
+      "question": "¿Cuál es una medida preventiva para evitar sanciones?",
+      "options": [
+        "Comprar enlaces en grandes cantidades",
+        "Usar texto oculto con keywords",
+        "Realizar auditorías SEO periódicas",
+        "Publicar contenido duplicado"
+      ],
+      "correct": "Realizar auditorías SEO periódicas",
+      "explicacion": "Hacer auditorías SEO periódicas permite detectar y corregir a tiempo problemas que podrían provocar sanciones."
+    },
+    {
+      "id": 134,
+      "unit": "UT4",
+      "question": "¿Qué actualización priorizó la adaptabilidad a dispositivos móviles en los resultados de búsqueda?",
+      "options": [
+        "Panda",
+        "Mobilegeddon",
+        "BERT",
+        "Penguin"
+      ],
+      "correct": "Mobilegeddon",
+      "explicacion": "Mobilegeddon (2015) empezó a favorecer en las búsquedas móviles a las webs adaptadas a móviles."
+    },
+    {
+      "id": 135,
+      "unit": "UT4",
+      "question": "¿Cuál es un principio básico de las directrices de Google?",
+      "options": [
+        "Engañar a los motores de búsqueda",
+        "Priorizar trucos para mejorar el ranking",
+        "Ocultar enlaces en el contenido",
+        "Crear páginas pensando en el usuario"
+      ],
+      "correct": "Crear páginas pensando en el usuario",
+      "explicacion": "El principio básico de las directrices de Google es crear páginas pensando en el usuario, no en engañar a los buscadores."
+    },
+    {
+      "id": 136,
+      "unit": "UT4",
+      "question": "¿Qué actualización de Google penalizó el contenido duplicado y de baja calidad?",
+      "options": [
+        "Penguin",
+        "Panda",
+        "RankBrain",
+        "Hummingbird"
+      ],
+      "correct": "Panda",
+      "explicacion": "Panda (2011) penalizó el contenido duplicado, escaso o de baja calidad."
+    },
+    {
+      "id": 137,
+      "unit": "UT4",
+      "question": "¿Qué herramienta oficial de Google permite monitorizar impresiones, clics y penalizaciones?",
+      "options": [
+        "MozCast",
+        "Ahrefs",
+        "SEMrush",
+        "Google Search Console"
+      ],
+      "correct": "Google Search Console",
+      "explicacion": "Google Search Console muestra impresiones, clics, CTR, posición media, estado de indexación y penalizaciones manuales."
+    },
+    {
+      "id": 138,
+      "unit": "UT4",
+      "question": "¿Qué actualización de Google introdujo la comprensión del lenguaje natural?",
+      "options": [
+        "Panda",
+        "Mobilegeddon",
+        "Hummingbird",
+        "Penguin"
+      ],
+      "correct": "Hummingbird",
+      "explicacion": "Hummingbird (Colibrí, 2013) introdujo la búsqueda semántica: entender el significado y la intención de la consulta completa, no solo palabras sueltas."
+    },
+    {
+      "id": 139,
+      "unit": "UT4",
+      "question": "¿Qué estrategia de SEO está alineada con las directrices de Google?",
+      "options": [
+        "Keyword stuffing",
+        "Black Hat SEO",
+        "White Hat SEO",
+        "Cloaking"
+      ],
+      "correct": "White Hat SEO",
+      "explicacion": "El White Hat SEO sigue las directrices de Google. Keyword stuffing y cloaking son técnicas Black Hat."
+    },
+    {
+      "id": 140,
+      "unit": "UT4",
+      "question": "¿Qué directrices recogen las recomendaciones oficiales de Google para optimización web?",
+      "options": [
+        "Trends Essentials",
+        "Search Essentials",
+        "Webmaster Paid Links",
+        "Google Ads Guidelines"
+      ],
+      "correct": "Search Essentials",
+      "explicacion": "Google Search Essentials (antes Webmaster Guidelines) recoge las recomendaciones oficiales y las prácticas prohibidas para aparecer en Google."
+    },
+    {
+      "id": 141,
+      "unit": "UT4",
+      "question": "¿Qué métrica forma parte de los Core Web Vitals?",
+      "options": [
+        "Velocidad de carga",
+        "Número de enlaces entrantes",
+        "Cantidad de anuncios",
+        "Cantidad de palabras clave"
+      ],
+      "correct": "Velocidad de carga",
+      "explicacion": "Los Core Web Vitals miden la experiencia de usuario: velocidad de carga (LCP), interactividad (INP, antes FID) y estabilidad visual (CLS)."
+    },
+    {
+      "id": 142,
+      "unit": "UT4",
+      "question": "¿Cuál es una característica de la búsqueda por voz?",
+      "options": [
+        "Consultas más largas y conversacionales",
+        "Consultas sin intención local",
+        "Uso exclusivo de palabras clave cortas",
+        "Resultados siempre escritos en formato técnico"
+      ],
+      "correct": "Consultas más largas y conversacionales",
+      "explicacion": "Las búsquedas por voz son más largas y conversacionales, a menudo en forma de pregunta y con intención local."
+    },
+    {
+      "id": 143,
+      "unit": "UT4",
+      "question": "¿Cómo se llaman las actualizaciones importantes de Google que pueden alterar significativamente las posiciones?",
+      "options": [
+        "Beta updates",
+        "Core updates (actualizaciones centrales)",
+        "Hotfixes",
+        "Minor updates"
+      ],
+      "correct": "Core updates (actualizaciones centrales)",
+      "explicacion": "Las core updates son actualizaciones centrales del algoritmo que pueden cambiar mucho los rankings, a diferencia de los ajustes menores casi imperceptibles."
+    },
+    {
+      "id": 144,
+      "unit": "UT4",
+      "question": "Además del contenido duplicado o escaso, ¿qué más penalizó Google Panda?",
+      "options": [
+        "Las webs no adaptadas a móvil",
+        "Los enlaces comprados",
+        "El exceso de anuncios en la parte visible de la página",
+        "Las webs sin HTTPS"
+      ],
+      "correct": "El exceso de anuncios en la parte visible de la página",
+      "explicacion": "Panda (2011) penalizó el contenido duplicado, escaso o de baja calidad y también el exceso de anuncios en la parte visible. Los enlaces comprados fueron objetivo de Penguin."
+    },
+    {
+      "id": 145,
+      "unit": "UT4",
+      "question": "¿En qué año se incorporaron las Core Web Vitals como factor de Google?",
+      "options": [
+        "2018",
+        "2021",
+        "2015",
+        "2011"
+      ],
+      "correct": "2021",
+      "explicacion": "En 2021 Google incorporó las Core Web Vitals, métricas de experiencia de usuario: velocidad de carga, interactividad y estabilidad visual."
+    },
+    {
+      "id": 146,
+      "unit": "UT4",
+      "question": "¿Qué significa YMYL, el tipo de sitios afectados por Medic Update?",
+      "options": [
+        "Your Mobile Your Link",
+        "Your Money or Your Life",
+        "Yes Mobile Yes Local",
+        "Your Media Your Language"
+      ],
+      "correct": "Your Money or Your Life",
+      "explicacion": "YMYL (Your Money or Your Life) agrupa sitios de salud, finanzas y bienestar, cuya información puede afectar a la vida o al dinero de las personas."
+    },
+    {
+      "id": 147,
+      "unit": "UT4",
+      "question": "¿Qué algoritmo de Google basado en IA (Bidirectional Encoder Representations from Transformers) mejora la comprensión del contexto?",
+      "options": [
+        "Panda",
+        "Penguin",
+        "BERT",
+        "Algoroo"
+      ],
+      "correct": "BERT",
+      "explicacion": "BERT, junto con RankBrain, permite a Google entender el contexto y la intención incluso en consultas ambiguas o coloquiales."
+    },
+    {
+      "id": 148,
+      "unit": "UT4",
+      "question": "¿Qué impacto de la IA en el SEO implica que los resultados varíen según el historial del usuario?",
+      "options": [
+        "Keyword stuffing",
+        "Desindexación",
+        "Cloaking",
+        "Personalización de resultados"
+      ],
+      "correct": "Personalización de resultados",
+      "explicacion": "La IA personaliza los resultados según el historial y comportamiento del usuario, por lo que el SEO debe considerar variaciones y segmentaciones."
+    },
+    {
+      "id": 149,
+      "unit": "UT4",
+      "question": "¿Qué estrategia ayuda a la IA a interpretar el contenido incorporando preguntas y respuestas?",
+      "options": [
+        "Texto oculto",
+        "Granjas de enlaces",
+        "FAQ schema",
+        "Spinning"
+      ],
+      "correct": "FAQ schema",
+      "explicacion": "Incorporar preguntas y respuestas con FAQ schema facilita la interpretación por parte de la IA, junto con lenguaje natural y cobertura semántica amplia."
+    },
+    {
+      "id": 150,
+      "unit": "UT4",
+      "question": "¿Por qué hay que ampliar la cobertura semántica del contenido?",
+      "options": [
+        "Porque Google penaliza los sinónimos",
+        "Para reducir la velocidad",
+        "Porque la IA detecta sinónimos y conceptos relacionados, no solo palabras exactas",
+        "Para aumentar el número de páginas"
+      ],
+      "correct": "Porque la IA detecta sinónimos y conceptos relacionados, no solo palabras exactas",
+      "explicacion": "La interpretación semántica avanzada analiza relaciones entre palabras, por eso conviene usar sinónimos, términos relacionados y expresiones del nicho."
+    },
+    {
+      "id": 151,
+      "unit": "UT4",
+      "question": "¿Qué tipo de palabras aparecen con más frecuencia en las búsquedas por voz?",
+      "options": [
+        "Nombres de dominio",
+        "Palabras interrogativas (qué, cómo, cuándo, dónde)",
+        "Códigos de producto",
+        "Siglas técnicas"
+      ],
+      "correct": "Palabras interrogativas (qué, cómo, cuándo, dónde)",
+      "explicacion": "Las búsquedas por voz usan frases naturales, con más palabras interrogativas y a menudo con enfoque local e intención inmediata."
+    },
+    {
+      "id": 152,
+      "unit": "UT4",
+      "question": "Estructurar el contenido en formato pregunta-respuesta favorece la aparición en...",
+      "options": [
+        "Featured snippets (fragmentos destacados)",
+        "Anuncios de pago",
+        "La página 404",
+        "El archivo robots.txt"
+      ],
+      "correct": "Featured snippets (fragmentos destacados)",
+      "explicacion": "El formato pregunta-respuesta favorece aparecer en los fragmentos destacados, que los asistentes de voz suelen leer como respuesta."
+    },
+    {
+      "id": 153,
+      "unit": "UT4",
+      "question": "¿Qué significa NAP en el contexto del SEO local?",
+      "options": [
+        "Network Access Point",
+        "Name, Address, Phone",
+        "No Ads Policy",
+        "New Advertising Program"
+      ],
+      "correct": "Name, Address, Phone",
+      "explicacion": "NAP son el nombre, la dirección y el teléfono del negocio, que deben ser coherentes y estar actualizados en Google Business Profile."
+    },
+    {
+      "id": 154,
+      "unit": "UT4",
+      "question": "¿Por qué es importante la velocidad y la adaptación móvil para la búsqueda por voz?",
+      "options": [
+        "Porque Alexa solo funciona en escritorio",
+        "Porque la mayoría de búsquedas por voz se hacen en dispositivos móviles",
+        "No tiene relación",
+        "Porque la voz no necesita internet"
+      ],
+      "correct": "Porque la mayoría de búsquedas por voz se hacen en dispositivos móviles",
+      "explicacion": "La mayoría de búsquedas por voz se realizan desde el móvil, así que la velocidad y el diseño responsive son clave."
+    },
+    {
+      "id": 155,
+      "unit": "UT4",
+      "question": "¿Qué herramientas ofrecen análisis de visibilidad, keywords y enlaces, útiles para compararse con la competencia?",
+      "options": [
+        "Gmail y Outlook",
+        "Ahrefs y Sistrix",
+        "Word y Excel",
+        "Canva y Trello"
+      ],
+      "correct": "Ahrefs y Sistrix",
+      "explicacion": "Ahrefs y Sistrix analizan visibilidad, palabras clave y enlaces entrantes, y permiten comparar el rendimiento propio con el de competidores."
+    },
+    {
+      "id": 156,
+      "unit": "UT4",
+      "question": "¿Qué herramienta monitoriza cambios en los rankings globales mediante indicadores de volatilidad?",
+      "options": [
+        "Algoroo",
+        "Squoosh",
+        "TinyPNG",
+        "Bootstrap"
+      ],
+      "correct": "Algoroo",
+      "explicacion": "Algoroo, igual que MozCast o SEMrush Sensor, mide la volatilidad de los rankings para detectar posibles cambios de algoritmo."
+    },
+    {
+      "id": 157,
+      "unit": "UT4",
+      "question": "¿Qué técnica Black Hat consiste en crear contenido automatizado y de baja calidad?",
+      "options": [
+        "Lazy loading",
+        "Breadcrumbs",
+        "Interlinking",
+        "Spinning"
+      ],
+      "correct": "Spinning",
+      "explicacion": "El spinning genera contenido automáticamente reescribiendo textos, con baja calidad. Otras técnicas Black Hat son el keyword stuffing, la compra masiva de enlaces y el cloaking."
+    },
+    {
+      "id": 158,
+      "unit": "UT4",
+      "question": "¿Cuál es la sanción más grave que puede provocar el Black Hat SEO?",
+      "options": [
+        "Aumento del CTR",
+        "Pagar una multa a Google",
+        "La desindexación total del sitio",
+        "Un aviso por correo"
+      ],
+      "correct": "La desindexación total del sitio",
+      "explicacion": "Las sanciones van desde perder posiciones hasta la desindexación total del sitio, además del daño a la reputación de la marca."
+    },
+    {
+      "id": 159,
+      "unit": "UT4",
+      "question": "¿Dónde puede verse una penalización manual de Google?",
+      "options": [
+        "En el archivo sitemap.xml",
+        "En la meta description",
+        "En Google Trends",
+        "En Google Search Console"
+      ],
+      "correct": "En Google Search Console",
+      "explicacion": "En una penalización manual, un revisor de Google aplica una acción que aparece notificada en Google Search Console."
+    },
+    {
+      "id": 160,
+      "unit": "UT4",
+      "question": "¿Cuál de estas es una causa de penalización según el temario?",
+      "options": [
+        "Ocultación de texto o enlaces (hidden text)",
+        "Optimizar imágenes",
+        "Usar HTTPS",
+        "Tener un sitemap"
+      ],
+      "correct": "Ocultación de texto o enlaces (hidden text)",
+      "explicacion": "Causas de penalización: contenido duplicado o pobre, keyword stuffing, enlaces de baja calidad, abuso de anuncios y texto o enlaces ocultos."
+    },
+    {
+      "id": 161,
+      "unit": "UT4",
+      "question": "¿Cómo debe ser la estrategia de link building para evitar penalizaciones?",
+      "options": [
+        "Sin ningún enlace",
+        "Comprando enlaces en granjas",
+        "Basada en la cantidad de enlaces",
+        "Basada en la calidad, no en la cantidad"
+      ],
+      "correct": "Basada en la calidad, no en la cantidad",
+      "explicacion": "Como medida preventiva, el link building debe basarse en enlaces de calidad y naturales, no en acumular cantidad."
+    },
+    {
+      "id": 162,
+      "unit": "UT4",
+      "question": "¿Qué tres grandes bloques incluyen las Google Search Essentials?",
+      "options": [
+        "Precios, anuncios y pujas",
+        "Diseño, color y tipografía",
+        "Principios básicos, buenas prácticas técnicas y contenido de calidad",
+        "Redes sociales, email y SMS"
+      ],
+      "correct": "Principios básicos, buenas prácticas técnicas y contenido de calidad",
+      "explicacion": "Las Search Essentials se organizan en principios básicos (pensar en el usuario, no engañar), buenas prácticas técnicas (rastreo, URLs, velocidad) y contenido de calidad."
+    },
+    {
+      "id": 163,
+      "unit": "UT4",
+      "question": "¿Qué práctica es contraria a la transparencia con el cliente en SEO?",
+      "options": [
+        "Ser honesto sobre los plazos",
+        "Explicar los riesgos de las técnicas",
+        "Dar informes veraces",
+        "Garantizar el primer puesto en Google"
+      ],
+      "correct": "Garantizar el primer puesto en Google",
+      "explicacion": "No se deben prometer resultados imposibles como garantizar el primer puesto; la transparencia implica explicar técnicas y riesgos, informar con veracidad y ser realista con los plazos."
+    },
+    {
+      "id": 164,
+      "unit": "UT5",
+      "question": "¿Qué longitud máxima recomendada tiene la etiqueta title?",
+      "options": [
+        "120 caracteres",
+        "45 caracteres",
+        "30 caracteres",
+        "60 caracteres"
+      ],
+      "correct": "60 caracteres",
+      "explicacion": "Se recomienda que el title no supere unos 60 caracteres, para que Google no lo corte en los resultados."
+    },
+    {
+      "id": 165,
+      "unit": "UT5",
+      "question": "¿Qué elemento NO forma parte de la arquitectura de la información?",
+      "options": [
+        "Jerarquía de categorías",
+        "Mapa de contenidos",
+        "Interlinking interno",
+        "Backlinks externos"
+      ],
+      "correct": "Backlinks externos",
+      "explicacion": "Los backlinks externos son enlaces desde otras webs (SEO off-page). La arquitectura de la información es interna: jerarquía, mapa de contenidos e interlinking."
+    },
+    {
+      "id": 166,
+      "unit": "UT5",
+      "question": "¿Cuál es el primer paso en un proyecto de posicionamiento web?",
+      "options": [
+        "Configurar Google Analytics",
+        "Definir objetivos y estudio de caso",
+        "Optimizar imágenes",
+        "Crear backlinks masivos"
+      ],
+      "correct": "Definir objetivos y estudio de caso",
+      "explicacion": "Un proyecto SEO empieza por definir los objetivos y analizar el caso (negocio, público, competencia). Las acciones técnicas vienen después."
+    },
+    {
+      "id": 167,
+      "unit": "UT5",
+      "question": "¿Qué técnica mejora la experiencia del usuario en móviles?",
+      "options": [
+        "Uso de iframes masivos",
+        "Velocidad de carga lenta",
+        "Diseño responsive",
+        "Pop-ups invasivos"
+      ],
+      "correct": "Diseño responsive",
+      "explicacion": "El diseño responsive adapta la web a pantallas móviles y mejora la experiencia de usuario. Los pop-ups invasivos y la carga lenta la empeoran."
+    },
+    {
+      "id": 168,
+      "unit": "UT5",
+      "question": "¿Qué herramienta permite monitorizar la indexación de páginas?",
+      "options": [
+        "Canva",
+        "Google Search Console",
+        "Excel",
+        "Gmail"
+      ],
+      "correct": "Google Search Console",
+      "explicacion": "Google Search Console permite ver qué páginas están indexadas, cuáles tienen errores y solicitar la indexación."
+    },
+    {
+      "id": 169,
+      "unit": "UT5",
+      "question": "¿Qué etiqueta HTML define el título principal de una página?",
+      "options": [
+        "Alt",
+        "H1",
+        "H3",
+        "META description"
+      ],
+      "correct": "H1",
+      "explicacion": "La etiqueta <h1> define el título principal visible del contenido de la página."
+    },
+    {
+      "id": 170,
+      "unit": "UT5",
+      "question": "¿Qué herramienta se utiliza habitualmente para investigar palabras clave?",
+      "options": [
+        "Word",
+        "Photoshop",
+        "Trello",
+        "Google Keyword Planner"
+      ],
+      "correct": "Google Keyword Planner",
+      "explicacion": "Google Keyword Planner es una herramienta habitual para investigar palabras clave: volumen de búsqueda, competencia e ideas relacionadas."
+    },
+    {
+      "id": 171,
+      "unit": "UT5",
+      "question": "¿Qué documento organiza las tareas y tiempos de un proyecto SEO?",
+      "options": [
+        "Sitemap.xml",
+        "Robots.txt",
+        "Calendario editorial",
+        "Certificado SSL"
+      ],
+      "correct": "Calendario editorial",
+      "explicacion": "El calendario editorial organiza las tareas, contenidos y plazos del proyecto SEO."
+    },
+    {
+      "id": 172,
+      "unit": "UT5",
+      "question": "¿Qué tipo de palabras clave suelen tener mayor tasa de conversión?",
+      "options": [
+        "De marca",
+        "Short tail",
+        "Genéricas",
+        "Long tail"
+      ],
+      "correct": "Long tail",
+      "explicacion": "Las keywords long tail convierten más porque reflejan una necesidad concreta y una intención clara."
+    },
+    {
+      "id": 173,
+      "unit": "UT5",
+      "question": "¿Qué describe mejor un buyer persona?",
+      "options": [
+        "Un enlace interno",
+        "Un perfil del cliente ideal",
+        "Un conjunto de palabras clave",
+        "Una etiqueta META"
+      ],
+      "correct": "Un perfil del cliente ideal",
+      "explicacion": "El buyer persona es una representación semificticia del cliente ideal (datos demográficos, motivaciones, comportamiento), que orienta la estrategia de contenidos y SEO."
+    },
+    {
+      "id": 174,
+      "unit": "UT5",
+      "question": "¿Qué archivo indica a los buscadores qué páginas rastrear o no?",
+      "options": [
+        "Sitemap.xml",
+        "Analytics.js",
+        "Htaccess",
+        "Robots.txt"
+      ],
+      "correct": "Robots.txt",
+      "explicacion": "robots.txt indica a los buscadores qué rutas pueden rastrear y cuáles no."
+    },
+    {
+      "id": 175,
+      "unit": "UT5",
+      "question": "¿Qué recurso gráfico ayuda a representar la relación entre páginas internas?",
+      "options": [
+        "Diagrama de flujo",
+        "Interlinking",
+        "Sitemap",
+        "Buyer persona"
+      ],
+      "correct": "Sitemap",
+      "explicacion": "Un sitemap, en su versión visual o gráfica, representa la estructura del sitio y la relación entre sus páginas internas. El interlinking es la estrategia de enlazado, no un recurso gráfico."
+    },
+    {
+      "id": 176,
+      "unit": "UT5",
+      "question": "¿Qué etiqueta proporciona una breve descripción visible en los resultados de búsqueda?",
+      "options": [
+        "Meta description",
+        "Robots",
+        "Title",
+        "H2"
+      ],
+      "correct": "Meta description",
+      "explicacion": "La meta description es el texto breve que suele aparecer bajo el título en los resultados. No posiciona directamente, pero influye en el CTR."
+    },
+    {
+      "id": 177,
+      "unit": "UT5",
+      "question": "¿Cuál es un factor de los Core Web Vitals?",
+      "options": [
+        "Palabras clave ocultas",
+        "Cantidad de anuncios",
+        "Número de backlinks",
+        "Tiempo de carga"
+      ],
+      "correct": "Tiempo de carga",
+      "explicacion": "El tiempo de carga forma parte de los Core Web Vitals a través del LCP, junto con la interactividad y la estabilidad visual."
+    },
+    {
+      "id": 178,
+      "unit": "UT5",
+      "question": "¿Qué indicador mide el porcentaje de clics recibidos respecto a las impresiones?",
+      "options": [
+        "CTR",
+        "DA",
+        "Bounce Rate",
+        "PageRank"
+      ],
+      "correct": "CTR",
+      "explicacion": "El CTR (Click Through Rate) es el porcentaje de clics sobre las impresiones: clics / impresiones × 100."
+    },
+    {
+      "id": 179,
+      "unit": "UT5",
+      "question": "¿Qué práctica corresponde al SEO ético (White Hat)?",
+      "options": [
+        "Optimización de metadatos",
+        "Cloaking",
+        "Keyword stuffing",
+        "Compra masiva de enlaces"
+      ],
+      "correct": "Optimización de metadatos",
+      "explicacion": "Optimizar metadatos (title, description, alt) es una práctica White Hat. Cloaking, keyword stuffing y compra de enlaces son Black Hat."
+    },
+    {
+      "id": 180,
+      "unit": "UT5",
+      "question": "¿Qué tipo de informe debe incluir evidencias y resultados del proyecto SEO?",
+      "options": [
+        "Manual de usuario",
+        "Informe final documentado",
+        "Documento de identidad",
+        "Contrato laboral"
+      ],
+      "correct": "Informe final documentado",
+      "explicacion": "El informe final documentado recoge lo realizado y los resultados, con evidencias como capturas de herramientas o gráficas de evolución."
+    },
+    {
+      "id": 181,
+      "unit": "UT5",
+      "question": "¿Qué penalización aplica Google a sitios que incumplen directrices SEO?",
+      "options": [
+        "Incremento de tráfico",
+        "Reducción de visibilidad en búsquedas",
+        "Aumento del CTR",
+        "Mayor PageRank"
+      ],
+      "correct": "Reducción de visibilidad en búsquedas",
+      "explicacion": "Una penalización de Google supone perder visibilidad: la web baja posiciones o incluso desaparece de los resultados."
+    },
+    {
+      "id": 182,
+      "unit": "UT5",
+      "question": "¿Qué conclusión es fundamental en un proyecto SEO?",
+      "options": [
+        "Impacto y cumplimiento de objetivos",
+        "Cantidad de correos enviados",
+        "Número de páginas creadas",
+        "Velocidad de mecanografía del equipo"
+      ],
+      "correct": "Impacto y cumplimiento de objetivos",
+      "explicacion": "La conclusión clave de un proyecto SEO es medir su impacto y comprobar si se han cumplido los objetivos definidos al principio."
+    },
+    {
+      "id": 183,
+      "unit": "UT5",
+      "question": "¿Qué formato de URL es más amigable para SEO?",
+      "options": [
+        "www.tienda.com/camiseta-algodon",
+        "www.tienda.com/1234/abcd",
+        "www.tienda.com/index.php?cat=ropa",
+        "www.tienda.com/producto123?id=567"
+      ],
+      "correct": "www.tienda.com/camiseta-algodon",
+      "explicacion": "www.tienda.com/camiseta-algodon es corta, legible y contiene palabras clave. Las URL con números o parámetros (?id=) no describen el contenido."
+    },
+    {
+      "id": 184,
+      "unit": "UT5",
+      "question": "¿Qué criterio debe cumplir el sitio elegido para un proyecto práctico SEO?",
+      "options": [
+        "Estar bloqueado a los buscadores",
+        "Tener una sola página",
+        "Estar en una plataforma que facilite editar el contenido y permita instalar herramientas de analítica",
+        "No tener dominio propio"
+      ],
+      "correct": "Estar en una plataforma que facilite editar el contenido y permita instalar herramientas de analítica",
+      "explicacion": "El sitio debe tener un mínimo de páginas y estructura, estar en una plataforma editable (WordPress, Joomla, Prestashop o HTML estático) y permitir instalar herramientas de monitorización y analítica."
+    },
+    {
+      "id": 185,
+      "unit": "UT5",
+      "question": "¿Qué ventaja tiene trabajar con un sitio web simulado en el proyecto?",
+      "options": [
+        "Permite experimentar sin riesgo de penalizaciones",
+        "Posiciona mejor que uno real",
+        "No necesita contenido",
+        "Google lo indexa antes"
+      ],
+      "correct": "Permite experimentar sin riesgo de penalizaciones",
+      "explicacion": "Un sitio creado ex profeso para la práctica permite experimentar con las técnicas sin riesgo de penalizaciones para un proyecto real."
+    },
+    {
+      "id": 186,
+      "unit": "UT5",
+      "question": "¿Qué información recoge un buyer persona?",
+      "options": [
+        "Edad, localización, intereses, hábitos digitales y comportamiento de búsqueda",
+        "El código fuente de la web",
+        "Solo el presupuesto del cliente",
+        "Las keywords de la competencia"
+      ],
+      "correct": "Edad, localización, intereses, hábitos digitales y comportamiento de búsqueda",
+      "explicacion": "El buyer persona refleja edad, género, localización, intereses, necesidades, hábitos de consumo digital y comportamiento de búsqueda del público objetivo."
+    },
+    {
+      "id": 187,
+      "unit": "UT5",
+      "question": "¿Por qué conviene definir un nicho de mercado con competencia asumible?",
+      "options": [
+        "Porque Google lo exige",
+        "Para evitar usar palabras clave",
+        "Para enfocar keywords y contenidos en segmentos viables",
+        "Para no necesitar SEO"
+      ],
+      "correct": "Para enfocar keywords y contenidos en segmentos viables",
+      "explicacion": "Trabajar en un sector específico con competencia asumible permite centrar la estrategia de keywords y contenidos en segmentos donde es viable posicionar."
+    },
+    {
+      "id": 188,
+      "unit": "UT5",
+      "question": "¿Qué combinación de palabras clave aconseja el temario para el proyecto?",
+      "options": [
+        "Solo short tail",
+        "Solo de marca",
+        "Solo keywords en inglés",
+        "Un mix de short tail y long tail"
+      ],
+      "correct": "Un mix de short tail y long tail",
+      "explicacion": "Se aconseja combinar short tail (genéricas y competitivas) con long tail (específicas y de menor competencia)."
+    },
+    {
+      "id": 189,
+      "unit": "UT5",
+      "question": "¿Para qué sirve establecer un interlinking interno lógico?",
+      "options": [
+        "Para guiar al usuario y facilitar el rastreo de los buscadores",
+        "Para aumentar el peso de las imágenes",
+        "Para comprar enlaces",
+        "Para ocultar páginas"
+      ],
+      "correct": "Para guiar al usuario y facilitar el rastreo de los buscadores",
+      "explicacion": "El enlazado interno lógico guía al usuario por el sitio y ayuda a los bots a rastrear y entender la estructura."
+    },
+    {
+      "id": 190,
+      "unit": "UT5",
+      "question": "Además del calendario editorial, ¿qué incluye la planificación de tareas del proyecto SEO?",
+      "options": [
+        "La asignación de responsables y los hitos de revisión y control de calidad",
+        "La compra de enlaces",
+        "El diseño del logotipo",
+        "El contrato de hosting"
+      ],
+      "correct": "La asignación de responsables y los hitos de revisión y control de calidad",
+      "explicacion": "La planificación incluye el calendario editorial, la asignación de responsables (redacción, implementación técnica, revisión) y los hitos de revisión y control de calidad."
+    },
+    {
+      "id": 191,
+      "unit": "UT5",
+      "question": "¿Dónde se recomienda incorporar la keyword principal al redactar contenido?",
+      "options": [
+        "En texto oculto",
+        "Solo en el pie de página",
+        "En el título, los subtítulos y las primeras 100 palabras",
+        "Solo en las imágenes"
+      ],
+      "correct": "En el título, los subtítulos y las primeras 100 palabras",
+      "explicacion": "Se recomienda incluir la keyword principal en el título, los subtítulos y las primeras 100 palabras del texto."
+    },
+    {
+      "id": 192,
+      "unit": "UT5",
+      "question": "¿Qué extensión mínima recomienda el temario para los contenidos optimizados?",
+      "options": [
+        "Al menos 600 palabras",
+        "100 palabras",
+        "300 caracteres",
+        "5.000 palabras"
+      ],
+      "correct": "Al menos 600 palabras",
+      "explicacion": "Se recomienda redactar contenidos de al menos 600 palabras con una estructura clara."
+    },
+    {
+      "id": 193,
+      "unit": "UT5",
+      "question": "¿Qué son las LSI keywords?",
+      "options": [
+        "Enlaces comprados",
+        "Palabras prohibidas por Google",
+        "Sinónimos y palabras relacionadas semánticamente con la keyword principal",
+        "Etiquetas de imagen"
+      ],
+      "correct": "Sinónimos y palabras relacionadas semánticamente con la keyword principal",
+      "explicacion": "Las LSI keywords son sinónimos y términos relacionados que amplían el campo semántico del contenido de forma natural."
+    },
+    {
+      "id": 194,
+      "unit": "UT5",
+      "question": "¿Qué debe incluir una buena meta description según el temario del proyecto?",
+      "options": [
+        "Solo la URL",
+        "Una llamada a la acción y ser atractiva, con 150-160 caracteres",
+        "Todas las keywords del sitio",
+        "Más de 300 caracteres"
+      ],
+      "correct": "Una llamada a la acción y ser atractiva, con 150-160 caracteres",
+      "explicacion": "La meta description debe tener entre 150 y 160 caracteres, ser atractiva e incluir una llamada a la acción."
+    },
+    {
+      "id": 195,
+      "unit": "UT5",
+      "question": "¿Qué herramienta se usa para medir el tráfico orgánico en la evaluación del proyecto?",
+      "options": [
+        "Google Analytics",
+        "Canva",
+        "TinyPNG",
+        "Bootstrap"
+      ],
+      "correct": "Google Analytics",
+      "explicacion": "El tráfico orgánico se mide en Google Analytics; la indexación y cobertura se revisan en Google Search Console."
+    },
+    {
+      "id": 196,
+      "unit": "UT5",
+      "question": "¿Qué métricas de comportamiento del usuario se monitorizan al evaluar el proyecto?",
+      "options": [
+        "Precio del dominio",
+        "CTR, tiempo en página y tasa de rebote",
+        "Número de empleados",
+        "Tamaño del logotipo"
+      ],
+      "correct": "CTR, tiempo en página y tasa de rebote",
+      "explicacion": "Además del posicionamiento y el tráfico, se monitorizan métricas de comportamiento: CTR, tiempo en página y tasa de rebote."
+    },
+    {
+      "id": 197,
+      "unit": "UT5",
+      "question": "¿Qué apartado debe recoger el informe final del proyecto SEO además de objetivos, estrategias y evidencias?",
+      "options": [
+        "Las contraseñas del hosting",
+        "Lecciones aprendidas y mejoras futuras",
+        "El código fuente completo",
+        "La nómina del equipo"
+      ],
+      "correct": "Lecciones aprendidas y mejoras futuras",
+      "explicacion": "El informe final incluye objetivos iniciales, estrategias aplicadas, evidencias de resultados y lecciones aprendidas con mejoras futuras."
+    },
+    {
+      "id": 198,
+      "unit": "UT5",
+      "question": "¿Qué aspecto se valora en las conclusiones del proyecto junto al cumplimiento de objetivos y el impacto?",
+      "options": [
+        "La velocidad de escritura",
+        "La viabilidad de continuidad del proyecto",
+        "El color de la web",
+        "El número de reuniones"
+      ],
+      "correct": "La viabilidad de continuidad del proyecto",
+      "explicacion": "Las conclusiones valoran el grado de cumplimiento de objetivos, el impacto de las acciones y la viabilidad de continuidad del proyecto."
+    },
+    {
+      "id": 199,
+      "unit": "UT5",
+      "question": "¿Cómo se recomienda presentar el proyecto en un entorno académico?",
+      "options": [
+        "Sin documentación",
+        "Solo enviando la URL",
+        "Con un vídeo publicitario",
+        "Con una defensa oral o escrita apoyada en gráficos y ejemplos"
+      ],
+      "correct": "Con una defensa oral o escrita apoyada en gráficos y ejemplos",
+      "explicacion": "Se recomienda una defensa oral o escrita del proyecto, apoyada en gráficos y ejemplos prácticos."
+    }
+  ]
+}

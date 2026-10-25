@@ -1,0 +1,4165 @@
+{
+  "subject": "Itinerario Personal para la Empleabilidad II",
+  "questions": [
+    {
+      "id": 1,
+      "unit": "UT1",
+      "question": "¿Qué indica que un CV ha sido personalizado para una oferta?",
+      "options": [
+        "Incluye experiencias irrelevantes",
+        "Tiene diseño colorido",
+        "Tiene más de 3 páginas",
+        "Se adapta al lenguaje y requisitos del puesto"
+      ],
+      "correct": "Se adapta al lenguaje y requisitos del puesto",
+      "explicacion": "Un CV personalizado usa el lenguaje de la oferta y destaca la experiencia y las competencias que pide el puesto. Lo irrelevante se omite y se mantiene breve."
+    },
+    {
+      "id": 2,
+      "unit": "UT1",
+      "question": "¿Qué es el método STAR, aplicado a entrevistas por competencias?",
+      "options": [
+        "Un software de videoconferencias",
+        "Un esquema para responder preguntas situacionales",
+        "Una técnica para redactar el CV",
+        "Una guía para escribir cartas de motivación"
+      ],
+      "correct": "Un esquema para responder preguntas situacionales",
+      "explicacion": "STAR (Situación, Tarea, Acción, Resultado) es un esquema para responder preguntas situacionales y por competencias con ejemplos concretos y bien estructurados."
+    },
+    {
+      "id": 3,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes documentos permite evidenciar habilidades y trabajos propios?",
+      "options": [
+        "Padrón municipal",
+        "Portfolio digital",
+        "Carta de queja",
+        "Certificado médico"
+      ],
+      "correct": "Portfolio digital",
+      "explicacion": "El portfolio digital reúne trabajos y proyectos propios que demuestran de forma práctica tus habilidades."
+    },
+    {
+      "id": 4,
+      "unit": "UT1",
+      "question": "¿Qué canal es más apropiado para crear una red de contactos profesionales online?",
+      "options": [
+        "Pinterest",
+        "LinkedIn",
+        "TikTok",
+        "WhatsApp"
+      ],
+      "correct": "LinkedIn",
+      "explicacion": "LinkedIn es la red social profesional por excelencia, pensada para crear una red de contactos, mostrar tu perfil y buscar empleo."
+    },
+    {
+      "id": 5,
+      "unit": "UT1",
+      "question": "¿Qué no debe hacerse durante una entrevista laboral?",
+      "options": [
+        "Preparar posibles respuestas",
+        "Mentir sobre la experiencia",
+        "Preguntar por las condiciones del puesto",
+        "Investigar sobre la empresa"
+      ],
+      "correct": "Mentir sobre la experiencia",
+      "explicacion": "Mentir sobre la experiencia es un error grave: se puede descubrir con preguntas o pruebas y destruye la confianza. Prepararse, investigar la empresa y preguntar por las condiciones es recomendable."
+    },
+    {
+      "id": 6,
+      "unit": "UT1",
+      "question": "¿Qué estructura básica debe tener una carta de presentación?",
+      "options": [
+        "Una tabla comparativa",
+        "Imágenes y emojis",
+        "Solo nombre y apellidos",
+        "Introducción, cuerpo y cierre"
+      ],
+      "correct": "Introducción, cuerpo y cierre",
+      "explicacion": "La carta de presentación se estructura en introducción (motivo y puesto), cuerpo (qué aportas y por qué esa empresa) y cierre (disponibilidad y despedida)."
+    },
+    {
+      "id": 7,
+      "unit": "UT1",
+      "question": "¿Qué apartado del CV debe reflejar la formación académica?",
+      "options": [
+        "Experiencia laboral",
+        "Idiomas",
+        "Perfil personal",
+        "Formación reglada"
+      ],
+      "correct": "Formación reglada",
+      "explicacion": "La formación académica oficial (títulos de ESO, Bachillerato, FP, universidad) se recoge en el apartado de formación reglada. Los cursos no oficiales van en formación complementaria."
+    },
+    {
+      "id": 8,
+      "unit": "UT1",
+      "question": "Una característica clave de la carta de presentación es:",
+      "options": [
+        "Incluir todas las asignaturas cursadas",
+        "Ser completamente genérica",
+        "Ser más extensa que el CV",
+        "Estar adaptada al puesto y la empresa"
+      ],
+      "correct": "Estar adaptada al puesto y la empresa",
+      "explicacion": "La carta de presentación debe adaptarse al puesto y a la empresa concretos. Una carta genérica transmite poco interés."
+    },
+    {
+      "id": 9,
+      "unit": "UT1",
+      "question": "¿Qué estrategia favorece el networking?",
+      "options": [
+        "Asistir a eventos profesionales y mantener contacto",
+        "Evitar el contacto con otros profesionales",
+        "Esperar a ser contactado sin actuar",
+        "Usar solo redes personales"
+      ],
+      "correct": "Asistir a eventos profesionales y mantener contacto",
+      "explicacion": "El networking consiste en crear y mantener contactos profesionales de forma activa: asistir a eventos, ferias y encuentros y hacer seguimiento."
+    },
+    {
+      "id": 10,
+      "unit": "UT1",
+      "question": "¿Qué característica define a un currículum funcional?",
+      "options": [
+        "Ordena la experiencia desde la más reciente",
+        "Presenta gráficos interactivos",
+        "Agrupa las competencias por bloques temáticos",
+        "Se centra en logros académicos"
+      ],
+      "correct": "Agrupa las competencias por bloques temáticos",
+      "explicacion": "El currículum funcional agrupa la experiencia por competencias o áreas temáticas en lugar de por fechas. Es útil si hay poca experiencia o trayectorias discontinuas."
+    },
+    {
+      "id": 11,
+      "unit": "UT1",
+      "question": "En una dinámica grupal, el objetivo principal es:",
+      "options": [
+        "Mostrar el expediente académico",
+        "Realizar una entrevista individual",
+        "Verificar conocimientos técnicos",
+        "Evaluar habilidades sociales y de trabajo en grupo"
+      ],
+      "correct": "Evaluar habilidades sociales y de trabajo en grupo",
+      "explicacion": "La dinámica de grupo evalúa competencias sociales: comunicación, liderazgo, trabajo en equipo y resolución de problemas en interacción con otros."
+    },
+    {
+      "id": 12,
+      "unit": "UT1",
+      "question": "¿Cuál es el objetivo principal del videocurrículum?",
+      "options": [
+        "Mostrar habilidades comunicativas y actitud",
+        "Exponer trabajos prácticos",
+        "Registrar referencias laborales",
+        "Sustituir la carta de recomendación"
+      ],
+      "correct": "Mostrar habilidades comunicativas y actitud",
+      "explicacion": "El videocurrículum permite mostrar la capacidad de comunicación, la actitud y la personalidad, algo que un CV en papel no transmite."
+    },
+    {
+      "id": 13,
+      "unit": "UT1",
+      "question": "¿Qué es un yacimiento de empleo?",
+      "options": [
+        "Un área con gran demanda de empleo potencial",
+        "Una base de datos de exalumnos",
+        "Un puesto de trabajo público",
+        "Un centro formativo de FP"
+      ],
+      "correct": "Un área con gran demanda de empleo potencial",
+      "explicacion": "Un yacimiento de empleo es un ámbito con necesidades sin cubrir y gran potencial de creación de empleo, como la economía verde, la digitalización o los cuidados."
+    },
+    {
+      "id": 14,
+      "unit": "UT1",
+      "question": "¿Cuál es un ejemplo de herramienta para la búsqueda de empleo?",
+      "options": [
+        "Portal de empleo",
+        "Carta de recomendación",
+        "Registro civil",
+        "Calendario lunar"
+      ],
+      "correct": "Portal de empleo",
+      "explicacion": "Los portales de empleo (InfoJobs, Indeed, LinkedIn...) son herramientas para buscar ofertas y presentar candidaturas."
+    },
+    {
+      "id": 15,
+      "unit": "UT1",
+      "question": "La reputación digital es:",
+      "options": [
+        "Un currículum descargado",
+        "Un tipo de carta formal",
+        "El número de seguidores en redes",
+        "La imagen profesional que se proyecta en entornos online"
+      ],
+      "correct": "La imagen profesional que se proyecta en entornos online",
+      "explicacion": "La reputación digital es la imagen profesional que proyectas en internet a partir de tus perfiles, publicaciones y de lo que otros dicen de ti."
+    },
+    {
+      "id": 16,
+      "unit": "UT1",
+      "question": "¿Cuál es una fuente de empleo del sector público?",
+      "options": [
+        "Instagram",
+        "LinkedIn",
+        "SEPE",
+        "Indeed"
+      ],
+      "correct": "SEPE",
+      "explicacion": "El SEPE (Servicio Público de Empleo Estatal) y los servicios autonómicos de empleo son fuentes públicas de ofertas e intermediación laboral."
+    },
+    {
+      "id": 17,
+      "unit": "UT1",
+      "question": "¿Qué tipo de currículum destaca más la evolución profesional cronológica desde el inicio?",
+      "options": [
+        "Funcional",
+        "Mixto",
+        "Cronológico",
+        "Infográfico"
+      ],
+      "correct": "Cronológico",
+      "explicacion": "El currículum cronológico ordena la experiencia por fechas y muestra la evolución profesional. El inverso empieza por lo más reciente."
+    },
+    {
+      "id": 18,
+      "unit": "UT1",
+      "question": "¿Qué técnica se usa en entrevistas para evaluar cómo actuó una persona en el pasado?",
+      "options": [
+        "Entrevista libre",
+        "Role playing",
+        "Evaluación por desempeño",
+        "Entrevista por competencias"
+      ],
+      "correct": "Entrevista por competencias",
+      "explicacion": "La entrevista por competencias pregunta por situaciones reales del pasado (\"cuéntame una vez que...\"), porque la conducta pasada predice la futura."
+    },
+    {
+      "id": 19,
+      "unit": "UT1",
+      "question": "¿Qué opción contribuye a mejorar la marca personal?",
+      "options": [
+        "No tener perfil en redes sociales",
+        "Criticar a otras personas públicamente",
+        "Compartir contenido profesional coherente",
+        "Usar perfiles anónimos"
+      ],
+      "correct": "Compartir contenido profesional coherente",
+      "explicacion": "Compartir contenido profesional de forma coherente con tu perfil refuerza la marca personal y tu visibilidad."
+    },
+    {
+      "id": 20,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes elementos NO es necesario incluir en una carta de presentación?",
+      "options": [
+        "Extensión mínima de tres páginas",
+        "Motivo de interés en el puesto",
+        "Datos personales",
+        "Nombre del destinatario o empresa"
+      ],
+      "correct": "Extensión mínima de tres páginas",
+      "explicacion": "La carta de presentación debe ser breve, normalmente de una página. Debe incluir datos personales, destinatario y motivo de interés."
+    },
+    {
+      "id": 21,
+      "unit": "UT1",
+      "question": "¿Cuál de estas es una característica del mercado laboral actual según el temario?",
+      "options": [
+        "Selección sin herramientas digitales",
+        "Ausencia de competencia",
+        "Flexibilidad contractual: más empleo temporal, por proyectos o freelance",
+        "Empleo exclusivamente indefinido"
+      ],
+      "correct": "Flexibilidad contractual: más empleo temporal, por proyectos o freelance",
+      "explicacion": "El mercado actual se caracteriza por alta competencia, digitalización, flexibilidad contractual (temporal, por proyectos, freelance), nuevas profesiones y desigualdades estructurales."
+    },
+    {
+      "id": 22,
+      "unit": "UT1",
+      "question": "¿Qué diferencia hay entre sector emergente y yacimiento de empleo?",
+      "options": [
+        "Son exactamente lo mismo",
+        "El sector emergente solo existe en el extranjero",
+        "El yacimiento es siempre público",
+        "El sector emergente muestra crecimiento sostenido de demanda; el yacimiento es un área con necesidades no cubiertas"
+      ],
+      "correct": "El sector emergente muestra crecimiento sostenido de demanda; el yacimiento es un área con necesidades no cubiertas",
+      "explicacion": "Los sectores emergentes crecen de forma sostenida en demanda de profesionales; los yacimientos de empleo son áreas con necesidades sin cubrir que suponen oportunidades de inserción."
+    },
+    {
+      "id": 23,
+      "unit": "UT1",
+      "question": "¿Cuál de estos es un yacimiento de empleo destacado actualmente?",
+      "options": [
+        "Alquiler de videoclubs",
+        "Fabricación de máquinas de escribir",
+        "Revelado fotográfico analógico",
+        "Economía verde y sostenibilidad"
+      ],
+      "correct": "Economía verde y sostenibilidad",
+      "explicacion": "Destacan la economía verde, las TIC (programación, ciberseguridad, datos), los cuidados a personas, el turismo experiencial y el emprendimiento social."
+    },
+    {
+      "id": 24,
+      "unit": "UT1",
+      "question": "¿Qué hacen los metabuscadores de empleo como Jooble o Trovit?",
+      "options": [
+        "Contratan directamente a los candidatos",
+        "Publican solo ofertas públicas",
+        "Recopilan ofertas de múltiples portales para ofrecer resultados más amplios",
+        "Hacen entrevistas online"
+      ],
+      "correct": "Recopilan ofertas de múltiples portales para ofrecer resultados más amplios",
+      "explicacion": "Los metabuscadores son agregadores: reúnen ofertas de muchos portales en un solo buscador."
+    },
+    {
+      "id": 25,
+      "unit": "UT1",
+      "question": "¿Qué recomendación de uso de los portales de empleo da el temario?",
+      "options": [
+        "Enviar el mismo CV genérico a todas las ofertas",
+        "Usar alertas para recibir notificaciones personalizadas",
+        "No actualizar nunca el perfil",
+        "Inscribirse solo en un portal"
+      ],
+      "correct": "Usar alertas para recibir notificaciones personalizadas",
+      "explicacion": "Se recomienda mantener actualizado el perfil y el CV, usar alertas personalizadas y adaptar cada candidatura evitando aplicaciones genéricas."
+    },
+    {
+      "id": 26,
+      "unit": "UT1",
+      "question": "¿Cuál es una limitación de los portales de empleo?",
+      "options": [
+        "No permiten filtrar ofertas",
+        "Alta competencia por cada vacante y ofertas duplicadas o poco transparentes",
+        "Son siempre de pago",
+        "Solo tienen ofertas del extranjero"
+      ],
+      "correct": "Alta competencia por cada vacante y ofertas duplicadas o poco transparentes",
+      "explicacion": "Sus limitaciones son la alta competencia por vacante y que algunas ofertas pueden estar duplicadas o ser poco transparentes."
+    },
+    {
+      "id": 27,
+      "unit": "UT1",
+      "question": "Según el temario, ¿qué porcentaje de las ofertas laborales no se publican y circulan por contactos?",
+      "options": [
+        "El 50 %",
+        "El 80 %",
+        "El 30 %",
+        "El 10 %"
+      ],
+      "correct": "El 80 %",
+      "explicacion": "El 80 % de las ofertas no se publican y circulan por contactos personales o referencias (mercado oculto), de ahí la importancia del networking."
+    },
+    {
+      "id": 28,
+      "unit": "UT1",
+      "question": "¿Qué buena práctica de networking recomienda el temario?",
+      "options": [
+        "Cortar el contacto con antiguos empleadores",
+        "Ofrecer ayuda y no limitarse a pedir empleo",
+        "No usar fotografía en el perfil",
+        "Pedir empleo en cada mensaje"
+      ],
+      "correct": "Ofrecer ayuda y no limitarse a pedir empleo",
+      "explicacion": "Buenas prácticas: cuidar la imagen digital, participar en eventos y ferias, ofrecer ayuda y mantener el contacto con antiguos empleadores y tutores de prácticas."
+    },
+    {
+      "id": 29,
+      "unit": "UT1",
+      "question": "¿Cuál de estos es un servicio público de empleo autonómico?",
+      "options": [
+        "Adecco",
+        "Randstad",
+        "InfoJobs",
+        "Lanbide (Euskadi)"
+      ],
+      "correct": "Lanbide (Euskadi)",
+      "explicacion": "Además del SEPE estatal, hay servicios autonómicos como SOC (Cataluña), Lanbide (Euskadi) o SAE (Andalucía). Randstad y Adecco son ETT."
+    },
+    {
+      "id": 30,
+      "unit": "UT1",
+      "question": "¿Qué función tienen los Servicios Públicos de Empleo?",
+      "options": [
+        "Solo pagar prestaciones",
+        "Vender cursos privados",
+        "Orientación, formación para el empleo, ofertas públicas, programas de inserción y certificación de competencias",
+        "Contratar personal temporal para empresas"
+      ],
+      "correct": "Orientación, formación para el empleo, ofertas públicas, programas de inserción y certificación de competencias",
+      "explicacion": "Los SPE ofrecen orientación, formación para el empleo, ofertas, programas de inserción y certificación de competencias."
+    },
+    {
+      "id": 31,
+      "unit": "UT1",
+      "question": "¿Qué caracteriza a una ETT (empresa de trabajo temporal)?",
+      "options": [
+        "Contrata directamente para cubrir necesidades temporales de otras empresas",
+        "Es un servicio público",
+        "Solo ofrece formación",
+        "Es una ONG"
+      ],
+      "correct": "Contrata directamente para cubrir necesidades temporales de otras empresas",
+      "explicacion": "Las ETT, como Randstad, Adecco o Manpower, contratan directamente a trabajadores para cederlos a empresas con necesidades temporales."
+    },
+    {
+      "id": 32,
+      "unit": "UT1",
+      "question": "¿Qué tipo de entidades del Tercer Sector apoyan la inserción de colectivos específicos?",
+      "options": [
+        "Bancos",
+        "Partidos políticos",
+        "Fundaciones, asociaciones y ONG",
+        "Multinacionales tecnológicas"
+      ],
+      "correct": "Fundaciones, asociaciones y ONG",
+      "explicacion": "Las entidades del Tercer Sector y economía social (fundaciones, asociaciones, ONG) ofrecen itinerarios personalizados, acompañamiento, talleres y prácticas a colectivos específicos."
+    },
+    {
+      "id": 33,
+      "unit": "UT1",
+      "question": "¿Para qué conviene darse de alta como demandante de empleo en el servicio autonómico?",
+      "options": [
+        "Para acceder a formaciones y programas",
+        "Para cobrar siempre una ayuda",
+        "Para dejar de buscar empleo",
+        "No tiene ninguna utilidad"
+      ],
+      "correct": "Para acceder a formaciones y programas",
+      "explicacion": "Estar inscrito como demandante permite acceder a formaciones y programas de inserción de los servicios públicos."
+    },
+    {
+      "id": 34,
+      "unit": "UT1",
+      "question": "¿Cuál es el formato de CV más habitual actualmente?",
+      "options": [
+        "Cronológico inverso",
+        "Cronológico",
+        "Funcional",
+        "Infográfico"
+      ],
+      "correct": "Cronológico inverso",
+      "explicacion": "El cronológico inverso, que empieza por la experiencia más reciente, es el más habitual hoy."
+    },
+    {
+      "id": 35,
+      "unit": "UT1",
+      "question": "¿A quién se recomienda el CV funcional o por competencias?",
+      "options": [
+        "A quien no tiene formación",
+        "A personas con lagunas temporales o cambios de sector",
+        "A quien tiene una trayectoria continua sin interrupciones",
+        "Solo a directivos"
+      ],
+      "correct": "A personas con lagunas temporales o cambios de sector",
+      "explicacion": "El CV funcional agrupa habilidades por áreas y se recomienda cuando hay lagunas temporales o cambios de sector."
+    },
+    {
+      "id": 36,
+      "unit": "UT1",
+      "question": "¿Qué es un CV combinado?",
+      "options": [
+        "Un CV compartido entre dos personas",
+        "Un CV con vídeo",
+        "Un CV que mezcla elementos cronológicos y funcionales",
+        "Un CV en dos idiomas"
+      ],
+      "correct": "Un CV que mezcla elementos cronológicos y funcionales",
+      "explicacion": "El CV combinado mezcla la ordenación cronológica con la agrupación por competencias."
+    },
+    {
+      "id": 37,
+      "unit": "UT1",
+      "question": "¿Qué extensión máxima recomienda el temario para la carta de presentación?",
+      "options": [
+        "Tres páginas",
+        "Cinco páginas",
+        "Sin límite",
+        "Una página"
+      ],
+      "correct": "Una página",
+      "explicacion": "La carta debe ser breve, como máximo una página, con lenguaje profesional, directo y personalizado."
+    },
+    {
+      "id": 38,
+      "unit": "UT1",
+      "question": "¿Qué se recomienda evitar en una carta de presentación?",
+      "options": [
+        "Mostrar conocimiento de la empresa",
+        "La firma",
+        "Fórmulas genéricas como «me considero responsable y trabajador»",
+        "Un saludo formal"
+      ],
+      "correct": "Fórmulas genéricas como «me considero responsable y trabajador»",
+      "explicacion": "Hay que evitar fórmulas genéricas y adaptar la carta a la empresa concreta mostrando conocimiento de su actividad."
+    },
+    {
+      "id": 39,
+      "unit": "UT1",
+      "question": "¿En qué procesos se usa especialmente la carta de motivación?",
+      "options": [
+        "En la compra de una vivienda",
+        "Solo en empresas tecnológicas",
+        "En el ámbito académico, ONG, voluntariado o selección pública",
+        "En reclamaciones al consumo"
+      ],
+      "correct": "En el ámbito académico, ONG, voluntariado o selección pública",
+      "explicacion": "La carta de motivación pone el foco en valores, intereses y aspiraciones, y se usa sobre todo en procesos académicos, ONG, voluntariado o selección pública."
+    },
+    {
+      "id": 40,
+      "unit": "UT1",
+      "question": "¿Qué duración recomienda el temario para un videocurrículum?",
+      "options": [
+        "Una hora",
+        "Entre 10 y 15 segundos",
+        "Entre 1 y 2 minutos",
+        "Entre 10 y 20 minutos"
+      ],
+      "correct": "Entre 1 y 2 minutos",
+      "explicacion": "El videocurrículum es una grabación breve, de 1 a 2 minutos, en la que se muestra actitud, capacidad comunicativa y motivación."
+    },
+    {
+      "id": 41,
+      "unit": "UT1",
+      "question": "¿Qué plataforma se cita como ejemplo para crear un portfolio digital?",
+      "options": [
+        "Behance",
+        "WhatsApp",
+        "Excel",
+        "Spotify"
+      ],
+      "correct": "Behance",
+      "explicacion": "El portfolio puede ser un blog, una web o una plataforma como Behance o Wix, donde se exponen trabajos, proyectos y certificaciones."
+    },
+    {
+      "id": 42,
+      "unit": "UT1",
+      "question": "¿Qué caracteriza a la entrevista individual estructurada?",
+      "options": [
+        "Consiste en un juego online",
+        "Sigue un guion cerrado con preguntas similares para todos los candidatos",
+        "Es una conversación espontánea sin orden",
+        "Se hace siempre en grupo"
+      ],
+      "correct": "Sigue un guion cerrado con preguntas similares para todos los candidatos",
+      "explicacion": "La entrevista estructurada usa un guion cerrado igual para todos, lo que permite comparar perfiles objetivamente. La libre es más espontánea."
+    },
+    {
+      "id": 43,
+      "unit": "UT1",
+      "question": "¿Qué evalúa principalmente la entrevista no estructurada o libre?",
+      "options": [
+        "Aspectos actitudinales y de comunicación",
+        "Solo el expediente",
+        "La velocidad de escritura",
+        "Conocimientos de matemáticas"
+      ],
+      "correct": "Aspectos actitudinales y de comunicación",
+      "explicacion": "La entrevista libre es una conversación sin orden predefinido que evalúa actitud y comunicación; el candidato debe mantener coherencia y fluidez."
+    },
+    {
+      "id": 44,
+      "unit": "UT1",
+      "question": "¿Qué evalúan las pruebas psicotécnicas?",
+      "options": [
+        "La experiencia laboral",
+        "Las redes sociales del candidato",
+        "El aspecto físico",
+        "Capacidades cognitivas como memoria, razonamiento, cálculo u orientación espacial"
+      ],
+      "correct": "Capacidades cognitivas como memoria, razonamiento, cálculo u orientación espacial",
+      "explicacion": "Las pruebas psicotécnicas miden capacidades cognitivas, pueden ser cronometradas y conviene practicarlas antes."
+    },
+    {
+      "id": 45,
+      "unit": "UT1",
+      "question": "¿Qué es la gamificación en un proceso de selección?",
+      "options": [
+        "Un tipo de contrato",
+        "Contratar a jugadores profesionales",
+        "Jugar durante la entrevista sin evaluar",
+        "Usar juegos o retos interactivos como método de evaluación"
+      ],
+      "correct": "Usar juegos o retos interactivos como método de evaluación",
+      "explicacion": "La gamificación usa juegos o retos interactivos para evaluar creatividad, pensamiento estratégico o reacción ante el error, a menudo en fases iniciales y online."
+    },
+    {
+      "id": 46,
+      "unit": "UT1",
+      "question": "En una dinámica de grupo, ¿cuál es la actitud correcta?",
+      "options": [
+        "Imponer la propia opinión",
+        "Intentar ganar a los demás",
+        "No intervenir nunca",
+        "Construir con otros y aportar al objetivo común sin monopolizar"
+      ],
+      "correct": "Construir con otros y aportar al objetivo común sin monopolizar",
+      "explicacion": "En las dinámicas no se trata de ganar sino de construir con el grupo: escuchar, argumentar sin imponer, valorar ideas ajenas y mostrar iniciativa sin monopolizar."
+    },
+    {
+      "id": 47,
+      "unit": "UT1",
+      "question": "¿Qué principios rigen el acceso al empleo público?",
+      "options": [
+        "Mérito, capacidad, igualdad y publicidad",
+        "Antigüedad y recomendación",
+        "Sorteo",
+        "Afinidad política"
+      ],
+      "correct": "Mérito, capacidad, igualdad y publicidad",
+      "explicacion": "El acceso al empleo público se rige por los principios de mérito, capacidad, igualdad y publicidad."
+    },
+    {
+      "id": 48,
+      "unit": "UT1",
+      "question": "¿Qué diferencia hay entre la fase de oposición y la de concurso?",
+      "options": [
+        "El concurso es un examen tipo test",
+        "Son lo mismo",
+        "La oposición son exámenes; el concurso valora méritos como formación o experiencia",
+        "La oposición es una entrevista"
+      ],
+      "correct": "La oposición son exámenes; el concurso valora méritos como formación o experiencia",
+      "explicacion": "La oposición consiste en exámenes (test, desarrollo, casos prácticos); el concurso valora méritos como formación y experiencia."
+    },
+    {
+      "id": 49,
+      "unit": "UT1",
+      "question": "¿Cómo define el temario la marca personal?",
+      "options": [
+        "El número de seguidores",
+        "Una marca registrada",
+        "El logotipo de una empresa",
+        "La huella que dejamos en los demás y la percepción que nos diferencia profesionalmente"
+      ],
+      "correct": "La huella que dejamos en los demás y la percepción que nos diferencia profesionalmente",
+      "explicacion": "La marca personal es la huella que dejamos en los demás al interactuar, la percepción que nos diferencia de otros con formación similar."
+    },
+    {
+      "id": 50,
+      "unit": "UT1",
+      "question": "¿Cuál de estos es un paso para construir una marca personal sólida?",
+      "options": [
+        "Especialización: posicionarse en un ámbito específico",
+        "Tener perfiles distintos con mensajes contradictorios",
+        "Exagerar logros",
+        "Copiar el perfil de otros"
+      ],
+      "correct": "Especialización: posicionarse en un ámbito específico",
+      "explicacion": "Los pasos son autoconocimiento, coherencia, autenticidad, especialización y valor añadido."
+    },
+    {
+      "id": 51,
+      "unit": "UT1",
+      "question": "¿Qué precaución se recomienda en las redes sociales para la marca personal?",
+      "options": [
+        "Publicar todo sin filtrar",
+        "Separar la vida personal de la profesional mediante ajustes de privacidad",
+        "Eliminar todas las redes",
+        "Usar perfiles anónimos"
+      ],
+      "correct": "Separar la vida personal de la profesional mediante ajustes de privacidad",
+      "explicacion": "Se recomienda separar lo personal de lo profesional con ajustes de privacidad, evitar contenido poco profesional y la sobreexposición."
+    },
+    {
+      "id": 52,
+      "unit": "UT1",
+      "question": "¿Por qué conviene buscar periódicamente nuestro nombre en internet?",
+      "options": [
+        "Para aumentar las visitas",
+        "Porque es obligatorio",
+        "Porque la huella digital también depende de lo que otros publican sobre nosotros",
+        "Para cambiar de nombre"
+      ],
+      "correct": "Porque la huella digital también depende de lo que otros publican sobre nosotros",
+      "explicacion": "La huella digital incluye lo que otros publican sobre nosotros; buscar nuestro nombre permite detectar y pedir la eliminación de contenidos inadecuados."
+    },
+    {
+      "id": 53,
+      "unit": "UT1",
+      "question": "¿Cuál es un indicador del posicionamiento profesional propio?",
+      "options": [
+        "Número de fotos personales",
+        "Contactos recibidos por parte de empresas o reclutadores",
+        "Marca del móvil",
+        "Horas de sueño"
+      ],
+      "correct": "Contactos recibidos por parte de empresas o reclutadores",
+      "explicacion": "Indicadores: número y calidad de conexiones, participación en iniciativas visibles, contactos de reclutadores y recomendaciones recibidas."
+    },
+    {
+      "id": 54,
+      "unit": "UT1",
+      "question": "¿Qué advierte el temario sobre la inteligencia artificial en la búsqueda de empleo?",
+      "options": [
+        "Que las empresas también la usan, por lo que hay que utilizarla correctamente",
+        "Que no tiene ninguna utilidad",
+        "Que sustituye a las entrevistas",
+        "Que está prohibida"
+      ],
+      "correct": "Que las empresas también la usan, por lo que hay que utilizarla correctamente",
+      "explicacion": "El uso de IA en la búsqueda de empleo está en auge y las empresas también disponen de ella, por lo que es imprescindible usarla correctamente."
+    },
+    {
+      "id": 55,
+      "unit": "UT2",
+      "question": "¿Cuál es un ejemplo de comunicación no verbal?",
+      "options": [
+        "Documentos administrativos",
+        "Mensajes de correo electrónico",
+        "Normas escritas del grupo",
+        "Gestos y posturas corporales"
+      ],
+      "correct": "Gestos y posturas corporales",
+      "explicacion": "La comunicación no verbal se transmite sin palabras: gestos, posturas, mirada, expresión facial y distancia física."
+    },
+    {
+      "id": 56,
+      "unit": "UT2",
+      "question": "¿Qué es una fase del trabajo grupal según el modelo de Tuckman?",
+      "options": [
+        "Formación",
+        "Asignación salarial",
+        "Evaluación",
+        "Gestión externa"
+      ],
+      "correct": "Formación",
+      "explicacion": "El modelo de Tuckman describe las fases de un grupo: formación (forming), conflicto (storming), normalización (norming), desempeño (performing) y disolución."
+    },
+    {
+      "id": 57,
+      "unit": "UT2",
+      "question": "¿Cuál es una técnica para mejorar la comunicación en equipos?",
+      "options": [
+        "Usar mensajes impersonales",
+        "Hablar siempre en primer lugar",
+        "Turno de palabra y acuerdos sobre el canal de comunicación",
+        "Evitar expresar opiniones personales"
+      ],
+      "correct": "Turno de palabra y acuerdos sobre el canal de comunicación",
+      "explicacion": "Respetar el turno de palabra y acordar qué canales se usan para cada cosa ordena la comunicación y evita malentendidos."
+    },
+    {
+      "id": 58,
+      "unit": "UT2",
+      "question": "¿Qué actitud favorece el trabajo cooperativo?",
+      "options": [
+        "Aislamiento funcional",
+        "Escucha activa y compromiso",
+        "Delegación en el líder",
+        "Competencia constante entre miembros"
+      ],
+      "correct": "Escucha activa y compromiso",
+      "explicacion": "La escucha activa y el compromiso con los objetivos comunes son la base del trabajo cooperativo."
+    },
+    {
+      "id": 59,
+      "unit": "UT2",
+      "question": "¿Qué ventaja tiene el feedback en el trabajo cooperativo?",
+      "options": [
+        "Mejora la comunicación y el rendimiento",
+        "Elimina la figura del coordinador",
+        "Sustituye la evaluación formal",
+        "Reduce la necesidad de planificación"
+      ],
+      "correct": "Mejora la comunicación y el rendimiento",
+      "explicacion": "El feedback (retroalimentación) permite corregir y reconocer lo que se hace bien, y así mejora la comunicación y el rendimiento del equipo."
+    },
+    {
+      "id": 60,
+      "unit": "UT2",
+      "question": "¿Qué caracteriza al liderazgo distribuido?",
+      "options": [
+        "Una sola persona dirige todo el proceso",
+        "Se evitan los conflictos decidiendo por mayoría",
+        "El liderazgo es compartido entre los miembros del grupo",
+        "Las decisiones las toma el supervisor externo"
+      ],
+      "correct": "El liderazgo es compartido entre los miembros del grupo",
+      "explicacion": "En el liderazgo distribuido, la dirección se comparte entre los miembros según sus capacidades y las necesidades de cada momento."
+    },
+    {
+      "id": 61,
+      "unit": "UT2",
+      "question": "¿Qué implica tener empatía en un entorno profesional?",
+      "options": [
+        "Controlar a los demás emocionalmente",
+        "Comprender y respetar las emociones ajenas",
+        "No mostrar emociones en el trabajo",
+        "Aceptar cualquier comportamiento"
+      ],
+      "correct": "Comprender y respetar las emociones ajenas",
+      "explicacion": "La empatía es comprender y respetar las emociones y el punto de vista de los demás, aunque no se compartan."
+    },
+    {
+      "id": 62,
+      "unit": "UT2",
+      "question": "¿Qué actitud favorece una adaptación comunicativa eficaz?",
+      "options": [
+        "Evitar hacer preguntas",
+        "Mantener siempre el mismo tono y registro",
+        "Hablar sin detenerse para aclarar",
+        "Flexibilidad según el interlocutor y el contexto"
+      ],
+      "correct": "Flexibilidad según el interlocutor y el contexto",
+      "explicacion": "Adaptar la comunicación implica ser flexible: ajustar el tono, el registro y el canal al interlocutor y al contexto."
+    },
+    {
+      "id": 63,
+      "unit": "UT2",
+      "question": "¿Qué es una competencia social clave en el empleo?",
+      "options": [
+        "Lectura de planos",
+        "Dominio del inglés",
+        "Asertividad",
+        "Inteligencia técnica"
+      ],
+      "correct": "Asertividad",
+      "explicacion": "La asertividad, expresar opiniones y necesidades de forma clara y respetuosa, es una competencia social clave. El inglés o la lectura de planos son competencias técnicas."
+    },
+    {
+      "id": 64,
+      "unit": "UT2",
+      "question": "¿Qué canal es adecuado para una comunicación profesional digital?",
+      "options": [
+        "Mensajes de voz informales",
+        "Correo electrónico estructurado y claro",
+        "Comunicación anónima",
+        "Redes sociales personales"
+      ],
+      "correct": "Correo electrónico estructurado y claro",
+      "explicacion": "En el ámbito profesional digital se recomienda un correo electrónico estructurado, claro y con registro formal."
+    },
+    {
+      "id": 65,
+      "unit": "UT2",
+      "question": "¿Qué permite la coevaluación en el trabajo en equipo?",
+      "options": [
+        "Escoger líderes mediante votación",
+        "Eliminar tareas poco productivas",
+        "Imponer sanciones entre iguales",
+        "Valorar de forma constructiva el desempeño del grupo"
+      ],
+      "correct": "Valorar de forma constructiva el desempeño del grupo",
+      "explicacion": "En la coevaluación, los miembros del grupo valoran de forma constructiva el trabajo de sus compañeros y del grupo."
+    },
+    {
+      "id": 66,
+      "unit": "UT2",
+      "question": "¿Qué permite una programación eficiente del trabajo?",
+      "options": [
+        "Prever dificultades y asignar recursos adecuados",
+        "Delegar todo en el líder",
+        "Reducir la comunicación entre miembros",
+        "Ejecutar tareas sin planificación"
+      ],
+      "correct": "Prever dificultades y asignar recursos adecuados",
+      "explicacion": "Programar el trabajo permite anticipar dificultades, repartir tareas y asignar los recursos y plazos adecuados."
+    },
+    {
+      "id": 67,
+      "unit": "UT2",
+      "question": "¿Qué elemento contribuye a una toma de decisiones compartida?",
+      "options": [
+        "El consenso entre los miembros del grupo",
+        "La votación secreta sin diálogo",
+        "El silencio como forma de acuerdo",
+        "La imposición del criterio mayoritario"
+      ],
+      "correct": "El consenso entre los miembros del grupo",
+      "explicacion": "El consenso, llegar mediante el diálogo a una decisión que todos aceptan, favorece la toma de decisiones compartida y el compromiso."
+    },
+    {
+      "id": 68,
+      "unit": "UT2",
+      "question": "¿Qué significa autorregularse dentro de un equipo?",
+      "options": [
+        "Evitar tomar decisiones",
+        "Controlar las emociones ajenas",
+        "Revisar y adaptar el propio comportamiento",
+        "Modificar la conducta de los demás"
+      ],
+      "correct": "Revisar y adaptar el propio comportamiento",
+      "explicacion": "Autorregularse es revisar y ajustar la propia conducta y las propias emociones según la situación y las necesidades del equipo."
+    },
+    {
+      "id": 69,
+      "unit": "UT2",
+      "question": "¿Qué herramienta facilita la planificación visual del trabajo en grupo?",
+      "options": [
+        "Mapa mental",
+        "Contrato laboral",
+        "Reglamento interno",
+        "Registro de incidencias"
+      ],
+      "correct": "Mapa mental",
+      "explicacion": "El mapa mental organiza visualmente ideas y tareas alrededor de un concepto central, lo que facilita planificar en grupo."
+    },
+    {
+      "id": 70,
+      "unit": "UT2",
+      "question": "¿Qué permite identificar un rol espontáneo en el grupo?",
+      "options": [
+        "La observación de las conductas reales",
+        "El currículum de cada persona",
+        "El horario de entrada y salida",
+        "La descripción del puesto de trabajo"
+      ],
+      "correct": "La observación de las conductas reales",
+      "explicacion": "Los roles espontáneos (quien anima, quien organiza, quien media...) se identifican observando cómo se comporta realmente cada persona en el grupo."
+    },
+    {
+      "id": 71,
+      "unit": "UT2",
+      "question": "¿Cuál es un signo de compromiso con el grupo?",
+      "options": [
+        "Delegar todas las responsabilidades",
+        "Evitar los conflictos sin afrontarlos",
+        "Cumplir tareas y ofrecer apoyo a compañeros",
+        "Trabajar siempre de forma independiente"
+      ],
+      "correct": "Cumplir tareas y ofrecer apoyo a compañeros",
+      "explicacion": "El compromiso se demuestra cumpliendo las propias tareas y ayudando a los compañeros cuando lo necesitan."
+    },
+    {
+      "id": 72,
+      "unit": "UT2",
+      "question": "¿Qué son las competencias personales?",
+      "options": [
+        "Normas impuestas por el entorno social",
+        "Capacidades relacionadas con el autoconocimiento y la autorregulación",
+        "Conocimientos técnicos adquiridos en un ciclo formativo",
+        "Reglas externas que controlan el comportamiento"
+      ],
+      "correct": "Capacidades relacionadas con el autoconocimiento y la autorregulación",
+      "explicacion": "Las competencias personales se refieren a uno mismo: autoconocimiento, autoestima, autorregulación, motivación. Las técnicas son conocimientos del oficio."
+    },
+    {
+      "id": 73,
+      "unit": "UT2",
+      "question": "¿Qué aspecto mejora la cohesión grupal?",
+      "options": [
+        "La participación activa de todos los miembros",
+        "La organización jerárquica cerrada",
+        "La separación por niveles de experiencia",
+        "El trabajo individualizado"
+      ],
+      "correct": "La participación activa de todos los miembros",
+      "explicacion": "La participación activa de todos los miembros aumenta la implicación y el sentimiento de pertenencia, es decir, la cohesión."
+    },
+    {
+      "id": 74,
+      "unit": "UT2",
+      "question": "¿Qué valor refuerza la empleabilidad?",
+      "options": [
+        "La dependencia del equipo directivo",
+        "La experiencia exclusiva en un sector",
+        "La responsabilidad individual y grupal",
+        "El aislamiento profesional"
+      ],
+      "correct": "La responsabilidad individual y grupal",
+      "explicacion": "La responsabilidad, individual y con el grupo, es un valor muy apreciado por las empresas y refuerza la empleabilidad."
+    },
+    {
+      "id": 75,
+      "unit": "UT2",
+      "question": "¿Qué es la empleabilidad según el temario?",
+      "options": [
+        "Tener muchos contactos en redes",
+        "Tener un título universitario",
+        "El conjunto de capacidades, conocimientos, actitudes y estrategias para conseguir y conservar un empleo y progresar",
+        "Trabajar en el sector público"
+      ],
+      "correct": "El conjunto de capacidades, conocimientos, actitudes y estrategias para conseguir y conservar un empleo y progresar",
+      "explicacion": "La empleabilidad abarca capacidades, conocimientos, actitudes y estrategias para conseguir y conservar un empleo, adaptarse a los cambios y progresar profesionalmente."
+    },
+    {
+      "id": 76,
+      "unit": "UT2",
+      "question": "¿Por qué las competencias personales y sociales son una inversión de valor permanente?",
+      "options": [
+        "Porque sustituyen a la formación técnica",
+        "Porque son transferibles a diferentes empleos y sectores",
+        "Porque son innatas",
+        "Porque solo sirven en un puesto"
+      ],
+      "correct": "Porque son transferibles a diferentes empleos y sectores",
+      "explicacion": "Son competencias transversales y transferibles: sirven en distintos empleos y sectores, por eso su desarrollo es una inversión duradera."
+    },
+    {
+      "id": 77,
+      "unit": "UT2",
+      "question": "¿Qué competencia personal consiste en esforzarse por satisfacción propia y no solo por recompensas externas?",
+      "options": [
+        "Asertividad",
+        "Motivación intrínseca",
+        "Escucha activa",
+        "Tolerancia"
+      ],
+      "correct": "Motivación intrínseca",
+      "explicacion": "La motivación intrínseca es el impulso personal de esforzarse y superarse por satisfacción propia, no solo por premios externos."
+    },
+    {
+      "id": 78,
+      "unit": "UT2",
+      "question": "¿Qué competencia personal implica tomar decisiones, gestionar el tiempo y actuar con independencia y responsabilidad?",
+      "options": [
+        "Autonomía",
+        "Empatía",
+        "Cooperación",
+        "Comunicación afectiva"
+      ],
+      "correct": "Autonomía",
+      "explicacion": "La autonomía es la habilidad para decidir, gestionar el tiempo y actuar con independencia y responsabilidad."
+    },
+    {
+      "id": 79,
+      "unit": "UT2",
+      "question": "¿Cuál de estas es una competencia social según el temario?",
+      "options": [
+        "Motivación intrínseca",
+        "Gestión de conflictos",
+        "Autoconocimiento",
+        "Autoestima"
+      ],
+      "correct": "Gestión de conflictos",
+      "explicacion": "Las competencias sociales se centran en la interacción: comunicación, asertividad, empatía, escucha activa, cooperación, gestión de conflictos y tolerancia. Autoestima y autoconocimiento son personales."
+    },
+    {
+      "id": 80,
+      "unit": "UT2",
+      "question": "¿Son innatas las competencias personales y sociales?",
+      "options": [
+        "No, se aprenden y perfeccionan a lo largo de la vida",
+        "Sí, se nace con ellas",
+        "Solo las sociales",
+        "Solo en personas extrovertidas"
+      ],
+      "correct": "No, se aprenden y perfeccionan a lo largo de la vida",
+      "explicacion": "No son innatas: requieren formación, práctica, reflexión y tiempo, y se perfeccionan a lo largo de la vida."
+    },
+    {
+      "id": 81,
+      "unit": "UT2",
+      "question": "¿Cuál es una tendencia clave en empleabilidad en 2025 según el temario?",
+      "options": [
+        "Eliminación del teletrabajo",
+        "Contratación basada en competencias más que en titulaciones",
+        "Exceso de talento en todos los sectores",
+        "Desaparición de la IA en las empresas"
+      ],
+      "correct": "Contratación basada en competencias más que en titulaciones",
+      "explicacion": "Tendencias de 2025: contratación por competencias más que por titulaciones, escasez de talento en sectores clave, iniciativas públicas de competencias digitales e impacto de la IA."
+    },
+    {
+      "id": 82,
+      "unit": "UT2",
+      "question": "¿Qué significa que la empleabilidad sea un proceso dinámico?",
+      "options": [
+        "Que depende solo de la suerte",
+        "Que se consigue una vez y no cambia",
+        "Que solo importa al buscar el primer empleo",
+        "Que exige actualizar competencias y adaptarse continuamente, incluso estando empleado"
+      ],
+      "correct": "Que exige actualizar competencias y adaptarse continuamente, incluso estando empleado",
+      "explicacion": "La empleabilidad no es una meta estática sino un proceso que exige actualización constante, adaptación al mercado y actitud proactiva, también estando en activo."
+    },
+    {
+      "id": 83,
+      "unit": "UT2",
+      "question": "Según el temario, ¿cómo se entiende la actitud emprendedora dentro de la empleabilidad?",
+      "options": [
+        "Como rechazo al trabajo por cuenta ajena",
+        "Solo como crear una empresa",
+        "Como asumir riesgos financieros",
+        "Como capacidad para generar valor en cualquier contexto"
+      ],
+      "correct": "Como capacidad para generar valor en cualquier contexto",
+      "explicacion": "La actitud emprendedora no es solo crear empresas, sino la capacidad de tomar la iniciativa y generar valor en cualquier contexto."
+    },
+    {
+      "id": 84,
+      "unit": "UT2",
+      "question": "¿Qué caracteriza la fase de conflicto (storming) del modelo de Tuckman?",
+      "options": [
+        "El grupo se disuelve",
+        "Máxima productividad",
+        "Relaciones superficiales y prudentes",
+        "Surgen liderazgos informales y disputas por roles u objetivos"
+      ],
+      "correct": "Surgen liderazgos informales y disputas por roles u objetivos",
+      "explicacion": "En el storming surgen diferencias, tensiones, liderazgos informales y disputas por el poder o los roles; es necesaria pero debe gestionarse."
+    },
+    {
+      "id": 85,
+      "unit": "UT2",
+      "question": "¿En qué fase de Tuckman el grupo consolida sus normas y aumenta la cohesión?",
+      "options": [
+        "Normalización (norming)",
+        "Formación",
+        "Conflicto",
+        "Cierre"
+      ],
+      "correct": "Normalización (norming)",
+      "explicacion": "En la normalización se consolidan normas, se aclaran roles y tareas, mejora la comunicación y aumenta el sentido de pertenencia."
+    },
+    {
+      "id": 86,
+      "unit": "UT2",
+      "question": "¿Qué fase de Tuckman es la de máxima productividad?",
+      "options": [
+        "Conflicto (storming)",
+        "Desempeño (performing)",
+        "Formación (forming)",
+        "Cierre (adjourning)"
+      ],
+      "correct": "Desempeño (performing)",
+      "explicacion": "En el desempeño el grupo trabaja de forma autónoma, eficiente y cooperativa, con decisiones consensuadas y resolución interna de conflictos."
+    },
+    {
+      "id": 87,
+      "unit": "UT2",
+      "question": "¿Qué ocurre en la fase de cierre (adjourning)?",
+      "options": [
+        "El grupo finaliza su tarea, evalúa el proceso y reconoce aprendizajes",
+        "El grupo se forma",
+        "Empiezan los conflictos",
+        "Se eligen los roles"
+      ],
+      "correct": "El grupo finaliza su tarea, evalúa el proceso y reconoce aprendizajes",
+      "explicacion": "En el cierre el grupo ha cumplido su objetivo: se evalúa lo vivido, se refuerza la autoestima grupal y se reconocen las contribuciones."
+    },
+    {
+      "id": 88,
+      "unit": "UT2",
+      "question": "¿Qué rol funcional representa al grupo ante otras personas u organismos?",
+      "options": [
+        "Secretario/a",
+        "Mediador/a",
+        "Animador/a",
+        "Portavoz"
+      ],
+      "correct": "Portavoz",
+      "explicacion": "El portavoz representa al grupo; el coordinador organiza tareas y tiempos, y el secretario toma nota de acuerdos y decisiones."
+    },
+    {
+      "id": 89,
+      "unit": "UT2",
+      "question": "¿Cuál de estos es un rol espontáneo negativo?",
+      "options": [
+        "Monopolizador/a",
+        "Líder constructivo",
+        "Mediador/a",
+        "Animador/a"
+      ],
+      "correct": "Monopolizador/a",
+      "explicacion": "Los roles espontáneos negativos son el saboteador (bloquea), el pasivo (no contribuye) y el monopolizador (acapara tiempo y atención)."
+    },
+    {
+      "id": 90,
+      "unit": "UT2",
+      "question": "¿Qué ventaja tiene que los roles roten en un equipo?",
+      "options": [
+        "Favorece el desarrollo integral de competencias y la equidad en la participación",
+        "Genera dependencia de una persona",
+        "Aumenta las dinámicas de poder",
+        "Elimina las responsabilidades"
+      ],
+      "correct": "Favorece el desarrollo integral de competencias y la equidad en la participación",
+      "explicacion": "La rotación de roles permite que cada persona explore funciones distintas; la rigidez puede generar dinámicas de poder, dependencia o exclusión."
+    },
+    {
+      "id": 91,
+      "unit": "UT2",
+      "question": "¿Qué clave fomenta la participación activa en un equipo?",
+      "options": [
+        "Decidir siempre el líder",
+        "Promover el feedback horizontal entre iguales",
+        "Feedback solo descendente",
+        "Repartir tareas sin criterio"
+      ],
+      "correct": "Promover el feedback horizontal entre iguales",
+      "explicacion": "Para fomentar la participación: normas claras, reparto equitativo, espacios donde se escuchen todas las voces, decisiones consensuadas y feedback horizontal."
+    },
+    {
+      "id": 92,
+      "unit": "UT2",
+      "question": "¿Qué técnica de comunicación verbal consiste en evitar rodeos e información irrelevante?",
+      "options": [
+        "Asincronía",
+        "Silencio",
+        "Concisión",
+        "Proximidad"
+      ],
+      "correct": "Concisión",
+      "explicacion": "Las técnicas verbales son claridad, coherencia, concisión (sin rodeos), adaptación al receptor y confirmación de comprensión."
+    },
+    {
+      "id": 93,
+      "unit": "UT2",
+      "question": "Cuando el mensaje verbal y el no verbal se contradicen, ¿cuál suele prevalecer?",
+      "options": [
+        "El verbal",
+        "Ninguno",
+        "El no verbal",
+        "El escrito"
+      ],
+      "correct": "El no verbal",
+      "explicacion": "Cuando hay incongruencia suele prevalecer el mensaje no verbal; por ejemplo, decir «sí» negando con la cabeza genera desconfianza."
+    },
+    {
+      "id": 94,
+      "unit": "UT2",
+      "question": "¿Qué característica de la comunicación digital implica que todo lo comunicado puede recuperarse?",
+      "options": [
+        "Asincronía",
+        "Registro escrito permanente",
+        "Proximidad física",
+        "Contacto visual"
+      ],
+      "correct": "Registro escrito permanente",
+      "explicacion": "La comunicación digital tiene asincronía, falta de contexto emocional, registro escrito permanente y accesibilidad constante."
+    },
+    {
+      "id": 95,
+      "unit": "UT2",
+      "question": "¿Qué buena práctica se recomienda en los correos electrónicos profesionales?",
+      "options": [
+        "Usar un asunto claro y específico, saludo formal y firma",
+        "Escribir todo en mayúsculas",
+        "Dejar el asunto vacío",
+        "Usar muchos emoticonos"
+      ],
+      "correct": "Usar un asunto claro y específico, saludo formal y firma",
+      "explicacion": "Un buen correo tiene asunto claro, saludo formal, mensaje breve con párrafos, lenguaje profesional, despedida y firma."
+    },
+    {
+      "id": 96,
+      "unit": "UT2",
+      "question": "¿Cuál es un riesgo de la comunicación digital mal gestionada?",
+      "options": [
+        "Más silencios intencionados",
+        "Mayor contacto visual",
+        "Exceso de reuniones presenciales",
+        "Malentendidos por falta de contexto emocional"
+      ],
+      "correct": "Malentendidos por falta de contexto emocional",
+      "explicacion": "Riesgos: malentendidos por falta de contexto emocional, conflictos por tonos mal interpretados, saturación informativa y vulneración de la privacidad."
+    },
+    {
+      "id": 97,
+      "unit": "UT2",
+      "question": "¿Qué adaptación comunicativa se recomienda para un informe técnico?",
+      "options": [
+        "Explicaciones muy sencillas y validación emocional",
+        "Lenguaje humorístico",
+        "Precisión terminológica, estructura formal y estilo impersonal",
+        "Tono coloquial y emoticonos"
+      ],
+      "correct": "Precisión terminológica, estructura formal y estilo impersonal",
+      "explicacion": "El informe técnico requiere precisión terminológica, estructura formal y estilo impersonal; con una persona usuaria, en cambio, conviene sencillez y empatía."
+    },
+    {
+      "id": 98,
+      "unit": "UT2",
+      "question": "¿Qué lógica implica la responsabilidad en el trabajo cooperativo?",
+      "options": [
+        "«Cada uno trabaja solo»",
+        "«Yo me responsabilizo del proceso y del resultado común»",
+        "«Yo cumplo con lo mío»",
+        "«El líder es el único responsable»"
+      ],
+      "correct": "«Yo me responsabilizo del proceso y del resultado común»",
+      "explicacion": "La responsabilidad cooperativa pasa de la lógica individualista a la cooperativa: responsabilizarse del proceso y del resultado común."
+    },
+    {
+      "id": 99,
+      "unit": "UT2",
+      "question": "¿Qué estrategia se recomienda ante la falta de claridad en los acuerdos del grupo?",
+      "options": [
+        "No tomar decisiones",
+        "Registrar las decisiones por escrito",
+        "Que decida siempre el mismo",
+        "Votar en secreto sin debate"
+      ],
+      "correct": "Registrar las decisiones por escrito",
+      "explicacion": "Para la falta de claridad en los acuerdos se recomienda registrarlos por escrito; para monopolios, normas que los limiten; para bloqueos, mediación o voto ponderado."
+    },
+    {
+      "id": 100,
+      "unit": "UT2",
+      "question": "¿Qué característica debe tener la coevaluación?",
+      "options": [
+        "Estar enfocada a la sanción",
+        "Ser bidireccional, constructiva y con criterios comunes acordados",
+        "Centrarse en juicios personales",
+        "Ser unidireccional"
+      ],
+      "correct": "Ser bidireccional, constructiva y con criterios comunes acordados",
+      "explicacion": "La coevaluación debe ser constructiva (basada en hechos), bidireccional, regida por criterios comunes y orientada a la mejora, no a la sanción."
+    },
+    {
+      "id": 101,
+      "unit": "UT2",
+      "question": "¿Qué elemento incluye la autorregulación?",
+      "options": [
+        "Evitar la reflexión",
+        "Autocrítica constructiva: reconocer errores sin desvalorizarse",
+        "Imponer conductas al grupo",
+        "Evaluar solo a los demás"
+      ],
+      "correct": "Autocrítica constructiva: reconocer errores sin desvalorizarse",
+      "explicacion": "La autorregulación incluye autoevaluación, autocrítica constructiva, autocontrol emocional y ajuste conductual."
+    },
+    {
+      "id": 102,
+      "unit": "UT2",
+      "question": "¿Qué instrumento permite registrar avances, dificultades y propuestas de mejora en el trabajo cooperativo?",
+      "options": [
+        "Nómina",
+        "Diario de aprendizaje",
+        "Organigrama",
+        "Contrato laboral"
+      ],
+      "correct": "Diario de aprendizaje",
+      "explicacion": "Instrumentos útiles: rúbricas compartidas (criterios de evaluación), diarios de aprendizaje y reuniones periódicas de retroalimentación."
+    },
+    {
+      "id": 103,
+      "unit": "UT2",
+      "question": "¿Qué rol espontáneo negativo evita comprometerse y no contribuye al grupo?",
+      "options": [
+        "Saboteador/a",
+        "Pasivo/a",
+        "Coordinador/a",
+        "Mediador/a"
+      ],
+      "correct": "Pasivo/a",
+      "explicacion": "El saboteador bloquea propuestas o ridiculiza, el pasivo no contribuye y el monopolizador acapara el tiempo."
+    },
+    {
+      "id": 104,
+      "unit": "UT2",
+      "question": "¿Qué rol funcional organiza tareas, controla tiempos y asegura el cumplimiento de objetivos?",
+      "options": [
+        "Portavoz",
+        "Coordinador/a",
+        "Animador/a",
+        "Secretario/a"
+      ],
+      "correct": "Coordinador/a",
+      "explicacion": "Los roles funcionales (designados) son coordinador, portavoz y secretario."
+    },
+    {
+      "id": 105,
+      "unit": "UT2",
+      "question": "¿Qué manifestación del compromiso con el grupo consiste en asistir a reuniones y entregar en plazo?",
+      "options": [
+        "Participación constructiva",
+        "Puntualidad y cumplimiento de acuerdos",
+        "Coherencia entre palabras y acciones",
+        "Disponibilidad y ayuda mutua"
+      ],
+      "correct": "Puntualidad y cumplimiento de acuerdos",
+      "explicacion": "Manifestaciones: puntualidad, ayuda mutua, participación constructiva, coherencia y sostener al grupo en momentos difíciles."
+    },
+    {
+      "id": 106,
+      "unit": "UT2",
+      "question": "¿Qué ventaja tiene decidir en grupo?",
+      "options": [
+        "Hace las decisiones más lentas sin beneficio",
+        "Reduce la participación",
+        "Elimina la responsabilidad",
+        "Mejora la calidad de las decisiones al integrar diferentes perspectivas"
+      ],
+      "correct": "Mejora la calidad de las decisiones al integrar diferentes perspectivas",
+      "explicacion": "Decidir en grupo mejora la calidad, favorece la aceptación y el compromiso, potencia la pertenencia y reduce conflictos posteriores."
+    },
+    {
+      "id": 107,
+      "unit": "UT2",
+      "question": "¿Qué clave favorece una toma de decisiones cooperativa eficaz?",
+      "options": [
+        "Evitar la escucha activa",
+        "Cuidar el clima emocional: no ridiculizar opiniones ni interrumpir",
+        "Imponer la opinión del más veterano",
+        "Votar sin debate"
+      ],
+      "correct": "Cuidar el clima emocional: no ridiculizar opiniones ni interrumpir",
+      "explicacion": "Claves: procedimientos claros (debate, consenso, votación, rotación de portavoces), escucha activa, reformular en positivo, cuidar el clima y aceptar la responsabilidad colectiva."
+    },
+    {
+      "id": 108,
+      "unit": "UT2",
+      "question": "¿Qué estrategia se recomienda cuando unas pocas voces dominan las decisiones?",
+      "options": [
+        "Registrar solo sus opiniones",
+        "Dejar que decidan siempre ellas",
+        "Establecer normas para limitar monopolios",
+        "Suprimir las reuniones"
+      ],
+      "correct": "Establecer normas para limitar monopolios",
+      "explicacion": "Para quien no participa: turnos y espacios seguros; para monopolios: normas; para bloqueos: mediación o voto ponderado; para falta de claridad: registro escrito."
+    },
+    {
+      "id": 109,
+      "unit": "UT2",
+      "question": "¿Qué buena práctica se recomienda en la mensajería instantánea profesional (Teams, Slack)?",
+      "options": [
+        "Interrumpir los hilos",
+        "Lenguaje claro y profesional, sin abreviaturas excesivas ni saturar con mensajes",
+        "Usar muchos emoticonos",
+        "Enviar mensajes constantemente"
+      ],
+      "correct": "Lenguaje claro y profesional, sin abreviaturas excesivas ni saturar con mensajes",
+      "explicacion": "También hay que respetar los turnos y no interrumpir hilos de conversación."
+    },
+    {
+      "id": 110,
+      "unit": "UT2",
+      "question": "¿Qué buena práctica se recomienda en las videoconferencias?",
+      "options": [
+        "Hablar a la vez que otros",
+        "Mantener el micrófono siempre abierto",
+        "No mirar nunca a la cámara",
+        "Verificar el entorno visual y sonoro y usar funciones como «levantar la mano»"
+      ],
+      "correct": "Verificar el entorno visual y sonoro y usar funciones como «levantar la mano»",
+      "explicacion": "Conviene activar la cámara si el protocolo lo permite, esperar turnos y mostrar atención con gestos."
+    },
+    {
+      "id": 111,
+      "unit": "UT3",
+      "question": "Un ambiente de trabajo saludable se caracteriza por:",
+      "options": [
+        "Exigencias altas sin recursos suficientes.",
+        "Evitación de los conflictos y silenciamiento de opiniones.",
+        "Falta de autonomía y participación.",
+        "Claridad de funciones, equidad y reconocimiento del esfuerzo."
+      ],
+      "correct": "Claridad de funciones, equidad y reconocimiento del esfuerzo.",
+      "explicacion": "Un ambiente saludable tiene funciones claras, trato equitativo y reconocimiento del esfuerzo. Las exigencias sin recursos y el silencio ante los conflictos generan malestar."
+    },
+    {
+      "id": 112,
+      "unit": "UT3",
+      "question": "La actitud flexible ante el cambio se caracteriza por:",
+      "options": [
+        "Resistirse a las transformaciones del entorno.",
+        "Responder activamente y con creatividad a nuevas situaciones.",
+        "Mantener siempre las rutinas establecidas.",
+        "Evitar toda forma de incertidumbre."
+      ],
+      "correct": "Responder activamente y con creatividad a nuevas situaciones.",
+      "explicacion": "La flexibilidad ante el cambio es responder de forma activa y creativa a las situaciones nuevas, en lugar de resistirse a ellas."
+    },
+    {
+      "id": 113,
+      "unit": "UT3",
+      "question": "Una técnica eficaz para reducir el estrés en el trabajo es:",
+      "options": [
+        "Trabajar sin interrupciones durante horas.",
+        "Evitar toda interacción con el equipo.",
+        "Ignorar los síntomas de cansancio.",
+        "Planificar el tiempo de forma realista y hacer pausas activas."
+      ],
+      "correct": "Planificar el tiempo de forma realista y hacer pausas activas.",
+      "explicacion": "Planificar el tiempo de forma realista y hacer pausas activas reduce la sobrecarga y el estrés. Ignorar el cansancio lo agrava."
+    },
+    {
+      "id": 114,
+      "unit": "UT3",
+      "question": "Validar las emociones de otra persona significa:",
+      "options": [
+        "Restarles importancia.",
+        "Cambiarlas para mejorar el rendimiento.",
+        "Aceptarlas sin juzgarlas ni negarlas.",
+        "Corregirlas para que sean más racionales."
+      ],
+      "correct": "Aceptarlas sin juzgarlas ni negarlas.",
+      "explicacion": "Validar una emoción es reconocerla y aceptarla como legítima sin juzgarla ni negarla, aunque no se comparta su causa."
+    },
+    {
+      "id": 115,
+      "unit": "UT3",
+      "question": "La planificación personal y profesional debe comenzar por:",
+      "options": [
+        "Elaborar listas interminables de tareas.",
+        "Dejar espacio a la improvisación total.",
+        "Definir objetivos concretos y alcanzables.",
+        "Centrarse solo en tareas urgentes."
+      ],
+      "correct": "Definir objetivos concretos y alcanzables.",
+      "explicacion": "La planificación empieza por definir objetivos concretos y alcanzables (tipo SMART). A partir de ellos se deciden las tareas."
+    },
+    {
+      "id": 116,
+      "unit": "UT3",
+      "question": "Una consecuencia positiva de la inteligencia emocional en el trabajo es:",
+      "options": [
+        "Aumentar la competencia entre compañeros.",
+        "Reducir conflictos y mejorar la toma de decisiones.",
+        "Limitar la comunicación emocional.",
+        "Fomentar la distancia profesional."
+      ],
+      "correct": "Reducir conflictos y mejorar la toma de decisiones.",
+      "explicacion": "La inteligencia emocional ayuda a gestionar las emociones propias y ajenas, lo que reduce conflictos y mejora la toma de decisiones."
+    },
+    {
+      "id": 117,
+      "unit": "UT3",
+      "question": "Una estrategia eficaz de autorregulación emocional es:",
+      "options": [
+        "Aplicar técnicas de respiración o pausa antes de reaccionar.",
+        "Ignorar las emociones para no distraerse.",
+        "Evitar expresar emociones en público.",
+        "Buscar siempre la aprobación de los demás."
+      ],
+      "correct": "Aplicar técnicas de respiración o pausa antes de reaccionar.",
+      "explicacion": "Hacer una pausa o usar técnicas de respiración antes de reaccionar permite autorregular la emoción y responder de forma más adecuada."
+    },
+    {
+      "id": 118,
+      "unit": "UT3",
+      "question": "El estrés profesional es:",
+      "options": [
+        "Una emoción exclusiva de personas poco organizadas.",
+        "Una respuesta natural ante exigencias percibidas como amenazantes.",
+        "Una actitud voluntaria frente a las dificultades.",
+        "Un problema psicológico sin relación con el entorno laboral."
+      ],
+      "correct": "Una respuesta natural ante exigencias percibidas como amenazantes.",
+      "explicacion": "El estrés laboral es una respuesta natural del organismo ante exigencias del entorno que se perciben como amenazantes o superiores a los propios recursos."
+    },
+    {
+      "id": 119,
+      "unit": "UT3",
+      "question": "La inteligencia emocional en el entorno laboral se define como:",
+      "options": [
+        "La habilidad de evitar emociones en el trabajo.",
+        "La capacidad de reconocer, comprender y regular las emociones propias y ajenas.",
+        "La eliminación de emociones negativas.",
+        "El control absoluto de los impulsos emocionales."
+      ],
+      "correct": "La capacidad de reconocer, comprender y regular las emociones propias y ajenas.",
+      "explicacion": "La inteligencia emocional (Goleman) es la capacidad de reconocer, comprender y regular las emociones propias y ajenas."
+    },
+    {
+      "id": 120,
+      "unit": "UT3",
+      "question": "En el afrontamiento de conflictos laborales se recomienda:",
+      "options": [
+        "Evitar el diálogo para no empeorar la situación.",
+        "Rehuir toda confrontación.",
+        "Escuchar activamente y buscar soluciones compartidas.",
+        "Imponer las propias opiniones."
+      ],
+      "correct": "Escuchar activamente y buscar soluciones compartidas.",
+      "explicacion": "Ante un conflicto se recomienda escuchar activamente a las partes y buscar soluciones compartidas (estrategia de colaboración), sin evitar el problema ni imponerse."
+    },
+    {
+      "id": 121,
+      "unit": "UT3",
+      "question": "El autoconocimiento emocional consiste en:",
+      "options": [
+        "Cambiar las emociones por pensamientos positivos.",
+        "Controlar las emociones sin reconocerlas.",
+        "Identificar las propias emociones y cómo influyen en nuestras decisiones.",
+        "Suprimir las emociones en situaciones laborales."
+      ],
+      "correct": "Identificar las propias emociones y cómo influyen en nuestras decisiones.",
+      "explicacion": "El autoconocimiento emocional consiste en identificar qué emociones sientes y cómo influyen en tus decisiones y conductas."
+    },
+    {
+      "id": 122,
+      "unit": "UT3",
+      "question": "Las relaciones interpersonales positivas en el trabajo se basan en:",
+      "options": [
+        "Silencio ante los desacuerdos.",
+        "Respeto, comunicación clara y colaboración.",
+        "Competencia y rivalidad entre compañeros.",
+        "Individualismo profesional."
+      ],
+      "correct": "Respeto, comunicación clara y colaboración.",
+      "explicacion": "Las buenas relaciones laborales se basan en el respeto, una comunicación clara y la colaboración."
+    },
+    {
+      "id": 123,
+      "unit": "UT3",
+      "question": "La matriz de Eisenhower ayuda a:",
+      "options": [
+        "Sustituir la planificación por intuición.",
+        "Delegar todas las tareas rutinarias.",
+        "Eliminar todas las tareas no urgentes.",
+        "Clasificar las tareas según su urgencia e importancia."
+      ],
+      "correct": "Clasificar las tareas según su urgencia e importancia.",
+      "explicacion": "La matriz de Eisenhower clasifica las tareas en cuatro cuadrantes según urgencia e importancia: hacer, planificar, delegar o eliminar."
+    },
+    {
+      "id": 124,
+      "unit": "UT3",
+      "question": "La cohesión grupal se relaciona con:",
+      "options": [
+        "La ausencia de comunicación entre compañeros.",
+        "La falta de normas compartidas.",
+        "El sentimiento de pertenencia y apoyo mutuo entre los miembros del equipo.",
+        "La jerarquía rígida dentro del grupo."
+      ],
+      "correct": "El sentimiento de pertenencia y apoyo mutuo entre los miembros del equipo.",
+      "explicacion": "La cohesión grupal es el grado de unión del equipo: sentimiento de pertenencia, confianza y apoyo mutuo."
+    },
+    {
+      "id": 125,
+      "unit": "UT3",
+      "question": "Según el método Ivy Lee, una persona debe:",
+      "options": [
+        "Anotar todas las tareas posibles sin jerarquía.",
+        "Realizar solo las tareas más cortas primero.",
+        "Elaborar una lista de seis tareas diarias ordenadas por prioridad.",
+        "Cambiar de tarea cada cinco minutos."
+      ],
+      "correct": "Elaborar una lista de seis tareas diarias ordenadas por prioridad.",
+      "explicacion": "El método Ivy Lee consiste en anotar al final del día las seis tareas más importantes para el día siguiente, ordenarlas por prioridad y hacerlas en ese orden."
+    },
+    {
+      "id": 126,
+      "unit": "UT3",
+      "question": "Reconocer las emociones ajenas permite:",
+      "options": [
+        "Anticipar conflictos y fortalecer la empatía.",
+        "Tomar decisiones sin considerar a los demás.",
+        "Evitar relacionarse con personas emocionales.",
+        "Ocultar nuestras propias emociones."
+      ],
+      "correct": "Anticipar conflictos y fortalecer la empatía.",
+      "explicacion": "Reconocer las emociones de los demás permite anticipar conflictos y responder con empatía."
+    },
+    {
+      "id": 127,
+      "unit": "UT3",
+      "question": "El clima laboral se define como:",
+      "options": [
+        "La percepción compartida sobre el entorno de trabajo.",
+        "La política salarial vigente.",
+        "La productividad media de la empresa.",
+        "El número de empleados en plantilla."
+      ],
+      "correct": "La percepción compartida sobre el entorno de trabajo.",
+      "explicacion": "El clima laboral es la percepción compartida que tienen los trabajadores sobre su entorno de trabajo: relaciones, liderazgo, condiciones, reconocimiento..."
+    },
+    {
+      "id": 128,
+      "unit": "UT3",
+      "question": "La resiliencia profesional implica:",
+      "options": [
+        "Superar las dificultades y aprender de ellas.",
+        "Mantener una actitud indiferente ante los errores.",
+        "Ocultar las emociones ante los demás.",
+        "Evitar enfrentarse a los problemas."
+      ],
+      "correct": "Superar las dificultades y aprender de ellas.",
+      "explicacion": "La resiliencia es la capacidad de superar las dificultades, adaptarse y salir fortalecido aprendiendo de ellas."
+    },
+    {
+      "id": 129,
+      "unit": "UT3",
+      "question": "Una persona resiliente se caracteriza por:",
+      "options": [
+        "Mantener una visión realista pero esperanzadora.",
+        "Rechazar la ayuda externa.",
+        "Negar sus emociones para no mostrar debilidad.",
+        "Culpar a otros de sus fracasos."
+      ],
+      "correct": "Mantener una visión realista pero esperanzadora.",
+      "explicacion": "La persona resiliente mantiene una visión realista pero esperanzadora, acepta sus emociones y busca apoyo cuando lo necesita."
+    },
+    {
+      "id": 130,
+      "unit": "UT3",
+      "question": "Gestionar bien el tiempo implica:",
+      "options": [
+        "Hacer lo importante de forma eficiente y equilibrada.",
+        "Trabajar sin planificación para ser flexible.",
+        "Realizar todas las tareas sin descanso.",
+        "Priorizar la cantidad sobre la calidad."
+      ],
+      "correct": "Hacer lo importante de forma eficiente y equilibrada.",
+      "explicacion": "Gestionar bien el tiempo es dedicarlo a lo importante de forma eficiente y equilibrada, incluidos los descansos."
+    },
+    {
+      "id": 131,
+      "unit": "UT3",
+      "question": "¿Quién popularizó el concepto de inteligencia emocional en la década de 1990?",
+      "options": [
+        "Abraham Maslow",
+        "Daniel Goleman",
+        "Ivy Lee",
+        "Bruce Tuckman"
+      ],
+      "correct": "Daniel Goleman",
+      "explicacion": "Daniel Goleman popularizó la inteligencia emocional en los años 90, definiéndola como la capacidad de reconocer, comprender y regular las emociones propias y ajenas."
+    },
+    {
+      "id": 132,
+      "unit": "UT3",
+      "question": "¿Es la inteligencia emocional una habilidad innata e inamovible?",
+      "options": [
+        "Sí, no puede cambiarse",
+        "Solo se desarrolla en la infancia",
+        "No, puede entrenarse y desarrollarse a lo largo de la vida",
+        "Solo la tienen los líderes"
+      ],
+      "correct": "No, puede entrenarse y desarrollarse a lo largo de la vida",
+      "explicacion": "La IE no es innata ni fija: se entrena mediante la reflexión, la experiencia y el aprendizaje activo."
+    },
+    {
+      "id": 133,
+      "unit": "UT3",
+      "question": "¿Qué requisito del autoconocimiento consiste en diferenciar emociones similares como tristeza, decepción o desánimo?",
+      "options": [
+        "Aplazamiento",
+        "Pomodoro",
+        "Escucha externa",
+        "Vocabulario emocional"
+      ],
+      "correct": "Vocabulario emocional",
+      "explicacion": "El autoconocimiento requiere escucha interna, vocabulario emocional, reflexión retrospectiva e identificación de patrones."
+    },
+    {
+      "id": 134,
+      "unit": "UT3",
+      "question": "¿En qué consiste la reformulación cognitiva como estrategia de autorregulación?",
+      "options": [
+        "Responder de inmediato",
+        "Ignorar la situación",
+        "Reprimir la emoción",
+        "Reinterpretar los hechos desde una perspectiva menos emocional"
+      ],
+      "correct": "Reinterpretar los hechos desde una perspectiva menos emocional",
+      "explicacion": "La reformulación cognitiva reinterpreta los hechos con menos carga emocional; otras estrategias son la respiración, el aplazamiento de decisiones y la expresión asertiva."
+    },
+    {
+      "id": 135,
+      "unit": "UT3",
+      "question": "¿Qué significa autorregular las emociones según el temario?",
+      "options": [
+        "Reprimirlas para no mostrarlas",
+        "Aceptarlas, interpretarlas y canalizarlas de forma adaptativa",
+        "Eliminarlas por completo",
+        "Actuar de forma impulsiva"
+      ],
+      "correct": "Aceptarlas, interpretarlas y canalizarlas de forma adaptativa",
+      "explicacion": "Autorregularse no es reprimir ni eliminar las emociones, sino aceptarlas, interpretarlas y canalizarlas de forma constructiva."
+    },
+    {
+      "id": 136,
+      "unit": "UT3",
+      "question": "¿Qué significa gestionar las emociones ajenas?",
+      "options": [
+        "Evitar a las personas emocionales",
+        "Decir a los demás lo que deben sentir",
+        "Hacerse cargo del malestar de los demás",
+        "Acompañar sin imponer, cuidando también el propio bienestar"
+      ],
+      "correct": "Acompañar sin imponer, cuidando también el propio bienestar",
+      "explicacion": "Gestionar emociones ajenas no es cargar con ellas, sino acompañar sin imponer y responder desde la comprensión sin descuidar el propio bienestar."
+    },
+    {
+      "id": 137,
+      "unit": "UT3",
+      "question": "¿Cuál es un error frecuente en la gestión de las emociones ajenas?",
+      "options": [
+        "Preguntar antes de suponer",
+        "Minimizar con frases como «no es para tanto»",
+        "Validar la emoción",
+        "Escuchar antes de proponer soluciones"
+      ],
+      "correct": "Minimizar con frases como «no es para tanto»",
+      "explicacion": "Errores frecuentes: presuponer sin preguntar, juzgar o minimizar, ofrecer soluciones sin escuchar y no diferenciar empatía de sobrecarga emocional."
+    },
+    {
+      "id": 138,
+      "unit": "UT3",
+      "question": "Según el informe 2024-2025 del World Economic Forum y LinkedIn, ¿qué competencias siguen en el top 5 de las más demandadas?",
+      "options": [
+        "Autogestión y empatía",
+        "Contabilidad y fiscalidad",
+        "Dibujo técnico",
+        "Mecanografía y caligrafía"
+      ],
+      "correct": "Autogestión y empatía",
+      "explicacion": "El informe confirma que la autogestión y la empatía, componentes de la inteligencia emocional, siguen entre las cinco competencias más demandadas."
+    },
+    {
+      "id": 139,
+      "unit": "UT3",
+      "question": "¿Cuál es el orden correcto de las primeras fases de una planificación eficaz?",
+      "options": [
+        "Distribuir en el calendario, definir objetivos, desglosar tareas",
+        "Definir objetivos, desglosar en tareas, estimar tiempos y recursos",
+        "Prever dificultades, definir objetivos, revisar",
+        "Revisar, estimar tiempos, definir objetivos"
+      ],
+      "correct": "Definir objetivos, desglosar en tareas, estimar tiempos y recursos",
+      "explicacion": "Las fases son: definir objetivos, desglosar en tareas, estimar tiempos y recursos, distribuir en el calendario, prever dificultades y revisar periódicamente."
+    },
+    {
+      "id": 140,
+      "unit": "UT3",
+      "question": "¿Qué diferencia a la planificación profesional de la personal?",
+      "options": [
+        "La personal tiene plazos más estrictos",
+        "La profesional es más flexible",
+        "No hay ninguna diferencia",
+        "La profesional está sujeta a coordinación con otros y a plazos estrictos"
+      ],
+      "correct": "La profesional está sujeta a coordinación con otros y a plazos estrictos",
+      "explicacion": "La planificación personal es autogestionada y flexible; la profesional depende de la coordinación con otros y de plazos estrictos. Ambas se interrelacionan."
+    },
+    {
+      "id": 141,
+      "unit": "UT3",
+      "question": "Según la matriz de Eisenhower, ¿qué hay que hacer con una tarea urgente pero poco importante?",
+      "options": [
+        "Delegarla o automatizarla",
+        "Eliminarla",
+        "Planificarla con antelación",
+        "Hacerla inmediatamente"
+      ],
+      "correct": "Delegarla o automatizarla",
+      "explicacion": "Importante y urgente: hacer ya. Importante y no urgente: planificar. Urgente y poco importante: delegar o automatizar. Ni urgente ni importante: eliminar."
+    },
+    {
+      "id": 142,
+      "unit": "UT3",
+      "question": "¿En qué consiste la técnica Pomodoro?",
+      "options": [
+        "Delegar todas las tareas",
+        "Hacer seis tareas al día",
+        "Bloques de 25 minutos de concentración seguidos de 5 minutos de descanso",
+        "Trabajar 8 horas sin pausa"
+      ],
+      "correct": "Bloques de 25 minutos de concentración seguidos de 5 minutos de descanso",
+      "explicacion": "La técnica Pomodoro alterna 25 minutos de concentración con 5 de descanso, y cada cuatro pomodoros se hace una pausa más larga."
+    },
+    {
+      "id": 143,
+      "unit": "UT3",
+      "question": "¿Qué establece el principio de Pareto (regla 80/20)?",
+      "options": [
+        "El 20 % del equipo hace todo el trabajo",
+        "El 20 % de las tareas produce el 80 % de los resultados",
+        "El 80 % del tiempo se dedica a descansar",
+        "Hay que hacer el 80 % de las tareas cada día"
+      ],
+      "correct": "El 20 % de las tareas produce el 80 % de los resultados",
+      "explicacion": "El principio de Pareto indica que el 20 % de las tareas genera el 80 % de los resultados, por eso conviene identificar y priorizar esas tareas clave."
+    },
+    {
+      "id": 144,
+      "unit": "UT3",
+      "question": "¿Qué microhábito de productividad cita el temario?",
+      "options": [
+        "Revisar el móvil cada minuto",
+        "Multitarea constante",
+        "Time blocking con descansos activos",
+        "Trabajar sin agenda"
+      ],
+      "correct": "Time blocking con descansos activos",
+      "explicacion": "El temario recomienda microhábitos como el time blocking con descansos activos y la revisión semanal de objetivos, además de asistentes de IA como Copilot o Notion AI."
+    },
+    {
+      "id": 145,
+      "unit": "UT3",
+      "question": "¿Es siempre negativo el estrés?",
+      "options": [
+        "Sí, siempre perjudica",
+        "Solo es negativo en el trabajo",
+        "No, en dosis moderadas puede ser un motor de acción",
+        "Solo afecta a personas desorganizadas"
+      ],
+      "correct": "No, en dosis moderadas puede ser un motor de acción",
+      "explicacion": "El estrés moderado puede impulsar a actuar; el problema surge cuando es continuo o intenso y afecta a la salud, la productividad y las relaciones."
+    },
+    {
+      "id": 146,
+      "unit": "UT3",
+      "question": "¿Cuál es una causa frecuente de estrés laboral?",
+      "options": [
+        "Ambigüedad en las tareas o cambios constantes de instrucciones",
+        "Plazos con margen",
+        "Reconocimiento del esfuerzo",
+        "Claridad en las tareas"
+      ],
+      "correct": "Ambigüedad en las tareas o cambios constantes de instrucciones",
+      "explicacion": "Causas frecuentes: exceso de carga sin recursos, ambigüedad o cambios de instrucciones, plazos ajustados, conflictos y miedo a errores o a ser evaluado."
+    },
+    {
+      "id": 147,
+      "unit": "UT3",
+      "question": "¿Qué pauta de pausas activas recomienda el temario para gestionar el estrés?",
+      "options": [
+        "5 minutos de pausa cada 60 de trabajo",
+        "Una pausa al día",
+        "Ninguna pausa",
+        "30 minutos cada 10"
+      ],
+      "correct": "5 minutos de pausa cada 60 de trabajo",
+      "explicacion": "Se recomiendan pausas activas de 5 minutos cada 60 de trabajo, junto con respiración, autoinstrucciones positivas y búsqueda de apoyo."
+    },
+    {
+      "id": 148,
+      "unit": "UT3",
+      "question": "¿Qué es una autoinstrucción positiva?",
+      "options": [
+        "Cambiar «no voy a poder» por «haré lo que esté en mi mano»",
+        "Ignorar las dificultades",
+        "Repetir los errores en voz alta",
+        "Dar órdenes a los compañeros"
+      ],
+      "correct": "Cambiar «no voy a poder» por «haré lo que esté en mi mano»",
+      "explicacion": "Las autoinstrucciones positivas sustituyen pensamientos derrotistas por otros orientados a la acción."
+    },
+    {
+      "id": 149,
+      "unit": "UT3",
+      "question": "¿Qué NO significa la resiliencia según el temario?",
+      "options": [
+        "Aguantar todo sin quejarse",
+        "Aprender de las dificultades",
+        "Salir fortalecido de la adversidad",
+        "Mantener la motivación ante contratiempos"
+      ],
+      "correct": "Aguantar todo sin quejarse",
+      "explicacion": "La resiliencia no es aguantar todo sin quejarse, sino transformar la dificultad en aprendizaje sin perder la orientación ni la dignidad."
+    },
+    {
+      "id": 150,
+      "unit": "UT3",
+      "question": "¿Qué técnica de afrontamiento de conflictos consiste en decir «yo necesito…» en lugar de «tú nunca…»?",
+      "options": [
+        "Imposición",
+        "Sarcasmo",
+        "Evitación",
+        "Uso del «yo» en vez del «tú»"
+      ],
+      "correct": "Uso del «yo» en vez del «tú»",
+      "explicacion": "Hablar en primera persona expresa necesidades sin atacar; otras técnicas son la escucha activa, buscar soluciones y no culpables y los acuerdos parciales."
+    },
+    {
+      "id": 151,
+      "unit": "UT3",
+      "question": "¿Cómo considera el temario el conflicto en el trabajo?",
+      "options": [
+        "Un motivo de despido",
+        "Una oportunidad de mejora si se gestiona con madurez",
+        "Siempre negativo",
+        "Algo que debe evitarse siempre"
+      ],
+      "correct": "Una oportunidad de mejora si se gestiona con madurez",
+      "explicacion": "El conflicto no es negativo en sí: el problema no es el desacuerdo sino cómo se afronta; bien gestionado es una oportunidad de mejora."
+    },
+    {
+      "id": 152,
+      "unit": "UT3",
+      "question": "¿Qué consecuencia puede tener un clima laboral negativo?",
+      "options": [
+        "Más productividad",
+        "Menos rotación de personal",
+        "Mejor cohesión",
+        "Absentismo, desmotivación y rotación del personal"
+      ],
+      "correct": "Absentismo, desmotivación y rotación del personal",
+      "explicacion": "Un clima negativo puede generar conflictos, rotación, absentismo, desmotivación e incluso problemas de salud."
+    },
+    {
+      "id": 153,
+      "unit": "UT3",
+      "question": "¿Qué factor refuerza las relaciones interpersonales en el trabajo?",
+      "options": [
+        "Difundir rumores",
+        "Disentir atacando al otro",
+        "Reconocimiento mutuo: agradecer y dar crédito al esfuerzo ajeno",
+        "Mensajes ambiguos"
+      ],
+      "correct": "Reconocimiento mutuo: agradecer y dar crédito al esfuerzo ajeno",
+      "explicacion": "Refuerzan las relaciones la escucha activa, el reconocimiento mutuo, la disponibilidad para ayudar, la comunicación clara y la gestión respetuosa del desacuerdo."
+    },
+    {
+      "id": 154,
+      "unit": "UT3",
+      "question": "¿Implica la cohesión grupal que todos piensen igual?",
+      "options": [
+        "Solo si hay un líder fuerte",
+        "Sí, es imprescindible",
+        "No, implica compartir valores de respeto, confianza y colaboración",
+        "Solo en grupos pequeños"
+      ],
+      "correct": "No, implica compartir valores de respeto, confianza y colaboración",
+      "explicacion": "La cohesión no exige pensar igual, sino compartir respeto, confianza y colaboración hacia un objetivo común."
+    },
+    {
+      "id": 155,
+      "unit": "UT3",
+      "question": "¿Cuál es un indicador de un grupo cohesionado?",
+      "options": [
+        "Conflictos que deterioran las relaciones",
+        "Comunicación fluida y horizontal y reparto equitativo de tareas",
+        "Normas desconocidas",
+        "Comunicación solo descendente"
+      ],
+      "correct": "Comunicación fluida y horizontal y reparto equitativo de tareas",
+      "explicacion": "Indicadores: normas claras y respetadas, comunicación fluida y horizontal, reparto equitativo, apoyo ante dificultades y resolución de conflictos sin deterioro."
+    },
+    {
+      "id": 156,
+      "unit": "UT3",
+      "question": "¿Cuál es un indicador indirecto para evaluar el clima laboral?",
+      "options": [
+        "El número de ordenadores",
+        "El color de la oficina",
+        "La marca del café",
+        "Rotación, bajas médicas, quejas y errores por estrés"
+      ],
+      "correct": "Rotación, bajas médicas, quejas y errores por estrés",
+      "explicacion": "Además de cuestionarios anónimos y reuniones de retroalimentación, se usan indicadores indirectos como rotación, bajas, quejas y errores por estrés."
+    },
+    {
+      "id": 157,
+      "unit": "UT3",
+      "question": "¿Qué estrategia de gestión del estrés consiste en no dar por hecho lo que no está confirmado?",
+      "options": [
+        "Autoinstrucciones negativas",
+        "Trabajar sin pausas",
+        "Separar hechos de interpretaciones",
+        "Aislarse del equipo"
+      ],
+      "correct": "Separar hechos de interpretaciones",
+      "explicacion": "Estrategias: planificación realista, respiración y pausas activas, autoinstrucciones positivas, apoyo social y separar hechos de interpretaciones."
+    },
+    {
+      "id": 158,
+      "unit": "UT3",
+      "question": "¿Qué práctica fomenta la empatía consistente en escuchar sin distracciones?",
+      "options": [
+        "Dramatizar experiencias propias",
+        "Imponer soluciones",
+        "Practicar la presencia plena",
+        "Hacer suposiciones"
+      ],
+      "correct": "Practicar la presencia plena",
+      "explicacion": "Para fomentar la empatía: no suponer, validar emociones, compartir sin dramatizar, presencia plena y acompañar sin imponer."
+    },
+    {
+      "id": 159,
+      "unit": "UT4",
+      "question": "¿Qué implica el intraemprendimiento?",
+      "options": [
+        "Ser autónomo sin depender de nadie",
+        "Proponer mejoras desde dentro de una organización existente",
+        "Crear una empresa desde cero",
+        "Rechazar toda forma de innovación"
+      ],
+      "correct": "Proponer mejoras desde dentro de una organización existente",
+      "explicacion": "El intraemprendimiento es emprender desde dentro de una empresa: proponer y desarrollar mejoras o nuevos proyectos como empleado."
+    },
+    {
+      "id": 160,
+      "unit": "UT4",
+      "question": "¿Qué significa innovación aplicada?",
+      "options": [
+        "Implementar mejoras reales en productos, servicios o procesos",
+        "Publicar una página web estática",
+        "Usar ideas copiadas",
+        "Reducir gastos a toda costa"
+      ],
+      "correct": "Implementar mejoras reales en productos, servicios o procesos",
+      "explicacion": "La innovación aplicada lleva las ideas a la práctica: mejoras reales que se implantan en productos, servicios o procesos."
+    },
+    {
+      "id": 161,
+      "unit": "UT4",
+      "question": "¿Qué actitud fomenta la innovación?",
+      "options": [
+        "Repetición constante",
+        "Conformismo",
+        "Proactividad",
+        "Desinterés"
+      ],
+      "correct": "Proactividad",
+      "explicacion": "La proactividad, anticiparse y tomar la iniciativa en lugar de esperar, fomenta la innovación."
+    },
+    {
+      "id": 162,
+      "unit": "UT4",
+      "question": "¿Qué caracteriza al emprendimiento social?",
+      "options": [
+        "Depende siempre de ayudas públicas",
+        "Elimina la participación ciudadana",
+        "Busca resolver un problema social desde la acción emprendedora",
+        "Se basa únicamente en intereses comerciales"
+      ],
+      "correct": "Busca resolver un problema social desde la acción emprendedora",
+      "explicacion": "El emprendimiento social usa la iniciativa emprendedora para resolver un problema social, y busca impacto además de viabilidad económica."
+    },
+    {
+      "id": 163,
+      "unit": "UT4",
+      "question": "¿Qué es el emprendimiento con propósito?",
+      "options": [
+        "Una forma de vender productos sin estrategia",
+        "Un modelo de inversión especulativa",
+        "Una iniciativa que busca generar impacto social y/o ambiental positivo",
+        "Un negocio enfocado solo en maximizar beneficios"
+      ],
+      "correct": "Una iniciativa que busca generar impacto social y/o ambiental positivo",
+      "explicacion": "El emprendimiento con propósito busca generar un impacto social o ambiental positivo, no solo beneficio económico."
+    },
+    {
+      "id": 164,
+      "unit": "UT4",
+      "question": "¿Qué es el Canvas de modelo de negocio?",
+      "options": [
+        "Herramienta visual para organizar una idea emprendedora",
+        "Un contrato de compraventa",
+        "Un diseño gráfico publicitario",
+        "Una forma de solicitar ayudas públicas"
+      ],
+      "correct": "Herramienta visual para organizar una idea emprendedora",
+      "explicacion": "El Business Model Canvas es una herramienta visual de nueve bloques (segmentos, propuesta de valor, canales, etc.) para organizar y analizar un modelo de negocio."
+    },
+    {
+      "id": 165,
+      "unit": "UT4",
+      "question": "¿Qué se entiende por cultura emprendedora?",
+      "options": [
+        "El rechazo a los modelos colaborativos",
+        "Conjunto de actitudes y valores que impulsan la iniciativa personal",
+        "Una actitud pasiva frente al cambio",
+        "Un sistema obligatorio de creación de empresas"
+      ],
+      "correct": "Conjunto de actitudes y valores que impulsan la iniciativa personal",
+      "explicacion": "La cultura emprendedora es el conjunto de actitudes y valores (iniciativa, creatividad, asunción de riesgos) que impulsan a emprender."
+    },
+    {
+      "id": 166,
+      "unit": "UT4",
+      "question": "¿Qué es el empoderamiento personal?",
+      "options": [
+        "Actuar sin asumir consecuencias",
+        "Delegar siempre en otros",
+        "Rechazar la crítica constructiva",
+        "Capacidad para tomar decisiones con autonomía y confianza"
+      ],
+      "correct": "Capacidad para tomar decisiones con autonomía y confianza",
+      "explicacion": "El empoderamiento personal es la capacidad de tomar decisiones con autonomía y confianza, asumiendo sus consecuencias."
+    },
+    {
+      "id": 167,
+      "unit": "UT4",
+      "question": "¿Qué es un ODS?",
+      "options": [
+        "Organismo de Dirección Social",
+        "Orden de Desarrollo Simplificado",
+        "Objetivo de Desarrollo Sostenible",
+        "Oferta de Descuento Sostenible"
+      ],
+      "correct": "Objetivo de Desarrollo Sostenible",
+      "explicacion": "ODS son los Objetivos de Desarrollo Sostenible: los 17 objetivos de la Agenda 2030 de la ONU."
+    },
+    {
+      "id": 168,
+      "unit": "UT4",
+      "question": "¿Qué elemento es esencial para el autoconocimiento?",
+      "options": [
+        "Identificar fortalezas y debilidades",
+        "Evitar la reflexión personal",
+        "Copiar ideas ajenas",
+        "Mantenerse ajeno a los cambios"
+      ],
+      "correct": "Identificar fortalezas y debilidades",
+      "explicacion": "El autoconocimiento parte de identificar las propias fortalezas y debilidades, por ejemplo con un DAFO personal."
+    },
+    {
+      "id": 169,
+      "unit": "UT4",
+      "question": "¿Qué tipo de innovación busca soluciones simples y económicas?",
+      "options": [
+        "Innovación de lujo",
+        "Innovación decorativa",
+        "Innovación frugal",
+        "Innovación especulativa"
+      ],
+      "correct": "Innovación frugal",
+      "explicacion": "La innovación frugal busca soluciones sencillas, económicas y accesibles, haciendo más con menos recursos."
+    },
+    {
+      "id": 170,
+      "unit": "UT4",
+      "question": "¿Qué es una innovación de producto?",
+      "options": [
+        "Una campaña publicitaria sin cambios reales",
+        "Una mejora en las características de un bien o servicio",
+        "Un cambio en la forma jurídica de una empresa",
+        "La eliminación del departamento de ventas"
+      ],
+      "correct": "Una mejora en las características de un bien o servicio",
+      "explicacion": "La innovación de producto introduce mejoras o novedades en las características de un bien o servicio."
+    },
+    {
+      "id": 171,
+      "unit": "UT4",
+      "question": "¿Qué objetivo busca la innovación sostenible?",
+      "options": [
+        "Ignorar el impacto ambiental",
+        "Aumentar la exclusividad",
+        "Crear valor respetando el entorno y las personas",
+        "Vender sin límites"
+      ],
+      "correct": "Crear valor respetando el entorno y las personas",
+      "explicacion": "La innovación sostenible crea valor respetando el medio ambiente y a las personas, sin comprometer a las generaciones futuras."
+    },
+    {
+      "id": 172,
+      "unit": "UT4",
+      "question": "¿Qué valor es clave en el emprendimiento ético?",
+      "options": [
+        "La imposición",
+        "El aislamiento",
+        "El oportunismo",
+        "La responsabilidad"
+      ],
+      "correct": "La responsabilidad",
+      "explicacion": "La responsabilidad, asumir las consecuencias de las decisiones sobre personas y entorno, es un valor central del emprendimiento ético."
+    },
+    {
+      "id": 173,
+      "unit": "UT4",
+      "question": "¿Qué son las políticas públicas de emprendimiento?",
+      "options": [
+        "Programas y apoyos ofrecidos por instituciones para fomentar el emprendimiento",
+        "Normas que prohíben innovar",
+        "Regulaciones que limitan la iniciativa",
+        "Actividades privadas sin control"
+      ],
+      "correct": "Programas y apoyos ofrecidos por instituciones para fomentar el emprendimiento",
+      "explicacion": "Las políticas públicas de emprendimiento son programas, ayudas, asesoramiento y financiación que ofrecen las instituciones para fomentar la creación de empresas."
+    },
+    {
+      "id": 174,
+      "unit": "UT4",
+      "question": "¿Qué función tiene el autodiagnóstico emprendedor?",
+      "options": [
+        "Analizar el mercado bursátil",
+        "Diseñar un videojuego",
+        "Crear un logo publicitario",
+        "Identificar competencias propias para emprender"
+      ],
+      "correct": "Identificar competencias propias para emprender",
+      "explicacion": "El autodiagnóstico emprendedor sirve para identificar las propias competencias, fortalezas y carencias antes de emprender."
+    },
+    {
+      "id": 175,
+      "unit": "UT4",
+      "question": "¿Qué tipo de innovación afecta a la gestión interna de una organización?",
+      "options": [
+        "Innovación organizativa",
+        "Innovación de producto",
+        "Innovación de marketing",
+        "Innovación económica"
+      ],
+      "correct": "Innovación organizativa",
+      "explicacion": "La innovación organizativa cambia la gestión interna de la empresa: estructura, métodos de trabajo o relaciones externas."
+    },
+    {
+      "id": 176,
+      "unit": "UT4",
+      "question": "¿Qué permite el liderazgo ético?",
+      "options": [
+        "Tomar decisiones respetando valores y a las personas",
+        "Aislar a los equipos",
+        "Evitar responsabilidades",
+        "Imponer criterios personales"
+      ],
+      "correct": "Tomar decisiones respetando valores y a las personas",
+      "explicacion": "El liderazgo ético toma decisiones coherentes con unos valores y respetuosas con las personas."
+    },
+    {
+      "id": 177,
+      "unit": "UT4",
+      "question": "¿Qué relación hay entre los ODS y el emprendimiento?",
+      "options": [
+        "Los ODS eliminan la innovación",
+        "El emprendimiento puede contribuir al cumplimiento de los ODS",
+        "Son dos conceptos opuestos",
+        "Solo aplican a grandes empresas"
+      ],
+      "correct": "El emprendimiento puede contribuir al cumplimiento de los ODS",
+      "explicacion": "Los proyectos emprendedores pueden contribuir a los ODS, por ejemplo con energía limpia, igualdad o consumo responsable."
+    },
+    {
+      "id": 178,
+      "unit": "UT4",
+      "question": "¿Qué recurso puede ayudar a emprender?",
+      "options": [
+        "Un vivero de empresas",
+        "Una carta de despido",
+        "Una sanción administrativa",
+        "Un impuesto extra"
+      ],
+      "correct": "Un vivero de empresas",
+      "explicacion": "Un vivero de empresas (incubadora) ofrece a los emprendedores espacio a bajo coste, asesoramiento y servicios compartidos."
+    },
+    {
+      "id": 179,
+      "unit": "UT4",
+      "question": "¿Qué añade el emprendimiento sostenible respecto al social?",
+      "options": [
+        "Criterios de sostenibilidad ambiental y ética: proteger recursos, reducir la huella ecológica y la equidad intergeneracional",
+        "Elimina la viabilidad económica",
+        "Solo se aplica en grandes empresas",
+        "Solo busca beneficio económico"
+      ],
+      "correct": "Criterios de sostenibilidad ambiental y ética: proteger recursos, reducir la huella ecológica y la equidad intergeneracional",
+      "explicacion": "El emprendimiento sostenible incorpora criterios ambientales y éticos; combinado con el social se denomina emprendimiento con propósito."
+    },
+    {
+      "id": 180,
+      "unit": "UT4",
+      "question": "¿Cómo considera el emprendimiento social a las personas?",
+      "options": [
+        "Como competidores",
+        "Como meros consumidores",
+        "Como protagonistas del cambio: usuarios, beneficiarios o agentes involucrados",
+        "No las tiene en cuenta"
+      ],
+      "correct": "Como protagonistas del cambio: usuarios, beneficiarios o agentes involucrados",
+      "explicacion": "A diferencia de otros enfoques, el emprendimiento social ve a las personas como protagonistas del cambio y co-creadoras, no solo como consumidores."
+    },
+    {
+      "id": 181,
+      "unit": "UT4",
+      "question": "¿Cuál es una característica clave del emprendimiento con propósito?",
+      "options": [
+        "Ignora la viabilidad económica",
+        "Solo busca crecer rápido",
+        "Parte de un problema real y busca un impacto positivo mensurable y duradero",
+        "No involucra a la comunidad"
+      ],
+      "correct": "Parte de un problema real y busca un impacto positivo mensurable y duradero",
+      "explicacion": "Parte de un problema real, busca impacto mensurable y duradero, equilibra sostenibilidad económica e impacto, se basa en valores e involucra a la comunidad."
+    },
+    {
+      "id": 182,
+      "unit": "UT4",
+      "question": "¿Cómo se mide el éxito en el emprendimiento con propósito frente al tradicional?",
+      "options": [
+        "Por la publicidad conseguida",
+        "Por el impacto, la sostenibilidad y una viabilidad económica equilibrada",
+        "Solo por rentabilidad y crecimiento financiero",
+        "Por el número de empleados"
+      ],
+      "correct": "Por el impacto, la sostenibilidad y una viabilidad económica equilibrada",
+      "explicacion": "El tradicional mide el éxito por rentabilidad y crecimiento; el emprendimiento con propósito por impacto, sostenibilidad y viabilidad económica equilibrada."
+    },
+    {
+      "id": 183,
+      "unit": "UT4",
+      "question": "En el intraemprendimiento, ¿cómo es el riesgo económico para la persona?",
+      "options": [
+        "Igual que en el emprendimiento",
+        "Bajo, porque los recursos son de la organización",
+        "Nulo y sin ninguna responsabilidad",
+        "Alto, requiere inversión propia"
+      ],
+      "correct": "Bajo, porque los recursos son de la organización",
+      "explicacion": "En el intraemprendimiento el riesgo económico es bajo porque se usan recursos de la empresa; en el emprendimiento suele requerir inversión propia."
+    },
+    {
+      "id": 184,
+      "unit": "UT4",
+      "question": "¿Qué nivel de autonomía tiene el intraemprendedor frente al emprendedor?",
+      "options": [
+        "Mayor que el emprendedor",
+        "Parcial: debe coordinarse con las estructuras internas",
+        "Total",
+        "Ninguna"
+      ],
+      "correct": "Parcial: debe coordinarse con las estructuras internas",
+      "explicacion": "El emprendedor decide casi todo; el intraemprendedor tiene autonomía parcial y libertad creativa condicionada por la cultura de la organización."
+    },
+    {
+      "id": 185,
+      "unit": "UT4",
+      "question": "¿Qué riesgo de reconocimiento tiene el intraemprendimiento?",
+      "options": [
+        "Está prohibido reconocerlo",
+        "Solo lo reconoce la competencia",
+        "Siempre recibe visibilidad directa",
+        "Puede pasar desapercibido si no se gestiona adecuadamente"
+      ],
+      "correct": "Puede pasar desapercibido si no se gestiona adecuadamente",
+      "explicacion": "A diferencia del emprendedor, que recibe visibilidad directa, el intraemprendedor puede pasar desapercibido si no gestiona su reconocimiento."
+    },
+    {
+      "id": 186,
+      "unit": "UT4",
+      "question": "¿Qué competencia es necesaria para intraemprender?",
+      "options": [
+        "Cumplir órdenes sin cuestionar",
+        "Tolerancia al error y flexibilidad ante los ajustes",
+        "Trabajar siempre solo",
+        "Evitar proponer cambios"
+      ],
+      "correct": "Tolerancia al error y flexibilidad ante los ajustes",
+      "explicacion": "Para intraemprender hacen falta observación crítica, capacidad de comunicar propuestas, disposición a colaborar y liderar el cambio, y tolerancia al error."
+    },
+    {
+      "id": 187,
+      "unit": "UT4",
+      "question": "¿Qué organismo establece en el Manual de Oslo los cuatro tipos principales de innovación?",
+      "options": [
+        "La OCDE",
+        "La ONU",
+        "El SEPE",
+        "La UNESCO"
+      ],
+      "correct": "La OCDE",
+      "explicacion": "Según la OCDE (Manual de Oslo), los tipos de innovación son de producto, de proceso, organizativa y de marketing."
+    },
+    {
+      "id": 188,
+      "unit": "UT4",
+      "question": "La automatización de pedidos en una cadena de suministro con IA para reducir errores es un ejemplo de...",
+      "options": [
+        "Innovación de marketing",
+        "Innovación de producto",
+        "Innovación frugal",
+        "Innovación de proceso"
+      ],
+      "correct": "Innovación de proceso",
+      "explicacion": "La innovación de proceso mejora la producción, logística o distribución para ganar eficiencia, reducir costes o mejorar la calidad."
+    },
+    {
+      "id": 189,
+      "unit": "UT4",
+      "question": "¿Qué tipo de innovación supone nuevas formas de comercialización, diseño, empaquetado o comunicación?",
+      "options": [
+        "De proceso",
+        "De marketing",
+        "Organizativa",
+        "Incremental"
+      ],
+      "correct": "De marketing",
+      "explicacion": "La innovación de marketing introduce nuevas formas de comercializar, diseñar, empaquetar o comunicar el producto."
+    },
+    {
+      "id": 190,
+      "unit": "UT4",
+      "question": "Una empresa que adopta la holocracia, eliminando jerarquías, realiza una innovación...",
+      "options": [
+        "De producto",
+        "Frugal",
+        "De marketing",
+        "Organizativa"
+      ],
+      "correct": "Organizativa",
+      "explicacion": "La holocracia cambia la gestión interna con equipos autogestionados: es innovación organizativa."
+    },
+    {
+      "id": 191,
+      "unit": "UT4",
+      "question": "¿Qué es la innovación incremental?",
+      "options": [
+        "Una solución para contextos sin recursos",
+        "Una mejora progresiva sobre algo ya existente",
+        "Una campaña publicitaria",
+        "Un cambio radical que transforma un sector"
+      ],
+      "correct": "Una mejora progresiva sobre algo ya existente",
+      "explicacion": "La incremental mejora poco a poco algo existente; la disruptiva crea un cambio radical que transforma un sector."
+    },
+    {
+      "id": 192,
+      "unit": "UT4",
+      "question": "¿Qué es la innovación disruptiva?",
+      "options": [
+        "Un cambio de logotipo",
+        "Una mejora en la contabilidad",
+        "Un cambio radical que transforma un sector o lo hace más accesible",
+        "Una mejora mínima"
+      ],
+      "correct": "Un cambio radical que transforma un sector o lo hace más accesible",
+      "explicacion": "La innovación disruptiva provoca un cambio radical que transforma un sector o lo hace accesible a más personas."
+    },
+    {
+      "id": 193,
+      "unit": "UT4",
+      "question": "¿Cuál es la primera clave para aplicar innovación de forma efectiva?",
+      "options": [
+        "Detectar necesidades reales",
+        "Innovar por innovar",
+        "Seguir las modas tecnológicas",
+        "Comprar la tecnología más cara"
+      ],
+      "correct": "Detectar necesidades reales",
+      "explicacion": "Innovar por innovar no tiene sentido: hay que partir de problemas concretos. Las demás claves son implicar a los equipos, usar tecnología adecuada, evaluar el impacto y asegurar escalabilidad."
+    },
+    {
+      "id": 194,
+      "unit": "UT4",
+      "question": "¿Qué ODS refleja especialmente la innovación?",
+      "options": [
+        "ODS 9: Industria, innovación e infraestructuras",
+        "ODS 14: Vida submarina",
+        "ODS 1: Fin de la pobreza",
+        "ODS 16: Paz y justicia"
+      ],
+      "correct": "ODS 9: Industria, innovación e infraestructuras",
+      "explicacion": "La innovación es un pilar de la Agenda 2030, reflejada sobre todo en el ODS 9, y contribuye también a los ODS 8, 10, 12 y 13."
+    },
+    {
+      "id": 195,
+      "unit": "UT4",
+      "question": "¿Qué valor emprendedor consiste en mantener el esfuerzo ante obstáculos o fracasos?",
+      "options": [
+        "Sostenibilidad",
+        "Cooperación",
+        "Perseverancia",
+        "Integridad"
+      ],
+      "correct": "Perseverancia",
+      "explicacion": "Los valores emprendedores son responsabilidad, integridad, perseverancia, compromiso social, sostenibilidad y cooperación."
+    },
+    {
+      "id": 196,
+      "unit": "UT4",
+      "question": "¿Qué actitud emprendedora consiste en aceptar la posibilidad de fallar como parte del aprendizaje?",
+      "options": [
+        "Integridad",
+        "Orientación a objetivos",
+        "Tolerancia al riesgo",
+        "Conformismo"
+      ],
+      "correct": "Tolerancia al riesgo",
+      "explicacion": "Las actitudes emprendedoras son proactividad, creatividad, tolerancia al riesgo, adaptación, orientación a objetivos y capacidad de aprender del error."
+    },
+    {
+      "id": 197,
+      "unit": "UT4",
+      "question": "¿Qué herramienta de autoconocimiento analiza Fortalezas, Oportunidades, Debilidades y Amenazas personales?",
+      "options": [
+        "Canvas de marketing",
+        "FODA personal",
+        "Matriz de Eisenhower",
+        "Pomodoro"
+      ],
+      "correct": "FODA personal",
+      "explicacion": "El FODA personal es una herramienta de autoconocimiento, junto con la línea de vida, los test de competencias, la bitácora reflexiva y el visual thinking."
+    },
+    {
+      "id": 198,
+      "unit": "UT4",
+      "question": "¿Qué herramienta de autoconocimiento consiste en un repaso visual de momentos clave y aprendizajes?",
+      "options": [
+        "Balance de situación",
+        "Matriz CAME",
+        "Diagrama de Gantt",
+        "Línea de vida o trayectoria personal"
+      ],
+      "correct": "Línea de vida o trayectoria personal",
+      "explicacion": "La línea de vida repasa visualmente los momentos clave y aprendizajes de la trayectoria personal."
+    },
+    {
+      "id": 199,
+      "unit": "UT4",
+      "question": "¿Qué organismo estatal facilita préstamos participativos a startups y pymes innovadoras?",
+      "options": [
+        "ENISA",
+        "Erasmus+",
+        "Red Emprendeverde",
+        "INJUVE"
+      ],
+      "correct": "ENISA",
+      "explicacion": "ENISA (Empresa Nacional de Innovación) financia startups y pymes innovadoras con préstamos participativos."
+    },
+    {
+      "id": 200,
+      "unit": "UT4",
+      "question": "¿Qué institución impulsa el emprendimiento verde y sostenible a través de la Fundación Biodiversidad?",
+      "options": [
+        "INJUVE",
+        "Red Emprendeverde (MITECO)",
+        "ENISA",
+        "SEPE"
+      ],
+      "correct": "Red Emprendeverde (MITECO)",
+      "explicacion": "La Red Emprendeverde, de la Fundación Biodiversidad (MITECO), impulsa proyectos de emprendimiento verde."
+    },
+    {
+      "id": 201,
+      "unit": "UT4",
+      "question": "¿Qué programa europeo financia proyectos con impacto verde y digital?",
+      "options": [
+        "Next Generation EU / Plan de Recuperación",
+        "Emprèn",
+        "INJUVE",
+        "GUESSS"
+      ],
+      "correct": "Next Generation EU / Plan de Recuperación",
+      "explicacion": "Next Generation EU, a través del Plan de Recuperación, Transformación y Resiliencia, financia proyectos verdes y digitales."
+    },
+    {
+      "id": 202,
+      "unit": "UT4",
+      "question": "¿Cuál de estos es un ejemplo de apoyo financiero al emprendimiento?",
+      "options": [
+        "Guías de trámites",
+        "Ferias de innovación",
+        "Microcréditos, subvenciones y capital semilla",
+        "Mentores"
+      ],
+      "correct": "Microcréditos, subvenciones y capital semilla",
+      "explicacion": "Tipos de apoyo: formación y acompañamiento (mentores, viveros), financiero (microcréditos, subvenciones, capital semilla), redes, información y espacios."
+    },
+    {
+      "id": 203,
+      "unit": "UT4",
+      "question": "¿Cuándo se aprobaron los ODS y cuántas metas globales proponen?",
+      "options": [
+        "En 2020, 10 objetivos",
+        "En 1992, 21 objetivos",
+        "En 2000, 8 objetivos",
+        "En 2015, 17 objetivos para 2030"
+      ],
+      "correct": "En 2015, 17 objetivos para 2030",
+      "explicacion": "La Asamblea General de la ONU aprobó en 2015 los 17 ODS de la Agenda 2030."
+    },
+    {
+      "id": 204,
+      "unit": "UT4",
+      "question": "¿Qué herramienta evalúa el impacto económico, social y ambiental de un proyecto?",
+      "options": [
+        "Canvas de triple impacto",
+        "Línea de vida",
+        "Matriz de Eisenhower",
+        "Pomodoro"
+      ],
+      "correct": "Canvas de triple impacto",
+      "explicacion": "Para evaluar el impacto sostenible se usan el Canvas de triple impacto, indicadores vinculados a los ODS y memorias de sostenibilidad."
+    },
+    {
+      "id": 205,
+      "unit": "UT5",
+      "question": "¿Cuál es la regla básica del brainstorming?",
+      "options": [
+        "Priorizar la calidad sobre la cantidad",
+        "Elaborar un resumen final",
+        "Criticar las ideas poco realistas",
+        "Generar muchas ideas sin juzgar"
+      ],
+      "correct": "Generar muchas ideas sin juzgar",
+      "explicacion": "La regla básica del brainstorming es generar muchas ideas sin juzgarlas. La evaluación se hace después; criticar en esa fase bloquea la creatividad."
+    },
+    {
+      "id": 206,
+      "unit": "UT5",
+      "question": "¿Qué bloque del Business Model Canvas define el problema que se resuelve?",
+      "options": [
+        "Canales",
+        "Propuesta de valor",
+        "Estructura de costes",
+        "Recursos clave"
+      ],
+      "correct": "Propuesta de valor",
+      "explicacion": "La propuesta de valor define qué problema resuelve o qué necesidad cubre el producto para el cliente y por qué es diferente."
+    },
+    {
+      "id": 207,
+      "unit": "UT5",
+      "question": "¿Qué tipo de observación implica participar activamente en la experiencia del usuario?",
+      "options": [
+        "No participante",
+        "Participante",
+        "Sistemática",
+        "Abierta"
+      ],
+      "correct": "Participante",
+      "explicacion": "En la observación participante, el investigador participa activamente en la experiencia del usuario para comprenderla desde dentro."
+    },
+    {
+      "id": 208,
+      "unit": "UT5",
+      "question": "¿Qué técnica creativa se basa en modificar, combinar o eliminar elementos de una idea?",
+      "options": [
+        "Brainstorming",
+        "SCAMPER",
+        "Analogías",
+        "Mind Mapping"
+      ],
+      "correct": "SCAMPER",
+      "explicacion": "SCAMPER genera ideas transformando una existente: Sustituir, Combinar, Adaptar, Modificar, Poner otros usos, Eliminar y Reordenar."
+    },
+    {
+      "id": 209,
+      "unit": "UT5",
+      "question": "¿Qué fase del Design Thinking busca comprender al usuario y su contexto?",
+      "options": [
+        "Testear",
+        "Idear",
+        "Empatizar",
+        "Prototipar"
+      ],
+      "correct": "Empatizar",
+      "explicacion": "La fase Empatizar del Design Thinking busca comprender a fondo al usuario, sus necesidades y su contexto. Le siguen Definir, Idear, Prototipar y Testear."
+    },
+    {
+      "id": 210,
+      "unit": "UT5",
+      "question": "¿Qué técnica consiste en observar cómo una persona vive una experiencia paso a paso?",
+      "options": [
+        "Análisis DAFO",
+        "Árbol de problemas",
+        "Mapa de empatía",
+        "User Journey Map"
+      ],
+      "correct": "User Journey Map",
+      "explicacion": "El User Journey Map representa paso a paso la experiencia del usuario, con sus puntos de contacto, emociones y problemas."
+    },
+    {
+      "id": 211,
+      "unit": "UT5",
+      "question": "¿Qué se entiende por “producto mínimo viable” (MVP)?",
+      "options": [
+        "Un prototipo funcional para validar una idea",
+        "Un producto completamente acabado",
+        "Un resumen del modelo de negocio",
+        "El producto más caro posible"
+      ],
+      "correct": "Un prototipo funcional para validar una idea",
+      "explicacion": "El MVP (producto mínimo viable) es la versión más simple que permite validar la idea con usuarios reales con poca inversión."
+    },
+    {
+      "id": 212,
+      "unit": "UT5",
+      "question": "¿Qué describe el modelo de negocio?",
+      "options": [
+        "El plan de marketing digital",
+        "Cómo la organización crea, entrega y captura valor",
+        "Solo los ingresos previstos",
+        "El diseño del logotipo y la marca"
+      ],
+      "correct": "Cómo la organización crea, entrega y captura valor",
+      "explicacion": "El modelo de negocio describe cómo una organización crea, entrega y captura valor."
+    },
+    {
+      "id": 213,
+      "unit": "UT5",
+      "question": "¿Cuál es la finalidad principal del análisis temático?",
+      "options": [
+        "Calcular los costes del proyecto",
+        "Diseñar la solución final",
+        "Identificar patrones y categorías en la información obtenida",
+        "Elaborar el plan de comunicación"
+      ],
+      "correct": "Identificar patrones y categorías en la información obtenida",
+      "explicacion": "El análisis temático organiza la información recogida (entrevistas, observación) para identificar patrones y categorías recurrentes."
+    },
+    {
+      "id": 214,
+      "unit": "UT5",
+      "question": "¿Qué metodología parte del problema como motor de innovación?",
+      "options": [
+        "Scrum",
+        "Design Thinking",
+        "Marketing mix",
+        "Benchmarking"
+      ],
+      "correct": "Design Thinking",
+      "explicacion": "El Design Thinking parte de un problema real del usuario como motor de la innovación y lo resuelve de forma iterativa y centrada en las personas."
+    },
+    {
+      "id": 215,
+      "unit": "UT5",
+      "question": "¿Qué indica una validación efectiva del problema-solución?",
+      "options": [
+        "Dificultades para aplicar el prototipo",
+        "Interés real, aportes y disposición a probar la solución",
+        "Falta de interés por parte de los usuarios",
+        "Respuestas ambiguas y evasivas"
+      ],
+      "correct": "Interés real, aportes y disposición a probar la solución",
+      "explicacion": "La validación funciona cuando los usuarios muestran interés real, hacen aportaciones y están dispuestos a probar la solución."
+    },
+    {
+      "id": 216,
+      "unit": "UT5",
+      "question": "¿Cuál es el primer paso para detectar oportunidades de emprendimiento?",
+      "options": [
+        "Analizar el entorno y los problemas reales",
+        "Definir la identidad visual",
+        "Crear una idea original",
+        "Diseñar un plan financiero"
+      ],
+      "correct": "Analizar el entorno y los problemas reales",
+      "explicacion": "Para detectar oportunidades, primero se analiza el entorno y se identifican problemas o necesidades reales."
+    },
+    {
+      "id": 217,
+      "unit": "UT5",
+      "question": "¿Qué tipo de necesidad está relacionada con la autoestima y la pertenencia?",
+      "options": [
+        "Emocional",
+        "Básica",
+        "Latente",
+        "Funcional"
+      ],
+      "correct": "Emocional",
+      "explicacion": "Las necesidades emocionales tienen que ver con la autoestima, la pertenencia y el reconocimiento, a diferencia de las básicas o funcionales."
+    },
+    {
+      "id": 218,
+      "unit": "UT5",
+      "question": "¿Qué herramienta evalúa los resultados éticos, sociales y medioambientales de una organización?",
+      "options": [
+        "Plan de marketing",
+        "Lean Canvas",
+        "Balance social",
+        "Canvas financiero"
+      ],
+      "correct": "Balance social",
+      "explicacion": "El balance social evalúa y comunica el impacto ético, social y medioambiental de una organización, no solo sus resultados económicos."
+    },
+    {
+      "id": 219,
+      "unit": "UT5",
+      "question": "¿Qué herramienta permite seleccionar ideas según su impacto y facilidad de aplicación?",
+      "options": [
+        "Matriz CAME",
+        "Matriz impacto-esfuerzo",
+        "FODA",
+        "Método MoSCoW"
+      ],
+      "correct": "Matriz impacto-esfuerzo",
+      "explicacion": "La matriz impacto-esfuerzo cruza el impacto de cada idea con la facilidad de aplicarla para priorizar. Las de alto impacto y poco esfuerzo son las victorias rápidas."
+    },
+    {
+      "id": 220,
+      "unit": "UT5",
+      "question": "¿Qué se recomienda hacer antes de ofrecer soluciones a los usuarios?",
+      "options": [
+        "Realizar entrevistas de problema",
+        "Crear una campaña de marketing",
+        "Analizar los costes del proyecto",
+        "Probar prototipos"
+      ],
+      "correct": "Realizar entrevistas de problema",
+      "explicacion": "Antes de proponer soluciones conviene hacer entrevistas de problema, para confirmar que el problema existe y entenderlo bien."
+    },
+    {
+      "id": 221,
+      "unit": "UT5",
+      "question": "¿Qué objetivo tiene el marketing inicial en un proyecto emprendedor?",
+      "options": [
+        "Vender grandes volúmenes de producto",
+        "Validar la propuesta y observar reacciones del público",
+        "Desarrollar campañas publicitarias complejas",
+        "Contratar influencers"
+      ],
+      "correct": "Validar la propuesta y observar reacciones del público",
+      "explicacion": "El marketing inicial busca validar la propuesta: comprobar cómo reacciona el público antes de invertir a gran escala."
+    },
+    {
+      "id": 222,
+      "unit": "UT5",
+      "question": "¿Qué cualidad del pensamiento creativo implica generar muchas ideas en poco tiempo?",
+      "options": [
+        "Fluidez",
+        "Flexibilidad",
+        "Elaboración",
+        "Originalidad"
+      ],
+      "correct": "Fluidez",
+      "explicacion": "La fluidez es generar muchas ideas en poco tiempo. La flexibilidad es variar de enfoque y la originalidad producir ideas poco comunes."
+    },
+    {
+      "id": 223,
+      "unit": "UT5",
+      "question": "¿Qué principio debe guiar toda comunicación en el emprendimiento responsable?",
+      "options": [
+        "Impacto emocional",
+        "Coherencia ética y respeto a las personas",
+        "Competitividad",
+        "Originalidad extrema"
+      ],
+      "correct": "Coherencia ética y respeto a las personas",
+      "explicacion": "En el emprendimiento responsable, la comunicación debe guiarse por la coherencia ética y el respeto a las personas: ser veraz y no manipular."
+    },
+    {
+      "id": 224,
+      "unit": "UT5",
+      "question": "¿Qué metodología promueve el ciclo “construir–medir–aprender”?",
+      "options": [
+        "Lean Startup",
+        "Design Thinking",
+        "Scrum",
+        "Canvas Ético"
+      ],
+      "correct": "Lean Startup",
+      "explicacion": "Lean Startup propone el ciclo construir-medir-aprender: lanzar un MVP, medir la respuesta y aprender para iterar o pivotar."
+    },
+    {
+      "id": 225,
+      "unit": "UT5",
+      "question": "¿Qué son las necesidades latentes?",
+      "options": [
+        "Las ligadas a tareas concretas",
+        "Las que ya están cubiertas",
+        "Las relacionadas con la supervivencia",
+        "Las no expresadas por los usuarios pero detectadas a través de su comportamiento o contexto"
+      ],
+      "correct": "Las no expresadas por los usuarios pero detectadas a través de su comportamiento o contexto",
+      "explicacion": "Tipos de necesidades: básicas (supervivencia), funcionales (tareas concretas), emocionales (autoestima, pertenencia) y latentes (no expresadas, detectadas por comportamiento o contexto)."
+    },
+    {
+      "id": 226,
+      "unit": "UT5",
+      "question": "¿Qué tipo de necesidad está ligada al cumplimiento de tareas concretas, como el acceso a servicios o transporte?",
+      "options": [
+        "Emocional",
+        "Funcional",
+        "Latente",
+        "Básica"
+      ],
+      "correct": "Funcional",
+      "explicacion": "Las necesidades funcionales se refieren a cumplir tareas concretas: acceso a servicios, transporte o herramientas."
+    },
+    {
+      "id": 227,
+      "unit": "UT5",
+      "question": "¿Qué aporta el mapeo de actores (stakeholders) en la detección de necesidades?",
+      "options": [
+        "La lista de competidores",
+        "El precio del producto",
+        "El diseño del logotipo",
+        "Una visión holística que identifica a todos los afectados y previene sesgos"
+      ],
+      "correct": "Una visión holística que identifica a todos los afectados y previene sesgos",
+      "explicacion": "El mapeo de actores identifica a todos los perfiles afectados (usuarios, familias, profesionales, entorno) y aporta una visión holística."
+    },
+    {
+      "id": 228,
+      "unit": "UT5",
+      "question": "¿En qué consiste la técnica de autoobservación o inmersión?",
+      "options": [
+        "En hacer una encuesta cerrada",
+        "En que el emprendedor se ponga en la piel del usuario y viva la experiencia",
+        "En copiar a la competencia",
+        "En leer estadísticas"
+      ],
+      "correct": "En que el emprendedor se ponga en la piel del usuario y viva la experiencia",
+      "explicacion": "La inmersión, inspirada en la etnografía, consiste en experimentar la situación del usuario para despertar empatía y detectar detalles."
+    },
+    {
+      "id": 229,
+      "unit": "UT5",
+      "question": "¿Cuál es un indicador de una buena necesidad detectada?",
+      "options": [
+        "Que sea una especulación",
+        "Que esté ya bien cubierta por otras soluciones",
+        "Que afecte a un colectivo real y concreto y no esté adecuadamente cubierta",
+        "Que nadie quiera una solución"
+      ],
+      "correct": "Que afecte a un colectivo real y concreto y no esté adecuadamente cubierta",
+      "explicacion": "Una buena necesidad afecta a un colectivo real, es relevante, no está bien cubierta y puede abordarse de forma innovadora, sostenible y ética."
+    },
+    {
+      "id": 230,
+      "unit": "UT5",
+      "question": "¿Qué tipo de preguntas deben usarse en una entrevista de problema?",
+      "options": [
+        "Cerradas de sí o no",
+        "Sobre la solución que queremos vender",
+        "Que induzcan la respuesta",
+        "Abiertas, centradas en la experiencia y no en la opinión"
+      ],
+      "correct": "Abiertas, centradas en la experiencia y no en la opinión",
+      "explicacion": "La guía debe tener preguntas abiertas sobre experiencias reales, evitando inducir respuestas o hablar de soluciones aún no desarrolladas."
+    },
+    {
+      "id": 231,
+      "unit": "UT5",
+      "question": "¿Qué tipo de observación se basa en una plantilla previamente definida con indicadores concretos?",
+      "options": [
+        "Observación participante",
+        "Observación sistemática",
+        "Observación no participante",
+        "Observación abierta"
+      ],
+      "correct": "Observación sistemática",
+      "explicacion": "La observación sistemática usa una plantilla o cuadrícula previa; la abierta no tiene filtro y registra impresiones espontáneas."
+    },
+    {
+      "id": 232,
+      "unit": "UT5",
+      "question": "¿Qué caracteriza a la observación no participante?",
+      "options": [
+        "El observador simula ser usuario",
+        "Se hace solo con encuestas",
+        "No se registra nada",
+        "El observador se mantiene externo registrando comportamientos"
+      ],
+      "correct": "El observador se mantiene externo registrando comportamientos",
+      "explicacion": "En la observación no participante el observador permanece externo y registra comportamientos, interacciones, tiempos de espera o usos del espacio."
+    },
+    {
+      "id": 233,
+      "unit": "UT5",
+      "question": "¿Por qué la observación complementa a las entrevistas?",
+      "options": [
+        "Porque no requiere análisis",
+        "Porque lo que las personas dicen no siempre coincide con lo que hacen",
+        "Porque sustituye totalmente a las entrevistas",
+        "Porque es más barata"
+      ],
+      "correct": "Porque lo que las personas dicen no siempre coincide con lo que hacen",
+      "explicacion": "La observación aporta datos conductuales y permite detectar incoherencias entre lo que se dice y lo que se hace, y necesidades no verbalizadas."
+    },
+    {
+      "id": 234,
+      "unit": "UT5",
+      "question": "¿Qué cualidad del pensamiento creativo consiste en desarrollar ideas hasta convertirlas en propuestas consistentes?",
+      "options": [
+        "Originalidad",
+        "Fluidez",
+        "Elaboración",
+        "Flexibilidad"
+      ],
+      "correct": "Elaboración",
+      "explicacion": "El pensamiento creativo combina originalidad (ideas nuevas), fluidez (muchas ideas), flexibilidad (cambiar de perspectiva) y elaboración (desarrollarlas)."
+    },
+    {
+      "id": 235,
+      "unit": "UT5",
+      "question": "¿Cuál es un bloqueo común de la creatividad?",
+      "options": [
+        "La confianza",
+        "La autocrítica temprana",
+        "El trabajo en equipo",
+        "La diversidad de perspectivas"
+      ],
+      "correct": "La autocrítica temprana",
+      "explicacion": "Los bloqueos comunes son el miedo al error, la autocrítica temprana y el conformismo."
+    },
+    {
+      "id": 236,
+      "unit": "UT5",
+      "question": "¿Qué herramientas digitales se citan para crear mapas mentales?",
+      "options": [
+        "Excel y Word",
+        "Trello y Slack",
+        "MindMeister y XMind",
+        "Canva y Photoshop"
+      ],
+      "correct": "MindMeister y XMind",
+      "explicacion": "El mapa mental explora ideas alrededor de un concepto central; MindMeister y XMind son herramientas digitales para hacerlo."
+    },
+    {
+      "id": 237,
+      "unit": "UT5",
+      "question": "¿En qué consiste la técnica de las analogías?",
+      "options": [
+        "Hacer una encuesta",
+        "Copiar la solución de la competencia",
+        "Escribir sin parar",
+        "Pensar cómo se resolvería el problema en otro ámbito, como la naturaleza o el arte"
+      ],
+      "correct": "Pensar cómo se resolvería el problema en otro ámbito, como la naturaleza o el arte",
+      "explicacion": "Las analogías trasladan soluciones de otros ámbitos; por ejemplo, ver cómo las hormigas transportan alimentos para inspirar un servicio de mensajería."
+    },
+    {
+      "id": 238,
+      "unit": "UT5",
+      "question": "¿Qué es el brainwriting?",
+      "options": [
+        "Una forma de financiación",
+        "Un tipo de prototipo",
+        "Una variante escrita del brainstorming en la que cada persona escribe ideas y las pasa a otra",
+        "Un test psicotécnico"
+      ],
+      "correct": "Una variante escrita del brainstorming en la que cada persona escribe ideas y las pasa a otra",
+      "explicacion": "En el brainwriting cada persona escribe tres ideas y las pasa a otra, que las mejora; favorece la participación de personas introvertidas."
+    },
+    {
+      "id": 239,
+      "unit": "UT5",
+      "question": "En los Seis sombreros para pensar de Edward de Bono, ¿qué representa el sombrero negro?",
+      "options": [
+        "Los datos objetivos",
+        "Las emociones",
+        "Los riesgos",
+        "La creatividad"
+      ],
+      "correct": "Los riesgos",
+      "explicacion": "Blanco: datos; rojo: emociones; negro: riesgos; amarillo: beneficios; verde: creatividad; azul: gestión del proceso."
+    },
+    {
+      "id": 240,
+      "unit": "UT5",
+      "question": "¿En qué consiste la técnica World Café?",
+      "options": [
+        "Mesas temáticas donde pequeños grupos reflexionan y luego cambian de mesa para cruzar ideas",
+        "Un tipo de entrevista individual",
+        "Una reunión con café",
+        "Un canal de marketing"
+      ],
+      "correct": "Mesas temáticas donde pequeños grupos reflexionan y luego cambian de mesa para cruzar ideas",
+      "explicacion": "En el World Café los participantes rotan entre mesas temáticas, lo que permite cruzar ideas y cocrear soluciones complejas."
+    },
+    {
+      "id": 241,
+      "unit": "UT5",
+      "question": "¿Qué clave fomenta la creatividad en grupo?",
+      "options": [
+        "Crear un clima de confianza y aceptar todo tipo de ideas en la fase inicial",
+        "No registrar las ideas",
+        "Dejar que una persona monopolice",
+        "Rechazar las ideas absurdas desde el principio"
+      ],
+      "correct": "Crear un clima de confianza y aceptar todo tipo de ideas en la fase inicial",
+      "explicacion": "Claves: confianza y seguridad psicológica, aceptar todas las ideas al inicio, evitar monopolios, visualizar y registrar ideas y alternar trabajo individual y grupal."
+    },
+    {
+      "id": 242,
+      "unit": "UT5",
+      "question": "¿Qué dimensión del valor añadido implica que la solución llegue a colectivos vulnerables o excluidos?",
+      "options": [
+        "Sostenibilidad",
+        "Accesibilidad",
+        "Funcionalidad",
+        "Significado"
+      ],
+      "correct": "Accesibilidad",
+      "explicacion": "El valor añadido puede ser de funcionalidad, accesibilidad (llegar a colectivos vulnerables), sostenibilidad, equidad o significado."
+    },
+    {
+      "id": 243,
+      "unit": "UT5",
+      "question": "¿Cómo clasifica el método MoSCoW las funcionalidades?",
+      "options": [
+        "Mucho, Suficiente, Poco y Nada",
+        "Mínimo, Óptimo, Superior y Completo",
+        "Mercado, Oferta, Coste y Valor",
+        "Must, Should, Could y Won't"
+      ],
+      "correct": "Must, Should, Could y Won't",
+      "explicacion": "MoSCoW clasifica en Must (imprescindibles), Should (deseables), Could (opcionales) y Won't (no necesarias por ahora)."
+    },
+    {
+      "id": 244,
+      "unit": "UT5",
+      "question": "¿Qué significan las siglas de la matriz CAME?",
+      "options": [
+        "Corregir, Afrontar, Mantener, Explotar",
+        "Cliente, Acción, Mercado, Empresa",
+        "Coste, Ahorro, Margen, Esfuerzo",
+        "Crear, Analizar, Medir, Evaluar"
+      ],
+      "correct": "Corregir, Afrontar, Mantener, Explotar",
+      "explicacion": "La matriz CAME (Corregir, Afrontar, Mantener, Explotar) se usa para valorar fortalezas y debilidades de una idea en su contexto."
+    },
+    {
+      "id": 245,
+      "unit": "UT5",
+      "question": "¿En qué consiste la evaluación por criterios ponderados?",
+      "options": [
+        "Definir criterios clave, asignarles un peso y puntuar las ideas",
+        "Elegir la idea al azar",
+        "Votar sin criterios",
+        "Elegir la idea más barata siempre"
+      ],
+      "correct": "Definir criterios clave, asignarles un peso y puntuar las ideas",
+      "explicacion": "Se definen criterios (impacto social, coste, innovación, alineación con ODS...), se les asigna un peso y se elige la idea mejor puntuada."
+    },
+    {
+      "id": 246,
+      "unit": "UT5",
+      "question": "¿Quién desarrolló el Business Model Canvas y cuántos bloques tiene?",
+      "options": [
+        "Eric Ries, 5 bloques",
+        "Alexander Osterwalder, 9 bloques",
+        "Daniel Goleman, 4 bloques",
+        "Edward de Bono, 6 bloques"
+      ],
+      "correct": "Alexander Osterwalder, 9 bloques",
+      "explicacion": "El Business Model Canvas, de Alexander Osterwalder, divide el modelo de negocio en 9 bloques."
+    },
+    {
+      "id": 247,
+      "unit": "UT5",
+      "question": "¿Qué bloque del Business Model Canvas responde a «¿con quién necesitarás colaborar?»?",
+      "options": [
+        "Fuentes de ingresos",
+        "Segmentos de clientes",
+        "Socios clave",
+        "Canales"
+      ],
+      "correct": "Socios clave",
+      "explicacion": "Socios clave recoge proveedores, aliados, instituciones y redes con quienes se colabora."
+    },
+    {
+      "id": 248,
+      "unit": "UT5",
+      "question": "¿Qué bloque del Canvas define por qué vías llega la propuesta al cliente?",
+      "options": [
+        "Estructura de costes",
+        "Actividades clave",
+        "Canales",
+        "Recursos clave"
+      ],
+      "correct": "Canales",
+      "explicacion": "El bloque de canales define cómo conocerán, comprarán o usarán el producto o servicio los clientes."
+    },
+    {
+      "id": 249,
+      "unit": "UT5",
+      "question": "¿Qué adaptación del Canvas está centrada en startups ágiles?",
+      "options": [
+        "Canvas de marketing",
+        "Lean Canvas",
+        "Canvas financiero",
+        "Mapa de empatía"
+      ],
+      "correct": "Lean Canvas",
+      "explicacion": "El Lean Canvas está pensado para startups ágiles; el Social Business Canvas adapta el modelo a iniciativas no lucrativas."
+    },
+    {
+      "id": 250,
+      "unit": "UT5",
+      "question": "¿Qué red española ha desarrollado el Balance Social de la Economía Social y Solidaria?",
+      "options": [
+        "ENISA",
+        "REAS (Red de Economía Alternativa y Solidaria)",
+        "SEPE",
+        "INJUVE"
+      ],
+      "correct": "REAS (Red de Economía Alternativa y Solidaria)",
+      "explicacion": "REAS ha desarrollado una herramienta accesible de Balance Social que puede adaptarse a proyectos educativos o incipientes."
+    },
+    {
+      "id": 251,
+      "unit": "UT5",
+      "question": "¿Qué herramienta contrasta los valores declarados del proyecto con las decisiones reales que se toman?",
+      "options": [
+        "Pomodoro",
+        "Matriz de Eisenhower",
+        "Landing page",
+        "Cuadro de coherencia valorativa"
+      ],
+      "correct": "Cuadro de coherencia valorativa",
+      "explicacion": "El cuadro de coherencia valorativa compara valores declarados y decisiones reales; por ejemplo, si se declara la accesibilidad, ¿el producto está adaptado?"
+    },
+    {
+      "id": 252,
+      "unit": "UT5",
+      "question": "¿Qué es el Canvas Ético (Ethical Business Model Canvas)?",
+      "options": [
+        "Una técnica de priorizar tareas",
+        "Un tipo de prototipo físico",
+        "Un registro contable",
+        "Una adaptación del BMC que incorpora equidad, sostenibilidad, transparencia e inclusión"
+      ],
+      "correct": "Una adaptación del BMC que incorpora equidad, sostenibilidad, transparencia e inclusión",
+      "explicacion": "El Canvas Ético reformula cada bloque del modelo de negocio desde una mirada ética."
+    },
+    {
+      "id": 253,
+      "unit": "UT5",
+      "question": "¿Cuál es la segunda fase del Design Thinking, tras empatizar?",
+      "options": [
+        "Definir",
+        "Testear",
+        "Medir",
+        "Prototipar"
+      ],
+      "correct": "Definir",
+      "explicacion": "Las cinco fases del Design Thinking son empatizar, definir, idear, prototipar y testear."
+    },
+    {
+      "id": 254,
+      "unit": "UT5",
+      "question": "¿Quién propuso la metodología Lean Startup?",
+      "options": [
+        "Edward de Bono",
+        "Alexander Osterwalder",
+        "Bruce Tuckman",
+        "Eric Ries"
+      ],
+      "correct": "Eric Ries",
+      "explicacion": "Eric Ries propuso Lean Startup, con su ciclo construir-medir-aprender basado en un producto mínimo viable."
+    },
+    {
+      "id": 255,
+      "unit": "UT5",
+      "question": "En la fase «aprender» de Lean Startup, ¿qué se decide?",
+      "options": [
+        "Si perseverar, modificar o abandonar la idea",
+        "El color del logotipo",
+        "La ubicación de la oficina",
+        "El salario del equipo"
+      ],
+      "correct": "Si perseverar, modificar o abandonar la idea",
+      "explicacion": "Tras medir cómo interactúan los usuarios con el MVP, se extraen conclusiones y se decide perseverar, modificar (pivotar) o abandonar."
+    },
+    {
+      "id": 256,
+      "unit": "UT5",
+      "question": "¿Cuál es el objetivo de un prototipo?",
+      "options": [
+        "Sustituir al modelo de negocio",
+        "Ser el producto final",
+        "Entender cómo reacciona el usuario y fallar rápido, barato y con sentido",
+        "Impresionar a los inversores"
+      ],
+      "correct": "Entender cómo reacciona el usuario y fallar rápido, barato y con sentido",
+      "explicacion": "El prototipo es una representación preliminar e incompleta para comprobar la utilidad de la idea y recoger mejoras, no para impresionar."
+    },
+    {
+      "id": 257,
+      "unit": "UT5",
+      "question": "Un vídeo explicativo o un guion de interacción son ejemplos de prototipo...",
+      "options": [
+        "Digital",
+        "Físico",
+        "Financiero",
+        "Simulado"
+      ],
+      "correct": "Simulado",
+      "explicacion": "Los prototipos pueden ser físicos (maquetas), digitales (esquemas de app), simulados (vídeos, storytelling) o mixtos."
+    },
+    {
+      "id": 258,
+      "unit": "UT5",
+      "question": "¿Cómo se denomina el encaje entre un problema real y una solución adecuada?",
+      "options": [
+        "Product-market fit",
+        "Problem-solution fit",
+        "Elevator pitch",
+        "Break-even"
+      ],
+      "correct": "Problem-solution fit",
+      "explicacion": "El encaje problema-solución (problem-solution fit) es el primer paso antes de pensar en la viabilidad comercial o escalar."
+    },
+    {
+      "id": 259,
+      "unit": "UT5",
+      "question": "¿Qué forma de validación simula un producto que aún no existe para medir el interés?",
+      "options": [
+        "Landing page o página de prueba",
+        "Análisis temático",
+        "Entrevista de problema",
+        "Mapa de actores"
+      ],
+      "correct": "Landing page o página de prueba",
+      "explicacion": "Una landing page simula el producto y mide el interés mediante clics, formularios o visitas."
+    },
+    {
+      "id": 260,
+      "unit": "UT5",
+      "question": "¿Qué indica una reacción tibia o evasiva de los usuarios durante la validación?",
+      "options": [
+        "Que el producto está terminado",
+        "Que hay que subir el precio",
+        "Falta de interés real",
+        "Gran interés"
+      ],
+      "correct": "Falta de interés real",
+      "explicacion": "Las expresiones como «lo necesito» o la disposición a probar o pagar indican validación; una reacción tibia o evasiva indica falta de interés."
+    },
+    {
+      "id": 261,
+      "unit": "UT5",
+      "question": "¿Qué es un elevator pitch?",
+      "options": [
+        "Un informe anual",
+        "Un plan financiero de 50 páginas",
+        "Un discurso breve y persuasivo que explica el proyecto en menos de 1 minuto",
+        "Un tipo de ascensor"
+      ],
+      "correct": "Un discurso breve y persuasivo que explica el proyecto en menos de 1 minuto",
+      "explicacion": "El elevator pitch es un recurso de marketing inicial: explicar el proyecto de forma persuasiva en menos de un minuto."
+    },
+    {
+      "id": 262,
+      "unit": "UT5",
+      "question": "¿Cuál es una función del marketing orientado a validación?",
+      "options": [
+        "Lanzar grandes campañas",
+        "Vender grandes volúmenes",
+        "Contratar influencers caros",
+        "Testar mensajes para comprobar qué forma de explicar el valor conecta mejor"
+      ],
+      "correct": "Testar mensajes para comprobar qué forma de explicar el valor conecta mejor",
+      "explicacion": "El marketing inicial sirve para testar mensajes, observar reacciones y atraer a las primeras personas usuarias."
+    },
+    {
+      "id": 263,
+      "unit": "UT5",
+      "question": "¿En qué se basa el marketing responsable?",
+      "options": [
+        "En ocultar información",
+        "En exagerar los beneficios",
+        "En manipular emociones",
+        "En la veracidad, el respeto a la privacidad, la inclusividad y la coherencia con los valores"
+      ],
+      "correct": "En la veracidad, el respeto a la privacidad, la inclusividad y la coherencia con los valores",
+      "explicacion": "El marketing responsable no manipula ni exagera: se basa en veracidad, privacidad, inclusividad y coherencia con los valores del proyecto."
+    },
+    {
+      "id": 264,
+      "unit": "UT6",
+      "question": "¿Qué significa co-diseño en el contexto de proyectos sociales?",
+      "options": [
+        "Un procedimiento legal de constitución de empresas.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Una metodología de inversión financiera especulativa.",
+        "Participación activa de las personas destinatarias."
+      ],
+      "correct": "Participación activa de las personas destinatarias.",
+      "explicacion": "El co-diseño hace participar activamente a las personas destinatarias en el diseño del proyecto, para que responda a sus necesidades reales."
+    },
+    {
+      "id": 265,
+      "unit": "UT6",
+      "question": "¿Qué debe contener una presentación profesional del proyecto?",
+      "options": [
+        "Un procedimiento legal de constitución de empresas.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Una metodología de inversión financiera especulativa.",
+        "Claridad, estructura, coherencia y lenguaje adaptado."
+      ],
+      "correct": "Claridad, estructura, coherencia y lenguaje adaptado.",
+      "explicacion": "Una presentación profesional debe ser clara, estructurada, coherente y usar un lenguaje adaptado al público."
+    },
+    {
+      "id": 266,
+      "unit": "UT6",
+      "question": "¿Qué herramienta sirve para analizar fortalezas y amenazas?",
+      "options": [
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una herramienta de medición de impacto fiscal.",
+        "La matriz DAFO."
+      ],
+      "correct": "La matriz DAFO.",
+      "explicacion": "La matriz DAFO analiza Debilidades y Fortalezas (internas) y Amenazas y Oportunidades (externas)."
+    },
+    {
+      "id": 267,
+      "unit": "UT6",
+      "question": "¿Qué caracteriza a un objetivo SMART?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una metodología de inversión financiera especulativa.",
+        "Específico, medible, alcanzable, relevante y temporal."
+      ],
+      "correct": "Específico, medible, alcanzable, relevante y temporal.",
+      "explicacion": "Un objetivo SMART es Specific (específico), Measurable (medible), Achievable (alcanzable), Relevant (relevante) y Time-bound (con plazo)."
+    },
+    {
+      "id": 268,
+      "unit": "UT6",
+      "question": "¿Qué rol cumple la comunidad en un proyecto ecosocial?",
+      "options": [
+        "Colabora, aporta visión y ayuda a la sostenibilidad.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Colabora, aporta visión y ayuda a la sostenibilidad.",
+      "explicacion": "En un proyecto ecosocial, la comunidad colabora, aporta su visión y su implicación ayuda a que el proyecto sea sostenible."
+    },
+    {
+      "id": 269,
+      "unit": "UT6",
+      "question": "¿Qué es un pitch?",
+      "options": [
+        "Una metodología de inversión financiera especulativa.",
+        "Una presentación breve y persuasiva del proyecto.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Una presentación breve y persuasiva del proyecto.",
+      "explicacion": "Un pitch es una presentación breve y persuasiva del proyecto, pensada para captar el interés de inversores, socios o clientes en pocos minutos."
+    },
+    {
+      "id": 270,
+      "unit": "UT6",
+      "question": "¿Qué ventaja tiene presentar un proyecto con una infografía?",
+      "options": [
+        "Facilita la comprensión visual y síntesis del contenido.",
+        "Una metodología de inversión financiera especulativa.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Facilita la comprensión visual y síntesis del contenido.",
+      "explicacion": "La infografía sintetiza el contenido de forma visual y facilita entenderlo y recordarlo."
+    },
+    {
+      "id": 271,
+      "unit": "UT6",
+      "question": "¿Qué significa impacto social en un proyecto?",
+      "options": [
+        "La mejora concreta en la vida de personas o colectivos.",
+        "Una metodología de inversión financiera especulativa.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "La mejora concreta en la vida de personas o colectivos.",
+      "explicacion": "El impacto social es la mejora concreta que el proyecto produce en la vida de personas o colectivos."
+    },
+    {
+      "id": 272,
+      "unit": "UT6",
+      "question": "¿Cuál es una característica clave de la innovación responsable?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Anticipar el impacto social y ambiental de la propuesta."
+      ],
+      "correct": "Anticipar el impacto social y ambiental de la propuesta.",
+      "explicacion": "La innovación responsable anticipa y evalúa el impacto social y ambiental de la propuesta desde el diseño."
+    },
+    {
+      "id": 273,
+      "unit": "UT6",
+      "question": "¿Qué finalidad tiene el feedback en el desarrollo de un proyecto?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una metodología de inversión financiera especulativa.",
+        "Detectar mejoras posibles para reformular la propuesta."
+      ],
+      "correct": "Detectar mejoras posibles para reformular la propuesta.",
+      "explicacion": "El feedback sirve para detectar mejoras y reformular la propuesta antes de seguir avanzando."
+    },
+    {
+      "id": 274,
+      "unit": "UT6",
+      "question": "¿Qué tipo de indicador mide el impacto ambiental?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Cantidad de residuos evitados o reciclados.",
+        "Una metodología de inversión financiera especulativa."
+      ],
+      "correct": "Cantidad de residuos evitados o reciclados.",
+      "explicacion": "Un indicador de impacto ambiental mide efectos sobre el entorno, como la cantidad de residuos evitados o reciclados."
+    },
+    {
+      "id": 275,
+      "unit": "UT6",
+      "question": "¿Qué representa la visión en un proyecto emprendedor?",
+      "options": [
+        "Una proyección de futuro deseado si el proyecto tiene éxito.",
+        "Una metodología de inversión financiera especulativa.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Una proyección de futuro deseado si el proyecto tiene éxito.",
+      "explicacion": "La visión es la imagen del futuro deseado que el proyecto quiere alcanzar si tiene éxito."
+    },
+    {
+      "id": 276,
+      "unit": "UT6",
+      "question": "¿Qué debe incluir un buen plan de acción?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Tareas ordenadas, responsables, tiempos y recursos.",
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Tareas ordenadas, responsables, tiempos y recursos.",
+      "explicacion": "Un buen plan de acción detalla las tareas ordenadas, sus responsables, los plazos y los recursos necesarios."
+    },
+    {
+      "id": 277,
+      "unit": "UT6",
+      "question": "¿Cuál es el objetivo del prototipado en un proyecto?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "Crear una versión inicial para validar la solución.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una metodología de inversión financiera especulativa."
+      ],
+      "correct": "Crear una versión inicial para validar la solución.",
+      "explicacion": "El prototipado crea una versión inicial y sencilla de la solución para probarla con usuarios y validarla antes de desarrollarla del todo."
+    },
+    {
+      "id": 278,
+      "unit": "UT6",
+      "question": "¿Cuál de las siguientes opciones representa una fuente de financiación ética?",
+      "options": [
+        "Crowdfunding solidario en plataformas sociales.",
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una herramienta de medición de impacto fiscal."
+      ],
+      "correct": "Crowdfunding solidario en plataformas sociales.",
+      "explicacion": "El crowdfunding solidario, la financiación colectiva en plataformas sociales, es una fuente de financiación ética y participativa."
+    },
+    {
+      "id": 279,
+      "unit": "UT6",
+      "question": "¿Qué define mejor la misión de un proyecto?",
+      "options": [
+        "Una metodología de inversión financiera especulativa.",
+        "Una herramienta de medición de impacto fiscal.",
+        "El propósito esencial del proyecto y a quién va dirigido.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "El propósito esencial del proyecto y a quién va dirigido.",
+      "explicacion": "La misión define el propósito esencial del proyecto: qué hace, para quién y por qué."
+    },
+    {
+      "id": 280,
+      "unit": "UT6",
+      "question": "¿Qué representa un agente implicado en un proyecto?",
+      "options": [
+        "Una persona, colectivo o entidad que participa o se ve afectada.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas.",
+        "Una metodología de inversión financiera especulativa."
+      ],
+      "correct": "Una persona, colectivo o entidad que participa o se ve afectada.",
+      "explicacion": "Un agente implicado (stakeholder) es cualquier persona, colectivo o entidad que participa en el proyecto o se ve afectado por él."
+    },
+    {
+      "id": 281,
+      "unit": "UT6",
+      "question": "¿Qué representa el equilibrio entre ingresos y gastos en un proyecto?",
+      "options": [
+        "Una herramienta de medición de impacto fiscal.",
+        "El punto de equilibrio financiero.",
+        "Una metodología de inversión financiera especulativa.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "El punto de equilibrio financiero.",
+      "explicacion": "El punto de equilibrio es el nivel de actividad en el que los ingresos igualan a los gastos: no hay ni pérdidas ni beneficios."
+    },
+    {
+      "id": 282,
+      "unit": "UT6",
+      "question": "¿Qué se entiende por sostenibilidad económica?",
+      "options": [
+        "Poder sostener el proyecto sin depender exclusivamente de ayudas externas.",
+        "Una metodología de inversión financiera especulativa.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Un procedimiento legal de constitución de empresas."
+      ],
+      "correct": "Poder sostener el proyecto sin depender exclusivamente de ayudas externas.",
+      "explicacion": "La sostenibilidad económica es que el proyecto pueda mantenerse con sus propios ingresos, sin depender solo de ayudas externas."
+    },
+    {
+      "id": 283,
+      "unit": "UT6",
+      "question": "¿Cuál de los siguientes es un ejemplo de economía circular?",
+      "options": [
+        "Un procedimiento legal de constitución de empresas.",
+        "Reutilizar materiales para nuevos usos.",
+        "Una herramienta de medición de impacto fiscal.",
+        "Una metodología de inversión financiera especulativa."
+      ],
+      "correct": "Reutilizar materiales para nuevos usos.",
+      "explicacion": "La economía circular mantiene los recursos en uso el mayor tiempo posible: reutilizar, reparar y reciclar materiales en lugar de desecharlos."
+    },
+    {
+      "id": 284,
+      "unit": "UT6",
+      "question": "¿Qué caracteriza a la finalidad transformadora de un proyecto ecosocial?",
+      "options": [
+        "Busca modificar realidades estructurales injustas o insostenibles",
+        "Persigue solo el beneficio económico",
+        "Evita implicar a la comunidad",
+        "Cubre solo una necesidad puntual"
+      ],
+      "correct": "Busca modificar realidades estructurales injustas o insostenibles",
+      "explicacion": "Un proyecto ecosocial no se limita a una necesidad puntual: busca cambiar realidades estructurales, con liderazgo ético, sostenibilidad, participación comunitaria y medición del impacto."
+    },
+    {
+      "id": 285,
+      "unit": "UT6",
+      "question": "¿Qué condición debe cumplir un proyecto de base tecnológica para considerarse de impacto?",
+      "options": [
+        "Basarse en intereses especulativos",
+        "Excluir a quien no tenga competencias digitales",
+        "Que la tecnología esté al servicio de las personas y garantice la inclusividad digital",
+        "Usar la tecnología más cara"
+      ],
+      "correct": "Que la tecnología esté al servicio de las personas y garantice la inclusividad digital",
+      "explicacion": "La tecnología debe servir a las personas y al entorno, garantizar la inclusividad digital y respetar la privacidad, la transparencia y la gobernanza abierta."
+    },
+    {
+      "id": 286,
+      "unit": "UT6",
+      "question": "¿Son excluyentes los proyectos ecosociales y los de base tecnológica?",
+      "options": [
+        "No, cada vez más iniciativas combinan ambas dimensiones",
+        "Solo en el sector público",
+        "Sí, siempre",
+        "Solo si son grandes empresas"
+      ],
+      "correct": "No, cada vez más iniciativas combinan ambas dimensiones",
+      "explicacion": "No son excluyentes: por ejemplo, un sensor de bajo coste que mide la calidad del aire y alerta a colectivos vulnerables combina base tecnológica e impacto social."
+    },
+    {
+      "id": 287,
+      "unit": "UT6",
+      "question": "¿Cuál de estos es un principio de la innovación responsable según el marco europeo RRI?",
+      "options": [
+        "Rapidez sin evaluación",
+        "Especulación",
+        "Secretismo",
+        "Anticipación: prever posibles impactos positivos y negativos"
+      ],
+      "correct": "Anticipación: prever posibles impactos positivos y negativos",
+      "explicacion": "Los principios RRI son anticipación, inclusión, reflexividad (cuestionar las propias motivaciones) y receptividad (modificar el proyecto si se demanda)."
+    },
+    {
+      "id": 288,
+      "unit": "UT6",
+      "question": "¿Qué principio RRI implica estar dispuesto a modificar el proyecto si las personas usuarias o el entorno lo demandan?",
+      "options": [
+        "Reflexividad",
+        "Receptividad",
+        "Inclusión",
+        "Anticipación"
+      ],
+      "correct": "Receptividad",
+      "explicacion": "La receptividad es la disposición a cambiar el proyecto según lo que piden las personas usuarias o el entorno."
+    },
+    {
+      "id": 289,
+      "unit": "UT6",
+      "question": "¿Qué pregunta corresponde al criterio de «no daño» en la innovación responsable?",
+      "options": [
+        "¿Hay riesgos de daño colateral ambiental, laboral o psicológico y cómo se minimizan?",
+        "¿Cuánto beneficio genera?",
+        "¿Qué color tendrá el logotipo?",
+        "¿Cuántos seguidores tendrá?"
+      ],
+      "correct": "¿Hay riesgos de daño colateral ambiental, laboral o psicológico y cómo se minimizan?",
+      "explicacion": "El criterio de no daño analiza los posibles daños colaterales y cómo minimizarlos, junto a relevancia, participación, sostenibilidad, inclusividad, ética de datos y valor social."
+    },
+    {
+      "id": 290,
+      "unit": "UT6",
+      "question": "¿Qué herramienta analiza antes de empezar los efectos esperados del proyecto?",
+      "options": [
+        "Encuesta de salida",
+        "Memoria final",
+        "Evaluación de impacto ex ante",
+        "Balance contable"
+      ],
+      "correct": "Evaluación de impacto ex ante",
+      "explicacion": "La evaluación de impacto ex ante es un análisis previo de los efectos esperados; también se usan checklists, focus groups y un código ético."
+    },
+    {
+      "id": 291,
+      "unit": "UT6",
+      "question": "¿Qué es el código ético de un proyecto?",
+      "options": [
+        "El código fuente de la app",
+        "El reglamento de la Seguridad Social",
+        "Un contrato de trabajo",
+        "Un documento breve que define principios y compromisos de actuación"
+      ],
+      "correct": "Un documento breve que define principios y compromisos de actuación",
+      "explicacion": "El código ético es un documento breve que fija los principios y compromisos con los que actuará el proyecto."
+    },
+    {
+      "id": 292,
+      "unit": "UT6",
+      "question": "¿Cuál de estas frases NO es una buena misión según el temario?",
+      "options": [
+        "«Conectar a personas mayores con voluntariado»",
+        "«Promover la educación ambiental en barrios vulnerables»",
+        "«Ser los mejores»",
+        "«Facilitar el acceso a productos de higiene reutilizables a mujeres en exclusión»"
+      ],
+      "correct": "«Ser los mejores»",
+      "explicacion": "Una buena misión es concreta, centrada en las personas destinatarias y refleja valores; frases vacías como «ser los mejores» no son una misión."
+    },
+    {
+      "id": 293,
+      "unit": "UT6",
+      "question": "¿Cómo se recomienda clasificar a los agentes implicados para facilitar su gestión?",
+      "options": [
+        "Por orden alfabético",
+        "Según su nivel de implicación (alto, medio, bajo) y su función",
+        "Por edad",
+        "No hace falta clasificarlos"
+      ],
+      "correct": "Según su nivel de implicación (alto, medio, bajo) y su función",
+      "explicacion": "Clasificar a los agentes por nivel de implicación (alto, medio, bajo) y función (operativa, apoyo, legitimación) facilita la gestión y la comunicación."
+    },
+    {
+      "id": 294,
+      "unit": "UT6",
+      "question": "¿Qué hay que analizar de los recursos humanos además de cuántas personas hay?",
+      "options": [
+        "Sus competencias y tiempos disponibles",
+        "Nada más",
+        "Su color favorito",
+        "Su lugar de nacimiento"
+      ],
+      "correct": "Sus competencias y tiempos disponibles",
+      "explicacion": "No basta con contar personas: hay que analizar competencias y tiempo disponible de cada una para evitar sobrecargas."
+    },
+    {
+      "id": 295,
+      "unit": "UT6",
+      "question": "¿Qué criterio debe guiar la elección de recursos técnicos y digitales?",
+      "options": [
+        "No usar ninguna herramienta digital",
+        "La coherencia con la filosofía del proyecto, como usar software libre en innovación social",
+        "Usar solo software propietario",
+        "Elegir siempre lo más caro"
+      ],
+      "correct": "La coherencia con la filosofía del proyecto, como usar software libre en innovación social",
+      "explicacion": "La elección de herramientas debe ser coherente con la filosofía del proyecto; por ejemplo, software libre en un proyecto de innovación social."
+    },
+    {
+      "id": 296,
+      "unit": "UT6",
+      "question": "¿Cuáles son las tres dimensiones de la viabilidad de un proyecto?",
+      "options": [
+        "Estética, comercial y digital",
+        "Personal, familiar y social",
+        "Legal, fiscal y laboral",
+        "Técnica, económica y social-ambiental"
+      ],
+      "correct": "Técnica, económica y social-ambiental",
+      "explicacion": "La viabilidad se analiza en tres dimensiones: técnica (¿se puede hacer?), económica (¿es sostenible?) y social y ambiental (¿impacto positivo?)."
+    },
+    {
+      "id": 297,
+      "unit": "UT6",
+      "question": "¿Qué elemento del estudio de mercado responde a «¿cuántas personas podrían beneficiarse?»?",
+      "options": [
+        "Tamaño de mercado",
+        "Segmento objetivo",
+        "Datos geográficos",
+        "Hábitos de consumo"
+      ],
+      "correct": "Tamaño de mercado",
+      "explicacion": "El tamaño de mercado estima cuántas personas podrían beneficiarse y la magnitud del problema."
+    },
+    {
+      "id": 298,
+      "unit": "UT6",
+      "question": "¿Qué es el benchmarking?",
+      "options": [
+        "La comparación directa con proyectos parecidos",
+        "Un indicador ambiental",
+        "Una técnica de relajación",
+        "Un tipo de financiación"
+      ],
+      "correct": "La comparación directa con proyectos parecidos",
+      "explicacion": "El benchmarking compara directamente el proyecto con otros similares; junto al DAFO y el mapa de posicionamiento sirve para estudiar la competencia."
+    },
+    {
+      "id": 299,
+      "unit": "UT6",
+      "question": "¿Para qué sirve estudiar la competencia?",
+      "options": [
+        "Para aprender de sus aciertos y errores y detectar ventajas diferenciales",
+        "Para evitar cualquier colaboración",
+        "Para copiarla exactamente",
+        "No tiene utilidad"
+      ],
+      "correct": "Para aprender de sus aciertos y errores y detectar ventajas diferenciales",
+      "explicacion": "Estudiar la competencia permite aprender de ella, detectar diferenciadores, evitar duplicaciones y buscar colaboraciones."
+    },
+    {
+      "id": 300,
+      "unit": "UT6",
+      "question": "¿Cuál de estas es una plataforma de crowdfunding citada en el temario?",
+      "options": [
+        "ENISA",
+        "SEPE",
+        "Goteo",
+        "Fiare"
+      ],
+      "correct": "Goteo",
+      "explicacion": "Goteo, Verkami o Kickstarter son plataformas de financiación colectiva. Fiare y Coop57 son banca ética."
+    },
+    {
+      "id": 301,
+      "unit": "UT6",
+      "question": "¿Qué entidades se citan como ejemplos de banca ética?",
+      "options": [
+        "Kickstarter y Patreon",
+        "Goteo y Verkami",
+        "INJUVE y SEPE",
+        "Fiare y Coop57"
+      ],
+      "correct": "Fiare y Coop57",
+      "explicacion": "Fiare y Coop57 son ejemplos de banca ética, uno de los principios de finanzas éticas junto a la transparencia y el reparto justo de excedentes."
+    },
+    {
+      "id": 302,
+      "unit": "UT6",
+      "question": "¿Qué herramienta de planificación financiera muestra cuánto dinero entra y sale mes a mes?",
+      "options": [
+        "Matriz DAFO",
+        "Mapa de empatía",
+        "Punto de equilibrio",
+        "Previsión de flujo de caja"
+      ],
+      "correct": "Previsión de flujo de caja",
+      "explicacion": "La previsión de flujo de caja muestra entradas y salidas mensuales; el presupuesto inicial lista gastos e ingresos previstos y el punto de equilibrio indica cuándo se igualan."
+    },
+    {
+      "id": 303,
+      "unit": "UT6",
+      "question": "¿Qué tipo de impacto mide cambios en valores, conocimientos o actitudes?",
+      "options": [
+        "Impacto educativo o cultural",
+        "Impacto ambiental",
+        "Impacto financiero",
+        "Impacto fiscal"
+      ],
+      "correct": "Impacto educativo o cultural",
+      "explicacion": "Los tipos de impacto son social (calidad de vida, inclusión), ambiental (residuos, energía) y educativo o cultural (valores, conocimientos, actitudes)."
+    },
+    {
+      "id": 304,
+      "unit": "UT6",
+      "question": "¿Cómo se mide la mejora en conocimientos como indicador de impacto educativo?",
+      "options": [
+        "Pesando residuos",
+        "Contando actas",
+        "Con el número de seguidores",
+        "Con un test antes y después de la intervención"
+      ],
+      "correct": "Con un test antes y después de la intervención",
+      "explicacion": "La mejora educativa se mide con test pre y post intervención; las personas beneficiarias con listados o encuestas y los residuos evitados por pesaje."
+    },
+    {
+      "id": 305,
+      "unit": "UT6",
+      "question": "¿Qué duración tiene un pitch según el temario?",
+      "options": [
+        "Exactamente 10 segundos",
+        "Entre 1 y 5 minutos",
+        "Entre 30 y 60 minutos",
+        "Más de una hora"
+      ],
+      "correct": "Entre 1 y 5 minutos",
+      "explicacion": "Un pitch es una presentación breve, de 1 a 5 minutos, para captar la atención de financiadores, jurados o socios."
+    },
+    {
+      "id": 306,
+      "unit": "UT6",
+      "question": "¿Con qué debe empezar un pitch según la estructura recomendada?",
+      "options": [
+        "Con un gancho inicial de 10-15 segundos: una pregunta, historia o cifra impactante",
+        "Con la estructura de costes",
+        "Con los agradecimientos",
+        "Con el presupuesto detallado"
+      ],
+      "correct": "Con un gancho inicial de 10-15 segundos: una pregunta, historia o cifra impactante",
+      "explicacion": "El pitch empieza con un gancho, sigue con el problema, la solución, el valor diferencial y el impacto y propósito."
+    },
+    {
+      "id": 307,
+      "unit": "UT6",
+      "question": "¿Cuánto texto se recomienda como máximo por diapositiva?",
+      "options": [
+        "20 líneas",
+        "Una página completa",
+        "Sin límite",
+        "5-6 líneas"
+      ],
+      "correct": "5-6 líneas",
+      "explicacion": "Se recomienda poco texto por diapositiva (máximo 5-6 líneas), esquemas, iconos y cifras relevantes, colores coherentes y evitar efectos recargados."
+    },
+    {
+      "id": 308,
+      "unit": "UT6",
+      "question": "¿Cuál es el último bloque de la estructura recomendada de un pitch?",
+      "options": [
+        "Llamada a la acción: qué necesitas ahora (colaboración, difusión, inversión...)",
+        "El valor diferencial",
+        "La presentación del problema",
+        "El gancho inicial"
+      ],
+      "correct": "Llamada a la acción: qué necesitas ahora (colaboración, difusión, inversión...)",
+      "explicacion": "Estructura: gancho, problema, solución, valor diferencial, impacto y propósito y llamada a la acción."
+    },
+    {
+      "id": 309,
+      "unit": "UT6",
+      "question": "¿Qué recomendación se da para la defensa oral de un proyecto?",
+      "options": [
+        "Leer siempre las diapositivas",
+        "No memorizar literalmente, sino interiorizar las ideas clave",
+        "No ensayar",
+        "Evitar las preguntas"
+      ],
+      "correct": "No memorizar literalmente, sino interiorizar las ideas clave",
+      "explicacion": "Se recomienda ensayar en voz alta cronometrando, grabarse y autoevaluarse, preparar respuestas difíciles e interiorizar ideas."
+    },
+    {
+      "id": 310,
+      "unit": "UT6",
+      "question": "Según el temario, ¿qué es la defensa argumentada de un proyecto?",
+      "options": [
+        "Vender a toda costa",
+        "Repetir datos sin contexto",
+        "Criticar a la competencia",
+        "Conectar honestamente con quien escucha desde el valor social de la propuesta, no «vender»"
+      ],
+      "correct": "Conectar honestamente con quien escucha desde el valor social de la propuesta, no «vender»",
+      "explicacion": "La defensa argumentada busca transmitir con honestidad el valor de la propuesta."
+    },
+    {
+      "id": 311,
+      "unit": "UT6",
+      "question": "¿Qué tipo de pitch existe además del elevator pitch?",
+      "options": [
+        "Pitch fiscal",
+        "Pitch jurídico",
+        "Pitch contable",
+        "Pitch comercial, social o inversor"
+      ],
+      "correct": "Pitch comercial, social o inversor",
+      "explicacion": "Hay distintos tipos de pitch según el público: elevator, comercial, social o inversor."
+    },
+    {
+      "id": 312,
+      "unit": "UT6",
+      "question": "¿Qué actitud hay que evitar ante el feedback externo?",
+      "options": [
+        "Buscar voces diversas",
+        "Hacer preguntas sinceras",
+        "Vivir la crítica como un ataque",
+        "Adaptar el proyecto"
+      ],
+      "correct": "Vivir la crítica como un ataque",
+      "explicacion": "Un proyecto abierto a la crítica constructiva gana solidez, dialoga con la realidad y se adapta sin perder coherencia."
+    },
+    {
+      "id": 313,
+      "unit": "UT6",
+      "question": "¿De quién puede proceder el feedback útil para un proyecto?",
+      "options": [
+        "De nadie",
+        "De usuarios o destinatarios, de compañeros y de docentes o mentores",
+        "Solo del propio promotor",
+        "Solo de la competencia"
+      ],
+      "correct": "De usuarios o destinatarios, de compañeros y de docentes o mentores",
+      "explicacion": "El feedback de distintas fuentes ayuda a detectar aspectos no considerados y validar lo que funciona."
+    },
+    {
+      "id": 314,
+      "unit": "UT6",
+      "question": "¿Qué herramienta recoge, por cada aspecto observado, qué funciona, qué se puede mejorar y la propuesta de ajuste?",
+      "options": [
+        "Matriz DAFO",
+        "Diagrama de Gantt",
+        "Matriz de mejora continua",
+        "Canvas de triple impacto"
+      ],
+      "correct": "Matriz de mejora continua",
+      "explicacion": "También se usan preguntas abiertas al final del pitch y rondas de observación con devolución oral estructurada."
+    },
+    {
+      "id": 315,
+      "unit": "UT6",
+      "question": "¿Qué herramienta de evaluación del impacto consiste en entrevistas a usuarios o agentes implicados?",
+      "options": [
+        "Plan de marketing",
+        "Balance contable",
+        "Encuestas cerradas exclusivamente",
+        "Entrevistas cualitativas"
+      ],
+      "correct": "Entrevistas cualitativas",
+      "explicacion": "Herramientas: encuestas de satisfacción antes y después, entrevistas cualitativas, indicadores de autodiagnóstico y diario de proyecto."
+    },
+    {
+      "id": 316,
+      "unit": "UT6",
+      "question": "¿Qué es el «diario de proyecto o memoria viva»?",
+      "options": [
+        "Un plan de marketing",
+        "Un contrato",
+        "Un registro de avances y dificultades del proyecto",
+        "Un libro de contabilidad"
+      ],
+      "correct": "Un registro de avances y dificultades del proyecto",
+      "explicacion": "Permite documentar el proceso y aprender de él."
+    },
+    {
+      "id": 317,
+      "unit": "UT6",
+      "question": "¿Qué tipo de tecnologías se incluyen en los proyectos de base tecnológica, como energía solar o movilidad eléctrica?",
+      "options": [
+        "Tecnologías obsoletas",
+        "Tecnologías limpias",
+        "Tecnologías analógicas",
+        "Tecnologías especulativas"
+      ],
+      "correct": "Tecnologías limpias",
+      "explicacion": "Los proyectos de base tecnológica incluyen apps, IA, realidad aumentada, blockchain, hardware específico y tecnologías limpias."
+    },
+    {
+      "id": 318,
+      "unit": "UT6",
+      "question": "¿Qué tipo de recurso humano son las personas impulsoras del proyecto?",
+      "options": [
+        "Equipo promotor",
+        "Personal contratado",
+        "Apoyo externo",
+        "Voluntariado"
+      ],
+      "correct": "Equipo promotor",
+      "explicacion": "Recursos humanos: equipo promotor, apoyo externo (mentores, asesores), voluntariado o personal en formación y personal contratado."
+    },
+    {
+      "id": 319,
+      "unit": "UT6",
+      "question": "¿Qué elemento del plan de acción indica cómo sabremos si se cumple lo previsto?",
+      "options": [
+        "Calendario estimado",
+        "Indicadores de seguimiento",
+        "Responsables",
+        "Actividades clave"
+      ],
+      "correct": "Indicadores de seguimiento",
+      "explicacion": "El plan de acción incluye actividades clave, calendario, responsables e indicadores de seguimiento."
+    },
+    {
+      "id": 320,
+      "unit": "UT6",
+      "question": "¿Qué herramienta de planificación financiera permite simular escenarios en equipo?",
+      "options": [
+        "Pizarra de tiza",
+        "Calendario de papel",
+        "Hoja de cálculo colaborativa",
+        "Fax"
+      ],
+      "correct": "Hoja de cálculo colaborativa",
+      "explicacion": "Junto al presupuesto inicial, el punto de equilibrio y la previsión de flujo de caja."
+    }
+  ]
+}

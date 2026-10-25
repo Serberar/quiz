@@ -1,0 +1,4594 @@
+{
+  "subject": "Bases de Datos",
+  "questions": [
+    {
+      "id": 1,
+      "unit": "UT1",
+      "question": "¿Qué propiedad del RGPD garantiza que los datos personales sean tratados de forma transparente y con el consentimiento del individuo?",
+      "options": [
+        "Limitación de la finalidad",
+        "Integridad y confidencialidad",
+        "Exactitud de los datos",
+        "Licitud, lealtad y transparencia"
+      ],
+      "correct": "Licitud, lealtad y transparencia",
+      "explicacion": "El principio de licitud, lealtad y transparencia exige que haya una base legal para el tratamiento (como el consentimiento) y que se informe claramente al interesado. Limitación de la finalidad, exactitud e integridad son otros principios distintos del RGPD."
+    },
+    {
+      "id": 2,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes tipos de bases de datos está orientado a objetos y permite almacenar objetos complejos?",
+      "options": [
+        "Base de datos orientada a objetos",
+        "Base de datos distribuida",
+        "Base de datos jerárquica",
+        "Base de datos relacional"
+      ],
+      "correct": "Base de datos orientada a objetos",
+      "explicacion": "Las bases de datos orientadas a objetos guardan objetos complejos con sus atributos y métodos, igual que en la programación orientada a objetos (herencia, encapsulación)."
+    },
+    {
+      "id": 3,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos es más adecuada para manejar grandes volúmenes de datos no estructurados, como comentarios de usuarios o datos de redes sociales?",
+      "options": [
+        "Base de datos jerárquica",
+        "Base de datos en memoria",
+        "Base de datos relacional",
+        "Base de datos documental"
+      ],
+      "correct": "Base de datos documental",
+      "explicacion": "Las bases de datos documentales (como MongoDB) almacenan documentos JSON/BSON con esquema flexible, ideales para datos no estructurados o variables como comentarios o publicaciones en redes sociales."
+    },
+    {
+      "id": 4,
+      "unit": "UT1",
+      "question": "¿Qué tipo de fichero organiza los datos en una secuencia de registros y permite un acceso secuencial?",
+      "options": [
+        "Fichero de acceso directo",
+        "Fichero plano",
+        "Fichero secuencial",
+        "Fichero indexado"
+      ],
+      "correct": "Fichero secuencial",
+      "explicacion": "En un fichero secuencial los registros se guardan uno tras otro, y para llegar a uno hay que leer todos los anteriores. El acceso directo y el indexado permiten saltar a un registro concreto."
+    },
+    {
+      "id": 5,
+      "unit": "UT1",
+      "question": "¿Qué función principal tiene un Sistema Gestor de Bases de Datos (SGBD)?",
+      "options": [
+        "Proteger la privacidad de los datos",
+        "Realizar consultas estadísticas",
+        "Gestionar, almacenar y procesar datos",
+        "Asegurar la disponibilidad de los datos"
+      ],
+      "correct": "Gestionar, almacenar y procesar datos",
+      "explicacion": "Un SGBD es el software que gestiona, almacena y procesa los datos. Además ofrece seguridad, integridad, concurrencia y recuperación, pero su función principal es gestionar la base de datos."
+    },
+    {
+      "id": 6,
+      "unit": "UT1",
+      "question": "¿Qué es un data warehouse?",
+      "options": [
+        "Un índice utilizado para mejorar el rendimiento de consultas",
+        "Un sistema para gestionar bases de datos distribuidas",
+        "Una base de datos para almacenar información temporal",
+        "Un repositorio de datos utilizado para el análisis empresarial"
+      ],
+      "correct": "Un repositorio de datos utilizado para el análisis empresarial",
+      "explicacion": "Un data warehouse (almacén de datos) integra datos históricos de varias fuentes en un repositorio orientado al análisis y a la toma de decisiones empresariales (BI)."
+    },
+    {
+      "id": 7,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos permite el acceso aleatorio a registros sin necesidad de recorrer el fichero completo?",
+      "options": [
+        "Fichero secuencial",
+        "Fichero plano",
+        "Fichero indexado",
+        "Fichero de acceso directo"
+      ],
+      "correct": "Fichero de acceso directo",
+      "explicacion": "Un fichero de acceso directo (aleatorio) localiza un registro por su posición o clave sin recorrer los anteriores. El secuencial obliga a leerlo en orden."
+    },
+    {
+      "id": 8,
+      "unit": "UT1",
+      "question": "¿Qué técnica se utiliza para dividir una base de datos distribuida en fragmentos y almacenarlos en diferentes servidores?",
+      "options": [
+        "Replicación",
+        "Indexación",
+        "Fragmentación",
+        "Normalización"
+      ],
+      "correct": "Fragmentación",
+      "explicacion": "La fragmentación divide la base de datos en partes, horizontales (filas) o verticales (columnas), que se guardan en distintos servidores. La replicación, en cambio, copia los mismos datos en varios nodos."
+    },
+    {
+      "id": 9,
+      "unit": "UT1",
+      "question": "¿Qué derecho otorga el RGPD al ciudadano para que sus datos sean eliminados cuando ya no sean necesarios?",
+      "options": [
+        "Derecho al olvido",
+        "Derecho a la rectificación",
+        "Derecho de acceso",
+        "Derecho a la portabilidad"
+      ],
+      "correct": "Derecho al olvido",
+      "explicacion": "El derecho al olvido (derecho de supresión, art. 17 del RGPD) permite pedir que se borren los datos personales cuando ya no son necesarios o se retira el consentimiento."
+    },
+    {
+      "id": 10,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos está diseñada para almacenar datos no estructurados o semi-estructurados?",
+      "options": [
+        "Distribuida",
+        "Relacional",
+        "Documental",
+        "Jerárquica"
+      ],
+      "correct": "Documental",
+      "explicacion": "Las bases de datos documentales guardan datos semiestructurados o no estructurados en documentos (JSON, XML) sin un esquema fijo de tablas."
+    },
+    {
+      "id": 11,
+      "unit": "UT1",
+      "question": "¿En qué tipo de base de datos se organiza la información en forma de árbol, con registros que tienen un solo \"padre\"?",
+      "options": [
+        "Base de datos jerárquica",
+        "Base de datos orientada a objetos",
+        "Base de datos distribuida",
+        "Base de datos relacional"
+      ],
+      "correct": "Base de datos jerárquica",
+      "explicacion": "El modelo jerárquico organiza los datos en forma de árbol: cada registro hijo tiene un único padre. Si un registro puede tener varios padres, el modelo es en red."
+    },
+    {
+      "id": 12,
+      "unit": "UT1",
+      "question": "¿Qué tipo de índice es comúnmente utilizado en bases de datos distribuidas para mejorar el rendimiento de las consultas?",
+      "options": [
+        "Índice B-Tree",
+        "Índice primario",
+        "Índice secuencial",
+        "Índice hash"
+      ],
+      "correct": "Índice B-Tree",
+      "explicacion": "Los índices B-Tree (árbol balanceado) son el tipo más usado: mantienen las claves ordenadas y sirven tanto para búsquedas exactas como por rangos. Los hash solo valen para igualdades."
+    },
+    {
+      "id": 13,
+      "unit": "UT1",
+      "question": "¿Qué tecnología de Big Data permite el procesamiento distribuido de grandes volúmenes de datos a través de clústeres de computadoras?",
+      "options": [
+        "Power BI",
+        "MongoDB",
+        "Hadoop",
+        "SQL"
+      ],
+      "correct": "Hadoop",
+      "explicacion": "Hadoop es un framework que almacena (HDFS) y procesa (MapReduce) grandes volúmenes de datos de forma distribuida en clústeres de ordenadores. Power BI es visualización y MongoDB una base NoSQL."
+    },
+    {
+      "id": 14,
+      "unit": "UT1",
+      "question": "¿Qué propiedad del RGPD permite a los individuos tener acceso a los datos personales que una organización posee sobre ellos?",
+      "options": [
+        "Derecho a la limitación del tratamiento",
+        "Derecho de acceso",
+        "Derecho a la rectificación",
+        "Derecho a la portabilidad"
+      ],
+      "correct": "Derecho de acceso",
+      "explicacion": "El derecho de acceso permite al interesado saber si una organización trata sus datos personales y obtener una copia de ellos."
+    },
+    {
+      "id": 15,
+      "unit": "UT1",
+      "question": "¿Qué característica de Big Data se refiere a la diversidad de tipos de datos que se manejan?",
+      "options": [
+        "Velocidad",
+        "Veracidad",
+        "Variedad",
+        "Volumen"
+      ],
+      "correct": "Variedad",
+      "explicacion": "La Variedad, una de las V del Big Data, se refiere a la diversidad de tipos y formatos de datos: estructurados, semiestructurados y no estructurados (texto, imágenes, vídeo...)."
+    },
+    {
+      "id": 16,
+      "unit": "UT1",
+      "question": "¿Cuál de los siguientes es un ejemplo de una herramienta de Inteligencia de Negocio (BI) que facilita la visualización de datos?",
+      "options": [
+        "Hadoop",
+        "Tableau",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "correct": "Tableau",
+      "explicacion": "Tableau es una herramienta de BI especializada en la visualización de datos y la creación de cuadros de mando. Hadoop procesa Big Data y PostgreSQL y MongoDB son gestores de bases de datos."
+    },
+    {
+      "id": 17,
+      "unit": "UT1",
+      "question": "¿Qué característica del Big Data se refiere a la cantidad masiva de datos generados?",
+      "options": [
+        "Variedad",
+        "Veracidad",
+        "Velocidad",
+        "Volumen"
+      ],
+      "correct": "Volumen",
+      "explicacion": "El Volumen es la V que se refiere a la enorme cantidad de datos que se generan (terabytes, petabytes). Velocidad es el ritmo de generación y Variedad la diversidad de formatos."
+    },
+    {
+      "id": 18,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos se caracteriza por distribuir los datos entre varios nodos conectados en red?",
+      "options": [
+        "Base de datos distribuida",
+        "Base de datos en memoria",
+        "Base de datos relacional",
+        "Base de datos documental"
+      ],
+      "correct": "Base de datos distribuida",
+      "explicacion": "Una base de datos distribuida reparte los datos entre varios nodos conectados en red, aunque para el usuario funciona como una sola base de datos."
+    },
+    {
+      "id": 19,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos permite una relación más compleja entre los registros, donde un registro puede tener múltiples \"padres\"?",
+      "options": [
+        "Base de datos en red",
+        "Base de datos jerárquica",
+        "Base de datos relacional",
+        "Base de datos distribuida"
+      ],
+      "correct": "Base de datos en red",
+      "explicacion": "El modelo en red permite que un registro tenga varios padres, formando un grafo con relaciones más complejas que el árbol del modelo jerárquico."
+    },
+    {
+      "id": 20,
+      "unit": "UT1",
+      "question": "¿Qué tipo de base de datos organiza los datos en tablas interrelacionadas mediante claves primarias y foráneas?",
+      "options": [
+        "Documental",
+        "Distribuida",
+        "Relacional",
+        "Jerárquica"
+      ],
+      "correct": "Relacional",
+      "explicacion": "El modelo relacional organiza los datos en tablas (relaciones) que se vinculan mediante claves primarias y claves foráneas."
+    },
+    {
+      "id": 21,
+      "unit": "UT1",
+      "question": "¿Cuál es una característica principal de las bases de datos?",
+      "options": [
+        "Ausencia de seguridad",
+        "Acceso solo secuencial",
+        "Almacenamiento desordenado",
+        "Integridad de los datos: mecanismos que garantizan que la información sea precisa y coherente"
+      ],
+      "correct": "Integridad de los datos: mecanismos que garantizan que la información sea precisa y coherente",
+      "explicacion": "Las bases de datos tienen estructura organizada, acceso eficiente, integridad de los datos, seguridad, y permiten gestionar grandes volúmenes."
+    },
+    {
+      "id": 22,
+      "unit": "UT1",
+      "question": "¿Qué tipo de datos son las imágenes, vídeos o archivos de audio almacenados en una base de datos?",
+      "options": [
+        "Datos numéricos",
+        "Datos textuales",
+        "Datos temporales",
+        "Datos binarios"
+      ],
+      "correct": "Datos binarios",
+      "explicacion": "Se almacenan datos numéricos (precios), textuales (nombres), binarios (imágenes, vídeo, audio) y temporales (fechas y horas)."
+    },
+    {
+      "id": 23,
+      "unit": "UT1",
+      "question": "¿Qué técnica de las bases de datos relacionales reduce la redundancia dividiendo las tablas y eliminando dependencias no deseadas?",
+      "options": [
+        "Normalización",
+        "Indexación",
+        "Replicación",
+        "Fragmentación"
+      ],
+      "correct": "Normalización",
+      "explicacion": "Las bases relacionales se caracterizan por tablas, SQL, integridad referencial y normalización para reducir la redundancia."
+    },
+    {
+      "id": 24,
+      "unit": "UT1",
+      "question": "¿Qué base de datos documental almacena documentos JSON y permite consultas con MapReduce?",
+      "options": [
+        "CouchDB",
+        "Redis",
+        "Oracle",
+        "MySQL"
+      ],
+      "correct": "CouchDB",
+      "explicacion": "CouchDB guarda documentos JSON y usa MapReduce; MongoDB usa BSON; RavenDB tiene un enfoque orientado a objetos."
+    },
+    {
+      "id": 25,
+      "unit": "UT1",
+      "question": "¿Cómo se consultan normalmente las bases de datos documentales?",
+      "options": [
+        "No se pueden consultar",
+        "Mediante API y lenguajes específicos en lugar de SQL",
+        "Con hojas de cálculo",
+        "Siempre con SQL estándar"
+      ],
+      "correct": "Mediante API y lenguajes específicos en lugar de SQL",
+      "explicacion": "Las documentales tienen formato flexible, gran escalabilidad y se consultan con API y lenguajes propios, no con SQL."
+    },
+    {
+      "id": 26,
+      "unit": "UT1",
+      "question": "¿Qué significa la «transparencia» en una base de datos distribuida?",
+      "options": [
+        "Que los datos son públicos",
+        "Que el usuario interactúa con ella como si fuera un sistema único, sin conocer la ubicación de los datos",
+        "Que se puede ver el código fuente",
+        "Que no tiene contraseña"
+      ],
+      "correct": "Que el usuario interactúa con ella como si fuera un sistema único, sin conocer la ubicación de los datos",
+      "explicacion": "Aunque los datos estén en varios nodos, el usuario trabaja con la base como si fuera única."
+    },
+    {
+      "id": 27,
+      "unit": "UT1",
+      "question": "¿Qué es la consistencia eventual en bases de datos distribuidas?",
+      "options": [
+        "Que solo hay un servidor",
+        "Que la consistencia no es inmediata pero los datos acaban sincronizándose entre servidores",
+        "Que los datos nunca se sincronizan",
+        "Que los datos siempre son inconsistentes"
+      ],
+      "correct": "Que la consistencia no es inmediata pero los datos acaban sincronizándose entre servidores",
+      "explicacion": "En muchos sistemas distribuidos la coherencia no se garantiza al instante, pero los nodos se sincronizan con el tiempo."
+    },
+    {
+      "id": 28,
+      "unit": "UT1",
+      "question": "¿Cuál de estos es un ejemplo de base de datos distribuida?",
+      "options": [
+        "Microsoft Access",
+        "Excel",
+        "Amazon DynamoDB",
+        "Un fichero CSV"
+      ],
+      "correct": "Amazon DynamoDB",
+      "explicacion": "Cassandra, Google Bigtable y Amazon DynamoDB son ejemplos de bases distribuidas."
+    },
+    {
+      "id": 29,
+      "unit": "UT1",
+      "question": "¿Qué bases de datos almacenan todos los datos en RAM para un acceso extremadamente rápido?",
+      "options": [
+        "Ficheros planos",
+        "Bases de datos en memoria, como Redis o Memcached",
+        "Bases jerárquicas",
+        "Bases en red"
+      ],
+      "correct": "Bases de datos en memoria, como Redis o Memcached",
+      "explicacion": "Las bases en memoria (In-Memory) guardan los datos en RAM y son ideales para aplicaciones de alto rendimiento."
+    },
+    {
+      "id": 30,
+      "unit": "UT1",
+      "question": "¿Qué sistema se cita como ejemplo de base de datos jerárquica?",
+      "options": [
+        "PostgreSQL",
+        "Cassandra",
+        "IBM IMS",
+        "MongoDB"
+      ],
+      "correct": "IBM IMS",
+      "explicacion": "IBM IMS es un ejemplo de base jerárquica; IDS e IDMS lo son del modelo en red."
+    },
+    {
+      "id": 31,
+      "unit": "UT1",
+      "question": "¿Cuál es una ventaja de los ficheros planos?",
+      "options": [
+        "Facilidad de creación y poco espacio de almacenamiento",
+        "Acceso muy rápido en grandes volúmenes",
+        "Tienen índices internos",
+        "Permiten relaciones complejas"
+      ],
+      "correct": "Facilidad de creación y poco espacio de almacenamiento",
+      "explicacion": "Los ficheros planos son fáciles de crear y ocupan poco, pero su acceso es lento y no permiten relaciones entre datos."
+    },
+    {
+      "id": 32,
+      "unit": "UT1",
+      "question": "¿Cuál es un inconveniente de los ficheros secuenciales?",
+      "options": [
+        "El acceso aleatorio a registros específicos no es eficiente",
+        "No pueden leerse",
+        "Ocupan demasiado",
+        "No permiten añadir registros"
+      ],
+      "correct": "El acceso aleatorio a registros específicos no es eficiente",
+      "explicacion": "Son eficientes procesando todos los registros en orden, pero acceder a uno concreto o actualizarlo es costoso."
+    },
+    {
+      "id": 33,
+      "unit": "UT1",
+      "question": "¿Cuál es un inconveniente de los ficheros de acceso directo?",
+      "options": [
+        "Solo admiten texto",
+        "Acceso lento",
+        "Requieren más memoria para los índices y su mantenimiento es complejo",
+        "No permiten acceso aleatorio"
+      ],
+      "correct": "Requieren más memoria para los índices y su mantenimiento es complejo",
+      "explicacion": "El acceso directo es rápido, pero necesita memoria para los índices y su mantenimiento puede ser complejo."
+    },
+    {
+      "id": 34,
+      "unit": "UT1",
+      "question": "¿Qué hace el índice en un fichero indexado?",
+      "options": [
+        "Mapea las claves de búsqueda a las ubicaciones físicas de los registros",
+        "Cifra los datos",
+        "Elimina duplicados",
+        "Comprime el archivo"
+      ],
+      "correct": "Mapea las claves de búsqueda a las ubicaciones físicas de los registros",
+      "explicacion": "El índice actúa como tabla de referencia entre claves y posiciones físicas, permitiendo búsquedas rápidas sobre el campo indexado."
+    },
+    {
+      "id": 35,
+      "unit": "UT1",
+      "question": "¿Qué función de un SGBD restaura los datos a su estado consistente más reciente tras un fallo?",
+      "options": [
+        "Creación de bases de datos",
+        "Interfaz de usuario",
+        "Optimización de consultas",
+        "Recuperación ante fallos"
+      ],
+      "correct": "Recuperación ante fallos",
+      "explicacion": "Funciones del SGBD: crear y modificar bases, gestionar transacciones, seguridad, recuperación ante fallos, optimización, integridad, respaldo e interfaz."
+    },
+    {
+      "id": 36,
+      "unit": "UT1",
+      "question": "¿Qué componente de la arquitectura de un SGBD gestiona el almacenamiento, recuperación y actualización de los datos?",
+      "options": [
+        "La interfaz de usuario",
+        "El lenguaje de consulta",
+        "El motor de base de datos",
+        "El navegador"
+      ],
+      "correct": "El motor de base de datos",
+      "explicacion": "El motor es el componente principal; además hay lenguaje de consulta, interfaz de usuario, sistema de almacenamiento y manejo de transacciones."
+    },
+    {
+      "id": 37,
+      "unit": "UT1",
+      "question": "¿Qué tipo de SGBD conviene para aplicaciones que necesitan crecer rápidamente según el temario?",
+      "options": [
+        "NoSQL, por su escalabilidad horizontal",
+        "En red",
+        "Ficheros planos",
+        "Jerárquico"
+      ],
+      "correct": "NoSQL, por su escalabilidad horizontal",
+      "explicacion": "Para escalar rápido, los NoSQL son mejor opción por su escalabilidad horizontal; para datos estructurados con relaciones claras, un relacional."
+    },
+    {
+      "id": 38,
+      "unit": "UT1",
+      "question": "¿A qué se refiere la arquitectura lógica de una base de datos?",
+      "options": [
+        "Al sistema operativo",
+        "A la estructura conceptual de los datos desde el punto de vista del usuario",
+        "A cómo se almacenan los datos en disco",
+        "Al hardware del servidor"
+      ],
+      "correct": "A la estructura conceptual de los datos desde el punto de vista del usuario",
+      "explicacion": "La arquitectura lógica define tablas, relaciones, vistas, índices y restricciones, sin considerar el almacenamiento físico."
+    },
+    {
+      "id": 39,
+      "unit": "UT1",
+      "question": "En la arquitectura física, ¿qué son las páginas de datos?",
+      "options": [
+        "Páginas web",
+        "Tablas lógicas",
+        "Bloques de datos de tamaño fijo para leer y escribir eficientemente",
+        "Usuarios"
+      ],
+      "correct": "Bloques de datos de tamaño fijo para leer y escribir eficientemente",
+      "explicacion": "La mayoría de SGBD almacenan los datos en páginas, bloques de tamaño fijo que optimizan la lectura y escritura."
+    },
+    {
+      "id": 40,
+      "unit": "UT1",
+      "question": "¿Qué es la independencia física de los datos?",
+      "options": [
+        "Tener los datos en papel",
+        "Separar usuarios",
+        "Cambiar las tablas sin afectar a nadie",
+        "Modificar cómo se almacenan físicamente los datos sin afectar a la estructura lógica ni a las aplicaciones"
+      ],
+      "correct": "Modificar cómo se almacenan físicamente los datos sin afectar a la estructura lógica ni a las aplicaciones",
+      "explicacion": "La independencia física permite cambiar el almacenamiento (disco, servidor) sin afectar al nivel lógico; la lógica permite cambiar tablas sin afectar a las aplicaciones."
+    },
+    {
+      "id": 41,
+      "unit": "UT1",
+      "question": "¿Cuál es un riesgo de las bases de datos centralizadas?",
+      "options": [
+        "Complejidad de gestión entre nodos",
+        "Consistencia eventual",
+        "Punto único de fallo: si el servidor cae, nadie accede",
+        "Demasiada escalabilidad"
+      ],
+      "correct": "Punto único de fallo: si el servidor cae, nadie accede",
+      "explicacion": "La base centralizada es simple y segura de administrar, pero tiene un punto único de fallo y escalabilidad limitada."
+    },
+    {
+      "id": 42,
+      "unit": "UT1",
+      "question": "¿Qué tipo de fragmentación divide las columnas de una tabla entre distintos nodos?",
+      "options": [
+        "Replicada",
+        "Vertical",
+        "Horizontal",
+        "Mixta"
+      ],
+      "correct": "Vertical",
+      "explicacion": "La horizontal reparte filas (por ejemplo, clientes por región), la vertical reparte columnas y la mixta combina ambas."
+    },
+    {
+      "id": 43,
+      "unit": "UT1",
+      "question": "En la replicación maestro-esclavo, ¿dónde se escriben los datos?",
+      "options": [
+        "Solo en los esclavos",
+        "En ningún nodo",
+        "En el nodo maestro, que los replica a los esclavos",
+        "En cualquier nodo"
+      ],
+      "correct": "En el nodo maestro, que los replica a los esclavos",
+      "explicacion": "En maestro-esclavo se escribe en el maestro y se replica a los secundarios; en multi-maestro todos los nodos aceptan lecturas y escrituras."
+    },
+    {
+      "id": 44,
+      "unit": "UT1",
+      "question": "¿Cuál es la multa máxima que establece el RGPD?",
+      "options": [
+        "1.000 euros",
+        "El 50 % de los beneficios",
+        "Hasta el 4 % de la facturación anual global o 20 millones de euros",
+        "No hay multas"
+      ],
+      "correct": "Hasta el 4 % de la facturación anual global o 20 millones de euros",
+      "explicacion": "El RGPD, en vigor desde mayo de 2018, prevé multas de hasta el 4 % de la facturación global anual o 20 millones de euros."
+    },
+    {
+      "id": 45,
+      "unit": "UT1",
+      "question": "¿Qué ley adapta el RGPD al contexto español e incluye derechos digitales como la desconexión digital?",
+      "options": [
+        "LOPDGDD",
+        "LSSI",
+        "ePrivacy",
+        "WCAG"
+      ],
+      "correct": "LOPDGDD",
+      "explicacion": "La LOPDGDD adapta el RGPD en España e incluye derechos digitales, regulación de cookies y geolocalización; la supervisa la AEPD."
+    },
+    {
+      "id": 46,
+      "unit": "UT1",
+      "question": "¿Qué entidad supervisa la protección de datos en España?",
+      "options": [
+        "El SEPE",
+        "El INE",
+        "La Policía Local",
+        "La AEPD (Agencia Española de Protección de Datos)"
+      ],
+      "correct": "La AEPD (Agencia Española de Protección de Datos)",
+      "explicacion": "La AEPD supervisa y aplica la legislación de protección de datos en España y puede imponer sanciones."
+    },
+    {
+      "id": 47,
+      "unit": "UT1",
+      "question": "¿Qué regula especialmente el Reglamento ePrivacy?",
+      "options": [
+        "Los contratos de trabajo",
+        "Los salarios",
+        "El uso de cookies y la confidencialidad de las comunicaciones electrónicas",
+        "Los impuestos"
+      ],
+      "correct": "El uso de cookies y la confidencialidad de las comunicaciones electrónicas",
+      "explicacion": "ePrivacy exige consentimiento antes de almacenar cookies y protege la confidencialidad de las comunicaciones electrónicas."
+    },
+    {
+      "id": 48,
+      "unit": "UT1",
+      "question": "¿Qué principio de protección de datos indica que solo deben recogerse los datos necesarios para la finalidad?",
+      "options": [
+        "Responsabilidad proactiva",
+        "Minimización de los datos",
+        "Limitación del almacenamiento",
+        "Exactitud"
+      ],
+      "correct": "Minimización de los datos",
+      "explicacion": "Principios: licitud, limitación de la finalidad, minimización, exactitud, limitación del almacenamiento, integridad y confidencialidad y responsabilidad proactiva."
+    },
+    {
+      "id": 49,
+      "unit": "UT1",
+      "question": "¿Qué principio obliga al responsable del tratamiento a cumplir los principios y poder demostrarlo?",
+      "options": [
+        "Responsabilidad proactiva",
+        "Minimización",
+        "Transparencia",
+        "Portabilidad"
+      ],
+      "correct": "Responsabilidad proactiva",
+      "explicacion": "La responsabilidad proactiva exige garantizar el cumplimiento y ser capaz de demostrarlo."
+    },
+    {
+      "id": 50,
+      "unit": "UT1",
+      "question": "¿Qué V del Big Data se refiere a la calidad y fiabilidad de los datos?",
+      "options": [
+        "Velocidad",
+        "Volumen",
+        "Veracidad",
+        "Variedad"
+      ],
+      "correct": "Veracidad",
+      "explicacion": "Las 4 V son volumen, variedad, velocidad y veracidad (fiabilidad de los datos)."
+    },
+    {
+      "id": 51,
+      "unit": "UT1",
+      "question": "¿Qué V del Big Data se refiere a la rapidez con la que se generan y procesan los datos?",
+      "options": [
+        "Volumen",
+        "Veracidad",
+        "Valor",
+        "Velocidad"
+      ],
+      "correct": "Velocidad",
+      "explicacion": "La velocidad es el ritmo al que se generan los datos y deben procesarse, a menudo en tiempo real."
+    },
+    {
+      "id": 52,
+      "unit": "UT1",
+      "question": "¿Qué técnica de análisis de Big Data determina la opinión de los usuarios a partir de textos?",
+      "options": [
+        "Análisis de series temporales",
+        "Fragmentación",
+        "Análisis de sentimiento",
+        "Normalización"
+      ],
+      "correct": "Análisis de sentimiento",
+      "explicacion": "Técnicas: minería de datos, análisis predictivo, análisis de sentimiento, series temporales y procesamiento de lenguaje natural (NLP)."
+    },
+    {
+      "id": 53,
+      "unit": "UT1",
+      "question": "¿Qué herramienta de Big Data permite análisis en tiempo real con mayor velocidad de procesamiento?",
+      "options": [
+        "MySQL",
+        "Apache Spark",
+        "Word",
+        "Tableau"
+      ],
+      "correct": "Apache Spark",
+      "explicacion": "Apache Spark acelera el procesamiento de Big Data; Hadoop procesa de forma distribuida; Tableau y Power BI visualizan; SAS y R son estadísticas."
+    },
+    {
+      "id": 54,
+      "unit": "UT1",
+      "question": "¿Qué técnica usa datos históricos para prever comportamientos futuros?",
+      "options": [
+        "Análisis predictivo",
+        "Indexación",
+        "Análisis de sentimiento",
+        "Replicación"
+      ],
+      "correct": "Análisis predictivo",
+      "explicacion": "El análisis predictivo aplica modelos estadísticos y machine learning sobre datos históricos para anticipar comportamientos."
+    },
+    {
+      "id": 55,
+      "unit": "UT1",
+      "question": "¿Qué componente de la inteligencia de negocio presenta los resultados mediante cuadros de mando?",
+      "options": [
+        "Recolección",
+        "Visualización",
+        "Almacenamiento",
+        "Fragmentación"
+      ],
+      "correct": "Visualización",
+      "explicacion": "Componentes de BI: recolección, almacenamiento (data warehouse), análisis, visualización (dashboards) y toma de decisiones."
+    },
+    {
+      "id": 56,
+      "unit": "UT1",
+      "question": "¿Cuál es una aplicación de BI en Big Data?",
+      "options": [
+        "Formatear discos",
+        "Segmentación de clientes según comportamiento y hábitos de compra",
+        "Compilar programas",
+        "Diseñar logotipos"
+      ],
+      "correct": "Segmentación de clientes según comportamiento y hábitos de compra",
+      "explicacion": "BI se aplica a segmentación de clientes, análisis de operaciones y predicción de tendencias del mercado."
+    },
+    {
+      "id": 57,
+      "unit": "UT1",
+      "question": "Según el RGPD, ¿en qué plazo debe notificarse una brecha de seguridad a la autoridad competente?",
+      "options": [
+        "No hay que notificarla",
+        "En un mes",
+        "En un año",
+        "En las 72 horas siguientes al incidente"
+      ],
+      "correct": "En las 72 horas siguientes al incidente",
+      "explicacion": "Ante una violación de seguridad de datos personales, la organización debe notificarla a la autoridad de control en un plazo de 72 horas."
+    },
+    {
+      "id": 58,
+      "unit": "UT1",
+      "question": "¿Qué ventaja tienen las bases de datos centralizadas?",
+      "options": [
+        "Simplicidad en la administración y control centralizado del acceso",
+        "Alta disponibilidad por replicación",
+        "Escalabilidad ilimitada",
+        "Ausencia de punto único de fallo"
+      ],
+      "correct": "Simplicidad en la administración y control centralizado del acceso",
+      "explicacion": "Las centralizadas son sencillas, eficientes con volúmenes pequeños o medianos y fáciles de asegurar, pero escalan peor y dependen de un único servidor."
+    },
+    {
+      "id": 59,
+      "unit": "UT1",
+      "question": "¿En qué condiciones ofrece buen rendimiento una base de datos centralizada?",
+      "options": [
+        "Con petabytes de datos distribuidos",
+        "Con volúmenes pequeños o medianos y usuarios cercanos al servidor",
+        "Con millones de usuarios globales",
+        "Nunca"
+      ],
+      "correct": "Con volúmenes pequeños o medianos y usuarios cercanos al servidor",
+      "explicacion": "El rendimiento es adecuado en volúmenes moderados; al crecer pueden aparecer problemas de rendimiento."
+    },
+    {
+      "id": 60,
+      "unit": "UT1",
+      "question": "¿Qué fuente de Big Data generan los sensores de dispositivos inteligentes, automóviles o maquinaria industrial?",
+      "options": [
+        "Redes sociales",
+        "Registros de transacciones",
+        "Libros impresos",
+        "Dispositivos IoT"
+      ],
+      "correct": "Dispositivos IoT",
+      "explicacion": "Las fuentes de Big Data incluyen redes sociales, dispositivos IoT, registros de transacciones e imágenes y vídeos."
+    },
+    {
+      "id": 61,
+      "unit": "UT1",
+      "question": "¿Qué lenguaje usan las bases de datos relacionales para consultar y manipular datos?",
+      "options": [
+        "HTML",
+        "Python exclusivamente",
+        "SQL (Structured Query Language)",
+        "JSON"
+      ],
+      "correct": "SQL (Structured Query Language)",
+      "explicacion": "SQL permite consultas, inserciones, actualizaciones y borrados en bases relacionales."
+    },
+    {
+      "id": 62,
+      "unit": "UT2",
+      "question": "¿Cuál de los siguientes es un ejemplo de una relación reflexiva?",
+      "options": [
+        "Un \"Empleado\" supervisa a otro \"Empleado\"",
+        "Un \"Departamento\" emplea varios \"Empleados\"",
+        "Un \"Estudiante\" se inscribe en varios \"Cursos\"",
+        "Un \"Cliente\" realiza una compra de un \"Producto\""
+      ],
+      "correct": "Un \"Empleado\" supervisa a otro \"Empleado\"",
+      "explicacion": "Una relación reflexiva (recursiva) relaciona una entidad consigo misma, como un Empleado que supervisa a otro Empleado. Las demás opciones relacionan entidades distintas."
+    },
+    {
+      "id": 63,
+      "unit": "UT2",
+      "question": "¿Qué representa una entidad en un modelo E/R?",
+      "options": [
+        "Un atributo de una tabla",
+        "Un objeto o concepto del mundo real",
+        "Un tipo de clave primaria",
+        "Una relación entre dos tablas"
+      ],
+      "correct": "Un objeto o concepto del mundo real",
+      "explicacion": "Una entidad representa un objeto o concepto del mundo real del que se quiere guardar información, por ejemplo Cliente, Producto o Pedido."
+    },
+    {
+      "id": 64,
+      "unit": "UT2",
+      "question": "¿Qué tipo de relación implica que un \"Empleado\" trabaja en un solo \"Departamento\", pero un \"Departamento\" puede tener varios \"Empleados\"?",
+      "options": [
+        "Relación M:N",
+        "Relación 1:1",
+        "Relación reflexiva",
+        "Relación 1:N"
+      ],
+      "correct": "Relación 1:N",
+      "explicacion": "Es una relación 1:N (uno a muchos): un departamento tiene muchos empleados, pero cada empleado pertenece a un solo departamento."
+    },
+    {
+      "id": 65,
+      "unit": "UT2",
+      "question": "En un diagrama E/R, ¿qué representa un rombo?",
+      "options": [
+        "Una clave primaria de una tabla",
+        "Un atributo que no es esencial para la entidad",
+        "Una relación entre dos o más entidades",
+        "Un conjunto de registros que contienen información de los atributos"
+      ],
+      "correct": "Una relación entre dos o más entidades",
+      "explicacion": "En la notación de Chen, el rombo representa una relación entre entidades. Los rectángulos son entidades y las elipses, atributos."
+    },
+    {
+      "id": 66,
+      "unit": "UT2",
+      "question": "¿Qué función cumple una clave primaria en una base de datos?",
+      "options": [
+        "Establecer las relaciones entre las tablas",
+        "Definir los atributos de una entidad",
+        "Identificar de manera única cada registro dentro de una tabla",
+        "Organizar los registros por categoría"
+      ],
+      "correct": "Identificar de manera única cada registro dentro de una tabla",
+      "explicacion": "La clave primaria identifica de forma única cada registro de una tabla: no puede repetirse ni ser nula. Las relaciones entre tablas se establecen con claves foráneas."
+    },
+    {
+      "id": 67,
+      "unit": "UT2",
+      "question": "¿Qué define la cardinalidad de una relación en un modelo E/R?",
+      "options": [
+        "La cantidad de entidades involucradas en una relación ternaria",
+        "El número de instancias de una entidad que pueden estar asociadas con instancias de otra entidad",
+        "La regla que establece la dependencia de los atributos",
+        "La relación entre dos entidades que no tienen atributos comunes"
+      ],
+      "correct": "El número de instancias de una entidad que pueden estar asociadas con instancias de otra entidad",
+      "explicacion": "La cardinalidad indica cuántas instancias de una entidad pueden asociarse con cuántas de la otra: 1:1, 1:N o M:N."
+    },
+    {
+      "id": 68,
+      "unit": "UT2",
+      "question": "¿Qué significa que una relación sea de tipo M:N?",
+      "options": [
+        "Un registro de una entidad está relacionado con un solo registro de otra entidad",
+        "Varias instancias de una entidad están relacionadas con varias instancias de otra entidad",
+        "Varias relaciones se realizan mediante claves foráneas",
+        "Un registro de una entidad puede estar relacionado con múltiples instancias de la misma entidad"
+      ],
+      "correct": "Varias instancias de una entidad están relacionadas con varias instancias de otra entidad",
+      "explicacion": "En una relación M:N (muchos a muchos), varias instancias de una entidad se relacionan con varias de la otra, como alumnos y asignaturas. En el modelo relacional necesita una tabla intermedia."
+    },
+    {
+      "id": 69,
+      "unit": "UT2",
+      "question": "¿Qué sucede cuando una base de datos está en 2FN?",
+      "options": [
+        "Todos los atributos no clave dependen completamente de la clave primaria",
+        "Se ha eliminado la dependencia de claves primarias",
+        "Todos los atributos están en 3FN",
+        "La base de datos contiene datos duplicados"
+      ],
+      "correct": "Todos los atributos no clave dependen completamente de la clave primaria",
+      "explicacion": "Una tabla está en 2FN si está en 1FN y todos los atributos no clave dependen de la clave primaria completa, no solo de una parte de ella (sin dependencias parciales)."
+    },
+    {
+      "id": 70,
+      "unit": "UT2",
+      "question": "¿Qué es una clave foránea en un modelo relacional?",
+      "options": [
+        "Un atributo que identifica de manera única cada registro dentro de la tabla",
+        "Un atributo que hace referencia a la clave primaria de otra tabla",
+        "Un atributo que no puede contener valores nulos",
+        "Un campo que pertenece solo a las tablas intermedias"
+      ],
+      "correct": "Un atributo que hace referencia a la clave primaria de otra tabla",
+      "explicacion": "Una clave foránea es un atributo que hace referencia a la clave primaria de otra tabla, y así establece la relación entre ambas y la integridad referencial."
+    },
+    {
+      "id": 71,
+      "unit": "UT2",
+      "question": "¿Cuál de las siguientes afirmaciones describe la especialización en un modelo E/R ampliado?",
+      "options": [
+        "Crear una nueva relación entre dos entidades ya existentes",
+        "Representar una relación de todo/parte entre entidades",
+        "Dividir una entidad en subtipos más específicos",
+        "Combinar varias entidades en una superclase general"
+      ],
+      "correct": "Dividir una entidad en subtipos más específicos",
+      "explicacion": "La especialización es un proceso descendente: a partir de una entidad general se definen subtipos más específicos, por ejemplo Empleado se divide en Técnico y Comercial."
+    },
+    {
+      "id": 72,
+      "unit": "UT2",
+      "question": "¿Cuál es la primera condición para que una base de datos esté en Primera Forma Normal (1FN)?",
+      "options": [
+        "Debe estar libre de dependencias parciales",
+        "Debe eliminarse la dependencia transitiva",
+        "Debe ser posible aplicar la agregación de relaciones",
+        "Los atributos deben ser atómicos"
+      ],
+      "correct": "Los atributos deben ser atómicos",
+      "explicacion": "La 1FN exige que los atributos sean atómicos: cada celda contiene un único valor indivisible, sin grupos repetitivos ni listas."
+    },
+    {
+      "id": 73,
+      "unit": "UT2",
+      "question": "¿Qué se logra con la normalización hasta alcanzar la tercera forma normal (3FN)?",
+      "options": [
+        "Se eliminan las dependencias parciales de la clave primaria",
+        "Se asegura que todos los atributos sean atómicos",
+        "Se eliminan las dependencias transitivas entre atributos",
+        "Se genera una tabla de referencia para cada relación de la base de datos"
+      ],
+      "correct": "Se eliminan las dependencias transitivas entre atributos",
+      "explicacion": "La 3FN elimina las dependencias transitivas: ningún atributo no clave debe depender de otro atributo no clave. Las dependencias parciales se eliminan en la 2FN."
+    },
+    {
+      "id": 74,
+      "unit": "UT2",
+      "question": "¿Qué representa una relación binaria 1:N en un modelo E/R?",
+      "options": [
+        "Varias entidades están relacionadas entre sí mediante una tabla intermedia",
+        "Un registro de una entidad puede estar relacionado con varias instancias de la misma entidad",
+        "Un registro de una entidad puede estar relacionado con varios registros de otra entidad",
+        "Un registro de una entidad está relacionado con un solo registro de otra entidad"
+      ],
+      "correct": "Un registro de una entidad puede estar relacionado con varios registros de otra entidad",
+      "explicacion": "En una relación 1:N, un registro de una entidad se relaciona con varios registros de otra, pero cada uno de esos registros se asocia a un único registro de la primera."
+    },
+    {
+      "id": 75,
+      "unit": "UT2",
+      "question": "¿Qué tipo de dependencia se elimina al aplicar la segunda forma normal (2FN)?",
+      "options": [
+        "La dependencia recursiva de una entidad",
+        "La dependencia parcial de la clave primaria",
+        "La dependencia multivaluada de los atributos",
+        "La dependencia transitoria de los atributos"
+      ],
+      "correct": "La dependencia parcial de la clave primaria",
+      "explicacion": "La 2FN elimina las dependencias parciales, es decir, los atributos que dependen solo de una parte de una clave primaria compuesta."
+    },
+    {
+      "id": 76,
+      "unit": "UT2",
+      "question": "¿Qué significa normalizar una base de datos?",
+      "options": [
+        "Añadir registros a las tablas de la base de datos",
+        "Unir tablas para formar una sola gran tabla",
+        "Incrementar la cantidad de relaciones entre entidades",
+        "Eliminar redundancias y dependencias no deseadas"
+      ],
+      "correct": "Eliminar redundancias y dependencias no deseadas",
+      "explicacion": "Normalizar es aplicar las formas normales para eliminar redundancias y dependencias no deseadas, y así evitar anomalías al insertar, actualizar o borrar."
+    },
+    {
+      "id": 77,
+      "unit": "UT2",
+      "question": "¿Qué se entiende por generalización en un modelo E/R ampliado?",
+      "options": [
+        "Identificar características comunes entre varias entidades para agruparlas en una entidad más general.",
+        "Combinar varias relaciones en una sola entidad",
+        "Definir una relación recursiva dentro de una entidad",
+        "Dividir una entidad en subtipos más específicos"
+      ],
+      "correct": "Identificar características comunes entre varias entidades para agruparlas en una entidad más general.",
+      "explicacion": "La generalización es un proceso ascendente: se detectan características comunes entre varias entidades y se agrupan en una superentidad más general. Dividir en subtipos es la especialización."
+    },
+    {
+      "id": 78,
+      "unit": "UT2",
+      "question": "En una relación reflexiva, ¿qué sucede?",
+      "options": [
+        "Dos entidades están relacionadas a través de una dependencia transitiva",
+        "Dos entidades se relacionan a través de una tabla intermedia",
+        "Una entidad está relacionada consigo misma",
+        "Una entidad tiene una relación de tipo M:N con otra entidad"
+      ],
+      "correct": "Una entidad está relacionada consigo misma",
+      "explicacion": "En una relación reflexiva, una entidad se relaciona consigo misma, por ejemplo una Persona que es madre de otra Persona."
+    },
+    {
+      "id": 79,
+      "unit": "UT2",
+      "question": "¿Qué elemento del modelo E/R se convierte en una tabla en un modelo relacional?",
+      "options": [
+        "Cada atributo",
+        "Cada clave primaria",
+        "Cada relación",
+        "Cada entidad"
+      ],
+      "correct": "Cada entidad",
+      "explicacion": "Al pasar del modelo E/R al relacional, cada entidad se convierte en una tabla y sus atributos en columnas. Las relaciones se transforman en claves foráneas o en tablas intermedias (M:N)."
+    },
+    {
+      "id": 80,
+      "unit": "UT2",
+      "question": "En una relación de tipo 1:1, ¿cómo se puede representar en un modelo relacional?",
+      "options": [
+        "Se utiliza una tabla intermedia para representar la relación",
+        "Cada tabla tiene una clave primaria que se relaciona directamente con otra",
+        "Ambas tablas contienen claves foráneas para establecer la relación",
+        "Una de las tablas contiene la clave primaria de la otra como clave foránea"
+      ],
+      "correct": "Una de las tablas contiene la clave primaria de la otra como clave foránea",
+      "explicacion": "Una relación 1:1 se representa poniendo la clave primaria de una tabla como clave foránea (normalmente única) en la otra. Las tablas intermedias son para relaciones M:N."
+    },
+    {
+      "id": 81,
+      "unit": "UT2",
+      "question": "¿Qué ventaja estratégica ofrece que el diseño lógico sea independiente del SGBD?",
+      "options": [
+        "Que el modelo puede implementarse en distintos entornos como MySQL o PostgreSQL",
+        "Que no necesita tablas",
+        "Que no requiere claves",
+        "Que funciona sin servidor"
+      ],
+      "correct": "Que el modelo puede implementarse en distintos entornos como MySQL o PostgreSQL",
+      "explicacion": "El diseño lógico no depende del SGBD concreto, por lo que puede implementarse en distintos sistemas; además aporta coherencia, calidad, mantenimiento y comunicación."
+    },
+    {
+      "id": 82,
+      "unit": "UT2",
+      "question": "¿Qué fase del modelado representa la información desde el punto de vista del negocio: qué datos se necesitan y cómo se relacionan?",
+      "options": [
+        "Modelo binario",
+        "Modelo lógico",
+        "Modelo conceptual",
+        "Modelo físico"
+      ],
+      "correct": "Modelo conceptual",
+      "explicacion": "El modelado progresa del conceptual (entidades, atributos, relaciones, reglas de negocio) al lógico y al físico (tipos exactos, índices, almacenamiento)."
+    },
+    {
+      "id": 83,
+      "unit": "UT2",
+      "question": "¿Qué aspectos se definen en el modelo físico?",
+      "options": [
+        "Tipos de datos exactos, índices, políticas de almacenamiento y rendimiento",
+        "Las reglas de negocio en lenguaje natural",
+        "Los requisitos del cliente",
+        "Solo las entidades del negocio"
+      ],
+      "correct": "Tipos de datos exactos, índices, políticas de almacenamiento y rendimiento",
+      "explicacion": "El modelo físico concreta tipos de datos, índices, almacenamiento, restricciones y consideraciones de rendimiento, seguridad y backup."
+    },
+    {
+      "id": 84,
+      "unit": "UT2",
+      "question": "¿Qué es una entidad débil?",
+      "options": [
+        "Una entidad sin relaciones",
+        "Una entidad con muchos atributos",
+        "Una entidad con clave compuesta obligatoria",
+        "Una entidad cuya existencia depende de una entidad fuerte y no tiene clave propia"
+      ],
+      "correct": "Una entidad cuya existencia depende de una entidad fuerte y no tiene clave propia",
+      "explicacion": "Las entidades débiles, como Línea de factura o Detalle de pedido, dependen de una entidad fuerte y no poseen clave propia."
+    },
+    {
+      "id": 85,
+      "unit": "UT2",
+      "question": "¿Qué es un atributo multivaluado?",
+      "options": [
+        "Un atributo que puede tener más de un valor para una misma entidad, como los teléfonos de un cliente",
+        "Un atributo calculado",
+        "Un atributo opcional",
+        "Un atributo clave"
+      ],
+      "correct": "Un atributo que puede tener más de un valor para una misma entidad, como los teléfonos de un cliente",
+      "explicacion": "Un atributo multivaluado admite varios valores (varios teléfonos) y se representa con doble óvalo."
+    },
+    {
+      "id": 86,
+      "unit": "UT2",
+      "question": "¿Qué es un atributo derivado?",
+      "options": [
+        "Un atributo multivaluado",
+        "Una clave foránea",
+        "Un atributo heredado",
+        "Un atributo que se calcula a partir de otros, como la edad a partir de la fecha de nacimiento"
+      ],
+      "correct": "Un atributo que se calcula a partir de otros, como la edad a partir de la fecha de nacimiento",
+      "explicacion": "Los atributos derivados se calculan de otros y se representan con un óvalo punteado; los atributos clave se subrayan."
+    },
+    {
+      "id": 87,
+      "unit": "UT2",
+      "question": "¿Qué valores puede tomar la cardinalidad mínima de una relación?",
+      "options": [
+        "Solo N",
+        "Solo 0",
+        "0 (opcional) o 1 (obligatoria)",
+        "1 o N"
+      ],
+      "correct": "0 (opcional) o 1 (obligatoria)",
+      "explicacion": "La cardinalidad mínima es 0 (opcional) o 1 (obligatoria); la máxima es 1 o N."
+    },
+    {
+      "id": 88,
+      "unit": "UT2",
+      "question": "¿Qué propiedades debe tener una clave primaria según el temario?",
+      "options": [
+        "Repetible y opcional",
+        "Siempre compuesta",
+        "Siempre de texto",
+        "Única, no nula y estable"
+      ],
+      "correct": "Única, no nula y estable",
+      "explicacion": "La clave primaria debe ser única, no nula y estable, y puede ser natural (DNI) o artificial (ID autogenerado)."
+    },
+    {
+      "id": 89,
+      "unit": "UT2",
+      "question": "¿Cuál es el primer paso para crear un diagrama E/R?",
+      "options": [
+        "Dibujar los rombos",
+        "Determinar la cardinalidad",
+        "Normalizar",
+        "Identificar las entidades"
+      ],
+      "correct": "Identificar las entidades",
+      "explicacion": "Pasos: identificar entidades, determinar atributos, identificar relaciones, determinar cardinalidades y representarlo gráficamente."
+    },
+    {
+      "id": 90,
+      "unit": "UT2",
+      "question": "¿Qué herramienta se cita para crear diagramas E/R?",
+      "options": [
+        "Excel",
+        "Word",
+        "MySQL Workbench",
+        "Photoshop"
+      ],
+      "correct": "MySQL Workbench",
+      "explicacion": "Para diagramas E/R pueden usarse Microsoft Visio, Lucidchart, Draw.io o MySQL Workbench."
+    },
+    {
+      "id": 91,
+      "unit": "UT2",
+      "question": "¿Cuándo se usa una relación ternaria?",
+      "options": [
+        "Siempre que hay tres tablas",
+        "Nunca",
+        "Cuando una entidad se relaciona consigo misma",
+        "Cuando la asociación entre tres entidades no puede representarse sin perder información con relaciones binarias"
+      ],
+      "correct": "Cuando la asociación entre tres entidades no puede representarse sin perder información con relaciones binarias",
+      "explicacion": "Una relación ternaria, como proveedor-producto-almacén, se usa cuando descomponerla en binarias perdería información; puede tener atributos propios como cantidad o fecha."
+    },
+    {
+      "id": 92,
+      "unit": "UT2",
+      "question": "¿Qué es una relación exclusiva?",
+      "options": [
+        "Una entidad relacionada consigo misma",
+        "Una relación sin cardinalidad",
+        "Una entidad puede relacionarse con una u otra entidad, pero no con ambas a la vez",
+        "Una relación entre tres entidades"
+      ],
+      "correct": "Una entidad puede relacionarse con una u otra entidad, pero no con ambas a la vez",
+      "explicacion": "En una relación exclusiva, por ejemplo, un técnico se asigna a un cliente o a un proyecto, pero no a ambos simultáneamente."
+    },
+    {
+      "id": 93,
+      "unit": "UT2",
+      "question": "En una especialización exclusiva, ¿a cuántas subentidades puede pertenecer cada instancia?",
+      "options": [
+        "A dos como mínimo",
+        "A una sola",
+        "A ninguna",
+        "A todas"
+      ],
+      "correct": "A una sola",
+      "explicacion": "Exclusiva: cada instancia pertenece a una sola subentidad (un cliente es empresa o particular); solapada: puede pertenecer a varias."
+    },
+    {
+      "id": 94,
+      "unit": "UT2",
+      "question": "¿Qué indica una especialización total?",
+      "options": [
+        "Que ninguna instancia pertenece a un subtipo",
+        "Que no hay supertipo",
+        "Que toda instancia del supertipo pertenece a algún subtipo",
+        "Que las instancias pueden estar en varios subtipos"
+      ],
+      "correct": "Que toda instancia del supertipo pertenece a algún subtipo",
+      "explicacion": "Total: toda instancia pertenece a algún subtipo (doble línea); parcial: algunas instancias no pertenecen a ningún subtipo."
+    },
+    {
+      "id": 95,
+      "unit": "UT2",
+      "question": "¿Qué etiqueta indica en el diagrama una especialización disyuntiva (exclusiva)?",
+      "options": [
+        "o",
+        "x",
+        "d",
+        "t"
+      ],
+      "correct": "d",
+      "explicacion": "Se usa «d» para disyuntiva (exclusiva) y «o» para solapada, con doble línea si la especialización es total."
+    },
+    {
+      "id": 96,
+      "unit": "UT2",
+      "question": "¿Qué es un atributo compuesto?",
+      "options": [
+        "Un atributo con varios valores",
+        "Un atributo calculado",
+        "Una clave compuesta",
+        "Un atributo formado por subatributos, como dirección (calle, número, ciudad, CP)"
+      ],
+      "correct": "Un atributo formado por subatributos, como dirección (calle, número, ciudad, CP)",
+      "explicacion": "Un atributo compuesto se descompone en subatributos; al pasar al modelo relacional cada subatributo será una columna."
+    },
+    {
+      "id": 97,
+      "unit": "UT2",
+      "question": "¿Cómo se transforma un atributo multivaluado al modelo relacional?",
+      "options": [
+        "En una clave primaria",
+        "En una sola columna con una lista",
+        "En una entidad (tabla) independiente relacionada 1:N con la principal",
+        "Se elimina"
+      ],
+      "correct": "En una entidad (tabla) independiente relacionada 1:N con la principal",
+      "explicacion": "El atributo multivaluado (por ejemplo, correos de un cliente) se convierte en una nueva tabla con clave foránea a la entidad principal."
+    },
+    {
+      "id": 98,
+      "unit": "UT2",
+      "question": "¿En qué se convierte cada atributo de una entidad al pasar al modelo relacional?",
+      "options": [
+        "En una relación",
+        "En una tabla",
+        "En un índice",
+        "En un campo (columna) de la tabla"
+      ],
+      "correct": "En un campo (columna) de la tabla",
+      "explicacion": "Reglas: cada entidad pasa a tabla, cada atributo a columna con su tipo de dato y cada relación a clave foránea."
+    },
+    {
+      "id": 99,
+      "unit": "UT2",
+      "question": "En una relación 1:N, ¿dónde se coloca la clave foránea?",
+      "options": [
+        "En una tabla intermedia siempre",
+        "En la tabla del lado «uno»",
+        "En ambas tablas",
+        "En la tabla del lado «muchos», con la clave primaria de la tabla «uno»"
+      ],
+      "correct": "En la tabla del lado «muchos», con la clave primaria de la tabla «uno»",
+      "explicacion": "La clave primaria del lado «uno» (Departamento) pasa como clave foránea a la tabla del lado «muchos» (Empleado)."
+    },
+    {
+      "id": 100,
+      "unit": "UT2",
+      "question": "¿Qué contiene la tabla intermedia de una relación M:N?",
+      "options": [
+        "Solo la clave de una tabla",
+        "Nada",
+        "Todos los atributos de ambas tablas",
+        "Las claves foráneas de ambas tablas relacionadas"
+      ],
+      "correct": "Las claves foráneas de ambas tablas relacionadas",
+      "explicacion": "Una relación M:N, como Empleado-Proyecto, genera una tabla intermedia (Empleado_Proyecto) con las claves foráneas de ambas."
+    },
+    {
+      "id": 101,
+      "unit": "UT2",
+      "question": "¿Qué anomalías intenta evitar la normalización?",
+      "options": [
+        "Redundancia y anomalías de actualización que generan inconsistencias",
+        "Falta de memoria",
+        "Errores de compilación",
+        "Problemas de red"
+      ],
+      "correct": "Redundancia y anomalías de actualización que generan inconsistencias",
+      "explicacion": "La normalización divide tablas grandes para evitar duplicación de información e inconsistencias al actualizar."
+    },
+    {
+      "id": 102,
+      "unit": "UT2",
+      "question": "En una tabla Pedido con clave (ID_Pedido, ID_Producto), ¿qué problema causa que Nombre_Producto dependa solo de ID_Producto?",
+      "options": [
+        "Ninguno",
+        "Un atributo multivaluado",
+        "Una dependencia transitiva",
+        "Una dependencia parcial que incumple la 2FN"
+      ],
+      "correct": "Una dependencia parcial que incumple la 2FN",
+      "explicacion": "Nombre_Producto depende solo de parte de la clave compuesta: es una dependencia parcial, y debe moverse a otra tabla para cumplir la 2FN."
+    },
+    {
+      "id": 103,
+      "unit": "UT2",
+      "question": "En una tabla Empleado con ID_Departamento y Nombre_Departamento, ¿qué forma normal se incumple?",
+      "options": [
+        "Ninguna",
+        "2FN",
+        "3FN, por una dependencia transitiva",
+        "1FN"
+      ],
+      "correct": "3FN, por una dependencia transitiva",
+      "explicacion": "Nombre_Departamento depende de ID_Departamento, que no es clave: es una dependencia transitiva que la 3FN elimina llevando esos datos a una tabla Departamento."
+    },
+    {
+      "id": 104,
+      "unit": "UT2",
+      "question": "¿Qué tipo de dependencia elimina la Cuarta Forma Normal (4FN)?",
+      "options": [
+        "Las dependencias parciales",
+        "Las dependencias multivaluadas",
+        "Las dependencias transitivas",
+        "Las claves foráneas"
+      ],
+      "correct": "Las dependencias multivaluadas",
+      "explicacion": "La 4FN exige estar en 3FN y eliminar las dependencias multivaluadas, descomponiendo la tabla."
+    },
+    {
+      "id": 105,
+      "unit": "UT2",
+      "question": "¿Qué dependencias resuelve la Quinta Forma Normal (5FN)?",
+      "options": [
+        "Los índices",
+        "Los valores nulos",
+        "Las dependencias parciales",
+        "Las dependencias de unión (join)"
+      ],
+      "correct": "Las dependencias de unión (join)",
+      "explicacion": "La 5FN exige estar en 4FN y eliminar las dependencias de unión."
+    },
+    {
+      "id": 106,
+      "unit": "UT2",
+      "question": "¿Cómo se representan las entidades en un diagrama E/R?",
+      "options": [
+        "Con elipses",
+        "Con flechas",
+        "Con rectángulos",
+        "Con rombos"
+      ],
+      "correct": "Con rectángulos",
+      "explicacion": "Entidades: rectángulos; atributos: elipses (doble óvalo si son multivaluados, punteado si derivados); relaciones: rombos."
+    },
+    {
+      "id": 107,
+      "unit": "UT2",
+      "question": "¿Cómo se representan los atributos en un diagrama E/R?",
+      "options": [
+        "Con rombos",
+        "Con elipses u óvalos",
+        "Con triángulos",
+        "Con rectángulos"
+      ],
+      "correct": "Con elipses u óvalos",
+      "explicacion": "Los atributos se dibujan como elipses unidas a su entidad; el atributo clave se subraya."
+    },
+    {
+      "id": 108,
+      "unit": "UT2",
+      "question": "¿Qué tipo de relación asocia más de tres entidades?",
+      "options": [
+        "Reflexiva",
+        "N-aria",
+        "Binaria",
+        "Ternaria"
+      ],
+      "correct": "N-aria",
+      "explicacion": "Según el número de entidades, las relaciones son binarias (dos), ternarias (tres) o n-arias (más de tres)."
+    },
+    {
+      "id": 109,
+      "unit": "UT2",
+      "question": "¿Puede una relación tener atributos propios en el modelo E/R?",
+      "options": [
+        "Solo las reflexivas",
+        "Solo si es M:N obligatoriamente",
+        "No, nunca",
+        "Sí, por ejemplo fechaInicio en la relación TRABAJA entre Empleado y Departamento"
+      ],
+      "correct": "Sí, por ejemplo fechaInicio en la relación TRABAJA entre Empleado y Departamento",
+      "explicacion": "Las relaciones pueden tener atributos que describen la asociación, como la fecha de inicio o la cantidad suministrada."
+    },
+    {
+      "id": 110,
+      "unit": "UT3",
+      "question": "¿Qué comando permite agregar una clave foránea a una tabla existente?",
+      "options": [
+        "LINK TABLE",
+        "ADD CONSTRAINT",
+        "EXTEND FOREIGN",
+        "ALTER TABLE ... ADD FOREIGN KEY"
+      ],
+      "correct": "ALTER TABLE ... ADD FOREIGN KEY",
+      "explicacion": "Para añadir una clave foránea a una tabla existente se usa ALTER TABLE tabla ADD FOREIGN KEY (col) REFERENCES otra(col). Las demás opciones no son sintaxis SQL válida."
+    },
+    {
+      "id": 111,
+      "unit": "UT3",
+      "question": "¿Qué propiedad debe tener una columna para que se use como clave primaria?",
+      "options": [
+        "Ser índice",
+        "Ser de tipo entero",
+        "Ser única y no nula",
+        "Tener valores negativos"
+      ],
+      "correct": "Ser única y no nula",
+      "explicacion": "Una clave primaria debe ser única (no se repite) y no nula (NOT NULL). No tiene por qué ser de tipo entero."
+    },
+    {
+      "id": 112,
+      "unit": "UT3",
+      "question": "¿Qué sentencia permite modificar el conjunto de caracteres de una base de datos?",
+      "options": [
+        "ALTER DATABASE ... CHARACTER SET",
+        "SET CHARSET",
+        "CONFIGURE ENCODING",
+        "CHANGE CHARACTER"
+      ],
+      "correct": "ALTER DATABASE ... CHARACTER SET",
+      "explicacion": "ALTER DATABASE nombre CHARACTER SET utf8mb4 cambia el juego de caracteres por defecto de una base de datos en MySQL."
+    },
+    {
+      "id": 113,
+      "unit": "UT3",
+      "question": "¿Qué tipo de índice se usa para optimizar búsquedas rápidas por varias columnas?",
+      "options": [
+        "Índice único",
+        "Índice binario",
+        "Índice lógico",
+        "Índice compuesto"
+      ],
+      "correct": "Índice compuesto",
+      "explicacion": "Un índice compuesto abarca varias columnas, por ejemplo (apellido, nombre), y acelera las búsquedas que filtran por esas columnas en ese orden."
+    },
+    {
+      "id": 114,
+      "unit": "UT3",
+      "question": "¿Qué comando crea una relación entre dos tablas asegurando la integridad referencial?",
+      "options": [
+        "FOREIGN KEY",
+        "TABLE JOIN",
+        "PRIMARY LINK",
+        "CONNECT KEY"
+      ],
+      "correct": "FOREIGN KEY",
+      "explicacion": "La restricción FOREIGN KEY ... REFERENCES vincula dos tablas y garantiza la integridad referencial: no se pueden insertar referencias a filas que no existen."
+    },
+    {
+      "id": 115,
+      "unit": "UT3",
+      "question": "¿Qué comando se utiliza para eliminar completamente una base de datos?",
+      "options": [
+        "DESTROY DATABASE",
+        "DROP DATABASE",
+        "REMOVE DATABASE",
+        "DELETE DATABASE"
+      ],
+      "correct": "DROP DATABASE",
+      "explicacion": "DROP DATABASE elimina por completo una base de datos con todas sus tablas y datos. DROP es el comando DDL para borrar objetos."
+    },
+    {
+      "id": 116,
+      "unit": "UT3",
+      "question": "¿Qué comando permite ver todas las bases de datos disponibles en el servidor MySQL?",
+      "options": [
+        "SELECT ALL DATABASES",
+        "SHOW DATABASES",
+        "LIST DATABASES",
+        "DISPLAY DBS"
+      ],
+      "correct": "SHOW DATABASES",
+      "explicacion": "SHOW DATABASES lista todas las bases de datos del servidor MySQL a las que tiene acceso el usuario."
+    },
+    {
+      "id": 117,
+      "unit": "UT3",
+      "question": "¿Qué comando permite eliminar todos los registros de una tabla sin eliminar la tabla?",
+      "options": [
+        "CLEAR TABLE",
+        "EMPTY TABLE",
+        "DELETE ALL",
+        "TRUNCATE TABLE"
+      ],
+      "correct": "TRUNCATE TABLE",
+      "explicacion": "TRUNCATE TABLE vacía todos los registros de una tabla, pero conserva su estructura. Es más rápido que DELETE sin WHERE y reinicia el AUTO_INCREMENT."
+    },
+    {
+      "id": 118,
+      "unit": "UT3",
+      "question": "¿Qué permite el uso de `REVOKE` en MySQL?",
+      "options": [
+        "Borrar una tabla",
+        "Quitar permisos a un usuario",
+        "Cancelar la cuenta de un usuario",
+        "Eliminar una base de datos"
+      ],
+      "correct": "Quitar permisos a un usuario",
+      "explicacion": "REVOKE retira permisos que se habían concedido a un usuario con GRANT. Para borrar el usuario se usa DROP USER."
+    },
+    {
+      "id": 119,
+      "unit": "UT3",
+      "question": "¿Qué tipo de dato se utiliza para almacenar valores como 1 o 0 que representan verdadero o falso?",
+      "options": [
+        "BOOLEAN",
+        "INTEGER",
+        "STRING",
+        "BITFIELD"
+      ],
+      "correct": "BOOLEAN",
+      "explicacion": "BOOLEAN guarda valores verdadero/falso; en MySQL es un alias de TINYINT(1), así que se almacena como 1 o 0."
+    },
+    {
+      "id": 120,
+      "unit": "UT3",
+      "question": "¿Cuál es el comando correcto para modificar el tipo de una columna en MySQL?",
+      "options": [
+        "ALTER COLUMN TYPE",
+        "ALTER TABLE ... MODIFY COLUMN",
+        "CHANGE TYPE",
+        "UPDATE COLUMN TYPE"
+      ],
+      "correct": "ALTER TABLE ... MODIFY COLUMN",
+      "explicacion": "En MySQL se cambia el tipo de una columna con ALTER TABLE tabla MODIFY COLUMN columna NUEVO_TIPO. ALTER COLUMN TYPE es sintaxis de PostgreSQL."
+    },
+    {
+      "id": 121,
+      "unit": "UT3",
+      "question": "¿Qué sentencia se utiliza para crear una tabla en MySQL?",
+      "options": [
+        "NEW TABLE",
+        "ADD TABLE",
+        "MAKE TABLE",
+        "CREATE TABLE"
+      ],
+      "correct": "CREATE TABLE",
+      "explicacion": "CREATE TABLE crea una tabla nueva definiendo sus columnas, tipos de datos y restricciones."
+    },
+    {
+      "id": 122,
+      "unit": "UT3",
+      "question": "¿Qué tipo de índice es ideal para búsquedas de texto en columnas `TEXT`?",
+      "options": [
+        "UNIQUE",
+        "BTREE",
+        "FULLTEXT",
+        "HASH"
+      ],
+      "correct": "FULLTEXT",
+      "explicacion": "Un índice FULLTEXT permite búsquedas de texto completo (MATCH ... AGAINST) en columnas CHAR, VARCHAR o TEXT, mucho más eficientes que LIKE '%texto%'."
+    },
+    {
+      "id": 123,
+      "unit": "UT3",
+      "question": "¿Qué tipo de dato se debe usar para almacenar una descripción larga de producto?",
+      "options": [
+        "VARCHAR(50)",
+        "STRING",
+        "TEXT",
+        "CHAR"
+      ],
+      "correct": "TEXT",
+      "explicacion": "TEXT almacena textos largos (hasta 65.535 caracteres). VARCHAR(50) se queda corto, CHAR es de longitud fija y STRING no es un tipo de MySQL."
+    },
+    {
+      "id": 124,
+      "unit": "UT3",
+      "question": "¿Qué comando se utiliza para asignar todos los privilegios sobre una base de datos?",
+      "options": [
+        "GIVE FULL ACCESS",
+        "GRANT ALL PRIVILEGES",
+        "SET RIGHTS",
+        "ALLOW ALL"
+      ],
+      "correct": "GRANT ALL PRIVILEGES",
+      "explicacion": "GRANT ALL PRIVILEGES ON bd.* TO 'usuario'@'host' concede todos los permisos sobre una base de datos."
+    },
+    {
+      "id": 125,
+      "unit": "UT3",
+      "question": "¿Qué comando se usa para seleccionar una base de datos con la que se desea trabajar?",
+      "options": [
+        "SWITCH",
+        "USE",
+        "SELECT DATABASE",
+        "CHOOSE"
+      ],
+      "correct": "USE",
+      "explicacion": "USE nombre_bd selecciona la base de datos activa, sobre la que se ejecutarán las siguientes sentencias."
+    },
+    {
+      "id": 126,
+      "unit": "UT3",
+      "question": "¿Qué comando se usa para consultar los permisos actuales de un usuario?",
+      "options": [
+        "DISPLAY GRANTS",
+        "LIST RIGHTS",
+        "SHOW GRANTS",
+        "SHOW PERMISSIONS"
+      ],
+      "correct": "SHOW GRANTS",
+      "explicacion": "SHOW GRANTS FOR 'usuario'@'host' muestra los privilegios que tiene asignados un usuario."
+    },
+    {
+      "id": 127,
+      "unit": "UT3",
+      "question": "¿Qué opción se puede añadir al crear una columna para que se rellene automáticamente con un valor por defecto?",
+      "options": [
+        "INITIAL",
+        "PRESET",
+        "AUTOFILL",
+        "DEFAULT"
+      ],
+      "correct": "DEFAULT",
+      "explicacion": "DEFAULT asigna un valor por defecto a una columna cuando se inserta una fila sin especificar ese campo, por ejemplo estado VARCHAR(10) DEFAULT 'activo'."
+    },
+    {
+      "id": 128,
+      "unit": "UT3",
+      "question": "¿Cuál es el propósito de una clave primaria?",
+      "options": [
+        "Permitir datos duplicados",
+        "Almacenar valores nulos",
+        "Vincular con otra tabla",
+        "Identificar de forma única cada fila"
+      ],
+      "correct": "Identificar de forma única cada fila",
+      "explicacion": "La clave primaria identifica de forma única cada fila de la tabla. No admite duplicados ni valores nulos; la vinculación con otras tablas es tarea de la clave foránea."
+    },
+    {
+      "id": 129,
+      "unit": "UT3",
+      "question": "¿Qué comando se usa para crear un usuario con contraseña en MySQL?",
+      "options": [
+        "ADD USER ... WITH PASSWORD",
+        "CREATE USER ... IDENTIFIED BY",
+        "MAKE USER ... PASSWORD",
+        "NEW USER ... SET PASSWORD"
+      ],
+      "correct": "CREATE USER ... IDENTIFIED BY",
+      "explicacion": "CREATE USER 'usuario'@'host' IDENTIFIED BY 'contraseña' crea un usuario con contraseña en MySQL."
+    },
+    {
+      "id": 130,
+      "unit": "UT3",
+      "question": "¿Qué tipo de software es MySQL?",
+      "options": [
+        "Una base de datos NoSQL documental",
+        "Un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto",
+        "Un lenguaje de programación",
+        "Un sistema operativo"
+      ],
+      "correct": "Un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto",
+      "explicacion": "MySQL es un RDBMS de código abierto que usa SQL y permite operaciones CRUD sobre tablas relacionadas."
+    },
+    {
+      "id": 131,
+      "unit": "UT3",
+      "question": "¿Qué puerto usa MySQL por defecto?",
+      "options": [
+        "3306",
+        "5432",
+        "1521",
+        "8080"
+      ],
+      "correct": "3306",
+      "explicacion": "Durante la instalación se configura el puerto de conexión, que por defecto es 3306."
+    },
+    {
+      "id": 132,
+      "unit": "UT3",
+      "question": "¿Qué comando mejora la seguridad tras instalar MySQL eliminando usuarios anónimos y el acceso remoto de root?",
+      "options": [
+        "SHOW GRANTS",
+        "mysql --version",
+        "brew services start mysql",
+        "mysql_secure_installation"
+      ],
+      "correct": "mysql_secure_installation",
+      "explicacion": "mysql_secure_installation elimina usuarios anónimos, deshabilita el login remoto de root y aplica otras opciones de seguridad."
+    },
+    {
+      "id": 133,
+      "unit": "UT3",
+      "question": "¿Qué comando verifica la versión de MySQL instalada?",
+      "options": [
+        "mysql -u root",
+        "SELECT VERSION",
+        "mysql --version",
+        "SHOW DATABASES"
+      ],
+      "correct": "mysql --version",
+      "explicacion": "mysql --version muestra la versión; mysql -u root -p inicia sesión en la consola."
+    },
+    {
+      "id": 134,
+      "unit": "UT3",
+      "question": "¿En qué ruta suele encontrarse el archivo de configuración my.cnf en Linux?",
+      "options": [
+        "/etc/mysql/my.cnf",
+        "/var/www/my.cnf",
+        "C:\\mysql\\my.cnf",
+        "/home/mysql.ini"
+      ],
+      "correct": "/etc/mysql/my.cnf",
+      "explicacion": "En Linux está en /etc/mysql/my.cnf; en macOS en /usr/local/etc/my.cnf y en Windows en el directorio de instalación."
+    },
+    {
+      "id": 135,
+      "unit": "UT3",
+      "question": "¿Qué parámetro de my.cnf define el número máximo de conexiones simultáneas?",
+      "options": [
+        "max_connections",
+        "key_buffer_size",
+        "innodb_buffer_pool_size",
+        "port"
+      ],
+      "correct": "max_connections",
+      "explicacion": "max_connections limita las conexiones simultáneas; key_buffer_size asigna memoria a índices e innodb_buffer_pool_size la memoria de InnoDB para datos e índices."
+    },
+    {
+      "id": 136,
+      "unit": "UT3",
+      "question": "¿Qué herramienta web escrita en PHP permite gestionar MySQL desde el navegador?",
+      "options": [
+        "phpMyAdmin",
+        "MySQL Workbench",
+        "MongoDB Compass",
+        "pgAdmin"
+      ],
+      "correct": "phpMyAdmin",
+      "explicacion": "phpMyAdmin es una interfaz web en PHP; MySQL Workbench es la herramienta gráfica oficial, que además genera diagramas EER."
+    },
+    {
+      "id": 137,
+      "unit": "UT3",
+      "question": "¿Qué ventaja tiene la línea de comandos (CLI) de MySQL frente a Workbench?",
+      "options": [
+        "Interfaz visual intuitiva",
+        "Genera diagramas automáticamente",
+        "Ideal para principiantes",
+        "Alto rendimiento y gran capacidad de automatización con scripts"
+      ],
+      "correct": "Alto rendimiento y gran capacidad de automatización con scripts",
+      "explicacion": "La CLI es ligera, rápida y automatizable; Workbench es visual e intuitiva, ideal para principiantes."
+    },
+    {
+      "id": 138,
+      "unit": "UT3",
+      "question": "¿Qué define COLLATE al crear una base de datos?",
+      "options": [
+        "La intercalación: reglas de comparación de texto, como distinguir mayúsculas y minúsculas",
+        "El número de tablas",
+        "El usuario propietario",
+        "El puerto"
+      ],
+      "correct": "La intercalación: reglas de comparación de texto, como distinguir mayúsculas y minúsculas",
+      "explicacion": "CHARACTER SET define el juego de caracteres (utf8mb4 admite varios idiomas y emojis) y COLLATE las reglas de comparación y ordenación."
+    },
+    {
+      "id": 139,
+      "unit": "UT3",
+      "question": "¿Qué juego de caracteres se recomienda para almacenar texto en múltiples idiomas incluidos emojis?",
+      "options": [
+        "utf8mb4",
+        "ascii",
+        "ucs1",
+        "latin1"
+      ],
+      "correct": "utf8mb4",
+      "explicacion": "utf8mb4 es la opción ideal para texto multilingüe con emojis."
+    },
+    {
+      "id": 140,
+      "unit": "UT3",
+      "question": "¿Cuántos bytes ocupa un TINYINT en MySQL?",
+      "options": [
+        "1",
+        "4",
+        "2",
+        "8"
+      ],
+      "correct": "1",
+      "explicacion": "TINYINT ocupa 1 byte (-128 a 127), SMALLINT 2, MEDIUMINT 3, INT 4 y BIGINT 8."
+    },
+    {
+      "id": 141,
+      "unit": "UT3",
+      "question": "¿Qué tipo numérico se usa cuando se necesita un número fijo de decimales exacto, como en importes?",
+      "options": [
+        "TINYINT",
+        "DOUBLE",
+        "FLOAT",
+        "DECIMAL(p,s)"
+      ],
+      "correct": "DECIMAL(p,s)",
+      "explicacion": "DECIMAL(10,2) guarda números exactos con precisión y escala, adecuado para precios; FLOAT y DOUBLE son de coma flotante aproximada."
+    },
+    {
+      "id": 142,
+      "unit": "UT3",
+      "question": "¿Qué diferencia hay entre CHAR(N) y VARCHAR(N)?",
+      "options": [
+        "CHAR es de longitud fija y rellena con espacios; VARCHAR es de longitud variable",
+        "Son idénticos",
+        "CHAR solo admite números",
+        "VARCHAR es de longitud fija"
+      ],
+      "correct": "CHAR es de longitud fija y rellena con espacios; VARCHAR es de longitud variable",
+      "explicacion": "VARCHAR(N) almacena cadenas de longitud variable hasta N; CHAR(N) es de longitud fija y rellena con espacios."
+    },
+    {
+      "id": 143,
+      "unit": "UT3",
+      "question": "¿Qué tipo de dato almacena datos binarios como imágenes o archivos?",
+      "options": [
+        "DATE",
+        "TEXT",
+        "BLOB",
+        "VARCHAR"
+      ],
+      "correct": "BLOB",
+      "explicacion": "BLOB almacena datos binarios; TEXT almacena textos largos."
+    },
+    {
+      "id": 144,
+      "unit": "UT3",
+      "question": "¿Qué formato tiene un campo DATETIME en MySQL?",
+      "options": [
+        "DD/MM/YYYY",
+        "HH:MM",
+        "YYYY",
+        "YYYY-MM-DD HH:MM:SS"
+      ],
+      "correct": "YYYY-MM-DD HH:MM:SS",
+      "explicacion": "DATE usa YYYY-MM-DD, DATETIME YYYY-MM-DD HH:MM:SS, TIME HH:MM:SS y YEAR solo el año."
+    },
+    {
+      "id": 145,
+      "unit": "UT3",
+      "question": "¿Qué tipo de fecha se ajusta automáticamente al huso horario y puede registrar la fecha de la última modificación?",
+      "options": [
+        "YEAR",
+        "TIME",
+        "DATE",
+        "TIMESTAMP"
+      ],
+      "correct": "TIMESTAMP",
+      "explicacion": "TIMESTAMP guarda la fecha y hora al insertar o actualizar el registro y se ajusta al huso horario del sistema."
+    },
+    {
+      "id": 146,
+      "unit": "UT3",
+      "question": "¿Qué restricción garantiza que los valores de un campo no se repitan, como en un email?",
+      "options": [
+        "DEFAULT",
+        "AUTO_INCREMENT",
+        "UNIQUE",
+        "NOT NULL"
+      ],
+      "correct": "UNIQUE",
+      "explicacion": "UNIQUE impide valores repetidos; NOT NULL obliga a tener valor; DEFAULT da un valor por defecto."
+    },
+    {
+      "id": 147,
+      "unit": "UT3",
+      "question": "¿Qué restricción asegura que la edad sea mayor o igual a 18?",
+      "options": [
+        "UNIQUE (edad)",
+        "CHECK (edad >= 18)",
+        "NOT NULL",
+        "DEFAULT 18"
+      ],
+      "correct": "CHECK (edad >= 18)",
+      "explicacion": "CHECK establece una condición que deben cumplir los valores de la columna."
+    },
+    {
+      "id": 148,
+      "unit": "UT3",
+      "question": "¿Qué hace AUTO_INCREMENT en una columna?",
+      "options": [
+        "Incrementa automáticamente su valor con cada nuevo registro",
+        "Duplica registros",
+        "Aumenta el tamaño de la tabla",
+        "Ordena la tabla"
+      ],
+      "correct": "Incrementa automáticamente su valor con cada nuevo registro",
+      "explicacion": "AUTO_INCREMENT, usado con enteros (normalmente la clave primaria), asigna un valor creciente a cada nuevo registro."
+    },
+    {
+      "id": 149,
+      "unit": "UT3",
+      "question": "¿Qué sentencia añade una columna a una tabla existente?",
+      "options": [
+        "INSERT COLUMN direccion",
+        "UPDATE empleados ADD direccion",
+        "ADD COLUMN empleados direccion",
+        "ALTER TABLE empleados ADD direccion VARCHAR(100);"
+      ],
+      "correct": "ALTER TABLE empleados ADD direccion VARCHAR(100);",
+      "explicacion": "ALTER TABLE ... ADD añade columnas, ... DROP COLUMN las elimina y ... MODIFY COLUMN cambia su tipo."
+    },
+    {
+      "id": 150,
+      "unit": "UT3",
+      "question": "¿Qué sentencia elimina una columna de una tabla?",
+      "options": [
+        "DELETE COLUMN direccion",
+        "REMOVE COLUMN direccion",
+        "ALTER TABLE empleados DROP COLUMN direccion;",
+        "DROP direccion FROM empleados"
+      ],
+      "correct": "ALTER TABLE empleados DROP COLUMN direccion;",
+      "explicacion": "ALTER TABLE nombre DROP COLUMN columna elimina la columna y sus datos."
+    },
+    {
+      "id": 151,
+      "unit": "UT3",
+      "question": "¿Qué sentencia elimina una tabla junto con todos sus datos?",
+      "options": [
+        "DROP TABLE empleados;",
+        "REMOVE empleados",
+        "TRUNCATE DATABASE",
+        "DELETE TABLE empleados;"
+      ],
+      "correct": "DROP TABLE empleados;",
+      "explicacion": "DROP TABLE elimina la tabla completa (estructura y datos) de forma irreversible."
+    },
+    {
+      "id": 152,
+      "unit": "UT3",
+      "question": "¿Cómo se elimina una restricción de clave foránea llamada fk_id_departamento?",
+      "options": [
+        "DELETE FOREIGN KEY",
+        "REMOVE CONSTRAINT",
+        "ALTER TABLE empleados DROP FOREIGN KEY fk_id_departamento;",
+        "DROP INDEX fk_id_departamento"
+      ],
+      "correct": "ALTER TABLE empleados DROP FOREIGN KEY fk_id_departamento;",
+      "explicacion": "ALTER TABLE ... DROP FOREIGN KEY nombre elimina la relación entre las tablas."
+    },
+    {
+      "id": 153,
+      "unit": "UT3",
+      "question": "¿Qué tipo de índice usa MySQL por defecto?",
+      "options": [
+        "FULLTEXT",
+        "Hash",
+        "B-tree (árbol B)",
+        "R-Tree"
+      ],
+      "correct": "B-tree (árbol B)",
+      "explicacion": "El B-tree es el índice por defecto; Hash se usa en tablas MEMORY (no sirve para rangos) y R-Tree en índices espaciales."
+    },
+    {
+      "id": 154,
+      "unit": "UT3",
+      "question": "¿Qué tipo de índice se usa en bases de datos geográficas o espaciales?",
+      "options": [
+        "B-tree",
+        "R-Tree",
+        "UNIQUE",
+        "Hash"
+      ],
+      "correct": "R-Tree",
+      "explicacion": "R-Tree se utiliza para índices espaciales, por ejemplo en datos geográficos."
+    },
+    {
+      "id": 155,
+      "unit": "UT3",
+      "question": "¿Cuál es un coste de los índices?",
+      "options": [
+        "Hacen más lentas todas las consultas SELECT",
+        "Eliminan la clave primaria",
+        "Ocupan espacio adicional y ralentizan inserciones, actualizaciones y borrados",
+        "Impiden usar JOIN"
+      ],
+      "correct": "Ocupan espacio adicional y ralentizan inserciones, actualizaciones y borrados",
+      "explicacion": "Los índices aceleran SELECT, JOIN y WHERE, pero requieren espacio y tiempo de mantenimiento en cada modificación."
+    },
+    {
+      "id": 156,
+      "unit": "UT3",
+      "question": "¿Cuántas claves primarias puede tener una tabla?",
+      "options": [
+        "Una sola",
+        "Dos",
+        "Ninguna",
+        "Ilimitadas"
+      ],
+      "correct": "Una sola",
+      "explicacion": "Una tabla solo puede tener una clave primaria, aunque esta puede estar formada por varias columnas."
+    },
+    {
+      "id": 157,
+      "unit": "UT3",
+      "question": "¿Qué hace ON UPDATE RESTRICT en una clave foránea?",
+      "options": [
+        "Borra los hijos",
+        "Impide modificar la clave referenciada si ya está usada en la tabla hija",
+        "Actualiza en cascada",
+        "Pone a NULL"
+      ],
+      "correct": "Impide modificar la clave referenciada si ya está usada en la tabla hija",
+      "explicacion": "ON UPDATE RESTRICT no permite cambiar un id del padre que esté referenciado; ON DELETE CASCADE borra los hijos al borrar el padre."
+    },
+    {
+      "id": 158,
+      "unit": "UT3",
+      "question": "¿Qué sentencia elimina un índice?",
+      "options": [
+        "ALTER INDEX DROP",
+        "REMOVE INDEX",
+        "DROP INDEX idx_nombre_empleado ON empleados;",
+        "DELETE INDEX idx_nombre_empleado"
+      ],
+      "correct": "DROP INDEX idx_nombre_empleado ON empleados;",
+      "explicacion": "CREATE INDEX nombre ON tabla (columna) crea un índice y DROP INDEX nombre ON tabla lo elimina."
+    },
+    {
+      "id": 159,
+      "unit": "UT3",
+      "question": "¿Cuáles son las dos principales sentencias del lenguaje DCL?",
+      "options": [
+        "SELECT e INSERT",
+        "CREATE y DROP",
+        "COMMIT y ROLLBACK",
+        "GRANT y REVOKE"
+      ],
+      "correct": "GRANT y REVOKE",
+      "explicacion": "El DCL controla permisos: GRANT los concede y REVOKE los retira."
+    },
+    {
+      "id": 160,
+      "unit": "UT3",
+      "question": "¿Qué significa 'usuario'@'%' al crear un usuario en MySQL?",
+      "options": [
+        "Que solo se conecta desde localhost",
+        "Que es administrador",
+        "Que no tiene contraseña",
+        "Que puede conectarse desde cualquier host"
+      ],
+      "correct": "Que puede conectarse desde cualquier host",
+      "explicacion": "'%' es un comodín que permite conexiones desde cualquier host; puede ser un riesgo de seguridad si no se controla."
+    },
+    {
+      "id": 161,
+      "unit": "UT3",
+      "question": "¿Qué sintaxis concede permisos globales sobre todas las bases de datos?",
+      "options": [
+        "GRANT ALL PRIVILEGES ON *.* TO 'usuario'@'localhost';",
+        "GRANT SELECT ON tabla",
+        "GRANT ALL ON gestion_ventas.*",
+        "GRANT GLOBAL"
+      ],
+      "correct": "GRANT ALL PRIVILEGES ON *.* TO 'usuario'@'localhost';",
+      "explicacion": "*.* aplica el permiso a todas las bases y tablas; bd.* a todas las tablas de una base; bd.tabla a una tabla concreta."
+    },
+    {
+      "id": 162,
+      "unit": "UT3",
+      "question": "¿Qué sentencia cambia la contraseña de un usuario en MySQL según el temario?",
+      "options": [
+        "ALTER PASSWORD",
+        "CHANGE PASSWORD juan",
+        "SET PASSWORD FOR 'juan'@'localhost' = PASSWORD('nueva');",
+        "UPDATE USER juan"
+      ],
+      "correct": "SET PASSWORD FOR 'juan'@'localhost' = PASSWORD('nueva');",
+      "explicacion": "El temario usa SET PASSWORD FOR 'usuario'@'host' para cambiar la contraseña."
+    },
+    {
+      "id": 163,
+      "unit": "UT3",
+      "question": "¿Qué principio de seguridad recomienda evitar dar ALL PRIVILEGES sin necesidad?",
+      "options": [
+        "Principio de menor privilegio",
+        "Principio de máxima disponibilidad",
+        "Principio de redundancia",
+        "Principio de herencia"
+      ],
+      "correct": "Principio de menor privilegio",
+      "explicacion": "Hay que asignar solo los privilegios necesarios, controlar los hosts de conexión y usar contraseñas fuertes."
+    },
+    {
+      "id": 164,
+      "unit": "UT3",
+      "question": "¿Qué permiso DCL permite crear nuevas tablas, vistas y otros objetos?",
+      "options": [
+        "SELECT",
+        "UPDATE",
+        "DELETE",
+        "CREATE"
+      ],
+      "correct": "CREATE",
+      "explicacion": "Permisos comunes: SELECT, INSERT, UPDATE, DELETE, CREATE, DROP y ALL PRIVILEGES."
+    },
+    {
+      "id": 165,
+      "unit": "UT3",
+      "question": "¿Cuánta memoria RAM mínima requiere la instalación de MySQL según el temario?",
+      "options": [
+        "64 MB",
+        "No requiere RAM",
+        "16 GB",
+        "1 GB (se recomiendan 2 GB o más)"
+      ],
+      "correct": "1 GB (se recomiendan 2 GB o más)",
+      "explicacion": "Requisitos: procesador de 32 o 64 bits, 1 GB de RAM como mínimo y unos 200 MB de disco para la instalación."
+    },
+    {
+      "id": 166,
+      "unit": "UT3",
+      "question": "¿Qué dependencia de software hay que tener instalada en Windows para MySQL?",
+      "options": [
+        "Java Runtime obligatorio",
+        "Python 2",
+        "Flash Player",
+        "Visual C++ Redistributable"
+      ],
+      "correct": "Visual C++ Redistributable",
+      "explicacion": "En Windows hace falta el Visual C++ Redistributable y en Linux bibliotecas como libaio y libncurses."
+    },
+    {
+      "id": 167,
+      "unit": "UT3",
+      "question": "¿Qué tipo de instalación de MySQL Installer incluye MySQL Server y MySQL Workbench?",
+      "options": [
+        "Developer Default",
+        "Client Only",
+        "Server Only",
+        "Custom vacío"
+      ],
+      "correct": "Developer Default",
+      "explicacion": "La opción Developer Default instala los componentes básicos, incluidos el servidor y Workbench."
+    },
+    {
+      "id": 168,
+      "unit": "UT3",
+      "question": "¿Qué recomienda el temario sobre los nombres de las bases de datos?",
+      "options": [
+        "Usar espacios y tildes",
+        "Que sean claros, concisos y reflejen su propósito",
+        "Usar solo números",
+        "Usar nombres aleatorios"
+      ],
+      "correct": "Que sean claros, concisos y reflejen su propósito",
+      "explicacion": "Se recomiendan nombres consistentes y descriptivos, además de hacer copias antes de operaciones destructivas como DROP DATABASE."
+    },
+    {
+      "id": 169,
+      "unit": "UT3",
+      "question": "¿Qué servicios online se recomiendan para practicar SQL si no se puede instalar MySQL?",
+      "options": [
+        "Trello",
+        "db-fiddle.com o sqlfiddle.com",
+        "Spotify",
+        "Canva"
+      ],
+      "correct": "db-fiddle.com o sqlfiddle.com",
+      "explicacion": "El temario propone servicios como db-fiddle, sqlfiddle o replit para el entorno online."
+    },
+    {
+      "id": 170,
+      "unit": "UT4",
+      "question": "¿Cómo se puede ordenar el resultado de una consulta en orden ascendente en SQL?",
+      "options": [
+        "ORDER BY columna ASC",
+        "SORT BY columna DESC",
+        "GROUP BY columna ASC",
+        "FILTER BY columna"
+      ],
+      "correct": "ORDER BY columna ASC",
+      "explicacion": "ORDER BY columna ASC ordena el resultado de menor a mayor. ASC es el valor por defecto; DESC ordena de mayor a menor."
+    },
+    {
+      "id": 171,
+      "unit": "UT4",
+      "question": "¿Cuál de las siguientes opciones filtra los registros después de haber sido agrupados con GROUP BY?",
+      "options": [
+        "HAVING",
+        "SELECT",
+        "WHERE",
+        "ORDER BY"
+      ],
+      "correct": "HAVING",
+      "explicacion": "HAVING filtra los grupos después de GROUP BY y puede usar funciones de agregado (HAVING COUNT(*) > 5). WHERE filtra las filas antes de agrupar."
+    },
+    {
+      "id": 172,
+      "unit": "UT4",
+      "question": "¿Qué sentencia se utiliza en SQL para seleccionar datos de una tabla?",
+      "options": [
+        "UPDATE",
+        "DELETE",
+        "SELECT",
+        "INSERT"
+      ],
+      "correct": "SELECT",
+      "explicacion": "SELECT es la sentencia DML para consultar y recuperar datos. INSERT añade filas, UPDATE las modifica y DELETE las borra."
+    },
+    {
+      "id": 173,
+      "unit": "UT4",
+      "question": "¿Cuál es la principal diferencia entre una subconsulta y una consulta JOIN?",
+      "options": [
+        "Las subconsultas devuelven un solo valor, mientras que los JOINs combinan múltiples tablas.",
+        "Los JOINs devuelven más de una columna, pero las subconsultas solo devuelven una.",
+        "Las subconsultas no pueden usarse en WHERE, mientras que los JOINs sí.",
+        "No hay diferencia, son lo mismo."
+      ],
+      "correct": "Las subconsultas devuelven un solo valor, mientras que los JOINs combinan múltiples tablas.",
+      "explicacion": "Según el temario, una subconsulta es una consulta anidada que suele devolver un valor (o lista) que usa la consulta principal, mientras que un JOIN combina las filas de varias tablas en un único resultado."
+    },
+    {
+      "id": 174,
+      "unit": "UT4",
+      "question": "¿Cuál es la manera correcta de aplicar una función de agregación sobre varias columnas al mismo tiempo?",
+      "options": [
+        "Usando SELECT DISTINCT",
+        "Usando JOIN",
+        "Usando ORDER BY",
+        "Usando GROUP BY"
+      ],
+      "correct": "Usando GROUP BY",
+      "explicacion": "GROUP BY agrupa las filas por una o varias columnas para aplicar funciones de agregación (SUM, COUNT, AVG...) a cada grupo."
+    },
+    {
+      "id": 175,
+      "unit": "UT4",
+      "question": "¿Qué función de agregación calcula la suma total de una columna numérica?",
+      "options": [
+        "AVG()",
+        "SUM()",
+        "COUNT()",
+        "MIN()"
+      ],
+      "correct": "SUM()",
+      "explicacion": "SUM() suma los valores de una columna numérica. AVG() calcula la media, COUNT() cuenta filas y MIN() devuelve el mínimo."
+    },
+    {
+      "id": 176,
+      "unit": "UT4",
+      "question": "¿Qué función de agregación calcula el valor mínimo de una columna numérica?",
+      "options": [
+        "SUM()",
+        "AVG()",
+        "MIN()",
+        "MAX()"
+      ],
+      "correct": "MIN()",
+      "explicacion": "MIN() devuelve el valor mínimo de una columna, y MAX() el máximo."
+    },
+    {
+      "id": 177,
+      "unit": "UT4",
+      "question": "¿Qué cláusula se utiliza en SQL para limitar el número de registros devueltos por una consulta?",
+      "options": [
+        "LIMIT",
+        "OFFSET",
+        "GROUP BY",
+        "ORDER BY"
+      ],
+      "correct": "LIMIT",
+      "explicacion": "LIMIT restringe el número de filas que devuelve la consulta, por ejemplo LIMIT 10. OFFSET indica cuántas filas saltarse antes de empezar."
+    },
+    {
+      "id": 178,
+      "unit": "UT4",
+      "question": "¿Qué opción es correcta cuando se quiere mostrar solo registros distintos en una consulta?",
+      "options": [
+        "SELECT DIFFERENT",
+        "SELECT DISTINCT",
+        "SELECT UNIQUE",
+        "SELECT ONLY"
+      ],
+      "correct": "SELECT DISTINCT",
+      "explicacion": "SELECT DISTINCT elimina las filas duplicadas del resultado y muestra solo valores distintos."
+    },
+    {
+      "id": 179,
+      "unit": "UT4",
+      "question": "¿Qué operador relacional se utiliza para comparar si dos valores son iguales?",
+      "options": [
+        "<>",
+        "<",
+        "=",
+        ">"
+      ],
+      "correct": "=",
+      "explicacion": "En SQL el operador de igualdad es =. Para distinto se usa <> (o !=)."
+    },
+    {
+      "id": 180,
+      "unit": "UT4",
+      "question": "¿Cuál es el propósito de la cláusula WHERE en una consulta SQL?",
+      "options": [
+        "Crear una nueva tabla",
+        "Ordenar los resultados de la consulta",
+        "Filtrar registros según condiciones específicas",
+        "Seleccionar columnas de una tabla"
+      ],
+      "correct": "Filtrar registros según condiciones específicas",
+      "explicacion": "WHERE filtra los registros según una condición: solo se devuelven, modifican o borran las filas que la cumplen."
+    },
+    {
+      "id": 181,
+      "unit": "UT4",
+      "question": "¿Cuál es la función de agregación que calcula el promedio de los valores de una columna?",
+      "options": [
+        "AVG()",
+        "MAX()",
+        "SUM()",
+        "COUNT()"
+      ],
+      "correct": "AVG()",
+      "explicacion": "AVG() calcula la media aritmética (promedio) de los valores de una columna."
+    },
+    {
+      "id": 182,
+      "unit": "UT4",
+      "question": "¿Cómo se llama la estructura que almacena los resultados de una consulta en lugar de ejecutarla cada vez?",
+      "options": [
+        "Subconsulta",
+        "Tabla temporal",
+        "Índice",
+        "Vista"
+      ],
+      "correct": "Vista",
+      "explicacion": "Una vista es una consulta guardada con nombre que se usa como si fuera una tabla virtual. Simplifica consultas complejas y permite restringir el acceso a ciertos datos."
+    },
+    {
+      "id": 183,
+      "unit": "UT4",
+      "question": "¿Qué tipo de JOIN devuelve todos los registros de la tabla izquierda y las coincidencias de la tabla derecha?",
+      "options": [
+        "FULL OUTER JOIN",
+        "LEFT OUTER JOIN",
+        "INNER JOIN",
+        "RIGHT OUTER JOIN"
+      ],
+      "correct": "LEFT OUTER JOIN",
+      "explicacion": "LEFT (OUTER) JOIN devuelve todas las filas de la tabla izquierda y las coincidentes de la derecha. Si no hay coincidencia, rellena con NULL."
+    },
+    {
+      "id": 184,
+      "unit": "UT4",
+      "question": "¿Qué operador lógico se utiliza para combinar dos condiciones en SQL, donde ambas deben ser verdaderas?",
+      "options": [
+        "OR",
+        "AND",
+        "BETWEEN",
+        "NOT"
+      ],
+      "correct": "AND",
+      "explicacion": "AND combina condiciones que deben cumplirse todas a la vez. Con OR basta con que se cumpla una de ellas."
+    },
+    {
+      "id": 185,
+      "unit": "UT4",
+      "question": "¿Qué operador se usa en SQL para verificar si un valor es igual a uno de varios valores posibles?",
+      "options": [
+        "IN",
+        "LIKE",
+        "NOT",
+        "BETWEEN"
+      ],
+      "correct": "IN",
+      "explicacion": "IN comprueba si un valor está en una lista: WHERE pais IN ('ES','FR','IT'). Equivale a varios OR seguidos."
+    },
+    {
+      "id": 186,
+      "unit": "UT4",
+      "question": "¿Cómo se puede filtrar registros que tienen un valor nulo en una columna en SQL?",
+      "options": [
+        "IS EMPTY",
+        "IS MISSING",
+        "IS NULLIFY",
+        "IS NULL"
+      ],
+      "correct": "IS NULL",
+      "explicacion": "Para comprobar nulos se usa IS NULL (o IS NOT NULL). La comparación = NULL no funciona, porque NULL no es igual a nada."
+    },
+    {
+      "id": 187,
+      "unit": "UT4",
+      "question": "¿Qué tipo de JOIN devuelve solo los registros con coincidencias en ambas tablas involucradas?",
+      "options": [
+        "RIGHT OUTER JOIN",
+        "LEFT OUTER JOIN",
+        "FULL OUTER JOIN",
+        "INNER JOIN"
+      ],
+      "correct": "INNER JOIN",
+      "explicacion": "INNER JOIN devuelve solo las filas que tienen coincidencia en ambas tablas según la condición del ON."
+    },
+    {
+      "id": 188,
+      "unit": "UT4",
+      "question": "¿Qué tipo de subconsulta depende de los valores de la consulta principal para su ejecución?",
+      "options": [
+        "Subconsulta interna",
+        "Subconsulta externa",
+        "Subconsulta simple",
+        "Subconsulta correlacionada"
+      ],
+      "correct": "Subconsulta correlacionada",
+      "explicacion": "Una subconsulta correlacionada hace referencia a columnas de la consulta externa, así que se evalúa una vez por cada fila de esta."
+    },
+    {
+      "id": 189,
+      "unit": "UT4",
+      "question": "¿Cómo se utiliza la función COUNT en SQL?",
+      "options": [
+        "Para calcular el promedio de una columna",
+        "Para obtener el valor máximo de una columna",
+        "Para contar el número de registros en una columna",
+        "Para encontrar el valor mínimo de una columna"
+      ],
+      "correct": "Para contar el número de registros en una columna",
+      "explicacion": "COUNT() cuenta filas: COUNT(*) cuenta todas y COUNT(columna) solo las que no son nulas en esa columna."
+    },
+    {
+      "id": 190,
+      "unit": "UT4",
+      "question": "¿Qué cláusula de una consulta SQL indica la tabla de la que se extraen los datos?",
+      "options": [
+        "ORDER BY",
+        "FROM",
+        "SELECT",
+        "WHERE"
+      ],
+      "correct": "FROM",
+      "explicacion": "SELECT elige las columnas, FROM la tabla, WHERE filtra filas y ORDER BY ordena el resultado."
+    },
+    {
+      "id": 191,
+      "unit": "UT4",
+      "question": "¿Qué operador SQL se usa para buscar patrones en cadenas de texto?",
+      "options": [
+        "IS NULL",
+        "BETWEEN",
+        "IN",
+        "LIKE"
+      ],
+      "correct": "LIKE",
+      "explicacion": "LIKE busca patrones (por ejemplo nombre LIKE 'A%'); IN compara con una lista y BETWEEN con un rango."
+    },
+    {
+      "id": 192,
+      "unit": "UT4",
+      "question": "¿Incluye BETWEEN los valores extremos del rango?",
+      "options": [
+        "Sí, incluye ambos extremos",
+        "Solo el inferior",
+        "No, los excluye",
+        "Solo el superior"
+      ],
+      "correct": "Sí, incluye ambos extremos",
+      "explicacion": "BETWEEN 1000 AND 2000 incluye los valores 1000 y 2000."
+    },
+    {
+      "id": 193,
+      "unit": "UT4",
+      "question": "¿Qué devuelve ORDER BY salario DESC, nombre ASC?",
+      "options": [
+        "Ordena por salario ascendente",
+        "Ordena por salario de mayor a menor y, en caso de empate, por nombre ascendente",
+        "Solo ordena por nombre",
+        "Da error"
+      ],
+      "correct": "Ordena por salario de mayor a menor y, en caso de empate, por nombre ascendente",
+      "explicacion": "Se puede ordenar por varias columnas: la segunda solo actúa cuando hay empate en la primera."
+    },
+    {
+      "id": 194,
+      "unit": "UT4",
+      "question": "¿Qué devuelve SELECT nombre, salario / 12 AS salario_mensual FROM empleados;?",
+      "options": [
+        "El número de empleados",
+        "Un error",
+        "El total de salarios",
+        "El salario anual dividido entre 12 para cada empleado"
+      ],
+      "correct": "El salario anual dividido entre 12 para cada empleado",
+      "explicacion": "Los operadores aritméticos (+, -, *, /) calculan valores en la consulta; AS da un alias a la columna resultante."
+    },
+    {
+      "id": 195,
+      "unit": "UT4",
+      "question": "¿Qué hace el operador NOT en WHERE NOT departamento_id = 4?",
+      "options": [
+        "Ordena por departamento",
+        "Elimina el departamento 4",
+        "Selecciona solo el departamento 4",
+        "Selecciona los registros cuyo departamento_id no es 4"
+      ],
+      "correct": "Selecciona los registros cuyo departamento_id no es 4",
+      "explicacion": "NOT niega la condición: devuelve las filas que no la cumplen."
+    },
+    {
+      "id": 196,
+      "unit": "UT4",
+      "question": "¿Cuál es el orden por defecto de ORDER BY?",
+      "options": [
+        "Descendente (DESC)",
+        "Por inserción",
+        "Ascendente (ASC)",
+        "Aleatorio"
+      ],
+      "correct": "Ascendente (ASC)",
+      "explicacion": "Si no se indica, ORDER BY ordena de forma ascendente."
+    },
+    {
+      "id": 197,
+      "unit": "UT4",
+      "question": "¿Cómo trata MySQL los valores NULL al ordenar en orden ascendente?",
+      "options": [
+        "Los considera los más altos",
+        "Los considera los valores más bajos",
+        "Los elimina",
+        "Da error"
+      ],
+      "correct": "Los considera los valores más bajos",
+      "explicacion": "En MySQL los NULL son los más bajos en orden ascendente; PostgreSQL permite controlarlo con NULLS FIRST o NULLS LAST."
+    },
+    {
+      "id": 198,
+      "unit": "UT4",
+      "question": "¿Qué SGBD permite usar explícitamente NULLS FIRST o NULLS LAST al ordenar?",
+      "options": [
+        "Access",
+        "MySQL",
+        "SQLite siempre",
+        "PostgreSQL"
+      ],
+      "correct": "PostgreSQL",
+      "explicacion": "PostgreSQL admite NULLS FIRST y NULLS LAST para decidir la posición de los nulos."
+    },
+    {
+      "id": 199,
+      "unit": "UT4",
+      "question": "¿Qué condición selecciona los registros con un valor en una columna (no nulo)?",
+      "options": [
+        "!= NULL",
+        "NOT EMPTY",
+        "IS NOT NULL",
+        "<> NULL"
+      ],
+      "correct": "IS NOT NULL",
+      "explicacion": "IS NULL e IS NOT NULL son la forma correcta de comparar con nulos."
+    },
+    {
+      "id": 200,
+      "unit": "UT4",
+      "question": "¿Qué devuelve un RIGHT OUTER JOIN?",
+      "options": [
+        "El producto cartesiano",
+        "Todos los registros de la tabla derecha y las coincidencias de la izquierda, con NULL donde no haya",
+        "Solo las coincidencias",
+        "Todos los de la izquierda"
+      ],
+      "correct": "Todos los registros de la tabla derecha y las coincidencias de la izquierda, con NULL donde no haya",
+      "explicacion": "RIGHT JOIN conserva todas las filas de la tabla derecha; LEFT JOIN, las de la izquierda."
+    },
+    {
+      "id": 201,
+      "unit": "UT4",
+      "question": "¿Qué devuelve un FULL OUTER JOIN?",
+      "options": [
+        "Ninguna fila",
+        "Solo la tabla izquierda",
+        "Solo las filas coincidentes",
+        "Todos los registros de ambas tablas, rellenando con NULL cuando no hay coincidencia"
+      ],
+      "correct": "Todos los registros de ambas tablas, rellenando con NULL cuando no hay coincidencia",
+      "explicacion": "FULL OUTER JOIN combina LEFT y RIGHT: devuelve todas las filas de ambas tablas."
+    },
+    {
+      "id": 202,
+      "unit": "UT4",
+      "question": "¿Se pueden unir más de dos tablas en una consulta con JOIN?",
+      "options": [
+        "Solo con subconsultas",
+        "Solo en Oracle",
+        "Sí, encadenando varios JOIN",
+        "No, solo dos"
+      ],
+      "correct": "Sí, encadenando varios JOIN",
+      "explicacion": "Se pueden encadenar JOINs, por ejemplo empleados, departamentos y proyectos en una misma consulta."
+    },
+    {
+      "id": 203,
+      "unit": "UT4",
+      "question": "¿Qué devuelve una función de agregación?",
+      "options": [
+        "Un solo valor calculado sobre un conjunto de registros",
+        "Un índice",
+        "Todas las filas",
+        "Una tabla nueva"
+      ],
+      "correct": "Un solo valor calculado sobre un conjunto de registros",
+      "explicacion": "COUNT, SUM, AVG, MIN y MAX operan sobre varios registros y devuelven un único valor (por grupo si se usa GROUP BY)."
+    },
+    {
+      "id": 204,
+      "unit": "UT4",
+      "question": "¿Se puede agrupar por varias columnas con GROUP BY?",
+      "options": [
+        "Solo con HAVING",
+        "Solo en vistas",
+        "No, solo una",
+        "Sí, por ejemplo GROUP BY departamento_id, genero"
+      ],
+      "correct": "Sí, por ejemplo GROUP BY departamento_id, genero",
+      "explicacion": "GROUP BY admite varias columnas: el cálculo se hace para cada combinación, por ejemplo de departamento y género."
+    },
+    {
+      "id": 205,
+      "unit": "UT4",
+      "question": "¿Se pueden combinar funciones de agregación con JOIN?",
+      "options": [
+        "Solo con subconsultas",
+        "No, nunca",
+        "Sí, por ejemplo para calcular el salario medio por nombre de departamento",
+        "Solo con vistas"
+      ],
+      "correct": "Sí, por ejemplo para calcular el salario medio por nombre de departamento",
+      "explicacion": "Se puede unir empleados con departamentos y agrupar por el nombre del departamento para calcular AVG(salario)."
+    },
+    {
+      "id": 206,
+      "unit": "UT4",
+      "question": "¿Dónde puede aparecer una subconsulta?",
+      "options": [
+        "En ninguna",
+        "Solo en ORDER BY",
+        "Solo en WHERE",
+        "En las cláusulas SELECT, FROM y WHERE"
+      ],
+      "correct": "En las cláusulas SELECT, FROM y WHERE",
+      "explicacion": "Las subconsultas pueden usarse en SELECT (valor calculado), FROM (tabla derivada) y WHERE (condición)."
+    },
+    {
+      "id": 207,
+      "unit": "UT4",
+      "question": "¿Qué requisito tiene una subconsulta usada en la cláusula FROM?",
+      "options": [
+        "Debe llevar un alias, como AS subconsulta",
+        "Debe devolver un solo valor",
+        "No puede tener WHERE",
+        "Debe ser correlacionada"
+      ],
+      "correct": "Debe llevar un alias, como AS subconsulta",
+      "explicacion": "Una subconsulta en FROM actúa como tabla derivada y debe tener un alias."
+    },
+    {
+      "id": 208,
+      "unit": "UT4",
+      "question": "¿Almacena datos una vista?",
+      "options": [
+        "Solo si es materializada siempre",
+        "Sí, duplica todas las filas",
+        "No, muestra datos de las tablas subyacentes a partir de una consulta guardada",
+        "Solo los índices"
+      ],
+      "correct": "No, muestra datos de las tablas subyacentes a partir de una consulta guardada",
+      "explicacion": "Una vista es una consulta almacenada; no guarda datos propios sino que los obtiene de las tablas base."
+    },
+    {
+      "id": 209,
+      "unit": "UT4",
+      "question": "¿Qué ventaja de seguridad ofrecen las vistas?",
+      "options": [
+        "Impiden los SELECT",
+        "Eliminan contraseñas",
+        "Cifran los datos",
+        "Se puede dar acceso a una vista sin permitir el acceso completo a las tablas"
+      ],
+      "correct": "Se puede dar acceso a una vista sin permitir el acceso completo a las tablas",
+      "explicacion": "Las vistas simplifican consultas, permiten reutilizarlas y limitan el acceso a ciertas filas o columnas."
+    },
+    {
+      "id": 210,
+      "unit": "UT4",
+      "question": "¿Qué sentencia modifica una vista sin eliminarla?",
+      "options": [
+        "CREATE OR REPLACE VIEW",
+        "ALTER TABLE VIEW",
+        "UPDATE VIEW",
+        "MODIFY VIEW"
+      ],
+      "correct": "CREATE OR REPLACE VIEW",
+      "explicacion": "CREATE OR REPLACE VIEW sustituye la consulta de la vista existente."
+    },
+    {
+      "id": 211,
+      "unit": "UT4",
+      "question": "¿Cuándo puede actualizarse una vista directamente con UPDATE?",
+      "options": [
+        "Siempre",
+        "Solo si tiene JOIN",
+        "Nunca",
+        "Cuando es una vista simple sobre una sola tabla sin operaciones complejas"
+      ],
+      "correct": "Cuando es una vista simple sobre una sola tabla sin operaciones complejas",
+      "explicacion": "En general las vistas no se actualizan, pero sí es posible si se basan en una sola tabla y no incluyen operaciones complejas."
+    },
+    {
+      "id": 212,
+      "unit": "UT4",
+      "question": "¿En qué columnas conviene crear índices para optimizar consultas?",
+      "options": [
+        "En las usadas con frecuencia en WHERE, JOIN u ORDER BY",
+        "En ninguna",
+        "Solo en columnas de texto",
+        "En todas las columnas"
+      ],
+      "correct": "En las usadas con frecuencia en WHERE, JOIN u ORDER BY",
+      "explicacion": "Los índices son más útiles en columnas que se filtran, unen u ordenan habitualmente."
+    },
+    {
+      "id": 213,
+      "unit": "UT4",
+      "question": "¿Por qué se recomienda evitar SELECT * en consultas optimizadas?",
+      "options": [
+        "Porque bloquea la tabla",
+        "Porque no devuelve filas",
+        "Porque da error",
+        "Porque transfiere más datos de los necesarios"
+      ],
+      "correct": "Porque transfiere más datos de los necesarios",
+      "explicacion": "Seleccionar solo las columnas necesarias reduce los datos transferidos y mejora el rendimiento."
+    },
+    {
+      "id": 214,
+      "unit": "UT4",
+      "question": "¿Por qué se recomienda evitar funciones como LOWER() en la cláusula WHERE?",
+      "options": [
+        "Porque son más rápidas",
+        "Porque no existen en SQL",
+        "Porque impiden aprovechar los índices de forma eficiente",
+        "Porque devuelven NULL"
+      ],
+      "correct": "Porque impiden aprovechar los índices de forma eficiente",
+      "explicacion": "Aplicar funciones a la columna en WHERE suele impedir el uso del índice, lo que ralentiza la consulta."
+    },
+    {
+      "id": 215,
+      "unit": "UT4",
+      "question": "Según el temario, ¿qué es más eficiente con subconsultas grandes: IN o EXISTS?",
+      "options": [
+        "Ninguno funciona",
+        "Ambos igual siempre",
+        "EXISTS",
+        "IN"
+      ],
+      "correct": "EXISTS",
+      "explicacion": "El temario recomienda EXISTS en lugar de IN cuando la subconsulta devuelve muchos resultados."
+    },
+    {
+      "id": 216,
+      "unit": "UT4",
+      "question": "¿Qué comando muestra cómo ejecuta MySQL una consulta, incluyendo el uso de índices?",
+      "options": [
+        "EXPLAIN",
+        "DESCRIBE DATABASE",
+        "ANALYZE ALL",
+        "SHOW INDEX"
+      ],
+      "correct": "EXPLAIN",
+      "explicacion": "EXPLAIN SELECT ... muestra el plan de ejecución, lo que ayuda a detectar si faltan índices."
+    },
+    {
+      "id": 217,
+      "unit": "UT4",
+      "question": "¿Qué equivalente de LIMIT se usa en SQL Server?",
+      "options": [
+        "MAX",
+        "ROWNUM",
+        "TOP",
+        "FIRST"
+      ],
+      "correct": "TOP",
+      "explicacion": "En MySQL se limita con LIMIT 10; en SQL Server se usa SELECT TOP 10 ..."
+    },
+    {
+      "id": 218,
+      "unit": "UT4",
+      "question": "¿Qué se recomienda para tablas muy grandes según el temario?",
+      "options": [
+        "Usar siempre SELECT *",
+        "Usar índices adecuados y considerar particionar las tablas",
+        "Hacer todas las uniones posibles",
+        "Eliminar los índices"
+      ],
+      "correct": "Usar índices adecuados y considerar particionar las tablas",
+      "explicacion": "Con tablas grandes conviene usar índices, particionar si es necesario y evitar uniones innecesarias."
+    },
+    {
+      "id": 219,
+      "unit": "UT4",
+      "question": "¿Qué devuelve SELECT nombre, salario * 1.10 AS salario_con_ajuste FROM empleados;?",
+      "options": [
+        "El salario de cada empleado incrementado un 10 %",
+        "El salario dividido entre 10",
+        "El total de salarios",
+        "Un error"
+      ],
+      "correct": "El salario de cada empleado incrementado un 10 %",
+      "explicacion": "Los operadores aritméticos +, -, * y / permiten calcular valores en la propia consulta."
+    },
+    {
+      "id": 220,
+      "unit": "UT4",
+      "question": "¿Cuál es un objetivo de la optimización de consultas?",
+      "options": [
+        "Minimizar el uso de recursos (memoria, CPU, disco)",
+        "Eliminar los índices",
+        "Aumentar el tiempo de ejecución",
+        "Duplicar los datos"
+      ],
+      "correct": "Minimizar el uso de recursos (memoria, CPU, disco)",
+      "explicacion": "Optimizar busca reducir el tiempo de ejecución, minimizar recursos, mejorar la escalabilidad y mantener la estabilidad del sistema."
+    },
+    {
+      "id": 221,
+      "unit": "UT4",
+      "question": "¿Por qué conviene usar transacciones en operaciones de escritura según el temario de optimización?",
+      "options": [
+        "Para evitar los índices",
+        "No conviene",
+        "Para que INSERT, UPDATE y DELETE se ejecuten de forma eficiente y segura",
+        "Para que las consultas SELECT sean más lentas"
+      ],
+      "correct": "Para que INSERT, UPDATE y DELETE se ejecuten de forma eficiente y segura",
+      "explicacion": "Además se recomienda evitar uniones innecesarias y usar índices y particionado en tablas grandes."
+    },
+    {
+      "id": 222,
+      "unit": "UT4",
+      "question": "¿Qué ventaja de las vistas evita escribir la misma consulta repetidamente?",
+      "options": [
+        "Atomicidad",
+        "Durabilidad",
+        "Reutilización",
+        "Seguridad"
+      ],
+      "correct": "Reutilización",
+      "explicacion": "Las vistas aportan simplificación, seguridad y reutilización."
+    },
+    {
+      "id": 223,
+      "unit": "UT5",
+      "question": "¿Qué instrucción permite seleccionar datos y usarlos para insertar registros en otra tabla?",
+      "options": [
+        "COPY SELECT INTO",
+        "INSERT INTO ... SELECT",
+        "CREATE SELECT",
+        "MOVE SELECT INTO"
+      ],
+      "correct": "INSERT INTO ... SELECT",
+      "explicacion": "INSERT INTO destino (cols) SELECT ... FROM origen inserta en una tabla el resultado de una consulta."
+    },
+    {
+      "id": 224,
+      "unit": "UT5",
+      "question": "¿Qué propiedad ACID garantiza que las operaciones de una transacción se ejecuten todas o ninguna?",
+      "options": [
+        "Aislamiento",
+        "Consistencia",
+        "Durabilidad",
+        "Atomicidad"
+      ],
+      "correct": "Atomicidad",
+      "explicacion": "La atomicidad garantiza que una transacción se ejecute por completo o no se ejecute: si falla una operación, se deshacen todas."
+    },
+    {
+      "id": 225,
+      "unit": "UT5",
+      "question": "¿Qué sentencia se debe usar para eliminar uno o más registros de una tabla en SQL?",
+      "options": [
+        "DROP ROW",
+        "REMOVE",
+        "ERASE",
+        "DELETE"
+      ],
+      "correct": "DELETE",
+      "explicacion": "DELETE FROM tabla WHERE condición elimina registros. DROP borra objetos completos, como tablas, no filas."
+    },
+    {
+      "id": 226,
+      "unit": "UT5",
+      "question": "¿Qué tipo de bloqueo impide tanto la lectura como la escritura de un registro por otras transacciones?",
+      "options": [
+        "Bloqueo preventivo",
+        "Bloqueo exclusivo",
+        "Bloqueo lógico",
+        "Bloqueo compartido"
+      ],
+      "correct": "Bloqueo exclusivo",
+      "explicacion": "Un bloqueo exclusivo (de escritura) impide que otras transacciones lean o modifiquen el registro hasta que se libere."
+    },
+    {
+      "id": 227,
+      "unit": "UT5",
+      "question": "¿Cuál de las siguientes afirmaciones describe un posible efecto si no se usa la cláusula WHERE en DELETE?",
+      "options": [
+        "SQL genera un error de sintaxis",
+        "Se eliminan todos los registros de la tabla",
+        "Se borra solo el primer registro",
+        "No se ejecuta la sentencia"
+      ],
+      "correct": "Se eliminan todos los registros de la tabla",
+      "explicacion": "Un DELETE sin WHERE es válido y elimina todos los registros de la tabla, por eso hay que tener mucho cuidado."
+    },
+    {
+      "id": 228,
+      "unit": "UT5",
+      "question": "¿Qué propiedad ACID garantiza que los cambios confirmados se mantendrán incluso ante fallos del sistema?",
+      "options": [
+        "Atomicidad",
+        "Durabilidad",
+        "Persistencia",
+        "Aislamiento"
+      ],
+      "correct": "Durabilidad",
+      "explicacion": "La durabilidad garantiza que los cambios confirmados (COMMIT) persisten aunque después falle el sistema, gracias a los registros de transacciones (logs)."
+    },
+    {
+      "id": 229,
+      "unit": "UT5",
+      "question": "¿Qué tipo de integridad asegura que los valores de una clave foránea correspondan a registros válidos en otra tabla?",
+      "options": [
+        "Integridad lógica",
+        "Integridad primaria",
+        "Integridad estructural",
+        "Integridad referencial"
+      ],
+      "correct": "Integridad referencial",
+      "explicacion": "La integridad referencial asegura que cada valor de una clave foránea corresponda a una clave primaria que existe en la tabla referenciada."
+    },
+    {
+      "id": 230,
+      "unit": "UT5",
+      "question": "¿Cuál de las siguientes sentencias permite modificar el valor de un campo existente en una tabla?",
+      "options": [
+        "MODIFY",
+        "UPDATE",
+        "ALTER RECORD",
+        "CHANGE"
+      ],
+      "correct": "UPDATE",
+      "explicacion": "UPDATE tabla SET campo = valor WHERE condición modifica valores de registros existentes. ALTER cambia la estructura de la tabla, no los datos."
+    },
+    {
+      "id": 231,
+      "unit": "UT5",
+      "question": "¿Qué comando se utiliza para confirmar y guardar permanentemente los cambios de una transacción?",
+      "options": [
+        "COMMIT",
+        "SAVE",
+        "APPLY",
+        "CONFIRM"
+      ],
+      "correct": "COMMIT",
+      "explicacion": "COMMIT confirma la transacción y hace permanentes sus cambios."
+    },
+    {
+      "id": 232,
+      "unit": "UT5",
+      "question": "¿Qué nivel de aislamiento evita tanto lecturas sucias como no repetibles, pero permite lecturas fantasma?",
+      "options": [
+        "Serializable",
+        "Read Uncommitted",
+        "Read Committed",
+        "Repeatable Read"
+      ],
+      "correct": "Repeatable Read",
+      "explicacion": "Repeatable Read evita las lecturas sucias y las no repetibles, pero puede permitir lecturas fantasma (filas nuevas). Es el nivel por defecto en MySQL InnoDB. Serializable lo evita todo."
+    },
+    {
+      "id": 233,
+      "unit": "UT5",
+      "question": "¿Qué cláusula debe utilizarse siempre en una sentencia UPDATE para evitar modificar todos los registros?",
+      "options": [
+        "CHECK",
+        "LIMIT",
+        "IF",
+        "WHERE"
+      ],
+      "correct": "WHERE",
+      "explicacion": "En un UPDATE hay que incluir WHERE para limitar qué filas se modifican. Sin WHERE se actualizan todas las filas de la tabla."
+    },
+    {
+      "id": 234,
+      "unit": "UT5",
+      "question": "¿Qué significa la cláusula ON DELETE CASCADE en una restricción de clave foránea?",
+      "options": [
+        "Establece la clave foránea en 0",
+        "Elimina en cascada los registros relacionados en la tabla secundaria",
+        "Impide eliminar registros con dependencias",
+        "No tiene efecto sobre los registros secundarios"
+      ],
+      "correct": "Elimina en cascada los registros relacionados en la tabla secundaria",
+      "explicacion": "ON DELETE CASCADE hace que, al borrar un registro de la tabla padre, se borren automáticamente los registros hijos que lo referencian."
+    },
+    {
+      "id": 235,
+      "unit": "UT5",
+      "question": "¿Qué nivel de aislamiento permite leer datos que aún no han sido confirmados?",
+      "options": [
+        "Serializable",
+        "Repeatable Read",
+        "Read Committed",
+        "Read Uncommitted"
+      ],
+      "correct": "Read Uncommitted",
+      "explicacion": "Read Uncommitted es el nivel más bajo: permite lecturas sucias, es decir, leer datos de otras transacciones aún no confirmados."
+    },
+    {
+      "id": 236,
+      "unit": "UT5",
+      "question": "¿Qué comando del lenguaje SQL se utiliza para insertar registros en una tabla?",
+      "options": [
+        "ADD RECORD",
+        "NEW ENTRY",
+        "PUT INTO",
+        "INSERT INTO"
+      ],
+      "correct": "INSERT INTO",
+      "explicacion": "INSERT INTO tabla (cols) VALUES (...) inserta nuevos registros en una tabla."
+    },
+    {
+      "id": 237,
+      "unit": "UT5",
+      "question": "¿Qué tipo de bloqueo impide que otros usuarios modifiquen un registro, pero les permite leerlo?",
+      "options": [
+        "Sin bloqueo",
+        "Bloqueo exclusivo",
+        "Bloqueo total",
+        "Bloqueo compartido"
+      ],
+      "correct": "Bloqueo compartido",
+      "explicacion": "Un bloqueo compartido (de lectura) permite que otros lean el registro, pero impide que lo modifiquen mientras dure."
+    },
+    {
+      "id": 238,
+      "unit": "UT5",
+      "question": "¿Qué comando de SQL permite revertir todos los cambios realizados por una transacción?",
+      "options": [
+        "UNDO",
+        "ROLLBACK",
+        "CANCEL",
+        "REVERT"
+      ],
+      "correct": "ROLLBACK",
+      "explicacion": "ROLLBACK deshace todos los cambios de la transacción en curso y devuelve los datos al estado anterior al inicio."
+    },
+    {
+      "id": 239,
+      "unit": "UT5",
+      "question": "¿Qué comando se usa para comenzar una transacción explícita en SQL?",
+      "options": [
+        "INIT TRANSACTION",
+        "BEGIN TRANSACTION",
+        "START PROCESS",
+        "TRANSACTION BEGIN"
+      ],
+      "correct": "BEGIN TRANSACTION",
+      "explicacion": "BEGIN TRANSACTION (o START TRANSACTION en MySQL) inicia una transacción explícita, que termina con COMMIT o ROLLBACK."
+    },
+    {
+      "id": 240,
+      "unit": "UT5",
+      "question": "¿Qué propiedad ACID está relacionada con que una transacción no interfiera en el trabajo de otra en ejecución simultánea?",
+      "options": [
+        "Durabilidad",
+        "Aislamiento",
+        "Atomicidad",
+        "Consistencia"
+      ],
+      "correct": "Aislamiento",
+      "explicacion": "El aislamiento (Isolation) garantiza que las transacciones concurrentes no interfieran entre sí, como si se ejecutaran una tras otra."
+    },
+    {
+      "id": 241,
+      "unit": "UT5",
+      "question": "¿Qué tipo de acción sobre una clave foránea establece su valor a NULL cuando se elimina el registro referenciado?",
+      "options": [
+        "ON DELETE RESTRICT",
+        "ON DELETE SET NULL",
+        "ON DELETE CASCADE",
+        "ON DELETE DEFAULT"
+      ],
+      "correct": "ON DELETE SET NULL",
+      "explicacion": "ON DELETE SET NULL pone a NULL la clave foránea de los registros hijos cuando se borra el registro padre. Para ello, la columna debe admitir nulos."
+    },
+    {
+      "id": 242,
+      "unit": "UT5",
+      "question": "¿Qué comando permite insertar varios registros en una sola sentencia SQL?",
+      "options": [
+        "INSERT INTO ... VALUES (...), (...)",
+        "PUSH RECORDS (...)",
+        "MULTI INSERT (...)",
+        "ADD ROWS (...)"
+      ],
+      "correct": "INSERT INTO ... VALUES (...), (...)",
+      "explicacion": "INSERT INTO tabla VALUES (...), (...), (...) inserta varias filas en una sola sentencia, separando cada grupo de valores con comas."
+    },
+    {
+      "id": 243,
+      "unit": "UT5",
+      "question": "¿Qué significan las siglas DML?",
+      "options": [
+        "Modelo de Datos Lógico",
+        "Lenguaje de Manipulación de Datos",
+        "Lenguaje de Control de Datos",
+        "Lenguaje de Definición de Datos"
+      ],
+      "correct": "Lenguaje de Manipulación de Datos",
+      "explicacion": "El DML (Data Manipulation Language) agrupa INSERT, UPDATE, DELETE y SELECT, que operan sobre los registros; el DDL define estructuras y el DCL controla permisos."
+    },
+    {
+      "id": 244,
+      "unit": "UT5",
+      "question": "¿Hay que incluir en un INSERT una columna de clave primaria AUTO_INCREMENT?",
+      "options": [
+        "Solo si es texto",
+        "Sí, siempre",
+        "Solo en la primera inserción",
+        "No, el valor se genera automáticamente"
+      ],
+      "correct": "No, el valor se genera automáticamente",
+      "explicacion": "Si la clave es AUTO_INCREMENT no es necesario indicarla; tampoco las columnas con valor por defecto o que admiten NULL."
+    },
+    {
+      "id": 245,
+      "unit": "UT5",
+      "question": "¿Cómo se actualizan varias columnas en una misma sentencia UPDATE?",
+      "options": [
+        "Separándolas por comas en la cláusula SET",
+        "Con varios WHERE",
+        "Con varios UPDATE obligatoriamente",
+        "No se puede"
+      ],
+      "correct": "Separándolas por comas en la cláusula SET",
+      "explicacion": "UPDATE clientes SET edad = 31, nombre = 'Ana' WHERE id_cliente = 1; modifica varias columnas a la vez."
+    },
+    {
+      "id": 246,
+      "unit": "UT5",
+      "question": "¿Puede el valor de un UPDATE proceder de una subconsulta?",
+      "options": [
+        "Sí, se puede asignar el resultado de una consulta a una columna",
+        "No, solo valores literales",
+        "Solo con vistas",
+        "Solo en DELETE"
+      ],
+      "correct": "Sí, se puede asignar el resultado de una consulta a una columna",
+      "explicacion": "El temario indica que los valores de SET pueden ser el resultado de una subconsulta."
+    },
+    {
+      "id": 247,
+      "unit": "UT5",
+      "question": "¿Qué ocurre al eliminar un registro padre si existen registros hijos con clave foránea sin acciones definidas?",
+      "options": [
+        "No pasa nada",
+        "La integridad referencial puede impedir la eliminación",
+        "Se crea una copia",
+        "Se eliminan siempre los hijos"
+      ],
+      "correct": "La integridad referencial puede impedir la eliminación",
+      "explicacion": "Con integridad referencial, eliminar un padre con hijos relacionados puede ser rechazado, salvo que se haya definido CASCADE o SET NULL."
+    },
+    {
+      "id": 248,
+      "unit": "UT5",
+      "question": "¿Qué hace ON UPDATE CASCADE?",
+      "options": [
+        "Si cambia la clave primaria del padre, se actualizan automáticamente las claves foráneas de los hijos",
+        "Pone a NULL los hijos",
+        "Borra los hijos",
+        "Impide actualizar"
+      ],
+      "correct": "Si cambia la clave primaria del padre, se actualizan automáticamente las claves foráneas de los hijos",
+      "explicacion": "ON UPDATE CASCADE propaga el nuevo valor de la clave primaria a las claves foráneas que la referencian."
+    },
+    {
+      "id": 249,
+      "unit": "UT5",
+      "question": "¿Qué hace ON DELETE RESTRICT?",
+      "options": [
+        "Elimina en cascada",
+        "Impide eliminar un registro padre si tiene registros relacionados",
+        "No tiene efecto",
+        "Pone a NULL las claves"
+      ],
+      "correct": "Impide eliminar un registro padre si tiene registros relacionados",
+      "explicacion": "ON DELETE RESTRICT rechaza el borrado de un cliente que tenga pedidos asociados."
+    },
+    {
+      "id": 250,
+      "unit": "UT5",
+      "question": "¿Qué son los registros «huérfanos» que evita la integridad referencial?",
+      "options": [
+        "Registros sin clave primaria",
+        "Registros de la tabla secundaria que apuntan a un padre inexistente",
+        "Registros con NULL",
+        "Registros duplicados"
+      ],
+      "correct": "Registros de la tabla secundaria que apuntan a un padre inexistente",
+      "explicacion": "La integridad referencial impide que haya filas hijas cuya clave foránea no corresponda a ningún registro padre."
+    },
+    {
+      "id": 251,
+      "unit": "UT5",
+      "question": "¿Cuál es un inconveniente de las restricciones de integridad referencial?",
+      "options": [
+        "Pueden afectar al rendimiento",
+        "Eliminan las claves",
+        "Hacen los datos inconsistentes",
+        "Impiden las consultas"
+      ],
+      "correct": "Pueden afectar al rendimiento",
+      "explicacion": "Mejoran mucho la consistencia, pero las comprobaciones en cada modificación pueden afectar al rendimiento."
+    },
+    {
+      "id": 252,
+      "unit": "UT5",
+      "question": "¿Qué permite SAVEPOINT dentro de una transacción?",
+      "options": [
+        "Bloquear la tabla",
+        "Confirmar toda la transacción",
+        "Crear una copia de seguridad",
+        "Establecer puntos intermedios para deshacer solo parte de las operaciones con ROLLBACK TO"
+      ],
+      "correct": "Establecer puntos intermedios para deshacer solo parte de las operaciones con ROLLBACK TO",
+      "explicacion": "SAVEPOINT punto1 marca un punto; ROLLBACK TO punto1 deshace solo lo posterior a ese punto."
+    },
+    {
+      "id": 253,
+      "unit": "UT5",
+      "question": "En una transferencia bancaria dentro de una transacción, ¿qué ocurre si falla la segunda actualización?",
+      "options": [
+        "Se guarda solo la primera",
+        "Se elimina la cuenta",
+        "Se hace ROLLBACK y se deshace también la primera operación",
+        "Se repite la segunda indefinidamente"
+      ],
+      "correct": "Se hace ROLLBACK y se deshace también la primera operación",
+      "explicacion": "Gracias a la atomicidad, si una operación falla se revierte toda la transacción y ninguna cuenta queda modificada."
+    },
+    {
+      "id": 254,
+      "unit": "UT5",
+      "question": "¿Qué estructura usa SQL Server para capturar errores y revertir una transacción?",
+      "options": [
+        "ON ERROR GOTO",
+        "BEGIN TRY ... END TRY BEGIN CATCH ... END CATCH",
+        "IF ERROR THEN",
+        "EXCEPTION WHEN"
+      ],
+      "correct": "BEGIN TRY ... END TRY BEGIN CATCH ... END CATCH",
+      "explicacion": "En SQL Server el bloque TRY-CATCH permite hacer COMMIT si todo va bien y ROLLBACK en el CATCH si hay error."
+    },
+    {
+      "id": 255,
+      "unit": "UT5",
+      "question": "¿Qué nivel de aislamiento evita las lecturas sucias pero puede sufrir lecturas no repetibles?",
+      "options": [
+        "Read Uncommitted",
+        "Read Committed",
+        "Serializable",
+        "Repeatable Read"
+      ],
+      "correct": "Read Committed",
+      "explicacion": "Read Committed solo lee datos confirmados (sin lecturas sucias), pero un mismo dato puede cambiar entre dos lecturas."
+    },
+    {
+      "id": 256,
+      "unit": "UT5",
+      "question": "¿Cuál es el inconveniente del nivel Serializable?",
+      "options": [
+        "Puede tener un impacto significativo en el rendimiento",
+        "Permite lecturas sucias",
+        "No existe en MySQL",
+        "No garantiza consistencia"
+      ],
+      "correct": "Puede tener un impacto significativo en el rendimiento",
+      "explicacion": "Serializable ofrece el máximo aislamiento, ejecutando las transacciones como si fueran una tras otra, a costa del rendimiento."
+    },
+    {
+      "id": 257,
+      "unit": "UT5",
+      "question": "¿Qué es una lectura no repetible?",
+      "options": [
+        "Aparecer filas nuevas en una consulta",
+        "Leer una tabla vacía",
+        "Una transacción lee un valor y, antes de terminar, otra transacción lo cambia",
+        "Leer datos no confirmados"
+      ],
+      "correct": "Una transacción lee un valor y, antes de terminar, otra transacción lo cambia",
+      "explicacion": "Problemas de concurrencia: lecturas sucias (datos no confirmados), no repetibles (un valor cambia) y fantasma (aparecen o desaparecen filas)."
+    },
+    {
+      "id": 258,
+      "unit": "UT5",
+      "question": "¿Qué es una lectura fantasma?",
+      "options": [
+        "Leer un valor modificado",
+        "Un error de sintaxis",
+        "Leer datos de una tabla borrada",
+        "Otra transacción inserta o elimina registros mientras la primera está en curso, cambiando el conjunto leído"
+      ],
+      "correct": "Otra transacción inserta o elimina registros mientras la primera está en curso, cambiando el conjunto leído",
+      "explicacion": "En la lectura fantasma el conjunto de filas que cumple una condición cambia porque otra transacción inserta o borra registros."
+    },
+    {
+      "id": 259,
+      "unit": "UT5",
+      "question": "¿Qué cláusula bloquea las filas seleccionadas para su actualización impidiendo que otros las modifiquen?",
+      "options": [
+        "SELECT ... NOWAIT",
+        "SELECT ... READ ONLY",
+        "SELECT ... FOR UPDATE",
+        "SELECT ... LOCK"
+      ],
+      "correct": "SELECT ... FOR UPDATE",
+      "explicacion": "FOR UPDATE aplica un bloqueo exclusivo sobre las filas leídas hasta que termina la transacción."
+    },
+    {
+      "id": 260,
+      "unit": "UT5",
+      "question": "¿Qué diferencia hay entre bloqueo a nivel de tabla y a nivel de fila?",
+      "options": [
+        "El de fila bloquea toda la base",
+        "El de tabla bloquea toda la tabla; el de fila solo las filas modificadas, permitiendo acceder a las demás",
+        "Son iguales",
+        "El de tabla solo bloquea una fila"
+      ],
+      "correct": "El de tabla bloquea toda la tabla; el de fila solo las filas modificadas, permitiendo acceder a las demás",
+      "explicacion": "El bloqueo de fila permite más concurrencia, ya que el resto de filas de la tabla siguen accesibles."
+    },
+    {
+      "id": 261,
+      "unit": "UT5",
+      "question": "Tras LOCK TABLE clientes READ, ¿qué pueden hacer los usuarios?",
+      "options": [
+        "Todos, incluido quien bloquea, solo pueden leer la tabla",
+        "Todos pueden escribir",
+        "Solo quien bloquea puede leer y escribir",
+        "Nadie puede leer"
+      ],
+      "correct": "Todos, incluido quien bloquea, solo pueden leer la tabla",
+      "explicacion": "Con READ todos solo pueden leer; con WRITE solo el usuario que bloquea puede leer y escribir y el resto queda bloqueado."
+    },
+    {
+      "id": 262,
+      "unit": "UT5",
+      "question": "¿Cómo resuelven los SGBD modernos un interbloqueo (deadlock)?",
+      "options": [
+        "Lo detectan automáticamente y abortan una de las transacciones implicadas",
+        "Reinician el servidor",
+        "Esperan indefinidamente",
+        "Borran las tablas"
+      ],
+      "correct": "Lo detectan automáticamente y abortan una de las transacciones implicadas",
+      "explicacion": "Ante un interbloqueo, el SGBD aborta una transacción para liberar recursos y permitir que la otra continúe."
+    },
+    {
+      "id": 263,
+      "unit": "UT5",
+      "question": "¿Cómo se resuelven los conflictos de escritura cuando dos transacciones modifican el mismo registro?",
+      "options": [
+        "Con Read Uncommitted",
+        "Con lecturas sucias",
+        "Eliminando el registro",
+        "Con bloqueos exclusivos"
+      ],
+      "correct": "Con bloqueos exclusivos",
+      "explicacion": "Los bloqueos exclusivos garantizan que solo una transacción modifique un registro a la vez; para conflictos de lectura se usan niveles de aislamiento más altos."
+    },
+    {
+      "id": 264,
+      "unit": "UT5",
+      "question": "¿Qué es un deadlock o interbloqueo?",
+      "options": [
+        "Una lectura sucia",
+        "Un índice dañado",
+        "Una situación en la que dos o más transacciones se bloquean mutuamente esperando que la otra libere recursos",
+        "Un error de sintaxis"
+      ],
+      "correct": "Una situación en la que dos o más transacciones se bloquean mutuamente esperando que la otra libere recursos",
+      "explicacion": "Los SGBD modernos detectan los interbloqueos y abortan una de las transacciones para liberar recursos."
+    },
+    {
+      "id": 265,
+      "unit": "UT5",
+      "question": "¿Qué requisitos deben cumplir los valores de una clave primaria?",
+      "options": [
+        "Poder repetirse",
+        "Ser únicos y no nulos",
+        "Ser siempre texto",
+        "Ser opcionales"
+      ],
+      "correct": "Ser únicos y no nulos",
+      "explicacion": "La clave primaria identifica de forma única cada registro; la clave foránea referencia la primaria de otra tabla."
+    },
+    {
+      "id": 266,
+      "unit": "UT6",
+      "question": "¿Qué variable se utiliza en triggers para acceder al valor antes de una actualización?",
+      "options": [
+        "PREVIOUS",
+        "OLD",
+        "BEFORE",
+        "PREV"
+      ],
+      "correct": "OLD",
+      "explicacion": "En un trigger, OLD.columna contiene el valor anterior a un UPDATE o DELETE y NEW.columna el valor nuevo en un INSERT o UPDATE."
+    },
+    {
+      "id": 267,
+      "unit": "UT6",
+      "question": "¿Cuál de las siguientes estructuras permite iterar mientras se cumple una condición?",
+      "options": [
+        "IF",
+        "WHILE",
+        "ITERATE",
+        "DO"
+      ],
+      "correct": "WHILE",
+      "explicacion": "WHILE condición DO ... END WHILE repite el bloque mientras se cumpla la condición, que se comprueba antes de cada iteración."
+    },
+    {
+      "id": 268,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave se usa para declarar una variable local en MySQL?",
+      "options": [
+        "LET",
+        "CREATE VARIABLE",
+        "DECLARE",
+        "SETVAR"
+      ],
+      "correct": "DECLARE",
+      "explicacion": "DECLARE declara variables locales dentro de un bloque BEGIN ... END de un procedimiento o función: DECLARE total INT DEFAULT 0."
+    },
+    {
+      "id": 269,
+      "unit": "UT6",
+      "question": "¿Cuál es la cláusula que permite definir el valor que devuelve una función?",
+      "options": [
+        "RETURN",
+        "RESULT",
+        "OUTPUT",
+        "YIELD"
+      ],
+      "correct": "RETURN",
+      "explicacion": "RETURN devuelve el valor de una función almacenada. Su tipo se declara con RETURNS en la cabecera."
+    },
+    {
+      "id": 270,
+      "unit": "UT6",
+      "question": "¿Cuál es el delimitador predeterminado de MySQL?",
+      "options": [
+        "//",
+        ":",
+        ";",
+        "."
+      ],
+      "correct": ";",
+      "explicacion": "El delimitador por defecto de MySQL es el punto y coma (;). Para definir procedimientos se cambia temporalmente con DELIMITER, por ejemplo a //."
+    },
+    {
+      "id": 271,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave se utiliza en MySQL para definir un bloque de código?",
+      "options": [
+        "BLOCK",
+        "BEGIN",
+        "DEFINE",
+        "START"
+      ],
+      "correct": "BEGIN",
+      "explicacion": "BEGIN ... END delimita un bloque de código compuesto en procedimientos, funciones y triggers."
+    },
+    {
+      "id": 272,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave permite repetir un ciclo desde el inicio?",
+      "options": [
+        "ITERATE",
+        "RESTART",
+        "CONTINUE",
+        "REPEAT"
+      ],
+      "correct": "ITERATE",
+      "explicacion": "ITERATE etiqueta salta al inicio del bucle y empieza la siguiente iteración, como continue en otros lenguajes. LEAVE sale del bucle."
+    },
+    {
+      "id": 273,
+      "unit": "UT6",
+      "question": "¿Qué tipo de función puede usarse directamente en una consulta SELECT?",
+      "options": [
+        "PROCEDURE",
+        "FUNCTION",
+        "TRIGGER",
+        "HANDLER"
+      ],
+      "correct": "FUNCTION",
+      "explicacion": "Una FUNCTION devuelve un valor y puede usarse dentro de un SELECT. Un PROCEDURE se invoca con CALL y no puede usarse en una consulta."
+    },
+    {
+      "id": 274,
+      "unit": "UT6",
+      "question": "¿Qué tipo de estructura repite el código hasta que se cumpla una condición?",
+      "options": [
+        "CONTINUE",
+        "REPEAT",
+        "LOOP",
+        "FOR"
+      ],
+      "correct": "REPEAT",
+      "explicacion": "REPEAT ... UNTIL condición END REPEAT ejecuta el bloque al menos una vez y lo repite hasta que la condición se cumpla."
+    },
+    {
+      "id": 275,
+      "unit": "UT6",
+      "question": "¿Cuál es el tipo de parámetro que permite tanto entrada como salida en un procedimiento?",
+      "options": [
+        "OUT",
+        "RETURN",
+        "INOUT",
+        "IN"
+      ],
+      "correct": "INOUT",
+      "explicacion": "Un parámetro INOUT recibe un valor de entrada y devuelve un valor modificado. IN es solo de entrada y OUT solo de salida."
+    },
+    {
+      "id": 276,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave permite asignar un valor a una variable en MySQL?",
+      "options": [
+        "ALLOCATE",
+        "SET",
+        "GIVE",
+        "ASSIGN"
+      ],
+      "correct": "SET",
+      "explicacion": "SET asigna un valor a una variable: SET total = total + 1. También se puede usar SELECT ... INTO."
+    },
+    {
+      "id": 277,
+      "unit": "UT6",
+      "question": "¿Qué comando elimina un procedimiento almacenado?",
+      "options": [
+        "END PROCEDURE",
+        "DELETE PROCEDURE",
+        "REMOVE PROCEDURE",
+        "DROP PROCEDURE"
+      ],
+      "correct": "DROP PROCEDURE",
+      "explicacion": "DROP PROCEDURE nombre elimina un procedimiento almacenado."
+    },
+    {
+      "id": 278,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave permite crear un procedimiento en MySQL?",
+      "options": [
+        "INIT PROCEDURE",
+        "DEFINE PROCEDURE",
+        "MAKE PROCEDURE",
+        "CREATE PROCEDURE"
+      ],
+      "correct": "CREATE PROCEDURE",
+      "explicacion": "CREATE PROCEDURE nombre(parámetros) BEGIN ... END define un procedimiento almacenado en MySQL."
+    },
+    {
+      "id": 279,
+      "unit": "UT6",
+      "question": "¿Cómo se define el final de un cursor en un manejador?",
+      "options": [
+        "END CURSOR",
+        "OUT OF RANGE",
+        "NOT FOUND",
+        "NO MORE"
+      ],
+      "correct": "NOT FOUND",
+      "explicacion": "Se declara DECLARE CONTINUE HANDLER FOR NOT FOUND SET fin = 1: la condición NOT FOUND salta cuando el cursor ya no tiene más filas."
+    },
+    {
+      "id": 280,
+      "unit": "UT6",
+      "question": "¿Cuál es la instrucción para recorrer resultados fila a fila con un cursor?",
+      "options": [
+        "FETCH",
+        "NEXT",
+        "READ",
+        "GET"
+      ],
+      "correct": "FETCH",
+      "explicacion": "FETCH cursor INTO variables lee la siguiente fila del cursor. Se usa dentro de un bucle tras OPEN y antes de CLOSE."
+    },
+    {
+      "id": 281,
+      "unit": "UT6",
+      "question": "¿Qué palabra clave define un disparador que se ejecuta tras una inserción?",
+      "options": [
+        "AFTER ADD",
+        "ON INSERT",
+        "AFTER INSERT",
+        "POST INSERT"
+      ],
+      "correct": "AFTER INSERT",
+      "explicacion": "AFTER INSERT define un trigger que se ejecuta después de insertar una fila. También existen BEFORE INSERT, AFTER UPDATE, etc."
+    },
+    {
+      "id": 282,
+      "unit": "UT6",
+      "question": "¿Qué instrucción permite abandonar un bucle en MySQL?",
+      "options": [
+        "STOP",
+        "LEAVE",
+        "BREAK",
+        "EXIT"
+      ],
+      "correct": "LEAVE",
+      "explicacion": "LEAVE etiqueta sale de un bucle o bloque etiquetado en MySQL, como break en otros lenguajes."
+    },
+    {
+      "id": 283,
+      "unit": "UT6",
+      "question": "¿Cuál es el nombre reservado para la fila recién insertada en un trigger?",
+      "options": [
+        "INSERTED",
+        "RECENT",
+        "CURRENT",
+        "NEW"
+      ],
+      "correct": "NEW",
+      "explicacion": "NEW hace referencia a la fila nueva en triggers INSERT y UPDATE (NEW.columna). OLD es la fila anterior."
+    },
+    {
+      "id": 284,
+      "unit": "UT6",
+      "question": "¿Cuál es el propósito principal de un trigger?",
+      "options": [
+        "Ejecutar acciones automáticas ante eventos",
+        "Reducir el tamaño de la base de datos",
+        "Agregar nuevas tablas",
+        "Optimizar las consultas"
+      ],
+      "correct": "Ejecutar acciones automáticas ante eventos",
+      "explicacion": "Un trigger ejecuta acciones automáticamente cuando ocurre un evento (INSERT, UPDATE o DELETE) sobre una tabla, por ejemplo auditar o validar datos."
+    },
+    {
+      "id": 285,
+      "unit": "UT6",
+      "question": "¿Qué palabra se usa para definir un manejador de errores?",
+      "options": [
+        "CATCH",
+        "HANDLER",
+        "EXCEPTION",
+        "ERROR"
+      ],
+      "correct": "HANDLER",
+      "explicacion": "DECLARE ... HANDLER FOR condición define un manejador de errores o condiciones (CONTINUE o EXIT) en procedimientos MySQL."
+    },
+    {
+      "id": 286,
+      "unit": "UT6",
+      "question": "¿Cuál es una ventaja de la programación dentro del SGBD (procedimientos, funciones, triggers)?",
+      "options": [
+        "Impide reutilizar código",
+        "Obliga a usar un cliente concreto",
+        "Aumenta el tráfico de red",
+        "Reduce el tráfico entre cliente y servidor"
+      ],
+      "correct": "Reduce el tráfico entre cliente y servidor",
+      "explicacion": "Las operaciones se ejecutan en el servidor, lo que reduce tráfico, mejora integridad y seguridad, permite reutilizar código y da independencia del cliente."
+    },
+    {
+      "id": 287,
+      "unit": "UT6",
+      "question": "¿Por qué se usa DELIMITER // al crear un procedimiento en MySQL?",
+      "options": [
+        "Para evitar que el ; interno termine prematuramente la definición",
+        "Para cambiar de base de datos",
+        "Para comentar el código",
+        "Para crear una variable"
+      ],
+      "correct": "Para evitar que el ; interno termine prematuramente la definición",
+      "explicacion": "Como el cuerpo del procedimiento contiene ; se cambia temporalmente el delimitador para que la definición completa se envíe de una vez."
+    },
+    {
+      "id": 288,
+      "unit": "UT6",
+      "question": "¿Qué diferencia hay entre una variable de sistema global y una de sesión?",
+      "options": [
+        "La de sesión afecta a todo el servidor",
+        "La global afecta a todo el servidor y todas las sesiones; la de sesión solo a la conexión actual",
+        "La global solo existe en procedimientos",
+        "Son iguales"
+      ],
+      "correct": "La global afecta a todo el servidor y todas las sesiones; la de sesión solo a la conexión actual",
+      "explicacion": "Las variables de sistema pueden ser globales (todo el servidor) o de sesión (solo la sesión del usuario), como autocommit, max_connections o time_zone."
+    },
+    {
+      "id": 289,
+      "unit": "UT6",
+      "question": "¿Con qué prefijo se definen las variables de usuario en MySQL?",
+      "options": [
+        "@",
+        "#",
+        "&",
+        "$"
+      ],
+      "correct": "@",
+      "explicacion": "Las variables de usuario empiezan por @, no requieren declaración previa y existen mientras dura la sesión."
+    },
+    {
+      "id": 290,
+      "unit": "UT6",
+      "question": "¿Qué diferencia a una variable local de una variable de usuario?",
+      "options": [
+        "La local usa el prefijo @",
+        "La local dura toda la sesión",
+        "La local se declara con DECLARE dentro de BEGIN...END y desaparece al acabar el bloque",
+        "No hay diferencia"
+      ],
+      "correct": "La local se declara con DECLARE dentro de BEGIN...END y desaparece al acabar el bloque",
+      "explicacion": "Las variables locales requieren DECLARE, solo son accesibles en su bloque y desaparecen al terminar; las de usuario (@) duran la sesión."
+    },
+    {
+      "id": 291,
+      "unit": "UT6",
+      "question": "¿Qué sentencia ejecuta un procedimiento almacenado llamado calcular_descuento?",
+      "options": [
+        "CALL calcular_descuento();",
+        "EXEC calcular_descuento",
+        "SELECT calcular_descuento",
+        "RUN calcular_descuento"
+      ],
+      "correct": "CALL calcular_descuento();",
+      "explicacion": "Los procedimientos se invocan con CALL; las funciones se usan dentro de expresiones, por ejemplo en un SELECT."
+    },
+    {
+      "id": 292,
+      "unit": "UT6",
+      "question": "¿Qué indica la cláusula DETERMINISTIC en una función?",
+      "options": [
+        "Que no devuelve nada",
+        "Que es un procedimiento",
+        "Que siempre devuelve el mismo valor para los mismos argumentos",
+        "Que modifica datos"
+      ],
+      "correct": "Que siempre devuelve el mismo valor para los mismos argumentos",
+      "explicacion": "DETERMINISTIC indica que el resultado depende solo de los argumentos; RETURNS especifica el tipo de dato devuelto."
+    },
+    {
+      "id": 293,
+      "unit": "UT6",
+      "question": "¿Qué tipos de parámetros admite una función definida por el usuario en MySQL?",
+      "options": [
+        "Solo IN",
+        "IN, OUT e INOUT",
+        "Solo OUT",
+        "Ninguno"
+      ],
+      "correct": "Solo IN",
+      "explicacion": "Las funciones solo admiten parámetros IN y devuelven un valor único; los procedimientos admiten IN, OUT e INOUT."
+    },
+    {
+      "id": 294,
+      "unit": "UT6",
+      "question": "¿Qué buena práctica se recomienda al nombrar funciones?",
+      "options": [
+        "No documentarlas",
+        "Usar números",
+        "Usar nombres de una letra",
+        "Usar verbos descriptivos como calcular_descuento o es_mayor_de_edad"
+      ],
+      "correct": "Usar verbos descriptivos como calcular_descuento o es_mayor_de_edad",
+      "explicacion": "Se recomienda nombrar con verbos descriptivos, documentar qué devuelve la función y evitar efectos secundarios."
+    },
+    {
+      "id": 295,
+      "unit": "UT6",
+      "question": "¿Qué instrucción de control de flujo evalúa múltiples condiciones sobre una misma variable o expresión?",
+      "options": [
+        "LEAVE",
+        "FETCH",
+        "CASE",
+        "LOOP"
+      ],
+      "correct": "CASE",
+      "explicacion": "IF evalúa condiciones y CASE permite comparar una variable con varios valores posibles."
+    },
+    {
+      "id": 296,
+      "unit": "UT6",
+      "question": "¿Qué caracteriza al bucle LOOP en MySQL?",
+      "options": [
+        "Se ejecuta una sola vez",
+        "Evalúa la condición al principio",
+        "Se repite indefinidamente hasta salir con LEAVE",
+        "Solo recorre cursores"
+      ],
+      "correct": "Se repite indefinidamente hasta salir con LEAVE",
+      "explicacion": "LOOP es un bucle simple sin condición propia; se abandona con LEAVE. WHILE comprueba al inicio y REPEAT al final."
+    },
+    {
+      "id": 297,
+      "unit": "UT6",
+      "question": "¿Qué limitación tienen los cursores en MySQL?",
+      "options": [
+        "No necesitan OPEN",
+        "Solo leen una fila",
+        "No se pueden usar dentro de funciones",
+        "No se pueden usar en procedimientos"
+      ],
+      "correct": "No se pueden usar dentro de funciones",
+      "explicacion": "Los cursores no se pueden usar en funciones y su uso excesivo afecta al rendimiento; se prefieren operaciones en bloque cuando es posible."
+    },
+    {
+      "id": 298,
+      "unit": "UT6",
+      "question": "¿Cuál es el orden de uso de un cursor?",
+      "options": [
+        "OPEN, DECLARE, CLOSE, FETCH",
+        "CLOSE, OPEN, FETCH",
+        "DECLARE ... CURSOR FOR, OPEN, FETCH INTO y CLOSE",
+        "FETCH, OPEN, DECLARE"
+      ],
+      "correct": "DECLARE ... CURSOR FOR, OPEN, FETCH INTO y CLOSE",
+      "explicacion": "Se declara el cursor asociado a un SELECT, se abre, se leen filas con FETCH INTO en un bucle y se cierra."
+    },
+    {
+      "id": 299,
+      "unit": "UT6",
+      "question": "¿Qué tipo de manejador continúa con la siguiente instrucción tras la excepción?",
+      "options": [
+        "EXIT",
+        "CONTINUE",
+        "STOP",
+        "BREAK"
+      ],
+      "correct": "CONTINUE",
+      "explicacion": "Un HANDLER CONTINUE sigue la ejecución; uno EXIT sale del bloque donde se produjo la excepción."
+    },
+    {
+      "id": 300,
+      "unit": "UT6",
+      "question": "¿Qué condición de un manejador captura cualquier error de ejecución SQL?",
+      "options": [
+        "NOT FOUND",
+        "SQLWARNING",
+        "SQLEXCEPTION",
+        "END"
+      ],
+      "correct": "SQLEXCEPTION",
+      "explicacion": "NOT FOUND indica el final de un cursor, SQLEXCEPTION cualquier error SQL y SQLWARNING advertencias no fatales; también se pueden capturar códigos concretos."
+    },
+    {
+      "id": 301,
+      "unit": "UT6",
+      "question": "¿Cuál es una buena práctica en el control de excepciones?",
+      "options": [
+        "Ignorar los duplicados",
+        "Evitar mostrar directamente errores del sistema a los usuarios",
+        "No declarar manejadores",
+        "Mostrar siempre el error técnico completo"
+      ],
+      "correct": "Evitar mostrar directamente errores del sistema a los usuarios",
+      "explicacion": "Se recomienda usar manejadores para errores esperables, no mostrar errores del sistema al usuario y declarar los manejadores antes de usarlos."
+    },
+    {
+      "id": 302,
+      "unit": "UT6",
+      "question": "¿Cuántos disparadores puede haber en MySQL por cada combinación de momento (BEFORE/AFTER) y evento en una tabla?",
+      "options": [
+        "Dos",
+        "Ilimitados",
+        "Solo uno",
+        "Ninguno"
+      ],
+      "correct": "Solo uno",
+      "explicacion": "Según el temario, por cada combinación de momento y evento solo puede haber un disparador por tabla."
+    },
+    {
+      "id": 303,
+      "unit": "UT6",
+      "question": "¿En qué eventos está disponible la variable OLD en un trigger?",
+      "options": [
+        "Solo INSERT",
+        "UPDATE y DELETE",
+        "Todos",
+        "INSERT y UPDATE"
+      ],
+      "correct": "UPDATE y DELETE",
+      "explicacion": "OLD (valor anterior) existe en UPDATE y DELETE; NEW (valor posterior) en INSERT y UPDATE."
+    },
+    {
+      "id": 304,
+      "unit": "UT6",
+      "question": "¿Cuándo se recomienda usar un trigger BEFORE?",
+      "options": [
+        "Para validaciones o correcciones previas a la modificación, como impedir stock negativo",
+        "Para registrar auditoría tras el éxito",
+        "Nunca",
+        "Solo con SELECT"
+      ],
+      "correct": "Para validaciones o correcciones previas a la modificación, como impedir stock negativo",
+      "explicacion": "BEFORE sirve para validar o corregir antes del cambio; AFTER cuando la acción depende del éxito de la operación, como la auditoría."
+    },
+    {
+      "id": 305,
+      "unit": "UT7",
+      "question": "¿Qué comando se usa para cambiar de base de datos en MongoDB?",
+      "options": [
+        "cd",
+        "select",
+        "switch",
+        "use"
+      ],
+      "correct": "use",
+      "explicacion": "use nombreBD cambia a esa base de datos en la shell de MongoDB. Si no existe, se crea al guardar el primer documento."
+    },
+    {
+      "id": 306,
+      "unit": "UT7",
+      "question": "¿Qué comando se utiliza para consultar documentos en MongoDB?",
+      "options": [
+        "match()",
+        "select()",
+        "find()",
+        "query()"
+      ],
+      "correct": "find()",
+      "explicacion": "db.coleccion.find(filtro) consulta documentos en MongoDB; sin filtro devuelve todos los de la colección."
+    },
+    {
+      "id": 307,
+      "unit": "UT7",
+      "question": "¿Qué tipo de esquema utilizan las bases de datos NoSQL?",
+      "options": [
+        "Esquema flexible",
+        "Esquema rígido",
+        "Esquema XML",
+        "Esquema mixto"
+      ],
+      "correct": "Esquema flexible",
+      "explicacion": "Las bases de datos NoSQL tienen esquema flexible: los documentos de una misma colección pueden tener campos distintos sin definir antes una estructura."
+    },
+    {
+      "id": 308,
+      "unit": "UT7",
+      "question": "¿Qué herramienta gráfica permite gestionar MongoDB visualmente?",
+      "options": [
+        "MongoDB Compass",
+        "MongoDB Studio",
+        "MongoVisual",
+        "MongoShell GUI"
+      ],
+      "correct": "MongoDB Compass",
+      "explicacion": "MongoDB Compass es la interfaz gráfica oficial para explorar, consultar y gestionar bases de datos MongoDB."
+    },
+    {
+      "id": 309,
+      "unit": "UT7",
+      "question": "¿Dónde se almacenan los datos por defecto en MongoDB en sistemas Linux?",
+      "options": [
+        "/mongo/data",
+        "/var/mongo",
+        "/usr/data",
+        "/data/db"
+      ],
+      "correct": "/data/db",
+      "explicacion": "Por defecto, mongod guarda los datos en /data/db. Algunas distribuciones lo cambian a /var/lib/mongodb en el archivo de configuración."
+    },
+    {
+      "id": 310,
+      "unit": "UT7",
+      "question": "¿Qué operador permite seleccionar varios valores dentro de una lista?",
+      "options": [
+        "$exists",
+        "$eq",
+        "$like",
+        "$in"
+      ],
+      "correct": "$in",
+      "explicacion": "$in selecciona los documentos cuyo campo coincide con cualquiera de los valores de una lista: {pais: {$in: ['ES','FR']}}."
+    },
+    {
+      "id": 311,
+      "unit": "UT7",
+      "question": "¿Qué lenguaje de formato estructurado usa MongoDB como base?",
+      "options": [
+        "JSON",
+        "HTML",
+        "CSV",
+        "SQL"
+      ],
+      "correct": "JSON",
+      "explicacion": "MongoDB usa JSON como formato base para representar documentos, que internamente se guardan en BSON (JSON binario)."
+    },
+    {
+      "id": 312,
+      "unit": "UT7",
+      "question": "¿Qué tipo de base de datos NoSQL se basa en nodos y relaciones?",
+      "options": [
+        "Base de datos de columnas",
+        "Base de datos jerárquica",
+        "Base de datos de grafos",
+        "Base de datos de documentos"
+      ],
+      "correct": "Base de datos de grafos",
+      "explicacion": "Las bases de datos de grafos (como Neo4j) modelan los datos como nodos y relaciones (aristas), ideales para redes sociales o recomendaciones."
+    },
+    {
+      "id": 313,
+      "unit": "UT7",
+      "question": "¿Qué comando actualiza un único documento en MongoDB?",
+      "options": [
+        "mod()",
+        "setOne()",
+        "alter()",
+        "updateOne()"
+      ],
+      "correct": "updateOne()",
+      "explicacion": "updateOne(filtro, {$set: {...}}) actualiza el primer documento que cumple el filtro. updateMany actualiza todos los que coinciden."
+    },
+    {
+      "id": 314,
+      "unit": "UT7",
+      "question": "¿Qué modelo de datos usa MongoDB?",
+      "options": [
+        "Orientado a filas",
+        "Orientado a documentos",
+        "Relacional",
+        "Jerárquico"
+      ],
+      "correct": "Orientado a documentos",
+      "explicacion": "MongoDB es una base de datos NoSQL orientada a documentos: guarda la información en documentos BSON agrupados en colecciones."
+    },
+    {
+      "id": 315,
+      "unit": "UT7",
+      "question": "¿Qué tipo de colección tiene un tamaño fijo en MongoDB?",
+      "options": [
+        "Dynamic",
+        "Open",
+        "Unlimited",
+        "Capped"
+      ],
+      "correct": "Capped",
+      "explicacion": "Una colección capped tiene tamaño fijo y funciona como un buffer circular: cuando se llena, sobrescribe los documentos más antiguos. Es útil para logs."
+    },
+    {
+      "id": 316,
+      "unit": "UT7",
+      "question": "¿Qué operador se usa para buscar valores mayores que un número en MongoDB?",
+      "options": [
+        "$ne",
+        "$eq",
+        "$lt",
+        "$gt"
+      ],
+      "correct": "$gt",
+      "explicacion": "$gt (greater than) busca valores mayores que uno dado: {edad: {$gt: 18}}. $lt es menor que, $eq igual y $ne distinto."
+    },
+    {
+      "id": 317,
+      "unit": "UT7",
+      "question": "¿Qué modelo prioriza la disponibilidad frente a la consistencia inmediata?",
+      "options": [
+        "ACID",
+        "SQL",
+        "BASE",
+        "CAP"
+      ],
+      "correct": "BASE",
+      "explicacion": "BASE (Basically Available, Soft state, Eventually consistent) prioriza la disponibilidad y acepta consistencia eventual. ACID prioriza la consistencia inmediata."
+    },
+    {
+      "id": 318,
+      "unit": "UT7",
+      "question": "¿Qué formato se utiliza comúnmente en MongoDB para almacenar documentos?",
+      "options": [
+        "JSON/BSON",
+        "TXT/CSV",
+        "XML/CSV",
+        "YAML"
+      ],
+      "correct": "JSON/BSON",
+      "explicacion": "MongoDB representa los documentos en JSON y los almacena en BSON, una versión binaria de JSON con más tipos de datos."
+    },
+    {
+      "id": 319,
+      "unit": "UT7",
+      "question": "¿Qué tipo de base de datos NoSQL es ideal para Big Data y consultas analíticas?",
+      "options": [
+        "Base de datos relacional",
+        "Base de datos orientada a columnas",
+        "Base de datos clave-valor",
+        "Base de datos de grafos"
+      ],
+      "correct": "Base de datos orientada a columnas",
+      "explicacion": "Las bases de datos orientadas a columnas (Cassandra, HBase) guardan los datos por columnas, lo que acelera las consultas analíticas sobre grandes volúmenes."
+    },
+    {
+      "id": 320,
+      "unit": "UT7",
+      "question": "¿Qué comando elimina un solo documento de una colección?",
+      "options": [
+        "deleteOne()",
+        "erase()",
+        "delDoc()",
+        "remove()"
+      ],
+      "correct": "deleteOne()",
+      "explicacion": "deleteOne(filtro) elimina el primer documento que cumple el filtro. deleteMany elimina todos los que coinciden."
+    },
+    {
+      "id": 321,
+      "unit": "UT7",
+      "question": "¿Qué comando crea explícitamente una colección en MongoDB?",
+      "options": [
+        "makeTable()",
+        "addCollection()",
+        "createCollection()",
+        "newCollection()"
+      ],
+      "correct": "createCollection()",
+      "explicacion": "db.createCollection('nombre') crea explícitamente una colección y permite indicar opciones, como capped. Normalmente se crea sola al insertar el primer documento."
+    },
+    {
+      "id": 322,
+      "unit": "UT7",
+      "question": "¿Qué tipo de escalabilidad ofrecen las bases de datos NoSQL?",
+      "options": [
+        "Sin escalabilidad",
+        "Escalabilidad híbrida",
+        "Escalabilidad horizontal",
+        "Escalabilidad vertical"
+      ],
+      "correct": "Escalabilidad horizontal",
+      "explicacion": "Las bases NoSQL están pensadas para escalar horizontalmente: se añaden más servidores (sharding) en lugar de un servidor más potente (escalado vertical)."
+    },
+    {
+      "id": 323,
+      "unit": "UT7",
+      "question": "¿Qué comando permite insertar un solo documento en MongoDB?",
+      "options": [
+        "insertOne()",
+        "push()",
+        "addDoc()",
+        "insert()"
+      ],
+      "correct": "insertOne()",
+      "explicacion": "insertOne(documento) inserta un único documento en una colección. insertMany inserta varios."
+    },
+    {
+      "id": 324,
+      "unit": "UT7",
+      "question": "¿Qué sistema NoSQL es de tipo clave-valor?",
+      "options": [
+        "Redis",
+        "Neo4j",
+        "MongoDB",
+        "Cassandra"
+      ],
+      "correct": "Redis",
+      "explicacion": "Redis es una base de datos clave-valor en memoria. Neo4j es de grafos, MongoDB documental y Cassandra orientada a columnas."
+    },
+    {
+      "id": 325,
+      "unit": "UT7",
+      "question": "¿Por qué el modelo sin esquema fijo (schema-less) es ideal para proyectos ágiles?",
+      "options": [
+        "Porque obliga a definir todo al principio",
+        "Porque no permite cambios",
+        "Porque permite que el modelo de datos evolucione sin alterar la estructura global",
+        "Porque usa SQL"
+      ],
+      "correct": "Porque permite que el modelo de datos evolucione sin alterar la estructura global",
+      "explicacion": "Al no requerir esquema predefinido, cada documento puede tener estructura distinta y el modelo cambia fácilmente durante el desarrollo."
+    },
+    {
+      "id": 326,
+      "unit": "UT7",
+      "question": "¿Qué ventaja tiene almacenar datos anidados (tipo JSON) en NoSQL?",
+      "options": [
+        "Reduce la flexibilidad",
+        "Evita múltiples JOIN para acceder a información relacionada",
+        "Obliga a normalizar",
+        "Impide relaciones jerárquicas"
+      ],
+      "correct": "Evita múltiples JOIN para acceder a información relacionada",
+      "explicacion": "Las relaciones jerárquicas se representan dentro del documento, por lo que no hacen falta JOIN."
+    },
+    {
+      "id": 327,
+      "unit": "UT7",
+      "question": "¿Cómo se llama el reparto automático de datos entre servidores en MongoDB o Cassandra?",
+      "options": [
+        "Sharding",
+        "Normalización",
+        "Serialización",
+        "Indexación"
+      ],
+      "correct": "Sharding",
+      "explicacion": "El sharding distribuye los datos entre varios nodos, base de la escalabilidad horizontal."
+    },
+    {
+      "id": 328,
+      "unit": "UT7",
+      "question": "¿Qué sacrifican a menudo las bases NoSQL para mejorar la eficiencia?",
+      "options": [
+        "La normalización (usan un modelo denormalizado)",
+        "La escalabilidad",
+        "La disponibilidad",
+        "La velocidad"
+      ],
+      "correct": "La normalización (usan un modelo denormalizado)",
+      "explicacion": "Las NoSQL priorizan operaciones rápidas y pueden sacrificar la normalización y la consistencia absoluta."
+    },
+    {
+      "id": 329,
+      "unit": "UT7",
+      "question": "En el modelo BASE, ¿qué significa «Soft state»?",
+      "options": [
+        "Que los datos son blandos",
+        "Que no hay estado",
+        "Que el estado del sistema puede cambiar con el tiempo incluso sin entrada externa",
+        "Que el sistema está apagado"
+      ],
+      "correct": "Que el estado del sistema puede cambiar con el tiempo incluso sin entrada externa",
+      "explicacion": "BASE: Basically Available (disponible aunque fallen nodos), Soft state (estado cambiante) y Eventual consistency (consistencia posterior)."
+    },
+    {
+      "id": 330,
+      "unit": "UT7",
+      "question": "¿Para qué casos de uso son habituales las bases de datos clave-valor?",
+      "options": [
+        "Redes sociales",
+        "Cachés en memoria para sesiones de usuario y configuraciones rápidas",
+        "Documentos complejos",
+        "Analítica OLAP"
+      ],
+      "correct": "Cachés en memoria para sesiones de usuario y configuraciones rápidas",
+      "explicacion": "El modelo clave-valor es muy simple y eficiente: ideal para cachés, sesiones y configuraciones; ejemplos: Redis, DynamoDB, Riak KV."
+    },
+    {
+      "id": 331,
+      "unit": "UT7",
+      "question": "¿Para qué tipo de sistemas son adecuadas las bases orientadas a columnas?",
+      "options": [
+        "Redes sociales",
+        "Aplicaciones analíticas y sistemas OLAP",
+        "Sesiones de usuario",
+        "Blogs"
+      ],
+      "correct": "Aplicaciones analíticas y sistemas OLAP",
+      "explicacion": "Almacenan por columnas, que pueden procesarse en paralelo, por lo que destacan en analítica, OLAP e informes masivos (Cassandra)."
+    },
+    {
+      "id": 332,
+      "unit": "UT7",
+      "question": "¿Cuál es un caso de uso típico de las bases de datos orientadas a grafos?",
+      "options": [
+        "Almacenar imágenes",
+        "Hojas de cálculo",
+        "Cachés de sesión",
+        "Detección de fraude analizando vínculos entre cuentas y transacciones"
+      ],
+      "correct": "Detección de fraude analizando vínculos entre cuentas y transacciones",
+      "explicacion": "Los grafos (Neo4j, ArangoDB, OrientDB) destacan en redes sociales, motores de recomendación y análisis de fraude."
+    },
+    {
+      "id": 333,
+      "unit": "UT7",
+      "question": "¿Qué edición de MongoDB se recomienda descargar por ser libre?",
+      "options": [
+        "MongoDB Community Server",
+        "MongoDB Atlas Premium",
+        "MongoDB Pro",
+        "MongoDB Enterprise"
+      ],
+      "correct": "MongoDB Community Server",
+      "explicacion": "Se aconseja MongoDB Community Server, la edición libre; Compass es la interfaz gráfica opcional."
+    },
+    {
+      "id": 334,
+      "unit": "UT7",
+      "question": "¿Qué diferencia hay entre mongod y mongo?",
+      "options": [
+        "mongo es el servidor",
+        "mongod es el servidor de bases de datos y mongo la shell de línea de comandos",
+        "mongod es la interfaz gráfica",
+        "Son lo mismo"
+      ],
+      "correct": "mongod es el servidor de bases de datos y mongo la shell de línea de comandos",
+      "explicacion": "mongod ejecuta el servidor MongoDB y mongo (o mongosh) es la shell para interactuar con él."
+    },
+    {
+      "id": 335,
+      "unit": "UT7",
+      "question": "¿Qué directorio de datos usa MongoDB por defecto en Windows?",
+      "options": [
+        "C:\\data\\db",
+        "C:\\Program Files\\data",
+        "C:\\Users\\db",
+        "C:\\mongo"
+      ],
+      "correct": "C:\\data\\db",
+      "explicacion": "Por defecto usa C:\\data\\db en Windows y /data/db en Linux y macOS; si no existe hay que crearlo."
+    },
+    {
+      "id": 336,
+      "unit": "UT7",
+      "question": "¿Qué servicio permite crear instancias de MongoDB en la nube sin instalación local?",
+      "options": [
+        "mongod",
+        "Robo3T",
+        "Compass",
+        "Atlas (MongoDB Cloud)"
+      ],
+      "correct": "Atlas (MongoDB Cloud)",
+      "explicacion": "MongoDB Atlas es el servicio en la nube para crear instancias remotas."
+    },
+    {
+      "id": 337,
+      "unit": "UT7",
+      "question": "¿Qué ocurre si se inserta un documento en una colección que no existe en MongoDB?",
+      "options": [
+        "La colección (y la base de datos si hace falta) se crea automáticamente",
+        "Da error",
+        "Se descarta el documento",
+        "Se crea en otra colección"
+      ],
+      "correct": "La colección (y la base de datos si hace falta) se crea automáticamente",
+      "explicacion": "MongoDB crea automáticamente la colección y la base de datos al insertar el primer documento."
+    },
+    {
+      "id": 338,
+      "unit": "UT7",
+      "question": "¿Qué comando lista las colecciones de la base de datos activa en MongoDB?",
+      "options": [
+        "db",
+        "show collections",
+        "list tables",
+        "show dbs"
+      ],
+      "correct": "show collections",
+      "explicacion": "show dbs lista las bases de datos, show collections las colecciones de la base activa y db muestra la base actual."
+    },
+    {
+      "id": 339,
+      "unit": "UT7",
+      "question": "¿Qué campo genera automáticamente MongoDB como identificador único de cada documento?",
+      "options": [
+        "id",
+        "oid",
+        "_id",
+        "key"
+      ],
+      "correct": "_id",
+      "explicacion": "Cada documento recibe un campo _id único generado automáticamente."
+    },
+    {
+      "id": 340,
+      "unit": "UT7",
+      "question": "¿Qué convención de nombres se recomienda para las colecciones en MongoDB?",
+      "options": [
+        "Cualquier nombre con caracteres especiales",
+        "Mayúsculas con espacios",
+        "Minúsculas, sin espacios y en plural, como clientes o productos",
+        "Singular con números"
+      ],
+      "correct": "Minúsculas, sin espacios y en plural, como clientes o productos",
+      "explicacion": "Se recomiendan nombres en minúsculas, sin espacios, en plural y sin caracteres especiales."
+    },
+    {
+      "id": 341,
+      "unit": "UT7",
+      "question": "¿Qué método inserta varios documentos a la vez en MongoDB?",
+      "options": [
+        "addMany()",
+        "insertAll()",
+        "insertMany()",
+        "insertOne()"
+      ],
+      "correct": "insertMany()",
+      "explicacion": "insertMany() recibe un array de documentos; insertOne() inserta uno."
+    },
+    {
+      "id": 342,
+      "unit": "UT7",
+      "question": "¿Qué operador de MongoDB selecciona valores menores o iguales a uno dado?",
+      "options": [
+        "$ne",
+        "$lte",
+        "$gt",
+        "$in"
+      ],
+      "correct": "$lte",
+      "explicacion": "$lte significa less than or equal (menor o igual); $gt es mayor que y $in comprueba pertenencia a una lista."
+    },
+    {
+      "id": 343,
+      "unit": "UT7",
+      "question": "¿Qué hace la proyección {nombre: 1, _id: 0} en find()?",
+      "options": [
+        "Elimina el campo nombre",
+        "Muestra solo el campo nombre y oculta el _id",
+        "Ordena por nombre",
+        "Filtra por _id = 0"
+      ],
+      "correct": "Muestra solo el campo nombre y oculta el _id",
+      "explicacion": "El segundo argumento de find() es la proyección: 1 incluye un campo y 0 lo excluye."
+    },
+    {
+      "id": 344,
+      "unit": "UT7",
+      "question": "¿Qué método de MongoDB modifica todos los documentos que cumplen un criterio?",
+      "options": [
+        "modifyAll()",
+        "updateOne()",
+        "setMany()",
+        "updateMany()"
+      ],
+      "correct": "updateMany()",
+      "explicacion": "updateMany() modifica todos los documentos que coinciden; updateOne() solo el primero."
+    },
+    {
+      "id": 345,
+      "unit": "UT7",
+      "question": "¿Qué operador elimina un campo de un documento en MongoDB?",
+      "options": [
+        "$remove",
+        "$delete",
+        "$unset",
+        "$set"
+      ],
+      "correct": "$unset",
+      "explicacion": "$set añade o modifica un campo y $unset lo elimina (el valor indicado es irrelevante)."
+    },
+    {
+      "id": 346,
+      "unit": "UT7",
+      "question": "¿Qué método elimina todos los documentos que cumplen una condición?",
+      "options": [
+        "removeAll()",
+        "drop()",
+        "deleteOne()",
+        "deleteMany()"
+      ],
+      "correct": "deleteMany()",
+      "explicacion": "deleteOne() borra un documento y deleteMany() todos los que cumplen la condición."
+    },
+    {
+      "id": 347,
+      "unit": "UT7",
+      "question": "¿Qué método ejecuta el framework de agregación de MongoDB?",
+      "options": [
+        "group()",
+        "reduce()",
+        "aggregate()",
+        "find()"
+      ],
+      "correct": "aggregate()",
+      "explicacion": "db.coleccion.aggregate([...]) aplica una serie de etapas (stages) en orden."
+    },
+    {
+      "id": 348,
+      "unit": "UT7",
+      "question": "En una etapa $group, ¿qué representa el campo _id?",
+      "options": [
+        "El valor por el que se agrupan los documentos",
+        "El número de documentos",
+        "Un campo obligatorio de salida vacío",
+        "El identificador del documento original"
+      ],
+      "correct": "El valor por el que se agrupan los documentos",
+      "explicacion": "En $group, _id indica el campo de agrupación, por ejemplo \"$departamento\"; _id: null agrupa todos los documentos juntos."
+    },
+    {
+      "id": 349,
+      "unit": "UT7",
+      "question": "¿Cómo se cuentan documentos por grupo en una agregación de MongoDB?",
+      "options": [
+        "Con { $avg: 1 }",
+        "Con { $count: all }",
+        "Con { $push: 1 }",
+        "Con { $sum: 1 }"
+      ],
+      "correct": "Con { $sum: 1 }",
+      "explicacion": "Sumar 1 por cada documento con $sum: 1 cuenta cuántos hay en cada grupo."
+    },
+    {
+      "id": 350,
+      "unit": "UT7",
+      "question": "¿Qué operador de agrupación reúne todos los valores en un array sin duplicados?",
+      "options": [
+        "$push",
+        "$max",
+        "$sum",
+        "$addToSet"
+      ],
+      "correct": "$addToSet",
+      "explicacion": "$push agrupa todos los valores en un array y $addToSet hace lo mismo eliminando duplicados."
+    },
+    {
+      "id": 351,
+      "unit": "UT7",
+      "question": "¿Qué etapa de agregación filtra los documentos, igual que un WHERE?",
+      "options": [
+        "$match",
+        "$sort",
+        "$project",
+        "$group"
+      ],
+      "correct": "$match",
+      "explicacion": "$match filtra documentos; conviene ponerlo antes de $group para reducir los datos a agrupar."
+    },
+    {
+      "id": 352,
+      "unit": "UT7",
+      "question": "¿Qué orden de etapas recomienda el temario en una agregación?",
+      "options": [
+        "El orden no importa",
+        "Ordenar, agrupar y filtrar",
+        "Agrupar, filtrar y ordenar",
+        "Primero filtrar ($match), luego agrupar ($group) y luego ordenar ($sort)"
+      ],
+      "correct": "Primero filtrar ($match), luego agrupar ($group) y luego ordenar ($sort)",
+      "explicacion": "El orden de las etapas es importante: $match, después $group y después $sort."
+    },
+    {
+      "id": 353,
+      "unit": "UT7",
+      "question": "¿Qué indica { $sort: { promedio: -1 } } en una agregación?",
+      "options": [
+        "Ordena por promedio de forma descendente",
+        "Limita a un resultado",
+        "Elimina el promedio",
+        "Ordena ascendente"
+      ],
+      "correct": "Ordena por promedio de forma descendente",
+      "explicacion": "En $sort, 1 es ascendente y -1 descendente."
+    }
+  ]
+}
