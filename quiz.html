@@ -428,7 +428,8 @@
   // ══ SUBJECTS ══
   async function loadSubjects() {
     try {
-      const resp = await fetch(DATA_PATH + 'manifest.json');
+      // no-cache: revalidate with the server so a stale manifest never hides new subjects
+      const resp = await fetch(DATA_PATH + 'manifest.json', { cache: 'no-cache' });
       if (!resp.ok) throw new Error();
       const { subjects = [] } = await resp.json();
       if (subjects.length === 0) throw new Error('empty');
@@ -476,7 +477,7 @@
     btn.querySelector('.sb-icon').textContent = '⏳';
     try {
       if (!subjectCache[subject.file]) {
-        const r = await fetch(DATA_PATH + subject.file);
+        const r = await fetch(DATA_PATH + subject.file, { cache: 'no-cache' });
         if (!r.ok) throw new Error();
         subjectCache[subject.file] = await r.json();
       }
