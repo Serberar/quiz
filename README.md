@@ -1,52 +1,69 @@
-# Test Practicador
+# Quiz DAW
 
-Aplicación web para **preparar exámenes tipo test** de 1º de DAW. Lee las preguntas de archivos JSON, guarda tu progreso en el navegador y te ayuda a reforzar lo que más fallas.
-
-**Ver online:** https://serberar.github.io/quiz/quiz.html
-
-## Asignaturas incluidas
-
-| Asignatura | Archivo | Preguntas |
-|---|---|---|
-| Entornos de Desarrollo | `data/entornos.json` | 189 |
-| FOL | `data/fol.json` | 145 |
-| Inglés | `data/ingles.json` | 169 |
-| Lenguaje de Marcas | `data/lenguaje_marcas.json` | 95 |
+Aplicación web instalable (PWA) para **preparar exámenes tipo test** de DAW. Lee las preguntas de archivos JSON, sincroniza tu progreso con Supabase y te enseña tus métricas: porcentaje de aprobados, nota media y acierto por asignatura.
 
 ## Funcionalidades
 
 - **Tres modos:**
-  - 🔀 **Aleatorio:** preguntas al azar.
-  - 🧠 **Refuerzo:** prioriza las preguntas que más fallas.
-  - 🎓 **Examen:** 30 preguntas; cada 3 errores restan un acierto y las preguntas sin responder no penalizan.
-- Filtro por **unidades** y número de preguntas configurable.
-- **Estadísticas por asignatura:** preguntas vistas, porcentaje de acierto y preguntas «débiles».
-- El progreso se guarda en `localStorage` y se puede resetear.
+  - **Aleatorio:** preguntas al azar.
+  - **Refuerzo:** prioriza las preguntas que más fallas.
+  - **Examen:** 30 preguntas; cada 3 errores restan un acierto y las preguntas sin responder no penalizan.
+- Asignaturas separadas por semestre, filtro por unidades y número de preguntas configurable.
+- Traducción de las preguntas de inglés y explicación de cada respuesta.
+- **Métricas:** exámenes hechos, % de aprobados, nota media, acierto en práctica y últimos tests.
+- Inicio de sesión con email y contraseña. El progreso se guarda en el navegador y se sincroniza con Supabase, así que funciona también sin conexión.
+- Se instala en el iPhone desde Safari: Compartir > Añadir a pantalla de inicio.
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev     # http://localhost:5173
+npm test
+npm run build   # genera dist/
+```
+
+Variables de entorno en `.env.local` (y en Vercel):
+
+```bash
+VITE_SUPABASE_URL=https://<proyecto>.supabase.co
+VITE_SUPABASE_KEY=<publishable key>
+```
+
+Sin estas variables la app funciona solo en local, sin login.
+
+### Supabase
+
+1. Ejecuta [`supabase/schema.sql`](supabase/schema.sql) en el SQL Editor del proyecto.
+2. Crea tu usuario en Authentication > Users > Add user.
+3. Desactiva el registro público en Authentication > Sign In / Providers.
 
 ## Añadir una asignatura
 
-1. Crea un JSON en `data/` con este formato:
+Crea un JSON en `public/data/`:
 
-   ```json
-   {
-     "subject": "Nombre de la asignatura",
-     "questions": [
-       {
-         "id": 1,
-         "unit": "UT1",
-         "question": "¿Pregunta?",
-         "options": ["A", "B", "C", "D"],
-         "correct": "B"
-       }
-     ]
-   }
-   ```
+```json
+{
+  "subject": "Nombre de la asignatura",
+  "semester": 2,
+  "questions": [
+    {
+      "id": 1,
+      "unit": "UT1",
+      "question": "¿Pregunta?",
+      "options": ["A", "B", "C", "D"],
+      "correct": "B",
+      "explicacion": "Opcional"
+    }
+  ]
+}
+```
 
-2. Haz push. Una GitHub Action (`.github/workflows/update-manifest.yml`) regenera `data/manifest.json` y la asignatura aparece sola en la app.
+`data/manifest.json` se genera solo al arrancar o compilar (`scripts/manifest.mjs`).
 
 ## Tecnologías
 
-HTML, CSS y JavaScript en un único archivo, sin dependencias, y GitHub Actions para mantener el índice de asignaturas.
+React, TypeScript, Vite, vite-plugin-pwa y Supabase (Auth + Postgres con RLS).
 
 ## Autor
 
