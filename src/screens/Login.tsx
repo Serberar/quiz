@@ -11,9 +11,11 @@ export default function Login() {
     e.preventDefault()
     setBusy(true)
     setError('')
-    const { error } = await sb!.auth.signInWithPassword({ email, password })
+    // Supabase solo acepta email: "davorsg" se completa como davorsg@gmail.com
+    const login = email.includes('@') ? email.trim() : email.trim() + '@gmail.com'
+    const { error } = await sb!.auth.signInWithPassword({ email: login, password })
     setBusy(false)
-    if (error) setError(error.message === 'Invalid login credentials' ? 'Email o contraseña incorrectos' : error.message)
+    if (error) setError(error.message === 'Invalid login credentials' ? 'Usuario o contraseña incorrectos' : error.message)
   }
 
   return (
@@ -23,8 +25,8 @@ export default function Login() {
       <p className="muted">Inicia sesión para guardar tu progreso</p>
       <form className="card form" onSubmit={submit}>
         <label>
-          Email
-          <input type="email" autoComplete="username" required value={email} onChange={e => setEmail(e.target.value)} />
+          Usuario
+          <input type="text" autoComplete="username" autoCapitalize="none" autoCorrect="off" required value={email} onChange={e => setEmail(e.target.value)} />
         </label>
         <label>
           Contraseña
