@@ -11,7 +11,8 @@
         "La tarjeta gráfica.",
         "El procesador."
       ],
-      "correct": "La memoria RAM."
+      "correct": "La memoria RAM.",
+      "explicacion": "La memoria RAM almacena temporalmente los datos y programas en uso para que la CPU acceda a ellos rápidamente. El disco duro guarda los datos de forma permanente, pero es mucho más lento."
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "La memoria caché.",
         "El bus de datos."
       ],
-      "correct": "La Unidad Aritmético Lógica (ALU)."
+      "correct": "La Unidad Aritmético Lógica (ALU).",
+      "explicacion": "La ALU (Unidad Aritmético Lógica) realiza las operaciones aritméticas (sumas, restas) y lógicas (comparaciones, AND, OR). La Unidad de Control coordina y dirige la ejecución de las instrucciones."
     },
     {
       "id": 3,
@@ -35,7 +37,8 @@
         "El teclado.",
         "Los altavoces."
       ],
-      "correct": "El teclado."
+      "correct": "El teclado.",
+      "explicacion": "El teclado introduce datos en el ordenador, por lo que es un periférico de entrada. La impresora, el monitor y los altavoces son periféricos de salida."
     },
     {
       "id": 4,
@@ -47,7 +50,8 @@
         "Almacena el archivo en la memoria ROM.",
         "Envía el archivo a la impresora."
       ],
-      "correct": "Gestiona la solicitud y coordina la comunicación entre el hardware y la aplicación adecuada."
+      "correct": "Gestiona la solicitud y coordina la comunicación entre el hardware y la aplicación adecuada.",
+      "explicacion": "El sistema operativo actúa como intermediario: recibe la solicitud, localiza el archivo, lo carga en memoria y lo abre con la aplicación asociada, coordinando hardware y software."
     },
     {
       "id": 5,
@@ -55,11 +59,12 @@
       "question": "¿Cuál de las siguientes opciones es un ejemplo de software de aplicación?",
       "options": [
         "Linux.",
-        "Windows.",
+        "Microsoft Word.",
         "macOS.",
         "Android."
       ],
-      "correct": "Windows."
+      "correct": "Microsoft Word.",
+      "explicacion": "Microsoft Word es software de aplicación: permite al usuario realizar una tarea concreta (escribir y editar documentos). Linux, macOS y Android son sistemas operativos, es decir, software de sistema."
     },
     {
       "id": 6,
@@ -71,7 +76,8 @@
         "Para actualizar el sistema operativo.",
         "Para permitir que el sistema operativo se comunique con el hardware."
       ],
-      "correct": "Para permitir que el sistema operativo se comunique con el hardware."
+      "correct": "Para permitir que el sistema operativo se comunique con el hardware.",
+      "explicacion": "Los controladores (drivers) son programas que permiten al sistema operativo comunicarse con un dispositivo hardware concreto (impresora, tarjeta gráfica...), traduciendo sus órdenes."
     },
     {
       "id": 7,
@@ -83,7 +89,8 @@
         "En la fase de mantenimiento.",
         "En la fase de requisitos y análisis."
       ],
-      "correct": "En la fase de requisitos y análisis."
+      "correct": "En la fase de requisitos y análisis.",
+      "explicacion": "En la fase de requisitos y análisis se recoge qué necesita el cliente y se estudia si el proyecto es viable. En diseño se define cómo se hará, y las pruebas y el mantenimiento son fases posteriores."
     },
     {
       "id": 8,
@@ -95,7 +102,8 @@
         "La estructura y la arquitectura de la solución.",
         "El presupuesto del proyecto."
       ],
-      "correct": "La estructura y la arquitectura de la solución."
+      "correct": "La estructura y la arquitectura de la solución.",
+      "explicacion": "En la fase de diseño se decide cómo se construirá el software: su arquitectura, módulos, estructura de datos e interfaces. Los requisitos se recogen antes, en la fase de análisis."
     },
     {
       "id": 9,
@@ -107,7 +115,8 @@
         "Documentar el código fuente.",
         "Desplegar la aplicación en producción."
       ],
-      "correct": "Verificar que el programa funciona correctamente y detectar errores."
+      "correct": "Verificar que el programa funciona correctamente y detectar errores.",
+      "explicacion": "Las pruebas sirven para comprobar que el programa funciona como se espera y cumple los requisitos, y para detectar errores antes de entregarlo."
     },
     {
       "id": 10,
@@ -119,7 +128,8 @@
         "Las instrucciones escritas por el programador/la programadora en un lenguaje de programación.",
         "El bytecode de la máquina virtual."
       ],
-      "correct": "Las instrucciones escritas por el programador/la programadora en un lenguaje de programación."
+      "correct": "Las instrucciones escritas por el programador/la programadora en un lenguaje de programación.",
+      "explicacion": "El código fuente son las instrucciones que escribe el programador en un lenguaje de programación legible por personas (Java, Python...). El código objeto, máquina o bytecode se generan después al traducirlo."
     },
     {
       "id": 11,
@@ -131,7 +141,8 @@
         "El bytecode.",
         "El script de instalación."
       ],
-      "correct": "El código objeto."
+      "correct": "El código objeto.",
+      "explicacion": "Al compilar el código fuente se obtiene el código objeto (código máquina aún no enlazado). Después, el enlazador (linker) lo une con las librerías para generar el ejecutable."
     },
     {
       "id": 12,
@@ -143,7 +154,8 @@
         "Acceso directo al hardware.",
         "Reducción del tamaño del ejecutable."
       ],
-      "correct": "La portabilidad entre distintas plataformas."
+      "correct": "La portabilidad entre distintas plataformas.",
+      "explicacion": "El código intermedio (como el bytecode de Java) lo ejecuta una máquina virtual disponible en cada plataforma, de modo que el mismo programa funciona en Windows, Linux o macOS: 'write once, run anywhere'."
     },
     {
       "id": 13,
@@ -155,7 +167,8 @@
         "El lenguaje ensamblador.",
         "JavaScript."
       ],
-      "correct": "El lenguaje ensamblador."
+      "correct": "El lenguaje ensamblador.",
+      "explicacion": "El ensamblador es un lenguaje de bajo nivel porque sus instrucciones se corresponden casi directamente con las del procesador. Python, Java y JavaScript son lenguajes de alto nivel."
     },
     {
       "id": 14,
@@ -167,7 +180,8 @@
         "Python.",
         "Binario."
       ],
-      "correct": "Python."
+      "correct": "Python.",
+      "explicacion": "Python es un lenguaje de alto nivel: su sintaxis se acerca al lenguaje humano y se aleja del hardware. El ensamblador, el código máquina y el binario son de bajo nivel."
     },
     {
       "id": 15,
@@ -179,7 +193,8 @@
         "Modela el software mediante objetos que interactúan entre sí.",
         "Define reglas lógicas para deducir resultados."
       ],
-      "correct": "Modela el software mediante objetos que interactúan entre sí."
+      "correct": "Modela el software mediante objetos que interactúan entre sí.",
+      "explicacion": "El paradigma orientado a objetos organiza el programa en objetos que combinan datos (atributos) y comportamiento (métodos) y se comunican entre sí. Las funciones puras son del paradigma funcional y las reglas lógicas, del lógico."
     },
     {
       "id": 16,
@@ -191,7 +206,8 @@
         "El compilado se traduce antes de ejecutarse y el interpretado se traduce durante la ejecución.",
         "El interpretado es más seguro que el compilado."
       ],
-      "correct": "El compilado se traduce antes de ejecutarse y el interpretado se traduce durante la ejecución."
+      "correct": "El compilado se traduce antes de ejecutarse y el interpretado se traduce durante la ejecución.",
+      "explicacion": "Un lenguaje compilado se traduce completo a código máquina antes de ejecutarse; uno interpretado se traduce y ejecuta instrucción a instrucción durante la ejecución. Por eso el compilado suele ser más rápido."
     },
     {
       "id": 17,
@@ -203,7 +219,8 @@
         "Editar, depurar y compilar código en un mismo entorno.",
         "Administrar bases de datos remotas."
       ],
-      "correct": "Editar, depurar y compilar código en un mismo entorno."
+      "correct": "Editar, depurar y compilar código en un mismo entorno.",
+      "explicacion": "Un IDE reúne en una sola aplicación editor de código, compilador o intérprete y depurador, entre otras herramientas. No está pensado para redes sociales ni para administrar bases de datos."
     },
     {
       "id": 18,
@@ -215,7 +232,8 @@
         "Como un IDE libre y de código abierto.",
         "Como un entorno exclusivo para Java Enterprise."
       ],
-      "correct": "Como un IDE libre y de código abierto."
+      "correct": "Como un IDE libre y de código abierto.",
+      "explicacion": "Eclipse es un IDE libre y de código abierto (licencia EPL), gratuito y ampliable con plugins. Aunque es muy usado en Java, admite otros lenguajes."
     },
     {
       "id": 19,
@@ -227,7 +245,8 @@
         "Es de código abierto bajo licencia MIT.",
         "Solo funciona en sistemas Linux."
       ],
-      "correct": "Es un IDE propietario que dispone de una edición Community."
+      "correct": "Es un IDE propietario que dispone de una edición Community.",
+      "explicacion": "Visual Studio es un IDE propietario de Microsoft. Ofrece una edición Community gratuita (para estudiantes, código abierto y equipos pequeños) y ediciones de pago (Professional, Enterprise)."
     },
     {
       "id": 20,
@@ -239,7 +258,8 @@
         "La configuración del espacio de trabajo (workspace).",
         "La activación de la licencia de uso."
       ],
-      "correct": "La configuración del espacio de trabajo (workspace)."
+      "correct": "La configuración del espacio de trabajo (workspace).",
+      "explicacion": "La primera vez que se inicia Eclipse pide seleccionar el workspace, la carpeta donde se guardarán los proyectos y la configuración. Eclipse no requiere licencia porque es libre."
     },
     {
       "id": 21,
@@ -251,7 +271,8 @@
         "Compilarlo desde el código fuente.",
         "Usar un instalador .exe."
       ],
-      "correct": "Instalarlo mediante apt o mediante un archivo DEB."
+      "correct": "Instalarlo mediante apt o mediante un archivo DEB.",
+      "explicacion": "En Linux, VS Code se instala con el gestor de paquetes (apt, tras añadir el repositorio de Microsoft) o descargando el paquete .deb. La Microsoft Store y los .exe son de Windows."
     },
     {
       "id": 22,
@@ -263,7 +284,8 @@
         "Compilarlo desde la terminal.",
         "Descargarlo y arrastrarlo a la carpeta de aplicaciones."
       ],
-      "correct": "Descargarlo y arrastrarlo a la carpeta de aplicaciones."
+      "correct": "Descargarlo y arrastrarlo a la carpeta de aplicaciones.",
+      "explicacion": "En macOS las aplicaciones como PyCharm se distribuyen en una imagen .dmg: basta con abrirla y arrastrar la aplicación a la carpeta Aplicaciones."
     },
     {
       "id": 23,
@@ -275,7 +297,8 @@
         "Mejorar el rendimiento del sistema.",
         "Facilitar la detección de errores."
       ],
-      "correct": "Reducir la fatiga visual."
+      "correct": "Reducir la fatiga visual.",
+      "explicacion": "Los temas oscuros reducen el brillo y el contraste de la pantalla, lo que disminuye la fatiga visual en sesiones largas. No afectan a la compilación ni al rendimiento."
     },
     {
       "id": 24,
@@ -287,7 +310,8 @@
         "Alt + C.",
         "Shift + Enter."
       ],
-      "correct": "Ctrl + /."
+      "correct": "Ctrl + /.",
+      "explicacion": "Ctrl + / comenta o descomenta la línea actual (o las seleccionadas) en IDEs como Eclipse, VS Code o IntelliJ/PyCharm."
     },
     {
       "id": 25,
@@ -299,7 +323,8 @@
         "Alt + Enter.",
         "Ctrl + P."
       ],
-      "correct": "Ctrl + Shift + R."
+      "correct": "Ctrl + Shift + R.",
+      "explicacion": "En Eclipse, Ctrl + Shift + R abre el diálogo 'Open Resource' para buscar y abrir cualquier archivo del workspace por su nombre. Ctrl + F busca texto dentro del archivo actual."
     },
     {
       "id": 26,
@@ -311,7 +336,8 @@
         "Extensions > Manage Extensions.",
         "Project > Properties."
       ],
-      "correct": "Extensions > Manage Extensions."
+      "correct": "Extensions > Manage Extensions.",
+      "explicacion": "En Visual Studio, las extensiones se instalan y gestionan desde el menú Extensions > Manage Extensions. Tools > Options configura el IDE y Project > Properties el proyecto."
     },
     {
       "id": 27,
@@ -323,7 +349,8 @@
         "File > Settings > Plugins > Marketplace.",
         "Help > Plugin Manager."
       ],
-      "correct": "File > Settings > Plugins > Marketplace."
+      "correct": "File > Settings > Plugins > Marketplace.",
+      "explicacion": "En PyCharm los plugins se instalan desde File > Settings > Plugins, pestaña Marketplace (en macOS: PyCharm > Preferences/Settings)."
     },
     {
       "id": 28,
@@ -335,7 +362,8 @@
         "Trabajar con Git directamente desde el IDE.",
         "Depurar aplicaciones remotas."
       ],
-      "correct": "Trabajar con Git directamente desde el IDE."
+      "correct": "Trabajar con Git directamente desde el IDE.",
+      "explicacion": "EGit es el plugin de Eclipse que integra Git: permite hacer commit, push, pull, crear ramas o ver el historial sin salir del IDE."
     },
     {
       "id": 29,
@@ -347,7 +375,8 @@
         "Acelera el inicio del IDE.",
         "Actualiza automáticamente el plugin."
       ],
-      "correct": "Permite mantenerlo instalado sin usarlo activamente."
+      "correct": "Permite mantenerlo instalado sin usarlo activamente.",
+      "explicacion": "Desactivar un plugin lo deja instalado pero sin cargarlo, de modo que puede reactivarse fácilmente cuando se necesite, sin volver a descargarlo ni configurarlo."
     },
     {
       "id": 30,
@@ -359,7 +388,8 @@
         "Mejoran la consistencia y la eficiencia en la configuración de proyectos.",
         "Reducen el tamaño del código fuente."
       ],
-      "correct": "Mejoran la consistencia y la eficiencia en la configuración de proyectos."
+      "correct": "Mejoran la consistencia y la eficiencia en la configuración de proyectos.",
+      "explicacion": "Los scripts de automatización configuran el entorno siempre de la misma forma (instalar dependencias, variables, estructura), lo que evita errores manuales y ahorra tiempo."
     },
     {
       "id": 31,
@@ -371,7 +401,8 @@
         "Analizar la calidad del código.",
         "Realizar operaciones como commit, push y pull sin salir del entorno."
       ],
-      "correct": "Realizar operaciones como commit, push y pull sin salir del entorno."
+      "correct": "Realizar operaciones como commit, push y pull sin salir del entorno.",
+      "explicacion": "Integrar Git en el IDE permite hacer commit, push, pull, ver diferencias o cambiar de rama desde el propio entorno, sin usar la terminal."
     },
     {
       "id": 32,
@@ -383,7 +414,8 @@
         "Bytecode para la máquina virtual Java.",
         "Un script de instalación."
       ],
-      "correct": "Bytecode para la máquina virtual Java."
+      "correct": "Bytecode para la máquina virtual Java.",
+      "explicacion": "El compilador de Java (javac) no genera código máquina nativo, sino bytecode (.class) que ejecuta la máquina virtual de Java (JVM) en cualquier plataforma."
     },
     {
       "id": 33,
@@ -395,7 +427,8 @@
         "Para generar ejecutables a partir de aplicaciones Python.",
         "Para analizar el código Python estáticamente."
       ],
-      "correct": "Para generar ejecutables a partir de aplicaciones Python."
+      "correct": "Para generar ejecutables a partir de aplicaciones Python.",
+      "explicacion": "PyInstaller empaqueta una aplicación Python con su intérprete y dependencias en un ejecutable que puede usarse sin tener Python instalado. Los paquetes se instalan con pip."
     },
     {
       "id": 34,
@@ -407,7 +440,8 @@
         "Gestionan dependencias y ayudan a optimizar la construcción del proyecto.",
         "Generan documentación automática."
       ],
-      "correct": "Gestionan dependencias y ayudan a optimizar la construcción del proyecto."
+      "correct": "Gestionan dependencias y ayudan a optimizar la construcción del proyecto.",
+      "explicacion": "Maven y Gradle son herramientas de construcción: descargan y gestionan las dependencias y automatizan la compilación, las pruebas y el empaquetado del proyecto."
     },
     {
       "id": 35,
@@ -419,7 +453,8 @@
         "Verificar que el programa cumple las especificaciones y detectar errores.",
         "Desplegar la aplicación en producción."
       ],
-      "correct": "Verificar que el programa cumple las especificaciones y detectar errores."
+      "correct": "Verificar que el programa cumple las especificaciones y detectar errores.",
+      "explicacion": "Las pruebas de software verifican que el programa cumple las especificaciones y detectan errores antes de que lleguen al usuario. Diseñar, documentar o desplegar son otras fases."
     },
     {
       "id": 36,
@@ -431,7 +466,8 @@
         "La reproducción del error.",
         "La documentación del incidente."
       ],
-      "correct": "La reproducción del error."
+      "correct": "La reproducción del error.",
+      "explicacion": "Reproducir el error consiste en volver a provocar el fallo en condiciones controladas para entender cuándo y por qué ocurre. Es el paso previo a analizarlo y corregirlo."
     },
     {
       "id": 37,
@@ -443,7 +479,8 @@
         "La depuración sustituye a las pruebas unitarias.",
         "Las pruebas ayudan a detectar fallos y la depuración permite analizarlos y corregirlos."
       ],
-      "correct": "Las pruebas ayudan a detectar fallos y la depuración permite analizarlos y corregirlos."
+      "correct": "Las pruebas ayudan a detectar fallos y la depuración permite analizarlos y corregirlos.",
+      "explicacion": "Pruebas y depuración se complementan: las pruebas detectan que algo falla y la depuración localiza la causa y permite corregirla. Ninguna sustituye a la otra."
     },
     {
       "id": 38,
@@ -455,7 +492,8 @@
         "La prueba de sistema.",
         "La prueba unitaria."
       ],
-      "correct": "La prueba unitaria."
+      "correct": "La prueba unitaria.",
+      "explicacion": "La prueba unitaria comprueba una unidad mínima de código (una función o método) de forma aislada. Las de integración prueban varios módulos juntos y las de sistema, la aplicación completa."
     },
     {
       "id": 39,
@@ -467,7 +505,8 @@
         "La prueba funcional.",
         "La prueba de regresión."
       ],
-      "correct": "La prueba funcional."
+      "correct": "La prueba funcional.",
+      "explicacion": "La prueba funcional comprueba que el sistema hace lo que debe según los requisitos, observando las entradas y salidas como lo haría el usuario, sin mirar el código interno."
     },
     {
       "id": 40,
@@ -479,7 +518,8 @@
         "La interacción entre módulos o componentes del sistema.",
         "La cobertura del código fuente."
       ],
-      "correct": "La interacción entre módulos o componentes del sistema."
+      "correct": "La interacción entre módulos o componentes del sistema.",
+      "explicacion": "Las pruebas de integración verifican que los módulos o componentes funcionan bien juntos (se comunican e intercambian datos correctamente), aunque cada uno funcione bien por separado."
     },
     {
       "id": 41,
@@ -491,7 +531,8 @@
         "Compilar solo la función actual.",
         "Detener la ejecución en una línea concreta para inspeccionar el estado del programa."
       ],
-      "correct": "Detener la ejecución en una línea concreta para inspeccionar el estado del programa."
+      "correct": "Detener la ejecución en una línea concreta para inspeccionar el estado del programa.",
+      "explicacion": "Un punto de ruptura (breakpoint) detiene la ejecución en una línea concreta para inspeccionar variables, pila de llamadas y estado del programa en ese momento."
     },
     {
       "id": 42,
@@ -503,7 +544,8 @@
         "Reinicia el programa desde el inicio.",
         "Entra en el método o función llamada para examinar su ejecución interna."
       ],
-      "correct": "Entra en el método o función llamada para examinar su ejecución interna."
+      "correct": "Entra en el método o función llamada para examinar su ejecución interna.",
+      "explicacion": "Step Into entra dentro del método o función que se llama en la línea actual para seguir su ejecución paso a paso por dentro."
     },
     {
       "id": 43,
@@ -515,7 +557,8 @@
         "Finaliza la ejecución del programa.",
         "Omite la línea actual sin ejecutarla."
       ],
-      "correct": "Ejecuta la línea actual sin entrar en el detalle interno de la llamada."
+      "correct": "Ejecuta la línea actual sin entrar en el detalle interno de la llamada.",
+      "explicacion": "Step Over ejecuta la línea actual completa, incluidas las llamadas a métodos, sin entrar en ellas, y se detiene en la siguiente línea."
     },
     {
       "id": 44,
@@ -527,7 +570,8 @@
         "Finalizar la función actual y regresar al punto desde el que fue llamada.",
         "Saltar al siguiente punto de ruptura."
       ],
-      "correct": "Finalizar la función actual y regresar al punto desde el que fue llamada."
+      "correct": "Finalizar la función actual y regresar al punto desde el que fue llamada.",
+      "explicacion": "Step Return (Step Out) ejecuta lo que queda del método actual y vuelve al punto desde donde se le llamó."
     },
     {
       "id": 45,
@@ -539,7 +583,8 @@
         "@Test.",
         "@Assert."
       ],
-      "correct": "@Test."
+      "correct": "@Test.",
+      "explicacion": "En JUnit, la anotación @Test marca un método como caso de prueba. @Before (o @BeforeEach) se ejecuta antes de cada prueba; @Run y @Assert no son anotaciones de JUnit."
     },
     {
       "id": 46,
@@ -549,9 +594,10 @@
         "La ejecución de pruebas parametrizadas.",
         "La generación de informes HTML.",
         "El uso de fixtures avanzadas.",
-        "La compilación previa a bytecode Java."
+        "El uso de la sentencia assert de Python."
       ],
-      "correct": "La compilación previa a bytecode Java."
+      "correct": "El uso de la sentencia assert de Python.",
+      "explicacion": "PyTest destaca por su sencillez porque las comprobaciones se escriben con la sentencia assert normal de Python (assert x == 5), sin métodos especiales como assertEquals. Las pruebas parametrizadas, los informes HTML y las fixtures existen, pero son funciones más avanzadas."
     },
     {
       "id": 47,
@@ -563,7 +609,8 @@
         "Para marcar pruebas como fallidas.",
         "Para compilar el código antes de la ejecución."
       ],
-      "correct": "Para preparar el entorno necesario antes de ejecutar pruebas."
+      "correct": "Para preparar el entorno necesario antes de ejecutar pruebas.",
+      "explicacion": "Las fixtures de PyTest preparan lo que necesitan las pruebas (datos, conexiones, objetos) antes de ejecutarlas, y pueden limpiarlo después. Se reutilizan en varias pruebas."
     },
     {
       "id": 48,
@@ -575,7 +622,8 @@
         "Reemplazan a las pruebas manuales.",
         "Reducen el número de pruebas necesarias."
       ],
-      "correct": "Permiten ejecutarlas de forma automática a medida que evoluciona el código."
+      "correct": "Permiten ejecutarlas de forma automática a medida que evoluciona el código.",
+      "explicacion": "Las herramientas de integración continua (Jenkins, GitHub Actions...) ejecutan automáticamente las pruebas cada vez que se sube código, lo que detecta los errores en cuanto aparecen."
     },
     {
       "id": 49,
@@ -587,7 +635,8 @@
         "Reemplaza la necesidad de código de calidad.",
         "Genera automáticamente documentación técnica."
       ],
-      "correct": "Detectar errores antes y reducir esfuerzo manual repetitivo."
+      "correct": "Detectar errores antes y reducir esfuerzo manual repetitivo.",
+      "explicacion": "Automatizar las pruebas permite ejecutarlas muchas veces sin esfuerzo, de modo que los errores se detectan antes y se evita el trabajo manual repetitivo. No elimina todos los errores."
     },
     {
       "id": 50,
@@ -599,7 +648,8 @@
         "Descripción del error, pasos para reproducirlo, entorno, gravedad y estado.",
         "El código fuente completo del módulo afectado."
       ],
-      "correct": "Descripción del error, pasos para reproducirlo, entorno, gravedad y estado."
+      "correct": "Descripción del error, pasos para reproducirlo, entorno, gravedad y estado.",
+      "explicacion": "Un buen informe de incidencias incluye la descripción del error, los pasos para reproducirlo, el entorno (SO, versión), la gravedad y el estado, para que el equipo pueda localizarlo y corregirlo."
     },
     {
       "id": 51,
@@ -611,7 +661,8 @@
         "Prueba de rendimiento.",
         "Prueba de regresión."
       ],
-      "correct": "Prueba funcional."
+      "correct": "Prueba funcional.",
+      "explicacion": "Comprobar el proceso completo de compra desde el punto de vista del usuario valida que se cumple un requisito del sistema, así que es una prueba funcional. Una unitaria probaría solo una función aislada."
     },
     {
       "id": 52,
@@ -623,7 +674,8 @@
         "La mejora de la estructura interna del código sin cambiar su comportamiento externo.",
         "Reescribir el código desde cero."
       ],
-      "correct": "La mejora de la estructura interna del código sin cambiar su comportamiento externo."
+      "correct": "La mejora de la estructura interna del código sin cambiar su comportamiento externo.",
+      "explicacion": "Refactorizar es mejorar la estructura interna del código (legibilidad, organización) sin cambiar lo que hace. Añadir funcionalidades o corregir errores no es refactorizar."
     },
     {
       "id": 53,
@@ -635,7 +687,8 @@
         "Mejorar la legibilidad y la comprensión del código.",
         "Eliminar dependencias innecesarias."
       ],
-      "correct": "Mejorar la legibilidad y la comprensión del código."
+      "correct": "Mejorar la legibilidad y la comprensión del código.",
+      "explicacion": "Los nombres descriptivos (calcularTotal en vez de ct) hacen que el código se entienda sin comentarios, facilitando su lectura y mantenimiento. No afectan al rendimiento."
     },
     {
       "id": 54,
@@ -647,7 +700,8 @@
         "Cuando un método es demasiado largo o realiza demasiadas tareas.",
         "Cuando el rendimiento es bajo."
       ],
-      "correct": "Cuando un método es demasiado largo o realiza demasiadas tareas."
+      "correct": "Cuando un método es demasiado largo o realiza demasiadas tareas.",
+      "explicacion": "La extracción de métodos se aplica cuando un método es demasiado largo o hace varias tareas: se separa cada tarea en un método con nombre claro, aplicando el principio de responsabilidad única."
     },
     {
       "id": 55,
@@ -659,7 +713,8 @@
         "Duplicar la lógica en diferentes métodos.",
         "Usar técnicas como el polimorfismo o el patrón State."
       ],
-      "correct": "Usar técnicas como el polimorfismo o el patrón State."
+      "correct": "Usar técnicas como el polimorfismo o el patrón State.",
+      "explicacion": "Los condicionales complejos (muchos if/switch sobre el tipo o estado) se pueden sustituir por polimorfismo o por el patrón State, donde cada clase implementa su propio comportamiento."
     },
     {
       "id": 56,
@@ -671,7 +726,8 @@
         "Aumentar la velocidad de ejecución.",
         "Reducir el número de dependencias."
       ],
-      "correct": "Eliminar la duplicación de código."
+      "correct": "Eliminar la duplicación de código.",
+      "explicacion": "DRY (Don't Repeat Yourself) busca eliminar la duplicación: cada conocimiento o lógica debe estar en un solo lugar, para que un cambio se haga una sola vez."
     },
     {
       "id": 57,
@@ -683,7 +739,8 @@
         "Mantener el código simple y directo.",
         "Documentar cada línea de código."
       ],
-      "correct": "Mantener el código simple y directo."
+      "correct": "Mantener el código simple y directo.",
+      "explicacion": "KISS (Keep It Simple, Stupid) promueve soluciones simples y directas, evitando la complejidad innecesaria para que el código sea más fácil de entender y mantener."
     },
     {
       "id": 58,
@@ -695,7 +752,8 @@
         "No implementar funcionalidades que aún no son necesarias.",
         "Documentar exhaustivamente cada módulo."
       ],
-      "correct": "No implementar funcionalidades que aún no son necesarias."
+      "correct": "No implementar funcionalidades que aún no son necesarias.",
+      "explicacion": "YAGNI (You Aren't Gonna Need It) propone no implementar funcionalidades hasta que realmente se necesiten, evitando código que quizá nunca se use."
     },
     {
       "id": 59,
@@ -707,7 +765,8 @@
         "Mejorar la mantenibilidad y reducir el riesgo de errores.",
         "Elimina la necesidad de pruebas."
       ],
-      "correct": "Mejorar la mantenibilidad y reducir el riesgo de errores."
+      "correct": "Mejorar la mantenibilidad y reducir el riesgo de errores.",
+      "explicacion": "Si el código repetido está en un único método, un cambio o corrección se hace en un solo sitio, lo que facilita el mantenimiento y evita olvidar alguna copia."
     },
     {
       "id": 60,
@@ -719,7 +778,8 @@
         "Para desplegar aplicaciones en la nube.",
         "Para analizar la calidad del código en múltiples lenguajes y detectar problemas potenciales."
       ],
-      "correct": "Para analizar la calidad del código en múltiples lenguajes y detectar problemas potenciales."
+      "correct": "Para analizar la calidad del código en múltiples lenguajes y detectar problemas potenciales.",
+      "explicacion": "SonarQube es una plataforma de análisis estático que evalúa la calidad del código en muchos lenguajes, detectando bugs, vulnerabilidades, código duplicado y 'code smells'."
     },
     {
       "id": 61,
@@ -731,7 +791,8 @@
         "La ejecución de pruebas de integración.",
         "La gestión de dependencias en proyectos Node.js."
       ],
-      "correct": "El análisis estático de código JavaScript y derivados."
+      "correct": "El análisis estático de código JavaScript y derivados.",
+      "explicacion": "ESLint es un linter: analiza de forma estática el código JavaScript (y TypeScript o JSX con plugins) para detectar errores y malas prácticas sin ejecutarlo."
     },
     {
       "id": 62,
@@ -743,7 +804,8 @@
         "Requiere conexión permanente a internet.",
         "Es distribuido y cada desarrollador/la desarrolladora puede disponer de un repositorio local."
       ],
-      "correct": "Es distribuido y cada desarrollador/la desarrolladora puede disponer de un repositorio local."
+      "correct": "Es distribuido y cada desarrollador/la desarrolladora puede disponer de un repositorio local.",
+      "explicacion": "Git es un sistema de control de versiones distribuido: cada desarrollador tiene una copia completa del repositorio con todo su historial y puede trabajar sin conexión."
     },
     {
       "id": 63,
@@ -755,7 +817,8 @@
         "Una instantánea del código guardada en el historial del repositorio.",
         "Un conflicto entre cambios."
       ],
-      "correct": "Una instantánea del código guardada en el historial del repositorio."
+      "correct": "Una instantánea del código guardada en el historial del repositorio.",
+      "explicacion": "Un commit es una instantánea del estado del proyecto que se guarda en el historial con un identificador, autor, fecha y mensaje. Permite volver a versiones anteriores."
     },
     {
       "id": 64,
@@ -767,7 +830,8 @@
         "Una versión paralela del código sobre la que se puede trabajar de forma independiente.",
         "Un archivo de configuración del repositorio."
       ],
-      "correct": "Una versión paralela del código sobre la que se puede trabajar de forma independiente."
+      "correct": "Una versión paralela del código sobre la que se puede trabajar de forma independiente.",
+      "explicacion": "Una rama es una línea de desarrollo paralela donde se puede trabajar (por ejemplo, en una nueva funcionalidad) sin afectar a la rama principal hasta fusionarla."
     },
     {
       "id": 65,
@@ -779,7 +843,8 @@
         "Combinar cambios procedentes de diferentes ramas.",
         "Sincronizar el repositorio con el servidor remoto."
       ],
-      "correct": "Combinar cambios procedentes de diferentes ramas."
+      "correct": "Combinar cambios procedentes de diferentes ramas.",
+      "explicacion": "git merge combina en la rama actual los cambios de otra rama, integrando ambos historiales. Crear ramas es git branch y sincronizar con el remoto, push/pull."
     },
     {
       "id": 66,
@@ -791,7 +856,8 @@
         "Cuando se intentan combinar cambios incompatibles en la misma parte del código.",
         "Al clonar un repositorio remoto."
       ],
-      "correct": "Cuando se intentan combinar cambios incompatibles en la misma parte del código."
+      "correct": "Cuando se intentan combinar cambios incompatibles en la misma parte del código.",
+      "explicacion": "Hay conflicto cuando se fusionan dos ramas que han modificado las mismas líneas de un archivo de forma diferente: Git no sabe cuál conservar y hay que resolverlo a mano."
     },
     {
       "id": 67,
@@ -803,7 +869,8 @@
         "Javadoc.",
         "Swagger."
       ],
-      "correct": "Javadoc."
+      "correct": "Javadoc.",
+      "explicacion": "Javadoc genera documentación HTML a partir de los comentarios /** */ del código Java. Sphinx es para Python, Swagger para APIs REST, y Doxygen es multilenguaje."
     },
     {
       "id": 68,
@@ -815,7 +882,8 @@
         "Doxygen.",
         "JSDoc."
       ],
-      "correct": "Sphinx."
+      "correct": "Sphinx.",
+      "explicacion": "Sphinx es la herramienta estándar para generar documentación de proyectos Python a partir de docstrings y archivos reStructuredText. Javadoc es para Java y JSDoc para JavaScript."
     },
     {
       "id": 69,
@@ -827,7 +895,8 @@
         "Como un paradigma que modela el software como una colección de objetos que interactúan entre sí.",
         "Como un sistema basado en funciones matemáticas puras."
       ],
-      "correct": "Como un paradigma que modela el software como una colección de objetos que interactúan entre sí."
+      "correct": "Como un paradigma que modela el software como una colección de objetos que interactúan entre sí.",
+      "explicacion": "La POO es un paradigma que modela el software como un conjunto de objetos, con sus datos y comportamiento, que interactúan enviándose mensajes."
     },
     {
       "id": 70,
@@ -839,7 +908,8 @@
         "Un atributo con valor predeterminado.",
         "Una plantilla o modelo que define estructura y comportamiento comunes."
       ],
-      "correct": "Una plantilla o modelo que define estructura y comportamiento comunes."
+      "correct": "Una plantilla o modelo que define estructura y comportamiento comunes.",
+      "explicacion": "Una clase es una plantilla que define los atributos y métodos comunes a un tipo de objetos. Una instancia concreta sería un objeto."
     },
     {
       "id": 71,
@@ -851,7 +921,8 @@
         "Una instancia concreta de una clase.",
         "Un módulo del sistema."
       ],
-      "correct": "Una instancia concreta de una clase."
+      "correct": "Una instancia concreta de una clase.",
+      "explicacion": "Un objeto es una instancia concreta de una clase, con sus propios valores de atributos. Por ejemplo, 'miCoche' es un objeto de la clase Coche."
     },
     {
       "id": 72,
@@ -863,7 +934,8 @@
         "Crear múltiples instancias de una clase.",
         "Definir métodos sin implementación."
       ],
-      "correct": "Que una subclase herede atributos y métodos de una superclase."
+      "correct": "Que una subclase herede atributos y métodos de una superclase.",
+      "explicacion": "La herencia permite que una subclase reciba los atributos y métodos de una superclase, pudiendo añadir o modificar los suyos. Favorece la reutilización de código."
     },
     {
       "id": 73,
@@ -875,7 +947,8 @@
         "Mediante interfaces.",
         "Mediante herencia en cadena."
       ],
-      "correct": "Mediante interfaces."
+      "correct": "Mediante interfaces.",
+      "explicacion": "Java no permite heredar de varias clases (extends solo admite una), pero una clase puede implementar varias interfaces, lo que simula la herencia múltiple."
     },
     {
       "id": 74,
@@ -887,7 +960,8 @@
         "Que un mismo método tenga distintas firmas.",
         "Que una clase implemente varias interfaces."
       ],
-      "correct": "Que un mismo método tenga distintas firmas."
+      "correct": "Que un mismo método tenga distintas firmas.",
+      "explicacion": "La sobrecarga (overloading) es definir varios métodos con el mismo nombre y distinta firma (número o tipo de parámetros) dentro de una clase. Se resuelve en compilación."
     },
     {
       "id": 75,
@@ -899,7 +973,8 @@
         "Que una subclase modifique la implementación de un método heredado.",
         "Que un objeto tenga múltiples constructores."
       ],
-      "correct": "Que una subclase modifique la implementación de un método heredado."
+      "correct": "Que una subclase modifique la implementación de un método heredado.",
+      "explicacion": "La redefinición (overriding) ocurre cuando una subclase reescribe un método heredado con la misma firma para darle un comportamiento propio."
     },
     {
       "id": 76,
@@ -911,7 +986,8 @@
         "La visibilidad protegida.",
         "La visibilidad de paquete."
       ],
-      "correct": "La visibilidad protegida."
+      "correct": "La visibilidad protegida.",
+      "explicacion": "En UML, # indica visibilidad protegida (accesible desde la clase y sus subclases). + es público, - privado y ~ de paquete."
     },
     {
       "id": 77,
@@ -923,7 +999,8 @@
         "Un diagrama estructural que representa clases, atributos, métodos y relaciones.",
         "Un diagrama que modela casos de uso."
       ],
-      "correct": "Un diagrama estructural que representa clases, atributos, métodos y relaciones."
+      "correct": "Un diagrama estructural que representa clases, atributos, métodos y relaciones.",
+      "explicacion": "El diagrama de clases es un diagrama estructural (estático) que representa las clases, sus atributos y métodos y las relaciones entre ellas."
     },
     {
       "id": 78,
@@ -935,7 +1012,8 @@
         "Mediante un rombo con el nombre.",
         "Mediante un rectángulo dividido en nombre, atributos y métodos."
       ],
-      "correct": "Mediante un rectángulo dividido en nombre, atributos y métodos."
+      "correct": "Mediante un rectángulo dividido en nombre, atributos y métodos.",
+      "explicacion": "En UML una clase se dibuja como un rectángulo dividido en tres compartimentos: nombre, atributos y métodos (operaciones)."
     },
     {
       "id": 79,
@@ -947,7 +1025,8 @@
         "La asociación.",
         "La dependencia."
       ],
-      "correct": "La asociación."
+      "correct": "La asociación.",
+      "explicacion": "La asociación se dibuja con una línea continua simple entre clases y puede indicar cardinalidad (1, 0..*, 1..*). Las otras relaciones llevan rombos, triángulos o líneas discontinuas."
     },
     {
       "id": 80,
@@ -959,7 +1038,8 @@
         "La herencia.",
         "La agregación."
       ],
-      "correct": "La agregación."
+      "correct": "La agregación.",
+      "explicacion": "El rombo blanco (hueco) representa la agregación: una relación todo-parte débil en la que las partes pueden existir sin el todo (un equipo y sus jugadores)."
     },
     {
       "id": 81,
@@ -971,7 +1051,8 @@
         "La composición.",
         "La dependencia."
       ],
-      "correct": "La composición."
+      "correct": "La composición.",
+      "explicacion": "El rombo negro (relleno) representa la composición: una relación todo-parte fuerte en la que las partes no existen sin el todo (una casa y sus habitaciones)."
     },
     {
       "id": 82,
@@ -983,7 +1064,8 @@
         "Con una flecha con triángulo hueco desde la subclase hacia la superclase.",
         "Con una línea simple entre las dos clases."
       ],
-      "correct": "Con una flecha con triángulo hueco desde la subclase hacia la superclase."
+      "correct": "Con una flecha con triángulo hueco desde la subclase hacia la superclase.",
+      "explicacion": "La herencia o generalización se dibuja con una línea continua y un triángulo hueco en el extremo, apuntando desde la subclase hacia la superclase."
     },
     {
       "id": 83,
@@ -995,7 +1077,8 @@
         "La refactorización.",
         "La ingeniería directa."
       ],
-      "correct": "La ingeniería directa."
+      "correct": "La ingeniería directa.",
+      "explicacion": "La ingeniería directa genera código fuente a partir del modelo (diagramas UML). La ingeniería inversa hace el camino contrario: obtiene diagramas desde el código."
     },
     {
       "id": 84,
@@ -1007,7 +1090,8 @@
         "Refleja lo implementado en el código, pero no necesariamente la intención de diseño.",
         "Solo funciona con proyectos Java."
       ],
-      "correct": "Refleja lo implementado en el código, pero no necesariamente la intención de diseño."
+      "correct": "Refleja lo implementado en el código, pero no necesariamente la intención de diseño.",
+      "explicacion": "La ingeniería inversa refleja lo que realmente está implementado en el código, pero no las decisiones ni la intención del diseño, que no quedan plasmadas en él."
     },
     {
       "id": 85,
@@ -1019,7 +1103,8 @@
         "Las relaciones de herencia entre clases.",
         "Los procesos, flujos e interacciones del sistema a lo largo del tiempo."
       ],
-      "correct": "Los procesos, flujos e interacciones del sistema a lo largo del tiempo."
+      "correct": "Los procesos, flujos e interacciones del sistema a lo largo del tiempo.",
+      "explicacion": "Los diagramas de comportamiento (casos de uso, actividades, estados, secuencia) muestran la parte dinámica: procesos, flujos e interacciones a lo largo del tiempo."
     },
     {
       "id": 86,
@@ -1031,7 +1116,8 @@
         "Los requisitos funcionales del sistema desde la perspectiva del actor externo.",
         "Las transiciones entre estados del sistema."
       ],
-      "correct": "Los requisitos funcionales del sistema desde la perspectiva del actor externo."
+      "correct": "Los requisitos funcionales del sistema desde la perspectiva del actor externo.",
+      "explicacion": "El diagrama de casos de uso describe qué hace el sistema (requisitos funcionales) desde el punto de vista de los actores externos que interactúan con él."
     },
     {
       "id": 87,
@@ -1043,7 +1129,8 @@
         "Que una funcionalidad siempre incluye la ejecución de otra.",
         "Que el actor puede saltarse un paso."
       ],
-      "correct": "Que una funcionalidad siempre incluye la ejecución de otra."
+      "correct": "Que una funcionalidad siempre incluye la ejecución de otra.",
+      "explicacion": "<<include>> indica que un caso de uso siempre incluye la ejecución de otro, por ejemplo 'Realizar compra' incluye 'Iniciar sesión'. Sirve para reutilizar comportamiento común."
     },
     {
       "id": 88,
@@ -1055,7 +1142,8 @@
         "Que un caso de uso reemplaza a otro.",
         "Que una funcionalidad amplía otra de manera condicional u opcional."
       ],
-      "correct": "Que una funcionalidad amplía otra de manera condicional u opcional."
+      "correct": "Que una funcionalidad amplía otra de manera condicional u opcional.",
+      "explicacion": "<<extend>> indica que un caso de uso amplía a otro solo en determinadas condiciones, es decir, de forma opcional. Por ejemplo, 'Aplicar descuento' extiende 'Realizar compra'."
     },
     {
       "id": 89,
@@ -1067,7 +1155,8 @@
         "El tiempo.",
         "Los estados del sistema."
       ],
-      "correct": "El tiempo."
+      "correct": "El tiempo.",
+      "explicacion": "En un diagrama de secuencia el eje vertical representa el tiempo, que avanza hacia abajo. Los objetos se colocan horizontalmente y los mensajes son flechas entre sus líneas de vida."
     },
     {
       "id": 90,
@@ -1079,7 +1168,8 @@
         "Los actores externos del sistema.",
         "Las relaciones estructurales entre los objetos que interactúan."
       ],
-      "correct": "Las relaciones estructurales entre los objetos que interactúan."
+      "correct": "Las relaciones estructurales entre los objetos que interactúan.",
+      "explicacion": "El diagrama de comunicación resalta cómo se relacionan y enlazan los objetos que interactúan, numerando los mensajes. El de secuencia resalta el orden temporal."
     },
     {
       "id": 91,
@@ -1091,7 +1181,8 @@
         "El diagrama de actividades.",
         "El diagrama de estados."
       ],
-      "correct": "El diagrama de actividades."
+      "correct": "El diagrama de actividades.",
+      "explicacion": "El diagrama de actividades modela flujos de trabajo con acciones, decisiones (rombos), alternativas y tareas en paralelo, de forma similar a un diagrama de flujo."
     },
     {
       "id": 92,
@@ -1103,7 +1194,8 @@
         "La ejecución paralela y su sincronización.",
         "Los actores del sistema."
       ],
-      "correct": "La ejecución paralela y su sincronización."
+      "correct": "La ejecución paralela y su sincronización.",
+      "explicacion": "La bifurcación (fork) divide el flujo en varias ramas que se ejecutan en paralelo, y la unión (join) espera a que todas terminen para sincronizarlas. Las decisiones se representan con rombos."
     },
     {
       "id": 93,
@@ -1115,7 +1207,8 @@
         "El ciclo de vida de un objeto o sistema y sus transiciones.",
         "La estructura de clases del sistema."
       ],
-      "correct": "El ciclo de vida de un objeto o sistema y sus transiciones."
+      "correct": "El ciclo de vida de un objeto o sistema y sus transiciones.",
+      "explicacion": "El diagrama de estados modela el ciclo de vida de un objeto: los estados por los que pasa y las transiciones entre ellos provocadas por eventos (por ejemplo, un pedido: creado, pagado, enviado)."
     },
     {
       "id": 94,
@@ -1127,7 +1220,8 @@
         "El fin del diagrama de secuencia.",
         "La herencia entre clases."
       ],
-      "correct": "Un evento o condición definida en el modelo."
+      "correct": "Un evento o condición definida en el modelo.",
+      "explicacion": "Una transición entre estados se produce cuando ocurre un evento o se cumple una condición (guarda) definida en el modelo, como 'pago confirmado'."
     },
     {
       "id": 95,
@@ -1139,7 +1233,8 @@
         "Funciona únicamente en macOS.",
         "Permite crear diagramas UML, sincronizar modelos y aplicar ingeniería directa e inversa."
       ],
-      "correct": "Permite crear diagramas UML, sincronizar modelos y aplicar ingeniería directa e inversa."
+      "correct": "Permite crear diagramas UML, sincronizar modelos y aplicar ingeniería directa e inversa.",
+      "explicacion": "Visual Paradigm es una herramienta CASE que permite crear todos los diagramas UML, mantener el modelo sincronizado con el código y aplicar ingeniería directa e inversa."
     },
     {
       "id": 96,
@@ -1151,7 +1246,8 @@
         "Requiere menos recursos del sistema.",
         "Incluye funciones más amplias para colaboración y soporte completo de ingeniería directa e inversa."
       ],
-      "correct": "Incluye funciones más amplias para colaboración y soporte completo de ingeniería directa e inversa."
+      "correct": "Incluye funciones más amplias para colaboración y soporte completo de ingeniería directa e inversa.",
+      "explicacion": "Visual Paradigm ofrece más funciones que StarUML: trabajo colaborativo en equipo y soporte completo de ingeniería directa e inversa. StarUML es más sencillo y ligero."
     },
     {
       "id": 97,
@@ -1163,7 +1259,8 @@
         "Comprobar que no hay relaciones de herencia.",
         "Asegurarse de que todos los métodos son públicos."
       ],
-      "correct": "Verificar nombre, versión, leyenda y consistencia entre diagramas."
+      "correct": "Verificar nombre, versión, leyenda y consistencia entre diagramas.",
+      "explicacion": "Para interpretar bien un diagrama hay que comprobar su nombre, versión y leyenda, y que sea coherente con los demás diagramas del modelo. El número de clases o la visibilidad no son criterios de calidad."
     },
     {
       "id": 98,
@@ -1175,7 +1272,8 @@
         "Seleccionar el tipo de diagrama adecuado según lo que se quiera representar.",
         "Buscar duplicados en el modelo."
       ],
-      "correct": "Seleccionar el tipo de diagrama adecuado según lo que se quiera representar."
+      "correct": "Seleccionar el tipo de diagrama adecuado según lo que se quiera representar.",
+      "explicacion": "Tras identificar los elementos clave (actores, objetos, eventos), se elige el tipo de diagrama más adecuado según lo que se quiera mostrar: flujo, interacción o cambios de estado."
     },
     {
       "id": 99,
@@ -1187,7 +1285,8 @@
         "Establecen las relaciones de herencia.",
         "Ayudan a identificar funcionalidades clave y validar tempranamente expectativas del cliente."
       ],
-      "correct": "Ayudan a identificar funcionalidades clave y validar tempranamente expectativas del cliente."
+      "correct": "Ayudan a identificar funcionalidades clave y validar tempranamente expectativas del cliente.",
+      "explicacion": "Los casos de uso muestran de forma sencilla qué hará el sistema, lo que permite identificar las funcionalidades clave y validarlas con el cliente desde el principio."
     },
     {
       "id": 100,
@@ -1199,7 +1298,8 @@
         "Evitar el uso de notas y comentarios en los diagramas.",
         "Preferir varios diagramas simples y coherentes antes que uno complejo y difícil de mantener."
       ],
-      "correct": "Preferir varios diagramas simples y coherentes antes que uno complejo y difícil de mantener."
+      "correct": "Preferir varios diagramas simples y coherentes antes que uno complejo y difícil de mantener.",
+      "explicacion": "Varios diagramas simples, cada uno centrado en un aspecto, son más fáciles de entender y mantener que uno enorme con toda la información."
     },
     {
       "id": 101,
@@ -1211,7 +1311,8 @@
         "Windows 10",
         "Mozilla Firefox"
       ],
-      "correct": "Windows 10"
+      "correct": "Windows 10",
+      "explicacion": "Windows 10 es un sistema operativo, es decir, software de sistema que gestiona el hardware. Word, Photoshop y Firefox son software de aplicación para el usuario final."
     },
     {
       "id": 102,
@@ -1223,7 +1324,8 @@
         "Una variable global",
         "Un módulo del programa"
       ],
-      "correct": "Una instancia de una clase"
+      "correct": "Una instancia de una clase",
+      "explicacion": "Un objeto es una instancia de una clase: una entidad concreta, creada a partir de esa plantilla, con sus propios valores de atributos."
     },
     {
       "id": 103,
@@ -1235,7 +1337,8 @@
         "Mediante controladores de dispositivo propios",
         "A través del BIOS del sistema"
       ],
-      "correct": "A través de un intérprete o compilador"
+      "correct": "A través de un intérprete o compilador",
+      "explicacion": "El código de alto nivel no se entiende directamente por el hardware: un compilador o un intérprete lo traduce a código máquina que el procesador puede ejecutar."
     },
     {
       "id": 104,
@@ -1247,7 +1350,8 @@
         "Periféricos",
         "El entorno de desarrollo"
       ],
-      "correct": "Periféricos"
+      "correct": "Periféricos",
+      "explicacion": "Los periféricos son parte del hardware del sistema informático. El sistema operativo es software, y el lenguaje de programación y el entorno de desarrollo son herramientas, no componentes físicos."
     },
     {
       "id": 105,
@@ -1259,7 +1363,8 @@
         "Acceso directo al hardware",
         "Menor consumo de memoria"
       ],
-      "correct": "Portabilidad entre diferentes plataformas"
+      "correct": "Portabilidad entre diferentes plataformas",
+      "explicacion": "El código intermedio (bytecode) de Java se ejecuta en la JVM disponible para cada sistema, por lo que el mismo programa funciona en distintas plataformas sin recompilar."
     },
     {
       "id": 106,
@@ -1271,7 +1376,8 @@
         "Están más cercanos al hardware",
         "Tienen más librerías disponibles"
       ],
-      "correct": "Están más cercanos al hardware"
+      "correct": "Están más cercanos al hardware",
+      "explicacion": "Los lenguajes de bajo nivel están muy cerca del hardware: sus instrucciones se corresponden con las del procesador. Por eso dependen de la arquitectura y son más difíciles de aprender."
     },
     {
       "id": 107,
@@ -1283,7 +1389,8 @@
         "Eclipse",
         "VLC Media Player"
       ],
-      "correct": "Eclipse"
+      "correct": "Eclipse",
+      "explicacion": "Eclipse es un IDE, es decir, software de programación usado para desarrollar programas. Windows es software de sistema, y Chrome y VLC son software de aplicación."
     },
     {
       "id": 108,
@@ -1295,7 +1402,8 @@
         "Memoria RAM",
         "Disco duro SSD"
       ],
-      "correct": "Memoria RAM"
+      "correct": "Memoria RAM",
+      "explicacion": "La RAM es memoria volátil: pierde su contenido al apagar el equipo. La ROM, la memoria flash y los SSD son no volátiles y conservan los datos sin corriente."
     },
     {
       "id": 109,
@@ -1307,7 +1415,8 @@
         "Ejecutar instrucciones del programa",
         "Controlar los periféricos de entrada"
       ],
-      "correct": "Ejecutar instrucciones del programa"
+      "correct": "Ejecutar instrucciones del programa",
+      "explicacion": "La función principal de la CPU es ejecutar las instrucciones de los programas: las busca, las decodifica y las ejecuta. Almacenar datos corresponde a la memoria y los discos."
     },
     {
       "id": 110,
@@ -1319,7 +1428,8 @@
         "JUnit",
         "Gradle"
       ],
-      "correct": "Git"
+      "correct": "Git",
+      "explicacion": "Git es el sistema de control de versiones más usado. Maven y Gradle gestionan la construcción y las dependencias, y JUnit es un framework de pruebas."
     },
     {
       "id": 111,
@@ -1331,7 +1441,8 @@
         "Software de aplicación",
         "Software embebido"
       ],
-      "correct": "Software de aplicación"
+      "correct": "Software de aplicación",
+      "explicacion": "El software de aplicación permite al usuario realizar tareas concretas (escribir textos, navegar, editar fotos). El de sistema gestiona el equipo y el de programación sirve para crear software."
     },
     {
       "id": 112,
@@ -1343,7 +1454,8 @@
         "Gestiona los recursos del hardware",
         "Lo configura durante el arranque únicamente"
       ],
-      "correct": "Gestiona los recursos del hardware"
+      "correct": "Gestiona los recursos del hardware",
+      "explicacion": "El sistema operativo gestiona los recursos del hardware (CPU, memoria, dispositivos, almacenamiento) y los reparte entre los programas, actuando como intermediario."
     },
     {
       "id": 113,
@@ -1355,7 +1467,8 @@
         "El número de versiones publicadas de una aplicación",
         "El tiempo de vida útil del hardware asociado"
       ],
-      "correct": "Las etapas de planificación y desarrollo de un software"
+      "correct": "Las etapas de planificación y desarrollo de un software",
+      "explicacion": "El ciclo de vida del software es el conjunto de etapas por las que pasa un software: análisis, diseño, codificación, pruebas, implantación y mantenimiento."
     },
     {
       "id": 114,
@@ -1367,7 +1480,8 @@
         "El código que el programador escribe",
         "El código ensamblador del procesador"
       ],
-      "correct": "El código que el programador escribe"
+      "correct": "El código que el programador escribe",
+      "explicacion": "El código fuente es el que escribe el programador en un lenguaje de programación. El ejecutable, el bytecode y el código máquina se generan a partir de él."
     },
     {
       "id": 115,
@@ -1379,7 +1493,8 @@
         "Verificar la integración de todos los módulos",
         "Medir el rendimiento del sistema completo"
       ],
-      "correct": "Comprobar que cada unidad del software funcione correctamente"
+      "correct": "Comprobar que cada unidad del software funcione correctamente",
+      "explicacion": "Las pruebas unitarias comprueban que cada unidad (función, método o clase) funciona correctamente por separado. La integración, la experiencia de usuario y el rendimiento se prueban con otros tipos."
     },
     {
       "id": 116,
@@ -1391,7 +1506,8 @@
         "Automatizar tareas repetitivas de configuración",
         "Crear interfaces gráficas de usuario"
       ],
-      "correct": "Automatizar tareas repetitivas de configuración"
+      "correct": "Automatizar tareas repetitivas de configuración",
+      "explicacion": "Los scripts de automatización ejecutan de forma automática tareas repetitivas de configuración (instalar dependencias, crear estructuras, preparar el entorno), ahorrando tiempo y errores."
     },
     {
       "id": 117,
@@ -1403,7 +1519,8 @@
         "Análisis estático de código",
         "Ejecución de pruebas unitarias"
       ],
-      "correct": "Control de versiones"
+      "correct": "Control de versiones",
+      "explicacion": "Git se usa para el control de versiones: registra el historial de cambios, permite volver atrás y trabajar en equipo con ramas. No compila, no analiza ni ejecuta pruebas."
     },
     {
       "id": 118,
@@ -1415,7 +1532,8 @@
         "Compilar el código fuente",
         "Ejecutar pruebas automatizadas"
       ],
-      "correct": "Compilar el código fuente"
+      "correct": "Compilar el código fuente",
+      "explicacion": "Para generar un ejecutable hay que compilar el código fuente (y enlazarlo). Depurar, gestionar dependencias o probar son tareas diferentes."
     },
     {
       "id": 119,
@@ -1427,7 +1545,8 @@
         "Eclipse",
         "Visual Studio Code"
       ],
-      "correct": "Visual Studio Code"
+      "correct": "Visual Studio Code",
+      "explicacion": "Visual Studio Code, con la extensión de Python, es un entorno muy adecuado y popular para Python. IntelliJ IDEA, NetBeans y Eclipse están orientados principalmente a Java (PyCharm sería la otra opción típica)."
     },
     {
       "id": 120,
@@ -1439,7 +1558,8 @@
         "Garantiza código sin errores",
         "Integra herramientas como editor, compilador y depurador"
       ],
-      "correct": "Integra herramientas como editor, compilador y depurador"
+      "correct": "Integra herramientas como editor, compilador y depurador",
+      "explicacion": "Un IDE integra en una sola herramienta el editor, el compilador o intérprete y el depurador, lo que agiliza el desarrollo. No garantiza código sin errores ni sustituye al programador."
     },
     {
       "id": 121,
@@ -1451,7 +1571,8 @@
         "Eclipse",
         "Sublime Text"
       ],
-      "correct": "Eclipse"
+      "correct": "Eclipse",
+      "explicacion": "Eclipse es uno de los IDEs más usados para Java. PyCharm está orientado a Python, y VS Code y Sublime Text son editores de uso general."
     },
     {
       "id": 122,
@@ -1463,7 +1584,8 @@
         "Personalización del entorno",
         "Generación de ejecutables"
       ],
-      "correct": "Personalización del entorno"
+      "correct": "Personalización del entorno",
+      "explicacion": "La personalización del entorno permite cambiar temas, fuentes, atajos, paneles y plugins para adaptarlo a las preferencias de cada desarrollador."
     },
     {
       "id": 123,
@@ -1475,7 +1597,8 @@
         "IDEs multilenguaje",
         "Depuradores especializados"
       ],
-      "correct": "IDEs multilenguaje"
+      "correct": "IDEs multilenguaje",
+      "explicacion": "Los IDEs multilenguaje (Eclipse, VS Code, NetBeans) admiten varios lenguajes, normalmente mediante plugins o extensiones, y permiten ejecutar proyectos en todos ellos."
     },
     {
       "id": 124,
@@ -1487,7 +1610,8 @@
         "GPL o MIT",
         "Creative Commons"
       ],
-      "correct": "GPL o MIT"
+      "correct": "GPL o MIT",
+      "explicacion": "Los IDEs libres suelen distribuirse con licencias de software libre como GPL o MIT (o similares como EPL o Apache), que permiten usar, estudiar y modificar el código."
     },
     {
       "id": 125,
@@ -1499,7 +1623,8 @@
         "Entorno de Desarrollo Integrado",
         "Editor de Instrucciones Ejecutables"
       ],
-      "correct": "Entorno de Desarrollo Integrado"
+      "correct": "Entorno de Desarrollo Integrado",
+      "explicacion": "IDE significa Integrated Development Environment, en español Entorno de Desarrollo Integrado."
     },
     {
       "id": 126,
@@ -1511,7 +1636,8 @@
         "Compilador cruzado",
         "Máquina virtual"
       ],
-      "correct": "Compilador cruzado"
+      "correct": "Compilador cruzado",
+      "explicacion": "Un compilador cruzado genera ejecutables para una plataforma distinta de aquella en la que se ejecuta, por ejemplo compilar en Linux un programa para Windows o ARM."
     },
     {
       "id": 127,
@@ -1523,7 +1649,8 @@
         "Uso de scripts para instalar dependencias",
         "Configurar el tamaño de fuente del editor"
       ],
-      "correct": "Uso de scripts para instalar dependencias"
+      "correct": "Uso de scripts para instalar dependencias",
+      "explicacion": "Usar scripts para instalar dependencias es automatizar el entorno: una tarea repetitiva se hace sola y siempre igual. Elegir el tema o la fuente es personalización manual."
     },
     {
       "id": 128,
@@ -1535,7 +1662,8 @@
         "IntelliJ IDEA Ultimate",
         "Xcode"
       ],
-      "correct": "Eclipse"
+      "correct": "Eclipse",
+      "explicacion": "Eclipse es un IDE libre y gratuito. Visual Studio Enterprise e IntelliJ IDEA Ultimate son de pago, y Xcode es gratuito pero propietario de Apple."
     },
     {
       "id": 129,
@@ -1547,7 +1675,8 @@
         "Eliminar plugins obsoletos sin intervención",
         "Cambiar el lenguaje de programación del proyecto"
       ],
-      "correct": "Instalar mejoras y correcciones de errores"
+      "correct": "Instalar mejoras y correcciones de errores",
+      "explicacion": "La actualización automática instala las nuevas versiones del IDE y de sus plugins, con mejoras y corrección de errores y fallos de seguridad."
     },
     {
       "id": 130,
@@ -1559,7 +1688,8 @@
         "Gestionar el repositorio Git",
         "Convertir código fuente a ejecutable"
       ],
-      "correct": "Convertir código fuente a ejecutable"
+      "correct": "Convertir código fuente a ejecutable",
+      "explicacion": "El compilador traduce el código fuente a código máquina (o bytecode) para generar el ejecutable. Detectar errores lógicos es tarea de las pruebas y la depuración."
     },
     {
       "id": 131,
@@ -1571,7 +1701,8 @@
         "Análisis de calidad de código",
         "Generación de documentación"
       ],
-      "correct": "Pruebas unitarias en Java"
+      "correct": "Pruebas unitarias en Java",
+      "explicacion": "JUnit es el framework para automatizar pruebas unitarias en Java. El análisis de calidad lo hace SonarQube, la documentación Javadoc y los despliegues, herramientas de CI/CD."
     },
     {
       "id": 132,
@@ -1583,7 +1714,8 @@
         "Facilitar el seguimiento y resolución de errores",
         "Automatizar el despliegue de la aplicación"
       ],
-      "correct": "Facilitar el seguimiento y resolución de errores"
+      "correct": "Facilitar el seguimiento y resolución de errores",
+      "explicacion": "Documentar las incidencias permite registrar cada error, hacer su seguimiento, asignarlo y comprobar su resolución, además de no perder información en el equipo."
     },
     {
       "id": 133,
@@ -1595,7 +1727,8 @@
         "Automatizar pruebas unitarias en aplicaciones Java",
         "Analizar la complejidad ciclomática del código"
       ],
-      "correct": "Automatizar pruebas unitarias en aplicaciones Java"
+      "correct": "Automatizar pruebas unitarias en aplicaciones Java",
+      "explicacion": "JUnit permite escribir y ejecutar de forma automática pruebas unitarias en Java, con anotaciones como @Test y aserciones como assertEquals."
     },
     {
       "id": 134,
@@ -1607,7 +1740,8 @@
         "Resultados, errores, pruebas realizadas",
         "El diagrama UML del sistema"
       ],
-      "correct": "Resultados, errores, pruebas realizadas"
+      "correct": "Resultados, errores, pruebas realizadas",
+      "explicacion": "Un informe de pruebas recoge qué pruebas se han realizado, sus resultados y los errores encontrados. No incluye el código fuente, los commits ni los diagramas UML."
     },
     {
       "id": 135,
@@ -1619,7 +1753,8 @@
         "El presupuesto del proyecto",
         "Los comentarios del código fuente"
       ],
-      "correct": "Resultados, errores detectados y acciones tomadas"
+      "correct": "Resultados, errores detectados y acciones tomadas",
+      "explicacion": "En el informe de pruebas se registran los resultados obtenidos, los errores detectados y las acciones tomadas para corregirlos, lo que permite seguir la calidad del software."
     },
     {
       "id": 136,
@@ -1631,7 +1766,8 @@
         "Ruby",
         "Python"
       ],
-      "correct": "Python"
+      "correct": "Python",
+      "explicacion": "PyTest es un framework de pruebas para Python. En Java se usa JUnit, en JavaScript Jest o Mocha y en Ruby RSpec."
     },
     {
       "id": 137,
@@ -1643,7 +1779,8 @@
         "Detectar errores de forma continua y sistemática",
         "Reemplazar las pruebas manuales por completo"
       ],
-      "correct": "Detectar errores de forma continua y sistemática"
+      "correct": "Detectar errores de forma continua y sistemática",
+      "explicacion": "Un sistema de pruebas automatizadas ejecuta las pruebas de forma continua y sistemática, detectando errores en cuanto aparecen. No elimina la depuración ni todas las pruebas manuales."
     },
     {
       "id": 138,
@@ -1655,7 +1792,8 @@
         "El cumplimiento de requisitos definidos",
         "La cobertura del código fuente"
       ],
-      "correct": "El cumplimiento de requisitos definidos"
+      "correct": "El cumplimiento de requisitos definidos",
+      "explicacion": "La prueba funcional comprueba que el sistema cumple los requisitos definidos, es decir, que hace lo que tiene que hacer. La velocidad y la memoria corresponden a pruebas de rendimiento."
     },
     {
       "id": 139,
@@ -1667,7 +1805,8 @@
         "Un entorno integrado de desarrollo",
         "Un servidor de aplicaciones"
       ],
-      "correct": "Un entorno integrado de desarrollo"
+      "correct": "Un entorno integrado de desarrollo",
+      "explicacion": "Un IDE es un entorno integrado de desarrollo: una aplicación que reúne editor, compilador, depurador y otras herramientas para programar."
     },
     {
       "id": 140,
@@ -1679,7 +1818,8 @@
         "Detener la ejecución del programa en una línea específica",
         "Compilar solo el método actual"
       ],
-      "correct": "Detener la ejecución del programa en una línea específica"
+      "correct": "Detener la ejecución del programa en una línea específica",
+      "explicacion": "Un punto de ruptura detiene la ejecución del programa en la línea marcada para que el programador inspeccione el estado de las variables en ese momento."
     },
     {
       "id": 141,
@@ -1691,7 +1831,8 @@
         "La interacción correcta entre distintos módulos del programa",
         "El rendimiento bajo alta carga"
       ],
-      "correct": "La interacción correcta entre distintos módulos del programa"
+      "correct": "La interacción correcta entre distintos módulos del programa",
+      "explicacion": "La prueba de integración valida que los distintos módulos del programa interactúan correctamente entre sí. Probar cada función aislada es una prueba unitaria."
     },
     {
       "id": 142,
@@ -1703,7 +1844,8 @@
         "Permiten detener el programa en una línea determinada",
         "Aceleran la ejecución del depurador"
       ],
-      "correct": "Permiten detener el programa en una línea determinada"
+      "correct": "Permiten detener el programa en una línea determinada",
+      "explicacion": "Los puntos de ruptura permiten detener el programa en una línea determinada durante la depuración. No modifican el código ni generan pruebas."
     },
     {
       "id": 143,
@@ -1715,7 +1857,8 @@
         "Para desplegar aplicaciones en producción",
         "Para automatizar y facilitar la ejecución de pruebas"
       ],
-      "correct": "Para automatizar y facilitar la ejecución de pruebas"
+      "correct": "Para automatizar y facilitar la ejecución de pruebas",
+      "explicacion": "PyTest y JUnit son frameworks de pruebas: facilitan escribir, organizar y ejecutar pruebas de forma automática. No gestionan dependencias ni despliegan aplicaciones."
     },
     {
       "id": 144,
@@ -1727,7 +1870,8 @@
         "Analizar el rendimiento del sistema en producción",
         "Detectar vulnerabilidades de seguridad"
       ],
-      "correct": "Ejecutar pruebas de forma automática y repetible"
+      "correct": "Ejecutar pruebas de forma automática y repetible",
+      "explicacion": "Un framework de pruebas automatizadas permite ejecutar las pruebas de forma automática y repetible, obteniendo siempre resultados comparables tras cada cambio."
     },
     {
       "id": 145,
@@ -1739,7 +1883,8 @@
         "La cobertura de las pruebas unitarias",
         "El historial de cambios del repositorio"
       ],
-      "correct": "El estado de las variables en tiempo de ejecución"
+      "correct": "El estado de las variables en tiempo de ejecución",
+      "explicacion": "Un depurador permite examinar el estado de las variables, la pila de llamadas y el flujo del programa mientras se ejecuta, para encontrar la causa de un error."
     },
     {
       "id": 146,
@@ -1751,7 +1896,8 @@
         "Cuando varios cambios afectan a la misma parte del código",
         "Al clonar un repositorio existente"
       ],
-      "correct": "Cuando varios cambios afectan a la misma parte del código"
+      "correct": "Cuando varios cambios afectan a la misma parte del código",
+      "explicacion": "Hay conflicto cuando dos cambios modifican la misma parte de un archivo de forma distinta y Git no puede combinarlos automáticamente al hacer merge o pull."
     },
     {
       "id": 147,
@@ -1763,7 +1909,8 @@
         "Mejorar la legibilidad y mantenibilidad",
         "Reducir el número de clases del proyecto"
       ],
-      "correct": "Mejorar la legibilidad y mantenibilidad"
+      "correct": "Mejorar la legibilidad y mantenibilidad",
+      "explicacion": "La refactorización mejora la legibilidad y la mantenibilidad del código sin cambiar su funcionamiento. No añade funcionalidades y no busca principalmente la velocidad."
     },
     {
       "id": 148,
@@ -1775,7 +1922,8 @@
         "Un archivo de configuración del repositorio",
         "Un servidor remoto de almacenamiento"
       ],
-      "correct": "Una copia del proyecto para trabajar en paralelo"
+      "correct": "Una copia del proyecto para trabajar en paralelo",
+      "explicacion": "Una rama es una línea de trabajo paralela del proyecto donde se desarrolla de forma independiente sin afectar a la rama principal hasta fusionarla."
     },
     {
       "id": 149,
@@ -1787,7 +1935,8 @@
         "Generar documentación automática",
         "Automatizar el despliegue de la aplicación"
       ],
-      "correct": "Detectar errores sin ejecutar el código"
+      "correct": "Detectar errores sin ejecutar el código",
+      "explicacion": "El análisis estático examina el código sin ejecutarlo para detectar errores, vulnerabilidades y malas prácticas. El rendimiento en ejecución se mide con análisis dinámico."
     },
     {
       "id": 150,
@@ -1799,7 +1948,8 @@
         "Commit",
         "Merge"
       ],
-      "correct": "Commit"
+      "correct": "Commit",
+      "explicacion": "git commit guarda los cambios preparados (staged) en el historial local del repositorio. push los envía al remoto, pull los trae y merge combina ramas."
     },
     {
       "id": 151,
@@ -1811,7 +1961,8 @@
         "git commit",
         "git merge"
       ],
-      "correct": "git pull"
+      "correct": "git pull",
+      "explicacion": "git pull descarga los cambios del repositorio remoto y los integra en la rama local (equivale a fetch + merge). git push hace lo contrario: envía los cambios locales."
     },
     {
       "id": 152,
@@ -1823,7 +1974,8 @@
         "Swagger",
         "Sphinx"
       ],
-      "correct": "Sphinx"
+      "correct": "Sphinx",
+      "explicacion": "Sphinx es la herramienta habitual para documentar proyectos Python (por ejemplo, la documentación oficial de Python). Javadoc es para Java y Swagger para APIs."
     },
     {
       "id": 153,
@@ -1835,7 +1987,8 @@
         "La duplicación de código",
         "Las dependencias circulares"
       ],
-      "correct": "La duplicación de código"
+      "correct": "La duplicación de código",
+      "explicacion": "DRY (Don't Repeat Yourself) evita la duplicación de código, porque duplicar obliga a cambiar lo mismo en varios sitios y provoca errores."
     },
     {
       "id": 154,
@@ -1847,7 +2000,8 @@
         "La complejidad de los métodos",
         "El número de dependencias externas"
       ],
-      "correct": "La complejidad de los métodos"
+      "correct": "La complejidad de los métodos",
+      "explicacion": "La complejidad ciclomática mide el número de caminos independientes en un método (cada if, bucle o case añade uno). Cuanto más alta, más difícil de entender y probar es el método."
     },
     {
       "id": 155,
@@ -1859,7 +2013,8 @@
         "SonarQube",
         "Maven"
       ],
-      "correct": "SonarQube"
+      "correct": "SonarQube",
+      "explicacion": "SonarQube realiza análisis estático de código en muchos lenguajes (Java, Python, JavaScript...). JUnit es de pruebas, Git de versiones y Maven de construcción."
     },
     {
       "id": 156,
@@ -1871,7 +2026,8 @@
         "Extracción de métodos",
         "Eliminación de código duplicado"
       ],
-      "correct": "Extracción de métodos"
+      "correct": "Extracción de métodos",
+      "explicacion": "La extracción de métodos divide un método largo en otros más pequeños con nombres descriptivos. El inlining hace lo contrario: sustituye la llamada por el cuerpo del método."
     },
     {
       "id": 157,
@@ -1883,7 +2039,8 @@
         "Un framework de pruebas unitarias",
         "Un sistema de control de versiones distribuido"
       ],
-      "correct": "Un sistema de control de versiones distribuido"
+      "correct": "Un sistema de control de versiones distribuido",
+      "explicacion": "Git es un sistema de control de versiones distribuido creado por Linus Torvalds. No es un IDE, ni un analizador de código, ni un framework de pruebas."
     },
     {
       "id": 158,
@@ -1895,7 +2052,8 @@
         "Que no se deben implementar funcionalidades innecesarias",
         "Que el código debe estar siempre documentado"
       ],
-      "correct": "Que no se deben implementar funcionalidades innecesarias"
+      "correct": "Que no se deben implementar funcionalidades innecesarias",
+      "explicacion": "YAGNI (You Aren't Gonna Need It): no implementar funcionalidades hasta que realmente se necesiten, para no añadir complejidad ni código inútil."
     },
     {
       "id": 159,
@@ -1907,7 +2065,8 @@
         "Mejorar la estructura interna del código sin cambiar su comportamiento",
         "Optimizar el rendimiento del sistema"
       ],
-      "correct": "Mejorar la estructura interna del código sin cambiar su comportamiento"
+      "correct": "Mejorar la estructura interna del código sin cambiar su comportamiento",
+      "explicacion": "Refactorizar es mejorar la estructura interna del código sin cambiar su comportamiento externo. Reescribir desde cero o añadir funcionalidades son cosas distintas."
     },
     {
       "id": 160,
@@ -1919,7 +2078,8 @@
         "Mantener la documentación actualizada",
         "Usar solo comentarios en inglés"
       ],
-      "correct": "Mantener la documentación actualizada"
+      "correct": "Mantener la documentación actualizada",
+      "explicacion": "Una documentación desactualizada engaña más que ayuda, por eso debe mantenerse al día con el código. Comentar cada línea es excesivo y documentar solo lo difícil se queda corto."
     },
     {
       "id": 161,
@@ -1931,7 +2091,8 @@
         "SonarQube",
         "Enterprise Architect"
       ],
-      "correct": "Enterprise Architect"
+      "correct": "Enterprise Architect",
+      "explicacion": "Enterprise Architect es una herramienta de modelado UML que permite generar código a partir de los diagramas (ingeniería directa). Eclipse es un IDE, Git controla versiones y SonarQube analiza calidad."
     },
     {
       "id": 162,
@@ -1943,7 +2104,8 @@
         "Paquete",
         "Componente"
       ],
-      "correct": "Clase"
+      "correct": "Clase",
+      "explicacion": "En UML la clase se representa con un rectángulo que contiene su nombre, atributos y métodos. Una interfaz solo declara métodos, y paquetes y componentes agrupan elementos."
     },
     {
       "id": 163,
@@ -1955,7 +2117,8 @@
         "Dependencia",
         "Herencia"
       ],
-      "correct": "Dependencia"
+      "correct": "Dependencia",
+      "explicacion": "La dependencia (línea discontinua con flecha) indica que una clase usa a otra de forma temporal, por ejemplo como parámetro de un método, sin mantener una referencia permanente."
     },
     {
       "id": 164,
@@ -1967,7 +2130,8 @@
         "C++",
         "Scratch"
       ],
-      "correct": "Scratch"
+      "correct": "Scratch",
+      "explicacion": "Scratch es un lenguaje visual por bloques para aprender a programar, y Enterprise Architect no lo soporta. Sí genera código en Java, Python y C++, entre otros."
     },
     {
       "id": 165,
@@ -1979,7 +2143,8 @@
         "Parte-todo con ciclo de vida compartido",
         "Asociación bidireccional"
       ],
-      "correct": "Parte-todo con ciclo de vida compartido"
+      "correct": "Parte-todo con ciclo de vida compartido",
+      "explicacion": "La composición es una relación todo-parte fuerte en la que las partes comparten el ciclo de vida del todo: si se destruye el todo, se destruyen las partes."
     },
     {
       "id": 166,
@@ -1991,7 +2156,8 @@
         "Obtener diagramas desde el código fuente",
         "Reescribir el sistema desde cero"
       ],
-      "correct": "Obtener diagramas desde el código fuente"
+      "correct": "Obtener diagramas desde el código fuente",
+      "explicacion": "La ingeniería inversa obtiene diagramas (el modelo) a partir del código fuente existente. Generar código desde los diagramas es ingeniería directa."
     },
     {
       "id": 167,
@@ -2003,7 +2169,8 @@
         "Encapsulamiento",
         "Instanciación"
       ],
-      "correct": "Instanciación"
+      "correct": "Instanciación",
+      "explicacion": "Crear un objeto a partir de una clase se llama instanciación, por ejemplo con new en Java. La herencia, el polimorfismo y el encapsulamiento son principios de la POO."
     },
     {
       "id": 168,
@@ -2015,7 +2182,8 @@
         "Una plantilla para crear objetos",
         "Una función principal del programa"
       ],
-      "correct": "Una plantilla para crear objetos"
+      "correct": "Una plantilla para crear objetos",
+      "explicacion": "Una clase es una plantilla o molde que define los atributos y métodos de los objetos que se crearán a partir de ella."
     },
     {
       "id": 169,
@@ -2027,7 +2195,8 @@
         "Nombre, atributos, métodos",
         "Atributos, nombre, métodos"
       ],
-      "correct": "Nombre, atributos, métodos"
+      "correct": "Nombre, atributos, métodos",
+      "explicacion": "Una clase en UML se divide en tres secciones, de arriba abajo: nombre, atributos y métodos."
     },
     {
       "id": 170,
@@ -2039,7 +2208,8 @@
         "Dependencia",
         "Agregación"
       ],
-      "correct": "Agregación"
+      "correct": "Agregación",
+      "explicacion": "El rombo blanco representa la agregación, una relación todo-parte en la que las partes pueden existir independientemente del todo. El rombo negro es la composición."
     },
     {
       "id": 171,
@@ -2051,7 +2221,8 @@
         "Coherencia entre diseño y código",
         "Reduce el número de clases necesarias"
       ],
-      "correct": "Coherencia entre diseño y código"
+      "correct": "Coherencia entre diseño y código",
+      "explicacion": "Generar el código a partir del diseño asegura que ambos coinciden y que el código refleja fielmente el modelo. No elimina las pruebas ni garantiza la ausencia de errores."
     },
     {
       "id": 172,
@@ -2063,7 +2234,8 @@
         "Protegido",
         "De paquete"
       ],
-      "correct": "Protegido"
+      "correct": "Protegido",
+      "explicacion": "En UML, # significa protegido: accesible desde la propia clase y sus subclases. + es público, - privado y ~ de paquete."
     },
     {
       "id": 173,
@@ -2075,7 +2247,8 @@
         "Modelado UML",
         "Ejecución de pruebas unitarias"
       ],
-      "correct": "Modelado UML"
+      "correct": "Modelado UML",
+      "explicacion": "StarUML es una herramienta de modelado UML que facilita crear diagramas de clases, casos de uso, secuencia, etc. No gestiona versiones ni ejecuta pruebas."
     },
     {
       "id": 174,
@@ -2087,7 +2260,8 @@
         "Polimorfismo",
         "Compilación"
       ],
-      "correct": "Polimorfismo"
+      "correct": "Polimorfismo",
+      "explicacion": "Los principios de la POO son encapsulamiento, abstracción, herencia y polimorfismo. La recursividad, la serialización y la compilación no son principios de la POO."
     },
     {
       "id": 175,
@@ -2099,7 +2273,8 @@
         "~",
         "+"
       ],
-      "correct": "+"
+      "correct": "+",
+      "explicacion": "En UML, + indica visibilidad pública. - es privado, # protegido y ~ de paquete."
     },
     {
       "id": 176,
@@ -2111,7 +2286,8 @@
         "Que que cada evento tenga una respuesta lógica",
         "Que los estados sean siempre tres o más"
       ],
-      "correct": "Que que cada evento tenga una respuesta lógica"
+      "correct": "Que que cada evento tenga una respuesta lógica",
+      "explicacion": "Validar un diagrama de estados consiste en comprobar que cada evento provoca una transición o respuesta coherente, sin estados inalcanzables ni situaciones sin salida."
     },
     {
       "id": 177,
@@ -2123,7 +2299,8 @@
         "Que no haya mensajes de retorno",
         "Que todos los objetos participen en todos los mensajes"
       ],
-      "correct": "Que el flujo vertical tenga coherencia temporal"
+      "correct": "Que el flujo vertical tenga coherencia temporal",
+      "explicacion": "En los diagramas de interacción (secuencia) el tiempo avanza hacia abajo, así que hay que comprobar que los mensajes siguen un orden temporal coherente."
     },
     {
       "id": 178,
@@ -2135,7 +2312,8 @@
         "Rombos",
         "Círculos negros"
       ],
-      "correct": "Rombos"
+      "correct": "Rombos",
+      "explicacion": "En un diagrama de actividades las decisiones se representan con rombos, de los que salen varias ramas con condiciones. Los rectángulos redondeados son acciones y el círculo negro es el inicio."
     },
     {
       "id": 179,
@@ -2147,7 +2325,8 @@
         "Diagrama de estados",
         "Diagrama de casos de uso"
       ],
-      "correct": "Diagrama de casos de uso"
+      "correct": "Diagrama de casos de uso",
+      "explicacion": "El diagrama de casos de uso muestra qué funcionalidades ofrece el sistema desde la perspectiva de los usuarios (actores)."
     },
     {
       "id": 180,
@@ -2159,7 +2338,8 @@
         "Incluye generación de código y anotaciones",
         "No requiere instalación"
       ],
-      "correct": "Incluye generación de código y anotaciones"
+      "correct": "Incluye generación de código y anotaciones",
+      "explicacion": "Visual Paradigm permite generar código a partir de los diagramas y añadir anotaciones y documentación al modelo. No es gratuito en todas sus versiones y soporta varios lenguajes."
     },
     {
       "id": 181,
@@ -2171,7 +2351,8 @@
         "Un rol externo al sistema",
         "Un método de la aplicación"
       ],
-      "correct": "Un rol externo al sistema"
+      "correct": "Un rol externo al sistema",
+      "explicacion": "Un actor es un rol externo al sistema que interactúa con él: una persona, otro sistema o un dispositivo. Se dibuja como un muñeco en los casos de uso."
     },
     {
       "id": 182,
@@ -2183,7 +2364,8 @@
         "Círculo negro",
         "Flecha doble"
       ],
-      "correct": "Círculo negro"
+      "correct": "Círculo negro",
+      "explicacion": "El nodo inicial de un diagrama de actividades se representa con un círculo negro relleno. El final es un círculo negro dentro de otro círculo."
     },
     {
       "id": 183,
@@ -2195,7 +2377,8 @@
         "Visual Paradigm",
         "draw.io"
       ],
-      "correct": "Visual Paradigm"
+      "correct": "Visual Paradigm",
+      "explicacion": "En esta unidad se recomienda Visual Paradigm, porque cubre todos los diagramas UML y permite ingeniería directa e inversa. StarUML y draw.io son alternativas más limitadas y Eclipse es un IDE."
     },
     {
       "id": 184,
@@ -2207,7 +2390,8 @@
         "Separar flujos paralelos",
         "Marcar un estado de espera"
       ],
-      "correct": "Separar flujos paralelos"
+      "correct": "Separar flujos paralelos",
+      "explicacion": "El nodo de bifurcación (fork, una barra gruesa) divide el flujo en varias ramas que se ejecutan en paralelo. Las decisiones se representan con rombos."
     },
     {
       "id": 185,
@@ -2219,7 +2403,8 @@
         "Una condición del objeto",
         "Un mensaje entre clases"
       ],
-      "correct": "Una condición del objeto"
+      "correct": "Una condición del objeto",
+      "explicacion": "Un estado representa una condición o situación en la que se encuentra un objeto durante su vida (por ejemplo, 'Pendiente', 'Pagado'), hasta que un evento lo hace cambiar."
     },
     {
       "id": 186,
@@ -2231,7 +2416,8 @@
         "opt",
         "alt"
       ],
-      "correct": "alt"
+      "correct": "alt",
+      "explicacion": "El fragmento alt representa alternativas (como un if-else) en un diagrama de secuencia. loop indica repetición, opt un bloque opcional y ref una referencia a otro diagrama."
     },
     {
       "id": 187,
@@ -2243,7 +2429,8 @@
         "Que el caso de uso es obligatorio",
         "Que dos casos de uso son equivalentes"
       ],
-      "correct": "Que se utiliza solo en excepciones"
+      "correct": "Que se utiliza solo en excepciones",
+      "explicacion": "«extend» indica que un caso de uso amplía a otro solo en ciertas condiciones o casos excepcionales, por lo que no siempre se ejecuta, a diferencia de «include»."
     },
     {
       "id": 188,
@@ -2255,7 +2442,8 @@
         "include",
         "associate"
       ],
-      "correct": "include"
+      "correct": "include",
+      "explicacion": "«include» indica que un caso de uso incluye siempre la ejecución de otro. «extend» es opcional o condicional, y la generalización expresa herencia entre casos de uso o actores."
     },
     {
       "id": 189,
@@ -2267,7 +2455,8 @@
         "Diagrama de estados",
         "Diagrama de actividades"
       ],
-      "correct": "Diagrama de actividades"
+      "correct": "Diagrama de actividades",
+      "explicacion": "El diagrama de actividades se parece a un diagrama de flujo: muestra acciones, decisiones y el flujo de control de un proceso de principio a fin."
     }
   ]
 }

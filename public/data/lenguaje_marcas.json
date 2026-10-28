@@ -11,7 +11,8 @@
         "Estructura información mediante etiquetas",
         "Controla el hardware del sistema"
       ],
-      "correct": "Estructura información mediante etiquetas"
+      "correct": "Estructura información mediante etiquetas",
+      "explicacion": "Un lenguaje de marcas (HTML, XML...) organiza y describe la información mediante etiquetas. No es un lenguaje de programación: no calcula, no gestiona bases de datos ni controla hardware."
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "No necesitar declaración",
         "Usar solo etiquetas en inglés"
       ],
-      "correct": "Tener un único elemento raíz"
+      "correct": "Tener un único elemento raíz",
+      "explicacion": "Todo documento XML bien formado debe tener un único elemento raíz que contenga a todos los demás. La declaración <?xml?> es opcional pero recomendable, y las etiquetas pueden estar en cualquier idioma."
     },
     {
       "id": 3,
@@ -35,7 +37,8 @@
         "Cumple reglas sintácticas",
         "Tiene menos de 100 elementos"
       ],
-      "correct": "Cumple reglas sintácticas"
+      "correct": "Cumple reglas sintácticas",
+      "explicacion": "Bien formado significa que cumple las reglas sintácticas de XML: un único raíz, etiquetas cerradas y bien anidadas, atributos entre comillas... Estar validado contra un esquema es otra cosa ('válido')."
     },
     {
       "id": 4,
@@ -47,7 +50,8 @@
         "Validar estructura y tipos",
         "Almacenar documentos en la nube"
       ],
-      "correct": "Validar estructura y tipos"
+      "correct": "Validar estructura y tipos",
+      "explicacion": "Un XSD (XML Schema Definition) define qué elementos y atributos puede tener un XML, su orden y sus tipos de datos, y sirve para validarlo. Transformar es tarea de XSLT y consultar, de XPath/XQuery."
     },
     {
       "id": 5,
@@ -59,7 +63,8 @@
         "XQuery",
         "XSD"
       ],
-      "correct": "XSLT"
+      "correct": "XSLT",
+      "explicacion": "XSLT es el lenguaje de transformación de XML: convierte un documento XML en otro formato (HTML, texto, otro XML). XPath y XQuery consultan, y XSD valida."
     },
     {
       "id": 6,
@@ -71,7 +76,8 @@
         "XPath",
         "CSS"
       ],
-      "correct": "XPath"
+      "correct": "XPath",
+      "explicacion": "XPath es el lenguaje para seleccionar y navegar por los nodos de un documento XML mediante rutas como /libros/libro. XSLT transforma, DTD valida y CSS da estilo."
     },
     {
       "id": 7,
@@ -83,7 +89,8 @@
         "Validar esquemas",
         "Definir estilos"
       ],
-      "correct": "Seleccionar nodos"
+      "correct": "Seleccionar nodos",
+      "explicacion": "La función de XPath es seleccionar nodos (elementos, atributos, texto) dentro de un XML mediante expresiones de ruta. Lo usan otras tecnologías como XSLT, XQuery o Schematron."
     },
     {
       "id": 8,
@@ -95,7 +102,8 @@
         "<meta charset=\"UTF-8\">",
         "<!DOCTYPE html>"
       ],
-      "correct": "<!DOCTYPE html>"
+      "correct": "<!DOCTYPE html>",
+      "explicacion": "<!DOCTYPE html> es la primera línea de un documento HTML5 e indica al navegador el tipo de documento. <html>, <head> y <meta charset> van después."
     },
     {
       "id": 9,
@@ -107,7 +115,8 @@
         "<article>",
         "<br>"
       ],
-      "correct": "<article>"
+      "correct": "<article>",
+      "explicacion": "<article> es una etiqueta semántica: indica que su contenido es un artículo independiente. <div> y <span> son contenedores genéricos sin significado y <br> es un salto de línea."
     },
     {
       "id": 10,
@@ -119,7 +128,8 @@
         "Lógica de negocio",
         "Almacenamiento de datos"
       ],
-      "correct": "Presentación"
+      "correct": "Presentación",
+      "explicacion": "CSS controla la presentación (colores, fuentes, tamaños, disposición). La estructura la define HTML, y la lógica y los datos corresponden a lenguajes de programación y bases de datos."
     },
     {
       "id": 11,
@@ -131,7 +141,8 @@
         "*",
         "@"
       ],
-      "correct": "#"
+      "correct": "#",
+      "explicacion": "En CSS, # selecciona por id (#menu), el punto . selecciona por clase, * es el selector universal y @ introduce reglas especiales como @media."
     },
     {
       "id": 12,
@@ -143,7 +154,8 @@
         "Tridimensional",
         "Circular"
       ],
-      "correct": "Unidimensional"
+      "correct": "Unidimensional",
+      "explicacion": "Flexbox es un modelo unidimensional: distribuye elementos en una sola dirección, fila o columna. El modelo bidimensional (filas y columnas a la vez) es CSS Grid."
     },
     {
       "id": 13,
@@ -155,7 +167,8 @@
         "XML no usa etiquetas",
         "XML define datos"
       ],
-      "correct": "XML define datos"
+      "correct": "XML define datos",
+      "explicacion": "XML está pensado para describir y transportar datos con etiquetas propias, mientras que HTML está pensado para mostrar contenido con etiquetas predefinidas. Ambos usan etiquetas."
     },
     {
       "id": 14,
@@ -167,7 +180,8 @@
         "Documental NoSQL",
         "De grafos"
       ],
-      "correct": "Nativa XML"
+      "correct": "Nativa XML",
+      "explicacion": "Una base de datos nativa XML almacena los documentos XML conservando su estructura jerárquica. Las relacionales los descomponen en tablas y las documentales NoSQL suelen usar JSON."
     },
     {
       "id": 15,
@@ -179,7 +193,8 @@
         "XQuery",
         "DTD"
       ],
-      "correct": "XQuery"
+      "correct": "XQuery",
+      "explicacion": "XQuery se basa en XPath y lo amplía con consultas complejas (FLWOR: for, let, where, order by, return), similar a lo que es SQL para bases de datos relacionales."
     },
     {
       "id": 16,
@@ -191,7 +206,8 @@
         "SOAP",
         "HTML"
       ],
-      "correct": "JSON"
+      "correct": "JSON",
+      "explicacion": "JSON es más ligero que XML: menos sintaxis (sin etiquetas de cierre) y fácil de procesar en JavaScript, por eso es el formato habitual en APIs REST. SOAP es un protocolo basado en XML, más pesado."
     },
     {
       "id": 17,
@@ -203,7 +219,8 @@
         "SOAP",
         "FTP"
       ],
-      "correct": "SOAP"
+      "correct": "SOAP",
+      "explicacion": "SOAP es un protocolo de mensajería que usa XML con una estructura fija: Envelope, Header (cabecera) y Body (cuerpo). REST es un estilo arquitectónico, y HTTP y FTP son protocolos de transferencia."
     },
     {
       "id": 18,
@@ -215,7 +232,8 @@
         "WS-Security",
         "JWT"
       ],
-      "correct": "WS-Security"
+      "correct": "WS-Security",
+      "explicacion": "WS-Security es el estándar que añade seguridad a los mensajes SOAP (firma digital, cifrado, tokens) dentro del propio mensaje XML. SSL/TLS protege el canal, y OAuth y JWT se usan sobre todo en REST."
     },
     {
       "id": 19,
@@ -227,7 +245,8 @@
         "<attribute>",
         "No existe etiqueta"
       ],
-      "correct": "No existe etiqueta"
+      "correct": "No existe etiqueta",
+      "explicacion": "En XML los atributos no se definen con una etiqueta: se escriben dentro de la etiqueta de apertura como nombre=\"valor\", por ejemplo <libro id=\"1\">."
     },
     {
       "id": 20,
@@ -239,7 +258,8 @@
         ".",
         "@"
       ],
-      "correct": "//"
+      "correct": "//",
+      "explicacion": "En XPath, // selecciona los descendientes a cualquier nivel de profundidad. / selecciona hijos directos, . es el nodo actual y @ selecciona atributos."
     },
     {
       "id": 21,
@@ -251,7 +271,8 @@
         "Gestiona la comunicación entre hardware y software",
         "Define estructura y significado del contenido mediante etiquetas"
       ],
-      "correct": "Define estructura y significado del contenido mediante etiquetas"
+      "correct": "Define estructura y significado del contenido mediante etiquetas",
+      "explicacion": "Un lenguaje de marcas define la estructura y el significado del contenido mediante etiquetas. No ejecuta instrucciones, no calcula ni gestiona hardware: eso son funciones de lenguajes de programación y del sistema operativo."
     },
     {
       "id": 22,
@@ -263,7 +284,8 @@
         "JSON",
         "LaTeX"
       ],
-      "correct": "SGML"
+      "correct": "SGML",
+      "explicacion": "SGML (Standard Generalized Markup Language) es el metalenguaje del que derivan HTML y XML. HTML4 es una versión de HTML, y JSON y LaTeX son formatos distintos."
     },
     {
       "id": 23,
@@ -275,7 +297,8 @@
         "No contiene caracteres especiales",
         "Tiene un único estilo CSS asociado"
       ],
-      "correct": "Tiene etiquetas correctamente anidadas y cerradas"
+      "correct": "Tiene etiquetas correctamente anidadas y cerradas",
+      "explicacion": "Un XML bien formado cumple la sintaxis: etiquetas correctamente cerradas y anidadas, un único elemento raíz y atributos entre comillas. Ser validado con XSD corresponde a un documento 'válido'."
     },
     {
       "id": 24,
@@ -287,7 +310,8 @@
         "Python",
         "Markdown"
       ],
-      "correct": "Python"
+      "correct": "Python",
+      "explicacion": "Python es un lenguaje de programación, no de marcas. HTML, XML y Markdown sí son lenguajes de marcas: describen estructura o formato del texto."
     },
     {
       "id": 25,
@@ -299,7 +323,8 @@
         "Evitan colisiones entre vocabularios distintos",
         "Establecen la codificación del documento"
       ],
-      "correct": "Evitan colisiones entre vocabularios distintos"
+      "correct": "Evitan colisiones entre vocabularios distintos",
+      "explicacion": "Los espacios de nombres (xmlns) asocian los elementos a un vocabulario identificado por una URI, evitando conflictos cuando dos vocabularios usan el mismo nombre de etiqueta."
     },
     {
       "id": 26,
@@ -311,7 +336,8 @@
         "El atributo xmlns del primer elemento",
         "La etiqueta <!DOCTYPE>"
       ],
-      "correct": "Un único elemento contenedor de todos los demás"
+      "correct": "Un único elemento contenedor de todos los demás",
+      "explicacion": "El elemento raíz es el único elemento que contiene a todos los demás. La declaración <?xml?> y el <!DOCTYPE> no son elementos, y xmlns es un atributo."
     },
     {
       "id": 27,
@@ -323,7 +349,8 @@
         ".xsl",
         ".xsd"
       ],
-      "correct": ".xsd"
+      "correct": ".xsd",
+      "explicacion": "Los esquemas XML (XML Schema) usan la extensión .xsd. .xml es el propio documento, .dtd una definición de tipo de documento y .xsl una hoja de estilos XSLT."
     },
     {
       "id": 28,
@@ -335,7 +362,8 @@
         "XML solo sirve para datos financieros",
         "HTML no usa etiquetas"
       ],
-      "correct": "HTML permite errores; XML exige corrección total"
+      "correct": "HTML permite errores; XML exige corrección total",
+      "explicacion": "Los navegadores toleran errores en HTML y lo muestran igualmente, mientras que XML exige que el documento esté bien formado: cualquier error impide procesarlo."
     },
     {
       "id": 29,
@@ -347,7 +375,8 @@
         "DTD",
         "RelaxNG"
       ],
-      "correct": "Schematron"
+      "correct": "Schematron",
+      "explicacion": "Schematron valida mediante reglas lógicas (assert/report) escritas con expresiones XPath, por ejemplo 'fecha fin mayor que fecha inicio'. XSD, DTD y RelaxNG validan sobre todo estructura y tipos."
     },
     {
       "id": 30,
@@ -359,7 +388,8 @@
         "Cumple las reglas definidas en su esquema",
         "No usa espacios de nombres"
       ],
-      "correct": "Cumple las reglas definidas en su esquema"
+      "correct": "Cumple las reglas definidas en su esquema",
+      "explicacion": "Un XML válido es un documento bien formado que además cumple las reglas de su esquema (DTD o XSD). Estar bien formado sintácticamente no basta para ser válido."
     },
     {
       "id": 31,
@@ -371,7 +401,8 @@
         "XSD",
         "DTD"
       ],
-      "correct": "XPath"
+      "correct": "XPath",
+      "explicacion": "XPath permite seleccionar nodos de un XML mediante expresiones de ruta. XSLT transforma, y XSD y DTD validan."
     },
     {
       "id": 32,
@@ -383,7 +414,8 @@
         "La versión de CSS usada",
         "La definición del tipo de documento HTML"
       ],
-      "correct": "La definición del tipo de documento HTML"
+      "correct": "La definición del tipo de documento HTML",
+      "explicacion": "<!DOCTYPE html> es la declaración de tipo de documento: indica al navegador que es HTML (HTML5) y que lo interprete en modo estándar. No es un comentario ni forma parte de <head>."
     },
     {
       "id": 33,
@@ -395,7 +427,8 @@
         "Verificar estructura y tipos de datos",
         "Comprimir el archivo XML"
       ],
-      "correct": "Verificar estructura y tipos de datos"
+      "correct": "Verificar estructura y tipos de datos",
+      "explicacion": "Validar un XML consiste en comprobar que su estructura y tipos de datos cumplen lo definido en un esquema (DTD, XSD). No convierte, no añade estilos ni comprime."
     },
     {
       "id": 34,
@@ -407,7 +440,8 @@
         "Una metainformación del elemento en forma clave-valor",
         "Un comentario del desarrollador"
       ],
-      "correct": "Una metainformación del elemento en forma clave-valor"
+      "correct": "Una metainformación del elemento en forma clave-valor",
+      "explicacion": "Un atributo es información adicional sobre un elemento en forma nombre=\"valor\", escrita en la etiqueta de apertura, por ejemplo <producto id=\"7\">."
     },
     {
       "id": 35,
@@ -419,7 +453,8 @@
         "HTML y CSS",
         "DTD y XSD"
       ],
-      "correct": "HTML y CSS"
+      "correct": "HTML y CSS",
+      "explicacion": "HTML estructura y publica el contenido web y CSS le da estilo. XML y XSLT sirven para transformar datos, JSON y SQL para datos y consultas, y DTD y XSD para validar."
     },
     {
       "id": 36,
@@ -431,7 +466,8 @@
         "Que el documento está escrito en HTML5",
         "Que el documento utiliza CSS3"
       ],
-      "correct": "Que el documento está escrito en HTML5"
+      "correct": "Que el documento está escrito en HTML5",
+      "explicacion": "<!DOCTYPE html> es la declaración simplificada de HTML5 e indica al navegador que el documento está escrito en HTML5. No tiene relación con JavaScript, cifrado ni CSS."
     },
     {
       "id": 37,
@@ -443,7 +479,8 @@
         "type",
         "dir"
       ],
-      "correct": "lang"
+      "correct": "lang",
+      "explicacion": "El atributo lang (por ejemplo <html lang=\"es\">) define el idioma del documento. charset define la codificación, dir la dirección del texto y type el tipo de un recurso."
     },
     {
       "id": 38,
@@ -455,7 +492,8 @@
         "<a>",
         "<href>"
       ],
-      "correct": "<a>"
+      "correct": "<a>",
+      "explicacion": "La etiqueta <a> crea enlaces mediante su atributo href. <link> relaciona recursos externos como hojas CSS, y <url> y <href> no son etiquetas HTML."
     },
     {
       "id": 39,
@@ -467,7 +505,8 @@
         "<picture>",
         "<photo>"
       ],
-      "correct": "<img>"
+      "correct": "<img>",
+      "explicacion": "<img> inserta una imagen usando el atributo src. <picture> es un contenedor para ofrecer varias fuentes de imagen, e <image> y <photo> no son etiquetas HTML válidas."
     },
     {
       "id": 40,
@@ -479,7 +518,8 @@
         "<section>",
         "<p>"
       ],
-      "correct": "<section>"
+      "correct": "<section>",
+      "explicacion": "<section> es la etiqueta semántica que agrupa contenido relacionado con un mismo tema. <div> y <span> son contenedores genéricos sin significado y <p> es un párrafo."
     },
     {
       "id": 41,
@@ -491,7 +531,8 @@
         "CSS",
         "PHP"
       ],
-      "correct": "CSS"
+      "correct": "CSS",
+      "explicacion": "CSS define la presentación visual de HTML. JavaScript añade comportamiento, XML describe datos y PHP es un lenguaje de servidor."
     },
     {
       "id": 42,
@@ -503,7 +544,8 @@
         "/* comentario */",
         "# comentario"
       ],
-      "correct": "/* comentario */"
+      "correct": "/* comentario */",
+      "explicacion": "En CSS los comentarios se escriben /* así */. // y # no son válidos en CSS, y <!-- --> es la sintaxis de comentarios de HTML y XML."
     },
     {
       "id": 43,
@@ -515,7 +557,8 @@
         "font-color",
         "text-color"
       ],
-      "correct": "color"
+      "correct": "color",
+      "explicacion": "La propiedad color define el color del texto. background-color es el color de fondo, y font-color y text-color no existen en CSS."
     },
     {
       "id": 44,
@@ -527,7 +570,8 @@
         "Angular",
         "Vue.js"
       ],
-      "correct": "Bootstrap"
+      "correct": "Bootstrap",
+      "explicacion": "Bootstrap es un framework CSS con una rejilla de 12 columnas y componentes ya diseñados (botones, menús, tarjetas). jQuery es una librería JS, y Angular y Vue.js son frameworks JS."
     },
     {
       "id": 45,
@@ -539,7 +583,8 @@
         "JSON Feed",
         "Podcast XML"
       ],
-      "correct": "RSS"
+      "correct": "RSS",
+      "explicacion": "RSS organiza el feed con un <channel> que contiene varios <item> (una por publicación). Atom usa <feed> y <entry>, y JSON Feed no es XML."
     },
     {
       "id": 46,
@@ -551,7 +596,8 @@
         "Unix timestamp",
         "RFC 2822"
       ],
-      "correct": "ISO 8601"
+      "correct": "ISO 8601",
+      "explicacion": "Atom usa fechas en formato ISO 8601 (RFC 3339), por ejemplo 2024-05-10T12:00:00Z. RFC 2822 es el formato de fechas de RSS 2.0."
     },
     {
       "id": 47,
@@ -563,7 +609,8 @@
         "<guid>",
         "<unique>"
       ],
-      "correct": "<guid>"
+      "correct": "<guid>",
+      "explicacion": "En RSS, <guid> (Globally Unique Identifier) identifica de forma única cada <item>. <id> es el equivalente en Atom, y <uid> y <unique> no existen."
     },
     {
       "id": 48,
@@ -575,7 +622,8 @@
         "border",
         "spacing"
       ],
-      "correct": "padding"
+      "correct": "padding",
+      "explicacion": "padding es el relleno entre el contenido y el borde. margin es el espacio exterior, fuera del borde, y spacing no es una propiedad CSS."
     },
     {
       "id": 49,
@@ -587,7 +635,8 @@
         "width",
         "alt"
       ],
-      "correct": "alt"
+      "correct": "alt",
+      "explicacion": "El atributo alt ofrece un texto alternativo que leen los lectores de pantalla y que se muestra si la imagen no carga. src indica la ruta de la imagen y title solo muestra un tooltip."
     },
     {
       "id": 50,
@@ -599,7 +648,8 @@
         "JSON",
         "XML básico"
       ],
-      "correct": "Atom"
+      "correct": "Atom",
+      "explicacion": "Atom es un estándar más riguroso y extensible que RSS: admite espacios de nombres, distintos tipos de contenido y fechas ISO 8601. JSON y el XML básico no son formatos de sindicación."
     },
     {
       "id": 51,
@@ -611,7 +661,8 @@
         "El proceso de convertir un documento XML en otro formato",
         "La compresión de un documento XML para almacenamiento"
       ],
-      "correct": "El proceso de convertir un documento XML en otro formato"
+      "correct": "El proceso de convertir un documento XML en otro formato",
+      "explicacion": "Transformar un XML es convertirlo en otro formato (HTML, texto, otro XML...), normalmente con XSLT. Validar, consultar o comprimir son procesos diferentes."
     },
     {
       "id": 52,
@@ -623,7 +674,8 @@
         "XSD",
         "DTD"
       ],
-      "correct": "XSLT"
+      "correct": "XSLT",
+      "explicacion": "XSLT es el lenguaje diseñado para transformar documentos XML. XPath se usa dentro de XSLT para seleccionar nodos, y XSD y DTD sirven para validar."
     },
     {
       "id": 53,
@@ -635,7 +687,8 @@
         "XML Schema Level Transformation",
         "Extensible Structured Language Tags"
       ],
-      "correct": "Extensible Stylesheet Language Transformations"
+      "correct": "Extensible Stylesheet Language Transformations",
+      "explicacion": "XSLT significa eXtensible Stylesheet Language Transformations, parte de la familia XSL. Las otras opciones son siglas inventadas."
     },
     {
       "id": 54,
@@ -647,7 +700,8 @@
         "<xsl:for-each>",
         "<xsl:repeat>"
       ],
-      "correct": "<xsl:for-each>"
+      "correct": "<xsl:for-each>",
+      "explicacion": "<xsl:for-each> recorre cada nodo de un conjunto seleccionado con XPath, por ejemplo cada <libro>. <xsl:loop>, <xsl:iterate> y <xsl:repeat> no existen en XSLT 1.0."
     },
     {
       "id": 55,
@@ -659,7 +713,8 @@
         "<xsl:check>",
         "<xsl:condition>"
       ],
-      "correct": "<xsl:if>"
+      "correct": "<xsl:if>",
+      "explicacion": "<xsl:if> aplica una condición simple (sin 'else'). <xsl:when> también evalúa condiciones, pero solo dentro de <xsl:choose>; <xsl:check> y <xsl:condition> no existen."
     },
     {
       "id": 56,
@@ -671,7 +726,8 @@
         "Consultar nodos en documentos XML",
         "Cifrar mensajes XML en servicios web"
       ],
-      "correct": "Definir la estructura y los elementos permitidos de un documento XML"
+      "correct": "Definir la estructura y los elementos permitidos de un documento XML",
+      "explicacion": "Una DTD (Document Type Definition) define qué elementos y atributos puede tener un XML y cómo se anidan, para poder validarlo. No transforma, no consulta ni cifra."
     },
     {
       "id": 57,
@@ -683,7 +739,8 @@
         "XML Schema Definition",
         "Extended Schema Declaration"
       ],
-      "correct": "XML Schema Definition"
+      "correct": "XML Schema Definition",
+      "explicacion": "XSD significa XML Schema Definition: el lenguaje del W3C para definir esquemas XML con tipos de datos. Las demás opciones son siglas inventadas."
     },
     {
       "id": 58,
@@ -695,7 +752,8 @@
         "DTD",
         "XSLT"
       ],
-      "correct": "Schematron"
+      "correct": "Schematron",
+      "explicacion": "Schematron define reglas lógicas (assert/report) con expresiones XPath, por ejemplo que un precio sea mayor que 0. XSD y DTD validan estructura, y XSLT transforma."
     },
     {
       "id": 59,
@@ -707,7 +765,8 @@
         "<xs:element>",
         "<xs:tag>"
       ],
-      "correct": "<xs:element>"
+      "correct": "<xs:element>",
+      "explicacion": "En XSD los elementos se declaran con <xs:element name=\"...\" type=\"...\"/>. <xs:define>, <xs:node> y <xs:tag> no existen en XML Schema."
     },
     {
       "id": 60,
@@ -719,7 +778,8 @@
         "minElements",
         "minOccurs"
       ],
-      "correct": "minOccurs"
+      "correct": "minOccurs",
+      "explicacion": "minOccurs indica el número mínimo de veces que debe aparecer un elemento (y maxOccurs el máximo). minCount, minimum y minElements no son atributos de XSD."
     },
     {
       "id": 61,
@@ -731,7 +791,8 @@
         "XPath",
         "JSON Path"
       ],
-      "correct": "XPath"
+      "correct": "XPath",
+      "explicacion": "XPath es el lenguaje para seleccionar nodos en XML. JSONPath es su equivalente para JSON, XSLT transforma y DTD valida."
     },
     {
       "id": 62,
@@ -743,7 +804,8 @@
         "Generar código Java desde esquemas",
         "Comprimir archivos XML"
       ],
-      "correct": "Validar reglas de negocio mediante expresiones XPath"
+      "correct": "Validar reglas de negocio mediante expresiones XPath",
+      "explicacion": "Además de validar estructura, Schematron valida reglas de negocio mediante expresiones XPath, por ejemplo que la fecha de entrega sea posterior a la del pedido."
     },
     {
       "id": 63,
@@ -755,7 +817,8 @@
         "HTML, texto plano o XML",
         "Solo JSON o XML"
       ],
-      "correct": "HTML, texto plano o XML"
+      "correct": "HTML, texto plano o XML",
+      "explicacion": "XSLT puede generar varios tipos de salida mediante <xsl:output method>: xml, html o text. No está limitado a un solo formato, y el PDF requiere XSL-FO."
     },
     {
       "id": 64,
@@ -767,7 +830,8 @@
         "XMLSpy",
         "Altova MapForce"
       ],
-      "correct": "W3C XML Schema Validator"
+      "correct": "W3C XML Schema Validator",
+      "explicacion": "El W3C ofrece un validador de XML Schema para comprobar un XML contra su XSD. El CSS Validator valida CSS, y XMLSpy y MapForce son herramientas comerciales de Altova, no del W3C."
     },
     {
       "id": 65,
@@ -779,7 +843,8 @@
         "XSD y Schematron",
         "HTML y CSS"
       ],
-      "correct": "XSD y Schematron"
+      "correct": "XSD y Schematron",
+      "explicacion": "XSD valida la estructura y los tipos de datos, y Schematron añade reglas lógicas y de negocio. Juntos cubren ambos tipos de validación."
     },
     {
       "id": 66,
@@ -791,7 +856,8 @@
         "Seleccionar nodos dentro de un documento XML",
         "Almacenar datos en formato XML"
       ],
-      "correct": "Seleccionar nodos dentro de un documento XML"
+      "correct": "Seleccionar nodos dentro de un documento XML",
+      "explicacion": "La función principal de XPath es seleccionar nodos de un documento XML mediante rutas. Transformar es de XSLT, validar de XSD/DTD y almacenar de las bases de datos XML."
     },
     {
       "id": 67,
@@ -803,7 +869,8 @@
         "XML Query Language",
         "Extra Query Notation"
       ],
-      "correct": "XML Query Language"
+      "correct": "XML Query Language",
+      "explicacion": "XQuery significa XML Query Language: el lenguaje de consulta del W3C para datos XML, equivalente a SQL en bases de datos relacionales."
     },
     {
       "id": 68,
@@ -815,7 +882,8 @@
         "FLWOR (For, Let, Where, Order, Return)",
         "LOOP-FILTER-OUTPUT para iteraciones"
       ],
-      "correct": "FLWOR (For, Let, Where, Order, Return)"
+      "correct": "FLWOR (For, Let, Where, Order, Return)",
+      "explicacion": "XQuery usa la estructura FLWOR: For (recorrer), Let (asignar), Where (filtrar), Order by (ordenar) y Return (devolver). SELECT-FROM-WHERE es la estructura de SQL."
     },
     {
       "id": 69,
@@ -827,7 +895,8 @@
         "Devuelve el resultado final",
         "Define el origen de datos"
       ],
-      "correct": "Filtra los resultados según una condición"
+      "correct": "Filtra los resultados según una condición",
+      "explicacion": "En FLWOR, where filtra los resultados, conservando solo los que cumplen la condición. Ordenar es order by, devolver es return y el origen de datos se define en for."
     },
     {
       "id": 70,
@@ -839,7 +908,8 @@
         "Find, Load, Write, Organize, Return",
         "For, List, Where, Output, Retrieve"
       ],
-      "correct": "For, Let, Where, Order, Return"
+      "correct": "For, Let, Where, Order, Return",
+      "explicacion": "FLWOR son las iniciales de For, Let, Where, Order by y Return, las cláusulas de una consulta XQuery."
     },
     {
       "id": 71,
@@ -851,7 +921,8 @@
         "Ordena los resultados por un criterio",
         "Devuelve el resultado final de la consulta"
       ],
-      "correct": "Devuelve el resultado final de la consulta"
+      "correct": "Devuelve el resultado final de la consulta",
+      "explicacion": "return define qué se devuelve como resultado final de la consulta. Las variables se definen con for/let, el filtrado con where y la ordenación con order by."
     },
     {
       "id": 72,
@@ -863,7 +934,8 @@
         "Schematron",
         "XPath estándar"
       ],
-      "correct": "El motor de base de datos nativa XML"
+      "correct": "El motor de base de datos nativa XML",
+      "explicacion": "El motor de una base de datos nativa XML (como eXist-db o BaseX) crea índices sobre los documentos para acelerar las consultas. XSLT, Schematron y XPath no indexan."
     },
     {
       "id": 73,
@@ -875,7 +947,8 @@
         "La exportación de datos de una BD relacional a XML",
         "La compresión de XML para transmisión"
       ],
-      "correct": "El proceso de mapear estructuras XML en tablas de una base de datos relacional"
+      "correct": "El proceso de mapear estructuras XML en tablas de una base de datos relacional",
+      "explicacion": "La conversión XML-relacional (mapeo) descompone la estructura jerárquica de un XML en tablas y columnas de una base de datos relacional para almacenarlo."
     },
     {
       "id": 74,
@@ -887,7 +960,8 @@
         "XPath",
         "XSD"
       ],
-      "correct": "XPath"
+      "correct": "XPath",
+      "explicacion": "XPath es el lenguaje para seleccionar nodos en XML. XQuery y XSLT lo utilizan internamente, pero su función es consultar y transformar; XSD valida."
     },
     {
       "id": 75,
@@ -899,7 +973,8 @@
         "Transforma XML en documentos HTML",
         "Representa datos XML en formato compacto y eficiente"
       ],
-      "correct": "Representa datos XML en formato compacto y eficiente"
+      "correct": "Representa datos XML en formato compacto y eficiente",
+      "explicacion": "La serialización binaria representa XML en un formato compacto (como EXI), que ocupa menos y se procesa más rápido que el texto. No lo convierte a JSON ni a HTML."
     },
     {
       "id": 76,
@@ -911,7 +986,8 @@
         "Transformar XML en HTML",
         "Comprimir el documento para almacenamiento"
       ],
-      "correct": "Mejorar la velocidad de búsqueda y recuperación de datos"
+      "correct": "Mejorar la velocidad de búsqueda y recuperación de datos",
+      "explicacion": "Los índices permiten localizar datos sin recorrer todos los documentos, así que mejoran la velocidad de búsqueda y recuperación. No validan, transforman ni comprimen."
     },
     {
       "id": 77,
@@ -923,7 +999,8 @@
         ".",
         ".."
       ],
-      "correct": "//"
+      "correct": "//",
+      "explicacion": "En XPath, // selecciona todos los descendientes a cualquier nivel. / selecciona hijos directos, . el nodo actual y .. el nodo padre."
     },
     {
       "id": 78,
@@ -935,7 +1012,8 @@
         "Ordenar los resultados de una consulta",
         "Devolver el resultado final"
       ],
-      "correct": "Ordenar los resultados de una consulta"
+      "correct": "Ordenar los resultados de una consulta",
+      "explicacion": "order by ordena los resultados de una consulta FLWOR según un criterio. Filtrar es where, el origen de datos es for y devolver el resultado es return."
     },
     {
       "id": 79,
@@ -947,7 +1025,8 @@
         "XLSX",
         "DOC"
       ],
-      "correct": "XML"
+      "correct": "XML",
+      "explicacion": "XML es un estándar abierto, autodescriptivo e independiente de plataforma, por lo que facilita el intercambio entre sistemas. CSV no tiene estructura jerárquica, y XLSX y DOC son formatos de ofimática."
     },
     {
       "id": 80,
@@ -959,7 +1038,8 @@
         "Consultas híbridas que combinan SQL y XPath/XQuery",
         "Comprimir XML para bases de datos SQL"
       ],
-      "correct": "Consultas híbridas que combinan SQL y XPath/XQuery"
+      "correct": "Consultas híbridas que combinan SQL y XPath/XQuery",
+      "explicacion": "SQL/XML es una extensión de SQL que permite consultas híbridas: combinar SQL con expresiones XPath/XQuery sobre columnas XML y generar XML desde datos relacionales."
     },
     {
       "id": 81,
@@ -971,7 +1051,8 @@
         "La nativa almacena documentos XML completos, mientras que la relacional los fragmenta en tablas",
         "La relacional no soporta consultas XPath"
       ],
-      "correct": "La nativa almacena documentos XML completos, mientras que la relacional los fragmenta en tablas"
+      "correct": "La nativa almacena documentos XML completos, mientras que la relacional los fragmenta en tablas",
+      "explicacion": "Una base nativa XML guarda los documentos completos conservando su jerarquía. Una relacional con soporte XML los descompone en tablas o los guarda en columnas de tipo XML."
     },
     {
       "id": 82,
@@ -983,7 +1064,8 @@
         "XPath y XQuery",
         "JSON y SOAP"
       ],
-      "correct": "XPath y XQuery"
+      "correct": "XPath y XQuery",
+      "explicacion": "En bases de datos XML se consulta con XPath (selección de nodos) y XQuery (consultas complejas). SQL es para relacionales, XSLT transforma y DTD valida."
     },
     {
       "id": 83,
@@ -995,7 +1077,8 @@
         "Validar XML contra un esquema XSD",
         "Comprimir XML para reducir el tamaño del archivo"
       ],
-      "correct": "Convertir un documento XML en una secuencia de bytes para almacenamiento o transmisión"
+      "correct": "Convertir un documento XML en una secuencia de bytes para almacenamiento o transmisión",
+      "explicacion": "Serializar es convertir el documento XML en memoria (árbol DOM) en una secuencia de bytes o texto para guardarlo en disco o enviarlo por red."
     },
     {
       "id": 84,
@@ -1007,7 +1090,8 @@
         "Validación previa con Schematron",
         "Serialización binaria de los documentos"
       ],
-      "correct": "Indexación de caminos y valores"
+      "correct": "Indexación de caminos y valores",
+      "explicacion": "Indexar caminos (rutas XPath) y valores permite localizar nodos sin recorrer todo el documento, lo que acelera mucho las consultas."
     },
     {
       "id": 85,
@@ -1019,7 +1103,8 @@
         "Facilitar la interoperabilidad entre módulos y sistemas externos mediante un formato estándar",
         "Ejecutar procedimientos almacenados"
       ],
-      "correct": "Facilitar la interoperabilidad entre módulos y sistemas externos mediante un formato estándar"
+      "correct": "Facilitar la interoperabilidad entre módulos y sistemas externos mediante un formato estándar",
+      "explicacion": "En un ERP, XML actúa como formato estándar de intercambio de datos entre módulos y con sistemas externos (proveedores, bancos, administración), facilitando la interoperabilidad."
     },
     {
       "id": 86,
@@ -1031,7 +1116,8 @@
         "FTP",
         "SMTP"
       ],
-      "correct": "SOAP"
+      "correct": "SOAP",
+      "explicacion": "SOAP usa mensajes XML con una estructura definida: Envelope, Header (encabezado) y Body (cuerpo). REST no impone formato, y FTP y SMTP son protocolos de transferencia de archivos y correo."
     },
     {
       "id": 87,
@@ -1043,7 +1129,8 @@
         "WS-Security",
         "JWT"
       ],
-      "correct": "WS-Security"
+      "correct": "WS-Security",
+      "explicacion": "WS-Security define cómo firmar y cifrar mensajes SOAP y añadir tokens de seguridad en su cabecera. SSL/TLS protege el canal, y OAuth 2.0 y JWT son habituales en APIs REST."
     },
     {
       "id": 88,
@@ -1055,7 +1142,8 @@
         "JSON",
         "Protocol Buffers"
       ],
-      "correct": "Protocol Buffers"
+      "correct": "Protocol Buffers",
+      "explicacion": "Protocol Buffers (de Google) serializa en binario, por lo que es más compacto y rápido que los formatos de texto como XML, SOAP o JSON."
     },
     {
       "id": 89,
@@ -1067,7 +1155,8 @@
         "Mayor seguridad en transmisión",
         "Compatibilidad nativa con bases de datos relacionales"
       ],
-      "correct": "Mayor ligereza y velocidad de procesamiento"
+      "correct": "Mayor ligereza y velocidad de procesamiento",
+      "explicacion": "JSON es más ligero que XML (menos sintaxis) y se procesa más rápido, sobre todo en JavaScript. XML aventaja a JSON en esquemas y validación."
     },
     {
       "id": 90,
@@ -1079,7 +1168,8 @@
         "Protocol Buffers",
         "YAML"
       ],
-      "correct": "Protocol Buffers"
+      "correct": "Protocol Buffers",
+      "explicacion": "Protocol Buffers define la estructura de los datos en archivos .proto con tipos estrictos, a partir de los cuales se genera código. JSON Schema, XSD y YAML no usan .proto."
     },
     {
       "id": 91,
@@ -1091,7 +1181,8 @@
         "XSD complejo",
         "DTD avanzado"
       ],
-      "correct": "XSLT 3.0"
+      "correct": "XSLT 3.0",
+      "explicacion": "XSLT 3.0 incluye funciones como xml-to-json() y json-to-xml(), que permiten convertir XML a JSON mediante plantillas. XPath, XSD y DTD no transforman documentos."
     },
     {
       "id": 92,
@@ -1103,7 +1194,8 @@
         "API Gateway",
         "DNS Server"
       ],
-      "correct": "API Gateway"
+      "correct": "API Gateway",
+      "explicacion": "Un API Gateway es el punto de entrada único que recibe las peticiones y las redirige al microservicio correspondiente, gestionando autenticación, límites y enrutamiento."
     },
     {
       "id": 93,
@@ -1115,7 +1207,8 @@
         "Almacenan documentos XML en la nube",
         "Facilitan la comunicación entre sistemas heterogéneos mediante transformación y orquestación de datos"
       ],
-      "correct": "Facilitan la comunicación entre sistemas heterogéneos mediante transformación y orquestación de datos"
+      "correct": "Facilitan la comunicación entre sistemas heterogéneos mediante transformación y orquestación de datos",
+      "explicacion": "Las plataformas EAI integran aplicaciones heterogéneas de una empresa transformando formatos de datos y orquestando los flujos entre ellas. No son interfaces de usuario ni bases de datos."
     },
     {
       "id": 94,
@@ -1127,7 +1220,8 @@
         "BPEL",
         "XQuery"
       ],
-      "correct": "BPEL"
+      "correct": "BPEL",
+      "explicacion": "BPEL (Business Process Execution Language) describe procesos de negocio que orquestan varios servicios web. WSDL describe un servicio, SOAP es el protocolo de mensajes y XQuery consulta XML."
     },
     {
       "id": 95,
@@ -1139,7 +1233,8 @@
         "SoapUI",
         "IntelliJ IDEA"
       ],
-      "correct": "SoapUI"
+      "correct": "SoapUI",
+      "explicacion": "SoapUI está especializado en probar servicios web SOAP y REST y permite validar las respuestas contra esquemas XML (XSD/WSDL). Postman se centra en APIs REST, y Eclipse e IntelliJ son IDEs."
     }
   ]
 }

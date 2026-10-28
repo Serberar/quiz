@@ -11,7 +11,8 @@
         "Solo la empresa",
         "Solo trabajadores"
       ],
-      "correct": "Empresa y delegados de prevención"
+      "correct": "Empresa y delegados de prevención",
+      "explicacion": "El Comité de Seguridad y Salud es un órgano paritario: lo forman a partes iguales los delegados de prevención (representantes de los trabajadores) y representantes de la empresa. Es obligatorio en empresas de 50 o más trabajadores."
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "Contratación directa",
         "Entrevista personal"
       ],
-      "correct": "Procesos selectivos regulados"
+      "correct": "Procesos selectivos regulados",
+      "explicacion": "El acceso al empleo público se hace mediante procesos selectivos regulados (oposición, concurso o concurso-oposición) que garantizan igualdad, mérito y capacidad. No hay contratación directa."
     },
     {
       "id": 3,
@@ -35,7 +37,8 @@
         "Habilidades técnicas",
         "Certificaciones"
       ],
-      "correct": "Competencias personales"
+      "correct": "Competencias personales",
+      "explicacion": "Las soft skills son competencias personales y sociales (comunicación, trabajo en equipo, empatía...). Las habilidades técnicas son hard skills, y los títulos y certificaciones acreditan formación."
     },
     {
       "id": 4,
@@ -47,7 +50,8 @@
         "Una plataforma cerrada",
         "Un entorno personal de aprendizaje"
       ],
-      "correct": "Un entorno personal de aprendizaje"
+      "correct": "Un entorno personal de aprendizaje",
+      "explicacion": "El PLE (Personal Learning Environment) es el entorno personal de aprendizaje: el conjunto de herramientas, fuentes y personas que cada uno usa para aprender. Es abierto y personal, no una plataforma cerrada."
     },
     {
       "id": 5,
@@ -59,7 +63,8 @@
         "Durante una baja médica",
         "En horario laboral"
       ],
-      "correct": "Al ir o volver del trabajo"
+      "correct": "Al ir o volver del trabajo",
+      "explicacion": "El accidente in itinere es el que sufre el trabajador en el trayecto habitual al ir o volver del trabajo. Se considera accidente de trabajo aunque no ocurra en el puesto."
     },
     {
       "id": 6,
@@ -71,7 +76,8 @@
         "Estar cerrado sin señalizar",
         "Usarse solo por sanitarios"
       ],
-      "correct": "Revisarse periódicamente"
+      "correct": "Revisarse periódicamente",
+      "explicacion": "El botiquín debe revisarse periódicamente para reponer lo usado y retirar lo caducado. Debe estar señalizado y accesible, y puede usarlo cualquier persona formada, no solo sanitarios."
     },
     {
       "id": 7,
@@ -83,7 +89,8 @@
         "Real Decreto 486/1997",
         "Ley Orgánica 3/2018"
       ],
-      "correct": "Ley 31/1995"
+      "correct": "Ley 31/1995",
+      "explicacion": "La Ley 31/1995, de Prevención de Riesgos Laborales, es la norma básica en esta materia. La Ley 39/2015 regula el procedimiento administrativo, el RD 486/1997 los lugares de trabajo y la LO 3/2018 la protección de datos."
     },
     {
       "id": 8,
@@ -95,7 +102,8 @@
         "Garantizar empleo",
         "Identificar fortalezas"
       ],
-      "correct": "Identificar fortalezas"
+      "correct": "Identificar fortalezas",
+      "explicacion": "Conocerse a uno mismo permite identificar fortalezas (y debilidades), intereses y valores para orientar las decisiones profesionales. No garantiza empleo ni sustituye la formación."
     },
     {
       "id": 9,
@@ -107,7 +115,8 @@
         "Cumplir trámites",
         "Registrar incidentes"
       ],
-      "correct": "Proteger vidas"
+      "correct": "Proteger vidas",
+      "explicacion": "El plan de emergencia organiza la respuesta ante situaciones como incendios o evacuaciones con el fin principal de proteger la vida y la integridad de las personas."
     },
     {
       "id": 10,
@@ -119,7 +128,8 @@
         "Lifelong learning",
         "Formación reglada"
       ],
-      "correct": "Lifelong learning"
+      "correct": "Lifelong learning",
+      "explicacion": "El aprendizaje a lo largo de la vida (lifelong learning) es formarse de manera continua en todas las etapas vitales, no solo durante la educación obligatoria o reglada."
     },
     {
       "id": 11,
@@ -131,7 +141,8 @@
         "Certificación obligatoria",
         "Trabajo en equipo"
       ],
-      "correct": "Trabajo en equipo"
+      "correct": "Trabajo en equipo",
+      "explicacion": "Las competencias transversales sirven en cualquier puesto y sector, como el trabajo en equipo. El uso de maquinaria específica es una competencia técnica, y las titulaciones y certificaciones son acreditaciones."
     },
     {
       "id": 12,
@@ -143,7 +154,8 @@
         "Esperar ayuda",
         "Dar líquidos"
       ],
-      "correct": "Aplicar presión"
+      "correct": "Aplicar presión",
+      "explicacion": "Ante una hemorragia grave hay que aplicar presión directa sobre la herida para detener la pérdida de sangre. Los objetos clavados no deben retirarse y no se deben dar líquidos al herido."
     },
     {
       "id": 13,
@@ -155,7 +167,8 @@
         "Primario",
         "Terciario"
       ],
-      "correct": "Terciario"
+      "correct": "Terciario",
+      "explicacion": "El sector terciario engloba los servicios (comercio, turismo, sanidad, educación...). El primario obtiene recursos naturales, el secundario los transforma (industria) y el cuaternario se asocia al conocimiento."
     },
     {
       "id": 14,
@@ -167,7 +180,8 @@
         "Dependen del trabajador",
         "Sustituyen a los EPIs"
       ],
-      "correct": "Protegen a más personas"
+      "correct": "Protegen a más personas",
+      "explicacion": "Las medidas de protección colectiva tienen prioridad porque protegen a todas las personas expuestas a la vez y no dependen de que cada trabajador las use correctamente. Los EPIs son el último recurso."
     },
     {
       "id": 15,
@@ -179,7 +193,8 @@
         "Eliminar riesgos",
         "Evitar evacuaciones"
       ],
-      "correct": "Evaluar protocolos"
+      "correct": "Evaluar protocolos",
+      "explicacion": "Un simulacro sirve para comprobar si el plan y los protocolos de emergencia funcionan, y para entrenar al personal y detectar fallos. No sirve para sancionar ni elimina riesgos."
     },
     {
       "id": 16,
@@ -191,7 +206,8 @@
         "Fecha de fin",
         "Temporalidad"
       ],
-      "correct": "No tener duración límite"
+      "correct": "No tener duración límite",
+      "explicacion": "El contrato indefinido no tiene fecha de finalización pactada: la relación laboral se mantiene en el tiempo. Tener una fecha de fin es propio del contrato temporal."
     },
     {
       "id": 17,
@@ -203,7 +219,8 @@
         "Elaborarse tras un accidente",
         "Renovarse cada 10 años"
       ],
-      "correct": "Integrarse en la empresa"
+      "correct": "Integrarse en la empresa",
+      "explicacion": "Según la Ley 31/1995, el Plan de Prevención debe integrarse en el sistema general de gestión de la empresa, en todas sus actividades y niveles jerárquicos. Es obligatorio y no depende de que haya accidentes."
     },
     {
       "id": 18,
@@ -215,7 +232,8 @@
         "Salarios",
         "Accidentes"
       ],
-      "correct": "Estrategias personales"
+      "correct": "Estrategias personales",
+      "explicacion": "El DAFO (Debilidades, Amenazas, Fortalezas, Oportunidades) aplicado a uno mismo analiza la situación personal para definir estrategias profesionales. No se usa para convenios, salarios ni accidentes."
     },
     {
       "id": 19,
@@ -227,7 +245,8 @@
         "Facilitar la búsqueda de trabajo",
         "Eliminar intermediarios"
       ],
-      "correct": "Facilitar la búsqueda de trabajo"
+      "correct": "Facilitar la búsqueda de trabajo",
+      "explicacion": "Las plataformas digitales de empleo facilitan la búsqueda de trabajo al reunir ofertas y candidatos. No garantizan la contratación ni sustituyen al servicio público de empleo (SEPE)."
     },
     {
       "id": 20,
@@ -239,7 +258,8 @@
         "45 h semanales",
         "35 h semanales"
       ],
-      "correct": "40 h semanales"
+      "correct": "40 h semanales",
+      "explicacion": "Según el Estatuto de los Trabajadores (art. 34), la jornada ordinaria máxima es de 40 horas semanales de trabajo efectivo de promedio en cómputo anual. Los convenios pueden fijar jornadas inferiores."
     },
     {
       "id": 21,
@@ -251,7 +271,8 @@
         "Jornada por convenio",
         "Asunción del riesgo económico"
       ],
-      "correct": "Asunción del riesgo económico"
+      "correct": "Asunción del riesgo económico",
+      "explicacion": "El trabajador por cuenta propia (autónomo) organiza su actividad y asume el riesgo económico: si el negocio va mal, lo sufre él. El salario fijo y la dependencia jerárquica son propios del trabajo por cuenta ajena."
     },
     {
       "id": 22,
@@ -263,7 +284,8 @@
         "Evitar accidentes",
         "Aumentar beneficios"
       ],
-      "correct": "Evitar accidentes"
+      "correct": "Evitar accidentes",
+      "explicacion": "La cultura preventiva busca que toda la organización integre la seguridad en su forma de trabajar para evitar accidentes y daños a la salud. Reducir costes puede ser una consecuencia, no su objetivo."
     },
     {
       "id": 23,
@@ -275,7 +297,8 @@
         "Dietas",
         "Indemnizaciones"
       ],
-      "correct": "Retribuciones salariales"
+      "correct": "Retribuciones salariales",
+      "explicacion": "El salario base es la retribución fijada por unidad de tiempo u obra y forma parte de las percepciones salariales. Las dietas e indemnizaciones son percepciones extrasalariales."
     },
     {
       "id": 24,
@@ -287,7 +310,8 @@
         "Certificados",
         "Experiencias cotidianas"
       ],
-      "correct": "Experiencias cotidianas"
+      "correct": "Experiencias cotidianas",
+      "explicacion": "El aprendizaje informal se adquiere de forma no intencionada a través de experiencias cotidianas (trabajo, familia, ocio). No se acredita con exámenes ni certificados, a diferencia del formal."
     },
     {
       "id": 25,
@@ -299,7 +323,8 @@
         "Industria pesada",
         "Servicios tradicionales"
       ],
-      "correct": "Economía del conocimiento"
+      "correct": "Economía del conocimiento",
+      "explicacion": "El sector cuaternario agrupa actividades basadas en el conocimiento y la información: investigación, desarrollo tecnológico, consultoría, TIC. La agricultura es primario y la industria, secundario."
     },
     {
       "id": 26,
@@ -311,7 +336,8 @@
         "La maquinaria",
         "Los edificios"
       ],
-      "correct": "La salud mental"
+      "correct": "La salud mental",
+      "explicacion": "Los riesgos psicosociales (estrés, acoso, carga mental, burnout) derivan de la organización del trabajo y afectan principalmente a la salud mental, aunque pueden tener efectos físicos."
     },
     {
       "id": 27,
@@ -323,7 +349,8 @@
         "El salario bruto",
         "Los contratos temporales"
       ],
-      "correct": "La empleabilidad"
+      "correct": "La empleabilidad",
+      "explicacion": "Una buena autoestima profesional da seguridad para buscar empleo, afrontar entrevistas y asumir retos, lo que mejora la empleabilidad. No cambia la titulación ni el salario de forma directa."
     },
     {
       "id": 28,
@@ -335,7 +362,8 @@
         "Medible y temporal",
         "Amplio y adaptable"
       ],
-      "correct": "Medible y temporal"
+      "correct": "Medible y temporal",
+      "explicacion": "SMART significa Specific, Measurable, Achievable, Relevant, Time-bound: específico, medible, alcanzable, relevante y con plazo. Por eso debe ser medible y temporal, no general ni ambiguo."
     },
     {
       "id": 29,
@@ -347,7 +375,8 @@
         "Gestionar recursos humanos",
         "Garantizar seguridad y salud"
       ],
-      "correct": "Garantizar seguridad y salud"
+      "correct": "Garantizar seguridad y salud",
+      "explicacion": "La gestión preventiva tiene como objetivo garantizar la seguridad y la salud de los trabajadores frente a los riesgos laborales. La productividad o el ahorro pueden ser efectos secundarios."
     },
     {
       "id": 30,
@@ -359,7 +388,8 @@
         "Elaborar contratos",
         "Planificar vacaciones"
       ],
-      "correct": "Identificar y valorar riesgos"
+      "correct": "Identificar y valorar riesgos",
+      "explicacion": "La evaluación de riesgos identifica los peligros que no se han podido evitar y valora su gravedad y probabilidad, para decidir qué medidas preventivas adoptar."
     },
     {
       "id": 31,
@@ -371,7 +401,8 @@
         "Delegar responsabilidades",
         "Ampliar la plantilla"
       ],
-      "correct": "Revisar y ajustar el plan"
+      "correct": "Revisar y ajustar el plan",
+      "explicacion": "La mejora continua consiste en revisar periódicamente el plan, comprobar sus resultados y ajustarlo (ciclo planificar-hacer-verificar-actuar). Mantenerlo sin cambios es lo contrario."
     },
     {
       "id": 32,
@@ -383,7 +414,8 @@
         "Mejora condiciones laborales",
         "Establece el horario fijo"
       ],
-      "correct": "Mejora condiciones laborales"
+      "correct": "Mejora condiciones laborales",
+      "explicacion": "El convenio colectivo se negocia entre representantes de trabajadores y empresarios y suele mejorar los mínimos legales del Estatuto de los Trabajadores (salarios, jornada, permisos). No sustituye al contrato individual."
     },
     {
       "id": 33,
@@ -395,7 +427,8 @@
         "Opcional y pública",
         "Obligatoria y anónima"
       ],
-      "correct": "Voluntaria y confidencial"
+      "correct": "Voluntaria y confidencial",
+      "explicacion": "Como regla general, la vigilancia de la salud es voluntaria (requiere consentimiento del trabajador) y confidencial: los resultados solo los conoce el trabajador y el personal sanitario. Hay excepciones en las que es obligatoria."
     },
     {
       "id": 34,
@@ -407,7 +440,8 @@
         "Contingencias laborales",
         "Sanciones disciplinarias"
       ],
-      "correct": "Contingencias laborales"
+      "correct": "Contingencias laborales",
+      "explicacion": "La Seguridad Social protege frente a contingencias como enfermedad, accidente, incapacidad, desempleo o jubilación. No cubre deudas, multas ni sanciones."
     },
     {
       "id": 35,
@@ -419,7 +453,8 @@
         "Un tipo de contrato laboral",
         "Un plan de prevención"
       ],
-      "correct": "Un equipo individual de protección"
+      "correct": "Un equipo individual de protección",
+      "explicacion": "EPI significa Equipo de Protección Individual: el que lleva el trabajador para protegerse de un riesgo (casco, guantes, gafas). No es un plan, contrato ni protocolo."
     },
     {
       "id": 36,
@@ -431,7 +466,8 @@
         "Una enfermedad genética",
         "Exposición prolongada"
       ],
-      "correct": "Exposición prolongada"
+      "correct": "Exposición prolongada",
+      "explicacion": "La enfermedad profesional se contrae por la exposición prolongada a agentes presentes en el trabajo y debe estar incluida en el cuadro oficial de enfermedades profesionales. Un suceso puntual sería un accidente."
     },
     {
       "id": 37,
@@ -443,7 +479,8 @@
         "Los derechos sindicales",
         "La jornada laboral"
       ],
-      "correct": "Empleabilidad"
+      "correct": "Empleabilidad",
+      "explicacion": "La identidad digital profesional (perfiles, publicaciones, lo que aparece en Internet sobre ti) influye en cómo te ven los reclutadores y, por tanto, en tu empleabilidad."
     },
     {
       "id": 38,
@@ -455,7 +492,8 @@
         "Proteger, Avisar, Socorrer",
         "Protocolizar, Aplicar, Supervisar"
       ],
-      "correct": "Proteger, Avisar, Socorrer"
+      "correct": "Proteger, Avisar, Socorrer",
+      "explicacion": "PAS son las siglas de Proteger, Avisar, Socorrer: primero asegurar la zona para el herido y para ti, luego avisar al 112 y después prestar los primeros auxilios."
     },
     {
       "id": 39,
@@ -467,7 +505,8 @@
         "Posturas forzadas",
         "Incendios"
       ],
-      "correct": "Posturas forzadas"
+      "correct": "Posturas forzadas",
+      "explicacion": "Los riesgos ergonómicos derivan de la adaptación del puesto a la persona: posturas forzadas, movimientos repetitivos o manipulación de cargas. El ruido es físico, las sustancias químico y los incendios de seguridad."
     },
     {
       "id": 40,
@@ -479,7 +518,8 @@
         "Una titulación oficial",
         "Una experiencia transferible"
       ],
-      "correct": "Una experiencia transferible"
+      "correct": "Una experiencia transferible",
+      "explicacion": "Un hito vital profesionalizador es una experiencia (voluntariado, viaje, proyecto) que aporta competencias transferibles al ámbito laboral. Una nota, un contrato o un título no son experiencias de este tipo."
     },
     {
       "id": 41,
@@ -491,7 +531,8 @@
         "Valorar las diferencias como una riqueza",
         "Evitar el conflicto en el trabajo"
       ],
-      "correct": "Valorar las diferencias como una riqueza"
+      "correct": "Valorar las diferencias como una riqueza",
+      "explicacion": "La tolerancia activa no se limita a soportar las diferencias: las valora como una riqueza que aporta perspectivas distintas. Ignorarlas o evitarlas sería una actitud pasiva."
     },
     {
       "id": 42,
@@ -503,7 +544,8 @@
         "Rechazar los cambios laborales",
         "Mantener siempre la misma actitud"
       ],
-      "correct": "Superar situaciones difíciles y adaptarse"
+      "correct": "Superar situaciones difíciles y adaptarse",
+      "explicacion": "La resiliencia es la capacidad de superar situaciones difíciles, recuperarse y adaptarse a ellas, saliendo incluso fortalecido. No consiste en evitar el estrés ni en rechazar los cambios."
     },
     {
       "id": 43,
@@ -515,7 +557,8 @@
         "Zona de Desarrollo Próximo",
         "Zona de Desafío Profesional"
       ],
-      "correct": "Zona de Desarrollo Próximo"
+      "correct": "Zona de Desarrollo Próximo",
+      "explicacion": "ZDP es la Zona de Desarrollo Próximo (Vygotsky): la distancia entre lo que una persona puede hacer sola y lo que puede lograr con ayuda. Se aplica al aprendizaje y al desarrollo profesional."
     },
     {
       "id": 44,
@@ -527,7 +570,8 @@
         "InfoJobs",
         "Indeed"
       ],
-      "correct": "SEPE"
+      "correct": "SEPE",
+      "explicacion": "El SEPE (Servicio Público de Empleo Estatal) es un organismo oficial. LinkedIn, InfoJobs e Indeed son plataformas privadas. (Las plazas de empleo público se publican, sobre todo, en el BOE y boletines oficiales)."
     },
     {
       "id": 45,
@@ -539,7 +583,8 @@
         "Posibilidad de rescisión unilateral",
         "Limitación en el tiempo de vigencia"
       ],
-      "correct": "Limitación en el tiempo de vigencia"
+      "correct": "Limitación en el tiempo de vigencia",
+      "explicacion": "El contrato temporal tiene una vigencia limitada en el tiempo, vinculada a una causa concreta. No implica mayor salario ni beneficios adicionales, y la rescisión unilateral no es su característica."
     },
     {
       "id": 46,
@@ -551,7 +596,8 @@
         "El acceso se realiza por oposición o concurso",
         "Contratación directa por la empresa"
       ],
-      "correct": "El acceso se realiza por oposición o concurso"
+      "correct": "El acceso se realiza por oposición o concurso",
+      "explicacion": "En el empleo público el acceso se realiza por oposición, concurso o concurso-oposición, respetando igualdad, mérito y capacidad. En el privado, la empresa contrata directamente."
     },
     {
       "id": 47,
@@ -563,7 +609,8 @@
         "Comunicación efectiva",
         "Adaptabilidad"
       ],
-      "correct": "Soldadura TIG"
+      "correct": "Soldadura TIG",
+      "explicacion": "La soldadura TIG es una competencia técnica específica de un oficio. El trabajo en equipo, la comunicación y la adaptabilidad son transversales: útiles en cualquier profesión."
     },
     {
       "id": 48,
@@ -575,7 +622,8 @@
         "Esperar a que la empresa ofrezca formación",
         "Buscar formación continua para mejorar el perfil"
       ],
-      "correct": "Buscar formación continua para mejorar el perfil"
+      "correct": "Buscar formación continua para mejorar el perfil",
+      "explicacion": "La actitud de aprendizaje permanente implica buscar por iniciativa propia formación continua para mejorar el perfil. Limitarse a lo obligatorio o esperar a la empresa es lo contrario."
     },
     {
       "id": 49,
@@ -587,7 +635,8 @@
         "Un departamento gubernamental",
         "Una franquicia comercial"
       ],
-      "correct": "Centro de día para mayores gestionado por una ONG"
+      "correct": "Centro de día para mayores gestionado por una ONG",
+      "explicacion": "El tercer sector lo forman entidades sin ánimo de lucro (ONG, asociaciones, fundaciones). Un centro de día gestionado por una ONG pertenece a él; las empresas son sector privado y los departamentos gubernamentales, sector público."
     },
     {
       "id": 50,
@@ -599,7 +648,8 @@
         "Los años de experiencia",
         "Aquello que te distingue y aporta valor como profesional"
       ],
-      "correct": "Aquello que te distingue y aporta valor como profesional"
+      "correct": "Aquello que te distingue y aporta valor como profesional",
+      "explicacion": "La propuesta de valor profesional es aquello que te diferencia de otros candidatos y lo que aportas a una empresa: la combinación de tus competencias, experiencia y actitudes."
     },
     {
       "id": 51,
@@ -611,7 +661,8 @@
         "Life skills",
         "Core skills"
       ],
-      "correct": "Hard skills"
+      "correct": "Hard skills",
+      "explicacion": "Las competencias técnicas se llaman hard skills: conocimientos específicos y medibles (programar, un idioma, manejar una máquina). Las soft skills son las personales y sociales."
     },
     {
       "id": 52,
@@ -623,7 +674,8 @@
         "Una forma de trabajo autónomo",
         "Una modalidad de teletrabajo"
       ],
-      "correct": "Una forma de trabajo autónomo"
+      "correct": "Una forma de trabajo autónomo",
+      "explicacion": "Emprender es crear y gestionar un negocio propio, una forma de trabajo por cuenta propia (autónomo). No es empleo público, ni un tipo de contrato, ni una modalidad de teletrabajo."
     },
     {
       "id": 53,
@@ -635,7 +687,8 @@
         "El uso de tecnicismos avanzados",
         "La informalidad y cercanía"
       ],
-      "correct": "La claridad, la estructura y la adecuación al receptor"
+      "correct": "La claridad, la estructura y la adecuación al receptor",
+      "explicacion": "Una comunicación eficaz es clara, ordenada y adaptada al receptor (su nivel, el contexto, el canal). Los tecnicismos excesivos o la informalidad pueden dificultarla."
     },
     {
       "id": 54,
@@ -647,7 +700,8 @@
         "Convenio colectivo",
         "El Reglamento de Seguridad Social"
       ],
-      "correct": "Convenio colectivo"
+      "correct": "Convenio colectivo",
+      "explicacion": "El convenio colectivo regula las condiciones laborales concretas de un sector o empresa (salarios, jornada, permisos). El Estatuto de los Trabajadores fija los mínimos generales, que el convenio desarrolla y mejora."
     },
     {
       "id": 55,
@@ -659,7 +713,8 @@
         "Gestionar contratos laborales",
         "Supervisar instalaciones eléctricas"
       ],
-      "correct": "Diseñar intervenciones socioeducativas"
+      "correct": "Diseñar intervenciones socioeducativas",
+      "explicacion": "El técnico en integración social diseña, aplica y evalúa intervenciones socioeducativas con personas en riesgo de exclusión. Auditar cuentas, gestionar contratos o instalaciones eléctricas corresponden a otras profesiones."
     },
     {
       "id": 56,
@@ -671,7 +726,8 @@
         "Una medida preventiva",
         "La posibilidad de que un trabajador sufra un daño derivado del trabajo"
       ],
-      "correct": "La posibilidad de que un trabajador sufra un daño derivado del trabajo"
+      "correct": "La posibilidad de que un trabajador sufra un daño derivado del trabajo",
+      "explicacion": "Un riesgo laboral es la posibilidad de que un trabajador sufra un daño derivado del trabajo (definición del art. 4 de la Ley 31/1995). Una medida preventiva sirve para reducirlo."
     },
     {
       "id": 57,
@@ -683,7 +739,8 @@
         "Manipulación de sustancias tóxicas",
         "Relaciones laborales conflictivas"
       ],
-      "correct": "Ruido constante en el lugar de trabajo"
+      "correct": "Ruido constante en el lugar de trabajo",
+      "explicacion": "El ruido es un riesgo físico, como las vibraciones, la temperatura o la iluminación. El estrés y los conflictos son psicosociales, y las sustancias tóxicas son un riesgo químico."
     },
     {
       "id": 58,
@@ -695,7 +752,8 @@
         "Un conflicto entre compañeros",
         "Un error de gestión empresarial"
       ],
-      "correct": "Una lesión sufrida por un trabajador durante su actividad laboral"
+      "correct": "Una lesión sufrida por un trabajador durante su actividad laboral",
+      "explicacion": "Un accidente de trabajo es toda lesión corporal que sufre el trabajador con ocasión o por consecuencia del trabajo. Un conflicto o un error de gestión no son lesiones."
     },
     {
       "id": 59,
@@ -707,7 +765,8 @@
         "Ley 31/1995 de Prevención de Riesgos Laborales",
         "Ley 39/2015"
       ],
-      "correct": "Ley 31/1995 de Prevención de Riesgos Laborales"
+      "correct": "Ley 31/1995 de Prevención de Riesgos Laborales",
+      "explicacion": "La Ley 31/1995 de Prevención de Riesgos Laborales es la norma básica en España. El RD 485/1997 regula la señalización, la LO 3/2018 la protección de datos y la Ley 39/2015 el procedimiento administrativo."
     },
     {
       "id": 60,
@@ -719,7 +778,8 @@
         "Es secundaria a la individual",
         "Depende del tipo de riesgo"
       ],
-      "correct": "Es prioritaria frente a la individual"
+      "correct": "Es prioritaria frente a la individual",
+      "explicacion": "La protección colectiva es prioritaria frente a la individual (art. 15 Ley 31/1995), porque protege a todos a la vez sin depender de cada trabajador. Los EPIs se usan cuando lo colectivo no basta."
     },
     {
       "id": 61,
@@ -731,7 +791,8 @@
         "Una enfermedad genética del trabajador",
         "Un trastorno psicológico personal"
       ],
-      "correct": "Una dolencia causada por la exposición prolongada a riesgos laborales"
+      "correct": "Una dolencia causada por la exposición prolongada a riesgos laborales",
+      "explicacion": "La enfermedad profesional se contrae por la exposición prolongada a agentes del trabajo y figura en el cuadro oficial. Un daño puntual es accidente, y las enfermedades genéticas no son laborales."
     },
     {
       "id": 62,
@@ -743,7 +804,8 @@
         "Documentar los resultados",
         "Identificar los peligros"
       ],
-      "correct": "Identificar los peligros"
+      "correct": "Identificar los peligros",
+      "explicacion": "El primer paso de la evaluación es identificar los peligros; después se valoran los riesgos, se proponen medidas, se documenta y se informa a los trabajadores."
     },
     {
       "id": 63,
@@ -755,7 +817,8 @@
         "El principio de precaución genérico",
         "Un principio del Estatuto de los Trabajadores"
       ],
-      "correct": "Uno de los principios básicos de la Ley 31/1995"
+      "correct": "Uno de los principios básicos de la Ley 31/1995",
+      "explicacion": "'Combatir los riesgos en su origen' es uno de los principios de la acción preventiva del art. 15 de la Ley 31/1995, junto con evitar los riesgos o adaptar el trabajo a la persona."
     },
     {
       "id": 64,
@@ -767,7 +830,8 @@
         "Minimizar el daño si el riesgo no puede eliminarse",
         "Reemplazar la evaluación de riesgos"
       ],
-      "correct": "Minimizar el daño si el riesgo no puede eliminarse"
+      "correct": "Minimizar el daño si el riesgo no puede eliminarse",
+      "explicacion": "El EPI no elimina el riesgo: reduce las consecuencias cuando no se ha podido eliminar ni controlar con medidas colectivas. No sustituye a estas ni a la evaluación de riesgos."
     },
     {
       "id": 65,
@@ -779,7 +843,8 @@
         "Psicosocial",
         "Ergonómico"
       ],
-      "correct": "Psicosocial"
+      "correct": "Psicosocial",
+      "explicacion": "El estrés laboral es un riesgo psicosocial, ya que deriva de la organización del trabajo (carga, ritmo, relaciones). Físico serían ruido o temperatura, químico sustancias, y ergonómico posturas."
     },
     {
       "id": 66,
@@ -791,7 +856,8 @@
         "Informar inmediatamente a la empresa",
         "Documentarlo en su diario personal"
       ],
-      "correct": "Informar inmediatamente a la empresa"
+      "correct": "Informar inmediatamente a la empresa",
+      "explicacion": "La Ley 31/1995 obliga al trabajador a informar de inmediato a su superior o al responsable de prevención de cualquier situación de riesgo. No debe ignorarlo ni intentar resolverlo por su cuenta."
     },
     {
       "id": 67,
@@ -803,7 +869,8 @@
         "Un informe de incidencias",
         "Una acción que busca evitar o reducir riesgos"
       ],
-      "correct": "Una acción que busca evitar o reducir riesgos"
+      "correct": "Una acción que busca evitar o reducir riesgos",
+      "explicacion": "Una medida preventiva es cualquier acción adoptada para evitar o reducir los riesgos laborales. Un seguro compensa el daño y una sanción castiga, pero ninguno previene."
     },
     {
       "id": 68,
@@ -815,7 +882,8 @@
         "Señalizar los peligros",
         "Aumentar la vigilancia sanitaria"
       ],
-      "correct": "Eliminar el riesgo en su origen"
+      "correct": "Eliminar el riesgo en su origen",
+      "explicacion": "Lo más eficaz es eliminar el riesgo en su origen, porque así desaparece el peligro. Señalizar, dar EPIs o vigilar la salud solo reducen o controlan un riesgo que sigue existiendo."
     },
     {
       "id": 69,
@@ -827,7 +895,8 @@
         "Una evaluación psicológica",
         "Un tipo de auditoría financiera"
       ],
-      "correct": "Técnica para identificar riesgos en el entorno real de trabajo"
+      "correct": "Técnica para identificar riesgos en el entorno real de trabajo",
+      "explicacion": "La observación activa consiste en analizar con atención el entorno real de trabajo para detectar peligros y condiciones inseguras. No es una técnica deportiva, psicológica ni financiera."
     },
     {
       "id": 70,
@@ -839,7 +908,8 @@
         "Actualizarla cada 5 años",
         "Integrarla en todos los niveles de la organización"
       ],
-      "correct": "Integrarla en todos los niveles de la organización"
+      "correct": "Integrarla en todos los niveles de la organización",
+      "explicacion": "La prevención debe integrarse en todos los niveles jerárquicos y en todas las actividades de la empresa (art. 16 Ley 31/1995). No puede limitarse a un área ni delegarse por completo."
     },
     {
       "id": 71,
@@ -851,7 +921,8 @@
         "Mutua de accidentes de trabajo",
         "Delegado de prevención"
       ],
-      "correct": "Asunción personal por el empresario"
+      "correct": "Asunción personal por el empresario",
+      "explicacion": "En la asunción personal, el propio empresario realiza la actividad preventiva. Solo es posible en empresas pequeñas (hasta 10 trabajadores, o 25 con un solo centro), con formación y si no hay actividades peligrosas."
     },
     {
       "id": 72,
@@ -863,7 +934,8 @@
         "Representantes de la empresa y delegados de prevención",
         "La Inspección de Trabajo y los directivos"
       ],
-      "correct": "Representantes de la empresa y delegados de prevención"
+      "correct": "Representantes de la empresa y delegados de prevención",
+      "explicacion": "El Comité de Seguridad y Salud es paritario: lo forman los delegados de prevención y un número igual de representantes de la empresa. La Inspección de Trabajo no forma parte de él."
     },
     {
       "id": 73,
@@ -875,7 +947,8 @@
         "Cuando la empresa lo decida",
         "Cuando se supere la jornada ordinaria"
       ],
-      "correct": "Cuando es necesaria para proteger a terceros"
+      "correct": "Cuando es necesaria para proteger a terceros",
+      "explicacion": "La vigilancia de la salud es voluntaria, salvo excepciones como cuando el estado de salud del trabajador puede suponer un peligro para él mismo, para otros trabajadores o para terceros."
     },
     {
       "id": 74,
@@ -887,7 +960,8 @@
         "Organización de la respuesta ante emergencias",
         "El convenio colectivo aplicable"
       ],
-      "correct": "Organización de la respuesta ante emergencias"
+      "correct": "Organización de la respuesta ante emergencias",
+      "explicacion": "El plan de emergencia debe recoger cómo se organiza la respuesta: equipos, funciones, alarma, evacuación y medios. El presupuesto, los contratos o el convenio no forman parte de él."
     },
     {
       "id": 75,
@@ -899,7 +973,8 @@
         "Evaluación de aptitud específica",
         "Evaluación inicial o de ingreso"
       ],
-      "correct": "Evaluación inicial o de ingreso"
+      "correct": "Evaluación inicial o de ingreso",
+      "explicacion": "La evaluación inicial o de ingreso se realiza antes de empezar a trabajar o al asignar nuevas tareas con riesgos. Las periódicas son posteriores y la de reincorporación se hace tras una ausencia prolongada."
     },
     {
       "id": 76,
@@ -911,7 +986,8 @@
         "Plan de igualdad",
         "Registro de jornada"
       ],
-      "correct": "Croquis o plano de evacuación"
+      "correct": "Croquis o plano de evacuación",
+      "explicacion": "El croquis o plano de evacuación indica las rutas, salidas de emergencia y puntos de encuentro, lo que facilita una evacuación ordenada. Los demás documentos no tienen relación."
     },
     {
       "id": 77,
@@ -923,7 +999,8 @@
         "Riesgo físico",
         "Riesgo ergonómico"
       ],
-      "correct": "Riesgo físico"
+      "correct": "Riesgo físico",
+      "explicacion": "Una superficie mojada provoca riesgo de caída al mismo nivel, que se clasifica como riesgo físico o de seguridad por las condiciones del lugar de trabajo. No es químico, psicosocial ni ergonómico."
     },
     {
       "id": 78,
@@ -935,7 +1012,8 @@
         "Solo el director de la empresa",
         "Solo los bomberos"
       ],
-      "correct": "Cualquier persona asignada en el plan de emergencia"
+      "correct": "Cualquier persona asignada en el plan de emergencia",
+      "explicacion": "El plan de emergencia designa qué personas deben dar la alarma, de modo que cualquiera asignada puede activarla sin esperar al director. Los bomberos son ayuda externa."
     },
     {
       "id": 79,
@@ -947,7 +1025,8 @@
         "Retirar objetos clavados de una herida",
         "Mantener al herido en posición segura"
       ],
-      "correct": "Retirar objetos clavados de una herida"
+      "correct": "Retirar objetos clavados de una herida",
+      "explicacion": "Retirar un objeto clavado es un error grave: puede agravar la lesión y la hemorragia, ya que el propio objeto actúa como tapón. Debe inmovilizarse y esperar a los servicios sanitarios."
     },
     {
       "id": 80,
@@ -959,7 +1038,8 @@
         "Accesibilidad",
         "Confidencialidad"
       ],
-      "correct": "Confidencialidad"
+      "correct": "Confidencialidad",
+      "explicacion": "La confidencialidad garantiza que los resultados médicos solo los conozcan el trabajador y el personal sanitario. La empresa solo recibe si el trabajador es apto o no, sin datos de salud."
     },
     {
       "id": 81,
@@ -971,7 +1051,8 @@
         "Todos los trabajadores, según su función",
         "Solo los responsables de área"
       ],
-      "correct": "Todos los trabajadores, según su función"
+      "correct": "Todos los trabajadores, según su función",
+      "explicacion": "Todos los trabajadores deben conocer las pautas básicas de actuación, con una formación adaptada a su función. Las personas designadas para primeros auxilios reciben formación más completa."
     },
     {
       "id": 82,
@@ -983,7 +1064,8 @@
         "Informe técnico extenso",
         "Acta de reunión"
       ],
-      "correct": "Infografía"
+      "correct": "Infografía",
+      "explicacion": "Una infografía combina imágenes, datos y texto breve, lo que la hace ideal para transmitir información de forma visual y rápida. Los contratos, informes extensos y actas no son visuales."
     },
     {
       "id": 83,
@@ -995,7 +1077,8 @@
         "Trabajadores designados con formación básica en socorrismo",
         "Los representantes sindicales"
       ],
-      "correct": "Trabajadores designados con formación básica en socorrismo"
+      "correct": "Trabajadores designados con formación básica en socorrismo",
+      "explicacion": "El equipo de primeros auxilios lo forman trabajadores designados por la empresa y formados en socorrismo básico. No tienen que ser médicos, y los delegados o sindicalistas tienen otras funciones."
     },
     {
       "id": 84,
@@ -1007,7 +1090,8 @@
         "Canva",
         "SonarQube"
       ],
-      "correct": "Canva"
+      "correct": "Canva",
+      "explicacion": "Canva es una herramienta online de diseño gráfico con plantillas para infografías. Excel es una hoja de cálculo, Git un control de versiones y SonarQube analiza calidad de código."
     },
     {
       "id": 85,
@@ -1019,7 +1103,8 @@
         "A ser informada y a dar consentimiento sobre cualquier reconocimiento médico",
         "A acceder al historial médico de sus compañeros"
       ],
-      "correct": "A ser informada y a dar consentimiento sobre cualquier reconocimiento médico"
+      "correct": "A ser informada y a dar consentimiento sobre cualquier reconocimiento médico",
+      "explicacion": "Todo trabajador tiene derecho a ser informado y a dar su consentimiento antes de un reconocimiento médico, salvo las excepciones legales. No puede rechazar las medidas preventivas ni ver datos ajenos."
     },
     {
       "id": 86,
@@ -1031,7 +1116,8 @@
         "Una norma pactada entre trabajadores y empresarios",
         "Una resolución judicial"
       ],
-      "correct": "Una norma pactada entre trabajadores y empresarios"
+      "correct": "Una norma pactada entre trabajadores y empresarios",
+      "explicacion": "El convenio colectivo es un acuerdo negociado entre representantes de trabajadores y empresarios con fuerza de norma para su ámbito. No es individual, ni reglamento interno ni resolución judicial."
     },
     {
       "id": 87,
@@ -1043,7 +1129,8 @@
         "Bases de cotización",
         "Percepciones extrasalariales"
       ],
-      "correct": "Devengos"
+      "correct": "Devengos",
+      "explicacion": "Los devengos son las cantidades que el trabajador percibe (salario base, complementos, extras): el total devengado es el salario bruto. Las deducciones se restan después para obtener el neto."
     },
     {
       "id": 88,
@@ -1055,7 +1142,8 @@
         "INSS",
         "Mutua laboral"
       ],
-      "correct": "INSS"
+      "correct": "INSS",
+      "explicacion": "El INSS (Instituto Nacional de la Seguridad Social) gestiona prestaciones como jubilación, incapacidad o nacimiento. El SEPE gestiona el desempleo y el SMAC concilia conflictos."
     },
     {
       "id": 89,
@@ -1067,7 +1155,8 @@
         "Permiso retribuido",
         "Desconexión digital"
       ],
-      "correct": "Desconexión digital"
+      "correct": "Desconexión digital",
+      "explicacion": "El derecho a la desconexión digital permite no responder a comunicaciones de trabajo fuera del horario laboral, garantizando el descanso y la conciliación, especialmente en teletrabajo."
     },
     {
       "id": 90,
@@ -1079,7 +1168,8 @@
         "Retención de IRPF",
         "Anticipos descontados"
       ],
-      "correct": "Salario base"
+      "correct": "Salario base",
+      "explicacion": "El salario base es un devengo, una cantidad que cobra el trabajador. Las cuotas de Seguridad Social, la retención del IRPF y los anticipos son deducciones."
     },
     {
       "id": 91,
@@ -1091,7 +1181,8 @@
         "Finiquito",
         "Carta de despido"
       ],
-      "correct": "Finiquito"
+      "correct": "Finiquito",
+      "explicacion": "El finiquito es el documento que liquida la relación laboral: recoge las cantidades pendientes (días trabajados, vacaciones no disfrutadas, pagas extra proporcionales). La carta de despido solo comunica el despido."
     },
     {
       "id": 92,
@@ -1103,7 +1194,8 @@
         "Contrato de obra y servicio",
         "Contrato por sustitución"
       ],
-      "correct": "Contrato de formación en alternancia"
+      "correct": "Contrato de formación en alternancia",
+      "explicacion": "El contrato de formación en alternancia combina trabajo remunerado con formación, orientado a jóvenes (hasta 30 años) sin cualificación o en formación. Los otros no tienen finalidad formativa."
     },
     {
       "id": 93,
@@ -1115,7 +1207,8 @@
         "Inspección de Trabajo",
         "SMAC"
       ],
-      "correct": "SMAC"
+      "correct": "SMAC",
+      "explicacion": "El SMAC (Servicio de Mediación, Arbitraje y Conciliación) realiza la conciliación previa obligatoria antes de muchos juicios laborales. La Inspección vigila, el INSS y el SEPE gestionan prestaciones."
     },
     {
       "id": 94,
@@ -1127,7 +1220,8 @@
         "Solo las dietas",
         "Salario base y complementos"
       ],
-      "correct": "Salario base y complementos"
+      "correct": "Salario base y complementos",
+      "explicacion": "La base de cotización incluye la remuneración total: salario base, complementos y prorrata de pagas extra. Algunas partidas como las dietas quedan excluidas dentro de ciertos límites."
     },
     {
       "id": 95,
@@ -1139,7 +1233,8 @@
         "Subsidio de maternidad",
         "Pensión de jubilación"
       ],
-      "correct": "Prestación por incapacidad temporal"
+      "correct": "Prestación por incapacidad temporal",
+      "explicacion": "La prestación por incapacidad temporal protege al trabajador que no puede trabajar temporalmente por enfermedad o accidente y recibe asistencia sanitaria. El desempleo y la jubilación cubren otras situaciones."
     },
     {
       "id": 96,
@@ -1151,7 +1246,8 @@
         "Contrato de obra y servicio",
         "Contrato indefinido"
       ],
-      "correct": "Contrato indefinido"
+      "correct": "Contrato indefinido",
+      "explicacion": "Tras la reforma laboral de 2021 (RDL 32/2021) se presume que el contrato es indefinido y la temporalidad solo se admite con causa justificada. El contrato de obra y servicio fue suprimido."
     },
     {
       "id": 97,
@@ -1163,7 +1259,8 @@
         "Prestación por desempleo",
         "Pensión de vejez"
       ],
-      "correct": "Prestación por desempleo"
+      "correct": "Prestación por desempleo",
+      "explicacion": "La prestación por desempleo protege a quien pierde su empleo de forma involuntaria (despido, fin de contrato) y ha cotizado lo suficiente. No es voluntaria ni cubre incapacidad o vejez."
     },
     {
       "id": 98,
@@ -1175,7 +1272,8 @@
         "Bases de cotización",
         "Percepciones extrasalariales"
       ],
-      "correct": "Deducciones"
+      "correct": "Deducciones",
+      "explicacion": "El apartado de deducciones recoge lo que se descuenta del bruto: aportaciones a la Seguridad Social y retención del IRPF. Los devengos son lo que se percibe y las bases de cotización, sobre qué se calcula."
     },
     {
       "id": 99,
@@ -1187,7 +1285,8 @@
         "Solidaridad colectiva",
         "Principio de subsidiariedad"
       ],
-      "correct": "Solidaridad colectiva"
+      "correct": "Solidaridad colectiva",
+      "explicacion": "La Seguridad Social se basa en la solidaridad colectiva: quienes trabajan y cotizan financian las prestaciones de quienes las necesitan (jubilados, enfermos, desempleados)."
     },
     {
       "id": 100,
@@ -1199,7 +1298,8 @@
         "Sindicato",
         "Inspección de Trabajo"
       ],
-      "correct": "Inspección de Trabajo"
+      "correct": "Inspección de Trabajo",
+      "explicacion": "La Inspección de Trabajo permite denunciar irregularidades laborales, y dispone de un buzón donde hacerlo de forma anónima. El comité y los sindicatos representan a los trabajadores pero no sancionan."
     },
     {
       "id": 101,
@@ -1211,7 +1311,8 @@
         "Elimina la necesidad de formación específica",
         "Permite comprender mejor las propias capacidades y orientar decisiones profesionales"
       ],
-      "correct": "Permite comprender mejor las propias capacidades y orientar decisiones profesionales"
+      "correct": "Permite comprender mejor las propias capacidades y orientar decisiones profesionales",
+      "explicacion": "Conocer las propias capacidades, intereses y valores permite tomar mejores decisiones profesionales y presentarse mejor ante las empresas. No garantiza un empleo ni aumenta el salario directamente."
     },
     {
       "id": 102,
@@ -1223,7 +1324,8 @@
         "Relaciones personales y contactos profesionales",
         "Habilidades técnicas y conocimientos específicos"
       ],
-      "correct": "Intereses, valores, motivaciones y capacidades"
+      "correct": "Intereses, valores, motivaciones y capacidades",
+      "explicacion": "El autoconocimiento abarca intereses, valores, motivaciones y capacidades, es decir, qué te gusta, qué te importa y qué sabes hacer. Los títulos y contactos son elementos del perfil, no del autoconocimiento."
     },
     {
       "id": 103,
@@ -1235,7 +1337,8 @@
         "Las tareas o actividades que generan curiosidad y satisfacción personal",
         "Las habilidades técnicas necesarias"
       ],
-      "correct": "Las tareas o actividades que generan curiosidad y satisfacción personal"
+      "correct": "Las tareas o actividades que generan curiosidad y satisfacción personal",
+      "explicacion": "Los intereses profesionales son las actividades o áreas que te atraen y te producen satisfacción. Los requisitos del puesto y las habilidades técnicas son otra cosa."
     },
     {
       "id": 104,
@@ -1247,7 +1350,8 @@
         "Los salarios y beneficios esperados",
         "Las tareas asignadas por la empresa"
       ],
-      "correct": "Los principios que guían nuestras decisiones y actitudes"
+      "correct": "Los principios que guían nuestras decisiones y actitudes",
+      "explicacion": "Los valores son los principios que guían tus decisiones y actitudes en el trabajo (honestidad, compromiso, responsabilidad). No son competencias técnicas ni beneficios económicos."
     },
     {
       "id": 105,
@@ -1259,7 +1363,8 @@
         "Nacer del interés o placer por la propia tarea",
         "Basarse en el salario recibido"
       ],
-      "correct": "Nacer del interés o placer por la propia tarea"
+      "correct": "Nacer del interés o placer por la propia tarea",
+      "explicacion": "La motivación intrínseca nace del propio interés o disfrute de la tarea. Si depende de recompensas, reconocimiento o salario, es motivación extrínseca."
     },
     {
       "id": 106,
@@ -1271,7 +1376,8 @@
         "Tres categorías: Técnico, Humanístico y Científico",
         "Cinco perfiles: Líder, Colaborador, Innovador, Ejecutor y Especialista"
       ],
-      "correct": "Seis tipos vocacionales: Realista, Investigador, Artístico, Social, Emprendedor y Convencional"
+      "correct": "Seis tipos vocacionales: Realista, Investigador, Artístico, Social, Emprendedor y Convencional",
+      "explicacion": "El modelo RIASEC de Holland distingue seis tipos vocacionales: Realista, Investigador, Artístico, Social, Emprendedor y Convencional, cuyas iniciales forman las siglas."
     },
     {
       "id": 107,
@@ -1283,7 +1389,8 @@
         "Las cualificaciones técnicas",
         "La gestión de uno mismo y la autonomía profesional"
       ],
-      "correct": "La gestión de uno mismo y la autonomía profesional"
+      "correct": "La gestión de uno mismo y la autonomía profesional",
+      "explicacion": "Las competencias personales se refieren a la gestión de uno mismo: autonomía, organización, responsabilidad, gestión emocional. El software, los idiomas y las cualificaciones son competencias técnicas."
     },
     {
       "id": 108,
@@ -1295,7 +1402,8 @@
         "Cumplir estrictamente con las tareas asignadas",
         "Evitar conflictos en el trabajo"
       ],
-      "correct": "Proponer ideas y anticiparse a los problemas"
+      "correct": "Proponer ideas y anticiparse a los problemas",
+      "explicacion": "Tener iniciativa es actuar de forma proactiva: proponer mejoras y anticiparse a los problemas sin esperar a que te lo pidan. Esperar instrucciones es justo lo opuesto."
     },
     {
       "id": 109,
@@ -1307,7 +1415,8 @@
         "La interacción y comunicación eficaz con otras personas",
         "El análisis de datos"
       ],
-      "correct": "La interacción y comunicación eficaz con otras personas"
+      "correct": "La interacción y comunicación eficaz con otras personas",
+      "explicacion": "Las competencias sociales se centran en relacionarse con los demás: comunicación, empatía, trabajo en equipo o resolución de conflictos. Las herramientas digitales y el análisis de datos son competencias técnicas."
     },
     {
       "id": 110,
@@ -1319,7 +1428,8 @@
         "Empatía",
         "Certificación en idiomas"
       ],
-      "correct": "Empatía"
+      "correct": "Empatía",
+      "explicacion": "La empatía, la capacidad de ponerse en el lugar del otro, es una competencia social. Programar, gestionar bases de datos o una certificación en idiomas son competencias técnicas."
     },
     {
       "id": 111,
@@ -1331,7 +1441,8 @@
         "Reconocimiento externo y premios",
         "Autoconocimiento, autoaceptación y autoconfianza"
       ],
-      "correct": "Autoconocimiento, autoaceptación y autoconfianza"
+      "correct": "Autoconocimiento, autoaceptación y autoconfianza",
+      "explicacion": "La autoestima profesional se basa en conocerse (autoconocimiento), aceptarse con fortalezas y debilidades (autoaceptación) y confiar en las propias capacidades (autoconfianza), no en factores externos."
     },
     {
       "id": 112,
@@ -1343,7 +1454,8 @@
         "La satisfacción personal intrínseca",
         "La curiosidad intelectual"
       ],
-      "correct": "Recompensas externas como el salario o el reconocimiento"
+      "correct": "Recompensas externas como el salario o el reconocimiento",
+      "explicacion": "La motivación extrínseca procede de recompensas externas como el salario, los premios o el reconocimiento. El interés por la tarea, la satisfacción y la curiosidad son motivación intrínseca."
     },
     {
       "id": 113,
@@ -1355,7 +1467,8 @@
         "Se cumplen las tareas sin cuestionarlas",
         "Se mantiene una actitud de conformidad"
       ],
-      "correct": "Se afrontan las dificultades buscando soluciones y aprendizaje"
+      "correct": "Se afrontan las dificultades buscando soluciones y aprendizaje",
+      "explicacion": "Tener una actitud positiva es afrontar las dificultades buscando soluciones y aprendiendo de ellas. Evitar conflictos o conformarse sin más no es actitud positiva, sino pasiva."
     },
     {
       "id": 114,
@@ -1367,7 +1480,8 @@
         "Recuperarse ante los fracasos y aprender de la experiencia",
         "Adaptarse solo a los cambios positivos"
       ],
-      "correct": "Recuperarse ante los fracasos y aprender de la experiencia"
+      "correct": "Recuperarse ante los fracasos y aprender de la experiencia",
+      "explicacion": "La resiliencia profesional es la capacidad de recuperarse de los fracasos y dificultades, aprendiendo de ellos. No implica evitar los problemas ni estar siempre de buen humor."
     },
     {
       "id": 115,
@@ -1379,7 +1493,8 @@
         "Aprender solo en contextos formales",
         "Mantener una actitud de actualización y formación permanente"
       ],
-      "correct": "Mantener una actitud de actualización y formación permanente"
+      "correct": "Mantener una actitud de actualización y formación permanente",
+      "explicacion": "El aprendizaje continuo es mantener una actitud de actualización permanente durante toda la vida profesional, en contextos formales, no formales e informales."
     },
     {
       "id": 116,
@@ -1391,7 +1506,8 @@
         "Un contrato de trabajo firmado",
         "Un informe de evaluación del desempeño"
       ],
-      "correct": "Un plan personal con metas y acciones para lograr un objetivo laboral"
+      "correct": "Un plan personal con metas y acciones para lograr un objetivo laboral",
+      "explicacion": "Un proyecto profesional es un plan personal que define un objetivo laboral y las metas y acciones para alcanzarlo. El currículum solo describe tu trayectoria."
     },
     {
       "id": 117,
@@ -1403,7 +1519,8 @@
         "Ser imposible de medir",
         "Depender exclusivamente de factores externos"
       ],
-      "correct": "Poder alcanzarse en menos de un año"
+      "correct": "Poder alcanzarse en menos de un año",
+      "explicacion": "Las metas a corto plazo se pueden lograr en menos de un año. Las de medio plazo suelen ir de uno a tres años y las de largo plazo superan los tres años."
     },
     {
       "id": 118,
@@ -1415,7 +1532,8 @@
         "El nivel salarial alcanzado",
         "La capacidad de conseguir, mantener y mejorar un empleo"
       ],
-      "correct": "La capacidad de conseguir, mantener y mejorar un empleo"
+      "correct": "La capacidad de conseguir, mantener y mejorar un empleo",
+      "explicacion": "La empleabilidad es la capacidad de una persona para conseguir un empleo, mantenerlo y mejorar profesionalmente. No depende solo de títulos, años trabajados o salario."
     },
     {
       "id": 119,
@@ -1427,7 +1545,8 @@
         "Identificar fortalezas, debilidades, oportunidades y amenazas personales",
         "Elaborar un contrato de trabajo"
       ],
-      "correct": "Identificar fortalezas, debilidades, oportunidades y amenazas personales"
+      "correct": "Identificar fortalezas, debilidades, oportunidades y amenazas personales",
+      "explicacion": "El DAFO personal analiza las Debilidades y Fortalezas (factores internos) y las Amenazas y Oportunidades (factores externos) para orientar el proyecto profesional."
     },
     {
       "id": 120,
@@ -1439,7 +1558,8 @@
         "Un certificado de asistencia a cursos",
         "Reconocimiento oficial de la experiencia y formación no reglada"
       ],
-      "correct": "Reconocimiento oficial de la experiencia y formación no reglada"
+      "correct": "Reconocimiento oficial de la experiencia y formación no reglada",
+      "explicacion": "La acreditación de competencias es un procedimiento oficial que reconoce las competencias adquiridas por experiencia laboral o formación no reglada, pudiendo obtener certificados de profesionalidad o títulos de FP."
     },
     {
       "id": 121,
@@ -1451,7 +1571,8 @@
         "Un ciclo formativo de FP",
         "Una oposición pública"
       ],
-      "correct": "Un curso del SEPE"
+      "correct": "Un curso del SEPE",
+      "explicacion": "Un curso del SEPE es formación no reglada, porque no conduce a un título oficial del sistema educativo. El grado universitario y el ciclo de FP son formación reglada, y una oposición es un proceso de selección."
     },
     {
       "id": 122,
@@ -1463,7 +1584,8 @@
         "Aprender únicamente en contextos formales",
         "Aprender de forma continua a lo largo de toda la vida"
       ],
-      "correct": "Aprender de forma continua a lo largo de toda la vida"
+      "correct": "Aprender de forma continua a lo largo de toda la vida",
+      "explicacion": "El aprendizaje permanente supone seguir formándose de forma continua durante toda la vida, en cualquier contexto, no solo en la etapa obligatoria o hasta acabar un máster."
     },
     {
       "id": 123,
@@ -1475,7 +1597,8 @@
         "Estar alineado con el perfil profesional y metas personales",
         "Seguir las tendencias del mercado sin criterio propio"
       ],
-      "correct": "Estar alineado con el perfil profesional y metas personales"
+      "correct": "Estar alineado con el perfil profesional y metas personales",
+      "explicacion": "Un buen itinerario formativo se alinea con el perfil profesional y las metas personales. Acumular cursos o seguir modas sin criterio no garantiza avanzar hacia tus objetivos."
     },
     {
       "id": 124,
@@ -1487,7 +1610,8 @@
         "Metas, acciones, plazos y recursos",
         "Solo el historial educativo"
       ],
-      "correct": "Metas, acciones, plazos y recursos"
+      "correct": "Metas, acciones, plazos y recursos",
+      "explicacion": "Un plan de acción profesional debe concretar las metas, las acciones para alcanzarlas, los plazos y los recursos necesarios. Sin estos elementos no se puede ejecutar ni evaluar."
     },
     {
       "id": 125,
@@ -1499,7 +1623,8 @@
         "Eclipse",
         "Canva"
       ],
-      "correct": "Canva"
+      "correct": "Canva",
+      "explicacion": "Canva permite crear diagramas y mapas visuales con plantillas, útil para representar un PLE. SonarQube analiza código, Git controla versiones y Eclipse es un IDE."
     },
     {
       "id": 126,
@@ -1511,7 +1636,8 @@
         "Exactamente un año",
         "Más de tres años"
       ],
-      "correct": "Más de tres años"
+      "correct": "Más de tres años",
+      "explicacion": "Las metas a largo plazo suelen abarcar más de tres años. Menos de un año es corto plazo y entre uno y tres años, medio plazo."
     },
     {
       "id": 127,
@@ -1523,7 +1649,8 @@
         "Garantizar el éxito del proyecto",
         "Automatizar el seguimiento de tareas"
       ],
-      "correct": "Clarificar qué se quiere lograr y cómo"
+      "correct": "Clarificar qué se quiere lograr y cómo",
+      "explicacion": "Los objetivos SMART (específicos, medibles, alcanzables, relevantes y con plazo) clarifican qué se quiere conseguir y cómo medirlo. Ayudan mucho, pero no garantizan el éxito ni eliminan toda la incertidumbre."
     },
     {
       "id": 128,
@@ -1535,7 +1662,8 @@
         "Análisis personal, metas claras y valores propios",
         "Solo las opiniones de terceros"
       ],
-      "correct": "Análisis personal, metas claras y valores propios"
+      "correct": "Análisis personal, metas claras y valores propios",
+      "explicacion": "Una reflexión profesional completa combina el análisis de uno mismo, unas metas claras y los propios valores. Quedarse solo en logros pasados o en opiniones ajenas es incompleto."
     },
     {
       "id": 129,
@@ -1547,7 +1675,8 @@
         "Un análisis de debilidades",
         "Una tarea concreta para avanzar hacia una meta"
       ],
-      "correct": "Una tarea concreta para avanzar hacia una meta"
+      "correct": "Una tarea concreta para avanzar hacia una meta",
+      "explicacion": "Una acción de mejora es una tarea concreta y realizable que acerca a una meta, por ejemplo 'hacer un curso de inglés B2 antes de junio'. Un objetivo sin plazo o un análisis no son acciones."
     },
     {
       "id": 130,
@@ -1559,7 +1688,8 @@
         "Adaptación, formación constante y proactividad",
         "Priorizar la estabilidad sobre el crecimiento"
       ],
-      "correct": "Adaptación, formación constante y proactividad"
+      "correct": "Adaptación, formación constante y proactividad",
+      "explicacion": "La empleabilidad sostenible se mantiene a lo largo del tiempo gracias a la adaptación a los cambios, la formación constante y la proactividad. Quedarse estancado o esperar a la empresa la reduce."
     },
     {
       "id": 131,
@@ -1571,7 +1701,8 @@
         "La capacidad de aprender por cuenta propia, gestionando recursos y tiempos",
         "El aprendizaje en grupos de trabajo"
       ],
-      "correct": "La capacidad de aprender por cuenta propia, gestionando recursos y tiempos"
+      "correct": "La capacidad de aprender por cuenta propia, gestionando recursos y tiempos",
+      "explicacion": "El aprendizaje autónomo es la capacidad de aprender por cuenta propia, decidiendo objetivos, recursos y tiempos sin depender de un tutor o de un centro."
     },
     {
       "id": 132,
@@ -1583,7 +1714,8 @@
         "Un horario fijo de estudio semanal",
         "Un profesor que guíe el proceso"
       ],
-      "correct": "Herramientas, fuentes y redes conectadas a los objetivos de la persona"
+      "correct": "Herramientas, fuentes y redes conectadas a los objetivos de la persona",
+      "explicacion": "Un PLE se compone de las herramientas, fuentes de información y redes de personas que usas para aprender, conectadas a tus objetivos. No requiere aula física, horario fijo ni profesor."
     },
     {
       "id": 133,
@@ -1595,7 +1727,8 @@
         "Se extiende a lo largo de toda la vida en distintos contextos",
         "Requiere siempre un certificado al finalizar"
       ],
-      "correct": "Se extiende a lo largo de toda la vida en distintos contextos"
+      "correct": "Se extiende a lo largo de toda la vida en distintos contextos",
+      "explicacion": "El aprendizaje permanente se produce durante toda la vida y en todos los contextos (formal, no formal e informal). No se limita a la escuela ni al trabajo, ni exige certificado."
     },
     {
       "id": 134,
@@ -1607,7 +1740,8 @@
         "Un convenio colectivo",
         "Un canal de YouTube con contenidos educativos del sector profesional"
       ],
-      "correct": "Un canal de YouTube con contenidos educativos del sector profesional"
+      "correct": "Un canal de YouTube con contenidos educativos del sector profesional",
+      "explicacion": "Un canal de YouTube con contenidos educativos del sector es una fuente de información para aprender. Contratos, planes de prevención y convenios son documentos laborales."
     },
     {
       "id": 135,
@@ -1619,7 +1753,8 @@
         "Diseñar un plan personal de mejora basado en metas claras",
         "Centrarse en las tareas del día a día sin proyección"
       ],
-      "correct": "Diseñar un plan personal de mejora basado en metas claras"
+      "correct": "Diseñar un plan personal de mejora basado en metas claras",
+      "explicacion": "Ser proactivo es anticiparse y tomar la iniciativa, por ejemplo diseñando un plan de mejora con metas claras. Esperar instrucciones o no planificar son actitudes reactivas."
     },
     {
       "id": 136,
@@ -1631,7 +1766,8 @@
         "Gestionar contraseñas y cuentas",
         "Almacenar datos personales en la nube"
       ],
-      "correct": "Reflejar cómo nos mostramos y somos percibidos en internet"
+      "correct": "Reflejar cómo nos mostramos y somos percibidos en internet",
+      "explicacion": "La identidad digital es la imagen que proyectamos en Internet: lo que publicamos y lo que otros ven de nosotros. Influye en cómo nos perciben, por ejemplo, los reclutadores."
     },
     {
       "id": 137,
@@ -1643,7 +1779,8 @@
         "LinkedIn",
         "Twitter/X"
       ],
-      "correct": "LinkedIn"
+      "correct": "LinkedIn",
+      "explicacion": "LinkedIn es la red social orientada al ámbito profesional: perfil tipo currículum, contactos del sector y ofertas de empleo. Las demás son redes de uso general u ocio."
     },
     {
       "id": 138,
@@ -1655,7 +1792,8 @@
         "Un informe de empresa",
         "Diario de aprendizaje o bitácora reflexiva"
       ],
-      "correct": "Diario de aprendizaje o bitácora reflexiva"
+      "correct": "Diario de aprendizaje o bitácora reflexiva",
+      "explicacion": "Un diario de aprendizaje o bitácora reflexiva registra lo aprendido, las dificultades y los avances, lo que permite reflexionar sobre la propia evolución. Un examen solo mide un momento concreto."
     },
     {
       "id": 139,
@@ -1667,7 +1805,8 @@
         "JUnit",
         "Eclipse"
       ],
-      "correct": "Canva"
+      "correct": "Canva",
+      "explicacion": "Canva es una herramienta de diseño gráfico para organizar el contenido de forma visual (infografías, mapas, esquemas). Git es control de versiones, JUnit pruebas en Java y Eclipse un IDE."
     },
     {
       "id": 140,
@@ -1679,7 +1818,8 @@
         "La coherencia entre los perfiles públicos y el perfil profesional deseado",
         "El número de cuentas activas"
       ],
-      "correct": "La coherencia entre los perfiles públicos y el perfil profesional deseado"
+      "correct": "La coherencia entre los perfiles públicos y el perfil profesional deseado",
+      "explicacion": "Al evaluar la identidad digital hay que revisar si lo que muestran tus perfiles públicos es coherente con la imagen profesional que quieres dar. El número de seguidores o cuentas es secundario."
     },
     {
       "id": 141,
@@ -1691,7 +1831,8 @@
         "Que tenga muchas visualizaciones",
         "Que esté actualizado y sea relevante para los objetivos profesionales"
       ],
-      "correct": "Que esté actualizado y sea relevante para los objetivos profesionales"
+      "correct": "Que esté actualizado y sea relevante para los objetivos profesionales",
+      "explicacion": "Un recurso formativo es útil si está actualizado y es relevante para tus objetivos profesionales. Que sea gratuito, popular o recomendado no garantiza su calidad ni su utilidad."
     },
     {
       "id": 142,
@@ -1703,7 +1844,8 @@
         "Una comunidad online de profesionales del sector",
         "Un plan de estudios oficial"
       ],
-      "correct": "Una comunidad online de profesionales del sector"
+      "correct": "Una comunidad online de profesionales del sector",
+      "explicacion": "Una comunidad online de profesionales es parte de la red personal de aprendizaje del PLE, donde se comparte conocimiento. Un espacio físico, un contrato o un plan oficial no lo son."
     },
     {
       "id": 143,
@@ -1715,7 +1857,8 @@
         "Seguir siempre un programa predefinido",
         "Esperar a tener tiempo libre para formarse"
       ],
-      "correct": "Responsabilizarse de los propios objetivos y buscar recursos para alcanzarlos"
+      "correct": "Responsabilizarse de los propios objetivos y buscar recursos para alcanzarlos",
+      "explicacion": "El aprendizaje autónomo requiere responsabilizarse de los propios objetivos y buscar activamente los recursos para lograrlos, sin depender de la motivación externa ni de programas fijos."
     },
     {
       "id": 144,
@@ -1727,7 +1870,8 @@
         "Porque ayuda a comprender la estructura y los vínculos del entorno de aprendizaje",
         "Porque reduce el tiempo de aprendizaje"
       ],
-      "correct": "Porque ayuda a comprender la estructura y los vínculos del entorno de aprendizaje"
+      "correct": "Porque ayuda a comprender la estructura y los vínculos del entorno de aprendizaje",
+      "explicacion": "Representar el PLE de forma visual ayuda a ver su estructura: qué herramientas, fuentes y personas lo forman y cómo se relacionan. No es obligatorio ni reduce el tiempo de aprendizaje."
     },
     {
       "id": 145,
@@ -1739,7 +1883,8 @@
         "Una base de datos de ofertas de empleo",
         "Un conjunto de personas o plataformas con las que se comparte conocimiento"
       ],
-      "correct": "Un conjunto de personas o plataformas con las que se comparte conocimiento"
+      "correct": "Un conjunto de personas o plataformas con las que se comparte conocimiento",
+      "explicacion": "Una red profesional digital es el conjunto de personas, comunidades y plataformas con las que intercambias conocimiento y oportunidades. No es un software ni una base de datos de ofertas."
     }
   ]
 }
