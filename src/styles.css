@@ -95,6 +95,11 @@ h2 { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spaci
 .list-item:hover:not(:disabled) { border-color: var(--accent); }
 .list-item:active:not(:disabled) { transform: scale(.99); }
 .list-title { font-weight: 650; }
+.grow { flex: 1; min-width: 0; }
+.hero-item { margin-bottom: 10px; background: var(--accent-bg); border-color: var(--accent); color: var(--accent-2); }
+.hero-item .list-title { color: var(--text); }
+.meter.stacked { display: flex; height: 6px; margin-top: 8px; }
+.meter.stacked > div { border-radius: 0; }
 
 /* ── Stats ── */
 .stats {
@@ -135,6 +140,8 @@ input[type='range'] { width: 100%; margin-top: 12px; accent-color: var(--accent)
   font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
   background: var(--surface-2); color: var(--muted); padding: 4px 10px; border-radius: 999px;
 }
+.tag.accent { background: var(--accent-bg); color: var(--accent-2); }
+.tag.inline { display: inline-block; margin-right: 6px; vertical-align: 1px; font-size: .62rem; padding: 2px 7px; }
 .question { font-size: 1.2rem; font-weight: 650; text-transform: none; letter-spacing: 0; color: var(--text); line-height: 1.4; margin-bottom: 18px; }
 .options { display: flex; flex-direction: column; gap: 10px; }
 .option {
@@ -172,6 +179,13 @@ input[type='range'] { width: 100%; margin-top: 12px; accent-color: var(--accent)
 .ring span { font-size: .85rem; color: var(--muted); }
 .result-msg { font-size: 1.15rem; font-weight: 700; }
 .result-hero .row { width: 100%; }
+.subject-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--border); }
+.subject-row:first-of-type { border-top: none; padding-top: 0; }
+.subject-grade { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+.subject-grade strong { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1; }
+.pill { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 3px 8px; border-radius: 999px; }
+.pill.good { background: var(--good-bg); }
+.pill.bad { background: var(--bad-bg); }
 .unit-row { display: grid; grid-template-columns: 70px 1fr 48px; align-items: center; gap: 12px; padding: 6px 0; font-size: .9rem; }
 .unit-row > span:last-child { text-align: right; }
 .meter { height: 8px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }

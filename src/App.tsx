@@ -1,7 +1,7 @@
 import type { Session } from '@supabase/supabase-js'
 import { BookOpen, ChartColumn } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { flushAttempts } from './lib/store'
+import { flushAnswers, flushAttempts } from './lib/store'
 import { sb } from './lib/supabase'
 import Login from './screens/Login'
 import Metrics from './screens/Metrics'
@@ -20,7 +20,10 @@ export default function App() {
     sb.auth.getSession().then(({ data }) => setSession(data.session))
     const { data } = sb.auth.onAuthStateChange((_event, s) => {
       setSession(s)
-      if (s) flushAttempts().catch(() => {})
+      if (s) {
+        flushAnswers().catch(() => {})
+        flushAttempts().catch(() => {})
+      }
     })
     return () => data.subscription.unsubscribe()
   }, [])

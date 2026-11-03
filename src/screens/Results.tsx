@@ -1,10 +1,10 @@
 import { CircleCheck, CircleX, RotateCcw, SkipForward } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { grade, MODE_LABEL, type Answer, type Mode } from '../lib/quiz'
+import { grade, gradeBySubject, MODE_LABEL, type Answer, type Mode } from '../lib/quiz'
 
-type Props = { subject: string; mode: Mode; answers: Answer[]; onRepeat: () => void; onClose: () => void }
+type Props = { title: string; mode: Mode; review: boolean; answers: Answer[]; onRepeat: () => void; onClose: () => void }
 
-export default function Results({ subject, mode, answers, onRepeat, onClose }: Props) {
+export default function Results({ title, mode, review, answers, onRepeat, onClose }: Props) {
   const r = grade(answers, mode)
   const [onlyMistakes, setOnlyMistakes] = useState(true)
   useEffect(() => {
@@ -20,13 +20,15 @@ export default function Results({ subject, mode, answers, onRepeat, onClose }: P
     const u = units.get(a.q.unit ?? 'General') ?? { c: 0, t: 0 }
     units.set(a.q.unit ?? 'General', { c: u.c + (a.ok ? 1 : 0), t: u.t + 1 })
   }
-  const review = onlyMistakes ? answers.filter(a => !a.ok) : answers
+  const list = onlyMistakes ? answers.filter(a => !a.ok) : answers
+  const subjects = review ? gradeBySubject(answers) : []
+  const passedAll = subjects.filter(s => s.passed).length
 
   return (
     <>
       <header className="page-head">
         <p className="muted small">
-          {subject} · {MODE_LABEL[mode]}
+          {title} · {review ? 'Puntuación de examen' : MODE_LABEL[mode]}
         </p>
       </header>
 
@@ -35,7 +37,9 @@ export default function Results({ subject, mode, answers, onRepeat, onClose }: P
           <strong>{r.grade.toLocaleString('es', { maximumFractionDigits: 2 })}</strong>
           <span>/ 10</span>
         </div>
-        <p className="result-msg">{message}</p>
+        <p className="result-msg">
+          {review ? `${passedAll} de ${subjects.length} asignaturas aprobadas` : message}
+        </p>
         <div className="stats plain">
           <div>
             <strong className="good">{r.correct}</strong>
@@ -67,7 +71,29 @@ export default function Results({ subject, mode, answers, onRepeat, onClose }: P
         </div>
       </section>
 
-      {units.size > 1 && (
+      {review && (
+        <section className="card">
+          <h2>Por asignatura</h2>
+          {subjects.map(s => (
+            <div key={s.subject} className="subject-row">
+              <div>
+                <div className="list-title">{s.subject}</div>
+                <div className="muted small">
+                  {s.correct} bien · {s.wrong} mal{s.skipped > 0 && ` · ${s.skipped} sin responder`} de {s.total}
+                </div>
+              </div>
+              <div className="subject-grade">
+                <strong className={s.grade >= 7 ? 'good' : s.passed ? 'warn' : 'bad'}>
+                  {s.grade.toLocaleString('es', { maximumFractionDigits: 2 })}
+                </strong>
+                <span className={'pill ' + (s.passed ? 'good' : 'bad')}>{s.passed ? 'Aprobado' : 'Suspenso'}</span>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {!review && units.size > 1 && (
         <section className="card">
           <h2>Por unidad</h2>
           {[...units].sort(([a], [b]) => a.localeCompare(b, 'es', { numeric: true })).map(([u, s]) => {
@@ -96,9 +122,9 @@ export default function Results({ subject, mode, answers, onRepeat, onClose }: P
             Todas ({answers.length})
           </button>
         </div>
-        {review.length === 0 && <p className="muted center">Sin fallos. Nada que repasar.</p>}
+        {list.length === 0 && <p className="muted center">Sin fallos. Nada que repasar.</p>}
         <div className="list">
-          {review.map((a, i) => (
+          {list.map((a, i) => (
             <div key={i} className="review">
               <div className="review-q">
                 {a.ok ? (
@@ -108,7 +134,10 @@ export default function Results({ subject, mode, answers, onRepeat, onClose }: P
                 ) : (
                   <CircleX size={18} className="bad" />
                 )}
-                <span>{a.q.question}</span>
+                <span>
+                  {review && <span className="tag accent inline">{a.q.subject}</span>}
+                  {a.q.question}
+                </span>
               </div>
               {!a.ok && a.sel !== null && <p className="bad small">Tu respuesta: {a.sel}</p>}
               <p className="good small">Correcta: {a.q.correct}</p>

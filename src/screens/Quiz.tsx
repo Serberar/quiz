@@ -1,18 +1,20 @@
 import { Languages, SkipForward, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { MODE_LABEL, type Answer, type Mode, type Progress, type QuizQuestion } from '../lib/quiz'
+import { MODE_LABEL, type AllProgress, type Answer, type Mode, type QuizQuestion } from '../lib/quiz'
 
 type Props = {
-  subject: string
+  title: string
   mode: Mode
+  /** repaso general: muestra la asignatura de cada pregunta */
+  review: boolean
   questions: QuizQuestion[]
-  progress: Progress
-  onAnswer: (id: number, ok: boolean) => void
+  progress: AllProgress
+  onAnswer: (q: QuizQuestion, ok: boolean) => void
   onFinish: (answers: Answer[]) => void
   onExit: () => void
 }
 
-export default function Quiz({ subject, mode, questions, progress, onAnswer, onFinish, onExit }: Props) {
+export default function Quiz({ title, mode, review, questions, progress, onAnswer, onFinish, onExit }: Props) {
   const [idx, setIdx] = useState(0)
   const [answers, setAnswers] = useState<Answer[]>([])
   const [translated, setTranslated] = useState(false)
@@ -30,7 +32,7 @@ export default function Quiz({ subject, mode, questions, progress, onAnswer, onF
   function choose(opt: string) {
     if (current) return
     const ok = opt === q.correct
-    onAnswer(q.id, ok)
+    onAnswer(q, ok)
     setAnswers([...answers, { q, sel: opt, ok }])
   }
 
@@ -58,7 +60,7 @@ export default function Quiz({ subject, mode, questions, progress, onAnswer, onF
     return () => window.removeEventListener('keydown', onKey)
   })
 
-  const hist = progress[q.id]
+  const hist = progress[q.subject]?.[q.id]
   const histPct = hist && hist.c + hist.w > 0 ? Math.round((hist.c / (hist.c + hist.w)) * 100) : null
 
   return (
@@ -68,7 +70,7 @@ export default function Quiz({ subject, mode, questions, progress, onAnswer, onF
           <X size={22} />
         </button>
         <div className="quiz-title">
-          <span>{subject}</span>
+          <span>{title}</span>
           <span className="muted small">
             {MODE_LABEL[mode]} · {idx + 1}/{questions.length}
           </span>
@@ -91,8 +93,9 @@ export default function Quiz({ subject, mode, questions, progress, onAnswer, onF
       </div>
 
       <div className="meta">
+        {review && <span className="tag accent">{q.subject}</span>}
         {q.unit && <span className="tag">{q.unit}</span>}
-        {mode === 'smart' && (
+        {(mode === 'smart' || review) && (
           <span className={'small ' + (histPct === null ? 'muted' : histPct >= 80 ? 'good' : histPct >= 60 ? 'warn' : 'bad')}>
             {histPct === null ? 'Nueva' : `${histPct}% de acierto`}
           </span>

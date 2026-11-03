@@ -8,6 +8,8 @@ Aplicación web instalable (PWA) para **preparar exámenes tipo test** de DAW. L
   - **Aleatorio:** preguntas al azar.
   - **Refuerzo:** prioriza las preguntas que más fallas.
   - **Examen:** 30 preguntas; cada 3 errores restan un acierto y las preguntas sin responder no penalizan.
+- **Repaso general:** preguntas de todas las asignaturas del semestre (60 por defecto) repartidas a partes iguales, puntuadas como el examen. Al final da la nota de cada asignatura y si está aprobada o suspensa. Puede priorizar las preguntas nuevas y falladas o ser totalmente aleatorio.
+- Estado de cada pregunta: **nueva** (nunca ha salido), **fallada** (la última vez se respondió mal) o acertada. La lista de asignaturas muestra cuántas has visto y cuántas tienes falladas, y en cada asignatura puedes practicar solo las nuevas o solo las falladas.
 - Asignaturas separadas por semestre, filtro por unidades y número de preguntas configurable.
 - Traducción de las preguntas de inglés y explicación de cada respuesta.
 - **Métricas:** exámenes hechos, % de aprobados, nota media, acierto en práctica y últimos tests.
