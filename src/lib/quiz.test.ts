@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Question } from './data'
 import {
+  assess,
   buildDaily,
   buildQuiz,
   buildReview,
@@ -14,6 +15,8 @@ import {
   smartSelect,
   status,
   subjectStats,
+  unitWeights,
+  weakUnits,
   type Answer,
   type Progress,
   type QuizQuestion,
@@ -170,5 +173,49 @@ describe('racha de días', () => {
     expect(studyStreak([at(0), at(1), at(2), at(4)], new Date(NOW))).toBe(3)
     expect(studyStreak([at(1), at(2)], new Date(NOW))).toBe(2)
     expect(studyStreak([at(3)], new Date(NOW))).toBe(0)
+  })
+})
+
+describe('¿cómo voy?', () => {
+  const subj = (progress: Progress) => [{ name: 'A', total: 400, progress }]
+  it('sin estudiar: ritmo mal y veredicto no es bien', () => {
+    const r = assess(subj({}), NOW)
+    expect(r.pace).toBe('bad')
+    expect(r.finishAt).toBeNull()
+    expect(r.verdict).not.toBe('good')
+  })
+  it('buen ritmo, buena retención y sin atrasos: bien', () => {
+    let p: Progress = {}
+    // 70 nuevas esta semana (10/día > 6/día necesarias), todas acertadas hace poco
+    for (let i = 1; i <= 70; i++) p = record(p, i, true, NOW - (i % 7) * DAY / 7)
+    const r = assess(subj(p), NOW)
+    expect(r.perDay).toBe(10)
+    expect(r.pace).toBe('good')
+    expect(r.memory).toBe('good')
+    expect(r.verdict).toBe('good')
+    expect(r.finishAt).toBe(new Date(2026, 10, 3).getTime() + 33 * DAY)
+  })
+  it('muchas falladas: retención mal', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 40; i++) p = record(p, i, i % 3 === 0, NOW - DAY)
+    expect(assess(subj(p), NOW).memory).toBe('bad')
+  })
+})
+
+describe('temas flojos', () => {
+  it('el tema con más falladas pesa más y sale más entre las nuevas', () => {
+    let p: Progress = {}
+    // UT1 (1-20): 5 vistas y falladas; UT2 (21-40): 5 vistas y acertadas
+    for (let i = 1; i <= 5; i++) p = record(p, i, false, NOW - DAY)
+    for (let i = 21; i <= 25; i++) p = record(p, i, true, NOW - DAY)
+    const w = unitWeights(qs, p)
+    expect(w.get('UT1')!).toBeGreaterThan(w.get('UT2')!)
+    let ut1 = 0, ut2 = 0
+    for (let r = 0; r < 200; r++) for (const q of smartSelect(qs.filter(q => !p[q.id]), p, 5, qs)) {
+      if (q.unit === 'UT1') ut1++
+      else ut2++
+    }
+    expect(ut1).toBeGreaterThan(ut2)
+    expect(weakUnits([{ name: 'A', questions: qs, progress: p }])).toEqual([{ subject: 'A', unit: 'UT1', seen: 5, failed: 5, rate: 1 }])
   })
 })

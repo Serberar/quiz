@@ -20,7 +20,7 @@ import {
   type Mode,
   type QuizQuestion,
 } from '../lib/quiz'
-import { addAttempt, flaggedIds, loadAttempts, loadFlags, loadProgress, resetProgress, saveAnswer, setFlag, studyStreak } from '../lib/store'
+import { addAttempt, flaggedIds, loadAttempts, loadFlags, loadProgress, onFlagsChange, resetProgress, saveAnswer, setFlag, studyStreak } from '../lib/store'
 import Quiz from './Quiz'
 import Mastery from './Mastery'
 import Results from './Results'
@@ -28,7 +28,7 @@ import ReviewSetup, { REVIEW_NAME } from './ReviewSetup'
 import Ring from './Ring'
 import SubjectSetup from './SubjectSetup'
 
-const DAILY_NAME = 'Hoy'
+const DAILY_NAME = 'Sesión diaria'
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
 const tone = (g: number) => (g >= 7 ? 'good' : g >= PASS_GRADE ? 'warn' : 'bad')
 
@@ -68,6 +68,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
 
   useEffect(() => {
     fetchManifest().then(setSubjects, () => setLoadError(true))
+    return onFlagsChange(setFlags)
   }, [])
 
   useEffect(() => {
@@ -150,11 +151,11 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
   const startDaily = () =>
     startMixed('daily', (list, fresh) => {
       const make = (p: AllProgress) => buildDaily(list.map(s => ({ name: s.name, questions: s.questions, progress: p[s.name] ?? {} })))
-      begin({ title: DAILY_NAME, subtitle: 'Sesión diaria', mode: 'smart', review: true, next: true, make }, fresh)
+      begin({ title: DAILY_NAME, subtitle: `Bloque de ${BLOCK_SIZE}`, mode: 'smart', review: true, next: true, make }, fresh)
     })
 
   function flag(q: QuizQuestion, on: boolean) {
-    setFlags(setFlag(flags, q.subject, q.id, on))
+    setFlag(q.subject, q.id, on) // onFlagsChange actualiza el estado
   }
 
   function answer(q: QuizQuestion, ok: boolean) {
@@ -231,7 +232,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
           const marked = flaggedIds(flags, name)
           const make = (p: AllProgress) => {
             const pool = filterQuestions(subject.questions, p[name] ?? {}, filter, marked).filter(q => !q.unit || units.has(q.unit))
-            return buildQuiz(name, pool, p[name] ?? {}, mode, n)
+            return buildQuiz(name, pool, p[name] ?? {}, mode, n, subject.questions)
           }
           begin({ title: name, subtitle: MODE_LABEL[mode], mode, review: false, make }, all)
         }}

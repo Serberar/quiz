@@ -183,8 +183,8 @@ export async function flushFlags() {
   const pending = read<Record<string, boolean>>(FLAGS_PENDING, {})
   if (!sb || Object.keys(pending).length === 0) return
   for (const [key, on] of Object.entries(pending)) {
-    const i = key.lastIndexOf(':')
-    const row = { subject: key.slice(0, i), question_id: Number(key.slice(i + 1)) }
+    const f = parseFlag(key)
+    const row = { subject: f.subject, question_id: f.id }
     const { error } = on
       ? await sb.from('flags').upsert(row, { onConflict: 'user_id,subject,question_id', ignoreDuplicates: true })
       : await sb.from('flags').delete().eq('subject', row.subject).eq('question_id', row.question_id)
@@ -214,16 +214,31 @@ export async function loadFlags(): Promise<Set<string>> {
   }
 }
 
-export function setFlag(flags: Set<string>, subject: string, id: number, on: boolean): Set<string> {
-  const next = new Set(flags)
+const FLAGS_EVENT = 'quiz-flags'
+
+/** Avisa de cada cambio de dudosas (para que todas las pantallas muestren lo mismo). Devuelve la baja. */
+export function onFlagsChange(cb: (flags: Set<string>) => void) {
+  const handler = () => cb(new Set(read<string[]>(FLAGS, [])))
+  window.addEventListener(FLAGS_EVENT, handler)
+  return () => window.removeEventListener(FLAGS_EVENT, handler)
+}
+
+export function setFlag(subject: string, id: number, on: boolean) {
+  const next = new Set(read<string[]>(FLAGS, []))
   if (on) next.add(flagKey(subject, id))
   else next.delete(flagKey(subject, id))
   write(FLAGS, [...next])
+  window.dispatchEvent(new Event(FLAGS_EVENT))
   if (sb) {
     write(FLAGS_PENDING, { ...read<Record<string, boolean>>(FLAGS_PENDING, {}), [flagKey(subject, id)]: on })
     flushFlags().catch(() => {})
   }
-  return next
+}
+
+/** Separa una clave "asignatura:id" */
+export function parseFlag(key: string) {
+  const i = key.lastIndexOf(':')
+  return { subject: key.slice(0, i), id: Number(key.slice(i + 1)) }
 }
 
 /** Ids marcados de una asignatura */

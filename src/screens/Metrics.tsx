@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { MODE_LABEL, PASS_GRADE } from '../lib/quiz'
 import { loadAttempts, prepareSignOut, type Attempt } from '../lib/store'
 import { sb } from '../lib/supabase'
+import Flagged from './Flagged'
+import HowAmI from './HowAmI'
 
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
 const pct = (part: number, whole: number) => (whole ? Math.round((part / whole) * 100) : 0)
@@ -27,7 +29,8 @@ export default function Metrics({ email }: { email?: string }) {
   const [attempts, setAttempts] = useState<Attempt[] | null>(null)
 
   useEffect(() => {
-    loadAttempts().then(setAttempts)
+    // Los bloques diarios se guardaron como "Hoy" en la primera versión
+    loadAttempts().then(list => setAttempts(list.map(a => (a.subject === 'Hoy' ? { ...a, subject: 'Sesión diaria' } : a))))
   }, [])
 
   if (!attempts) {
@@ -44,7 +47,7 @@ export default function Metrics({ email }: { email?: string }) {
   const bySubject = [...groups]
     .map(([name, list]) => ({ name, ...summarize(list) }))
     .sort((a, b) => a.name.localeCompare(b.name))
-  const recent = attempts.slice(-15).reverse()
+  const recent = attempts.slice(-10).reverse()
 
   // Nota de cada asignatura en los repasos generales (simulacros), del más antiguo al más reciente
   const evolution = new Map<string, number[]>()
@@ -60,8 +63,10 @@ export default function Metrics({ email }: { email?: string }) {
         <h1>Métricas</h1>
       </header>
 
+      <HowAmI attempts={attempts} />
+
       {attempts.length === 0 ? (
-        <p className="muted center">Aún no has terminado ningún test. Haz uno y aquí verás tu evolución.</p>
+        <p className="muted center">Cuando termines tests aquí verás tu historial y tu evolución.</p>
       ) : (
         <>
           <div className="kpis">
@@ -169,6 +174,8 @@ export default function Metrics({ email }: { email?: string }) {
           </section>
         </>
       )}
+
+      <Flagged />
 
       {sb && (
         <section className="card account">

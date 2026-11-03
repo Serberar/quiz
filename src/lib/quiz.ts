@@ -78,14 +78,19 @@ export function filterQuestions(questions: Question[], progress: Progress, filte
   return questions.filter(q => status(progress[q.id]) === filter)
 }
 
-/** Elige n preguntas sin repetir, con más probabilidad las nunca vistas y las falladas. */
-export function smartSelect(questions: Question[], progress: Progress, n: number): Question[] {
+/**
+ * Elige n preguntas sin repetir, con más probabilidad las nunca vistas, las falladas y las de temas
+ * flojos. `all` son todas las preguntas de la asignatura, para medir los temas aunque se filtre.
+ */
+export function smartSelect(questions: Question[], progress: Progress, n: number, all: Question[] = questions): Question[] {
+  const units = unitWeights(all, progress)
   const weighted: Question[] = []
   for (const q of questions) {
     const p = progress[q.id]
     const s = status(p)
     const ratio = p && p.c + p.w ? p.w / (p.c + p.w) : 0
-    const w = s === 'new' ? 4 : s === 'failed' ? 5 + Math.round(ratio * 3) : 1 + Math.round(ratio * 3)
+    const base = s === 'new' ? 4 : s === 'failed' ? 5 + Math.round(ratio * 3) : 1 + Math.round(ratio * 3)
+    const w = Math.max(1, Math.round(base * (units.get(q.unit ?? '') ?? 1)))
     for (let i = 0; i < w; i++) weighted.push(q)
   }
   const picked = new Map<number, Question>()
@@ -96,11 +101,55 @@ export function smartSelect(questions: Question[], progress: Progress, n: number
   return [...picked.values()]
 }
 
+/**
+ * Peso de cada tema (unidad) de 1 a 3: sube con la proporción de falladas entre lo visto y,
+ * un poco, con lo que queda por ver. Así salen más los temas flojos dentro de cada asignatura.
+ */
+export function unitWeights(questions: Question[], progress: Progress) {
+  const acc = new Map<string, { total: number; seen: number; failed: number }>()
+  for (const q of questions) {
+    const u = acc.get(q.unit ?? '') ?? { total: 0, seen: 0, failed: 0 }
+    const s = status(progress[q.id])
+    acc.set(q.unit ?? '', { total: u.total + 1, seen: u.seen + (s === 'new' ? 0 : 1), failed: u.failed + (s === 'failed' ? 1 : 0) })
+  }
+  const weights = new Map<string, number>()
+  for (const [unit, u] of acc) {
+    const failRate = u.seen ? u.failed / u.seen : 0
+    weights.set(unit, 1 + failRate * 1.5 + (1 - u.seen / u.total) * 0.5)
+  }
+  return weights
+}
+
+/** Temas con más falladas (de los que se han visto al menos 5 preguntas), peor primero. */
+export function weakUnits(subjects: { name: string; questions: Question[]; progress: Progress }[], limit = 5) {
+  const rows: { subject: string; unit: string; seen: number; failed: number; rate: number }[] = []
+  for (const s of subjects) {
+    const acc = new Map<string, { seen: number; failed: number }>()
+    for (const q of s.questions) {
+      if (!q.unit) continue
+      const st = status(s.progress[q.id])
+      if (st === 'new') continue
+      const u = acc.get(q.unit) ?? { seen: 0, failed: 0 }
+      acc.set(q.unit, { seen: u.seen + 1, failed: u.failed + (st === 'failed' ? 1 : 0) })
+    }
+    for (const [unit, u] of acc) if (u.seen >= 5 && u.failed > 0) rows.push({ subject: s.name, unit, ...u, rate: u.failed / u.seen })
+  }
+  return rows.sort((a, b) => b.rate - a.rate || b.failed - a.failed).slice(0, limit)
+}
+
+/** Orden aleatorio con más probabilidad de ir antes cuanto mayor es el peso (Efraimidis-Spirakis). */
+function weightedOrder<T>(items: T[], weight: (x: T) => number): T[] {
+  return items
+    .map(x => ({ x, k: Math.log(Math.random() || Number.MIN_VALUE) / weight(x) }))
+    .sort((a, b) => b.k - a.k)
+    .map(e => e.x)
+}
+
 const toQuiz = (subject: string) => (q: Question): QuizQuestion => ({ ...q, subject, shuffled: shuffle(q.options) })
 
-export function buildQuiz(subject: string, questions: Question[], progress: Progress, mode: Mode, n: number): QuizQuestion[] {
+export function buildQuiz(subject: string, questions: Question[], progress: Progress, mode: Mode, n: number, all: Question[] = questions): QuizQuestion[] {
   const count = Math.min(mode === 'exam' ? EXAM_SIZE : n, questions.length)
-  const base = mode === 'smart' ? smartSelect(questions, progress, count) : shuffle(questions).slice(0, count)
+  const base = mode === 'smart' ? smartSelect(questions, progress, count, all) : shuffle(questions).slice(0, count)
   return base.map(toQuiz(subject))
 }
 
@@ -193,10 +242,11 @@ export function dailyPlan(subjects: { name: string; total: number; progress: Pro
 
 /** Nuevas repartidas entre asignaturas según lo que les queda y lo mal que van. */
 function pickNew(pools: Pool[], n: number, exclude: Set<string>) {
-  const unseen = pools.map(p => ({
-    pool: p,
-    qs: shuffle(p.questions.filter(q => status(p.progress[q.id]) === 'new' && !exclude.has(p.name + ':' + q.id))),
-  }))
+  const unseen = pools.map(p => {
+    const units = unitWeights(p.questions, p.progress)
+    const fresh = p.questions.filter(q => status(p.progress[q.id]) === 'new' && !exclude.has(p.name + ':' + q.id))
+    return { pool: p, qs: weightedOrder(fresh, q => units.get(q.unit ?? '') ?? 1) }
+  })
   const quota = allocate(
     unseen.map(u => ({ key: u.pool.name, weight: u.qs.length * weakness(u.pool.progress, u.pool.questions.length), cap: u.qs.length })),
     n,
@@ -214,11 +264,13 @@ export function buildDaily(pools: Pool[], now = Date.now(), size = BLOCK_SIZE): 
   const due: { q: QuizQuestion; key: number }[] = []
   for (const pool of pools) {
     const w = weakness(pool.progress, pool.questions.length)
+    const units = unitWeights(pool.questions, pool.progress)
     for (const q of pool.questions) {
       const d = dueAt(pool.progress[q.id])
       if (d === null || d > now) continue
-      // Falladas primero; luego las más atrasadas, adelantando las de asignaturas flojas
-      const key = d === 0 ? -1e15 + Math.random() : d - (w - 1) * 3 * DAY + Math.random() * DAY
+      // Falladas primero; luego las más atrasadas, adelantando las de asignaturas y temas flojos
+      const uw = units.get(q.unit ?? '') ?? 1
+      const key = d === 0 ? -1e15 + Math.random() : d - (w - 1) * 3 * DAY - (uw - 1) * 2 * DAY + Math.random() * DAY
       due.push({ q: toQuiz(pool.name)(q), key })
     }
   }
@@ -300,4 +352,46 @@ export function record(progress: Progress, id: number, ok: boolean, now = Date.n
     ? { c: p.c + 1, w: p.w, l: true, s: (p.c + p.w ? streak(p) : 0) + 1, t: now, f: first }
     : { c: p.c, w: p.w + 1, l: false, s: 0, t: now, f: first }
   return { ...progress, [id]: next }
+}
+
+export type Level = 'good' | 'warn' | 'bad'
+
+/**
+ * ¿Cómo voy? Tres indicadores con su nivel:
+ * - ritmo: nuevas al día (media de 7 días) frente a las que pide el plan,
+ * - retención: de lo visto, cuánto se acertó la última vez,
+ * - repasos atrasados: frente a lo que se hace en un día.
+ * Veredicto: bien sin ningún "mal" y como mucho un "justo"; mal con dos o más "mal".
+ */
+export function assess(subjects: { name: string; total: number; progress: Progress }[], now = Date.now()) {
+  const plan = dailyPlan(subjects, now)
+  const week = now - 7 * DAY
+  let total = 0, seen = 0, ok = 0, newWeek = 0
+  for (const s of subjects) {
+    total += s.total
+    for (const p of Object.values(s.progress)) {
+      const st = status(p)
+      if (st === 'new') continue
+      seen++
+      if (st === 'ok') ok++
+      if ((p.f ?? 0) >= week) newWeek++
+    }
+  }
+  seen = Math.min(seen, total)
+  const perDay = Math.round((newWeek / 7) * 10) / 10
+  const needed = Math.max(1, plan.newTarget)
+  const retention = seen ? ok / seen : 0
+  /** Día en que se habrá visto todo al ritmo actual (null si el ritmo es 0) */
+  const finishAt = plan.unseen === 0 ? now : perDay > 0 ? startOfDay(now) + Math.ceil(plan.unseen / perDay) * DAY : null
+  const deadline = EXAM_DATE.getTime() - NEW_BUFFER_DAYS * DAY
+
+  const pace: Level = plan.unseen === 0 || perDay >= needed ? 'good' : perDay >= needed * 0.6 ? 'warn' : 'bad'
+  const memory: Level = seen < 20 ? 'warn' : retention >= 0.75 ? 'good' : retention >= 0.6 ? 'warn' : 'bad'
+  const backlog: Level = plan.due <= needed * 2 ? 'good' : plan.due <= needed * 6 ? 'warn' : 'bad'
+  const levels = [pace, memory, backlog]
+  const bads = levels.filter(l => l === 'bad').length
+  const warns = levels.filter(l => l === 'warn').length
+  const verdict: Level = bads === 0 && warns <= 1 ? 'good' : bads >= 2 ? 'bad' : 'warn'
+
+  return { verdict, pace, memory, backlog, perDay, needed, retention, seen, total, finishAt, deadline, plan }
 }
