@@ -1,6 +1,24 @@
 import { describe, expect, it } from 'vitest'
 import type { Question } from './data'
-import { buildQuiz, buildReview, filterQuestions, grade, gradeBySubject, record, smartSelect, status, subjectStats, type Answer, type QuizQuestion } from './quiz'
+import {
+  buildDaily,
+  buildQuiz,
+  buildReview,
+  dailyPlan,
+  dueAt,
+  estimateGrade,
+  filterQuestions,
+  grade,
+  gradeBySubject,
+  record,
+  smartSelect,
+  status,
+  subjectStats,
+  type Answer,
+  type Progress,
+  type QuizQuestion,
+} from './quiz'
+import { studyStreak, type Attempt } from './store'
 
 const qs: Question[] = Array.from({ length: 40 }, (_, i) => ({
   id: i + 1,
@@ -78,10 +96,79 @@ describe('repaso general', () => {
   })
   it('nota de examen por asignatura', () => {
     const mk = (subject: string, ok: boolean, sel: string | null = ok ? 'a' : 'b'): Answer => ({ q: { ...q, subject }, sel, ok })
-    const res = gradeBySubject([mk('B', true), mk('B', false), mk('B', false), mk('B', false), mk('A', true), mk('A', false, null)])
+    const res = gradeBySubject([mk('B', true), mk('B', false), mk('B', false), mk('B', false), mk('A', true), mk('A', false, null)], 'exam')
     expect(res.map(r => [r.subject, r.grade, r.passed])).toEqual([
       ['A', 5, true],
       ['B', 0, false],
     ])
+  })
+})
+
+const DAY = 86_400_000
+const NOW = new Date(2026, 10, 3, 12).getTime()
+const EXAM = new Date(2027, 0, 28).getTime()
+
+describe('repetición espaciada', () => {
+  it('fallada toca ya; cada acierto seguido alarga el intervalo; nueva no toca', () => {
+    expect(dueAt(undefined, EXAM)).toBeNull()
+    let p = record({}, 1, false, NOW)
+    expect(dueAt(p[1], EXAM)).toBe(0)
+    p = record(p, 1, true, NOW)
+    expect(dueAt(p[1], EXAM)).toBe(NOW + DAY)
+    p = record(p, 1, true, NOW)
+    expect(dueAt(p[1], EXAM)).toBe(NOW + 3 * DAY)
+    p = record(p, 1, false, NOW)
+    expect(p[1]).toMatchObject({ c: 2, w: 2, s: 0, l: false, f: NOW })
+  })
+  it('el intervalo no pasa de la mitad del tiempo hasta el examen', () => {
+    const t = EXAM - 10 * DAY
+    expect(dueAt({ c: 9, w: 0, l: true, s: 9, t }, EXAM)).toBe(t + 5 * DAY)
+  })
+})
+
+describe('sesión diaria', () => {
+  const pool = (name: string, progress: Progress = {}) => ({ name, questions: qs, progress })
+  it('objetivo de nuevas para verlo todo 2 semanas antes del examen', () => {
+    const plan = dailyPlan([{ name: 'A', total: 40, progress: {} }], NOW)
+    expect(plan.daysLeft).toBe(86)
+    expect(plan.newTarget).toBe(1) // 40 / 72 días
+    expect(plan.due).toBe(0)
+  })
+  it('las falladas entran primero y el bloque no repite preguntas', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 5; i++) p = record(p, i, false, NOW - DAY)
+    const block = buildDaily([pool('A', p), pool('B')], NOW, 20)
+    expect(block).toHaveLength(20)
+    expect(new Set(block.map(b => b.subject + b.id)).size).toBe(20)
+    for (let i = 1; i <= 5; i++) expect(block.some(b => b.subject === 'A' && b.id === i)).toBe(true)
+  })
+  it('la asignatura que va peor recibe más nuevas', () => {
+    let good: Progress = {}
+    for (let i = 1; i <= 20; i++) for (let k = 0; k < 4; k++) good = record(good, i, true, NOW - DAY * 60)
+    let total = { A: 0, B: 0 }
+    for (let r = 0; r < 20; r++) {
+      // A va bien (pero con todo repasado), B está a cero; mismas nuevas disponibles por quitar lo visto
+      const block = buildDaily([pool('A', good), { name: 'B', questions: qs.slice(20), progress: {} }], NOW, 20)
+      for (const b of block) if (status(b.subject === 'A' ? good[b.id] : undefined) === 'new') total = { ...total, [b.subject]: total[b.subject as 'A' | 'B'] + 1 }
+    }
+    expect(total.B).toBeGreaterThan(total.A)
+  })
+})
+
+describe('nota estimada', () => {
+  it('nada visto = 0; todo bien asentado = cerca de 10', () => {
+    expect(estimateGrade({}, 40)).toBe(0)
+    let p: Progress = {}
+    for (const q of qs) for (let k = 0; k < 4; k++) p = record(p, q.id, true, NOW)
+    expect(estimateGrade(p, 40)).toBeGreaterThan(9)
+  })
+})
+
+describe('racha de días', () => {
+  const at = (d: number) => ({ created_at: new Date(NOW - d * DAY).toISOString() }) as Attempt
+  it('cuenta días seguidos hasta hoy o ayer', () => {
+    expect(studyStreak([at(0), at(1), at(2), at(4)], new Date(NOW))).toBe(3)
+    expect(studyStreak([at(1), at(2)], new Date(NOW))).toBe(2)
+    expect(studyStreak([at(3)], new Date(NOW))).toBe(0)
   })
 })

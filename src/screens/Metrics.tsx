@@ -1,7 +1,7 @@
-import { LoaderCircle, LogOut } from 'lucide-react'
+import { LoaderCircle, LogOut, TrendingDown, TrendingUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { MODE_LABEL, PASS_GRADE } from '../lib/quiz'
-import { loadAttempts, type Attempt } from '../lib/store'
+import { loadAttempts, prepareSignOut, type Attempt } from '../lib/store'
 import { sb } from '../lib/supabase'
 
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
@@ -45,6 +45,14 @@ export default function Metrics({ email }: { email?: string }) {
     .map(([name, list]) => ({ name, ...summarize(list) }))
     .sort((a, b) => a.name.localeCompare(b.name))
   const recent = attempts.slice(-15).reverse()
+
+  // Nota de cada asignatura en los repasos generales (simulacros), del más antiguo al más reciente
+  const evolution = new Map<string, number[]>()
+  for (const a of attempts) {
+    if (a.mode !== 'exam' || !a.details) continue
+    for (const d of a.details) evolution.set(d.subject, [...(evolution.get(d.subject) ?? []), d.grade])
+  }
+  const evo = [...evolution].sort(([a], [b]) => a.localeCompare(b, 'es'))
 
   return (
     <>
@@ -109,6 +117,39 @@ export default function Metrics({ email }: { email?: string }) {
             </div>
           </section>
 
+          {evo.length > 0 && (
+            <section className="card">
+              <h2>Repasos generales · nota por asignatura</h2>
+              {evo.map(([name, grades]) => {
+                const last = grades.at(-1)!
+                const diff = grades.length > 1 ? last - grades.at(-2)! : 0
+                return (
+                  <div key={name} className="subject-row">
+                    <div className="grow">
+                      <div className="list-title">{name}</div>
+                      <div className="grade-trail">
+                        {grades.slice(-6).map((g, i) => (
+                          <span key={i} className={'trail ' + tone(g)}>
+                            {fmt(g)}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="subject-grade">
+                      <strong className={tone(last)}>{fmt(last)}</strong>
+                      {diff !== 0 && (
+                        <span className={'small ' + (diff > 0 ? 'good' : 'bad')}>
+                          {diff > 0 ? <TrendingUp size={14} /> : <TrendingDown size={14} />} {diff > 0 ? '+' : ''}
+                          {fmt(diff)}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </section>
+          )}
+
           <section className="card">
             <h2>Últimos tests</h2>
             <div className="list">
@@ -132,7 +173,16 @@ export default function Metrics({ email }: { email?: string }) {
       {sb && (
         <section className="card account">
           <span className="muted small">{email}</span>
-          <button className="btn ghost" onClick={() => sb!.auth.signOut()}>
+          <button
+            className="btn ghost"
+            onClick={async () => {
+              const ok =
+                (await prepareSignOut()) ||
+                (confirm('Hay respuestas sin subir (no hay conexión). Si cierras sesión ahora se perderán. ¿Cerrar igualmente?') &&
+                  (await prepareSignOut(true)))
+              if (ok) sb!.auth.signOut()
+            }}
+          >
             <LogOut size={18} /> Cerrar sesión
           </button>
         </section>

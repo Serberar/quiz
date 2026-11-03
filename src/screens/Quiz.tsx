@@ -1,12 +1,14 @@
-import { Languages, SkipForward, X } from 'lucide-react'
+import { Flag, Flame, Languages, SkipForward, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { MODE_LABEL, type AllProgress, type Answer, type Mode, type QuizQuestion } from '../lib/quiz'
+import { MODE_LABEL, shuffle, type AllProgress, type Answer, type Mode, type QuizQuestion } from '../lib/quiz'
 
 type Props = {
   title: string
   mode: Mode
-  /** repaso general: muestra la asignatura de cada pregunta */
+  /** test con varias asignaturas: muestra la de cada pregunta */
   review: boolean
+  flags: Set<string>
+  onFlag: (q: QuizQuestion, on: boolean) => void
   questions: QuizQuestion[]
   progress: AllProgress
   onAnswer: (q: QuizQuestion, ok: boolean) => void
@@ -14,7 +16,12 @@ type Props = {
   onExit: () => void
 }
 
-export default function Quiz({ title, mode, review, questions, progress, onAnswer, onFinish, onExit }: Props) {
+/** Una fallada vuelve a salir unas preguntas después (no en examen) hasta acertarla */
+const RETRY_GAP = 4
+
+export default function Quiz({ title, mode, review, flags, onFlag, questions: initial, progress, onAnswer, onFinish, onExit }: Props) {
+  const [questions, setQuestions] = useState(initial)
+  const [before] = useState(progress) // historial al empezar: no cambia al responder
   const [idx, setIdx] = useState(0)
   const [answers, setAnswers] = useState<Answer[]>([])
   const [translated, setTranslated] = useState(false)
@@ -34,10 +41,14 @@ export default function Quiz({ title, mode, review, questions, progress, onAnswe
     const ok = opt === q.correct
     onAnswer(q, ok)
     setAnswers([...answers, { q, sel: opt, ok }])
+    if (!ok && mode !== 'exam') {
+      const at = Math.min(questions.length, idx + 1 + RETRY_GAP)
+      setQuestions([...questions.slice(0, at), { ...q, retry: true, shuffled: shuffle(q.options) }, ...questions.slice(at)])
+    }
   }
 
   function advance(list: Answer[]) {
-    if (isLast) return onFinish(list)
+    if (isLast) return onFinish(list.filter(a => !a.q.retry)) // las repeticiones no cuentan para la nota
     setAnswers(list)
     setIdx(idx + 1)
     setTranslated(false)
@@ -60,7 +71,12 @@ export default function Quiz({ title, mode, review, questions, progress, onAnswe
     return () => window.removeEventListener('keydown', onKey)
   })
 
-  const hist = progress[q.subject]?.[q.id]
+  const flagged = flags.has(q.subject + ':' + q.id)
+  const position = questions.slice(0, idx + 1).filter(x => !x.retry).length
+  const pendingRetries = questions.slice(idx + 1).filter(x => x.retry).length
+  let combo = 0
+  for (let i = answers.length - 1; i >= 0 && answers[i].ok; i--) combo++
+  const hist = before[q.subject]?.[q.id]
   const histPct = hist && hist.c + hist.w > 0 ? Math.round((hist.c / (hist.c + hist.w)) * 100) : null
 
   return (
@@ -72,9 +88,19 @@ export default function Quiz({ title, mode, review, questions, progress, onAnswe
         <div className="quiz-title">
           <span>{title}</span>
           <span className="muted small">
-            {MODE_LABEL[mode]} · {idx + 1}/{questions.length}
+            {MODE_LABEL[mode]} · {Math.min(position, initial.length)}/{initial.length}
+            {pendingRetries > 0 && ` · +${pendingRetries} para repetir`}
           </span>
         </div>
+        <button
+          className={'icon-btn' + (flagged ? ' active warn' : '')}
+          onClick={() => onFlag(q, !flagged)}
+          aria-label={flagged ? 'Quitar marca de dudosa' : 'Marcar como dudosa'}
+          aria-pressed={flagged}
+          title={flagged ? 'Quitar marca de dudosa' : 'Marcar como dudosa (para revisarla)'}
+        >
+          <Flag size={19} />
+        </button>
         {q.traduccion ? (
           <button
             className={'icon-btn' + (translated ? ' active' : '')}
@@ -93,9 +119,16 @@ export default function Quiz({ title, mode, review, questions, progress, onAnswe
       </div>
 
       <div className="meta">
+        {combo >= 3 && (
+          <span className="combo" key={combo}>
+            <Flame size={14} /> {combo} seguidas
+          </span>
+        )}
         {review && <span className="tag accent">{q.subject}</span>}
         {q.unit && <span className="tag">{q.unit}</span>}
-        {(mode === 'smart' || review) && (
+        {q.retry ? (
+          <span className="small warn">Fallada antes · otra vez</span>
+        ) : (mode === 'smart' || review) && (
           <span className={'small ' + (histPct === null ? 'muted' : histPct >= 80 ? 'good' : histPct >= 60 ? 'warn' : 'bad')}>
             {histPct === null ? 'Nueva' : `${histPct}% de acierto`}
           </span>

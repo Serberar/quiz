@@ -16,6 +16,8 @@ export type Attempt = {
   skipped: number
   grade: number
   created_at: string
+  /** nota de cada asignatura en tests mixtos */
+  details?: { subject: string; total: number; correct: number; wrong: number; skipped: number; grade: number }[] | null
 }
 
 type PendingAnswer = { id: string; subject: string; question_id: number; ok: boolean; created_at: string }
@@ -25,6 +27,9 @@ const LEGACY_DIRTY = 'quiz_dirty' // versión anterior: asignaturas con progreso
 const OUTBOX = 'quiz_outbox'
 const ATTEMPTS = 'quiz_attempts'
 const UNSYNCED = 'quiz_unsynced'
+const FLAGS = 'quiz_flags'
+const FLAGS_PENDING = 'quiz_flags_pending'
+const PAGE = 1000
 
 function read<T>(key: string, fallback: T): T {
   try {
@@ -73,19 +78,28 @@ export async function loadProgress(subject: string): Promise<Progress> {
     await flushAnswers().catch(() => {}) // si falla, lo pendiente se suma abajo desde la cola
     const [base, stats] = await Promise.all([
       sb.from('progress').select('data').eq('subject', subject).maybeSingle(),
-      sb.from('question_stats').select('question_id,c,w,l').eq('subject', subject),
+      // Una fila por pregunta: cabe en el límite de 1000 filas de Supabase (la mayor asignatura tiene 540)
+      sb.from('question_stats').select('question_id,c,w,l,s,t,f').eq('subject', subject),
     ])
     if (base.error) throw base.error
     if (stats.error) throw stats.error
 
     const progress: Progress = { ...((base.data?.data as Progress | undefined) ?? {}) }
-    for (const s of stats.data as { question_id: number; c: number; w: number; l: boolean }[]) {
-      const p: QStat = progress[s.question_id] ?? { c: 0, w: 0 }
-      progress[s.question_id] = { c: p.c + s.c, w: p.w + s.w, l: s.l }
+    type Row = { question_id: number; c: number; w: number; l: boolean; s: number; t: string; f: string }
+    for (const r of stats.data as Row[]) {
+      const p: QStat | undefined = progress[r.question_id]
+      progress[r.question_id] = {
+        c: (p?.c ?? 0) + r.c,
+        w: (p?.w ?? 0) + r.w,
+        l: r.l,
+        s: r.s,
+        t: Date.parse(r.t),
+        f: p && p.c + p.w > 0 ? 0 : Date.parse(r.f), // vista antes de guardarse respuestas: antigua
+      }
     }
     // Lo que aún no se ha podido subir (sin conexión) se suma encima
     let merged = progress
-    for (const a of pendingFor(subject)) merged = record(merged, a.question_id, a.ok)
+    for (const a of pendingFor(subject)) merged = record(merged, a.question_id, a.ok, Date.parse(a.created_at))
     write(progressKey(subject), merged)
     return merged
   } catch {
@@ -141,14 +155,108 @@ export async function loadAttempts(): Promise<Attempt[]> {
   if (!sb) return local
   try {
     await flushAttempts()
-    const { data, error } = await sb
-      .from('attempts')
-      .select('id,subject,mode,total,correct,wrong,skipped,grade,created_at')
-      .order('created_at')
-    if (error) throw error
+    // Supabase devuelve como mucho 1000 filas por consulta: se pide por páginas
+    const rows: Attempt[] = []
+    for (let from = 0; ; from += PAGE) {
+      const { data, error } = await sb
+        .from('attempts')
+        .select('id,subject,mode,total,correct,wrong,skipped,grade,created_at,details')
+        .order('created_at')
+        .order('id')
+        .range(from, from + PAGE - 1)
+      if (error) throw error
+      rows.push(...(data as Attempt[]))
+      if (data.length < PAGE) break
+    }
     // grade es numeric en Postgres: se normaliza a number
-    return data.map(a => ({ ...a, grade: Number(a.grade) }) as Attempt)
+    return rows.map(a => ({ ...a, grade: Number(a.grade) }))
   } catch {
     return local
   }
+}
+
+// Dudosas. Clave "asignatura:id". Los cambios sin subir se guardan aparte y se aplican encima
+// de lo que diga el servidor hasta que se suben.
+const flagKey = (subject: string, id: number) => subject + ':' + id
+
+export async function flushFlags() {
+  const pending = read<Record<string, boolean>>(FLAGS_PENDING, {})
+  if (!sb || Object.keys(pending).length === 0) return
+  for (const [key, on] of Object.entries(pending)) {
+    const i = key.lastIndexOf(':')
+    const row = { subject: key.slice(0, i), question_id: Number(key.slice(i + 1)) }
+    const { error } = on
+      ? await sb.from('flags').upsert(row, { onConflict: 'user_id,subject,question_id', ignoreDuplicates: true })
+      : await sb.from('flags').delete().eq('subject', row.subject).eq('question_id', row.question_id)
+    if (error) throw error
+    const left = read<Record<string, boolean>>(FLAGS_PENDING, {})
+    if (left[key] === on) delete left[key] // si se ha vuelto a cambiar mientras tanto, se queda
+    write(FLAGS_PENDING, left)
+  }
+}
+
+export async function loadFlags(): Promise<Set<string>> {
+  const local = new Set(read<string[]>(FLAGS, []))
+  if (!sb) return local
+  try {
+    await flushFlags().catch(() => {})
+    const { data, error } = await sb.from('flags').select('subject,question_id')
+    if (error) throw error
+    const set = new Set(data.map(r => flagKey(r.subject, r.question_id)))
+    for (const [key, on] of Object.entries(read<Record<string, boolean>>(FLAGS_PENDING, {}))) {
+      if (on) set.add(key)
+      else set.delete(key)
+    }
+    write(FLAGS, [...set])
+    return set
+  } catch {
+    return local
+  }
+}
+
+export function setFlag(flags: Set<string>, subject: string, id: number, on: boolean): Set<string> {
+  const next = new Set(flags)
+  if (on) next.add(flagKey(subject, id))
+  else next.delete(flagKey(subject, id))
+  write(FLAGS, [...next])
+  if (sb) {
+    write(FLAGS_PENDING, { ...read<Record<string, boolean>>(FLAGS_PENDING, {}), [flagKey(subject, id)]: on })
+    flushFlags().catch(() => {})
+  }
+  return next
+}
+
+/** Ids marcados de una asignatura */
+export function flaggedIds(flags: Set<string>, subject: string) {
+  const ids = new Set<number>()
+  for (const key of flags) if (key.startsWith(subject + ':')) ids.add(Number(key.slice(subject.length + 1)))
+  return ids
+}
+
+/** Días seguidos con algún test terminado, contando hasta hoy (o hasta ayer si hoy aún no). */
+export function studyStreak(attempts: Attempt[], now = new Date()) {
+  const days = new Set(attempts.map(a => new Date(a.created_at).toDateString()))
+  const d = new Date(now)
+  if (!days.has(d.toDateString())) d.setDate(d.getDate() - 1)
+  let n = 0
+  while (days.has(d.toDateString())) {
+    n++
+    d.setDate(d.getDate() - 1)
+  }
+  return n
+}
+
+/**
+ * Antes de cerrar sesión: sube lo pendiente y borra los datos locales, para que otra cuenta en
+ * este navegador no herede (ni suba) el progreso. Devuelve false si queda algo sin subir.
+ */
+export async function prepareSignOut(force = false) {
+  try {
+    await Promise.all([flushAnswers(), flushAttempts(), flushFlags()])
+    for (const subject of read<string[]>(LEGACY_DIRTY, [])) await uploadLegacy(subject)
+  } catch {
+    if (!force) return false
+  }
+  for (const key of Object.keys(localStorage)) if (key.startsWith('quiz_') && key !== 'quiz_semester') localStorage.removeItem(key)
+  return true
 }

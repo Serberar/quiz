@@ -14,8 +14,8 @@ export default defineConfig({
         short_name: 'Quiz DAW',
         description: 'Tests de práctica para DAW',
         lang: 'es',
-        theme_color: '#0b1020',
-        background_color: '#0b1020',
+        theme_color: '#070a18',
+        background_color: '#070a18',
         display: 'standalone',
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
@@ -29,6 +29,12 @@ export default defineConfig({
             urlPattern: /\/data\/.*\.json$/,
             handler: 'NetworkFirst',
             options: { cacheName: 'quiz-data', networkTimeoutSeconds: 4 },
+          },
+          {
+            // Tipografía: se guarda la primera vez para que funcione sin conexión
+            urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\/.*/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'fonts', cacheableResponse: { statuses: [0, 200] }, expiration: { maxEntries: 20 } },
           },
         ],
       },

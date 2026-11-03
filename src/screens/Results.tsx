@@ -1,10 +1,22 @@
-import { CircleCheck, CircleX, RotateCcw, SkipForward } from 'lucide-react'
+import { ChevronRight, CircleCheck, CircleX, RotateCcw, SkipForward } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { grade, gradeBySubject, MODE_LABEL, type Answer, type Mode } from '../lib/quiz'
+import { grade, gradeBySubject, type Answer, type Mode } from '../lib/quiz'
+import Ring from './Ring'
 
-type Props = { title: string; mode: Mode; review: boolean; answers: Answer[]; onRepeat: () => void; onClose: () => void }
+type Props = {
+  title: string
+  subtitle: string
+  mode: Mode
+  /** test con varias asignaturas: nota de cada una */
+  review: boolean
+  /** sesión diaria: "Repetir" pasa a ser "Siguiente bloque" */
+  next?: boolean
+  answers: Answer[]
+  onRepeat: () => void
+  onClose: () => void
+}
 
-export default function Results({ title, mode, review, answers, onRepeat, onClose }: Props) {
+export default function Results({ title, subtitle, mode, review, next, answers, onRepeat, onClose }: Props) {
   const r = grade(answers, mode)
   const [onlyMistakes, setOnlyMistakes] = useState(true)
   useEffect(() => {
@@ -21,24 +33,25 @@ export default function Results({ title, mode, review, answers, onRepeat, onClos
     units.set(a.q.unit ?? 'General', { c: u.c + (a.ok ? 1 : 0), t: u.t + 1 })
   }
   const list = onlyMistakes ? answers.filter(a => !a.ok) : answers
-  const subjects = review ? gradeBySubject(answers) : []
+  const exam = mode === 'exam'
+  const subjects = review ? gradeBySubject(answers, mode) : []
   const passedAll = subjects.filter(s => s.passed).length
 
   return (
     <>
       <header className="page-head">
         <p className="muted small">
-          {title} · {review ? 'Puntuación de examen' : MODE_LABEL[mode]}
+          {title} · {subtitle}
         </p>
       </header>
 
       <section className="card result-hero">
-        <div className={'ring ' + color}>
+        <Ring value={r.grade / 10} tone={color} size={148}>
           <strong>{r.grade.toLocaleString('es', { maximumFractionDigits: 2 })}</strong>
           <span>/ 10</span>
-        </div>
+        </Ring>
         <p className="result-msg">
-          {review ? `${passedAll} de ${subjects.length} asignaturas aprobadas` : message}
+          {review && exam ? `${passedAll} de ${subjects.length} asignaturas aprobadas` : message}
         </p>
         <div className="stats plain">
           <div>
@@ -62,12 +75,25 @@ export default function Results({ title, mode, review, answers, onRepeat, onClos
           </p>
         )}
         <div className="row gap">
-          <button className="btn ghost" onClick={onRepeat}>
-            <RotateCcw size={18} /> Repetir
-          </button>
-          <button className="btn primary" onClick={onClose}>
-            Terminar
-          </button>
+          {next ? (
+            <>
+              <button className="btn ghost" onClick={onClose}>
+                Terminar
+              </button>
+              <button className="btn primary" onClick={onRepeat}>
+                Siguiente bloque <ChevronRight size={18} />
+              </button>
+            </>
+          ) : (
+            <>
+              <button className="btn ghost" onClick={onRepeat}>
+                <RotateCcw size={18} /> Repetir
+              </button>
+              <button className="btn primary" onClick={onClose}>
+                Terminar
+              </button>
+            </>
+          )}
         </div>
       </section>
 
@@ -86,7 +112,7 @@ export default function Results({ title, mode, review, answers, onRepeat, onClos
                 <strong className={s.grade >= 7 ? 'good' : s.passed ? 'warn' : 'bad'}>
                   {s.grade.toLocaleString('es', { maximumFractionDigits: 2 })}
                 </strong>
-                <span className={'pill ' + (s.passed ? 'good' : 'bad')}>{s.passed ? 'Aprobado' : 'Suspenso'}</span>
+                {exam && <span className={'pill ' + (s.passed ? 'good' : 'bad')}>{s.passed ? 'Aprobado' : 'Suspenso'}</span>}
               </div>
             </div>
           ))}
