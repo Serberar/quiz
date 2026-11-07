@@ -30,7 +30,7 @@ export default function ReviewSetup({
   }
 
   return (
-    <>
+    <div className="setup">
       <header className="page-head with-back">
         <button className="icon-btn" onClick={onBack} aria-label="Volver">
           <ChevronLeft size={24} />
@@ -97,7 +97,7 @@ export default function ReviewSetup({
       <button className="btn primary sticky" disabled={loading} onClick={() => onStart(count, prioritize)}>
         {loading ? <LoaderCircle className="spin" size={20} /> : `Empezar · ${count} preguntas`}
       </button>
-    </>
+    </div>
   )
 }
 

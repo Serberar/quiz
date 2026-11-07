@@ -175,6 +175,10 @@ export default function Quiz({ title, mode, review, flags, onFlag, questions: in
           )
         )}
       </div>
+
+      <p className="kbd-hint muted small">
+        <kbd>1</kbd>–<kbd>4</kbd> responder · <kbd>Enter</kbd> siguiente · <kbd>Esc</kbd> salir
+      </p>
     </div>
   )
 }

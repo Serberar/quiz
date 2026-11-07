@@ -32,15 +32,22 @@ export default function App() {
   if (sb && !session) return <Login />
 
   return (
+    <>
     <div className={'app' + (immersive ? '' : ' with-tabs')}>
       {/* Practice se mantiene montado para no perder la asignatura elegida al cambiar de pestaña */}
       <div hidden={tab !== 'practice'}>
         <Practice onImmersive={setImmersive} />
       </div>
       {tab === 'metrics' && <Metrics email={session?.user.email} />}
+    </div>
 
+      {/* Fuera de .app: su animación usa transform y anclaría la barra fija al contenedor */}
       {!immersive && (
         <nav className="tabbar">
+          <div className="brand">
+            <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="" />
+            <span>Quiz DAW</span>
+          </div>
           <button className={tab === 'practice' ? 'active' : ''} onClick={() => setTab('practice')}>
             <BookOpen size={22} />
             <span>Practicar</span>
@@ -51,6 +58,6 @@ export default function App() {
           </button>
         </nav>
       )}
-    </div>
+    </>
   )
 }

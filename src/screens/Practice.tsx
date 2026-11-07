@@ -358,7 +358,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
       )}
 
       {visible.length > 0 && <h2 className="section-title">Practicar una asignatura</h2>}
-      <div className="list">
+      <div className="list subjects">
         {visible.map(s => {
           const sum = progressSummary(all[s.name] ?? {}, s.count)
           return (
