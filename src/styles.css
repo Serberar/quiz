@@ -482,7 +482,6 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   .results-top { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; margin-bottom: 24px; }
   .results-top > .card { margin-top: 0; }
   .results-top > .card:only-child { grid-column: 1 / -1; }
-  .results-top + section .list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
   /* Métricas */
   .kpis { grid-template-columns: repeat(4, 1fr); gap: 18px; }
