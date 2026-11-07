@@ -155,6 +155,15 @@ describe('sesión diaria', () => {
     expect(fresh).toBe(10)
     expect(block.length - fresh).toBe(10)
   })
+  it('las nuevas avanzan por temas en orden y el bloque va agrupado por tema', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 15; i++) p = record(p, i, true, NOW) // UT1 casi vista
+    const block = buildDaily([pool('A', p)], NOW, 20)
+    const fresh = block.filter(b => status(p[b.id]) === 'new')
+    expect(fresh.filter(b => b.unit === 'UT1').length).toBe(5) // primero se acaba UT1
+    const units = block.map(b => b.unit)
+    expect(units).toEqual([...units].sort())
+  })
   it('la asignatura que va peor recibe más nuevas', () => {
     let good: Progress = {}
     for (let i = 1; i <= 20; i++) for (let k = 0; k < 4; k++) good = record(good, i, true, NOW - DAY * 60)

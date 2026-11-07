@@ -139,12 +139,16 @@ export function weakUnits(subjects: { name: string; questions: Question[]; progr
   return rows.sort((a, b) => b.rate - a.rate || b.failed - a.failed).slice(0, limit)
 }
 
-/** Orden aleatorio con más probabilidad de ir antes cuanto mayor es el peso (Efraimidis-Spirakis). */
-function weightedOrder<T>(items: T[], weight: (x: T) => number): T[] {
-  return items
-    .map(x => ({ x, k: Math.log(Math.random() || Number.MIN_VALUE) / weight(x) }))
-    .sort((a, b) => b.k - a.k)
-    .map(e => e.x)
+/** Posición de cada tema en el temario (orden en que aparece en la asignatura). */
+function unitOrder(questions: Question[]) {
+  const order = new Map<string, number>()
+  for (const q of questions) if (!order.has(q.unit ?? '')) order.set(q.unit ?? '', order.size)
+  return order
+}
+
+/** Ordena por tema según el temario; dentro de cada tema, al azar. */
+function byUnit<T>(items: T[], unitIndex: (x: T) => number): T[] {
+  return shuffle(items).sort((a, b) => unitIndex(a) - unitIndex(b))
 }
 
 const toQuiz = (subject: string) => (q: Question): QuizQuestion => ({ ...q, subject, shuffled: shuffle(q.options) })
@@ -260,12 +264,15 @@ export function expectedProgress(firstAt: number | null, now = Date.now()) {
   return Math.min(1, Math.max(0, (startOfDay(now) + DAY - start) / (end - start)))
 }
 
-/** Nuevas repartidas entre asignaturas según lo que les queda y lo mal que van. */
+/**
+ * Nuevas repartidas entre asignaturas según lo que les queda y lo mal que van. Dentro de cada
+ * asignatura se avanza tema a tema, en el orden del temario.
+ */
 function pickNew(pools: Pool[], n: number, exclude: Set<string>) {
   const unseen = pools.map(p => {
-    const units = unitWeights(p.questions, p.progress)
+    const order = unitOrder(p.questions)
     const fresh = p.questions.filter(q => status(p.progress[q.id]) === 'new' && !exclude.has(p.name + ':' + q.id))
-    return { pool: p, qs: weightedOrder(fresh, q => units.get(q.unit ?? '') ?? 1) }
+    return { pool: p, qs: byUnit(fresh, q => order.get(q.unit ?? '')!) }
   })
   const quota = allocate(
     unseen.map(u => ({ key: u.pool.name, weight: u.qs.length * weakness(u.pool.progress, u.pool.questions.length), cap: u.qs.length })),
@@ -317,7 +324,13 @@ export function buildDaily(pools: Pool[], now = Date.now(), size = BLOCK_SIZE): 
       .sort((a, b) => a.key - b.key)
     add(rest.slice(0, size - block.length).map(r => r.q))
   }
-  return shuffle(block)
+  // Agrupadas por asignatura y tema (repasos junto a las nuevas del mismo tema) para no saltar de un tema a otro
+  const subjects = new Map(pools.map((p, i) => [p.name, { i, order: unitOrder(p.questions) }]))
+  const pos = (q: QuizQuestion) => {
+    const s = subjects.get(q.subject)!
+    return s.i * 1e4 + s.order.get(q.unit ?? '')!
+  }
+  return byUnit(block, pos)
 }
 
 /** Nota sobre 10. En examen cada 3 fallos restan un acierto y las saltadas no penalizan. */
