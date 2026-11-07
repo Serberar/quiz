@@ -240,6 +240,18 @@ export function dailyPlan(subjects: { name: string; total: number; progress: Pro
   return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, daysLeft: daysUntilExam(now) }
 }
 
+/**
+ * Parte del temario que debería estar ya dominada para acabarlo NEW_BUFFER_DAYS antes del examen,
+ * a ritmo constante desde el primer día de estudio (contando hoy). null si aún no se ha empezado.
+ */
+export function expectedProgress(firstAt: number | null, now = Date.now()) {
+  if (firstAt === null) return null
+  const start = startOfDay(firstAt)
+  const end = EXAM_DATE.getTime() - NEW_BUFFER_DAYS * DAY
+  if (end <= start) return 1
+  return Math.min(1, Math.max(0, (startOfDay(now) + DAY - start) / (end - start)))
+}
+
 /** Nuevas repartidas entre asignaturas según lo que les queda y lo mal que van. */
 function pickNew(pools: Pool[], n: number, exclude: Set<string>) {
   const unseen = pools.map(p => {

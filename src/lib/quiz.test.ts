@@ -7,7 +7,9 @@ import {
   buildReview,
   dailyPlan,
   dueAt,
+  EXAM_DATE,
   estimateGrade,
+  expectedProgress,
   filterQuestions,
   grade,
   gradeBySubject,
@@ -163,6 +165,17 @@ describe('sesión diaria', () => {
       for (const b of block) if (status(b.subject === 'A' ? good[b.id] : undefined) === 'new') total = { ...total, [b.subject]: total[b.subject as 'A' | 'B'] + 1 }
     }
     expect(total.B).toBeGreaterThan(total.A)
+  })
+})
+
+describe('ritmo esperado', () => {
+  it('sube a ritmo constante hasta 2 semanas antes del examen', () => {
+    const end = EXAM_DATE.getTime() - 14 * DAY
+    const start = end - 100 * DAY
+    expect(expectedProgress(null, start)).toBeNull()
+    expect(expectedProgress(start, start)).toBeCloseTo(0.01)
+    expect(expectedProgress(start, start + 49 * DAY)).toBeCloseTo(0.5)
+    expect(expectedProgress(start, end + 5 * DAY)).toBe(1)
   })
 })
 

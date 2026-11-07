@@ -7,6 +7,7 @@ import {
   buildQuiz,
   buildReview,
   dailyPlan,
+  expectedProgress,
   EXAM_DATE,
   filterQuestions,
   grade,
@@ -254,13 +255,16 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
 
   const plan = dailyPlan(visible.map(s => ({ name: s.name, total: s.count, progress: all[s.name] ?? {} })))
   const goalDone = plan.due === 0 && plan.newLeft === 0
-  let semTotal = 0, semOk = 0
+  let semTotal = 0, semOk = 0, firstAt: number | null = null
   for (const s of visible) {
-    const sum = progressSummary(all[s.name] ?? {}, s.count)
+    const p = all[s.name] ?? {}
+    const sum = progressSummary(p, s.count)
     semTotal += sum.total
     semOk += sum.ok
+    for (const q of Object.values(p)) if (q.f && (firstAt === null || q.f < firstAt)) firstAt = q.f
   }
   const mastery = semTotal ? semOk / semTotal : 0
+  const expected = expectedProgress(firstAt)
 
   return (
     <>
@@ -326,6 +330,13 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
               </div>
             </div>
           </div>
+          {expected !== null && (
+            <p className="small">
+              Llevas un <strong>{Math.round(mastery * 100)}%</strong>; para verlo todo antes del examen deberías llevar un{' '}
+              <strong className={mastery >= expected ? 'good' : 'warn'}>{Math.ceil(expected * 100)}%</strong>
+              {mastery >= expected ? '. Vas al día.' : '.'}
+            </p>
+          )}
           <p className="muted small">
             {goalDone
               ? '¡Objetivo de hoy cumplido! Si quieres seguir, la app te adelanta temario de lo que peor llevas.'
