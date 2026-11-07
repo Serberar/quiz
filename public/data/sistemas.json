@@ -7021,6 +7021,123 @@
       ],
       "correct": "Actualizar la documentación publicada en cada cambio aprobado mediante pipelines CI/CD",
       "explicacion": "Con generadores estáticos (MkDocs, Jekyll, Hugo) y CI/CD la documentación publicada se mantiene sincronizada."
+    },
+    {
+      "id": 541,
+      "unit": "UT1",
+      "question": "¿Qué opción del UEFI conviene evaluar habilitar para mejorar el rendimiento de una GPU moderna con drivers actualizados?",
+      "options": [
+        "Modo IDE en SATA",
+        "CSM / Legacy Boot",
+        "Above 4G Decoding / Resizable BAR",
+        "Fast Boot desactivado"
+      ],
+      "correct": "Above 4G Decoding / Resizable BAR",
+      "explicacion": "Above 4G Decoding y Resizable BAR permiten a la CPU acceder a toda la memoria de vídeo de la GPU de una vez, lo que mejora el rendimiento. CSM/Legacy y el modo IDE son opciones de compatibilidad antigua, no de rendimiento."
+    },
+    {
+      "id": 542,
+      "unit": "UT1",
+      "question": "¿Para qué sirve habilitar VT-d/IOMMU en el UEFI?",
+      "options": [
+        "Para subir la frecuencia de la memoria RAM",
+        "Para controlar la velocidad de los ventiladores",
+        "Para arrancar desde unidades USB",
+        "Para aislar dispositivos y mejorar la estabilidad de máquinas virtuales y contenedores"
+      ],
+      "correct": "Para aislar dispositivos y mejorar la estabilidad de máquinas virtuales y contenedores",
+      "explicacion": "VT-d/IOMMU es virtualización segura de E/S: aísla los dispositivos y permite asignarlos a VMs, mejorando estabilidad y seguridad. La RAM se ajusta con XMP/EXPO y los ventiladores con curvas."
+    },
+    {
+      "id": 543,
+      "unit": "UT1",
+      "question": "¿Qué función del firmware UEFI permite equilibrar temperatura y ruido del equipo?",
+      "options": [
+        "El perfil XMP/EXPO",
+        "El control de ventiladores por curva y sensor",
+        "El orden de arranque",
+        "Secure Boot"
+      ],
+      "correct": "El control de ventiladores por curva y sensor",
+      "explicacion": "Las curvas de ventilación ajustan las RPM de cada ventilador según la temperatura de un sensor, buscando un control térmico y acústico equilibrado. XMP/EXPO es para la RAM y Secure Boot para seguridad de arranque."
+    },
+    {
+      "id": 544,
+      "unit": "UT1",
+      "question": "¿Qué conexión ofrece 40 Gbps y se usa para eGPU, monitores y almacenamiento NVMe externo?",
+      "options": [
+        "HDMI 1.4",
+        "SATA III",
+        "Thunderbolt 3/4",
+        "USB 2.0"
+      ],
+      "correct": "Thunderbolt 3/4",
+      "explicacion": "Thunderbolt 3/4 alcanza 40 Gbps, suficiente para GPU externas, monitores y discos NVMe. USB 3.2 Gen1/2 va de 5 a 20 Gbps, USB 2.0 a 480 Mbps y SATA III a 6 Gbps."
+    },
+    {
+      "id": 545,
+      "unit": "UT1",
+      "question": "¿Qué velocidades cubren las versiones USB 3.2 Gen1/2 y USB4 según el temario?",
+      "options": [
+        "1/2/4 Gbps",
+        "5/10/20/40 Gbps",
+        "480 Mbps fijos",
+        "100/200 Mbps"
+      ],
+      "correct": "5/10/20/40 Gbps",
+      "explicacion": "USB 3.2 Gen1 da 5 Gbps, Gen2 10 Gbps, Gen2x2 20 Gbps y USB4 hasta 40 Gbps. Se usan para almacenamiento externo, docks y vídeo."
+    },
+    {
+      "id": 546,
+      "unit": "UT1",
+      "question": "Según la recomendación práctica de periféricos, ¿qué tipo de impresora conviene para volumen y cuál para color?",
+      "options": [
+        "Matricial para volumen; láser para color",
+        "Térmica para ambos",
+        "Láser para volumen; inyección para color",
+        "Inyección para volumen; láser para color"
+      ],
+      "correct": "Láser para volumen; inyección para color",
+      "explicacion": "La impresora láser es más rápida y barata por página en grandes volúmenes; la de inyección de tinta da mejor calidad en color y fotografía."
+    },
+    {
+      "id": 547,
+      "unit": "UT1",
+      "question": "¿Qué monitor se recomienda como opción general según la tabla de periféricos del tema?",
+      "options": [
+        "19\" 720p TN",
+        "15\" 1080p VA",
+        "32\" 8K OLED para todo uso",
+        "27\" 1440p IPS (4K para diseño)"
+      ],
+      "correct": "27\" 1440p IPS (4K para diseño)",
+      "explicacion": "La recomendación práctica es un 27\" 1440p con panel IPS para uso general, y 4K cuando se trabaja en diseño, por la mayor resolución y fidelidad de color."
+    },
+    {
+      "id": 548,
+      "unit": "UT1",
+      "question": "¿Qué medida de seguridad reduce la carga de código no confiable en documentos de oficina?",
+      "options": [
+        "Compartir los documentos por correo",
+        "Limitar las macros y abrir los documentos en vista protegida",
+        "Guardar los documentos en el escritorio",
+        "Desactivar el antivirus al abrir documentos"
+      ],
+      "correct": "Limitar las macros y abrir los documentos en vista protegida",
+      "explicacion": "Las macros pueden ejecutar código malicioso. Restringirlas y usar la vista protegida evita que un documento ejecute código no confiable al abrirse."
+    },
+    {
+      "id": 549,
+      "unit": "UT1",
+      "question": "Al cerrar el montaje con un sanity check (SMART, pase corto de Memtest86, ruido/vibraciones), ¿qué se hace con los resultados?",
+      "options": [
+        "Se borran si no hay errores",
+        "Se envían al fabricante",
+        "Se anotan los hallazgos y se deja el equipo listo para configurar el firmware",
+        "Se ignoran hasta que haya una avería"
+      ],
+      "correct": "Se anotan los hallazgos y se deja el equipo listo para configurar el firmware",
+      "explicacion": "Documentar los hallazgos del sanity check crea trazabilidad y línea base; después se pasa a la configuración fina del UEFI y luego al sistema operativo."
     }
   ]
 }
