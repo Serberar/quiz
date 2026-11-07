@@ -452,19 +452,27 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   .chip { padding: 8px 16px; font-size: .9rem; }
   .btn.sticky { position: static; min-height: 60px; font-size: 1.1rem; }
 
-  /* Test */
-  .app:not(.with-tabs) { max-width: 940px; }
+  /* Test: pantalla completa partida, pregunta a la izquierda y opciones a la derecha */
+  .app:not(.with-tabs) { max-width: 1320px; padding-top: 32px; padding-bottom: 32px; }
   .quiz {
+    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(360px, 1fr); column-gap: 48px;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    min-height: calc(100dvh - 64px);
     background: var(--surface); border: 1px solid var(--border); border-radius: 28px;
-    padding: 28px 40px 32px; box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+    padding: 28px 44px 32px; box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
     backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
   }
-  .question { font-size: 1.6rem; line-height: 1.35; margin: 4px 0 26px; }
-  .options { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .option { padding: 18px; min-height: 76px; font-size: 1.02rem; }
-  .quiz-actions { position: static; display: flex; justify-content: flex-end; gap: 12px; margin-top: 22px; }
-  .quiz-actions .btn { width: auto; min-width: 220px; }
-  .kbd-hint { display: block; text-align: center; margin-top: 18px; }
+  .quiz > .quiz-head, .quiz > .bar { grid-column: 1 / -1; }
+  .quiz > .meta { grid-column: 1; grid-row: 3; margin-top: 36px; }
+  .quiz > .question { grid-column: 1; grid-row: 4; font-size: 2rem; line-height: 1.3; letter-spacing: -.01em; margin: 6px 0 24px; }
+  .quiz > .feedback { grid-column: 1; grid-row: 5; align-self: start; margin-top: 0; padding: 20px 22px; font-size: 1.02rem; }
+  .quiz > .feedback .explanation { font-size: 1rem; }
+  .quiz > .options { grid-column: 2; grid-row: 3 / 6; align-self: start; margin-top: 64px; gap: 14px; }
+  .option { padding: 20px 22px; min-height: 72px; font-size: 1.08rem; align-items: center; }
+  .option .key { width: 32px; height: 32px; }
+  .quiz > .quiz-actions { grid-column: 2; grid-row: 6; position: static; margin-top: 24px; }
+  .quiz > .quiz-actions .btn { width: 100%; min-height: 58px; font-size: 1.08rem; }
+  .kbd-hint { display: block; grid-column: 1; grid-row: 6; align-self: end; margin: 24px 0 0; }
   kbd {
     display: inline-block; min-width: 22px; padding: 1px 6px; border-radius: 6px; font: inherit; font-size: .78rem;
     background: var(--surface-2); border: 1px solid var(--border); border-bottom-width: 2px; color: var(--text);
