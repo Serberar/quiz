@@ -150,8 +150,8 @@ describe('sesión diaria', () => {
     for (let i = 1; i <= 30; i++) p = record(p, i, false, NOW) // 30 falladas hoy: objetivo de nuevas ya cubierto
     const block = buildDaily([pool('A', p)], NOW, 20)
     const fresh = block.filter(b => status(p[b.id]) === 'new').length
-    expect(fresh).toBe(6)
-    expect(block.length - fresh).toBe(14)
+    expect(fresh).toBe(10)
+    expect(block.length - fresh).toBe(10)
   })
   it('la asignatura que va peor recibe más nuevas', () => {
     let good: Progress = {}

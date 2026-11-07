@@ -276,9 +276,9 @@ export function buildDaily(pools: Pool[], now = Date.now(), size = BLOCK_SIZE): 
   }
   due.sort((a, b) => a.key - b.key)
 
-  // Cada bloque repasa y avanza: mientras quede temario sin ver entra al menos un 30 % de nuevas,
+  // Cada bloque repasa y avanza: mientras quede temario sin ver entra al menos la mitad de nuevas (máx. 50 % de repaso),
   // aunque haya muchos repasos pendientes o el objetivo del día ya esté cumplido
-  const minNew = Math.min(plan.unseen, Math.round(size * 0.3))
+  const minNew = Math.min(plan.unseen, Math.round(size * 0.5))
   const newCount = Math.max(minNew, Math.min(plan.newLeft, Math.max(size - due.length, minNew)))
   const block = due.slice(0, size - newCount).map(d => d.q)
   const used = new Set(block.map(q => q.subject + ':' + q.id))
