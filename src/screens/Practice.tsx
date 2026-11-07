@@ -265,6 +265,16 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
   }
   const mastery = semTotal ? semOk / semTotal : 0
   const expected = expectedProgress(firstAt)
+  const pct = (x: number, up = false) => (up ? Math.ceil(x * 100) : Math.round(x * 100))
+  // Margen de 2 puntos para no pasar de «atrasado» a «adelantado» por una pregunta
+  const pace =
+    expected === null
+      ? null
+      : pct(mastery) < pct(expected, true)
+        ? { label: 'Vas atrasado', tone: 'warn' }
+        : pct(mastery) <= pct(expected, true) + 2
+          ? { label: 'Vas bien', tone: 'good' }
+          : { label: 'Vas adelantado', tone: 'good' }
 
   return (
     <>
@@ -299,11 +309,22 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
 
       {visible.length > 0 && (
         <section className="card today">
+          <p className="today-hint muted small">
+            {goalDone ? 'Objetivo cumplido: si sigues, adelantas.' : 'Repasos, fallos y temario nuevo, lo flojo primero.'}
+          </p>
           <div className="today-top">
-            <Ring value={mastery} tone="accent" size={112}>
-              <strong>{Math.round(mastery * 100)}%</strong>
-              <span>temario</span>
-            </Ring>
+            <div className="today-ring">
+              <Ring value={mastery} tone="accent" size={112}>
+                <strong>{pct(mastery)}%</strong>
+                <span>temario</span>
+              </Ring>
+              {pace && (
+                <div className="pace">
+                  <span>deberías {pct(expected!, true)}%</span>
+                  <strong className={pace.tone}>{pace.label}</strong>
+                </div>
+              )}
+            </div>
             <div className="today-info">
               <div className="row">
                 <h2>
@@ -327,21 +348,13 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
                   <strong>{plan.doneToday}</strong>
                   <span>hechas hoy</span>
                 </div>
+                <div>
+                  <strong className={plan.leftToday ? '' : 'good'}>{plan.leftToday}</strong>
+                  <span>faltan hoy</span>
+                </div>
               </div>
             </div>
           </div>
-          {expected !== null && (
-            <p className="small">
-              Llevas un <strong>{Math.round(mastery * 100)}%</strong>; para verlo todo antes del examen deberías llevar un{' '}
-              <strong className={mastery >= expected ? 'good' : 'warn'}>{Math.ceil(expected * 100)}%</strong>
-              {mastery >= expected ? '. Vas al día.' : '.'}
-            </p>
-          )}
-          <p className="muted small">
-            {goalDone
-              ? '¡Objetivo de hoy cumplido! Si quieres seguir, la app te adelanta temario de lo que peor llevas.'
-              : 'Pulsa Estudiar y la app elige por ti: lo que toca repasar, lo que fallas y temario nuevo, con más preguntas de lo que peor llevas.'}
-          </p>
           <button className="btn primary glow big" onClick={startDaily} disabled={loading !== null}>
             {loading === 'daily' ? (
               <LoaderCircle className="spin" size={22} />

@@ -168,6 +168,19 @@ describe('sesión diaria', () => {
   })
 })
 
+describe('preguntas al día', () => {
+  it('reparte lo que falta (6 respuestas por pregunta) entre los días hasta el examen', () => {
+    const now = EXAM_DATE.getTime() - 10 * DAY
+    const empty = dailyPlan([{ name: 'A', total: 100, progress: {} }], now)
+    expect(empty.perDay).toBe(60)
+    expect(empty.leftToday).toBe(60)
+    // Responder una nueva hoy no cambia el objetivo del día, solo lo que falta
+    const one = dailyPlan([{ name: 'A', total: 100, progress: record({}, 1, true, now) }], now)
+    expect(one.perDay).toBe(60)
+    expect(one.leftToday).toBe(59)
+  })
+})
+
 describe('ritmo esperado', () => {
   it('sube a ritmo constante hasta 2 semanas antes del examen', () => {
     const end = EXAM_DATE.getTime() - 14 * DAY

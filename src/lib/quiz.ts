@@ -25,6 +25,8 @@ export const PASS_GRADE = 5
 /** Fecha del examen (28 de enero). Las preguntas nuevas se planifican para estar vistas 2 semanas antes. */
 export const EXAM_DATE = new Date(2027, 0, 28)
 const NEW_BUFFER_DAYS = 14
+/** Respuestas que necesita de media cada pregunta antes del examen: la primera y unos 5 repasos */
+const ANSWERS_PER_QUESTION = 6
 const DAY = 86_400_000
 /** Días hasta volver a preguntar según los aciertos seguidos (0 = fallada: ya) */
 const INTERVALS = [0, 1, 3, 7, 14, 30, 45]
@@ -222,22 +224,28 @@ export function buildReview(subjects: Subject[], all: AllProgress, n: number, pr
 /** Plan del día: repasos que tocan y preguntas nuevas para tener todo visto antes del examen. */
 export function dailyPlan(subjects: { name: string; total: number; progress: Progress }[], now = Date.now()) {
   const today = startOfDay(now)
-  let due = 0, unseen = 0, newToday = 0, doneToday = 0
+  let due = 0, unseen = 0, newToday = 0, doneToday = 0, work = 0
   for (const s of subjects) {
     let seen = 0
     for (const p of Object.values(s.progress)) {
       if (status(p) === 'new') continue
       seen++
-      if (dueAt(p)! <= now) due++
+      const isDue = dueAt(p)! <= now
+      if (isDue) due++
+      // Lo que le falta a esta pregunta; si toca repasarla, al menos esa respuesta
+      work += Math.max(isDue ? 1 : 0, ANSWERS_PER_QUESTION - p.c - p.w)
       if ((p.f ?? 0) >= today) newToday++
       if ((p.t ?? 0) >= today) doneToday++
     }
     unseen += Math.max(0, s.total - seen)
   }
+  work += unseen * ANSWERS_PER_QUESTION
+  // Preguntas al día para llegar al examen con todo visto y repasado; cuenta las de hoy para que no cambie mientras estudias
+  const perDay = Math.ceil((work + doneToday) / Math.max(1, daysUntilExam(now)))
   const daysForNew = Math.max(1, daysUntilExam(now) - NEW_BUFFER_DAYS)
   // Se calcula con lo que quedaba al empezar el día para que el objetivo no cambie mientras estudias
   const newTarget = Math.min(unseen + newToday, Math.ceil((unseen + newToday) / daysForNew))
-  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, daysLeft: daysUntilExam(now) }
+  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, perDay, leftToday: Math.max(0, perDay - doneToday), daysLeft: daysUntilExam(now) }
 }
 
 /**
