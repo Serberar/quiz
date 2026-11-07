@@ -404,6 +404,15 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   .today-stats strong { font-size: 2rem; }
   .today .btn.big { min-height: 66px; }
 
+  /* Repaso general: banner a la altura de la tarjeta de hoy */
+  .hero-item { width: 100%; margin-top: 18px; padding: 26px 32px; gap: 22px; border-radius: 24px; }
+  .hero-item:hover:not(:disabled) { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 18px 40px rgba(0, 0, 0, .4), 0 0 40px rgba(124, 108, 255, .25); }
+  .hero-item .hero-icon { width: 64px; height: 64px; border-radius: 18px; }
+  .hero-item .hero-icon svg { width: 30px; height: 30px; }
+  .hero-item .list-title { font-size: 1.35rem; }
+  .hero-item .muted.small { font-size: .95rem; margin-top: 2px; }
+  .hero-item > svg { width: 26px; height: 26px; }
+
   /* Asignaturas en cuadrícula */
   .subjects { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
   .list-item.subject {
