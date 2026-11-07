@@ -39,7 +39,9 @@ export default function Quiz({ title, mode, review, flags, onFlag, questions: in
   function choose(opt: string) {
     if (current) return
     const ok = opt === q.correct
-    onAnswer(q, ok)
+    // La repetición llega pocas preguntas después de ver la solución: acertarla es memoria inmediata,
+    // así que no cuenta para el progreso y la pregunta sigue como fallada hasta el próximo bloque
+    if (!q.retry) onAnswer(q, ok)
     setAnswers([...answers, { q, sel: opt, ok }])
     if (!ok && mode !== 'exam') {
       const at = Math.min(questions.length, idx + 1 + RETRY_GAP)
