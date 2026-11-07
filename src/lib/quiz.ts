@@ -309,16 +309,17 @@ export function buildDaily(pools: Pool[], now = Date.now(), perSubject = PER_SUB
   }
   for (const p of pools) if (block.length < size) add(freshOf(p, used).slice(0, size - block.length))
   if (block.length < size) {
-    // Todo visto y nada pendiente: las de menos aciertos seguidos, de asignaturas flojas primero
-    const rest = pools
-      .flatMap(pool => {
-        const w = weakness(pool.progress, pool.questions.length)
-        return pool.questions
-          .filter(q => !used.has(pool.name + ':' + q.id))
-          .map(q => ({ q: toQuiz(pool.name)(q), key: streak(pool.progress[q.id] ?? { c: 0, w: 0 }) - w + Math.random() }))
-      })
-      .sort((a, b) => a.key - b.key)
-    add(rest.slice(0, size - block.length).map(r => r.q))
+    // Todo visto y nada pendiente: se sigue repasando, 5 de cada asignatura, las menos asentadas
+    // (menos aciertos seguidos) primero y al azar entre las igual de asentadas
+    const rest = pools.map(pool =>
+      pool.questions
+        .filter(q => !used.has(pool.name + ':' + q.id))
+        .map(q => ({ q: toQuiz(pool.name)(q), key: streak(pool.progress[q.id] ?? { c: 0, w: 0 }) + Math.random() }))
+        .sort((a, b) => a.key - b.key)
+        .map(r => r.q),
+    )
+    pools.forEach((p, i) => add(rest[i].slice(0, Math.max(0, perSubject - block.filter(q => q.subject === p.name).length))))
+    if (block.length < size) add(rest.flat().filter(q => !used.has(q.subject + ':' + q.id)).slice(0, size - block.length))
   }
   // Agrupadas por asignatura y tema (repasos junto a las nuevas del mismo tema) para no saltar de un tema a otro
   const subjects = new Map(pools.map((p, i) => [p.name, { i, order: unitOrder(p.questions) }]))

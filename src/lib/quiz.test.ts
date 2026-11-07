@@ -174,6 +174,17 @@ describe('sesión diaria', () => {
     expect(mixed.length).toBe(10)
     expect(mixed.filter(b => b.subject === 'B').length).toBe(10)
   })
+  it('con todo visto y al día sigue con 5 de cada asignatura, las menos asentadas primero', () => {
+    let a: Progress = {}
+    for (const q of qs) a = record(a, q.id, true, NOW)
+    for (const q of qs.slice(0, 5)) a = record(a, q.id, true, NOW) // 1-5 con 2 aciertos seguidos
+    const block = buildDaily([pool('A', a), pool('B', a)], NOW)
+    for (const n of ['A', 'B']) {
+      const mine = block.filter(b => b.subject === n)
+      expect(mine.length).toBe(5)
+      expect(mine.every(b => b.id > 5)).toBe(true)
+    }
+  })
 })
 
 describe('preguntas al día', () => {
