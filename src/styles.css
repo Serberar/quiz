@@ -368,7 +368,7 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
 .tabbar button.active svg { color: var(--accent-2); filter: drop-shadow(0 0 8px rgba(124, 108, 255, .8)); }
 
 /* ── Solo escritorio (ocultos en móvil) ── */
-.brand, .kbd-hint { display: none; }
+.brand, .kbd-hint, .tabbar .side-toggle { display: none; }
 
 /* ── Escritorio ── */
 @media (min-width: 1024px) {
@@ -388,6 +388,16 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   }
   .tabbar button:hover:not(.active) { background: var(--surface); color: var(--text); }
   .tabbar button.active { box-shadow: inset 3px 0 0 var(--accent-2); }
+  .tabbar, .app.with-tabs { transition: width .25s ease, margin-left .25s ease; }
+  .tabbar .side-toggle { display: flex; position: absolute; top: 32px; right: 14px; width: 34px; height: 34px; padding: 0; justify-content: center; color: var(--muted); }
+
+  /* Barra plegada: solo iconos */
+  body.side-collapsed { --side: 76px; }
+  .side-collapsed .tabbar { padding: 28px 12px; overflow: hidden; }
+  .side-collapsed .brand { justify-content: center; padding: 0 0 12px; }
+  .side-collapsed .brand span, .side-collapsed .tabbar button > span { display: none; }
+  .side-collapsed .tabbar .side-toggle { position: static; width: 100%; height: 40px; margin-bottom: 14px; }
+  .side-collapsed .tabbar button { justify-content: center; padding: 0; }
 
   /* Contenido */
   .app { max-width: 1200px; padding: 48px 56px 64px; }
@@ -414,7 +424,12 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   .hero-item > svg { width: 26px; height: 26px; }
 
   /* Asignaturas en cuadrícula */
-  .subjects { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+  /* 6 columnas: 3 tarjetas por fila; la última fila incompleta se reparte el ancho para que quede simétrica */
+  .subjects { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+  .subjects > * { grid-column: span 2; }
+  .subjects > :nth-child(3n+1):nth-last-child(2), .subjects > :nth-child(3n+1):nth-last-child(2) ~ * { grid-column: span 3; }
+  .subjects > :nth-child(3n+1):last-child { grid-column: 1 / -1; }
+  .subjects:has(> :nth-child(4):last-child) > * { grid-column: span 3; }
   .list-item.subject {
     position: relative; flex-direction: column; align-items: stretch; justify-content: space-between;
     gap: 16px; padding: 24px;
