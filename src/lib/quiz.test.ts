@@ -145,6 +145,14 @@ describe('sesión diaria', () => {
     expect(new Set(block.map(b => b.subject + b.id)).size).toBe(20)
     for (let i = 1; i <= 5; i++) expect(block.some(b => b.subject === 'A' && b.id === i)).toBe(true)
   })
+  it('con muchos repasos y el objetivo cumplido sigue metiendo nuevas', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 30; i++) p = record(p, i, false, NOW) // 30 falladas hoy: objetivo de nuevas ya cubierto
+    const block = buildDaily([pool('A', p)], NOW, 20)
+    const fresh = block.filter(b => status(p[b.id]) === 'new').length
+    expect(fresh).toBe(6)
+    expect(block.length - fresh).toBe(14)
+  })
   it('la asignatura que va peor recibe más nuevas', () => {
     let good: Progress = {}
     for (let i = 1; i <= 20; i++) for (let k = 0; k < 4; k++) good = record(good, i, true, NOW - DAY * 60)
