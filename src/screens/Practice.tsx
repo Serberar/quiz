@@ -2,11 +2,11 @@ import { CalendarCheck, ChevronRight, Flame, Layers, LoaderCircle, Zap } from 'l
 import { useEffect, useMemo, useState } from 'react'
 import { fetchManifest, fetchSubject, type Subject, type SubjectMeta } from '../lib/data'
 import {
-  BLOCK_SIZE,
   buildDaily,
   buildQuiz,
   buildReview,
   dailyPlan,
+  PER_SUBJECT,
   expectedProgress,
   EXAM_DATE,
   filterQuestions,
@@ -152,7 +152,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
   const startDaily = () =>
     startMixed('daily', (list, fresh) => {
       const make = (p: AllProgress) => buildDaily(list.map(s => ({ name: s.name, questions: s.questions, progress: p[s.name] ?? {} })))
-      begin({ title: DAILY_NAME, subtitle: `Bloque de ${BLOCK_SIZE}`, mode: 'smart', review: true, next: true, make }, fresh)
+      begin({ title: DAILY_NAME, subtitle: `Bloque de ${PER_SUBJECT * list.length}`, mode: 'smart', review: true, next: true, make }, fresh)
     })
 
   function flag(q: QuizQuestion, on: boolean) {
@@ -361,7 +361,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
             ) : (
               <>
                 <Zap size={20} /> {goalDone ? 'Seguir estudiando' : 'Estudiar'}
-                <small>{BLOCK_SIZE} preguntas</small>
+                <small>{PER_SUBJECT * visible.length} preguntas</small>
               </>
             )}
           </button>

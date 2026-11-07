@@ -142,7 +142,7 @@ describe('sesión diaria', () => {
   it('las falladas entran primero y el bloque no repite preguntas', () => {
     let p: Progress = {}
     for (let i = 1; i <= 5; i++) p = record(p, i, false, NOW - DAY)
-    const block = buildDaily([pool('A', p), pool('B')], NOW, 20)
+    const block = buildDaily([pool('A', p), pool('B')], NOW, 10)
     expect(block).toHaveLength(20)
     expect(new Set(block.map(b => b.subject + b.id)).size).toBe(20)
     for (let i = 1; i <= 5; i++) expect(block.some(b => b.subject === 'A' && b.id === i)).toBe(true)
@@ -164,16 +164,15 @@ describe('sesión diaria', () => {
     const units = block.map(b => b.unit)
     expect(units).toEqual([...units].sort())
   })
-  it('la asignatura que va peor recibe más nuevas', () => {
-    let good: Progress = {}
-    for (let i = 1; i <= 20; i++) for (let k = 0; k < 4; k++) good = record(good, i, true, NOW - DAY * 60)
-    let total = { A: 0, B: 0 }
-    for (let r = 0; r < 20; r++) {
-      // A va bien (pero con todo repasado), B está a cero; mismas nuevas disponibles por quitar lo visto
-      const block = buildDaily([pool('A', good), { name: 'B', questions: qs.slice(20), progress: {} }], NOW, 20)
-      for (const b of block) if (status(b.subject === 'A' ? good[b.id] : undefined) === 'new') total = { ...total, [b.subject]: total[b.subject as 'A' | 'B'] + 1 }
-    }
-    expect(total.B).toBeGreaterThan(total.A)
+  it('5 de cada asignatura; si una no tiene nada, otras cubren el hueco', () => {
+    const block = buildDaily([pool('A'), pool('B'), pool('C')], NOW)
+    expect(block.length).toBe(15)
+    for (const n of ['A', 'B', 'C']) expect(block.filter(b => b.subject === n).length).toBe(5)
+    let all: Progress = {}
+    for (const q of qs) all = record(all, q.id, true, NOW) // A todo visto y al día
+    const mixed = buildDaily([pool('A', all), pool('B')], NOW)
+    expect(mixed.length).toBe(10)
+    expect(mixed.filter(b => b.subject === 'B').length).toBe(10)
   })
 })
 
