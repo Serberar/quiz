@@ -94,6 +94,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
   }
 
   async function open(meta: SubjectMeta) {
+    setNotice('')
     setLoading(meta.file)
     try {
       const s = await getSubject(meta)
@@ -125,6 +126,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
 
   /** Empieza un test; si no hay preguntas avisa en vez de abrir un test vacío */
   function begin(r: Omit<Run, 'questions' | 'answers'>, progress: AllProgress) {
+    setNotice('')
     const questions = r.make(progress)
     if (questions.length === 0) return setNotice('No hay preguntas para esta selección.')
     setRun({ ...r, questions, answers: null })

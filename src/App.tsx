@@ -19,9 +19,13 @@ export default function App() {
   const [settingsLoaded, setSettingsLoaded] = useState(!sb) // la fecha del examen se lee de la base de datos al entrar
   const [libraryVersion, setLibraryVersion] = useState(0) // sube al añadir o quitar asignaturas propias
 
+  // Ajustes de cada cuenta: se recargan al cambiar de usuario (y en local, al arrancar)
+  const userId = session?.user.id
   useEffect(() => {
-    if (session && !settingsLoaded) loadSettings().catch(logError).finally(() => setSettingsLoaded(true))
-  }, [session, settingsLoaded])
+    if (sb && !userId) return
+    setSettingsLoaded(false)
+    loadSettings().catch(logError).finally(() => setSettingsLoaded(true))
+  }, [userId])
 
   const [collapsed, setCollapsed] = useState(() => {
     try {
