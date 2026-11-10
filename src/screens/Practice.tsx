@@ -7,7 +7,6 @@ import {
   buildQuiz,
   buildReview,
   dailyPlan,
-  EXAM_DATE,
   filterQuestions,
   grade,
   gradeBySubject,
@@ -27,6 +26,7 @@ import Results from './Results'
 import ReviewSetup, { REVIEW_NAME } from './ReviewSetup'
 import Ring from './Ring'
 import SubjectSetup from './SubjectSetup'
+import { examDate } from '../lib/settings'
 
 const DAILY_NAME = 'Sesión diaria'
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
@@ -46,15 +46,9 @@ type Run = {
 }
 
 
-function savedSemester() {
-  const n = Number(localStorage.getItem('quiz_semester'))
-  return n === 1 || n === 2 ? n : 2
-}
-
-export default function Practice({ onImmersive }: { onImmersive: (on: boolean) => void }) {
+export default function Practice({ onImmersive, libraryVersion }: { onImmersive: (on: boolean) => void; libraryVersion: number }) {
   const [subjects, setSubjects] = useState<SubjectMeta[] | null>(null)
   const [loadError, setLoadError] = useState(false)
-  const [semester, setSemester] = useState(savedSemester)
   const [subject, setSubject] = useState<Subject | null>(null)
   const [reviewing, setReviewing] = useState(false)
   const [loading, setLoading] = useState<string | null>(null)
@@ -64,18 +58,19 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
   const [flags, setFlags] = useState<Set<string>>(() => new Set())
   const [streakDays, setStreakDays] = useState(0)
 
-  const visible = useMemo(() => subjects?.filter(s => s.semester === semester) ?? [], [subjects, semester])
+  const visible = useMemo(() => subjects ?? [], [subjects])
 
   useEffect(() => {
     fetchManifest().then(setSubjects, () => setLoadError(true))
-    return onFlagsChange(setFlags)
-  }, [])
+  }, [libraryVersion])
+
+  useEffect(() => onFlagsChange(setFlags), [])
 
   useEffect(() => {
     onImmersive(run !== null && run.answers === null)
   }, [run, onImmersive])
 
-  // Progreso de las asignaturas del semestre para el resumen de la lista y el repaso.
+  // Progreso de las asignaturas de la lista para el resumen de la lista y el repaso.
   // Se recarga al volver a la app por si se ha estudiado en otro dispositivo.
   useEffect(() => {
     const refresh = () => {
@@ -88,11 +83,6 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
     document.addEventListener('visibilitychange', refresh)
     return () => document.removeEventListener('visibilitychange', refresh)
   }, [visible])
-
-  function pickSemester(n: number) {
-    setSemester(n)
-    localStorage.setItem('quiz_semester', String(n))
-  }
 
   async function getSubject(meta: SubjectMeta) {
     let s = cache.get(meta.file)
@@ -117,7 +107,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
     }
   }
 
-  /** Carga las asignaturas del semestre con su progreso recién leído (puede venir de otro dispositivo) */
+  /** Carga las asignaturas de la lista con su progreso recién leído (puede venir de otro dispositivo) */
   async function startMixed(key: string, start: (list: Subject[], fresh: AllProgress) => void) {
     setLoading(key)
     try {
@@ -268,7 +258,7 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
         <div>
           <p className="eyebrow">
             {plan.daysLeft > 0
-              ? `Faltan ${plan.daysLeft} días · examen el ${EXAM_DATE.toLocaleDateString('es', { day: 'numeric', month: 'long' })}`
+              ? `Faltan ${plan.daysLeft} días · examen el ${examDate().toLocaleDateString('es', { day: 'numeric', month: 'long' })}`
               : 'Día del examen. ¡Mucha suerte!'}
           </p>
           <h1>Practicar</h1>
@@ -281,14 +271,6 @@ export default function Practice({ onImmersive }: { onImmersive: (on: boolean) =
           </div>
         )}
       </header>
-
-      <div className="segmented">
-        {[1, 2].map(n => (
-          <button key={n} className={semester === n ? 'active' : ''} onClick={() => pickSemester(n)}>
-            {n}º semestre
-          </button>
-        ))}
-      </div>
 
       {loadError && <p className="error">No se pudieron cargar las asignaturas.</p>}
       {!subjects && !loadError && <p className="muted center">Cargando…</p>}

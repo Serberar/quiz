@@ -272,6 +272,6 @@ export async function prepareSignOut(force = false) {
   } catch {
     if (!force) return false
   }
-  for (const key of Object.keys(localStorage)) if (key.startsWith('quiz_') && key !== 'quiz_semester') localStorage.removeItem(key)
+  for (const key of Object.keys(localStorage)) if (key.startsWith('quiz_')) localStorage.removeItem(key)
   return true
 }

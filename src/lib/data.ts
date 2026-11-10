@@ -1,3 +1,5 @@
+import { getCustom, listCustom } from './custom'
+
 export type Question = {
   id: number
   unit?: string
@@ -8,10 +10,12 @@ export type Question = {
   traduccion?: { pregunta: string; opciones: string[]; correcta: string }
 }
 
-export type SubjectMeta = { name: string; file: string; semester: number; count: number }
+export type SubjectMeta = { name: string; file: string; count: number }
 export type Subject = { name: string; questions: Question[] }
 
 const DATA = import.meta.env.BASE_URL + 'data/'
+/** Prefijo de `file` en las asignaturas añadidas desde la app (no están en public/data) */
+const CUSTOM = 'custom:'
 
 async function getJSON<T>(file: string): Promise<T> {
   // no-cache: revalida con el servidor para que una asignatura nueva aparezca sin esperar
@@ -20,11 +24,17 @@ async function getJSON<T>(file: string): Promise<T> {
   return r.json()
 }
 
+/** Asignaturas de public/data más las añadidas desde Configuración */
 export async function fetchManifest(): Promise<SubjectMeta[]> {
-  return (await getJSON<{ subjects: SubjectMeta[] }>('manifest.json')).subjects
+  const [base, custom] = await Promise.all([
+    getJSON<{ subjects: SubjectMeta[] }>('manifest.json').then(m => m.subjects),
+    listCustom().catch(() => []),
+  ])
+  return [...base, ...custom.map(c => ({ name: c.name, file: CUSTOM + c.name, count: c.count }))]
 }
 
 export async function fetchSubject(meta: SubjectMeta): Promise<Subject> {
+  if (meta.file.startsWith(CUSTOM)) return getCustom(meta.name)
   const data = await getJSON<{ subject?: string; questions: Question[] }>(meta.file)
   return { name: data.subject ?? meta.name, questions: data.questions }
 }

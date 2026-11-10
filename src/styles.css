@@ -370,3 +370,5 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
 .spin { animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+.template { font-size: .78rem; line-height: 1.5; overflow-x: auto; margin-top: 10px; padding: 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); }

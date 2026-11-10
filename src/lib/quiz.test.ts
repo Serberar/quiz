@@ -1,5 +1,8 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import type { Question } from './data'
+
+// Sin navegador: la fecha del examen cae en su valor por defecto (ajustes.ts)
+vi.stubGlobal('localStorage', { getItem: () => null, setItem: () => {} })
 import {
   assess,
   buildDaily,

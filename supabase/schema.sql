@@ -102,3 +102,33 @@ alter table public.flags enable row level security;
 drop policy if exists "own flags" on public.flags;
 create policy "own flags" on public.flags for all to authenticated
   using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+
+-- Asignaturas añadidas desde la app (Configuración)
+create table if not exists public.custom_subjects (
+  user_id uuid not null default auth.uid() references auth.users on delete cascade,
+  name text not null,
+  count int not null,
+  data jsonb not null,
+  created_at timestamptz not null default now(),
+  primary key (user_id, name)
+);
+
+alter table public.custom_subjects enable row level security;
+
+drop policy if exists "own custom subjects" on public.custom_subjects;
+create policy "own custom subjects" on public.custom_subjects for all to authenticated
+  using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+
+-- Ajustes de cada usuario en clave/valor (fecha del examen)
+create table if not exists public.user_settings (
+  user_id uuid not null default auth.uid() references auth.users on delete cascade,
+  key text not null,
+  value jsonb not null,
+  primary key (user_id, key)
+);
+
+alter table public.user_settings enable row level security;
+
+drop policy if exists "own settings" on public.user_settings;
+create policy "own settings" on public.user_settings for all to authenticated
+  using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));

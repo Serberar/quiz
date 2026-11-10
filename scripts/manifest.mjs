@@ -1,5 +1,4 @@
 // Genera public/data/manifest.json a partir de los JSON de asignaturas.
-// Las asignaturas sin campo "semester" cuentan como 1º semestre.
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 
 const dir = new URL('../public/data/', import.meta.url)
@@ -14,7 +13,6 @@ for (const file of readdirSync(dir).sort()) {
   subjects.push({
     name: data.subject ?? file.replace('.json', ''),
     file,
-    semester: data.semester ?? 1,
     count: data.questions.length,
   })
 }

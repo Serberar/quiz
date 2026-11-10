@@ -15,26 +15,18 @@ const VERDICT: Record<Level, { title: string; Icon: typeof CircleCheck }> = {
 }
 const LEVEL_LABEL: Record<Level, string> = { good: 'Bien', warn: 'Justo', bad: 'Mal' }
 
-function semester() {
-  const n = Number(localStorage.getItem('quiz_semester'))
-  return n === 1 || n === 2 ? n : 2
-}
-
 /** ¿Cómo voy?: veredicto, previsión, nota por asignatura y actividad de los últimos 14 días. */
 export default function HowAmI({ attempts }: { attempts: Attempt[] }) {
   const [data, setData] = useState<{ meta: SubjectMeta; progress: Progress; questions: Question[] }[] | null>(null)
 
   useEffect(() => {
-    const sem = semester()
     fetchManifest()
       .then(list =>
         Promise.all(
-          list
-            .filter(s => s.semester === sem)
-            .map(async meta => {
-              const [progress, subject] = await Promise.all([loadProgress(meta.name), fetchSubject(meta)])
-              return { meta, progress, questions: subject.questions }
-            }),
+          list.map(async meta => {
+            const [progress, subject] = await Promise.all([loadProgress(meta.name), fetchSubject(meta)])
+            return { meta, progress, questions: subject.questions }
+          }),
         ),
       )
       .then(setData, () => setData([]))

@@ -1,4 +1,5 @@
 import type { Question, Subject } from './data'
+import { examDate } from './settings'
 
 export type Mode = 'random' | 'smart' | 'exam'
 /**
@@ -22,8 +23,7 @@ export const EXAM_SIZE = 30
 export const REVIEW_SIZE = 60
 export const BLOCK_SIZE = 20
 export const PASS_GRADE = 5
-/** Fecha del examen (28 de enero). Las preguntas nuevas se planifican para estar vistas 2 semanas antes. */
-export const EXAM_DATE = new Date(2027, 0, 28)
+/** Las preguntas nuevas se planifican para estar vistas 2 semanas antes del examen. */
 const NEW_BUFFER_DAYS = 14
 const DAY = 86_400_000
 /** Días hasta volver a preguntar según los aciertos seguidos (0 = fallada: ya) */
@@ -54,7 +54,7 @@ const streak = (p: QStat) => p.s ?? (status(p) === 'ok' ? 1 : 0)
  * Cuándo toca repasar una pregunta vista (null si es nueva). El intervalo nunca pasa de la mitad
  * del tiempo que queda hasta el examen, para que todo vuelva a salir antes.
  */
-export function dueAt(p: QStat | undefined, exam = EXAM_DATE.getTime()): number | null {
+export function dueAt(p: QStat | undefined, exam = examDate().getTime()): number | null {
   if (status(p) === 'new') return null
   if (status(p) === 'failed') return 0
   const t = p!.t ?? 0
@@ -69,7 +69,7 @@ export function startOfDay(now = Date.now()) {
 }
 
 export function daysUntilExam(now = Date.now()) {
-  return Math.max(0, Math.round((EXAM_DATE.getTime() - startOfDay(now)) / DAY))
+  return Math.max(0, Math.round((examDate().getTime() - startOfDay(now)) / DAY))
 }
 
 export function filterQuestions(questions: Question[], progress: Progress, filter: Filter, flagged?: Set<number>): Question[] {
@@ -383,7 +383,7 @@ export function assess(subjects: { name: string; total: number; progress: Progre
   const retention = seen ? ok / seen : 0
   /** Día en que se habrá visto todo al ritmo actual (null si el ritmo es 0) */
   const finishAt = plan.unseen === 0 ? now : perDay > 0 ? startOfDay(now) + Math.ceil(plan.unseen / perDay) * DAY : null
-  const deadline = EXAM_DATE.getTime() - NEW_BUFFER_DAYS * DAY
+  const deadline = examDate().getTime() - NEW_BUFFER_DAYS * DAY
 
   const pace: Level = plan.unseen === 0 || perDay >= needed ? 'good' : perDay >= needed * 0.6 ? 'warn' : 'bad'
   const memory: Level = seen < 20 ? 'warn' : retention >= 0.75 ? 'good' : retention >= 0.6 ? 'warn' : 'bad'

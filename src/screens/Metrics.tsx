@@ -1,8 +1,7 @@
-import { LoaderCircle, LogOut, TrendingDown, TrendingUp } from 'lucide-react'
+import { LoaderCircle, TrendingDown, TrendingUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { MODE_LABEL, PASS_GRADE } from '../lib/quiz'
-import { loadAttempts, prepareSignOut, type Attempt } from '../lib/store'
-import { sb } from '../lib/supabase'
+import { loadAttempts, type Attempt } from '../lib/store'
 import Flagged from './Flagged'
 import HowAmI from './HowAmI'
 
@@ -25,7 +24,7 @@ function summarize(list: Attempt[]) {
 
 const tone = (g: number | null) => (g === null ? 'muted' : g >= 7 ? 'good' : g >= PASS_GRADE ? 'warn' : 'bad')
 
-export default function Metrics({ email }: { email?: string }) {
+export default function Metrics() {
   const [attempts, setAttempts] = useState<Attempt[] | null>(null)
 
   useEffect(() => {
@@ -176,24 +175,6 @@ export default function Metrics({ email }: { email?: string }) {
       )}
 
       <Flagged />
-
-      {sb && (
-        <section className="card account">
-          <span className="muted small">{email}</span>
-          <button
-            className="btn ghost"
-            onClick={async () => {
-              const ok =
-                (await prepareSignOut()) ||
-                (confirm('Hay respuestas sin subir (no hay conexión). Si cierras sesión ahora se perderán. ¿Cerrar igualmente?') &&
-                  (await prepareSignOut(true)))
-              if (ok) sb!.auth.signOut()
-            }}
-          >
-            <LogOut size={18} /> Cerrar sesión
-          </button>
-        </section>
-      )}
     </>
   )
 }
