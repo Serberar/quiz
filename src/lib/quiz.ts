@@ -369,6 +369,13 @@ export function subjectStats(questions: Question[], progress: Progress) {
 }
 
 /** Resumen sin cargar las preguntas: total viene del manifest. */
+/** Acierto acumulado de una asignatura: aciertos sobre el total respondido (null si no hay respuestas) */
+export function accuracy(progress: Progress): number | null {
+  const hits = Object.values(progress).reduce((n, p) => n + p.c, 0)
+  const tries = Object.values(progress).reduce((n, p) => n + p.c + p.w, 0)
+  return tries ? hits / tries : null
+}
+
 export function progressSummary(progress: Progress, total: number) {
   let seen = 0, failed = 0
   for (const p of Object.values(progress)) {

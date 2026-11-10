@@ -14,3 +14,11 @@ describe('format', () => {
     expect(tone(null)).toBe('muted')
   })
 })
+
+describe('acierto acumulado', () => {
+  it('suma aciertos y fallos de todas las preguntas', async () => {
+    const { accuracy } = await import('./quiz')
+    expect(accuracy({ 1: { c: 2, w: 1 }, 2: { c: 1, w: 0 } })).toBeCloseTo(0.75)
+    expect(accuracy({})).toBeNull()
+  })
+})

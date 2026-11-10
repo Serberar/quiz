@@ -1,7 +1,6 @@
 import { ChevronRight, LoaderCircle } from 'lucide-react'
 import type { SubjectMeta } from '../lib/data'
-import { fmt, tone } from '../lib/format'
-import { progressSummary, type AllProgress } from '../lib/quiz'
+import { accuracy, progressSummary, type AllProgress } from '../lib/quiz'
 import Mastery from './Mastery'
 
 /** Tarjetas de cada asignatura en Practicar: progreso y nota estimada */
@@ -19,7 +18,9 @@ export default function PracticeSubjects({
   return (
     <div className="list subjects">
       {subjects.map(s => {
-        const sum = progressSummary(all[s.name] ?? {}, s.count)
+        const progress = all[s.name] ?? {}
+        const sum = progressSummary(progress, s.count)
+        const acc = accuracy(progress)
         return (
           <button key={s.file} className="list-item subject" onClick={() => onOpen(s)} disabled={loading !== null}>
             <div className="grow">
@@ -30,9 +31,11 @@ export default function PracticeSubjects({
               </div>
               <Mastery {...sum} />
             </div>
-            <div className="estimate" title="Nota estimada si el examen fuera hoy">
-              <strong className={sum.seen ? tone(sum.estimate) : 'muted'}>{sum.seen ? fmt(sum.estimate) : '—'}</strong>
-              <span>si fuera hoy</span>
+            <div className="estimate" title="Respuestas acertadas sobre el total respondido">
+              <strong className={acc === null ? 'muted' : acc >= 0.7 ? 'good' : acc >= 0.5 ? 'warn' : 'bad'}>
+                {acc === null ? '—' : Math.round(acc * 100) + '%'}
+              </strong>
+              <span>acierto</span>
             </div>
             {loading === s.file ? <LoaderCircle className="spin" size={20} /> : <ChevronRight size={20} className="muted" />}
           </button>
