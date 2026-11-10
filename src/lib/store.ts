@@ -105,7 +105,8 @@ export async function loadProgress(subject: string): Promise<Progress> {
     for (const a of pendingFor(subject)) merged = record(merged, a.question_id, a.ok, Date.parse(a.created_at))
     write(progressKey(subject), merged)
     return merged
-  } catch {
+  } catch (err) {
+    logError(err)
     return local // sin conexión: se usa la caché, que ya incluye lo pendiente
   }
 }
@@ -173,7 +174,8 @@ export async function loadAttempts(): Promise<Attempt[]> {
     }
     // grade es numeric en Postgres: se normaliza a number
     return rows.map(a => ({ ...a, grade: Number(a.grade) }))
-  } catch {
+  } catch (err) {
+    logError(err)
     return local
   }
 }
@@ -212,7 +214,8 @@ export async function loadFlags(): Promise<Set<string>> {
     }
     write(FLAGS, [...set])
     return set
-  } catch {
+  } catch (err) {
+    logError(err)
     return local
   }
 }
