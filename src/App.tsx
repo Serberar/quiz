@@ -74,8 +74,9 @@ export default function App() {
         <nav className="tabbar">
           <div className="brand">
             <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="" />
-            <span>Quiz DAW</span>
+            <span>Quiz</span>
           </div>
+          <p className="credit">Creado por Sergio Bernabé</p>
           <button
             className="side-toggle"
             onClick={() => setCollapsed(!collapsed)}

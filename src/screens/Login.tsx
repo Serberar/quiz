@@ -21,8 +21,9 @@ export default function Login() {
   return (
     <div className="app login">
       <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="" className="login-logo" />
-      <h1>Quiz DAW</h1>
+      <h1>Quiz</h1>
       <p className="muted">Inicia sesión para guardar tu progreso</p>
+      <p className="muted small">Creado por Sergio Bernabé</p>
       <form className="card form" onSubmit={submit}>
         <label>
           Usuario

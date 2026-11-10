@@ -54,13 +54,17 @@ export async function getCustom(name: string): Promise<Subject> {
   return data.data as Subject
 }
 
+/** Añade una asignatura propia. Nunca sustituye a una existente: si el nombre ya está, falla. */
 export async function addCustom(s: Subject) {
+  const taken = `Ya existe una asignatura llamada "${s.name}".`
   if (!sb) {
-    localStorage.setItem(LOCAL, JSON.stringify({ ...localAll(), [s.name]: s }))
+    const all = localAll()
+    if (all[s.name]) throw new Error(taken)
+    localStorage.setItem(LOCAL, JSON.stringify({ ...all, [s.name]: s }))
     return
   }
   const { error } = await sb.from('custom_subjects').insert({ name: s.name, count: s.questions.length, data: s })
-  if (error) throw error
+  if (error) throw error.code === '23505' ? new Error(taken) : error
 }
 
 export async function removeCustom(name: string) {

@@ -1,4 +1,5 @@
 import { getCustom, listCustom } from './custom'
+import { hiddenSubjects } from './settings'
 
 export type Question = {
   id: number
@@ -10,7 +11,7 @@ export type Question = {
   traduccion?: { pregunta: string; opciones: string[]; correcta: string }
 }
 
-export type SubjectMeta = { name: string; file: string; count: number }
+export type SubjectMeta = { name: string; file: string; count: number; custom?: boolean }
 export type Subject = { name: string; questions: Question[] }
 
 const DATA = import.meta.env.BASE_URL + 'data/'
@@ -24,13 +25,17 @@ async function getJSON<T>(file: string): Promise<T> {
   return r.json()
 }
 
-/** Asignaturas de public/data más las añadidas desde Configuración */
+/** Asignaturas de public/data (menos las ocultas) más las añadidas desde Ajustes */
 export async function fetchManifest(): Promise<SubjectMeta[]> {
   const [base, custom] = await Promise.all([
     getJSON<{ subjects: SubjectMeta[] }>('manifest.json').then(m => m.subjects),
     listCustom().catch(() => []),
   ])
-  return [...base, ...custom.map(c => ({ name: c.name, file: CUSTOM + c.name, count: c.count }))]
+  const hidden = hiddenSubjects()
+  return [
+    ...base.filter(m => !hidden.includes(m.name)),
+    ...custom.map(c => ({ name: c.name, file: CUSTOM + c.name, count: c.count, custom: true })),
+  ]
 }
 
 export async function fetchSubject(meta: SubjectMeta): Promise<Subject> {

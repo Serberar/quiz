@@ -373,7 +373,7 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
 .tabbar button.active svg { color: var(--accent-2); filter: drop-shadow(0 0 8px rgba(124, 108, 255, .8)); }
 
 /* ── Solo escritorio (ocultos en móvil) ── */
-.brand, .kbd-hint, .tabbar .side-toggle { display: none; }
+.brand, .credit, .kbd-hint, .tabbar .side-toggle { display: none; }
 
 /* ── Escritorio ── */
 @media (min-width: 1024px) {
@@ -386,6 +386,7 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
     padding: 28px 16px; border-top: none; border-right: 1px solid var(--border);
   }
   .brand { display: flex; align-items: center; gap: 12px; padding: 0 10px 28px; font-weight: 800; font-size: 1.15rem; letter-spacing: -.01em; }
+  .credit { display: block; margin: -14px 0 22px; padding: 0 10px 0 62px; font-size: .8rem; color: var(--muted); }
   .brand img { width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 6px 22px rgba(124, 108, 255, .45); }
   .tabbar button {
     flex: none; max-width: none; height: 48px; flex-direction: row; justify-content: flex-start;
@@ -510,3 +511,34 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 
 .template { font-size: .78rem; line-height: 1.5; overflow-x: auto; margin-top: 10px; padding: 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); }
+.btn.danger { background: var(--bad); color: #fff; }
+.btn.danger:disabled { opacity: .35; }
+.confirm { display: flex; flex-direction: column; gap: 10px; margin: 8px 0 16px; padding: 14px; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); }
+.confirm input { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; font-size: 16px; color: var(--text); }
+
+/* ── Ajustes ── */
+.settings { display: flex; flex-direction: column; gap: 18px; }
+.settings .card, .settings .form { width: 100%; max-width: none; margin-top: 0; }
+.settings .card > p { margin-bottom: 14px; }
+.settings .form button { align-self: flex-start; }
+.settings input[type=date] { color-scheme: dark; }
+.settings details { margin-top: 14px; }
+.settings details summary { cursor: pointer; }
+.actions .btn { flex: none; }
+a.btn { text-decoration: none; }
+.settings .row { padding: 9px 0; border-bottom: 1px solid var(--border); }
+.settings .row:last-child { border-bottom: none; }
+.settings .card > h2:not(:first-of-type) { margin-top: 22px; }
+.actions a.btn { color: var(--text); }
+
+/* Métricas en escritorio: veredicto a dos columnas y listas en cuadrícula */
+@media (min-width: 1024px) {
+  .verdict { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); column-gap: 40px; row-gap: 14px; align-items: start; }
+  .verdict > .verdict-head { grid-column: 1; grid-row: 1; }
+  .verdict > p { grid-column: 1; grid-row: 2; margin: 0; }
+  .verdict > .checks { grid-column: 2; grid-row: 1 / span 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .verdict-head strong { font-size: 2.2rem; }
+  .exam-now { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+  .exam-now > h2 { grid-column: 1 / -1; }
+  .exam-now .subject-row:first-of-type { border-top: 1px solid var(--border); padding-top: 14px; }
+}

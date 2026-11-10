@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['apple-touch-icon.png'],
       manifest: {
-        name: 'Quiz DAW',
-        short_name: 'Quiz DAW',
-        description: 'Tests de práctica para DAW',
+        name: 'Quiz',
+        short_name: 'Quiz',
+        description: 'Tests de práctica para exámenes tipo test',
         lang: 'es',
         theme_color: '#070a18',
         background_color: '#070a18',

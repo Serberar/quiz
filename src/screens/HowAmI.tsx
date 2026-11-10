@@ -126,7 +126,7 @@ export default function HowAmI({ attempts }: { attempts: Attempt[] }) {
         </div>
       </section>
 
-      <section className="card">
+      <section className="card exam-now">
         <h2>Si el examen fuera hoy</h2>
         {data.map(({ meta, progress }) => {
           const s = progressSummary(progress, meta.count)

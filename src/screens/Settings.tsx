@@ -1,8 +1,8 @@
-import { LogOut, Trash2, Upload } from 'lucide-react'
+import { Download, LogOut, Trash2, Upload } from 'lucide-react'
 import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react'
-import { addCustom, listCustom, parseSubject, removeCustom, type CustomMeta } from '../lib/custom'
-import { fetchManifest } from '../lib/data'
-import { examIso, setExamIso } from '../lib/settings'
+import { addCustom, listCustom, parseSubject, removeCustom } from '../lib/custom'
+import { fetchManifest, type SubjectMeta } from '../lib/data'
+import { examIso, hiddenSubjects, setExamIso, setHiddenSubjects } from '../lib/settings'
 import { prepareSignOut } from '../lib/store'
 import { sb } from '../lib/supabase'
 
@@ -25,9 +25,12 @@ const msgOf = (err: unknown) => (typeof err === 'object' && err && 'message' in 
 
 export default function Settings({ email, onLibraryChange }: { email?: string; onLibraryChange: () => void }) {
   return (
-    <>
-      <header className="page-head">
-        <h1>Configuración</h1>
+    <div className="settings">
+      <header className="hero-head">
+        <div>
+          <p className="eyebrow">Tu cuenta y tu temario</p>
+          <h1>Ajustes</h1>
+        </div>
       </header>
       <ExamDate />
       <Subjects onLibraryChange={onLibraryChange} />
@@ -49,7 +52,7 @@ export default function Settings({ email, onLibraryChange }: { email?: string; o
           </button>
         </section>
       )}
-    </>
+    </div>
   )
 }
 
@@ -86,15 +89,26 @@ function ExamDate() {
 }
 
 function Subjects({ onLibraryChange }: { onLibraryChange: () => void }) {
-  const [list, setList] = useState<CustomMeta[] | null>(null)
+  const [list, setList] = useState<SubjectMeta[] | null>(null)
+  const [target, setTarget] = useState<SubjectMeta | null>(null) // asignatura cuyo borrado se está confirmando
+  const [typed, setTyped] = useState('')
+  const [busy, setBusy] = useState(false)
   const [info, setInfo] = useState('')
   const [error, setError] = useState('')
+  const hidden = hiddenSubjects()
 
   function reload() {
-    listCustom().then(setList, err => setError(msgOf(err)))
+    fetchManifest().then(setList, err => setError(msgOf(err)))
   }
 
   useEffect(reload, [])
+
+  function done(msg: string) {
+    setInfo(msg)
+    setError('')
+    reload()
+    onLibraryChange()
+  }
 
   async function upload(e: ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
@@ -104,25 +118,48 @@ function Subjects({ onLibraryChange }: { onLibraryChange: () => void }) {
     setError('')
     try {
       const subject = parseSubject(await file.text(), file.name)
-      const names = (await fetchManifest()).map(m => m.name)
-      if (names.includes(subject.name)) throw new Error(`Ya existe una asignatura llamada "${subject.name}".`)
+      // Sin mayúsculas ni espacios de por medio: "bases de datos" y "Bases de Datos" son la misma
+      const names = [...(await fetchManifest()).map(m => m.name), ...(await listCustom()).map(c => c.name), ...hiddenSubjects()]
+      const key = (n: string) => n.trim().toLowerCase()
+      if (names.some(n => key(n) === key(subject.name))) throw new Error(`Ya existe una asignatura llamada "${subject.name}".`)
       await addCustom(subject)
-      setInfo(`"${subject.name}" añadida con ${subject.questions.length} preguntas.`)
-      reload()
-      onLibraryChange()
+      done(`"${subject.name}" añadida con ${subject.questions.length} preguntas.`)
     } catch (err) {
       setError(msgOf(err))
     }
   }
 
-  async function remove(name: string) {
-    if (!confirm(`¿Quitar "${name}"? Se borran sus preguntas. El progreso se conserva si la vuelves a añadir.`)) return
+  function askDelete(m: SubjectMeta) {
+    setTarget(m)
+    setTyped('')
     setInfo('')
     setError('')
+  }
+
+  async function confirmDelete(m: SubjectMeta) {
+    setBusy(true)
+    setError('')
     try {
-      await removeCustom(name)
-      reload()
-      onLibraryChange()
+      if (m.custom) {
+        await removeCustom(m.name)
+        done(`"${m.name}" borrada.`)
+      } else {
+        await setHiddenSubjects([...hiddenSubjects(), m.name])
+        done(`"${m.name}" oculta. Puedes volver a mostrarla abajo.`)
+      }
+      setTarget(null)
+    } catch (err) {
+      setError(msgOf(err))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  async function unhide(name: string) {
+    setError('')
+    try {
+      await setHiddenSubjects(hiddenSubjects().filter(n => n !== name))
+      done(`"${name}" vuelve a mostrarse.`)
     } catch (err) {
       setError(msgOf(err))
     }
@@ -130,33 +167,66 @@ function Subjects({ onLibraryChange }: { onLibraryChange: () => void }) {
 
   return (
     <section className="card">
-      <h2>Asignaturas propias</h2>
-      <p className="muted small">Son las que añades tú con un JSON. Las del temario de la app no se pueden quitar desde aquí.</p>
+      <h2>Asignaturas</h2>
+      <p className="muted small">
+        Las del temario se ocultan en tu cuenta (el archivo sigue en el repositorio). Las que añades tú se borran del todo.
+      </p>
 
       {list === null && !error && <p className="muted small">Cargando…</p>}
-      {list?.length === 0 && <p className="muted small">Todavía no has añadido ninguna.</p>}
-      {list?.map(s => (
-        <div className="row" key={s.name}>
-          <span className="grow">
-            {s.name} <span className="muted small">· {s.count} preguntas</span>
-          </span>
-          <button className="icon-btn" title="Quitar" aria-label={`Quitar ${s.name}`} onClick={() => remove(s.name)}>
-            <Trash2 size={18} />
-          </button>
+      {list?.map(m => (
+        <div key={m.file}>
+          <div className="row">
+            <span className="grow">
+              {m.name} <span className="muted small">· {m.count} preguntas{m.custom ? ' · propia' : ''}</span>
+            </span>
+            <button className="icon-btn" title="Borrar" aria-label={`Borrar ${m.name}`} onClick={() => askDelete(m)}>
+              <Trash2 size={18} />
+            </button>
+          </div>
+          {target?.file === m.file && (
+            <div className="confirm">
+              <p className="small">
+                {m.custom
+                  ? 'Se borran sus preguntas. El progreso se conserva si la vuelves a añadir.'
+                  : 'Se oculta de la app. El archivo sigue en el repositorio.'}{' '}
+                Para confirmar, escribe <strong>{m.name}</strong>:
+              </p>
+              <input value={typed} onChange={e => setTyped(e.target.value)} autoComplete="off" autoCapitalize="none" aria-label="Nombre para confirmar" />
+              <div className="row gap">
+                <button className="btn ghost" onClick={() => setTarget(null)}>
+                  Cancelar
+                </button>
+                <button className="btn danger" disabled={busy || typed !== m.name} onClick={() => confirmDelete(m)}>
+                  Borrar
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       ))}
 
-      <div className="row gap">
+      {hidden.length > 0 && (
+        <>
+          <h2>Ocultas</h2>
+          {hidden.map(name => (
+            <div className="row" key={name}>
+              <span className="grow muted">{name}</span>
+              <button className="btn ghost" onClick={() => unhide(name)}>
+                Mostrar
+              </button>
+            </div>
+          ))}
+        </>
+      )}
+
+      <h2>Añadir</h2>
+      <div className="row gap actions">
         <label className="btn ghost">
           <Upload size={18} /> Añadir JSON
           <input type="file" accept=".json,application/json" hidden onChange={upload} />
         </label>
-        <a
-          className="btn ghost"
-          download="plantilla_asignatura.json"
-          href={'data:application/json;charset=utf-8,' + encodeURIComponent(TEMPLATE)}
-        >
-          Descargar plantilla
+        <a className="btn ghost" download="plantilla_asignatura.json" href={'data:application/json;charset=utf-8,' + encodeURIComponent(TEMPLATE)}>
+          <Download size={18} /> Descargar plantilla
         </a>
       </div>
 

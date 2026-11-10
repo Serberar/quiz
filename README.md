@@ -1,6 +1,6 @@
-# Quiz DAW
+# Quiz
 
-Aplicación web instalable (PWA) para **preparar exámenes tipo test** de DAW. Lee las preguntas de archivos JSON, sincroniza tu progreso con Supabase y te enseña tus métricas: porcentaje de aprobados, nota media y acierto por asignatura.
+Aplicación web instalable (PWA) para **preparar exámenes tipo test**. Lee las preguntas de archivos JSON, sincroniza tu progreso con Supabase y te enseña tus métricas: porcentaje de aprobados, nota media y acierto por asignatura.
 
 ## Funcionalidades
 

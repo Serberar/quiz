@@ -2,7 +2,6 @@ import { LoaderCircle, TrendingDown, TrendingUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { MODE_LABEL, PASS_GRADE } from '../lib/quiz'
 import { loadAttempts, type Attempt } from '../lib/store'
-import Flagged from './Flagged'
 import HowAmI from './HowAmI'
 
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
@@ -176,7 +175,6 @@ export default function Metrics() {
         </>
       )}
 
-      <Flagged />
     </>
   )
 }
