@@ -2,8 +2,10 @@ import { LoaderCircle, TrendingDown, TrendingUp } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { MODE_LABEL, PASS_GRADE } from '../lib/quiz'
 import { loadAttempts, type Attempt } from '../lib/store'
+import { REVIEW_NAME } from './ReviewSetup'
 import HowAmI from './HowAmI'
 
+const MIXED = ['Sesión diaria', REVIEW_NAME]
 const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
 const pct = (part: number, whole: number) => (whole ? Math.round((part / whole) * 100) : 0)
 const avg = (xs: number[]) => xs.reduce((s, x) => s + x, 0) / xs.length
@@ -40,8 +42,17 @@ export default function Metrics() {
   }
 
   const total = summarize(attempts)
+  // Por asignatura. Un repaso general o una sesión diaria cuenta para cada asignatura según su desglose;
+  // el nombre de la sesión no es una asignatura y no aparece como fila.
   const groups = new Map<string, Attempt[]>()
-  for (const a of attempts) groups.set(a.subject, [...(groups.get(a.subject) ?? []), a])
+  const add = (subject: string, a: Attempt) => groups.set(subject, [...(groups.get(subject) ?? []), a])
+  for (const a of attempts) {
+    if (a.details) {
+      for (const d of a.details) add(d.subject, { ...a, subject: d.subject, total: d.total, correct: d.correct, wrong: d.wrong, skipped: d.skipped, grade: d.grade })
+    } else if (!MIXED.includes(a.subject)) {
+      add(a.subject, a)
+    }
+  }
   const bySubject = [...groups]
     .map(([name, list]) => ({ name, ...summarize(list) }))
     .sort((a, b) => a.name.localeCompare(b.name))
