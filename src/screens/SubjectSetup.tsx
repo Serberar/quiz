@@ -51,7 +51,7 @@ export default function SubjectSetup({
   }
 
   return (
-    <>
+    <div className="setup">
       <header className="page-head with-back">
         <button className="icon-btn" onClick={onBack} aria-label="Volver">
           <ChevronLeft size={24} />
@@ -151,6 +151,6 @@ export default function SubjectSetup({
       <button className="btn primary sticky glow" disabled={max === 0} onClick={() => onStart(mode, filter, selUnits, n)}>
         {max === 0 ? (filter === 'all' ? 'Elige al menos una unidad' : 'No hay preguntas con este filtro') : `Empezar · ${n} preguntas`}
       </button>
-    </>
+    </div>
   )
 }

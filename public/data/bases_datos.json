@@ -4590,6 +4590,19 @@
       ],
       "correct": "Ordena por promedio de forma descendente",
       "explicacion": "En $sort, 1 es ascendente y -1 descendente."
+    },
+    {
+      "id": 354,
+      "unit": "UT1",
+      "question": "¿Cuáles son ejemplos de bases de datos orientadas a objetos?",
+      "options": [
+        "MySQL y PostgreSQL",
+        "Neo4j y ArangoDB",
+        "Redis y Memcached",
+        "ObjectDB y db4o"
+      ],
+      "correct": "ObjectDB y db4o",
+      "explicacion": "Las bases de datos orientadas a objetos almacenan la información como objetos, igual que en la POO; ObjectDB y db4o son los ejemplos del tema. MySQL/PostgreSQL son relacionales, Redis clave-valor y Neo4j de grafos."
     }
   ]
 }

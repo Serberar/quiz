@@ -11,6 +11,7 @@ import {
   dailyPlan,
   dueAt,
   estimateGrade,
+  expectedProgress,
   filterQuestions,
   grade,
   gradeBySubject,
@@ -25,6 +26,7 @@ import {
   type QuizQuestion,
 } from './quiz'
 import { studyStreak, type Attempt } from './store'
+import { examDate } from './settings'
 
 const qs: Question[] = Array.from({ length: 40 }, (_, i) => ({
   id: i + 1,
@@ -143,21 +145,72 @@ describe('sesión diaria', () => {
   it('las falladas entran primero y el bloque no repite preguntas', () => {
     let p: Progress = {}
     for (let i = 1; i <= 5; i++) p = record(p, i, false, NOW - DAY)
-    const block = buildDaily([pool('A', p), pool('B')], NOW, 20)
+    const block = buildDaily([pool('A', p), pool('B')], NOW, 10)
     expect(block).toHaveLength(20)
     expect(new Set(block.map(b => b.subject + b.id)).size).toBe(20)
     for (let i = 1; i <= 5; i++) expect(block.some(b => b.subject === 'A' && b.id === i)).toBe(true)
   })
-  it('la asignatura que va peor recibe más nuevas', () => {
-    let good: Progress = {}
-    for (let i = 1; i <= 20; i++) for (let k = 0; k < 4; k++) good = record(good, i, true, NOW - DAY * 60)
-    let total = { A: 0, B: 0 }
-    for (let r = 0; r < 20; r++) {
-      // A va bien (pero con todo repasado), B está a cero; mismas nuevas disponibles por quitar lo visto
-      const block = buildDaily([pool('A', good), { name: 'B', questions: qs.slice(20), progress: {} }], NOW, 20)
-      for (const b of block) if (status(b.subject === 'A' ? good[b.id] : undefined) === 'new') total = { ...total, [b.subject]: total[b.subject as 'A' | 'B'] + 1 }
+  it('con muchos repasos y el objetivo cumplido sigue metiendo nuevas', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 30; i++) p = record(p, i, false, NOW) // 30 falladas hoy: objetivo de nuevas ya cubierto
+    const block = buildDaily([pool('A', p)], NOW, 20)
+    const fresh = block.filter(b => status(p[b.id]) === 'new').length
+    expect(fresh).toBe(10)
+    expect(block.length - fresh).toBe(10)
+  })
+  it('las nuevas avanzan por temas en orden y el bloque va agrupado por tema', () => {
+    let p: Progress = {}
+    for (let i = 1; i <= 15; i++) p = record(p, i, true, NOW) // UT1 casi vista
+    const block = buildDaily([pool('A', p)], NOW, 20)
+    const fresh = block.filter(b => status(p[b.id]) === 'new')
+    expect(fresh.filter(b => b.unit === 'UT1').length).toBe(5) // primero se acaba UT1
+    const units = block.map(b => b.unit)
+    expect(units).toEqual([...units].sort())
+  })
+  it('5 de cada asignatura; si una no tiene nada, otras cubren el hueco', () => {
+    const block = buildDaily([pool('A'), pool('B'), pool('C')], NOW)
+    expect(block.length).toBe(15)
+    for (const n of ['A', 'B', 'C']) expect(block.filter(b => b.subject === n).length).toBe(5)
+    let all: Progress = {}
+    for (const q of qs) all = record(all, q.id, true, NOW) // A todo visto y al día
+    const mixed = buildDaily([pool('A', all), pool('B')], NOW)
+    expect(mixed.length).toBe(10)
+    expect(mixed.filter(b => b.subject === 'B').length).toBe(10)
+  })
+  it('con todo visto y al día sigue con 5 de cada asignatura, las menos asentadas primero', () => {
+    let a: Progress = {}
+    for (const q of qs) a = record(a, q.id, true, NOW)
+    for (const q of qs.slice(0, 5)) a = record(a, q.id, true, NOW) // 1-5 con 2 aciertos seguidos
+    const block = buildDaily([pool('A', a), pool('B', a)], NOW)
+    for (const n of ['A', 'B']) {
+      const mine = block.filter(b => b.subject === n)
+      expect(mine.length).toBe(5)
+      expect(mine.every(b => b.id > 5)).toBe(true)
     }
-    expect(total.B).toBeGreaterThan(total.A)
+  })
+})
+
+describe('preguntas al día', () => {
+  it('reparte lo que falta (6 respuestas por pregunta) entre los días hasta el examen', () => {
+    const now = examDate().getTime() - 10 * DAY
+    const empty = dailyPlan([{ name: 'A', total: 100, progress: {} }], now)
+    expect(empty.perDay).toBe(60)
+    expect(empty.leftToday).toBe(60)
+    // Responder una nueva hoy no cambia el objetivo del día, solo lo que falta
+    const one = dailyPlan([{ name: 'A', total: 100, progress: record({}, 1, true, now) }], now)
+    expect(one.perDay).toBe(60)
+    expect(one.leftToday).toBe(59)
+  })
+})
+
+describe('ritmo esperado', () => {
+  it('sube a ritmo constante hasta 2 semanas antes del examen', () => {
+    const end = examDate().getTime() - 14 * DAY
+    const start = end - 100 * DAY
+    expect(expectedProgress(null, start)).toBeNull()
+    expect(expectedProgress(start, start)).toBeCloseTo(0.01)
+    expect(expectedProgress(start, start + 49 * DAY)).toBeCloseTo(0.5)
+    expect(expectedProgress(start, end + 5 * DAY)).toBe(1)
   })
 })
 

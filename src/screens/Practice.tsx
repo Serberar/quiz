@@ -2,11 +2,12 @@ import { CalendarCheck, ChevronRight, Flame, Layers, LoaderCircle, Zap } from 'l
 import { useEffect, useMemo, useState } from 'react'
 import { fetchManifest, fetchSubject, type Subject, type SubjectMeta } from '../lib/data'
 import {
-  BLOCK_SIZE,
   buildDaily,
   buildQuiz,
   buildReview,
   dailyPlan,
+  PER_SUBJECT,
+  expectedProgress,
   filterQuestions,
   grade,
   gradeBySubject,
@@ -141,7 +142,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
   const startDaily = () =>
     startMixed('daily', (list, fresh) => {
       const make = (p: AllProgress) => buildDaily(list.map(s => ({ name: s.name, questions: s.questions, progress: p[s.name] ?? {} })))
-      begin({ title: DAILY_NAME, subtitle: `Bloque de ${BLOCK_SIZE}`, mode: 'smart', review: true, next: true, make }, fresh)
+      begin({ title: DAILY_NAME, subtitle: `Bloque de ${PER_SUBJECT * list.length}`, mode: 'smart', review: true, next: true, make }, fresh)
     })
 
   function flag(q: QuizQuestion, on: boolean) {
@@ -244,13 +245,26 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
 
   const plan = dailyPlan(visible.map(s => ({ name: s.name, total: s.count, progress: all[s.name] ?? {} })))
   const goalDone = plan.due === 0 && plan.newLeft === 0
-  let semTotal = 0, semOk = 0
+  let semTotal = 0, semOk = 0, firstAt: number | null = null
   for (const s of visible) {
-    const sum = progressSummary(all[s.name] ?? {}, s.count)
+    const p = all[s.name] ?? {}
+    const sum = progressSummary(p, s.count)
     semTotal += sum.total
     semOk += sum.ok
+    for (const q of Object.values(p)) if (q.f && (firstAt === null || q.f < firstAt)) firstAt = q.f
   }
   const mastery = semTotal ? semOk / semTotal : 0
+  const expected = expectedProgress(firstAt)
+  const pct = (x: number, up = false) => (up ? Math.ceil(x * 100) : Math.round(x * 100))
+  // Margen de 2 puntos para no pasar de «atrasado» a «adelantado» por una pregunta
+  const pace =
+    expected === null
+      ? null
+      : pct(mastery) < pct(expected, true)
+        ? { label: 'Vas atrasado', tone: 'warn' }
+        : pct(mastery) <= pct(expected, true) + 2
+          ? { label: 'Vas bien', tone: 'good' }
+          : { label: 'Vas adelantado', tone: 'good' }
 
   return (
     <>
@@ -277,11 +291,22 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
 
       {visible.length > 0 && (
         <section className="card today">
+          <p className="today-hint muted small">
+            {goalDone ? 'Objetivo cumplido: si sigues, adelantas.' : 'Repasos, fallos y temario nuevo, lo flojo primero.'}
+          </p>
           <div className="today-top">
-            <Ring value={mastery} tone="accent" size={112}>
-              <strong>{Math.round(mastery * 100)}%</strong>
-              <span>temario</span>
-            </Ring>
+            <div className="today-ring">
+              <Ring value={mastery} tone="accent" size={112}>
+                <strong>{pct(mastery)}%</strong>
+                <span>temario</span>
+              </Ring>
+              {pace && (
+                <div className="pace">
+                  <span>deberías {pct(expected!, true)}%</span>
+                  <strong className={pace.tone}>{pace.label}</strong>
+                </div>
+              )}
+            </div>
             <div className="today-info">
               <div className="row">
                 <h2>
@@ -305,21 +330,20 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
                   <strong>{plan.doneToday}</strong>
                   <span>hechas hoy</span>
                 </div>
+                <div>
+                  <strong className={plan.leftToday ? '' : 'good'}>{plan.leftToday}</strong>
+                  <span>faltan hoy</span>
+                </div>
               </div>
             </div>
           </div>
-          <p className="muted small">
-            {goalDone
-              ? '¡Objetivo de hoy cumplido! Si quieres seguir, la app te adelanta temario de lo que peor llevas.'
-              : 'Pulsa Estudiar y la app elige por ti: lo que toca repasar, lo que fallas y temario nuevo, con más preguntas de lo que peor llevas.'}
-          </p>
           <button className="btn primary glow big" onClick={startDaily} disabled={loading !== null}>
             {loading === 'daily' ? (
               <LoaderCircle className="spin" size={22} />
             ) : (
               <>
                 <Zap size={20} /> {goalDone ? 'Seguir estudiando' : 'Estudiar'}
-                <small>{BLOCK_SIZE} preguntas</small>
+                <small>{PER_SUBJECT * visible.length} preguntas</small>
               </>
             )}
           </button>
@@ -340,7 +364,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
       )}
 
       {visible.length > 0 && <h2 className="section-title">Practicar una asignatura</h2>}
-      <div className="list">
+      <div className="list subjects">
         {visible.map(s => {
           const sum = progressSummary(all[s.name] ?? {}, s.count)
           return (

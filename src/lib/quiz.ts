@@ -21,10 +21,13 @@ export type Pool = { name: string; questions: Question[]; progress: Progress }
 
 export const EXAM_SIZE = 30
 export const REVIEW_SIZE = 60
-export const BLOCK_SIZE = 20
+/** Preguntas de cada asignatura en un bloque de Estudiar */
+export const PER_SUBJECT = 5
 export const PASS_GRADE = 5
 /** Las preguntas nuevas se planifican para estar vistas 2 semanas antes del examen. */
 const NEW_BUFFER_DAYS = 14
+/** Respuestas que necesita de media cada pregunta antes del examen: la primera y unos 5 repasos */
+const ANSWERS_PER_QUESTION = 6
 const DAY = 86_400_000
 /** Días hasta volver a preguntar según los aciertos seguidos (0 = fallada: ya) */
 const INTERVALS = [0, 1, 3, 7, 14, 30, 45]
@@ -137,12 +140,16 @@ export function weakUnits(subjects: { name: string; questions: Question[]; progr
   return rows.sort((a, b) => b.rate - a.rate || b.failed - a.failed).slice(0, limit)
 }
 
-/** Orden aleatorio con más probabilidad de ir antes cuanto mayor es el peso (Efraimidis-Spirakis). */
-function weightedOrder<T>(items: T[], weight: (x: T) => number): T[] {
-  return items
-    .map(x => ({ x, k: Math.log(Math.random() || Number.MIN_VALUE) / weight(x) }))
-    .sort((a, b) => b.k - a.k)
-    .map(e => e.x)
+/** Posición de cada tema en el temario (orden en que aparece en la asignatura). */
+function unitOrder(questions: Question[]) {
+  const order = new Map<string, number>()
+  for (const q of questions) if (!order.has(q.unit ?? '')) order.set(q.unit ?? '', order.size)
+  return order
+}
+
+/** Ordena por tema según el temario; dentro de cada tema, al azar. */
+function byUnit<T>(items: T[], unitIndex: (x: T) => number): T[] {
+  return shuffle(items).sort((a, b) => unitIndex(a) - unitIndex(b))
 }
 
 const toQuiz = (subject: string) => (q: Question): QuizQuestion => ({ ...q, subject, shuffled: shuffle(q.options) })
@@ -222,80 +229,105 @@ export function buildReview(subjects: Subject[], all: AllProgress, n: number, pr
 /** Plan del día: repasos que tocan y preguntas nuevas para tener todo visto antes del examen. */
 export function dailyPlan(subjects: { name: string; total: number; progress: Progress }[], now = Date.now()) {
   const today = startOfDay(now)
-  let due = 0, unseen = 0, newToday = 0, doneToday = 0
+  let due = 0, unseen = 0, newToday = 0, doneToday = 0, work = 0
   for (const s of subjects) {
     let seen = 0
     for (const p of Object.values(s.progress)) {
       if (status(p) === 'new') continue
       seen++
-      if (dueAt(p)! <= now) due++
+      const isDue = dueAt(p)! <= now
+      if (isDue) due++
+      // Lo que le falta a esta pregunta; si toca repasarla, al menos esa respuesta
+      work += Math.max(isDue ? 1 : 0, ANSWERS_PER_QUESTION - p.c - p.w)
       if ((p.f ?? 0) >= today) newToday++
       if ((p.t ?? 0) >= today) doneToday++
     }
     unseen += Math.max(0, s.total - seen)
   }
+  work += unseen * ANSWERS_PER_QUESTION
+  // Preguntas al día para llegar al examen con todo visto y repasado; cuenta las de hoy para que no cambie mientras estudias
+  const perDay = Math.ceil((work + doneToday) / Math.max(1, daysUntilExam(now)))
   const daysForNew = Math.max(1, daysUntilExam(now) - NEW_BUFFER_DAYS)
   // Se calcula con lo que quedaba al empezar el día para que el objetivo no cambie mientras estudias
   const newTarget = Math.min(unseen + newToday, Math.ceil((unseen + newToday) / daysForNew))
-  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, daysLeft: daysUntilExam(now) }
-}
-
-/** Nuevas repartidas entre asignaturas según lo que les queda y lo mal que van. */
-function pickNew(pools: Pool[], n: number, exclude: Set<string>) {
-  const unseen = pools.map(p => {
-    const units = unitWeights(p.questions, p.progress)
-    const fresh = p.questions.filter(q => status(p.progress[q.id]) === 'new' && !exclude.has(p.name + ':' + q.id))
-    return { pool: p, qs: weightedOrder(fresh, q => units.get(q.unit ?? '') ?? 1) }
-  })
-  const quota = allocate(
-    unseen.map(u => ({ key: u.pool.name, weight: u.qs.length * weakness(u.pool.progress, u.pool.questions.length), cap: u.qs.length })),
-    n,
-  )
-  return unseen.flatMap(u => u.qs.slice(0, quota.get(u.pool.name)).map(toQuiz(u.pool.name)))
+  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, perDay, leftToday: Math.max(0, perDay - doneToday), daysLeft: daysUntilExam(now) }
 }
 
 /**
- * Bloque de la sesión diaria: primero las falladas y los repasos que tocan (los de asignaturas
- * flojas antes), más nuevas del objetivo del día. Cumplido el plan, sigue con nuevas
- * (adelantando temario) y después con las menos asentadas.
+ * Parte del temario que debería estar ya dominada para acabarlo NEW_BUFFER_DAYS antes del examen,
+ * a ritmo constante desde el primer día de estudio (contando hoy). null si aún no se ha empezado.
  */
-export function buildDaily(pools: Pool[], now = Date.now(), size = BLOCK_SIZE): QuizQuestion[] {
-  const plan = dailyPlan(pools.map(p => ({ name: p.name, total: p.questions.length, progress: p.progress })), now)
-  const due: { q: QuizQuestion; key: number }[] = []
-  for (const pool of pools) {
-    const w = weakness(pool.progress, pool.questions.length)
-    const units = unitWeights(pool.questions, pool.progress)
-    for (const q of pool.questions) {
-      const d = dueAt(pool.progress[q.id])
-      if (d === null || d > now) continue
-      // Falladas primero; luego las más atrasadas, adelantando las de asignaturas y temas flojos
-      const uw = units.get(q.unit ?? '') ?? 1
-      const key = d === 0 ? -1e15 + Math.random() : d - (w - 1) * 3 * DAY - (uw - 1) * 2 * DAY + Math.random() * DAY
-      due.push({ q: toQuiz(pool.name)(q), key })
-    }
-  }
-  due.sort((a, b) => a.key - b.key)
+export function expectedProgress(firstAt: number | null, now = Date.now()) {
+  if (firstAt === null) return null
+  const start = startOfDay(firstAt)
+  const end = examDate().getTime() - NEW_BUFFER_DAYS * DAY
+  if (end <= start) return 1
+  return Math.min(1, Math.max(0, (startOfDay(now) + DAY - start) / (end - start)))
+}
 
-  // Siempre entra alguna nueva mientras quede objetivo, aunque haya muchos repasos
-  const newCount = Math.min(plan.newLeft, Math.max(size - due.length, Math.round(size * 0.3)))
-  const block = due.slice(0, size - newCount).map(d => d.q)
-  const used = new Set(block.map(q => q.subject + ':' + q.id))
-  const add = (qs: QuizQuestion[]) => qs.forEach(q => (block.push(q), used.add(q.subject + ':' + q.id)))
-  add(pickNew(pools, newCount, used))
-  if (block.length < size) add(pickNew(pools, size - block.length, used))
-  if (block.length < size) {
-    // Todo visto y nada pendiente: las de menos aciertos seguidos, de asignaturas flojas primero
-    const rest = pools
-      .flatMap(pool => {
-        const w = weakness(pool.progress, pool.questions.length)
-        return pool.questions
-          .filter(q => !used.has(pool.name + ':' + q.id))
-          .map(q => ({ q: toQuiz(pool.name)(q), key: streak(pool.progress[q.id] ?? { c: 0, w: 0 }) - w + Math.random() }))
-      })
-      .sort((a, b) => a.key - b.key)
-    add(rest.slice(0, size - block.length).map(r => r.q))
+/** Nuevas de una asignatura sin ver, tema a tema en el orden del temario (al azar dentro de cada tema). */
+function freshOf(p: Pool, exclude: Set<string>) {
+  const order = unitOrder(p.questions)
+  const fresh = p.questions.filter(q => status(p.progress[q.id]) === 'new' && !exclude.has(p.name + ':' + q.id))
+  return byUnit(fresh, q => order.get(q.unit ?? '')!).map(toQuiz(p.name))
+}
+
+/** Repasos que tocan en una asignatura: falladas primero, luego las más atrasadas (antes las de temas flojos). */
+function dueOf(p: Pool, now: number) {
+  const units = unitWeights(p.questions, p.progress)
+  const due: { q: QuizQuestion; key: number }[] = []
+  for (const q of p.questions) {
+    const d = dueAt(p.progress[q.id])
+    if (d === null || d > now) continue
+    const uw = units.get(q.unit ?? '') ?? 1
+    const key = d === 0 ? -1e15 + Math.random() : d - (uw - 1) * 2 * DAY + Math.random() * DAY
+    due.push({ q: toQuiz(p.name)(q), key })
   }
-  return shuffle(block)
+  return due.sort((a, b) => a.key - b.key)
+}
+
+/**
+ * Bloque de la sesión diaria: el mismo número de preguntas de cada asignatura. En cada una, como
+ * mucho la mitad son repasos (falladas primero) y el resto temario nuevo en orden; si a una no le
+ * queda nada, su hueco lo cubren repasos y nuevas de las demás y, con todo al día, las menos asentadas.
+ */
+export function buildDaily(pools: Pool[], now = Date.now(), perSubject = PER_SUBJECT): QuizQuestion[] {
+  const size = perSubject * pools.length
+  const block: QuizQuestion[] = []
+  const used = new Set<string>()
+  const add = (qs: QuizQuestion[]) => qs.forEach(q => (block.push(q), used.add(q.subject + ':' + q.id)))
+  const due = pools.map(p => dueOf(p, now))
+  pools.forEach((p, i) => {
+    const fresh = freshOf(p, used)
+    const nNew = Math.min(fresh.length, perSubject - Math.min(Math.floor(perSubject / 2), due[i].length))
+    add(due[i].slice(0, perSubject - nNew).map(d => d.q))
+    add(fresh.slice(0, nNew))
+  })
+  if (block.length < size) {
+    const rest = due.flat().filter(d => !used.has(d.q.subject + ':' + d.q.id)).sort((a, b) => a.key - b.key)
+    add(rest.slice(0, size - block.length).map(d => d.q))
+  }
+  for (const p of pools) if (block.length < size) add(freshOf(p, used).slice(0, size - block.length))
+  if (block.length < size) {
+    // Todo visto y nada pendiente: se sigue repasando, 5 de cada asignatura, las menos asentadas
+    // (menos aciertos seguidos) primero y al azar entre las igual de asentadas
+    const rest = pools.map(pool =>
+      pool.questions
+        .filter(q => !used.has(pool.name + ':' + q.id))
+        .map(q => ({ q: toQuiz(pool.name)(q), key: streak(pool.progress[q.id] ?? { c: 0, w: 0 }) + Math.random() }))
+        .sort((a, b) => a.key - b.key)
+        .map(r => r.q),
+    )
+    pools.forEach((p, i) => add(rest[i].slice(0, Math.max(0, perSubject - block.filter(q => q.subject === p.name).length))))
+    if (block.length < size) add(rest.flat().filter(q => !used.has(q.subject + ':' + q.id)).slice(0, size - block.length))
+  }
+  // Agrupadas por asignatura y tema (repasos junto a las nuevas del mismo tema) para no saltar de un tema a otro
+  const subjects = new Map(pools.map((p, i) => [p.name, { i, order: unitOrder(p.questions) }]))
+  const pos = (q: QuizQuestion) => {
+    const s = subjects.get(q.subject)!
+    return s.i * 1e4 + s.order.get(q.unit ?? '')!
+  }
+  return byUnit(block, pos)
 }
 
 /** Nota sobre 10. En examen cada 3 fallos restan un acierto y las saltadas no penalizan. */

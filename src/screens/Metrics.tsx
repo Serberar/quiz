@@ -93,6 +93,7 @@ export default function Metrics() {
             </div>
           </div>
 
+          <div className="metrics-grid">
           <section className="card">
             <h2>Por asignatura</h2>
             <div className="table-wrap">
@@ -171,6 +172,7 @@ export default function Metrics() {
               ))}
             </div>
           </section>
+          </div>
         </>
       )}
 

@@ -45,6 +45,7 @@ export default function Results({ title, subtitle, mode, review, next, answers, 
         </p>
       </header>
 
+      <div className="results-top">
       <section className="card result-hero">
         <Ring value={r.grade / 10} tone={color} size={148}>
           <strong>{r.grade.toLocaleString('es', { maximumFractionDigits: 2 })}</strong>
@@ -138,6 +139,7 @@ export default function Results({ title, subtitle, mode, review, next, answers, 
           })}
         </section>
       )}
+      </div>
 
       <section>
         <div className="segmented">
