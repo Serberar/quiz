@@ -520,6 +520,11 @@ a.btn { text-decoration: none; }
 .settings .row:last-child { border-bottom: none; }
 .settings .card > h2:not(:first-of-type) { margin-top: 22px; }
 .actions a.btn { color: var(--text); }
+/* Móvil: los botones de acción se apilan a ancho completo */
+@media (max-width: 1023px) {
+  .row.gap.actions { flex-direction: column; align-items: stretch; }
+  .row.gap.actions .btn { flex: none; }
+}
 
 /* Métricas en escritorio: veredicto a dos columnas y listas en cuadrícula */
 @media (min-width: 1024px) {
@@ -563,3 +568,7 @@ a.btn { text-decoration: none; }
 .settings .pair > .card > button, .settings .pair > .card > .actions { margin-top: auto; }
 .settings .pair > .form button { margin-top: auto; }
 .settings .row.actions { border-bottom: none; padding: 0; }
+/* Ajustes: botones de la misma anchura y altura en Cuenta y en Fecha del examen */
+.settings .account-card .actions { flex-direction: column; align-items: stretch; }
+.settings .account-card .actions .btn { flex: none; width: 100%; }
+.settings .form > .btn { width: 100%; min-width: 0; align-self: stretch; }
