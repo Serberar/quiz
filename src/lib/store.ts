@@ -22,6 +22,9 @@ export type Attempt = {
 
 type PendingAnswer = { id: string; subject: string; question_id: number; ok: boolean; created_at: string }
 
+/** Sin conexión lo pendiente se queda en el dispositivo y se reintenta; aquí solo se deja constancia. */
+export const logError = (err: unknown) => console.warn('Sincronización pendiente:', err)
+
 const progressKey = (subject: string) => 'quiz_' + subject // misma clave que la versión anterior
 const LEGACY_DIRTY = 'quiz_dirty' // versión anterior: asignaturas con progreso sin subir
 const OUTBOX = 'quiz_outbox'
@@ -75,7 +78,7 @@ export async function loadProgress(subject: string): Promise<Progress> {
   if (!sb) return local
   try {
     await uploadLegacy(subject)
-    await flushAnswers().catch(() => {}) // si falla, lo pendiente se suma abajo desde la cola
+    await flushAnswers().catch(logError) // si falla, lo pendiente se suma abajo desde la cola
     const [base, stats] = await Promise.all([
       sb.from('progress').select('data').eq('subject', subject).maybeSingle(),
       // Una fila por pregunta: cabe en el límite de 1000 filas de Supabase (la mayor asignatura tiene 540)
@@ -113,7 +116,7 @@ export function saveAnswer(subject: string, questionId: number, ok: boolean, nex
   if (!sb) return
   const a: PendingAnswer = { id: crypto.randomUUID(), subject, question_id: questionId, ok, created_at: new Date().toISOString() }
   write(OUTBOX, [...read<PendingAnswer[]>(OUTBOX, []), a])
-  flushAnswers().catch(() => {})
+  flushAnswers().catch(logError)
 }
 
 /** Borra el progreso de una asignatura en todos los dispositivos. Con Supabase necesita conexión. */
@@ -136,7 +139,7 @@ export function addAttempt(a: Omit<Attempt, 'id' | 'created_at'>) {
   write(ATTEMPTS, [...read<Attempt[]>(ATTEMPTS, []), attempt])
   if (!sb) return
   write(UNSYNCED, [...read<string[]>(UNSYNCED, []), attempt.id])
-  flushAttempts().catch(() => {})
+  flushAttempts().catch(logError)
 }
 
 export async function flushAttempts() {
@@ -199,7 +202,7 @@ export async function loadFlags(): Promise<Set<string>> {
   const local = new Set(read<string[]>(FLAGS, []))
   if (!sb) return local
   try {
-    await flushFlags().catch(() => {})
+    await flushFlags().catch(logError)
     const { data, error } = await sb.from('flags').select('subject,question_id')
     if (error) throw error
     const set = new Set(data.map(r => flagKey(r.subject, r.question_id)))
@@ -231,7 +234,7 @@ export function setFlag(subject: string, id: number, on: boolean) {
   window.dispatchEvent(new Event(FLAGS_EVENT))
   if (sb) {
     write(FLAGS_PENDING, { ...read<Record<string, boolean>>(FLAGS_PENDING, {}), [flagKey(subject, id)]: on })
-    flushFlags().catch(() => {})
+    flushFlags().catch(logError)
   }
 }
 

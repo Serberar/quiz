@@ -299,13 +299,9 @@ input[type='range'] { width: 100%; margin-top: 12px; accent-color: var(--accent)
 .review-q svg { flex-shrink: 0; margin-top: 2px; }
 .review p { margin-top: 3px; padding-left: 28px; }
 .review .explanation { margin-left: 28px; padding-left: 10px; }
-.flagged .review p { padding-left: 0; }
-.flagged .review .explanation { margin-left: 0; }
-.flagged .review-q .icon-btn { margin: -8px -8px 0 0; }
 .subject-row .meter { margin-top: 8px; }
 .weak-row .subject-grade { width: 118px; }
 .weak-row .subject-grade span { white-space: nowrap; }
-.flagged { margin-top: 12px; }
 .flag-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
 
 /* ── Metrics ── */
@@ -332,10 +328,6 @@ input[type='range'] { width: 100%; margin-top: 12px; accent-color: var(--accent)
 .bar-fill { display: block; width: 100%; min-height: 3px; background: #9a8cff; border-radius: 4px 4px 0 0; opacity: .55; transition: height .5s cubic-bezier(.2, .8, .2, 1), opacity .15s; }
 .bar-col.active .bar-fill { opacity: 1; }
 .bars-axis { display: flex; justify-content: space-between; margin-top: 6px; font-size: .72rem; }
-.kpis { margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 15px 16px; display: flex; flex-direction: column; }
-.kpi span { font-size: .76rem; color: var(--muted); font-weight: 700; }
-.kpi strong { font-size: 1.9rem; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .table-wrap { overflow-x: auto; margin: 0 -18px; padding: 0 18px; }
 table { width: 100%; border-collapse: collapse; font-size: .88rem; white-space: nowrap; }
 th { text-align: right; color: var(--muted); font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; padding: 6px 5px; }
@@ -385,9 +377,9 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
     flex-direction: column; justify-content: flex-start; gap: 6px;
     padding: 28px 16px; border-top: none; border-right: 1px solid var(--border);
   }
-  .brand { display: flex; align-items: center; gap: 12px; padding: 0 10px 28px; font-weight: 800; font-size: 1.15rem; letter-spacing: -.01em; }
-  .credit { display: block; margin: -14px 0 22px; padding: 0 10px 0 62px; font-size: .8rem; color: var(--muted); }
-  .brand img { width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 6px 22px rgba(124, 108, 255, .45); }
+  .brand { display: flex; align-items: center; gap: 12px; padding: 0 10px 28px; font-weight: 800; font-size: 1.4rem; letter-spacing: -.01em; }
+  .credit { display: block; margin: auto 0 0; padding: 14px 10px 0; font-size: .72rem; color: var(--muted); white-space: nowrap; text-align: left; }
+  .brand img { width: 48px; height: 48px; border-radius: 15px; box-shadow: 0 0 0 1px rgba(139, 124, 255, .45), 0 10px 30px rgba(124, 108, 255, .55); }
   .tabbar button {
     flex: none; max-width: none; height: 48px; flex-direction: row; justify-content: flex-start;
     gap: 12px; padding: 0 14px; font-size: .95rem;
@@ -492,13 +484,9 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
   .results-top > .card:only-child { grid-column: 1 / -1; }
 
   /* Métricas */
-  .kpis { grid-template-columns: repeat(4, 1fr); gap: 18px; }
-  .kpi { padding: 22px; }
-  .kpi strong { font-size: 2.4rem; }
   .checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   .bars { height: 140px; gap: 6px; }
   .metrics-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; align-items: start; }
-  .flagged { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .account { flex-direction: row; align-items: center; justify-content: space-between; }
   .account .btn { width: auto; }
 
@@ -518,7 +506,9 @@ th:first-child, td:first-child { text-align: left; padding-left: 0; white-space:
 
 /* ── Ajustes ── */
 .settings { display: flex; flex-direction: column; gap: 18px; }
-.settings .card, .settings .form { width: 100%; max-width: none; margin-top: 0; }
+.settings .card { width: 100%; margin-top: 0; }
+.settings .form { width: 100%; max-width: 520px; margin-top: 0; }
+.settings .form button { width: auto; min-width: 200px; }
 .settings .card > p { margin-bottom: 14px; }
 .settings .form button { align-self: flex-start; }
 .settings input[type=date] { color-scheme: dark; }
@@ -542,3 +532,34 @@ a.btn { text-decoration: none; }
   .exam-now > h2 { grid-column: 1 / -1; }
   .exam-now .subject-row:first-of-type { border-top: 1px solid var(--border); padding-top: 14px; }
 }
+
+.grades { display: flex; gap: 18px; align-items: flex-end; }
+.grades span { display: flex; flex-direction: column; align-items: flex-end; }
+.grades strong { font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+
+/* Métricas: separación, alineación y contraste */
+.subject-grade { min-width: 110px; justify-content: flex-end; }
+.subject-grade strong { min-width: 56px; text-align: right; font-variant-numeric: tabular-nums; }
+.exam-now .note { grid-column: 1 / -1; margin: 6px 0 0; }
+@media (min-width: 1024px) {
+  .metrics-grid > section:last-child { grid-column: 1 / -1; }
+}
+.login-credit { position: fixed; left: 0; right: 0; bottom: calc(env(safe-area-inset-bottom) + 8px); text-align: center; font-size: .75rem; color: var(--muted); }
+
+
+/* Ventana de cambio de contraseña */
+.modal { margin: auto; width: min(92vw, 420px); max-width: calc(100vw - 32px); height: fit-content; padding: 26px; box-sizing: border-box; border-radius: 22px; border: 1px solid var(--border-strong); background: #0f1430; color: var(--text); box-shadow: 0 30px 80px rgba(0, 0, 0, .6); }
+.modal::backdrop { background: rgba(4, 6, 16, .7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.modal h2 { margin-bottom: 16px; }
+.modal-form { width: 100%; max-width: none; margin-top: 0; box-sizing: border-box; }
+.modal .btn { min-width: 0; width: auto; flex: 1; }
+.modal .form { overflow: visible; }
+.modal .form .btn { min-width: 0; width: auto; flex: 1; }
+.settings .account-card { max-width: 520px; }
+
+/* Fecha del examen y cuenta, en la misma línea debajo de las asignaturas */
+.settings .pair { display: flex; flex-wrap: wrap; gap: 18px; align-items: stretch; }
+.settings .pair > .card { flex: 1 1 300px; max-width: 520px; margin-top: 0; display: flex; flex-direction: column; }
+.settings .pair > .card > button, .settings .pair > .card > .actions { margin-top: auto; }
+.settings .pair > .form button { margin-top: auto; }
+.settings .row.actions { border-bottom: none; padding: 0; }

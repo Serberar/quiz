@@ -2,7 +2,7 @@ import type { Session } from '@supabase/supabase-js'
 import { BookOpen, ChartColumn, Cog, PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { loadSettings } from './lib/settings'
-import { flushAnswers, flushAttempts } from './lib/store'
+import { flushAnswers, flushAttempts, logError } from './lib/store'
 import { sb } from './lib/supabase'
 import Login from './screens/Login'
 import Metrics from './screens/Metrics'
@@ -20,7 +20,7 @@ export default function App() {
   const [libraryVersion, setLibraryVersion] = useState(0) // sube al añadir o quitar asignaturas propias
 
   useEffect(() => {
-    if (session && !settingsLoaded) loadSettings().catch(() => {}).finally(() => setSettingsLoaded(true))
+    if (session && !settingsLoaded) loadSettings().catch(logError).finally(() => setSettingsLoaded(true))
   }, [session, settingsLoaded])
 
   const [collapsed, setCollapsed] = useState(() => {
@@ -47,8 +47,8 @@ export default function App() {
     const { data } = sb.auth.onAuthStateChange((_event, s) => {
       setSession(s)
       if (s) {
-        flushAnswers().catch(() => {})
-        flushAttempts().catch(() => {})
+        flushAnswers().catch(logError)
+        flushAttempts().catch(logError)
       }
     })
     return () => data.subscription.unsubscribe()
@@ -76,7 +76,6 @@ export default function App() {
             <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="" />
             <span>Quiz</span>
           </div>
-          <p className="credit">Creado por Sergio Bernabé</p>
           <button
             className="side-toggle"
             onClick={() => setCollapsed(!collapsed)}
@@ -97,6 +96,7 @@ export default function App() {
             <Cog size={22} />
             <span>Ajustes</span>
           </button>
+          <p className="credit">Creado por Sergio Bernabé</p>
         </nav>
       )}
     </>

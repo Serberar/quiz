@@ -23,7 +23,7 @@ export default function Login() {
       <img src={import.meta.env.BASE_URL + 'icon-192.png'} alt="" className="login-logo" />
       <h1>Quiz</h1>
       <p className="muted">Inicia sesión para guardar tu progreso</p>
-      <p className="muted small">Creado por Sergio Bernabé</p>
+      <p className="login-credit">Creado por Sergio Bernabé</p>
       <form className="card form" onSubmit={submit}>
         <label>
           Usuario

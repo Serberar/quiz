@@ -57,7 +57,7 @@ const streak = (p: QStat) => p.s ?? (status(p) === 'ok' ? 1 : 0)
  * Cuándo toca repasar una pregunta vista (null si es nueva). El intervalo nunca pasa de la mitad
  * del tiempo que queda hasta el examen, para que todo vuelva a salir antes.
  */
-export function dueAt(p: QStat | undefined, exam = examDate().getTime()): number | null {
+export function dueAt(p: QStat | undefined, exam: number): number | null {
   if (status(p) === 'new') return null
   if (status(p) === 'failed') return 0
   const t = p!.t ?? 0
@@ -71,8 +71,8 @@ export function startOfDay(now = Date.now()) {
   return d.getTime()
 }
 
-export function daysUntilExam(now = Date.now()) {
-  return Math.max(0, Math.round((examDate().getTime() - startOfDay(now)) / DAY))
+export function daysUntilExam(now: number, exam: number) {
+  return Math.max(0, Math.round((exam - startOfDay(now)) / DAY))
 }
 
 export function filterQuestions(questions: Question[], progress: Progress, filter: Filter, flagged?: Set<number>): Question[] {
@@ -227,7 +227,11 @@ export function buildReview(subjects: Subject[], all: AllProgress, n: number, pr
 }
 
 /** Plan del día: repasos que tocan y preguntas nuevas para tener todo visto antes del examen. */
-export function dailyPlan(subjects: { name: string; total: number; progress: Progress }[], now = Date.now()) {
+export function dailyPlan(
+  subjects: { name: string; total: number; progress: Progress }[],
+  now = Date.now(),
+  exam = examDate().getTime(),
+) {
   const today = startOfDay(now)
   let due = 0, unseen = 0, newToday = 0, doneToday = 0, work = 0
   for (const s of subjects) {
@@ -235,7 +239,7 @@ export function dailyPlan(subjects: { name: string; total: number; progress: Pro
     for (const p of Object.values(s.progress)) {
       if (status(p) === 'new') continue
       seen++
-      const isDue = dueAt(p)! <= now
+      const isDue = dueAt(p, exam)! <= now
       if (isDue) due++
       // Lo que le falta a esta pregunta; si toca repasarla, al menos esa respuesta
       work += Math.max(isDue ? 1 : 0, ANSWERS_PER_QUESTION - p.c - p.w)
@@ -246,21 +250,21 @@ export function dailyPlan(subjects: { name: string; total: number; progress: Pro
   }
   work += unseen * ANSWERS_PER_QUESTION
   // Preguntas al día para llegar al examen con todo visto y repasado; cuenta las de hoy para que no cambie mientras estudias
-  const perDay = Math.ceil((work + doneToday) / Math.max(1, daysUntilExam(now)))
-  const daysForNew = Math.max(1, daysUntilExam(now) - NEW_BUFFER_DAYS)
+  const perDay = Math.ceil((work + doneToday) / Math.max(1, daysUntilExam(now, exam)))
+  const daysForNew = Math.max(1, daysUntilExam(now, exam) - NEW_BUFFER_DAYS)
   // Se calcula con lo que quedaba al empezar el día para que el objetivo no cambie mientras estudias
   const newTarget = Math.min(unseen + newToday, Math.ceil((unseen + newToday) / daysForNew))
-  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, perDay, leftToday: Math.max(0, perDay - doneToday), daysLeft: daysUntilExam(now) }
+  return { due, unseen, newToday, newTarget, newLeft: Math.max(0, newTarget - newToday), doneToday, perDay, leftToday: Math.max(0, perDay - doneToday), daysLeft: daysUntilExam(now, exam) }
 }
 
 /**
  * Parte del temario que debería estar ya dominada para acabarlo NEW_BUFFER_DAYS antes del examen,
  * a ritmo constante desde el primer día de estudio (contando hoy). null si aún no se ha empezado.
  */
-export function expectedProgress(firstAt: number | null, now = Date.now()) {
+export function expectedProgress(firstAt: number | null, now = Date.now(), exam = examDate().getTime()) {
   if (firstAt === null) return null
   const start = startOfDay(firstAt)
-  const end = examDate().getTime() - NEW_BUFFER_DAYS * DAY
+  const end = exam - NEW_BUFFER_DAYS * DAY
   if (end <= start) return 1
   return Math.min(1, Math.max(0, (startOfDay(now) + DAY - start) / (end - start)))
 }
@@ -273,11 +277,11 @@ function freshOf(p: Pool, exclude: Set<string>) {
 }
 
 /** Repasos que tocan en una asignatura: falladas primero, luego las más atrasadas (antes las de temas flojos). */
-function dueOf(p: Pool, now: number) {
+function dueOf(p: Pool, now: number, exam: number) {
   const units = unitWeights(p.questions, p.progress)
   const due: { q: QuizQuestion; key: number }[] = []
   for (const q of p.questions) {
-    const d = dueAt(p.progress[q.id])
+    const d = dueAt(p.progress[q.id], exam)
     if (d === null || d > now) continue
     const uw = units.get(q.unit ?? '') ?? 1
     const key = d === 0 ? -1e15 + Math.random() : d - (uw - 1) * 2 * DAY + Math.random() * DAY
@@ -291,12 +295,12 @@ function dueOf(p: Pool, now: number) {
  * mucho la mitad son repasos (falladas primero) y el resto temario nuevo en orden; si a una no le
  * queda nada, su hueco lo cubren repasos y nuevas de las demás y, con todo al día, las menos asentadas.
  */
-export function buildDaily(pools: Pool[], now = Date.now(), perSubject = PER_SUBJECT): QuizQuestion[] {
+export function buildDaily(pools: Pool[], now = Date.now(), perSubject = PER_SUBJECT, exam = examDate().getTime()): QuizQuestion[] {
   const size = perSubject * pools.length
   const block: QuizQuestion[] = []
   const used = new Set<string>()
   const add = (qs: QuizQuestion[]) => qs.forEach(q => (block.push(q), used.add(q.subject + ':' + q.id)))
-  const due = pools.map(p => dueOf(p, now))
+  const due = pools.map(p => dueOf(p, now, exam))
   pools.forEach((p, i) => {
     const fresh = freshOf(p, used)
     const nNew = Math.min(fresh.length, perSubject - Math.min(Math.floor(perSubject / 2), due[i].length))
@@ -395,8 +399,8 @@ export type Level = 'good' | 'warn' | 'bad'
  * - repasos atrasados: frente a lo que se hace en un día.
  * Veredicto: bien sin ningún "mal" y como mucho un "justo"; mal con dos o más "mal".
  */
-export function assess(subjects: { name: string; total: number; progress: Progress }[], now = Date.now()) {
-  const plan = dailyPlan(subjects, now)
+export function assess(subjects: { name: string; total: number; progress: Progress }[], now = Date.now(), exam = examDate().getTime()) {
+  const plan = dailyPlan(subjects, now, exam)
   const week = now - 7 * DAY
   let total = 0, seen = 0, ok = 0, newWeek = 0
   for (const s of subjects) {
@@ -415,7 +419,7 @@ export function assess(subjects: { name: string; total: number; progress: Progre
   const retention = seen ? ok / seen : 0
   /** Día en que se habrá visto todo al ritmo actual (null si el ritmo es 0) */
   const finishAt = plan.unseen === 0 ? now : perDay > 0 ? startOfDay(now) + Math.ceil(plan.unseen / perDay) * DAY : null
-  const deadline = examDate().getTime() - NEW_BUFFER_DAYS * DAY
+  const deadline = exam - NEW_BUFFER_DAYS * DAY
 
   const pace: Level = plan.unseen === 0 || perDay >= needed ? 'good' : perDay >= needed * 0.6 ? 'warn' : 'bad'
   const memory: Level = seen < 20 ? 'warn' : retention >= 0.75 ? 'good' : retention >= 0.6 ? 'warn' : 'bad'

@@ -1,4 +1,4 @@
-import { CalendarCheck, ChevronRight, Flame, Layers, LoaderCircle, Zap } from 'lucide-react'
+import { ChevronRight, Flame, Layers, LoaderCircle } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { fetchManifest, fetchSubject, type Subject, type SubjectMeta } from '../lib/data'
 import {
@@ -12,7 +12,6 @@ import {
   grade,
   gradeBySubject,
   MODE_LABEL,
-  PASS_GRADE,
   progressSummary,
   record,
   type AllProgress,
@@ -22,16 +21,14 @@ import {
 } from '../lib/quiz'
 import { addAttempt, flaggedIds, loadAttempts, loadFlags, loadProgress, onFlagsChange, resetProgress, saveAnswer, setFlag, studyStreak } from '../lib/store'
 import Quiz from './Quiz'
-import Mastery from './Mastery'
 import Results from './Results'
 import ReviewSetup, { REVIEW_NAME } from './ReviewSetup'
-import Ring from './Ring'
 import SubjectSetup from './SubjectSetup'
+import PracticeSubjects from './PracticeSubjects'
+import TodayCard from './TodayCard'
 import { examDate } from '../lib/settings'
 
 const DAILY_NAME = 'Sesión diaria'
-const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
-const tone = (g: number) => (g >= 7 ? 'good' : g >= PASS_GRADE ? 'warn' : 'bad')
 
 /** make se guarda para que "Repetir" use la misma configuración con el progreso actualizado */
 type Run = {
@@ -50,6 +47,7 @@ type Run = {
 export default function Practice({ onImmersive, libraryVersion }: { onImmersive: (on: boolean) => void; libraryVersion: number }) {
   const [subjects, setSubjects] = useState<SubjectMeta[] | null>(null)
   const [loadError, setLoadError] = useState(false)
+  const [notice, setNotice] = useState('') // aviso dentro de la pantalla, en lugar de alert()
   const [subject, setSubject] = useState<Subject | null>(null)
   const [reviewing, setReviewing] = useState(false)
   const [loading, setLoading] = useState<string | null>(null)
@@ -62,8 +60,9 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
   const visible = useMemo(() => subjects ?? [], [subjects])
 
   useEffect(() => {
+    cache.clear() // al añadir o quitar asignaturas propias, no reusar una versión antigua
     fetchManifest().then(setSubjects, () => setLoadError(true))
-  }, [libraryVersion])
+  }, [libraryVersion, cache])
 
   useEffect(() => onFlagsChange(setFlags), [])
 
@@ -102,7 +101,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
       setAll(prev => ({ ...prev, [s.name]: p }))
       setSubject(s)
     } catch {
-      alert(`No se pudo cargar "${meta.name}".`)
+      setNotice(`No se pudo cargar "${meta.name}".`)
     } finally {
       setLoading(null)
     }
@@ -118,7 +117,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
       setAll(fresh)
       start(list, fresh)
     } catch {
-      alert('No se pudieron cargar las asignaturas.')
+      setNotice('No se pudieron cargar las asignaturas.')
     } finally {
       setLoading(null)
     }
@@ -127,7 +126,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
   /** Empieza un test; si no hay preguntas avisa en vez de abrir un test vacío */
   function begin(r: Omit<Run, 'questions' | 'answers'>, progress: AllProgress) {
     const questions = r.make(progress)
-    if (questions.length === 0) return alert('No hay preguntas para esta selección.')
+    if (questions.length === 0) return setNotice('No hay preguntas para esta selección.')
     setRun({ ...r, questions, answers: null })
   }
 
@@ -179,7 +178,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
           onRepeat={() => {
             const questions = run.make(all)
             if (questions.length) return setRun({ ...run, questions, answers: null })
-            alert('No quedan preguntas para esta selección.')
+            setNotice('No quedan preguntas para esta selección.')
             setRun(null)
           }}
           onClose={() => setRun(null)}
@@ -216,7 +215,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
             await resetProgress(name)
             setAll(prev => ({ ...prev, [name]: {} }))
           } catch {
-            alert('No se pudo borrar el progreso. Necesitas conexión.')
+            setNotice('No se pudo borrar el progreso. Necesitas conexión.')
           }
         }}
         onStart={(mode, filter, units, n) => {
@@ -286,68 +285,21 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
         )}
       </header>
 
+      {notice && <p className="error" role="alert">{notice}</p>}
       {loadError && <p className="error">No se pudieron cargar las asignaturas.</p>}
       {!subjects && !loadError && <p className="muted center">Cargando…</p>}
 
       {visible.length > 0 && (
-        <section className="card today">
-          <p className="today-hint muted small">
-            {goalDone ? 'Objetivo cumplido: si sigues, adelantas.' : 'Repasos, fallos y temario nuevo, lo flojo primero.'}
-          </p>
-          <div className="today-top">
-            <div className="today-ring">
-              <Ring value={mastery} tone="accent" size={112}>
-                <strong>{pct(mastery)}%</strong>
-                <span>temario</span>
-              </Ring>
-              {pace && (
-                <div className="pace">
-                  <span>deberías {pct(expected!, true)}%</span>
-                  <strong className={pace.tone}>{pace.label}</strong>
-                </div>
-              )}
-            </div>
-            <div className="today-info">
-              <div className="row">
-                <h2>
-                  <CalendarCheck size={14} /> Hoy
-                </h2>
-                {goalDone && <span className="pill good">Cumplido</span>}
-              </div>
-              <div className="today-stats">
-                <div>
-                  <strong className={plan.due ? 'warn' : 'good'}>{plan.due}</strong>
-                  <span>a repasar</span>
-                </div>
-                <div>
-                  <strong className={plan.newLeft ? '' : 'good'}>
-                    {plan.newToday}
-                    <small>/{plan.newTarget}</small>
-                  </strong>
-                  <span>nuevas</span>
-                </div>
-                <div>
-                  <strong>{plan.doneToday}</strong>
-                  <span>hechas hoy</span>
-                </div>
-                <div>
-                  <strong className={plan.leftToday ? '' : 'good'}>{plan.leftToday}</strong>
-                  <span>faltan hoy</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button className="btn primary glow big" onClick={startDaily} disabled={loading !== null}>
-            {loading === 'daily' ? (
-              <LoaderCircle className="spin" size={22} />
-            ) : (
-              <>
-                <Zap size={20} /> {goalDone ? 'Seguir estudiando' : 'Estudiar'}
-                <small>{PER_SUBJECT * visible.length} preguntas</small>
-              </>
-            )}
-          </button>
-        </section>
+        <TodayCard
+          plan={plan}
+          goalDone={goalDone}
+          mastery={mastery}
+          expected={expected}
+          pace={pace}
+          count={PER_SUBJECT * visible.length}
+          loading={loading}
+          onStart={startDaily}
+        />
       )}
 
       {visible.length > 1 && (
@@ -364,28 +316,7 @@ export default function Practice({ onImmersive, libraryVersion }: { onImmersive:
       )}
 
       {visible.length > 0 && <h2 className="section-title">Practicar una asignatura</h2>}
-      <div className="list subjects">
-        {visible.map(s => {
-          const sum = progressSummary(all[s.name] ?? {}, s.count)
-          return (
-            <button key={s.file} className="list-item subject" onClick={() => open(s)} disabled={loading !== null}>
-              <div className="grow">
-                <div className="list-title">{s.name}</div>
-                <div className="muted small">
-                  {sum.seen}/{s.count} vistas
-                  {sum.failed > 0 && <span className="bad"> · {sum.failed} falladas</span>}
-                </div>
-                <Mastery {...sum} />
-              </div>
-              <div className="estimate" title="Nota estimada si el examen fuera hoy">
-                <strong className={sum.seen ? tone(sum.estimate) : 'muted'}>{sum.seen ? fmt(sum.estimate) : '—'}</strong>
-                <span>si fuera hoy</span>
-              </div>
-              {loading === s.file ? <LoaderCircle className="spin" size={20} /> : <ChevronRight size={20} className="muted" />}
-            </button>
-          )
-        })}
-      </div>
+      <PracticeSubjects subjects={visible} all={all} loading={loading} onOpen={open} />
     </>
   )
 }

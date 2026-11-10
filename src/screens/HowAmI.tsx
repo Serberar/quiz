@@ -1,12 +1,11 @@
 import { CircleAlert, CircleCheck, CircleX, LoaderCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { fetchManifest, fetchSubject, type Question, type SubjectMeta } from '../lib/data'
-import { assess, PASS_GRADE, progressSummary, startOfDay, weakUnits, type Level, type Progress } from '../lib/quiz'
+import { assess, startOfDay, type Level, type Progress } from '../lib/quiz'
+import { day, fmt, tone } from '../lib/format'
 import { loadProgress, type Attempt } from '../lib/store'
 
 const DAY = 86_400_000
-const fmt = (n: number) => n.toLocaleString('es', { maximumFractionDigits: 1 })
-const day = (t: number) => new Date(t).toLocaleDateString('es', { day: 'numeric', month: 'long' })
 
 const VERDICT: Record<Level, { title: string; Icon: typeof CircleCheck }> = {
   good: { title: 'Vas bien', Icon: CircleCheck },
@@ -15,8 +14,19 @@ const VERDICT: Record<Level, { title: string; Icon: typeof CircleCheck }> = {
 }
 const LEVEL_LABEL: Record<Level, string> = { good: 'Bien', warn: 'Justo', bad: 'Mal' }
 
+
 /** ¿Cómo voy?: veredicto, previsión, nota por asignatura y actividad de los últimos 14 días. */
 export default function HowAmI({ attempts }: { attempts: Attempt[] }) {
+  // Aciertos de hoy por asignatura, con los tests terminados hoy (respondidas = acertadas + falladas)
+  const todayStart = startOfDay()
+  const todayBy = new Map<string, { c: number; w: number }>()
+  for (const a of attempts) {
+    if (new Date(a.created_at).getTime() < todayStart) continue
+    for (const d of a.details ?? [{ subject: a.subject, correct: a.correct, wrong: a.wrong }]) {
+      const e = todayBy.get(d.subject) ?? { c: 0, w: 0 }
+      todayBy.set(d.subject, { c: e.c + d.correct, w: e.w + d.wrong })
+    }
+  }
   const [data, setData] = useState<{ meta: SubjectMeta; progress: Progress; questions: Question[] }[] | null>(null)
 
   useEffect(() => {
@@ -91,7 +101,18 @@ export default function HowAmI({ attempts }: { attempts: Attempt[] }) {
     return { start, total: list.reduce((s, t) => s + t.total, 0), correct: list.reduce((s, t) => s + t.correct, 0) }
   })
   const week = days.slice(-7).reduce((s, d) => s + d.total, 0)
-  const weak = weakUnits(data.map(d => ({ name: d.meta.name, questions: d.questions, progress: d.progress })))
+
+  // Exámenes realizados: un examen propio o cada asignatura de un simulacro, del más reciente al más antiguo
+  const exams = attempts
+    .filter(a => a.mode === 'exam')
+    .flatMap(a => {
+      const date = new Date(a.created_at).toLocaleDateString('es', { dateStyle: 'medium' })
+      const rows = a.details
+        ? a.details.map(d => ({ subject: d.subject, grade: d.grade, origin: `${a.subject} · ${date}` }))
+        : [{ subject: a.subject, grade: a.grade, origin: `Examen · ${date}` }]
+      return rows.map((r, i) => ({ ...r, key: a.id + '-' + i }))
+    })
+    .reverse()
 
   return (
     <>
@@ -126,66 +147,75 @@ export default function HowAmI({ attempts }: { attempts: Attempt[] }) {
         </div>
       </section>
 
-      <section className="card exam-now">
-        <h2>Si el examen fuera hoy</h2>
-        {data.map(({ meta, progress }) => {
-          const s = progressSummary(progress, meta.count)
-          const level: Level = s.estimate >= 6 ? 'good' : s.estimate >= PASS_GRADE ? 'warn' : 'bad'
-          return (
-            <div key={meta.file} className="subject-row">
-              <div className="grow">
-                <div className="list-title">{meta.name}</div>
-                <div className="muted small">
-                  {Math.round((s.seen / s.total) * 100)}% visto · {s.failed} falladas
+      {/* Dos tarjetas iguales: preguntas respondidas, falladas y acierto de hoy y del total */}
+      {[
+        { title: 'Hoy por asignatura', note: 'Tests terminados hoy.', period: 'hoy' },
+        { title: 'Total por asignatura', note: 'Desde que empezaste a estudiar.', period: 'en total' },
+      ].map(card => (
+        <section key={card.title} className="card exam-now">
+          <h2>{card.title}</h2>
+          {data.map(({ meta, progress }) => {
+            const hits = Object.values(progress).reduce((n, p) => n + p.c, 0)
+            const wrong = Object.values(progress).reduce((n, p) => n + p.w, 0)
+            const today = todayBy.get(meta.name)
+            const c = card.period === 'hoy' ? today?.c ?? 0 : hits
+            const w = card.period === 'hoy' ? today?.w ?? 0 : wrong
+            const answered = c + w
+            const value = answered ? c / answered : null
+            const level: Level = value === null ? 'bad' : value >= 0.7 ? 'good' : value >= 0.5 ? 'warn' : 'bad'
+            return (
+              <div key={meta.file} className="subject-row">
+                <div className="grow">
+                  <div className="list-title">{meta.name}</div>
+                  <div className="muted small">
+                    {answered} respondidas {card.period} · {w} falladas
+                  </div>
+                </div>
+                <div className="subject-grade">
+                  <strong>{value === null ? '—' : Math.round(value * 100) + '%'}</strong>
+                  <span className={'pill ' + level}>{value === null ? 'Sin datos' : LEVEL_LABEL[level]}</span>
                 </div>
               </div>
-              <div className="subject-grade">
-                <strong>{fmt(s.estimate)}</strong>
-                <span className={'pill ' + level}>{level === 'good' ? 'Apruebas' : level === 'warn' ? 'Por los pelos' : 'Suspendes'}</span>
-              </div>
-            </div>
-          )
-        })}
-        <p className="muted small note">
-          Estimación con lo que tienes aprendido y la penalización del examen. La nota real la da el Repaso general en
-          modo Simulacro.
-        </p>
-      </section>
+            )
+          })}
+          <p className="muted small note">{card.note}</p>
+        </section>
+      ))}
 
-      {weak.length > 0 && (
-        <section className="card">
-          <h2>Temas más flojos</h2>
-          {weak.map(w => (
-            <div key={w.subject + w.unit} className="subject-row weak-row">
-              <div className="grow">
-                <div className="list-title">
-                  {w.unit} <span className="muted small">· {w.subject}</span>
-                </div>
-                <div className="meter">
-                  <div className="bad" style={{ width: Math.round(w.rate * 100) + '%' }} />
-                </div>
+
+      <section className="card">
+        <h2>Exámenes realizados</h2>
+        {exams.length === 0 && <p className="muted small">Todavía no has hecho ningún examen ni simulacro.</p>}
+        <div className="list">
+          {exams.map(row => (
+            <div key={row.key} className="history-row">
+              <div>
+                <div className="list-title">{row.subject}</div>
+                <div className="muted small">{row.origin}</div>
               </div>
-              <div className="subject-grade">
-                <strong>{Math.round(w.rate * 100)}%</strong>
-                <span className="muted small">
-                  {w.failed} de {w.seen} falladas
-                </span>
-              </div>
+              <strong className={tone(row.grade)}>{fmt(row.grade)}</strong>
             </div>
           ))}
-          <p className="muted small note">"Estudiar" ya te pregunta más de estos temas. Lee bien las explicaciones al fallar.</p>
-        </section>
-      )}
+        </div>
+      </section>
 
       <section className="card">
         <div className="row">
-          <h2>Preguntas al día</h2>
-          <span className="muted small">{week} en 7 días</span>
+          <h2>Tu actividad</h2>
+          <span className="muted small">{week} preguntas en los últimos 7 días</span>
         </div>
         <ActivityChart days={days} />
       </section>
     </>
   )
+}
+
+/** "Hoy", "Ayer" o el día de la semana con la fecha */
+function dayName(start: number) {
+  const diff = Math.round((startOfDay() - start) / DAY)
+  if (diff === 0) return 'Hoy'
+  if (diff === 1) return 'Ayer'
+  return new Date(start).toLocaleDateString('es', { weekday: 'long', day: 'numeric', month: 'short' })
 }
 
 /** Barras de preguntas por día. Al tocar o pasar por una barra se ve su detalle. */
@@ -195,10 +225,11 @@ function ActivityChart({ days }: { days: { start: number; total: number; correct
   const d = days[active]
   return (
     <div className="chart">
+      <p className="chart-readout small muted">Últimas 2 semanas, hoy a la derecha</p>
       <p className="chart-readout small">
-        <strong>{new Date(d.start).toLocaleDateString('es', { weekday: 'long', day: 'numeric', month: 'short' })}</strong>
+        <strong>{dayName(d.start)}</strong>
         {': '}
-        {d.total ? `${d.total} preguntas, ${Math.round((d.correct / d.total) * 100)}% acertadas` : 'sin tests terminados'}
+        {d.total ? `${d.total} preguntas respondidas, ${Math.round((d.correct / d.total) * 100)}% acertadas` : 'no has hecho tests ese día'}
       </p>
       <div className="bars" role="list" aria-label="Preguntas respondidas por día, últimos 14 días">
         {days.map((x, i) => (
